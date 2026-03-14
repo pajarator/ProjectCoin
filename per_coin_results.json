@@ -1,0 +1,1180 @@
+{
+  "ETH": {
+    "best_strategy": "vwap_reversion",
+    "best_pf": 1.8132833190747264,
+    "best_pnl": 50.149134353590426,
+    "all_strategies": [
+      {
+        "strategy": "vwap_reversion",
+        "initial": 100,
+        "final": 150.14913435359043,
+        "pnl_pct": 50.149134353590426,
+        "trades": 421,
+        "win_rate": 52.01900237529691,
+        "avg_win": 4.181315416131217,
+        "avg_loss": -2.5,
+        "profit_factor": 1.8132833190747264
+      },
+      {
+        "strategy": "mean_reversion",
+        "initial": 100,
+        "final": 152.99280276388865,
+        "pnl_pct": 52.99280276388865,
+        "trades": 535,
+        "win_rate": 52.71028037383177,
+        "avg_win": 3.765995720726359,
+        "avg_loss": -2.5,
+        "profit_factor": 1.679068447817918
+      },
+      {
+        "strategy": "dual_rsi",
+        "initial": 100,
+        "final": 167.09507669959487,
+        "pnl_pct": 67.09507669959487,
+        "trades": 747,
+        "win_rate": 54.48460508701473,
+        "avg_win": 3.362611170770608,
+        "avg_loss": -2.5,
+        "profit_factor": 1.6100973488278099
+      },
+      {
+        "strategy": "bb_bounce",
+        "initial": 100,
+        "final": 162.1879060203813,
+        "pnl_pct": 62.18790602038129,
+        "trades": 917,
+        "win_rate": 62.486368593238815,
+        "avg_win": 2.353291501964264,
+        "avg_loss": -2.5,
+        "profit_factor": 1.5679488728203756
+      },
+      {
+        "strategy": "adr_reversal",
+        "initial": 100,
+        "final": 146.43257720725245,
+        "pnl_pct": 46.43257720725245,
+        "trades": 614,
+        "win_rate": 53.09446254071661,
+        "avg_win": 3.3913631617032314,
+        "avg_loss": -2.5,
+        "profit_factor": 1.5355338759934085
+      }
+    ]
+  },
+  "NEAR": {
+    "best_strategy": "vwap_reversion",
+    "best_pf": 2.0047227373786227,
+    "best_pnl": 76.98735994678745,
+    "all_strategies": [
+      {
+        "strategy": "vwap_reversion",
+        "initial": 100,
+        "final": 176.98735994678745,
+        "pnl_pct": 76.98735994678745,
+        "trades": 404,
+        "win_rate": 43.06930693069307,
+        "avg_win": 6.624802149383375,
+        "avg_loss": -2.5,
+        "profit_factor": 2.0047227373786227
+      },
+      {
+        "strategy": "mean_reversion",
+        "initial": 100,
+        "final": 213.3248478512115,
+        "pnl_pct": 113.3248478512115,
+        "trades": 601,
+        "win_rate": 45.59068219633943,
+        "avg_win": 5.778975550514125,
+        "avg_loss": -2.5,
+        "profit_factor": 1.936928808368037
+      },
+      {
+        "strategy": "dual_rsi",
+        "initial": 100,
+        "final": 246.2784083631533,
+        "pnl_pct": 146.2784083631533,
+        "trades": 850,
+        "win_rate": 46.35294117647059,
+        "avg_win": 5.20477063656947,
+        "avg_loss": -2.5,
+        "profit_factor": 1.7988417814108504
+      },
+      {
+        "strategy": "adr_reversal",
+        "initial": 100,
+        "final": 219.25445971025746,
+        "pnl_pct": 119.25445971025745,
+        "trades": 765,
+        "win_rate": 44.70588235294118,
+        "avg_win": 5.414600550702282,
+        "avg_loss": -2.5,
+        "profit_factor": 1.7511048589505247
+      },
+      {
+        "strategy": "bb_bounce",
+        "initial": 100,
+        "final": 205.52888482126326,
+        "pnl_pct": 105.52888482126326,
+        "trades": 880,
+        "win_rate": 52.159090909090914,
+        "avg_win": 3.881802109734093,
+        "avg_loss": -2.5,
+        "profit_factor": 1.6928714188769118
+      }
+    ]
+  },
+  "BTC": {
+    "best_strategy": "bb_bounce",
+    "best_pf": 1.443729783155008,
+    "best_pnl": 37.647035281977736,
+    "all_strategies": [
+      {
+        "strategy": "bb_bounce",
+        "initial": 100,
+        "final": 137.64703528197774,
+        "pnl_pct": 37.647035281977736,
+        "trades": 915,
+        "win_rate": 68.1967213114754,
+        "avg_win": 1.6831945789186993,
+        "avg_loss": -2.5,
+        "profit_factor": 1.443729783155008
+      },
+      {
+        "strategy": "vwap_reversion",
+        "initial": 100,
+        "final": 118.07375084341632,
+        "pnl_pct": 18.07375084341632,
+        "trades": 408,
+        "win_rate": 55.63725490196079,
+        "avg_win": 2.73502494190079,
+        "avg_loss": -2.5,
+        "profit_factor": 1.3720456614618328
+      },
+      {
+        "strategy": "adr_reversal",
+        "initial": 100,
+        "final": 123.89027714664013,
+        "pnl_pct": 23.89027714664013,
+        "trades": 589,
+        "win_rate": 58.57385398981324,
+        "avg_win": 2.395943400592745,
+        "avg_loss": -2.5,
+        "profit_factor": 1.355082742958193
+      },
+      {
+        "strategy": "dual_rsi",
+        "initial": 100,
+        "final": 126.17276588584734,
+        "pnl_pct": 26.172765885847337,
+        "trades": 685,
+        "win_rate": 59.416058394160586,
+        "avg_win": 2.285400918422346,
+        "avg_loss": -2.5,
+        "profit_factor": 1.3383570846012875
+      },
+      {
+        "strategy": "mean_reversion",
+        "initial": 100,
+        "final": 114.85242939097078,
+        "pnl_pct": 14.852429390970784,
+        "trades": 482,
+        "win_rate": 55.18672199170125,
+        "avg_win": 2.558519183585768,
+        "avg_loss": -2.5,
+        "profit_factor": 1.2603075978403975
+      }
+    ]
+  },
+  "AVAX": {
+    "best_strategy": "adr_reversal",
+    "best_pf": 1.592508756540812,
+    "best_pnl": 68.52132228060134,
+    "all_strategies": [
+      {
+        "strategy": "adr_reversal",
+        "initial": 100,
+        "final": 168.52132228060134,
+        "pnl_pct": 68.52132228060134,
+        "trades": 717,
+        "win_rate": 50.348675034867505,
+        "avg_win": 3.9261296213887045,
+        "avg_loss": -2.5,
+        "profit_factor": 1.592508756540812
+      },
+      {
+        "strategy": "mean_reversion",
+        "initial": 100,
+        "final": 149.43821331154624,
+        "pnl_pct": 49.438213311546235,
+        "trades": 561,
+        "win_rate": 47.05882352941176,
+        "avg_win": 4.3516331107054995,
+        "avg_loss": -2.5,
+        "profit_factor": 1.547247328250845
+      },
+      {
+        "strategy": "dual_rsi",
+        "initial": 100,
+        "final": 161.11952423099848,
+        "pnl_pct": 61.11952423099848,
+        "trades": 809,
+        "win_rate": 49.196538936959215,
+        "avg_win": 3.7943706989996024,
+        "avg_loss": -2.5,
+        "profit_factor": 1.4697416430188235
+      },
+      {
+        "strategy": "vwap_reversion",
+        "initial": 100,
+        "final": 130.0765625274275,
+        "pnl_pct": 30.076562527427512,
+        "trades": 409,
+        "win_rate": 44.00977995110024,
+        "avg_win": 4.664150146286012,
+        "avg_loss": -2.5,
+        "profit_factor": 1.4664576879152524
+      },
+      {
+        "strategy": "bb_bounce",
+        "initial": 100,
+        "final": 147.2228050158127,
+        "pnl_pct": 47.222805015812696,
+        "trades": 947,
+        "win_rate": 55.54382259767687,
+        "avg_win": 2.747081434429098,
+        "avg_loss": -2.5,
+        "profit_factor": 1.372888203809698
+      }
+    ]
+  },
+  "SOL": {
+    "best_strategy": "vwap_reversion",
+    "best_pf": 1.7069143536552558,
+    "best_pnl": 47.91337044165104,
+    "all_strategies": [
+      {
+        "strategy": "vwap_reversion",
+        "initial": 100,
+        "final": 147.91337044165104,
+        "pnl_pct": 47.91337044165104,
+        "trades": 439,
+        "win_rate": 48.9749430523918,
+        "avg_win": 4.445916456032294,
+        "avg_loss": -2.5,
+        "profit_factor": 1.7069143536552558
+      },
+      {
+        "strategy": "bb_bounce",
+        "initial": 100,
+        "final": 167.5522050616341,
+        "pnl_pct": 67.55220506163411,
+        "trades": 941,
+        "win_rate": 58.979808714133895,
+        "avg_win": 2.678793094883169,
+        "avg_loss": -2.5,
+        "profit_factor": 1.5406530234820301
+      },
+      {
+        "strategy": "adr_reversal",
+        "initial": 100,
+        "final": 157.7954343854163,
+        "pnl_pct": 57.795434385416314,
+        "trades": 696,
+        "win_rate": 50.287356321839084,
+        "avg_win": 3.7892335382735727,
+        "avg_loss": -2.5,
+        "profit_factor": 1.533215882538439
+      },
+      {
+        "strategy": "dual_rsi",
+        "initial": 100,
+        "final": 169.15206871445028,
+        "pnl_pct": 69.15206871445028,
+        "trades": 806,
+        "win_rate": 50.49627791563276,
+        "avg_win": 3.7564024780080083,
+        "avg_loss": -2.5,
+        "profit_factor": 1.5326875273676792
+      },
+      {
+        "strategy": "mean_reversion",
+        "initial": 100,
+        "final": 144.63846474140595,
+        "pnl_pct": 44.638464741405954,
+        "trades": 580,
+        "win_rate": 49.137931034482754,
+        "avg_win": 3.8979137683773937,
+        "avg_loss": -2.5,
+        "profit_factor": 1.5063124393051615
+      }
+    ]
+  },
+  "LTC": {
+    "best_strategy": "vwap_reversion",
+    "best_pf": 1.8763081910516557,
+    "best_pnl": 50.02951916920302,
+    "all_strategies": [
+      {
+        "strategy": "vwap_reversion",
+        "initial": 100,
+        "final": 150.029519169203,
+        "pnl_pct": 50.02951916920302,
+        "trades": 386,
+        "win_rate": 51.554404145077726,
+        "avg_win": 4.4079099463148195,
+        "avg_loss": -2.5,
+        "profit_factor": 1.8763081910516557
+      },
+      {
+        "strategy": "mean_reversion",
+        "initial": 100,
+        "final": 156.83446074672986,
+        "pnl_pct": 56.83446074672987,
+        "trades": 545,
+        "win_rate": 51.19266055045871,
+        "avg_win": 4.013695781239498,
+        "avg_loss": -2.5,
+        "profit_factor": 1.683941538294467
+      },
+      {
+        "strategy": "dual_rsi",
+        "initial": 100,
+        "final": 174.63595797532017,
+        "pnl_pct": 74.63595797532017,
+        "trades": 764,
+        "win_rate": 54.581151832460726,
+        "avg_win": 3.429082154560719,
+        "avg_loss": -2.5,
+        "profit_factor": 1.6483311336620399
+      },
+      {
+        "strategy": "adr_reversal",
+        "initial": 100,
+        "final": 149.57635712565767,
+        "pnl_pct": 49.576357125657665,
+        "trades": 656,
+        "win_rate": 52.59146341463414,
+        "avg_win": 3.432737982368392,
+        "avg_loss": -2.5,
+        "profit_factor": 1.5232084937840449
+      },
+      {
+        "strategy": "bb_bounce",
+        "initial": 100,
+        "final": 164.84011139098243,
+        "pnl_pct": 64.84011139098243,
+        "trades": 985,
+        "win_rate": 60.71065989847716,
+        "avg_win": 2.4627964473040262,
+        "avg_loss": -2.5,
+        "profit_factor": 1.5222245741476046
+      }
+    ]
+  },
+  "ATOM": {
+    "best_strategy": "vwap_reversion",
+    "best_pf": 1.7089744190964242,
+    "best_pnl": 42.742920340036704,
+    "all_strategies": [
+      {
+        "strategy": "vwap_reversion",
+        "initial": 100,
+        "final": 142.7429203400367,
+        "pnl_pct": 42.742920340036704,
+        "trades": 382,
+        "win_rate": 46.8586387434555,
+        "avg_win": 4.845276635147683,
+        "avg_loss": -2.5,
+        "profit_factor": 1.7089744190964242
+      },
+      {
+        "strategy": "bb_bounce",
+        "initial": 100,
+        "final": 188.65193752784432,
+        "pnl_pct": 88.65193752784432,
+        "trades": 1044,
+        "win_rate": 59.2911877394636,
+        "avg_win": 2.751931897269998,
+        "avg_loss": -2.5,
+        "profit_factor": 1.603243147680121
+      },
+      {
+        "strategy": "adr_reversal",
+        "initial": 100,
+        "final": 173.6581889196858,
+        "pnl_pct": 73.65818891968581,
+        "trades": 759,
+        "win_rate": 50.329380764163375,
+        "avg_win": 3.9274677309562933,
+        "avg_loss": -2.5,
+        "profit_factor": 1.591822464960534
+      },
+      {
+        "strategy": "dual_rsi",
+        "initial": 100,
+        "final": 178.48293566829605,
+        "pnl_pct": 78.48293566829605,
+        "trades": 809,
+        "win_rate": 49.567367119901114,
+        "avg_win": 4.004073817754794,
+        "avg_loss": -2.5,
+        "profit_factor": 1.5741505891369332
+      },
+      {
+        "strategy": "mean_reversion",
+        "initial": 100,
+        "final": 148.65418620305516,
+        "pnl_pct": 48.65418620305516,
+        "trades": 543,
+        "win_rate": 45.85635359116022,
+        "avg_win": 4.563449191141496,
+        "avg_loss": -2.5,
+        "profit_factor": 1.5459848280193644
+      }
+    ]
+  },
+  "XLM": {
+    "best_strategy": "dual_rsi",
+    "best_pf": 1.617647434010545,
+    "best_pnl": 88.20245243121738,
+    "all_strategies": [
+      {
+        "strategy": "dual_rsi",
+        "initial": 100,
+        "final": 188.20245243121738,
+        "pnl_pct": 88.20245243121738,
+        "trades": 831,
+        "win_rate": 50.18050541516246,
+        "avg_win": 4.015024206716821,
+        "avg_loss": -2.5,
+        "profit_factor": 1.617647434010545
+      },
+      {
+        "strategy": "adr_reversal",
+        "initial": 100,
+        "final": 173.56633687295948,
+        "pnl_pct": 73.56633687295948,
+        "trades": 755,
+        "win_rate": 50.46357615894039,
+        "avg_win": 3.9181726100399246,
+        "avg_loss": -2.5,
+        "profit_factor": 1.5966029566045028
+      },
+      {
+        "strategy": "vwap_reversion",
+        "initial": 100,
+        "final": 137.59686700414147,
+        "pnl_pct": 37.59686700414147,
+        "trades": 402,
+        "win_rate": 44.527363184079604,
+        "avg_win": 4.923419536643373,
+        "avg_loss": -2.5,
+        "profit_factor": 1.5807929992092624
+      },
+      {
+        "strategy": "mean_reversion",
+        "initial": 100,
+        "final": 153.39196481117543,
+        "pnl_pct": 53.39196481117543,
+        "trades": 580,
+        "win_rate": 47.93103448275862,
+        "avg_win": 4.273642315179598,
+        "avg_loss": -2.5,
+        "profit_factor": 1.5736060445297058
+      },
+      {
+        "strategy": "bb_bounce",
+        "initial": 100,
+        "final": 176.25507739140505,
+        "pnl_pct": 76.25507739140505,
+        "trades": 1008,
+        "win_rate": 57.24206349206349,
+        "avg_win": 2.8609089406533905,
+        "avg_loss": -2.5,
+        "profit_factor": 1.5320134188000079
+      }
+    ]
+  },
+  "DOGE": {
+    "best_strategy": "bb_bounce",
+    "best_pf": 1.6923301414238259,
+    "best_pnl": 95.32914935909997,
+    "all_strategies": [
+      {
+        "strategy": "bb_bounce",
+        "initial": 100,
+        "final": 195.32914935909997,
+        "pnl_pct": 95.32914935909997,
+        "trades": 924,
+        "win_rate": 57.683982683982684,
+        "avg_win": 3.103663627095292,
+        "avg_loss": -2.5,
+        "profit_factor": 1.6923301414238259
+      },
+      {
+        "strategy": "vwap_reversion",
+        "initial": 100,
+        "final": 136.76331026935785,
+        "pnl_pct": 36.763310269357845,
+        "trades": 436,
+        "win_rate": 44.4954128440367,
+        "avg_win": 4.757513727396461,
+        "avg_loss": -2.5,
+        "profit_factor": 1.525549856388287
+      },
+      {
+        "strategy": "mean_reversion",
+        "initial": 100,
+        "final": 146.60595361785087,
+        "pnl_pct": 46.60595361785087,
+        "trades": 570,
+        "win_rate": 45.08771929824562,
+        "avg_win": 4.556386191802858,
+        "avg_loss": -2.5,
+        "profit_factor": 1.4964744425473928
+      },
+      {
+        "strategy": "adr_reversal",
+        "initial": 100,
+        "final": 150.67346043692675,
+        "pnl_pct": 50.673460436926746,
+        "trades": 694,
+        "win_rate": 48.559077809798275,
+        "avg_win": 3.8829553209700847,
+        "avg_loss": -2.5,
+        "profit_factor": 1.466169123996546
+      },
+      {
+        "strategy": "dual_rsi",
+        "initial": 100,
+        "final": 156.6875545702388,
+        "pnl_pct": 56.68755457023881,
+        "trades": 795,
+        "win_rate": 48.930817610062896,
+        "avg_win": 3.778727714607784,
+        "avg_loss": -2.5,
+        "profit_factor": 1.4482020502289934
+      }
+    ]
+  },
+  "DOT": {
+    "best_strategy": "vwap_reversion",
+    "best_pf": 1.8117925520864364,
+    "best_pnl": 57.34441443001731,
+    "all_strategies": [
+      {
+        "strategy": "vwap_reversion",
+        "initial": 100,
+        "final": 157.3444144300173,
+        "pnl_pct": 57.34441443001731,
+        "trades": 415,
+        "win_rate": 45.54216867469879,
+        "avg_win": 5.41620524830072,
+        "avg_loss": -2.5,
+        "profit_factor": 1.8117925520864364
+      },
+      {
+        "strategy": "mean_reversion",
+        "initial": 100,
+        "final": 174.10410607832458,
+        "pnl_pct": 74.10410607832458,
+        "trades": 581,
+        "win_rate": 45.955249569707405,
+        "avg_win": 5.040712526485926,
+        "avg_loss": -2.5,
+        "profit_factor": 1.7144843879894793
+      },
+      {
+        "strategy": "adr_reversal",
+        "initial": 100,
+        "final": 200.00995635765491,
+        "pnl_pct": 100.0099563576549,
+        "trades": 757,
+        "win_rate": 47.95244385733157,
+        "avg_win": 4.642857642312522,
+        "avg_loss": -2.5,
+        "profit_factor": 1.7110226641212627
+      },
+      {
+        "strategy": "dual_rsi",
+        "initial": 100,
+        "final": 209.08910727094576,
+        "pnl_pct": 109.08910727094576,
+        "trades": 829,
+        "win_rate": 47.4065138721351,
+        "avg_win": 4.666514884471108,
+        "avg_loss": -2.4966651951940424,
+        "profit_factor": 1.6847614223945326
+      },
+      {
+        "strategy": "bb_bounce",
+        "initial": 100,
+        "final": 185.14129917718697,
+        "pnl_pct": 85.14129917718697,
+        "trades": 977,
+        "win_rate": 54.8618219037871,
+        "avg_win": 3.2172646712640365,
+        "avg_loss": -2.4967030047723413,
+        "profit_factor": 1.5661959849804608
+      }
+    ]
+  },
+  "LINK": {
+    "best_strategy": "vwap_reversion",
+    "best_pf": 1.8327893467967264,
+    "best_pnl": 55.3356556737271,
+    "all_strategies": [
+      {
+        "strategy": "vwap_reversion",
+        "initial": 100,
+        "final": 155.3356556737271,
+        "pnl_pct": 55.3356556737271,
+        "trades": 404,
+        "win_rate": 47.02970297029702,
+        "avg_win": 5.160748950190778,
+        "avg_loss": -2.5,
+        "profit_factor": 1.8327893467967264
+      },
+      {
+        "strategy": "mean_reversion",
+        "initial": 100,
+        "final": 170.83093463419658,
+        "pnl_pct": 70.83093463419658,
+        "trades": 547,
+        "win_rate": 48.263254113345525,
+        "avg_win": 4.7305391247710675,
+        "avg_loss": -2.5,
+        "profit_factor": 1.7651764366636917
+      },
+      {
+        "strategy": "dual_rsi",
+        "initial": 100,
+        "final": 208.2051661015805,
+        "pnl_pct": 108.20516610158049,
+        "trades": 811,
+        "win_rate": 51.54130702836005,
+        "avg_win": 4.12113684690965,
+        "avg_loss": -2.5,
+        "profit_factor": 1.7533182717641063
+      },
+      {
+        "strategy": "adr_reversal",
+        "initial": 100,
+        "final": 182.08616777089682,
+        "pnl_pct": 82.08616777089682,
+        "trades": 704,
+        "win_rate": 50.42613636363637,
+        "avg_win": 4.162595899096119,
+        "avg_loss": -2.5,
+        "profit_factor": 1.6936636609502846
+      },
+      {
+        "strategy": "bb_bounce",
+        "initial": 100,
+        "final": 186.39487402294603,
+        "pnl_pct": 86.39487402294603,
+        "trades": 988,
+        "win_rate": 58.2995951417004,
+        "avg_win": 2.8763735094812746,
+        "avg_loss": -2.4939320388349513,
+        "profit_factor": 1.6124487994756347
+      }
+    ]
+  },
+  "ADA": {
+    "best_strategy": "vwap_reversion",
+    "best_pf": 1.993898959763151,
+    "best_pnl": 73.03528861674747,
+    "all_strategies": [
+      {
+        "strategy": "vwap_reversion",
+        "initial": 100,
+        "final": 173.03528861674747,
+        "pnl_pct": 73.03528861674747,
+        "trades": 433,
+        "win_rate": 48.49884526558891,
+        "avg_win": 5.293327000323604,
+        "avg_loss": -2.5,
+        "profit_factor": 1.993898959763151
+      },
+      {
+        "strategy": "bb_bounce",
+        "initial": 100,
+        "final": 197.00800897551318,
+        "pnl_pct": 97.00800897551318,
+        "trades": 946,
+        "win_rate": 55.81395348837209,
+        "avg_win": 3.2777488142016193,
+        "avg_loss": -2.5,
+        "profit_factor": 1.6561257166492382
+      },
+      {
+        "strategy": "dual_rsi",
+        "initial": 100,
+        "final": 196.47081100236832,
+        "pnl_pct": 96.47081100236832,
+        "trades": 843,
+        "win_rate": 50.5338078291815,
+        "avg_win": 4.04784212556098,
+        "avg_loss": -2.5,
+        "profit_factor": 1.654082249869522
+      },
+      {
+        "strategy": "adr_reversal",
+        "initial": 100,
+        "final": 177.5419086622873,
+        "pnl_pct": 77.54190866228731,
+        "trades": 739,
+        "win_rate": 49.93234100135318,
+        "avg_win": 4.078391913359074,
+        "avg_loss": -2.5,
+        "profit_factor": 1.626947693004863
+      },
+      {
+        "strategy": "mean_reversion",
+        "initial": 100,
+        "final": 151.21375684880903,
+        "pnl_pct": 51.21375684880902,
+        "trades": 590,
+        "win_rate": 45.593220338983045,
+        "avg_win": 4.538870734699268,
+        "avg_loss": -2.5,
+        "profit_factor": 1.5214407820985707
+      }
+    ]
+  },
+  "BNB": {
+    "best_strategy": "vwap_reversion",
+    "best_pf": 1.486254321653854,
+    "best_pnl": 26.381805251057827,
+    "all_strategies": [
+      {
+        "strategy": "vwap_reversion",
+        "initial": 100,
+        "final": 126.38180525105783,
+        "pnl_pct": 26.381805251057827,
+        "trades": 402,
+        "win_rate": 51.49253731343284,
+        "avg_win": 3.5002366270833476,
+        "avg_loss": -2.5,
+        "profit_factor": 1.486254321653854
+      },
+      {
+        "strategy": "dual_rsi",
+        "initial": 100,
+        "final": 140.4856811647927,
+        "pnl_pct": 40.48568116479271,
+        "trades": 732,
+        "win_rate": 56.4207650273224,
+        "avg_win": 2.7628209813355165,
+        "avg_loss": -2.5,
+        "profit_factor": 1.430777511337392
+      },
+      {
+        "strategy": "adr_reversal",
+        "initial": 100,
+        "final": 130.50327244518667,
+        "pnl_pct": 30.503272445186667,
+        "trades": 609,
+        "win_rate": 54.8440065681445,
+        "avg_win": 2.8650012049985856,
+        "avg_loss": -2.5,
+        "profit_factor": 1.3918696763193135
+      },
+      {
+        "strategy": "bb_bounce",
+        "initial": 100,
+        "final": 139.2194099688407,
+        "pnl_pct": 39.219409968840694,
+        "trades": 985,
+        "win_rate": 64.06091370558376,
+        "avg_win": 1.9337765068290824,
+        "avg_loss": -2.5,
+        "profit_factor": 1.3787717240781368
+      },
+      {
+        "strategy": "mean_reversion",
+        "initial": 100,
+        "final": 123.8190989677586,
+        "pnl_pct": 23.819098967758606,
+        "trades": 522,
+        "win_rate": 52.68199233716475,
+        "avg_win": 3.0329764527123726,
+        "avg_loss": -2.5,
+        "profit_factor": 1.3507182582929598
+      }
+    ]
+  },
+  "TRX": {
+    "best_strategy": "mean_reversion",
+    "best_pf": 1.1781700102223196,
+    "best_pnl": 5.645024737286803,
+    "all_strategies": [
+      {
+        "strategy": "mean_reversion",
+        "initial": 100,
+        "final": 105.6450247372868,
+        "pnl_pct": 5.645024737286803,
+        "trades": 416,
+        "win_rate": 69.95192307692307,
+        "avg_win": 1.265216935376202,
+        "avg_loss": -2.5,
+        "profit_factor": 1.1781700102223196
+      },
+      {
+        "strategy": "bb_bounce",
+        "initial": 100,
+        "final": 107.88828895818652,
+        "pnl_pct": 7.888288958186522,
+        "trades": 949,
+        "win_rate": 77.76606954689147,
+        "avg_win": 0.8176172093613374,
+        "avg_loss": -2.494506786482008,
+        "profit_factor": 1.1464080862489716
+      },
+      {
+        "strategy": "vwap_reversion",
+        "initial": 100,
+        "final": 103.16343493567616,
+        "pnl_pct": 3.1634349356761646,
+        "trades": 342,
+        "win_rate": 67.54385964912281,
+        "avg_win": 1.3390324128785447,
+        "avg_loss": -2.5,
+        "profit_factor": 1.1146540085583565
+      },
+      {
+        "strategy": "dual_rsi",
+        "initial": 100,
+        "final": 100.89034641475739,
+        "pnl_pct": 0.8903464147573885,
+        "trades": 519,
+        "win_rate": 68.78612716763006,
+        "avg_win": 1.1617549308354864,
+        "avg_loss": -2.5,
+        "profit_factor": 1.0240654575512813
+      },
+      {
+        "strategy": "adr_reversal",
+        "initial": 100,
+        "final": 100.54321625279287,
+        "pnl_pct": 0.5432162527928739,
+        "trades": 482,
+        "win_rate": 68.46473029045643,
+        "avg_win": 1.1704836843698316,
+        "avg_loss": -2.5,
+        "profit_factor": 1.0164726732685387
+      }
+    ]
+  },
+  "XRP": {
+    "best_strategy": "vwap_reversion",
+    "best_pf": 1.7563727237437854,
+    "best_pnl": 49.202497085893214,
+    "all_strategies": [
+      {
+        "strategy": "vwap_reversion",
+        "initial": 100,
+        "final": 149.2024970858932,
+        "pnl_pct": 49.202497085893214,
+        "trades": 425,
+        "win_rate": 49.64705882352941,
+        "avg_win": 4.453362119445144,
+        "avg_loss": -2.5,
+        "profit_factor": 1.7563727237437854
+      },
+      {
+        "strategy": "bb_bounce",
+        "initial": 100,
+        "final": 161.2092355690056,
+        "pnl_pct": 61.209235569005614,
+        "trades": 899,
+        "win_rate": 59.17686318131257,
+        "avg_win": 2.632928305958745,
+        "avg_loss": -2.5,
+        "profit_factor": 1.5266679659619111
+      },
+      {
+        "strategy": "mean_reversion",
+        "initial": 100,
+        "final": 137.28077965822405,
+        "pnl_pct": 37.28077965822405,
+        "trades": 558,
+        "win_rate": 48.2078853046595,
+        "avg_win": 3.879690685688609,
+        "avg_loss": -2.5,
+        "profit_factor": 1.4444799923186658
+      },
+      {
+        "strategy": "dual_rsi",
+        "initial": 100,
+        "final": 142.02481243905854,
+        "pnl_pct": 42.024812439058536,
+        "trades": 794,
+        "win_rate": 50.0,
+        "avg_win": 3.3975617529664772,
+        "avg_loss": -2.5,
+        "profit_factor": 1.35902470118659
+      },
+      {
+        "strategy": "adr_reversal",
+        "initial": 100,
+        "final": 131.50706086390355,
+        "pnl_pct": 31.507060863903547,
+        "trades": 709,
+        "win_rate": 49.50634696755994,
+        "avg_win": 3.343250744057226,
+        "avg_loss": -2.5,
+        "profit_factor": 1.311151967781102
+      }
+    ]
+  },
+  "UNI": {
+    "best_strategy": "vwap_reversion",
+    "best_pf": 2.135886608187037,
+    "best_pnl": 90.36207735618495,
+    "all_strategies": [
+      {
+        "strategy": "vwap_reversion",
+        "initial": 100,
+        "final": 190.36207735618495,
+        "pnl_pct": 90.36207735618495,
+        "trades": 431,
+        "win_rate": 46.8677494199536,
+        "avg_win": 6.053441005876624,
+        "avg_loss": -2.5,
+        "profit_factor": 2.135886608187037
+      },
+      {
+        "strategy": "mean_reversion",
+        "initial": 100,
+        "final": 189.70671091074513,
+        "pnl_pct": 89.70671091074513,
+        "trades": 584,
+        "win_rate": 45.034246575342465,
+        "avg_win": 5.51307199143112,
+        "avg_loss": -2.5,
+        "profit_factor": 1.8067762414285167
+      },
+      {
+        "strategy": "adr_reversal",
+        "initial": 100,
+        "final": 201.97559415428756,
+        "pnl_pct": 101.97559415428756,
+        "trades": 750,
+        "win_rate": 47.86666666666667,
+        "avg_win": 4.694128820449387,
+        "avg_loss": -2.493606138107417,
+        "profit_factor": 1.7284023041449537
+      },
+      {
+        "strategy": "dual_rsi",
+        "initial": 100,
+        "final": 214.239790937453,
+        "pnl_pct": 114.239790937453,
+        "trades": 853,
+        "win_rate": 47.24501758499414,
+        "avg_win": 4.695748027496523,
+        "avg_loss": -2.4944444444444445,
+        "profit_factor": 1.6858676659965235
+      },
+      {
+        "strategy": "bb_bounce",
+        "initial": 100,
+        "final": 204.3487830885426,
+        "pnl_pct": 104.3487830885426,
+        "trades": 951,
+        "win_rate": 52.05047318611987,
+        "avg_win": 3.7837740554706016,
+        "avg_loss": -2.5,
+        "profit_factor": 1.6429545240859191
+      }
+    ]
+  },
+  "SHIB": {
+    "best_strategy": "vwap_reversion",
+    "best_pf": 1.8541913643251005,
+    "best_pnl": 52.53493357958661,
+    "all_strategies": [
+      {
+        "strategy": "vwap_reversion",
+        "initial": 100,
+        "final": 152.5349335795866,
+        "pnl_pct": 52.53493357958661,
+        "trades": 392,
+        "win_rate": 48.97959183673469,
+        "avg_win": 4.828623344596618,
+        "avg_loss": -2.5,
+        "profit_factor": 1.8541913643251005
+      },
+      {
+        "strategy": "bb_bounce",
+        "initial": 100,
+        "final": 206.12986609476127,
+        "pnl_pct": 106.12986609476127,
+        "trades": 972,
+        "win_rate": 59.77366255144033,
+        "avg_win": 2.9350106702428187,
+        "avg_loss": -2.493606138107417,
+        "profit_factor": 1.7489653327293084
+      },
+      {
+        "strategy": "mean_reversion",
+        "initial": 100,
+        "final": 150.9491261152134,
+        "pnl_pct": 50.9491261152134,
+        "trades": 570,
+        "win_rate": 48.771929824561404,
+        "avg_win": 4.1259827814190055,
+        "avg_loss": -2.5,
+        "profit_factor": 1.5712646756636761
+      },
+      {
+        "strategy": "dual_rsi",
+        "initial": 100,
+        "final": 175.82274672895653,
+        "pnl_pct": 75.82274672895653,
+        "trades": 828,
+        "win_rate": 50.84541062801933,
+        "avg_win": 3.7709226902578674,
+        "avg_loss": -2.5,
+        "profit_factor": 1.5602540074678746
+      },
+      {
+        "strategy": "adr_reversal",
+        "initial": 100,
+        "final": 153.31444546344963,
+        "pnl_pct": 53.31444546344963,
+        "trades": 727,
+        "win_rate": 48.968363136176066,
+        "avg_win": 3.820218239706913,
+        "avg_loss": -2.5,
+        "profit_factor": 1.466304790658394
+      }
+    ]
+  },
+  "DASH": {
+    "best_strategy": "vwap_reversion",
+    "best_pf": 2.2393995799763853,
+    "best_pnl": 124.58312080475883,
+    "all_strategies": [
+      {
+        "strategy": "vwap_reversion",
+        "initial": 100,
+        "final": 224.58312080475883,
+        "pnl_pct": 124.58312080475883,
+        "trades": 429,
+        "win_rate": 38.22843822843823,
+        "avg_win": 9.046355010575336,
+        "avg_loss": -2.5,
+        "profit_factor": 2.2393995799763853
+      },
+      {
+        "strategy": "bb_bounce",
+        "initial": 100,
+        "final": 351.5885748525586,
+        "pnl_pct": 251.58857485255862,
+        "trades": 787,
+        "win_rate": 47.522236340533674,
+        "avg_win": 6.165360211651405,
+        "avg_loss": -2.5,
+        "profit_factor": 2.233263650515861
+      },
+      {
+        "strategy": "mean_reversion",
+        "initial": 100,
+        "final": 310.376587091095,
+        "pnl_pct": 210.37658709109502,
+        "trades": 612,
+        "win_rate": 38.23529411764706,
+        "avg_win": 8.947308960523674,
+        "avg_loss": -2.5,
+        "profit_factor": 2.2155241235582435
+      },
+      {
+        "strategy": "adr_reversal",
+        "initial": 100,
+        "final": 448.77215828525397,
+        "pnl_pct": 348.77215828525397,
+        "trades": 900,
+        "win_rate": 39.88888888888889,
+        "avg_win": 8.008005036253003,
+        "avg_loss": -2.5,
+        "profit_factor": 2.1255998580516295
+      },
+      {
+        "strategy": "dual_rsi",
+        "initial": 100,
+        "final": 353.1652457064114,
+        "pnl_pct": 253.16524570641138,
+        "trades": 949,
+        "win_rate": 36.986301369863014,
+        "avg_win": 7.909333717941973,
+        "avg_loss": -2.5,
+        "profit_factor": 1.856974003342897
+      }
+    ]
+  },
+  "ALGO": {
+    "best_strategy": "adr_reversal",
+    "best_pf": 1.5544418823922388,
+    "best_pnl": 69.2562834938517,
+    "all_strategies": [
+      {
+        "strategy": "adr_reversal",
+        "initial": 100,
+        "final": 169.2562834938517,
+        "pnl_pct": 69.2562834938517,
+        "trades": 740,
+        "win_rate": 48.10810810810811,
+        "avg_win": 4.191753390720646,
+        "avg_loss": -2.5,
+        "profit_factor": 1.5544418823922388
+      },
+      {
+        "strategy": "dual_rsi",
+        "initial": 100,
+        "final": 179.98861330521706,
+        "pnl_pct": 79.98861330521706,
+        "trades": 815,
+        "win_rate": 47.36196319018405,
+        "avg_win": 4.317672173531755,
+        "avg_loss": -2.5,
+        "profit_factor": 1.5539594023153913
+      },
+      {
+        "strategy": "mean_reversion",
+        "initial": 100,
+        "final": 153.40693614354993,
+        "pnl_pct": 53.406936143549935,
+        "trades": 589,
+        "win_rate": 44.14261460101868,
+        "avg_win": 4.830528227058623,
+        "avg_loss": -2.5,
+        "profit_factor": 1.5269754881887436
+      },
+      {
+        "strategy": "vwap_reversion",
+        "initial": 100,
+        "final": 132.4655459666401,
+        "pnl_pct": 32.46554596664009,
+        "trades": 394,
+        "win_rate": 41.370558375634516,
+        "avg_win": 5.294125935360802,
+        "avg_loss": -2.5,
+        "profit_factor": 1.4942727748291105
+      },
+      {
+        "strategy": "bb_bounce",
+        "initial": 100,
+        "final": 170.8080914114021,
+        "pnl_pct": 70.8080914114021,
+        "trades": 997,
+        "win_rate": 54.56369107321966,
+        "avg_win": 3.0781439974771194,
+        "avg_loss": -2.5,
+        "profit_factor": 1.4785963219669342
+      }
+    ]
+  }
+}

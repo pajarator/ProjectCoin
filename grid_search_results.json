@@ -1,0 +1,1697 @@
+{
+  "total_combinations": 120,
+  "top_10": [
+    {
+      "params": {
+        "STOP_LOSS": 0.005,
+        "MIN_HOLD_CANDLES": 2,
+        "RISK": 0.05
+      },
+      "pnl": 21.448412355956272,
+      "win_rate": 50.39731591029489,
+      "avg_win": 4.026094208097295,
+      "avg_loss": -2.5,
+      "profit_factor": 1.6362367917279668,
+      "total_trades": 11326
+    },
+    {
+      "params": {
+        "STOP_LOSS": 0.005,
+        "MIN_HOLD_CANDLES": 2,
+        "RISK": 0.1
+      },
+      "pnl": 59.37374234778231,
+      "win_rate": 50.39731591029489,
+      "avg_win": 4.026094208097295,
+      "avg_loss": -2.5,
+      "profit_factor": 1.6362367917279668,
+      "total_trades": 11326
+    },
+    {
+      "params": {
+        "STOP_LOSS": 0.005,
+        "MIN_HOLD_CANDLES": 2,
+        "RISK": 0.15
+      },
+      "pnl": 116.66221475607381,
+      "win_rate": 50.39731591029489,
+      "avg_win": 4.026094208097295,
+      "avg_loss": -2.5,
+      "profit_factor": 1.6362367917279668,
+      "total_trades": 11326
+    },
+    {
+      "params": {
+        "STOP_LOSS": 0.005,
+        "MIN_HOLD_CANDLES": 2,
+        "RISK": 0.2
+      },
+      "pnl": 208.09731222628233,
+      "win_rate": 50.39731591029489,
+      "avg_win": 4.026094208097295,
+      "avg_loss": -2.5,
+      "profit_factor": 1.6362367917279668,
+      "total_trades": 11326
+    },
+    {
+      "params": {
+        "STOP_LOSS": 0.005,
+        "MIN_HOLD_CANDLES": 4,
+        "RISK": 0.05
+      },
+      "pnl": 21.057446183827825,
+      "win_rate": 48.57194668600961,
+      "avg_win": 4.3071005222543475,
+      "avg_loss": -2.5,
+      "profit_factor": 1.6271606133791627,
+      "total_trades": 11029
+    },
+    {
+      "params": {
+        "STOP_LOSS": 0.005,
+        "MIN_HOLD_CANDLES": 4,
+        "RISK": 0.1
+      },
+      "pnl": 57.37524112176025,
+      "win_rate": 48.57194668600961,
+      "avg_win": 4.3071005222543475,
+      "avg_loss": -2.5,
+      "profit_factor": 1.6271606133791627,
+      "total_trades": 11029
+    },
+    {
+      "params": {
+        "STOP_LOSS": 0.005,
+        "MIN_HOLD_CANDLES": 4,
+        "RISK": 0.15
+      },
+      "pnl": 109.89818307322243,
+      "win_rate": 48.57194668600961,
+      "avg_win": 4.3071005222543475,
+      "avg_loss": -2.5,
+      "profit_factor": 1.6271606133791627,
+      "total_trades": 11029
+    },
+    {
+      "params": {
+        "STOP_LOSS": 0.005,
+        "MIN_HOLD_CANDLES": 4,
+        "RISK": 0.2
+      },
+      "pnl": 188.96156147545125,
+      "win_rate": 48.57194668600961,
+      "avg_win": 4.3071005222543475,
+      "avg_loss": -2.5,
+      "profit_factor": 1.6271606133791627,
+      "total_trades": 11029
+    },
+    {
+      "params": {
+        "STOP_LOSS": 0.005,
+        "MIN_HOLD_CANDLES": 6,
+        "RISK": 0.05
+      },
+      "pnl": 20.45929188780742,
+      "win_rate": 46.568581804637304,
+      "avg_win": 4.6240482721647815,
+      "avg_loss": -2.499640554292437,
+      "profit_factor": 1.6122823799686428,
+      "total_trades": 10739
+    },
+    {
+      "params": {
+        "STOP_LOSS": 0.005,
+        "MIN_HOLD_CANDLES": 6,
+        "RISK": 0.1
+      },
+      "pnl": 54.980449038801616,
+      "win_rate": 46.568581804637304,
+      "avg_win": 4.6240482721647815,
+      "avg_loss": -2.499640554292437,
+      "profit_factor": 1.6122823799686428,
+      "total_trades": 10739
+    }
+  ],
+  "all_results": [
+    {
+      "params": {
+        "STOP_LOSS": 0.005,
+        "MIN_HOLD_CANDLES": 2,
+        "RISK": 0.05
+      },
+      "pnl": 21.448412355956272,
+      "win_rate": 50.39731591029489,
+      "avg_win": 4.026094208097295,
+      "avg_loss": -2.5,
+      "profit_factor": 1.6362367917279668,
+      "total_trades": 11326
+    },
+    {
+      "params": {
+        "STOP_LOSS": 0.005,
+        "MIN_HOLD_CANDLES": 2,
+        "RISK": 0.1
+      },
+      "pnl": 59.37374234778231,
+      "win_rate": 50.39731591029489,
+      "avg_win": 4.026094208097295,
+      "avg_loss": -2.5,
+      "profit_factor": 1.6362367917279668,
+      "total_trades": 11326
+    },
+    {
+      "params": {
+        "STOP_LOSS": 0.005,
+        "MIN_HOLD_CANDLES": 2,
+        "RISK": 0.15
+      },
+      "pnl": 116.66221475607381,
+      "win_rate": 50.39731591029489,
+      "avg_win": 4.026094208097295,
+      "avg_loss": -2.5,
+      "profit_factor": 1.6362367917279668,
+      "total_trades": 11326
+    },
+    {
+      "params": {
+        "STOP_LOSS": 0.005,
+        "MIN_HOLD_CANDLES": 2,
+        "RISK": 0.2
+      },
+      "pnl": 208.09731222628233,
+      "win_rate": 50.39731591029489,
+      "avg_win": 4.026094208097295,
+      "avg_loss": -2.5,
+      "profit_factor": 1.6362367917279668,
+      "total_trades": 11326
+    },
+    {
+      "params": {
+        "STOP_LOSS": 0.005,
+        "MIN_HOLD_CANDLES": 4,
+        "RISK": 0.05
+      },
+      "pnl": 21.057446183827825,
+      "win_rate": 48.57194668600961,
+      "avg_win": 4.3071005222543475,
+      "avg_loss": -2.5,
+      "profit_factor": 1.6271606133791627,
+      "total_trades": 11029
+    },
+    {
+      "params": {
+        "STOP_LOSS": 0.005,
+        "MIN_HOLD_CANDLES": 4,
+        "RISK": 0.1
+      },
+      "pnl": 57.37524112176025,
+      "win_rate": 48.57194668600961,
+      "avg_win": 4.3071005222543475,
+      "avg_loss": -2.5,
+      "profit_factor": 1.6271606133791627,
+      "total_trades": 11029
+    },
+    {
+      "params": {
+        "STOP_LOSS": 0.005,
+        "MIN_HOLD_CANDLES": 4,
+        "RISK": 0.15
+      },
+      "pnl": 109.89818307322243,
+      "win_rate": 48.57194668600961,
+      "avg_win": 4.3071005222543475,
+      "avg_loss": -2.5,
+      "profit_factor": 1.6271606133791627,
+      "total_trades": 11029
+    },
+    {
+      "params": {
+        "STOP_LOSS": 0.005,
+        "MIN_HOLD_CANDLES": 4,
+        "RISK": 0.2
+      },
+      "pnl": 188.96156147545125,
+      "win_rate": 48.57194668600961,
+      "avg_win": 4.3071005222543475,
+      "avg_loss": -2.5,
+      "profit_factor": 1.6271606133791627,
+      "total_trades": 11029
+    },
+    {
+      "params": {
+        "STOP_LOSS": 0.005,
+        "MIN_HOLD_CANDLES": 6,
+        "RISK": 0.05
+      },
+      "pnl": 20.45929188780742,
+      "win_rate": 46.568581804637304,
+      "avg_win": 4.6240482721647815,
+      "avg_loss": -2.499640554292437,
+      "profit_factor": 1.6122823799686428,
+      "total_trades": 10739
+    },
+    {
+      "params": {
+        "STOP_LOSS": 0.005,
+        "MIN_HOLD_CANDLES": 6,
+        "RISK": 0.1
+      },
+      "pnl": 54.980449038801616,
+      "win_rate": 46.568581804637304,
+      "avg_win": 4.6240482721647815,
+      "avg_loss": -2.499640554292437,
+      "profit_factor": 1.6122823799686428,
+      "total_trades": 10739
+    },
+    {
+      "params": {
+        "STOP_LOSS": 0.005,
+        "MIN_HOLD_CANDLES": 6,
+        "RISK": 0.15
+      },
+      "pnl": 102.97334998256457,
+      "win_rate": 46.568581804637304,
+      "avg_win": 4.6240482721647815,
+      "avg_loss": -2.499640554292437,
+      "profit_factor": 1.6122823799686428,
+      "total_trades": 10739
+    },
+    {
+      "params": {
+        "STOP_LOSS": 0.005,
+        "MIN_HOLD_CANDLES": 6,
+        "RISK": 0.2
+      },
+      "pnl": 171.5499219145034,
+      "win_rate": 46.568581804637304,
+      "avg_win": 4.6240482721647815,
+      "avg_loss": -2.499640554292437,
+      "profit_factor": 1.6122823799686428,
+      "total_trades": 10739
+    },
+    {
+      "params": {
+        "STOP_LOSS": 0.005,
+        "MIN_HOLD_CANDLES": 8,
+        "RISK": 0.05
+      },
+      "pnl": 20.14071845141368,
+      "win_rate": 44.91120870727516,
+      "avg_win": 4.913106721140766,
+      "avg_loss": -2.4996425477521673,
+      "profit_factor": 1.6023957682266052,
+      "total_trades": 10474
+    },
+    {
+      "params": {
+        "STOP_LOSS": 0.005,
+        "MIN_HOLD_CANDLES": 8,
+        "RISK": 0.1
+      },
+      "pnl": 54.11570552947773,
+      "win_rate": 44.91120870727516,
+      "avg_win": 4.913106721140766,
+      "avg_loss": -2.4996425477521673,
+      "profit_factor": 1.6023957682266052,
+      "total_trades": 10474
+    },
+    {
+      "params": {
+        "STOP_LOSS": 0.005,
+        "MIN_HOLD_CANDLES": 8,
+        "RISK": 0.15
+      },
+      "pnl": 101.21684442132361,
+      "win_rate": 44.91120870727516,
+      "avg_win": 4.913106721140766,
+      "avg_loss": -2.4996425477521673,
+      "profit_factor": 1.6023957682266052,
+      "total_trades": 10474
+    },
+    {
+      "params": {
+        "STOP_LOSS": 0.005,
+        "MIN_HOLD_CANDLES": 8,
+        "RISK": 0.2
+      },
+      "pnl": 168.3813745990257,
+      "win_rate": 44.91120870727516,
+      "avg_win": 4.913106721140766,
+      "avg_loss": -2.4996425477521673,
+      "profit_factor": 1.6023957682266052,
+      "total_trades": 10474
+    },
+    {
+      "params": {
+        "STOP_LOSS": 0.005,
+        "MIN_HOLD_CANDLES": 12,
+        "RISK": 0.05
+      },
+      "pnl": 17.154288974797876,
+      "win_rate": 41.3013013013013,
+      "avg_win": 5.443203762200538,
+      "avg_loss": -2.4993409510975813,
+      "profit_factor": 1.532372498347474,
+      "total_trades": 9990
+    },
+    {
+      "params": {
+        "STOP_LOSS": 0.005,
+        "MIN_HOLD_CANDLES": 12,
+        "RISK": 0.1
+      },
+      "pnl": 45.820171129288816,
+      "win_rate": 41.3013013013013,
+      "avg_win": 5.443203762200538,
+      "avg_loss": -2.4993409510975813,
+      "profit_factor": 1.532372498347474,
+      "total_trades": 9990
+    },
+    {
+      "params": {
+        "STOP_LOSS": 0.005,
+        "MIN_HOLD_CANDLES": 12,
+        "RISK": 0.15
+      },
+      "pnl": 83.39740567369334,
+      "win_rate": 41.3013013013013,
+      "avg_win": 5.443203762200538,
+      "avg_loss": -2.4993409510975813,
+      "profit_factor": 1.532372498347474,
+      "total_trades": 9990
+    },
+    {
+      "params": {
+        "STOP_LOSS": 0.005,
+        "MIN_HOLD_CANDLES": 12,
+        "RISK": 0.2
+      },
+      "pnl": 133.33843302857144,
+      "win_rate": 41.3013013013013,
+      "avg_win": 5.443203762200538,
+      "avg_loss": -2.4993409510975813,
+      "profit_factor": 1.532372498347474,
+      "total_trades": 9990
+    },
+    {
+      "params": {
+        "STOP_LOSS": 0.005,
+        "MIN_HOLD_CANDLES": 16,
+        "RISK": 0.05
+      },
+      "pnl": 14.685380077139529,
+      "win_rate": 37.6804015896256,
+      "avg_win": 6.08087045239702,
+      "avg_loss": -2.4993514578345724,
+      "profit_factor": 1.471056309886268,
+      "total_trades": 9562
+    },
+    {
+      "params": {
+        "STOP_LOSS": 0.005,
+        "MIN_HOLD_CANDLES": 16,
+        "RISK": 0.1
+      },
+      "pnl": 39.54657155970251,
+      "win_rate": 37.6804015896256,
+      "avg_win": 6.08087045239702,
+      "avg_loss": -2.4993514578345724,
+      "profit_factor": 1.471056309886268,
+      "total_trades": 9562
+    },
+    {
+      "params": {
+        "STOP_LOSS": 0.005,
+        "MIN_HOLD_CANDLES": 16,
+        "RISK": 0.15
+      },
+      "pnl": 71.27296814896835,
+      "win_rate": 37.6804015896256,
+      "avg_win": 6.08087045239702,
+      "avg_loss": -2.4993514578345724,
+      "profit_factor": 1.471056309886268,
+      "total_trades": 9562
+    },
+    {
+      "params": {
+        "STOP_LOSS": 0.005,
+        "MIN_HOLD_CANDLES": 16,
+        "RISK": 0.2
+      },
+      "pnl": 112.18854816707675,
+      "win_rate": 37.6804015896256,
+      "avg_win": 6.08087045239702,
+      "avg_loss": -2.4993514578345724,
+      "profit_factor": 1.471056309886268,
+      "total_trades": 9562
+    },
+    {
+      "params": {
+        "STOP_LOSS": 0.01,
+        "MIN_HOLD_CANDLES": 2,
+        "RISK": 0.05
+      },
+      "pnl": 12.442786497032648,
+      "win_rate": 64.07877100732034,
+      "avg_win": 3.8057991991758997,
+      "avg_loss": -4.999134086211254,
+      "profit_factor": 1.3580447205198667,
+      "total_trades": 9699
+    },
+    {
+      "params": {
+        "STOP_LOSS": 0.01,
+        "MIN_HOLD_CANDLES": 2,
+        "RISK": 0.1
+      },
+      "pnl": 34.40455907333232,
+      "win_rate": 64.07877100732034,
+      "avg_win": 3.8057991991758997,
+      "avg_loss": -4.999134086211254,
+      "profit_factor": 1.3580447205198667,
+      "total_trades": 9699
+    },
+    {
+      "params": {
+        "STOP_LOSS": 0.01,
+        "MIN_HOLD_CANDLES": 2,
+        "RISK": 0.15
+      },
+      "pnl": 62.48180441290765,
+      "win_rate": 64.07877100732034,
+      "avg_win": 3.8057991991758997,
+      "avg_loss": -4.999134086211254,
+      "profit_factor": 1.3580447205198667,
+      "total_trades": 9699
+    },
+    {
+      "params": {
+        "STOP_LOSS": 0.01,
+        "MIN_HOLD_CANDLES": 2,
+        "RISK": 0.2
+      },
+      "pnl": 98.94518285524879,
+      "win_rate": 64.07877100732034,
+      "avg_win": 3.8057991991758997,
+      "avg_loss": -4.999134086211254,
+      "profit_factor": 1.3580447205198667,
+      "total_trades": 9699
+    },
+    {
+      "params": {
+        "STOP_LOSS": 0.01,
+        "MIN_HOLD_CANDLES": 4,
+        "RISK": 0.05
+      },
+      "pnl": 11.555498122559243,
+      "win_rate": 62.57570927637871,
+      "avg_win": 4.007898728398837,
+      "avg_loss": -4.999143428835891,
+      "profit_factor": 1.340520144873031,
+      "total_trades": 9411
+    },
+    {
+      "params": {
+        "STOP_LOSS": 0.01,
+        "MIN_HOLD_CANDLES": 4,
+        "RISK": 0.1
+      },
+      "pnl": 31.788942492382326,
+      "win_rate": 62.57570927637871,
+      "avg_win": 4.007898728398837,
+      "avg_loss": -4.999143428835891,
+      "profit_factor": 1.340520144873031,
+      "total_trades": 9411
+    },
+    {
+      "params": {
+        "STOP_LOSS": 0.01,
+        "MIN_HOLD_CANDLES": 4,
+        "RISK": 0.15
+      },
+      "pnl": 56.70227640890755,
+      "win_rate": 62.57570927637871,
+      "avg_win": 4.007898728398837,
+      "avg_loss": -4.999143428835891,
+      "profit_factor": 1.340520144873031,
+      "total_trades": 9411
+    },
+    {
+      "params": {
+        "STOP_LOSS": 0.01,
+        "MIN_HOLD_CANDLES": 4,
+        "RISK": 0.2
+      },
+      "pnl": 87.6034651582449,
+      "win_rate": 62.57570927637871,
+      "avg_win": 4.007898728398837,
+      "avg_loss": -4.999143428835891,
+      "profit_factor": 1.340520144873031,
+      "total_trades": 9411
+    },
+    {
+      "params": {
+        "STOP_LOSS": 0.01,
+        "MIN_HOLD_CANDLES": 6,
+        "RISK": 0.05
+      },
+      "pnl": 11.235940810127522,
+      "win_rate": 61.139046786182774,
+      "avg_win": 4.231045427190839,
+      "avg_loss": -4.997867976621663,
+      "profit_factor": 1.3318892782054756,
+      "total_trades": 9148
+    },
+    {
+      "params": {
+        "STOP_LOSS": 0.01,
+        "MIN_HOLD_CANDLES": 6,
+        "RISK": 0.1
+      },
+      "pnl": 30.966252507050534,
+      "win_rate": 61.139046786182774,
+      "avg_win": 4.231045427190839,
+      "avg_loss": -4.997867976621663,
+      "profit_factor": 1.3318892782054756,
+      "total_trades": 9148
+    },
+    {
+      "params": {
+        "STOP_LOSS": 0.01,
+        "MIN_HOLD_CANDLES": 6,
+        "RISK": 0.15
+      },
+      "pnl": 55.11854950909758,
+      "win_rate": 61.139046786182774,
+      "avg_win": 4.231045427190839,
+      "avg_loss": -4.997867976621663,
+      "profit_factor": 1.3318892782054756,
+      "total_trades": 9148
+    },
+    {
+      "params": {
+        "STOP_LOSS": 0.01,
+        "MIN_HOLD_CANDLES": 6,
+        "RISK": 0.2
+      },
+      "pnl": 84.8951781803097,
+      "win_rate": 61.139046786182774,
+      "avg_win": 4.231045427190839,
+      "avg_loss": -4.997867976621663,
+      "profit_factor": 1.3318892782054756,
+      "total_trades": 9148
+    },
+    {
+      "params": {
+        "STOP_LOSS": 0.01,
+        "MIN_HOLD_CANDLES": 8,
+        "RISK": 0.05
+      },
+      "pnl": 11.046589294611204,
+      "win_rate": 59.79520648137729,
+      "avg_win": 4.458711252131229,
+      "avg_loss": -4.997878717293594,
+      "profit_factor": 1.3268204881920314,
+      "total_trades": 8887
+    },
+    {
+      "params": {
+        "STOP_LOSS": 0.01,
+        "MIN_HOLD_CANDLES": 8,
+        "RISK": 0.1
+      },
+      "pnl": 30.477886028204214,
+      "win_rate": 59.79520648137729,
+      "avg_win": 4.458711252131229,
+      "avg_loss": -4.997878717293594,
+      "profit_factor": 1.3268204881920314,
+      "total_trades": 8887
+    },
+    {
+      "params": {
+        "STOP_LOSS": 0.01,
+        "MIN_HOLD_CANDLES": 8,
+        "RISK": 0.15
+      },
+      "pnl": 54.14549953058856,
+      "win_rate": 59.79520648137729,
+      "avg_win": 4.458711252131229,
+      "avg_loss": -4.997878717293594,
+      "profit_factor": 1.3268204881920314,
+      "total_trades": 8887
+    },
+    {
+      "params": {
+        "STOP_LOSS": 0.01,
+        "MIN_HOLD_CANDLES": 8,
+        "RISK": 0.2
+      },
+      "pnl": 83.12946160456966,
+      "win_rate": 59.79520648137729,
+      "avg_win": 4.458711252131229,
+      "avg_loss": -4.997878717293594,
+      "profit_factor": 1.3268204881920314,
+      "total_trades": 8887
+    },
+    {
+      "params": {
+        "STOP_LOSS": 0.01,
+        "MIN_HOLD_CANDLES": 12,
+        "RISK": 0.05
+      },
+      "pnl": 8.223316221588675,
+      "win_rate": 56.46582519647535,
+      "avg_win": 4.890756178541061,
+      "avg_loss": -4.997926875516962,
+      "profit_factor": 1.2692333563312888,
+      "total_trades": 8398
+    },
+    {
+      "params": {
+        "STOP_LOSS": 0.01,
+        "MIN_HOLD_CANDLES": 12,
+        "RISK": 0.1
+      },
+      "pnl": 23.465747084044278,
+      "win_rate": 56.46582519647535,
+      "avg_win": 4.890756178541061,
+      "avg_loss": -4.997926875516962,
+      "profit_factor": 1.2692333563312888,
+      "total_trades": 8398
+    },
+    {
+      "params": {
+        "STOP_LOSS": 0.01,
+        "MIN_HOLD_CANDLES": 12,
+        "RISK": 0.15
+      },
+      "pnl": 40.99878171356022,
+      "win_rate": 56.46582519647535,
+      "avg_win": 4.890756178541061,
+      "avg_loss": -4.997926875516962,
+      "profit_factor": 1.2692333563312888,
+      "total_trades": 8398
+    },
+    {
+      "params": {
+        "STOP_LOSS": 0.01,
+        "MIN_HOLD_CANDLES": 12,
+        "RISK": 0.2
+      },
+      "pnl": 61.11351190849975,
+      "win_rate": 56.46582519647535,
+      "avg_win": 4.890756178541061,
+      "avg_loss": -4.997926875516962,
+      "profit_factor": 1.2692333563312888,
+      "total_trades": 8398
+    },
+    {
+      "params": {
+        "STOP_LOSS": 0.01,
+        "MIN_HOLD_CANDLES": 16,
+        "RISK": 0.05
+      },
+      "pnl": 5.841818143035335,
+      "win_rate": 52.948572865585305,
+      "avg_win": 5.399294405721926,
+      "avg_loss": -4.997974520815076,
+      "profit_factor": 1.21569443654444,
+      "total_trades": 7953
+    },
+    {
+      "params": {
+        "STOP_LOSS": 0.01,
+        "MIN_HOLD_CANDLES": 16,
+        "RISK": 0.1
+      },
+      "pnl": 18.36311079094694,
+      "win_rate": 52.948572865585305,
+      "avg_win": 5.399294405721926,
+      "avg_loss": -4.997974520815076,
+      "profit_factor": 1.21569443654444,
+      "total_trades": 7953
+    },
+    {
+      "params": {
+        "STOP_LOSS": 0.01,
+        "MIN_HOLD_CANDLES": 16,
+        "RISK": 0.15
+      },
+      "pnl": 32.83499835583545,
+      "win_rate": 52.948572865585305,
+      "avg_win": 5.399294405721926,
+      "avg_loss": -4.997974520815076,
+      "profit_factor": 1.21569443654444,
+      "total_trades": 7953
+    },
+    {
+      "params": {
+        "STOP_LOSS": 0.01,
+        "MIN_HOLD_CANDLES": 16,
+        "RISK": 0.2
+      },
+      "pnl": 49.55630674380859,
+      "win_rate": 52.948572865585305,
+      "avg_win": 5.399294405721926,
+      "avg_loss": -4.997974520815076,
+      "profit_factor": 1.21569443654444,
+      "total_trades": 7953
+    },
+    {
+      "params": {
+        "STOP_LOSS": 0.015,
+        "MIN_HOLD_CANDLES": 2,
+        "RISK": 0.05
+      },
+      "pnl": 5.551272996974535,
+      "win_rate": 71.16052814454483,
+      "avg_win": 3.679705356236839,
+      "avg_loss": -7.49178185200921,
+      "profit_factor": 1.2119362671486043,
+      "total_trades": 8634
+    },
+    {
+      "params": {
+        "STOP_LOSS": 0.015,
+        "MIN_HOLD_CANDLES": 2,
+        "RISK": 0.1
+      },
+      "pnl": 17.59384030245576,
+      "win_rate": 71.16052814454483,
+      "avg_win": 3.679705356236839,
+      "avg_loss": -7.49178185200921,
+      "profit_factor": 1.2119362671486043,
+      "total_trades": 8634
+    },
+    {
+      "params": {
+        "STOP_LOSS": 0.015,
+        "MIN_HOLD_CANDLES": 2,
+        "RISK": 0.15
+      },
+      "pnl": 31.396063500204946,
+      "win_rate": 71.16052814454483,
+      "avg_win": 3.679705356236839,
+      "avg_loss": -7.49178185200921,
+      "profit_factor": 1.2119362671486043,
+      "total_trades": 8634
+    },
+    {
+      "params": {
+        "STOP_LOSS": 0.015,
+        "MIN_HOLD_CANDLES": 2,
+        "RISK": 0.2
+      },
+      "pnl": 47.27466649228786,
+      "win_rate": 71.16052814454483,
+      "avg_win": 3.679705356236839,
+      "avg_loss": -7.49178185200921,
+      "profit_factor": 1.2119362671486043,
+      "total_trades": 8634
+    },
+    {
+      "params": {
+        "STOP_LOSS": 0.015,
+        "MIN_HOLD_CANDLES": 4,
+        "RISK": 0.05
+      },
+      "pnl": 5.023738587726143,
+      "win_rate": 69.88269092650228,
+      "avg_win": 3.876015970258932,
+      "avg_loss": -7.491866777226921,
+      "profit_factor": 1.2004635159290893,
+      "total_trades": 8354
+    },
+    {
+      "params": {
+        "STOP_LOSS": 0.015,
+        "MIN_HOLD_CANDLES": 4,
+        "RISK": 0.1
+      },
+      "pnl": 16.3171244386426,
+      "win_rate": 69.88269092650228,
+      "avg_win": 3.876015970258932,
+      "avg_loss": -7.491866777226921,
+      "profit_factor": 1.2004635159290893,
+      "total_trades": 8354
+    },
+    {
+      "params": {
+        "STOP_LOSS": 0.015,
+        "MIN_HOLD_CANDLES": 4,
+        "RISK": 0.15
+      },
+      "pnl": 29.072523507714255,
+      "win_rate": 69.88269092650228,
+      "avg_win": 3.876015970258932,
+      "avg_loss": -7.491866777226921,
+      "profit_factor": 1.2004635159290893,
+      "total_trades": 8354
+    },
+    {
+      "params": {
+        "STOP_LOSS": 0.015,
+        "MIN_HOLD_CANDLES": 4,
+        "RISK": 0.2
+      },
+      "pnl": 43.50821065626337,
+      "win_rate": 69.88269092650228,
+      "avg_win": 3.876015970258932,
+      "avg_loss": -7.491866777226921,
+      "profit_factor": 1.2004635159290893,
+      "total_trades": 8354
+    },
+    {
+      "params": {
+        "STOP_LOSS": 0.015,
+        "MIN_HOLD_CANDLES": 6,
+        "RISK": 0.05
+      },
+      "pnl": 4.190677365817874,
+      "win_rate": 68.63905325443787,
+      "avg_win": 4.052746610855819,
+      "avg_loss": -7.4919562938297695,
+      "profit_factor": 1.183958107293885,
+      "total_trades": 8112
+    },
+    {
+      "params": {
+        "STOP_LOSS": 0.015,
+        "MIN_HOLD_CANDLES": 6,
+        "RISK": 0.1
+      },
+      "pnl": 14.281026072162398,
+      "win_rate": 68.63905325443787,
+      "avg_win": 4.052746610855819,
+      "avg_loss": -7.4919562938297695,
+      "profit_factor": 1.183958107293885,
+      "total_trades": 8112
+    },
+    {
+      "params": {
+        "STOP_LOSS": 0.015,
+        "MIN_HOLD_CANDLES": 6,
+        "RISK": 0.15
+      },
+      "pnl": 25.344780745050503,
+      "win_rate": 68.63905325443787,
+      "avg_win": 4.052746610855819,
+      "avg_loss": -7.4919562938297695,
+      "profit_factor": 1.183958107293885,
+      "total_trades": 8112
+    },
+    {
+      "params": {
+        "STOP_LOSS": 0.015,
+        "MIN_HOLD_CANDLES": 6,
+        "RISK": 0.2
+      },
+      "pnl": 37.45306731788698,
+      "win_rate": 68.63905325443787,
+      "avg_win": 4.052746610855819,
+      "avg_loss": -7.4919562938297695,
+      "profit_factor": 1.183958107293885,
+      "total_trades": 8112
+    },
+    {
+      "params": {
+        "STOP_LOSS": 0.015,
+        "MIN_HOLD_CANDLES": 8,
+        "RISK": 0.05
+      },
+      "pnl": 4.1266375983836046,
+      "win_rate": 67.3791348600509,
+      "avg_win": 4.281828767333333,
+      "avg_loss": -7.492019037247634,
+      "profit_factor": 1.1804847443389819,
+      "total_trades": 7860
+    },
+    {
+      "params": {
+        "STOP_LOSS": 0.015,
+        "MIN_HOLD_CANDLES": 8,
+        "RISK": 0.1
+      },
+      "pnl": 14.247350711184096,
+      "win_rate": 67.3791348600509,
+      "avg_win": 4.281828767333333,
+      "avg_loss": -7.492019037247634,
+      "profit_factor": 1.1804847443389819,
+      "total_trades": 7860
+    },
+    {
+      "params": {
+        "STOP_LOSS": 0.015,
+        "MIN_HOLD_CANDLES": 8,
+        "RISK": 0.15
+      },
+      "pnl": 25.483233890466455,
+      "win_rate": 67.3791348600509,
+      "avg_win": 4.281828767333333,
+      "avg_loss": -7.492019037247634,
+      "profit_factor": 1.1804847443389819,
+      "total_trades": 7860
+    },
+    {
+      "params": {
+        "STOP_LOSS": 0.015,
+        "MIN_HOLD_CANDLES": 8,
+        "RISK": 0.2
+      },
+      "pnl": 37.96233972091381,
+      "win_rate": 67.3791348600509,
+      "avg_win": 4.281828767333333,
+      "avg_loss": -7.492019037247634,
+      "profit_factor": 1.1804847443389819,
+      "total_trades": 7860
+    },
+    {
+      "params": {
+        "STOP_LOSS": 0.02,
+        "MIN_HOLD_CANDLES": 2,
+        "RISK": 0.05
+      },
+      "pnl": 3.526291656121839,
+      "win_rate": 76.58300420435724,
+      "avg_win": 3.583711005385759,
+      "avg_loss": -9.975325172650681,
+      "profit_factor": 1.1749168701919488,
+      "total_trades": 7849
+    },
+    {
+      "params": {
+        "STOP_LOSS": 0.02,
+        "MIN_HOLD_CANDLES": 2,
+        "RISK": 0.1
+      },
+      "pnl": 13.192574713819273,
+      "win_rate": 76.58300420435724,
+      "avg_win": 3.583711005385759,
+      "avg_loss": -9.975325172650681,
+      "profit_factor": 1.1749168701919488,
+      "total_trades": 7849
+    },
+    {
+      "params": {
+        "STOP_LOSS": 0.02,
+        "MIN_HOLD_CANDLES": 2,
+        "RISK": 0.15
+      },
+      "pnl": 24.203434490110293,
+      "win_rate": 76.58300420435724,
+      "avg_win": 3.583711005385759,
+      "avg_loss": -9.975325172650681,
+      "profit_factor": 1.1749168701919488,
+      "total_trades": 7849
+    },
+    {
+      "params": {
+        "STOP_LOSS": 0.02,
+        "MIN_HOLD_CANDLES": 2,
+        "RISK": 0.2
+      },
+      "pnl": 36.790489075863775,
+      "win_rate": 76.58300420435724,
+      "avg_win": 3.583711005385759,
+      "avg_loss": -9.975325172650681,
+      "profit_factor": 1.1749168701919488,
+      "total_trades": 7849
+    },
+    {
+      "params": {
+        "STOP_LOSS": 0.02,
+        "MIN_HOLD_CANDLES": 4,
+        "RISK": 0.05
+      },
+      "pnl": 3.261326728517383,
+      "win_rate": 75.50455085081124,
+      "avg_win": 3.781263926062012,
+      "avg_loss": -9.974066726944677,
+      "profit_factor": 1.168563840231821,
+      "total_trades": 7581
+    },
+    {
+      "params": {
+        "STOP_LOSS": 0.02,
+        "MIN_HOLD_CANDLES": 4,
+        "RISK": 0.1
+      },
+      "pnl": 12.537431294443877,
+      "win_rate": 75.50455085081124,
+      "avg_win": 3.781263926062012,
+      "avg_loss": -9.974066726944677,
+      "profit_factor": 1.168563840231821,
+      "total_trades": 7581
+    },
+    {
+      "params": {
+        "STOP_LOSS": 0.02,
+        "MIN_HOLD_CANDLES": 4,
+        "RISK": 0.15
+      },
+      "pnl": 22.99613070388607,
+      "win_rate": 75.50455085081124,
+      "avg_win": 3.781263926062012,
+      "avg_loss": -9.974066726944677,
+      "profit_factor": 1.168563840231821,
+      "total_trades": 7581
+    },
+    {
+      "params": {
+        "STOP_LOSS": 0.02,
+        "MIN_HOLD_CANDLES": 4,
+        "RISK": 0.2
+      },
+      "pnl": 34.821197256361074,
+      "win_rate": 75.50455085081124,
+      "avg_win": 3.781263926062012,
+      "avg_loss": -9.974066726944677,
+      "profit_factor": 1.168563840231821,
+      "total_trades": 7581
+    },
+    {
+      "params": {
+        "STOP_LOSS": 0.025,
+        "MIN_HOLD_CANDLES": 2,
+        "RISK": 0.05
+      },
+      "pnl": 2.5485040439828026,
+      "win_rate": 80.3578746072941,
+      "avg_win": 3.5340329029649196,
+      "avg_loss": -12.452814789521524,
+      "profit_factor": 1.1610288782099651,
+      "total_trades": 7321
+    },
+    {
+      "params": {
+        "STOP_LOSS": 0.025,
+        "MIN_HOLD_CANDLES": 2,
+        "RISK": 0.1
+      },
+      "pnl": 10.815718023570572,
+      "win_rate": 80.3578746072941,
+      "avg_win": 3.5340329029649196,
+      "avg_loss": -12.452814789521524,
+      "profit_factor": 1.1610288782099651,
+      "total_trades": 7321
+    },
+    {
+      "params": {
+        "STOP_LOSS": 0.025,
+        "MIN_HOLD_CANDLES": 2,
+        "RISK": 0.15
+      },
+      "pnl": 19.858546003578954,
+      "win_rate": 80.3578746072941,
+      "avg_win": 3.5340329029649196,
+      "avg_loss": -12.452814789521524,
+      "profit_factor": 1.1610288782099651,
+      "total_trades": 7321
+    },
+    {
+      "params": {
+        "STOP_LOSS": 0.025,
+        "MIN_HOLD_CANDLES": 2,
+        "RISK": 0.2
+      },
+      "pnl": 29.728435357987813,
+      "win_rate": 80.3578746072941,
+      "avg_win": 3.5340329029649196,
+      "avg_loss": -12.452814789521524,
+      "profit_factor": 1.1610288782099651,
+      "total_trades": 7321
+    },
+    {
+      "params": {
+        "STOP_LOSS": 0.02,
+        "MIN_HOLD_CANDLES": 6,
+        "RISK": 0.05
+      },
+      "pnl": 2.7322997984628503,
+      "win_rate": 74.44777747477502,
+      "avg_win": 3.964561737083008,
+      "avg_loss": -9.974301980755746,
+      "profit_factor": 1.158072446068042,
+      "total_trades": 7334
+    },
+    {
+      "params": {
+        "STOP_LOSS": 0.02,
+        "MIN_HOLD_CANDLES": 6,
+        "RISK": 0.1
+      },
+      "pnl": 11.205594004521549,
+      "win_rate": 74.44777747477502,
+      "avg_win": 3.964561737083008,
+      "avg_loss": -9.974301980755746,
+      "profit_factor": 1.158072446068042,
+      "total_trades": 7334
+    },
+    {
+      "params": {
+        "STOP_LOSS": 0.02,
+        "MIN_HOLD_CANDLES": 6,
+        "RISK": 0.15
+      },
+      "pnl": 20.49286945819167,
+      "win_rate": 74.44777747477502,
+      "avg_win": 3.964561737083008,
+      "avg_loss": -9.974301980755746,
+      "profit_factor": 1.158072446068042,
+      "total_trades": 7334
+    },
+    {
+      "params": {
+        "STOP_LOSS": 0.02,
+        "MIN_HOLD_CANDLES": 6,
+        "RISK": 0.2
+      },
+      "pnl": 30.660857332994556,
+      "win_rate": 74.44777747477502,
+      "avg_win": 3.964561737083008,
+      "avg_loss": -9.974301980755746,
+      "profit_factor": 1.158072446068042,
+      "total_trades": 7334
+    },
+    {
+      "params": {
+        "STOP_LOSS": 0.025,
+        "MIN_HOLD_CANDLES": 4,
+        "RISK": 0.05
+      },
+      "pnl": 2.1734802202894343,
+      "win_rate": 79.37632884479093,
+      "avg_win": 3.726726057606843,
+      "avg_loss": -12.449719527103962,
+      "profit_factor": 1.1521073204898744,
+      "total_trades": 7055
+    },
+    {
+      "params": {
+        "STOP_LOSS": 0.025,
+        "MIN_HOLD_CANDLES": 4,
+        "RISK": 0.1
+      },
+      "pnl": 9.944798654531677,
+      "win_rate": 79.37632884479093,
+      "avg_win": 3.726726057606843,
+      "avg_loss": -12.449719527103962,
+      "profit_factor": 1.1521073204898744,
+      "total_trades": 7055
+    },
+    {
+      "params": {
+        "STOP_LOSS": 0.025,
+        "MIN_HOLD_CANDLES": 4,
+        "RISK": 0.15
+      },
+      "pnl": 18.348968417162066,
+      "win_rate": 79.37632884479093,
+      "avg_win": 3.726726057606843,
+      "avg_loss": -12.449719527103962,
+      "profit_factor": 1.1521073204898744,
+      "total_trades": 7055
+    },
+    {
+      "params": {
+        "STOP_LOSS": 0.025,
+        "MIN_HOLD_CANDLES": 4,
+        "RISK": 0.2
+      },
+      "pnl": 27.408932985636124,
+      "win_rate": 79.37632884479093,
+      "avg_win": 3.726726057606843,
+      "avg_loss": -12.449719527103962,
+      "profit_factor": 1.1521073204898744,
+      "total_trades": 7055
+    },
+    {
+      "params": {
+        "STOP_LOSS": 0.02,
+        "MIN_HOLD_CANDLES": 8,
+        "RISK": 0.05
+      },
+      "pnl": 2.478314338846508,
+      "win_rate": 73.42676944639102,
+      "avg_win": 4.156845476117964,
+      "avg_loss": -9.974600164523347,
+      "profit_factor": 1.1515384673153861,
+      "total_trades": 7135
+    },
+    {
+      "params": {
+        "STOP_LOSS": 0.02,
+        "MIN_HOLD_CANDLES": 8,
+        "RISK": 0.1
+      },
+      "pnl": 10.621749088901607,
+      "win_rate": 73.42676944639102,
+      "avg_win": 4.156845476117964,
+      "avg_loss": -9.974600164523347,
+      "profit_factor": 1.1515384673153861,
+      "total_trades": 7135
+    },
+    {
+      "params": {
+        "STOP_LOSS": 0.02,
+        "MIN_HOLD_CANDLES": 8,
+        "RISK": 0.15
+      },
+      "pnl": 19.48290044846392,
+      "win_rate": 73.42676944639102,
+      "avg_win": 4.156845476117964,
+      "avg_loss": -9.974600164523347,
+      "profit_factor": 1.1515384673153861,
+      "total_trades": 7135
+    },
+    {
+      "params": {
+        "STOP_LOSS": 0.02,
+        "MIN_HOLD_CANDLES": 8,
+        "RISK": 0.2
+      },
+      "pnl": 29.10455005035553,
+      "win_rate": 73.42676944639102,
+      "avg_win": 4.156845476117964,
+      "avg_loss": -9.974600164523347,
+      "profit_factor": 1.1515384673153861,
+      "total_trades": 7135
+    },
+    {
+      "params": {
+        "STOP_LOSS": 0.025,
+        "MIN_HOLD_CANDLES": 6,
+        "RISK": 0.05
+      },
+      "pnl": 1.38087284528184,
+      "win_rate": 78.4457478005865,
+      "avg_win": 3.886837119437028,
+      "avg_loss": -12.448082777851614,
+      "profit_factor": 1.1363976350167728,
+      "total_trades": 6820
+    },
+    {
+      "params": {
+        "STOP_LOSS": 0.025,
+        "MIN_HOLD_CANDLES": 6,
+        "RISK": 0.1
+      },
+      "pnl": 8.024992929279664,
+      "win_rate": 78.4457478005865,
+      "avg_win": 3.886837119437028,
+      "avg_loss": -12.448082777851614,
+      "profit_factor": 1.1363976350167728,
+      "total_trades": 6820
+    },
+    {
+      "params": {
+        "STOP_LOSS": 0.025,
+        "MIN_HOLD_CANDLES": 6,
+        "RISK": 0.15
+      },
+      "pnl": 14.892947617776917,
+      "win_rate": 78.4457478005865,
+      "avg_win": 3.886837119437028,
+      "avg_loss": -12.448082777851614,
+      "profit_factor": 1.1363976350167728,
+      "total_trades": 6820
+    },
+    {
+      "params": {
+        "STOP_LOSS": 0.025,
+        "MIN_HOLD_CANDLES": 6,
+        "RISK": 0.2
+      },
+      "pnl": 21.92948609567143,
+      "win_rate": 78.4457478005865,
+      "avg_win": 3.886837119437028,
+      "avg_loss": -12.448082777851614,
+      "profit_factor": 1.1363976350167728,
+      "total_trades": 6820
+    },
+    {
+      "params": {
+        "STOP_LOSS": 0.025,
+        "MIN_HOLD_CANDLES": 8,
+        "RISK": 0.05
+      },
+      "pnl": 1.036337399024137,
+      "win_rate": 77.67533252720678,
+      "avg_win": 4.039892629318595,
+      "avg_loss": -12.44832883103715,
+      "profit_factor": 1.1291636610316498,
+      "total_trades": 6616
+    },
+    {
+      "params": {
+        "STOP_LOSS": 0.025,
+        "MIN_HOLD_CANDLES": 8,
+        "RISK": 0.1
+      },
+      "pnl": 7.240342917618796,
+      "win_rate": 77.67533252720678,
+      "avg_win": 4.039892629318595,
+      "avg_loss": -12.44832883103715,
+      "profit_factor": 1.1291636610316498,
+      "total_trades": 6616
+    },
+    {
+      "params": {
+        "STOP_LOSS": 0.025,
+        "MIN_HOLD_CANDLES": 8,
+        "RISK": 0.15
+      },
+      "pnl": 13.555000813328844,
+      "win_rate": 77.67533252720678,
+      "avg_win": 4.039892629318595,
+      "avg_loss": -12.44832883103715,
+      "profit_factor": 1.1291636610316498,
+      "total_trades": 6616
+    },
+    {
+      "params": {
+        "STOP_LOSS": 0.025,
+        "MIN_HOLD_CANDLES": 8,
+        "RISK": 0.2
+      },
+      "pnl": 19.908671099779326,
+      "win_rate": 77.67533252720678,
+      "avg_win": 4.039892629318595,
+      "avg_loss": -12.44832883103715,
+      "profit_factor": 1.1291636610316498,
+      "total_trades": 6616
+    },
+    {
+      "params": {
+        "STOP_LOSS": 0.015,
+        "MIN_HOLD_CANDLES": 12,
+        "RISK": 0.05
+      },
+      "pnl": 1.2569700389069567,
+      "win_rate": 64.61455380045903,
+      "avg_win": 4.615608466675729,
+      "avg_loss": -7.492192602633702,
+      "profit_factor": 1.1249305245774148,
+      "total_trades": 7407
+    },
+    {
+      "params": {
+        "STOP_LOSS": 0.015,
+        "MIN_HOLD_CANDLES": 12,
+        "RISK": 0.1
+      },
+      "pnl": 7.735435242990116,
+      "win_rate": 64.61455380045903,
+      "avg_win": 4.615608466675729,
+      "avg_loss": -7.492192602633702,
+      "profit_factor": 1.1249305245774148,
+      "total_trades": 7407
+    },
+    {
+      "params": {
+        "STOP_LOSS": 0.015,
+        "MIN_HOLD_CANDLES": 12,
+        "RISK": 0.15
+      },
+      "pnl": 14.388000925583903,
+      "win_rate": 64.61455380045903,
+      "avg_win": 4.615608466675729,
+      "avg_loss": -7.492192602633702,
+      "profit_factor": 1.1249305245774148,
+      "total_trades": 7407
+    },
+    {
+      "params": {
+        "STOP_LOSS": 0.015,
+        "MIN_HOLD_CANDLES": 12,
+        "RISK": 0.2
+      },
+      "pnl": 21.156375520247412,
+      "win_rate": 64.61455380045903,
+      "avg_win": 4.615608466675729,
+      "avg_loss": -7.492192602633702,
+      "profit_factor": 1.1249305245774148,
+      "total_trades": 7407
+    },
+    {
+      "params": {
+        "STOP_LOSS": 0.015,
+        "MIN_HOLD_CANDLES": 16,
+        "RISK": 0.05
+      },
+      "pnl": -0.574015372086501,
+      "win_rate": 61.78115588699269,
+      "avg_win": 5.037483600682615,
+      "avg_loss": -7.493827377897944,
+      "profit_factor": 1.0866468910210907,
+      "total_trades": 6973
+    },
+    {
+      "params": {
+        "STOP_LOSS": 0.015,
+        "MIN_HOLD_CANDLES": 16,
+        "RISK": 0.1
+      },
+      "pnl": 4.046158061802635,
+      "win_rate": 61.78115588699269,
+      "avg_win": 5.037483600682615,
+      "avg_loss": -7.493827377897944,
+      "profit_factor": 1.0866468910210907,
+      "total_trades": 6973
+    },
+    {
+      "params": {
+        "STOP_LOSS": 0.015,
+        "MIN_HOLD_CANDLES": 16,
+        "RISK": 0.15
+      },
+      "pnl": 8.843251333182048,
+      "win_rate": 61.78115588699269,
+      "avg_win": 5.037483600682615,
+      "avg_loss": -7.493827377897944,
+      "profit_factor": 1.0866468910210907,
+      "total_trades": 6973
+    },
+    {
+      "params": {
+        "STOP_LOSS": 0.015,
+        "MIN_HOLD_CANDLES": 16,
+        "RISK": 0.2
+      },
+      "pnl": 13.786182328057295,
+      "win_rate": 61.78115588699269,
+      "avg_win": 5.037483600682615,
+      "avg_loss": -7.493827377897944,
+      "profit_factor": 1.0866468910210907,
+      "total_trades": 6973
+    },
+    {
+      "params": {
+        "STOP_LOSS": 0.02,
+        "MIN_HOLD_CANDLES": 12,
+        "RISK": 0.05
+      },
+      "pnl": -1.1640434041124421,
+      "win_rate": 70.88778729157278,
+      "avg_win": 4.421774046022104,
+      "avg_loss": -9.975150625354111,
+      "profit_factor": 1.0793773204970498,
+      "total_trades": 6657
+    },
+    {
+      "params": {
+        "STOP_LOSS": 0.02,
+        "MIN_HOLD_CANDLES": 12,
+        "RISK": 0.1
+      },
+      "pnl": 2.636732659395693,
+      "win_rate": 70.88778729157278,
+      "avg_win": 4.421774046022104,
+      "avg_loss": -9.975150625354111,
+      "profit_factor": 1.0793773204970498,
+      "total_trades": 6657
+    },
+    {
+      "params": {
+        "STOP_LOSS": 0.02,
+        "MIN_HOLD_CANDLES": 12,
+        "RISK": 0.15
+      },
+      "pnl": 6.345670842813456,
+      "win_rate": 70.88778729157278,
+      "avg_win": 4.421774046022104,
+      "avg_loss": -9.975150625354111,
+      "profit_factor": 1.0793773204970498,
+      "total_trades": 6657
+    },
+    {
+      "params": {
+        "STOP_LOSS": 0.02,
+        "MIN_HOLD_CANDLES": 12,
+        "RISK": 0.2
+      },
+      "pnl": 9.900959879680657,
+      "win_rate": 70.88778729157278,
+      "avg_win": 4.421774046022104,
+      "avg_loss": -9.975150625354111,
+      "profit_factor": 1.0793773204970498,
+      "total_trades": 6657
+    },
+    {
+      "params": {
+        "STOP_LOSS": 0.025,
+        "MIN_HOLD_CANDLES": 12,
+        "RISK": 0.05
+      },
+      "pnl": -2.7514998379599773,
+      "win_rate": 75.32066893976295,
+      "avg_win": 4.282654786099229,
+      "avg_loss": -12.449790581211758,
+      "profit_factor": 1.0498610093456655,
+      "total_trades": 6159
+    },
+    {
+      "params": {
+        "STOP_LOSS": 0.025,
+        "MIN_HOLD_CANDLES": 12,
+        "RISK": 0.1
+      },
+      "pnl": -0.7594078145500702,
+      "win_rate": 75.32066893976295,
+      "avg_win": 4.282654786099229,
+      "avg_loss": -12.449790581211758,
+      "profit_factor": 1.0498610093456655,
+      "total_trades": 6159
+    },
+    {
+      "params": {
+        "STOP_LOSS": 0.025,
+        "MIN_HOLD_CANDLES": 12,
+        "RISK": 0.15
+      },
+      "pnl": 0.9234002721257298,
+      "win_rate": 75.32066893976295,
+      "avg_win": 4.282654786099229,
+      "avg_loss": -12.449790581211758,
+      "profit_factor": 1.0498610093456655,
+      "total_trades": 6159
+    },
+    {
+      "params": {
+        "STOP_LOSS": 0.025,
+        "MIN_HOLD_CANDLES": 12,
+        "RISK": 0.2
+      },
+      "pnl": 2.24686685952712,
+      "win_rate": 75.32066893976295,
+      "avg_win": 4.282654786099229,
+      "avg_loss": -12.449790581211758,
+      "profit_factor": 1.0498610093456655,
+      "total_trades": 6159
+    },
+    {
+      "params": {
+        "STOP_LOSS": 0.02,
+        "MIN_HOLD_CANDLES": 16,
+        "RISK": 0.05
+      },
+      "pnl": -3.939617576570424,
+      "win_rate": 68.11130657284504,
+      "avg_win": 4.776784562723221,
+      "avg_loss": -9.979868984742355,
+      "profit_factor": 1.0223351684311504,
+      "total_trades": 6253
+    },
+    {
+      "params": {
+        "STOP_LOSS": 0.02,
+        "MIN_HOLD_CANDLES": 16,
+        "RISK": 0.1
+      },
+      "pnl": -3.013871428421612,
+      "win_rate": 68.11130657284504,
+      "avg_win": 4.776784562723221,
+      "avg_loss": -9.979868984742355,
+      "profit_factor": 1.0223351684311504,
+      "total_trades": 6253
+    },
+    {
+      "params": {
+        "STOP_LOSS": 0.02,
+        "MIN_HOLD_CANDLES": 16,
+        "RISK": 0.15
+      },
+      "pnl": -2.2764057432985507,
+      "win_rate": 68.11130657284504,
+      "avg_win": 4.776784562723221,
+      "avg_loss": -9.979868984742355,
+      "profit_factor": 1.0223351684311504,
+      "total_trades": 6253
+    },
+    {
+      "params": {
+        "STOP_LOSS": 0.02,
+        "MIN_HOLD_CANDLES": 16,
+        "RISK": 0.2
+      },
+      "pnl": -1.7845200340618477,
+      "win_rate": 68.11130657284504,
+      "avg_win": 4.776784562723221,
+      "avg_loss": -9.979868984742355,
+      "profit_factor": 1.0223351684311504,
+      "total_trades": 6253
+    },
+    {
+      "params": {
+        "STOP_LOSS": 0.025,
+        "MIN_HOLD_CANDLES": 16,
+        "RISK": 0.05
+      },
+      "pnl": -5.498618270280758,
+      "win_rate": 72.90512465373962,
+      "avg_win": 4.5962258901153765,
+      "avg_loss": -12.456467991283747,
+      "profit_factor": 0.9928356153164661,
+      "total_trades": 5776
+    },
+    {
+      "params": {
+        "STOP_LOSS": 0.025,
+        "MIN_HOLD_CANDLES": 16,
+        "RISK": 0.1
+      },
+      "pnl": -6.316226792168515,
+      "win_rate": 72.90512465373962,
+      "avg_win": 4.5962258901153765,
+      "avg_loss": -12.456467991283747,
+      "profit_factor": 0.9928356153164661,
+      "total_trades": 5776
+    },
+    {
+      "params": {
+        "STOP_LOSS": 0.025,
+        "MIN_HOLD_CANDLES": 16,
+        "RISK": 0.15
+      },
+      "pnl": -7.478649475464169,
+      "win_rate": 72.90512465373962,
+      "avg_win": 4.5962258901153765,
+      "avg_loss": -12.456467991283747,
+      "profit_factor": 0.9928356153164661,
+      "total_trades": 5776
+    },
+    {
+      "params": {
+        "STOP_LOSS": 0.025,
+        "MIN_HOLD_CANDLES": 16,
+        "RISK": 0.2
+      },
+      "pnl": -9.00429978846347,
+      "win_rate": 72.90512465373962,
+      "avg_win": 4.5962258901153765,
+      "avg_loss": -12.456467991283747,
+      "profit_factor": 0.9928356153164661,
+      "total_trades": 5776
+    }
+  ]
+}
