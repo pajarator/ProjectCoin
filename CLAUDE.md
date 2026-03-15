@@ -55,6 +55,13 @@ There is no test suite, linter, or build system.
 - Indicator functions are capitalized (e.g., `RSI()`, `MACD()`, `EMA()`).
 - Paper trading state files use absolute paths to `/home/scamarena/ProjectCoin/`.
 
+## Backtest/Optimization Script Requirements
+
+All long-running backtest and optimization scripts (run*_.py) MUST include:
+1. **State saving** — Periodically save partial results to a JSON checkpoint file (e.g., `run6_1_checkpoint.json`) so that work is not lost on crash/interrupt. On startup, check for and resume from checkpoint.
+2. **Progress bar** — Use `tqdm` or print a progress indicator showing current combo / total combos and estimated time remaining.
+3. **Graceful stop/recover** — Handle SIGINT (Ctrl+C) by saving current state before exiting. On restart, resume from the last checkpoint.
+
 ## Top Findings (from RUN1.md)
 
 Best strategies achieving ≥70% win rate: Mean Reversion (72-87%), Williams %R (67-87%), ADR Reversal (68-80%). Best overall: Mean Reversion on 15m timeframe. Strategies that don't work well: MACD Crossover, EMA Crossover, Volume Breakout.

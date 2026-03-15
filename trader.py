@@ -30,24 +30,24 @@ if args.reset:
 
 # === COINS (RUN4.2 long + RUN5.2 market-dump short + RUN6.1 ISO short per coin) ===
 COINS = [
-    {'symbol': 'DASH/USDT',  'tf': '15m', 'name': 'DASH',  'pref': 'vwap_rev',  'short_pref': 'short_mean_rev',  'iso_short_pref': 'iso_mean_rev'},
-    {'symbol': 'UNI/USDT',   'tf': '15m', 'name': 'UNI',   'pref': 'vwap_rev',  'short_pref': 'short_adr_rev',   'iso_short_pref': 'iso_mean_rev'},
-    {'symbol': 'NEAR/USDT',  'tf': '15m', 'name': 'NEAR',  'pref': 'vwap_rev',  'short_pref': 'short_adr_rev',   'iso_short_pref': 'iso_mean_rev'},
-    {'symbol': 'ADA/USDT',   'tf': '15m', 'name': 'ADA',   'pref': 'vwap_rev',  'short_pref': 'short_bb_bounce', 'iso_short_pref': 'iso_mean_rev'},
-    {'symbol': 'LTC/USDT',   'tf': '15m', 'name': 'LTC',   'pref': 'vwap_rev',  'short_pref': 'short_mean_rev',  'iso_short_pref': 'iso_mean_rev'},
-    {'symbol': 'SHIB/USDT',  'tf': '15m', 'name': 'SHIB',  'pref': 'vwap_rev',  'short_pref': 'short_vwap_rev',  'iso_short_pref': 'iso_mean_rev'},
-    {'symbol': 'LINK/USDT',  'tf': '15m', 'name': 'LINK',  'pref': 'vwap_rev',  'short_pref': 'short_bb_bounce', 'iso_short_pref': 'iso_mean_rev'},
-    {'symbol': 'ETH/USDT',   'tf': '15m', 'name': 'ETH',   'pref': 'vwap_rev',  'short_pref': 'short_adr_rev',   'iso_short_pref': 'iso_mean_rev'},
-    {'symbol': 'DOT/USDT',   'tf': '15m', 'name': 'DOT',   'pref': 'vwap_rev',  'short_pref': 'short_vwap_rev',  'iso_short_pref': 'iso_mean_rev'},
-    {'symbol': 'XRP/USDT',   'tf': '15m', 'name': 'XRP',   'pref': 'vwap_rev',  'short_pref': 'short_bb_bounce', 'iso_short_pref': 'iso_mean_rev'},
-    {'symbol': 'ATOM/USDT',  'tf': '15m', 'name': 'ATOM',  'pref': 'vwap_rev',  'short_pref': 'short_adr_rev',   'iso_short_pref': 'iso_mean_rev'},
-    {'symbol': 'SOL/USDT',   'tf': '15m', 'name': 'SOL',   'pref': 'vwap_rev',  'short_pref': 'short_adr_rev',   'iso_short_pref': 'iso_mean_rev'},
-    {'symbol': 'DOGE/USDT',  'tf': '15m', 'name': 'DOGE',  'pref': 'bb_bounce', 'short_pref': 'short_bb_bounce', 'iso_short_pref': 'iso_mean_rev'},
-    {'symbol': 'XLM/USDT',   'tf': '15m', 'name': 'XLM',   'pref': 'dual_rsi',  'short_pref': 'short_mean_rev',  'iso_short_pref': 'iso_mean_rev'},
-    {'symbol': 'AVAX/USDT',  'tf': '15m', 'name': 'AVAX',  'pref': 'adr_rev',   'short_pref': 'short_bb_bounce', 'iso_short_pref': 'iso_mean_rev'},
-    {'symbol': 'ALGO/USDT',  'tf': '15m', 'name': 'ALGO',  'pref': 'adr_rev',   'short_pref': 'short_adr_rev',   'iso_short_pref': 'iso_mean_rev'},
-    {'symbol': 'BNB/USDT',   'tf': '15m', 'name': 'BNB',   'pref': 'vwap_rev',  'short_pref': 'short_vwap_rev',  'iso_short_pref': 'iso_mean_rev'},
-    {'symbol': 'BTC/USDT',   'tf': '15m', 'name': 'BTC',   'pref': 'bb_bounce', 'short_pref': 'short_adr_rev',   'iso_short_pref': 'iso_mean_rev'},
+    {'symbol': 'DASH/USDT',  'tf': '15m', 'name': 'DASH',  'pref': 'vwap_rev',  'short_pref': 'short_mean_rev',  'iso_short_pref': 'iso_divergence'},    # ISO PF=3.75
+    {'symbol': 'UNI/USDT',   'tf': '15m', 'name': 'UNI',   'pref': 'vwap_rev',  'short_pref': 'short_adr_rev',   'iso_short_pref': 'iso_relative_z'},    # ISO PF=3.73
+    {'symbol': 'NEAR/USDT',  'tf': '15m', 'name': 'NEAR',  'pref': 'vwap_rev',  'short_pref': 'short_adr_rev',   'iso_short_pref': 'iso_rsi_extreme'},   # ISO PF=15.70
+    {'symbol': 'ADA/USDT',   'tf': '15m', 'name': 'ADA',   'pref': 'vwap_rev',  'short_pref': 'short_bb_bounce', 'iso_short_pref': 'iso_divergence'},    # ISO PF=2.64
+    {'symbol': 'LTC/USDT',   'tf': '15m', 'name': 'LTC',   'pref': 'vwap_rev',  'short_pref': 'short_mean_rev',  'iso_short_pref': 'iso_rsi_extreme'},   # ISO PF=10.01
+    {'symbol': 'SHIB/USDT',  'tf': '15m', 'name': 'SHIB',  'pref': 'vwap_rev',  'short_pref': 'short_vwap_rev',  'iso_short_pref': 'iso_rsi_extreme'},   # ISO PF=4.46
+    {'symbol': 'LINK/USDT',  'tf': '15m', 'name': 'LINK',  'pref': 'vwap_rev',  'short_pref': 'short_bb_bounce', 'iso_short_pref': 'iso_relative_z'},    # ISO PF=10.93
+    {'symbol': 'ETH/USDT',   'tf': '15m', 'name': 'ETH',   'pref': 'vwap_rev',  'short_pref': 'short_adr_rev',   'iso_short_pref': 'iso_rsi_extreme'},   # ISO PF=11.71
+    {'symbol': 'DOT/USDT',   'tf': '15m', 'name': 'DOT',   'pref': 'vwap_rev',  'short_pref': 'short_vwap_rev',  'iso_short_pref': 'iso_relative_z'},    # ISO PF=2.85
+    {'symbol': 'XRP/USDT',   'tf': '15m', 'name': 'XRP',   'pref': 'vwap_rev',  'short_pref': 'short_bb_bounce', 'iso_short_pref': 'iso_rsi_extreme'},   # ISO PF=3.29
+    {'symbol': 'ATOM/USDT',  'tf': '15m', 'name': 'ATOM',  'pref': 'vwap_rev',  'short_pref': 'short_adr_rev',   'iso_short_pref': 'iso_relative_z'},    # ISO PF=2.52
+    {'symbol': 'SOL/USDT',   'tf': '15m', 'name': 'SOL',   'pref': 'vwap_rev',  'short_pref': 'short_adr_rev',   'iso_short_pref': 'iso_rsi_extreme'},   # ISO PF=9.22
+    {'symbol': 'DOGE/USDT',  'tf': '15m', 'name': 'DOGE',  'pref': 'bb_bounce', 'short_pref': 'short_bb_bounce', 'iso_short_pref': 'iso_divergence'},    # ISO PF=5.30
+    {'symbol': 'XLM/USDT',   'tf': '15m', 'name': 'XLM',   'pref': 'dual_rsi',  'short_pref': 'short_mean_rev',  'iso_short_pref': 'iso_relative_z'},    # ISO PF=7.80
+    {'symbol': 'AVAX/USDT',  'tf': '15m', 'name': 'AVAX',  'pref': 'adr_rev',   'short_pref': 'short_bb_bounce', 'iso_short_pref': 'iso_relative_z'},    # ISO PF=5.36
+    {'symbol': 'ALGO/USDT',  'tf': '15m', 'name': 'ALGO',  'pref': 'adr_rev',   'short_pref': 'short_adr_rev',   'iso_short_pref': 'iso_rsi_extreme'},   # ISO PF=12.18
+    {'symbol': 'BNB/USDT',   'tf': '15m', 'name': 'BNB',   'pref': 'vwap_rev',  'short_pref': 'short_vwap_rev',  'iso_short_pref': 'iso_divergence'},    # ISO PF=2.60
+    {'symbol': 'BTC/USDT',   'tf': '15m', 'name': 'BTC',   'pref': 'bb_bounce', 'short_pref': 'short_adr_rev',   'iso_short_pref': 'iso_rsi_extreme'},   # ISO PF=6.18
 ]
 
 INITIAL_CAPITAL = 100
