@@ -1,0 +1,257 @@
+{
+  "best_by_mode": {
+    "none": {
+      "combo_key": "none_0.0",
+      "score": 1.7815225895848632,
+      "avg_wr": 51.08324127237316,
+      "avg_pf": 2.492597244862412,
+      "avg_pnl": 10.459932549449166,
+      "tp_target": 0.0
+    },
+    "tp_immediate": {
+      "combo_key": "tp_immediate_0.02",
+      "score": 1.6721264609270847,
+      "avg_wr": 51.32123489768122,
+      "avg_pf": 2.334105976227984,
+      "avg_pnl": 9.085500831891242,
+      "tp_target": 0.02
+    },
+    "tp_after_hold": {
+      "combo_key": "tp_after_hold_0.02",
+      "score": 1.667965992757467,
+      "avg_wr": 51.28874626870137,
+      "avg_pf": 2.329035725317404,
+      "avg_pnl": 8.99738315656783,
+      "tp_target": 0.02
+    }
+  },
+  "best_overall": {
+    "combo_key": "none_0.0",
+    "tp_mode": "none",
+    "tp_target": 0.0,
+    "avg_wr": 51.08324127237316,
+    "avg_pf": 2.492597244862412,
+    "avg_pnl": 10.459932549449166
+  },
+  "best_per_coin": {
+    "DASH": {
+      "tp_mode": "none",
+      "tp_target": 0.0,
+      "wr": 33.72781065088758,
+      "pf": 3.602265934243249,
+      "pnl": 54.05716997728251,
+      "tp_exits": 0,
+      "tp_saves": 0,
+      "tp_partial_saves": 0,
+      "tp_premature": 0,
+      "net_impact": 0
+    },
+    "UNI": {
+      "tp_mode": "none",
+      "tp_target": 0.0,
+      "wr": 44.44444444444444,
+      "pf": 3.458885789478335,
+      "pnl": 11.621243234911773,
+      "tp_exits": 0,
+      "tp_saves": 0,
+      "tp_partial_saves": 0,
+      "tp_premature": 0,
+      "net_impact": 0
+    },
+    "NEAR": {
+      "tp_mode": "none",
+      "tp_target": 0.0,
+      "wr": 47.69230769230769,
+      "pf": 3.9919657569124603,
+      "pnl": 16.35076695261199,
+      "tp_exits": 0,
+      "tp_saves": 0,
+      "tp_partial_saves": 0,
+      "tp_premature": 0,
+      "net_impact": 0
+    },
+    "ADA": {
+      "tp_mode": "none",
+      "tp_target": 0.0,
+      "wr": 56.52173913043478,
+      "pf": 1.784435904577279,
+      "pnl": 1.1788870584116466,
+      "tp_exits": 0,
+      "tp_saves": 0,
+      "tp_partial_saves": 0,
+      "tp_premature": 0,
+      "net_impact": 0
+    },
+    "LTC": {
+      "tp_mode": "none",
+      "tp_target": 0.0,
+      "wr": 61.36363636363637,
+      "pf": 3.927529589680133,
+      "pnl": 7.720207990123399,
+      "tp_exits": 0,
+      "tp_saves": 0,
+      "tp_partial_saves": 0,
+      "tp_premature": 0,
+      "net_impact": 0
+    },
+    "SHIB": {
+      "tp_mode": "tp_immediate",
+      "tp_target": 0.01,
+      "wr": 46.666666666666664,
+      "pf": 1.7219833131945264,
+      "pnl": 1.7383143046557021,
+      "tp_exits": 3,
+      "tp_saves": 1,
+      "tp_partial_saves": 0,
+      "tp_premature": 2,
+      "net_impact": -1
+    },
+    "LINK": {
+      "tp_mode": "none",
+      "tp_target": 0.0,
+      "wr": 65.38461538461539,
+      "pf": 3.7749308380875255,
+      "pnl": 3.805225096587577,
+      "tp_exits": 0,
+      "tp_saves": 0,
+      "tp_partial_saves": 0,
+      "tp_premature": 0,
+      "net_impact": 0
+    },
+    "ETH": {
+      "tp_mode": "none",
+      "tp_target": 0.0,
+      "wr": 65.38461538461539,
+      "pf": 3.1316947426693966,
+      "pnl": 2.906139351364118,
+      "tp_exits": 0,
+      "tp_saves": 0,
+      "tp_partial_saves": 0,
+      "tp_premature": 0,
+      "net_impact": 0
+    },
+    "DOT": {
+      "tp_mode": "none",
+      "tp_target": 0.0,
+      "wr": 54.166666666666664,
+      "pf": 4.586411771697594,
+      "pnl": 6.050309469614774,
+      "tp_exits": 0,
+      "tp_saves": 0,
+      "tp_partial_saves": 0,
+      "tp_premature": 0,
+      "net_impact": 0
+    },
+    "XRP": {
+      "tp_mode": "none",
+      "tp_target": 0.0,
+      "wr": 43.75,
+      "pf": 1.120604640468287,
+      "pnl": 0.4783285860183497,
+      "tp_exits": 0,
+      "tp_saves": 0,
+      "tp_partial_saves": 0,
+      "tp_premature": 0,
+      "net_impact": 0
+    },
+    "ATOM": {
+      "tp_mode": "tp_immediate",
+      "tp_target": 0.015,
+      "wr": 36.93693693693694,
+      "pf": 1.545943063077514,
+      "pnl": 5.848362080641806,
+      "tp_exits": 6,
+      "tp_saves": 1,
+      "tp_partial_saves": 0,
+      "tp_premature": 5,
+      "net_impact": -4
+    },
+    "SOL": {
+      "tp_mode": "none",
+      "tp_target": 0.0,
+      "wr": 56.00000000000001,
+      "pf": 1.7599056875774335,
+      "pnl": 2.5285163362243424,
+      "tp_exits": 0,
+      "tp_saves": 0,
+      "tp_partial_saves": 0,
+      "tp_premature": 0,
+      "net_impact": 0
+    },
+    "DOGE": {
+      "tp_mode": "none",
+      "tp_target": 0.0,
+      "wr": 53.2258064516129,
+      "pf": 1.9079363986326778,
+      "pnl": 12.500755405303538,
+      "tp_exits": 0,
+      "tp_saves": 0,
+      "tp_partial_saves": 0,
+      "tp_premature": 0,
+      "net_impact": 0
+    },
+    "XLM": {
+      "tp_mode": "none",
+      "tp_target": 0.0,
+      "wr": 46.8421052631579,
+      "pf": 1.794949177062763,
+      "pnl": 12.718070877977949,
+      "tp_exits": 0,
+      "tp_saves": 0,
+      "tp_partial_saves": 0,
+      "tp_premature": 0,
+      "net_impact": 0
+    },
+    "AVAX": {
+      "tp_mode": "none",
+      "tp_target": 0.0,
+      "wr": 53.65853658536586,
+      "pf": 2.2225713509317115,
+      "pnl": 23.128617496163898,
+      "tp_exits": 0,
+      "tp_saves": 0,
+      "tp_partial_saves": 0,
+      "tp_premature": 0,
+      "net_impact": 0
+    },
+    "ALGO": {
+      "tp_mode": "none",
+      "tp_target": 0.0,
+      "wr": 46.18055555555556,
+      "pf": 1.693749489669934,
+      "pnl": 17.38557355829286,
+      "tp_exits": 0,
+      "tp_saves": 0,
+      "tp_partial_saves": 0,
+      "tp_premature": 0,
+      "net_impact": 0
+    },
+    "BNB": {
+      "tp_mode": "none",
+      "tp_target": 0.0,
+      "wr": 51.35135135135135,
+      "pf": 1.482683781494862,
+      "pnl": 1.3037078641410744,
+      "tp_exits": 0,
+      "tp_saves": 0,
+      "tp_partial_saves": 0,
+      "tp_premature": 0,
+      "net_impact": 0
+    },
+    "BTC": {
+      "tp_mode": "none",
+      "tp_target": 0.0,
+      "wr": 60.43478260869565,
+      "pf": 1.5151394718059639,
+      "pnl": 7.241771562590358,
+      "tp_exits": 0,
+      "tp_saves": 0,
+      "tp_partial_saves": 0,
+      "tp_premature": 0,
+      "net_impact": 0
+    }
+  },
+  "baseline_key": "none_0.0",
+  "total_combos": 13,
+  "total_backtests": 234
+}

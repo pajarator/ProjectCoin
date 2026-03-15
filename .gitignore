@@ -18,3 +18,6 @@ trading_log.txt
 
 # Environment
 .env
+coinclaw/target/
+run9_1_rust/target/
+run9_2_rust/target/

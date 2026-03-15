@@ -1,0 +1,449 @@
+{
+  "baseline": {
+    "ADA": {
+      "pnl": 1.8633612941699482,
+      "regime": {
+        "pf": 2.0297761216311034,
+        "trades": 27,
+        "wins": 15,
+        "wr": 55.55555555555556
+      }
+    },
+    "ALGO": {
+      "pnl": 20.143607907332694,
+      "regime": {
+        "pf": 1.7890104307662296,
+        "trades": 294,
+        "wins": 138,
+        "wr": 46.93877551020408
+      }
+    },
+    "ATOM": {
+      "pnl": 5.039390845938158,
+      "regime": {
+        "pf": 1.414370630240891,
+        "trades": 121,
+        "wins": 41,
+        "wr": 33.88429752066116
+      }
+    },
+    "AVAX": {
+      "pnl": 25.816340737785055,
+      "regime": {
+        "pf": 2.3732494645835267,
+        "trades": 253,
+        "wins": 141,
+        "wr": 55.73122529644269
+      }
+    },
+    "BNB": {
+      "pnl": 1.4351715355176395,
+      "regime": {
+        "pf": 1.5028944813105596,
+        "trades": 40,
+        "wins": 21,
+        "wr": 52.5
+      }
+    },
+    "BTC": {
+      "pnl": 9.154261572957054,
+      "regime": {
+        "pf": 1.6378943558606105,
+        "trades": 236,
+        "wins": 144,
+        "wr": 61.016949152542374
+      }
+    },
+    "DASH": {
+      "pnl": 61.138750010892494,
+      "regime": {
+        "pf": 3.4387174612156803,
+        "trades": 192,
+        "wins": 60,
+        "wr": 31.25
+      }
+    },
+    "DOGE": {
+      "pnl": 12.08946131112576,
+      "regime": {
+        "pf": 1.8504527468914946,
+        "trades": 191,
+        "wins": 101,
+        "wr": 52.879581151832454
+      }
+    },
+    "DOT": {
+      "pnl": 6.301930452748734,
+      "regime": {
+        "pf": 4.419681594428892,
+        "trades": 26,
+        "wins": 14,
+        "wr": 53.84615384615385
+      }
+    },
+    "ETH": {
+      "pnl": 2.9338298833231704,
+      "regime": {
+        "pf": 3.1516266965462982,
+        "trades": 27,
+        "wins": 18,
+        "wr": 66.66666666666666
+      }
+    },
+    "LINK": {
+      "pnl": 3.0037426587907987,
+      "regime": {
+        "pf": 2.9800847245393256,
+        "trades": 25,
+        "wins": 15,
+        "wr": 60.0
+      }
+    },
+    "LTC": {
+      "pnl": 8.783330397340691,
+      "regime": {
+        "pf": 4.129797068092345,
+        "trades": 47,
+        "wins": 29,
+        "wr": 61.702127659574465
+      }
+    },
+    "NEAR": {
+      "pnl": 17.31312428215078,
+      "regime": {
+        "pf": 3.979380966009005,
+        "trades": 69,
+        "wins": 33,
+        "wr": 47.82608695652174
+      }
+    },
+    "SHIB": {
+      "pnl": 1.4475151641706958,
+      "regime": {
+        "pf": 1.536623202308167,
+        "trades": 31,
+        "wins": 13,
+        "wr": 41.935483870967744
+      }
+    },
+    "SOL": {
+      "pnl": 3.5658972602906265,
+      "regime": {
+        "pf": 2.0193651158850288,
+        "trades": 54,
+        "wins": 31,
+        "wr": 57.407407407407405
+      }
+    },
+    "UNI": {
+      "pnl": 10.565688200558156,
+      "regime": {
+        "pf": 2.9831131813894585,
+        "trades": 58,
+        "wins": 24,
+        "wr": 41.37931034482759
+      }
+    },
+    "XLM": {
+      "pnl": 11.721129494541287,
+      "regime": {
+        "pf": 1.7664073607615147,
+        "trades": 182,
+        "wins": 85,
+        "wr": 46.7032967032967
+      }
+    },
+    "XRP": {
+      "pnl": 0.31967728979982724,
+      "regime": {
+        "pf": 1.073598549569827,
+        "trades": 52,
+        "wins": 22,
+        "wr": 42.30769230769231
+      }
+    }
+  },
+  "best_combo_key": "sl0.001_tp0.002_vm3.5_rsi20_st5_bb0.4",
+  "best_params": {
+    "bb_squeeze_factor": 0.4,
+    "rsi_extreme": 20.0,
+    "scalp_sl": 0.001,
+    "scalp_tp": 0.002,
+    "stoch_extreme": 5.0,
+    "vol_spike_mult": 3.5
+  },
+  "best_per_coin": {
+    "ADA": {
+      "net_impact": 26.402526737641693,
+      "params": {
+        "bb_squeeze_factor": 0.4,
+        "rsi_extreme": 20.0,
+        "scalp_sl": 0.001,
+        "scalp_tp": 0.002,
+        "stoch_extreme": 5.0,
+        "vol_spike_mult": 2.5
+      },
+      "pf": 1.4698706150958758,
+      "pnl": 28.26588803181164,
+      "scalp_trades": 3455,
+      "wr": 42.50430786904078
+    },
+    "ALGO": {
+      "net_impact": 56.17010893144649,
+      "params": {
+        "bb_squeeze_factor": 0.5,
+        "rsi_extreme": 20.0,
+        "scalp_sl": 0.001,
+        "scalp_tp": 0.002,
+        "stoch_extreme": 5.0,
+        "vol_spike_mult": 3.0
+      },
+      "pf": 1.529731110447061,
+      "pnl": 76.31371683877919,
+      "scalp_trades": 5487,
+      "wr": 42.91897506925208
+    },
+    "ATOM": {
+      "net_impact": 23.80645648286304,
+      "params": {
+        "bb_squeeze_factor": 0.4,
+        "rsi_extreme": 15.0,
+        "scalp_sl": 0.001,
+        "scalp_tp": 0.002,
+        "stoch_extreme": 5.0,
+        "vol_spike_mult": 2.5
+      },
+      "pf": 1.3736378882094387,
+      "pnl": 28.8458473288012,
+      "scalp_trades": 3747,
+      "wr": 40.42938437661665
+    },
+    "AVAX": {
+      "net_impact": 24.544952437530107,
+      "params": {
+        "bb_squeeze_factor": 0.4,
+        "rsi_extreme": 15.0,
+        "scalp_sl": 0.0015,
+        "scalp_tp": 0.002,
+        "stoch_extreme": 5.0,
+        "vol_spike_mult": 3.5
+      },
+      "pf": 1.5967835875187482,
+      "pnl": 50.36129317531516,
+      "scalp_trades": 2334,
+      "wr": 52.61729352462194
+    },
+    "BNB": {
+      "net_impact": 12.694224034890112,
+      "params": {
+        "bb_squeeze_factor": 0.6,
+        "rsi_extreme": 25.0,
+        "scalp_sl": 0.001,
+        "scalp_tp": 0.002,
+        "stoch_extreme": 5.0,
+        "vol_spike_mult": 3.5
+      },
+      "pf": 1.1844678238611503,
+      "pnl": 14.129395570407752,
+      "scalp_trades": 4220,
+      "wr": 37.18581160441626
+    },
+    "BTC": {
+      "net_impact": 12.422539366761171,
+      "params": {
+        "bb_squeeze_factor": 0.4,
+        "rsi_extreme": 15.0,
+        "scalp_sl": 0.001,
+        "scalp_tp": 0.002,
+        "stoch_extreme": 5.0,
+        "vol_spike_mult": 3.0
+      },
+      "pf": 1.3536376260472656,
+      "pnl": 21.576800939718225,
+      "scalp_trades": 2479,
+      "wr": 40.88872292755788
+    },
+    "DASH": {
+      "net_impact": 40.0209172502623,
+      "params": {
+        "bb_squeeze_factor": 0.4,
+        "rsi_extreme": 15.0,
+        "scalp_sl": 0.001,
+        "scalp_tp": 0.002,
+        "stoch_extreme": 5.0,
+        "vol_spike_mult": 3.5
+      },
+      "pf": 2.1702854259099813,
+      "pnl": 101.1596672611548,
+      "scalp_trades": 2226,
+      "wr": 45.40942928039702
+    },
+    "DOGE": {
+      "net_impact": 22.28773268353298,
+      "params": {
+        "bb_squeeze_factor": 0.4,
+        "rsi_extreme": 15.0,
+        "scalp_sl": 0.001,
+        "scalp_tp": 0.002,
+        "stoch_extreme": 5.0,
+        "vol_spike_mult": 3.0
+      },
+      "pf": 1.673054380642442,
+      "pnl": 34.37719399465874,
+      "scalp_trades": 2067,
+      "wr": 45.43034605146406
+    },
+    "DOT": {
+      "net_impact": 22.477469036283736,
+      "params": {
+        "bb_squeeze_factor": 0.4,
+        "rsi_extreme": 15.0,
+        "scalp_sl": 0.001,
+        "scalp_tp": 0.002,
+        "stoch_extreme": 5.0,
+        "vol_spike_mult": 3.5
+      },
+      "pf": 1.6053726476898367,
+      "pnl": 28.77939948903247,
+      "scalp_trades": 2538,
+      "wr": 43.52574102964118
+    },
+    "ETH": {
+      "net_impact": 20.31082107880296,
+      "params": {
+        "bb_squeeze_factor": 0.4,
+        "rsi_extreme": 20.0,
+        "scalp_sl": 0.001,
+        "scalp_tp": 0.002,
+        "stoch_extreme": 5.0,
+        "vol_spike_mult": 3.5
+      },
+      "pf": 1.526636558746733,
+      "pnl": 23.24465096212613,
+      "scalp_trades": 2626,
+      "wr": 43.26669181440966
+    },
+    "LINK": {
+      "net_impact": 28.44085985393687,
+      "params": {
+        "bb_squeeze_factor": 0.4,
+        "rsi_extreme": 15.0,
+        "scalp_sl": 0.001,
+        "scalp_tp": 0.002,
+        "stoch_extreme": 5.0,
+        "vol_spike_mult": 3.0
+      },
+      "pf": 1.7976907101203232,
+      "pnl": 31.44460251272767,
+      "scalp_trades": 2390,
+      "wr": 47.08074534161491
+    },
+    "LTC": {
+      "net_impact": 16.011701428003377,
+      "params": {
+        "bb_squeeze_factor": 0.4,
+        "rsi_extreme": 20.0,
+        "scalp_sl": 0.001,
+        "scalp_tp": 0.002,
+        "stoch_extreme": 5.0,
+        "vol_spike_mult": 3.5
+      },
+      "pf": 1.4315780562286833,
+      "pnl": 24.79503182534407,
+      "scalp_trades": 2693,
+      "wr": 40.51094890510949
+    },
+    "NEAR": {
+      "net_impact": 22.467871086653773,
+      "params": {
+        "bb_squeeze_factor": 0.4,
+        "rsi_extreme": 15.0,
+        "scalp_sl": 0.001,
+        "scalp_tp": 0.002,
+        "stoch_extreme": 5.0,
+        "vol_spike_mult": 3.0
+      },
+      "pf": 1.6719848167079325,
+      "pnl": 39.780995368804554,
+      "scalp_trades": 2469,
+      "wr": 42.90780141843972
+    },
+    "SHIB": {
+      "net_impact": 37.50487292896209,
+      "params": {
+        "bb_squeeze_factor": 0.4,
+        "rsi_extreme": 15.0,
+        "scalp_sl": 0.0015,
+        "scalp_tp": 0.002,
+        "stoch_extreme": 5.0,
+        "vol_spike_mult": 3.5
+      },
+      "pf": 1.6633089590345642,
+      "pnl": 38.95238809313278,
+      "scalp_trades": 2833,
+      "wr": 55.41201117318436
+    },
+    "SOL": {
+      "net_impact": 30.8242215986117,
+      "params": {
+        "bb_squeeze_factor": 0.4,
+        "rsi_extreme": 20.0,
+        "scalp_sl": 0.001,
+        "scalp_tp": 0.003,
+        "stoch_extreme": 5.0,
+        "vol_spike_mult": 3.0
+      },
+      "pf": 1.6230552168459877,
+      "pnl": 34.390118858902326,
+      "scalp_trades": 2641,
+      "wr": 35.289747399702826
+    },
+    "UNI": {
+      "net_impact": 50.805011917471916,
+      "params": {
+        "bb_squeeze_factor": 0.4,
+        "rsi_extreme": 25.0,
+        "scalp_sl": 0.001,
+        "scalp_tp": 0.002,
+        "stoch_extreme": 5.0,
+        "vol_spike_mult": 2.5
+      },
+      "pf": 1.5018355393279899,
+      "pnl": 61.37070011803007,
+      "scalp_trades": 5734,
+      "wr": 42.12707182320442
+    },
+    "XLM": {
+      "net_impact": 18.631942536570417,
+      "params": {
+        "bb_squeeze_factor": 0.4,
+        "rsi_extreme": 20.0,
+        "scalp_sl": 0.001,
+        "scalp_tp": 0.002,
+        "stoch_extreme": 5.0,
+        "vol_spike_mult": 3.5
+      },
+      "pf": 1.4015013661964228,
+      "pnl": 30.353072031111704,
+      "scalp_trades": 2990,
+      "wr": 40.45440201956453
+    },
+    "XRP": {
+      "net_impact": 18.423822016373464,
+      "params": {
+        "bb_squeeze_factor": 0.4,
+        "rsi_extreme": 20.0,
+        "scalp_sl": 0.001,
+        "scalp_tp": 0.002,
+        "stoch_extreme": 5.0,
+        "vol_spike_mult": 3.5
+      },
+      "pf": 1.4417838895920314,
+      "pnl": 18.74349930617329,
+      "scalp_trades": 2521,
+      "wr": 42.217898832684824
+    }
+  },
+  "positive_impact_combos": 1250,
+  "total_combos": 1296
+}
