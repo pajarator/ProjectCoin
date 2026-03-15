@@ -1,8 +1,9 @@
 #!/usr/bin/env python3
 """
-COINCLAW v7 - Long+Short+ISO Short Directional Trading
+COINCLAW v8 - Long+Short+ISO Short Directional Trading
 3-mode system: LONG (longs + ISO shorts), ISO_SHORT only, SHORT (market-dump shorts).
 ISO shorts target coin-specific overbought conditions during calm markets.
+v8: Tighter SL 0.3% (was 0.5%) from RUN7 unified stop loss optimization.
 """
 import ccxt
 import pandas as pd
@@ -53,7 +54,7 @@ COINS = [
 INITIAL_CAPITAL = 100
 RISK = 0.10              # 10% per trade
 LEVERAGE = 5             # 5x leverage
-STOP_LOSS = 0.005        # 0.5% stop loss (RUN4.1 optimal: PF 1.18->1.64)
+STOP_LOSS = 0.003        # 0.3% stop loss (RUN7: PF 2.32->2.62, P&L +1.6%, MaxDD -0.6%)
 MIN_HOLD_CANDLES = 2     # 2 candles = 30min (RUN4.1 optimal: quicker profit-taking)
 FEE = 0.0               # 0% fee exchange
 SLIP = 0.0               # 0% slippage for now
@@ -612,7 +613,7 @@ def main(stdscr):
 
         # === HEADER ===
         stdscr.addstr(0, 0, "=" * min(95, term_w-1), curses.color_pair(1) | curses.A_BOLD)
-        stdscr.addstr(1, 0, f" COINCLAW v7 - {len(COINS)} COINS | {len(COINS)}x${INITIAL_CAPITAL} = ${len(COINS)*INITIAL_CAPITAL}", curses.color_pair(1) | curses.A_BOLD)
+        stdscr.addstr(1, 0, f" COINCLAW v8 - {len(COINS)} COINS | {len(COINS)}x${INITIAL_CAPITAL} = ${len(COINS)*INITIAL_CAPITAL}", curses.color_pair(1) | curses.A_BOLD)
         stdscr.addstr(2, 0, f" Risk:{RISK*100:.0f}% | {LEVERAGE}x LEV | SL:{STOP_LOSS*100:.1f}% | Hold:{MIN_HOLD_CANDLES}candles | L<={BREADTH_MAX*100:.0f}% ISO<={ISO_SHORT_BREADTH_MAX*100:.0f}% S>={SHORT_BREADTH_MIN*100:.0f}% | {datetime.now().strftime('%H:%M:%S')}")
         stdscr.addstr(3, 0, "=" * min(95, term_w-1), curses.color_pair(1) | curses.A_BOLD)
 
