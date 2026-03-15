@@ -1,8 +1,12 @@
 #!/usr/bin/env python3
 """
+OBSOLETE - Replaced by multi_curses.py
 Paper Trading TUI - VWAP Reversion Strategy
 Live trading simulation with $100 capital on Binance
 """
+import sys
+print("This script is obsolete. Use multi_curses.py instead.")
+sys.exit(1)
 import ccxt
 import time
 import os

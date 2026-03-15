@@ -1,7 +1,11 @@
 #!/usr/bin/env python3
 """
+OBSOLETE - Replaced by multi_curses.py
 Multi-Coin Paper Trading - Top 20 Performers
 """
+import sys
+print("This script is obsolete. Use multi_curses.py instead.")
+sys.exit(1)
 import ccxt
 import pandas as pd
 import time

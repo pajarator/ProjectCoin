@@ -26,36 +26,34 @@ if args.reset:
             os.remove(f)
     print("State reset!")
 
-# === TOP 20 COINS ===
-# === COINS (from RUN3 validated assignments, TRX removed: only loser at -6.1%) ===
+# === COINS (RUN4.2 optimal strategy per coin, sorted by PF, TRX removed: PF=1.18) ===
 # Preferred strategy is used when regime allows it; adaptive overrides in squeeze
 COINS = [
-    {'symbol': 'DASH/USDT',  'tf': '15m', 'name': 'DASH',  'pref': 'adr_rev'},     # +89.3%
-    {'symbol': 'LINK/USDT',  'tf': '15m', 'name': 'LINK',  'pref': 'vwap_rev'},    # +35.6%
-    {'symbol': 'AVAX/USDT',  'tf': '15m', 'name': 'AVAX',  'pref': 'bb_bounce'},   # +31.8%
-    {'symbol': 'LTC/USDT',   'tf': '15m', 'name': 'LTC',   'pref': 'adr_rev'},     # +31.6%
-    {'symbol': 'DOT/USDT',   'tf': '15m', 'name': 'DOT',   'pref': 'mean_rev'},    # +29.0%
-    {'symbol': 'UNI/USDT',   'tf': '15m', 'name': 'UNI',   'pref': 'mean_rev'},    # +28.3%
-    {'symbol': 'XLM/USDT',   'tf': '15m', 'name': 'XLM',   'pref': 'vwap_rev'},    # +23.9%
-    {'symbol': 'ADA/USDT',   'tf': '15m', 'name': 'ADA',   'pref': 'mean_rev'},    # +22.3%
-    {'symbol': 'ATOM/USDT',  'tf': '15m', 'name': 'ATOM',  'pref': 'dual_rsi'},    # +17.2%
-    {'symbol': 'NEAR/USDT',  'tf': '15m', 'name': 'NEAR',  'pref': 'mean_rev'},    # +16.1%
-    {'symbol': 'SOL/USDT',   'tf': '15m', 'name': 'SOL',   'pref': 'vwap_rev'},    # +16.1%
-    {'symbol': 'ETH/USDT',   'tf': '15m', 'name': 'ETH',   'pref': 'mean_rev'},    # +13.2%
-    {'symbol': 'XRP/USDT',   'tf': '15m', 'name': 'XRP',   'pref': 'vwap_rev'},    # +12.9%
-    {'symbol': 'DOGE/USDT',  'tf': '15m', 'name': 'DOGE',  'pref': 'mean_rev'},    # +11.1%
-    {'symbol': 'BTC/USDT',   'tf': '15m', 'name': 'BTC',   'pref': 'bb_bounce'},   # +4.3%
-    {'symbol': 'SHIB/USDT',  'tf': '15m', 'name': 'SHIB',  'pref': 'mean_rev'},    # +3.8%
-    {'symbol': 'BNB/USDT',   'tf': '15m', 'name': 'BNB',   'pref': 'mean_rev'},    # +2.7%
-    {'symbol': 'ALGO/USDT',  'tf': '15m', 'name': 'ALGO',  'pref': 'vwap_rev'},    # +1.9%
-    {'symbol': 'MATIC/USDT', 'tf': '15m', 'name': 'MATIC', 'pref': 'mean_rev'},    # (new)
+    {'symbol': 'DASH/USDT',  'tf': '15m', 'name': 'DASH',  'pref': 'vwap_rev'},    # PF=2.24
+    {'symbol': 'UNI/USDT',   'tf': '15m', 'name': 'UNI',   'pref': 'vwap_rev'},    # PF=2.14
+    {'symbol': 'NEAR/USDT',  'tf': '15m', 'name': 'NEAR',  'pref': 'vwap_rev'},    # PF=2.00
+    {'symbol': 'ADA/USDT',   'tf': '15m', 'name': 'ADA',   'pref': 'vwap_rev'},    # PF=1.99
+    {'symbol': 'LTC/USDT',   'tf': '15m', 'name': 'LTC',   'pref': 'vwap_rev'},    # PF=1.88
+    {'symbol': 'SHIB/USDT',  'tf': '15m', 'name': 'SHIB',  'pref': 'vwap_rev'},    # PF=1.85
+    {'symbol': 'LINK/USDT',  'tf': '15m', 'name': 'LINK',  'pref': 'vwap_rev'},    # PF=1.83
+    {'symbol': 'ETH/USDT',   'tf': '15m', 'name': 'ETH',   'pref': 'vwap_rev'},    # PF=1.81
+    {'symbol': 'DOT/USDT',   'tf': '15m', 'name': 'DOT',   'pref': 'vwap_rev'},    # PF=1.81
+    {'symbol': 'XRP/USDT',   'tf': '15m', 'name': 'XRP',   'pref': 'vwap_rev'},    # PF=1.76
+    {'symbol': 'ATOM/USDT',  'tf': '15m', 'name': 'ATOM',  'pref': 'vwap_rev'},    # PF=1.71
+    {'symbol': 'SOL/USDT',   'tf': '15m', 'name': 'SOL',   'pref': 'vwap_rev'},    # PF=1.71
+    {'symbol': 'DOGE/USDT',  'tf': '15m', 'name': 'DOGE',  'pref': 'bb_bounce'},   # PF=1.69
+    {'symbol': 'XLM/USDT',   'tf': '15m', 'name': 'XLM',   'pref': 'dual_rsi'},    # PF=1.62
+    {'symbol': 'AVAX/USDT',  'tf': '15m', 'name': 'AVAX',  'pref': 'adr_rev'},     # PF=1.59
+    {'symbol': 'ALGO/USDT',  'tf': '15m', 'name': 'ALGO',  'pref': 'adr_rev'},     # PF=1.55
+    {'symbol': 'BNB/USDT',   'tf': '15m', 'name': 'BNB',   'pref': 'vwap_rev'},    # PF=1.49
+    {'symbol': 'BTC/USDT',   'tf': '15m', 'name': 'BTC',   'pref': 'bb_bounce'},   # PF=1.44
 ]
 
 INITIAL_CAPITAL = 100
-RISK = 0.10              # 10% per trade (validated in RUN3)
+RISK = 0.10              # 10% per trade
 LEVERAGE = 5             # 5x leverage
-STOP_LOSS = 0.015        # 1.5% stop loss (validated: 33% of exits)
-MIN_HOLD_CANDLES = 8     # 8 candles = 2 hours (validated: lets winners run to +4.28% avg)
+STOP_LOSS = 0.005        # 0.5% stop loss (RUN4.1 optimal: PF 1.18->1.64)
+MIN_HOLD_CANDLES = 2     # 2 candles = 30min (RUN4.1 optimal: quicker profit-taking)
 FEE = 0.001
 SLIP = 0.0005
 LOG_LINES = 50
@@ -119,7 +117,7 @@ class Trader:
         self.sym = s
         self.tf = tf
         self.name = name
-        self.pref = pref            # validated preferred strategy from RUN3
+        self.pref = pref            # optimal strategy from RUN4.2
         self.ex = ccxt.binance({'enableRateLimit': True})
         self.bal = INITIAL_CAPITAL
         self.pos = None
@@ -306,13 +304,12 @@ class Trader:
         pnl = (i['p'] - self.pos['e']) / self.pos['e']
         held = self.candles_held
 
-        # 1. Stop Loss (validated: 33% of exits in RUN3)
+        # 1. Stop Loss (RUN4.1: tighter 0.5% SL = 2.5% margin loss, PF +39%)
         if pnl <= -STOP_LOSS:
             self.candles_held = 0
             return 'SL', pnl, held
 
-        # 2. Signal exits: only after MIN_HOLD_CANDLES (8 = 2hrs) AND in profit
-        #    (validated: 67% of exits in RUN3 — lets winners run to +4.28% avg)
+        # 2. Signal exits: after MIN_HOLD_CANDLES (2 = 30min) AND in profit
         if pnl > 0 and self.candles_held >= MIN_HOLD_CANDLES:
             # Price crosses above SMA20
             if i['p'] > i['sma20']:
@@ -433,7 +430,7 @@ def main(stdscr):
 
         # === HEADER ===
         stdscr.addstr(0, 0, "=" * min(95, term_w-1), curses.color_pair(1) | curses.A_BOLD)
-        stdscr.addstr(1, 0, f" COINCLAW v3 - {len(COINS)} COINS | {len(COINS)}x${INITIAL_CAPITAL} = ${len(COINS)*INITIAL_CAPITAL}", curses.color_pair(1) | curses.A_BOLD)
+        stdscr.addstr(1, 0, f" COINCLAW v4 - {len(COINS)} COINS | {len(COINS)}x${INITIAL_CAPITAL} = ${len(COINS)*INITIAL_CAPITAL}", curses.color_pair(1) | curses.A_BOLD)
         stdscr.addstr(2, 0, f" Risk:{RISK*100:.0f}% | {LEVERAGE}x LEV | SL:{STOP_LOSS*100:.1f}% | Hold:{MIN_HOLD_CANDLES}candles | Exit:SL+SMA+Z0 | {datetime.now().strftime('%H:%M:%S')}")
         stdscr.addstr(3, 0, "=" * min(95, term_w-1), curses.color_pair(1) | curses.A_BOLD)
 
