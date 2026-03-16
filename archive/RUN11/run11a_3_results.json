@@ -1,0 +1,366 @@
+{
+  "run": "RUN11a.3",
+  "coin": "DASH/USDT",
+  "results": [
+    {
+      "strategy": "vwap_rev",
+      "exit_mode": "signal_only",
+      "trades": 270,
+      "wins": 169,
+      "win_rate": 62.59259259259259,
+      "profit_factor": 0.8618423530497937,
+      "pnl_pct": -3.6565014078902642,
+      "avg_win_pct": 1.336682100523426,
+      "avg_loss_pct": -2.5951689158922364,
+      "avg_hold": 14.218518518518518,
+      "sl_exits": 0,
+      "sma20_exits": 241,
+      "z_rev_exits": 3,
+      "max_hold_exits": 26,
+      "month_wr": [
+        66.66666666666666,
+        58.18181818181818,
+        66.66666666666666,
+        61.40350877192983,
+        60.0
+      ],
+      "month_trades": [
+        54,
+        55,
+        54,
+        57,
+        50
+      ]
+    },
+    {
+      "strategy": "vwap_rev",
+      "exit_mode": "signal_05",
+      "trades": 351,
+      "wins": 133,
+      "win_rate": 37.89173789173789,
+      "profit_factor": 1.2720443018404688,
+      "pnl_pct": 4.749372482222553,
+      "avg_win_pct": 1.6481906112749973,
+      "avg_loss_pct": -0.7904972189810421,
+      "avg_hold": 5.4586894586894585,
+      "sl_exits": 215,
+      "sma20_exits": 133,
+      "z_rev_exits": 3,
+      "max_hold_exits": 0,
+      "month_wr": [
+        32.35294117647059,
+        31.428571428571427,
+        48.484848484848484,
+        32.926829268292686,
+        46.15384615384615
+      ],
+      "month_trades": [
+        68,
+        70,
+        66,
+        82,
+        65
+      ]
+    },
+    {
+      "strategy": "vwap_rev",
+      "exit_mode": "signal_10",
+      "trades": 322,
+      "wins": 146,
+      "win_rate": 45.3416149068323,
+      "profit_factor": 1.072923008390564,
+      "pnl_pct": 1.5065160419616042,
+      "avg_win_pct": 1.5615400168561318,
+      "avg_loss_pct": -1.2073265396898807,
+      "avg_hold": 7.354037267080745,
+      "sl_exits": 161,
+      "sma20_exits": 158,
+      "z_rev_exits": 3,
+      "max_hold_exits": 0,
+      "month_wr": [
+        44.61538461538462,
+        38.46153846153847,
+        56.451612903225815,
+        38.35616438356164,
+        50.877192982456144
+      ],
+      "month_trades": [
+        65,
+        65,
+        62,
+        73,
+        57
+      ]
+    },
+    {
+      "strategy": "ctrl_mean_rev",
+      "exit_mode": "signal_only",
+      "trades": 293,
+      "wins": 190,
+      "win_rate": 64.84641638225256,
+      "profit_factor": 0.8969821408082499,
+      "pnl_pct": -2.9940303442542606,
+      "avg_win_pct": 1.34176236847238,
+      "avg_loss_pct": -2.759358875230661,
+      "avg_hold": 14.071672354948806,
+      "sl_exits": 0,
+      "sma20_exits": 261,
+      "z_rev_exits": 3,
+      "max_hold_exits": 29,
+      "month_wr": [
+        69.49152542372882,
+        59.64912280701754,
+        67.79661016949152,
+        65.07936507936508,
+        61.81818181818181
+      ],
+      "month_trades": [
+        59,
+        57,
+        59,
+        63,
+        55
+      ]
+    },
+    {
+      "strategy": "ctrl_mean_rev",
+      "exit_mode": "signal_05",
+      "trades": 380,
+      "wins": 144,
+      "win_rate": 37.89473684210527,
+      "profit_factor": 1.1994457116394128,
+      "pnl_pct": 3.7635013752949815,
+      "avg_win_pct": 1.5614579877009362,
+      "avg_loss_pct": -0.7943285945735379,
+      "avg_hold": 5.336842105263158,
+      "sl_exits": 234,
+      "sma20_exits": 143,
+      "z_rev_exits": 3,
+      "max_hold_exits": 0,
+      "month_wr": [
+        32.432432432432435,
+        29.72972972972973,
+        52.054794520547944,
+        34.090909090909086,
+        42.25352112676056
+      ],
+      "month_trades": [
+        74,
+        74,
+        73,
+        88,
+        71
+      ]
+    },
+    {
+      "strategy": "ctrl_mean_rev",
+      "exit_mode": "signal_10",
+      "trades": 351,
+      "wins": 159,
+      "win_rate": 45.2991452991453,
+      "profit_factor": 1.000724656478365,
+      "pnl_pct": -0.03464175667904783,
+      "avg_win_pct": 1.4760539239424335,
+      "avg_loss_pct": -1.2214720081609725,
+      "avg_hold": 7.239316239316239,
+      "sl_exits": 178,
+      "sma20_exits": 170,
+      "z_rev_exits": 3,
+      "max_hold_exits": 0,
+      "month_wr": [
+        43.05555555555556,
+        36.231884057971016,
+        58.82352941176471,
+        41.25,
+        48.38709677419355
+      ],
+      "month_trades": [
+        72,
+        69,
+        68,
+        80,
+        62
+      ]
+    },
+    {
+      "strategy": "stoch_rsi",
+      "exit_mode": "signal_only",
+      "trades": 47,
+      "wins": 33,
+      "win_rate": 70.2127659574468,
+      "profit_factor": 1.808558820909304,
+      "pnl_pct": 2.1271226587736054,
+      "avg_win_pct": 1.4356967127661322,
+      "avg_loss_pct": -1.871181745594924,
+      "avg_hold": 11.659574468085106,
+      "sl_exits": 0,
+      "sma20_exits": 43,
+      "z_rev_exits": 1,
+      "max_hold_exits": 3,
+      "month_wr": [
+        72.72727272727273,
+        80.0,
+        70.0,
+        66.66666666666666,
+        57.14285714285714
+      ],
+      "month_trades": [
+        11,
+        10,
+        10,
+        9,
+        7
+      ]
+    },
+    {
+      "strategy": "stoch_rsi",
+      "exit_mode": "signal_05",
+      "trades": 48,
+      "wins": 19,
+      "win_rate": 39.58333333333333,
+      "profit_factor": 1.4079564810698992,
+      "pnl_pct": 0.9432496418327173,
+      "avg_win_pct": 1.7191889663590356,
+      "avg_loss_pct": -0.8000000000000004,
+      "avg_hold": 4.958333333333333,
+      "sl_exits": 29,
+      "sma20_exits": 18,
+      "z_rev_exits": 1,
+      "max_hold_exits": 0,
+      "month_wr": [
+        45.45454545454545,
+        27.27272727272727,
+        50.0,
+        22.22222222222222,
+        57.14285714285714
+      ],
+      "month_trades": [
+        11,
+        11,
+        10,
+        9,
+        7
+      ]
+    },
+    {
+      "strategy": "stoch_rsi",
+      "exit_mode": "signal_10",
+      "trades": 47,
+      "wins": 24,
+      "win_rate": 51.06382978723404,
+      "profit_factor": 1.406901269321908,
+      "pnl_pct": 1.143443705821992,
+      "avg_win_pct": 1.6512916431184543,
+      "avg_loss_pct": -1.2247390556269646,
+      "avg_hold": 7.0,
+      "sl_exits": 21,
+      "sma20_exits": 25,
+      "z_rev_exits": 1,
+      "max_hold_exits": 0,
+      "month_wr": [
+        54.54545454545454,
+        40.0,
+        70.0,
+        33.33333333333333,
+        57.14285714285714
+      ],
+      "month_trades": [
+        11,
+        10,
+        10,
+        9,
+        7
+      ]
+    },
+    {
+      "strategy": "effort_result",
+      "exit_mode": "signal_only",
+      "trades": 100,
+      "wins": 70,
+      "win_rate": 70.0,
+      "profit_factor": 0.9172294902528864,
+      "pnl_pct": -0.7712712674355316,
+      "avg_win_pct": 1.1726264532325086,
+      "avg_loss_pct": -2.983035783249276,
+      "avg_hold": 12.5,
+      "sl_exits": 0,
+      "sma20_exits": 87,
+      "z_rev_exits": 4,
+      "max_hold_exits": 9,
+      "month_wr": [
+        91.66666666666666,
+        45.0,
+        80.0,
+        77.77777777777779,
+        64.0
+      ],
+      "month_trades": [
+        12,
+        20,
+        25,
+        18,
+        25
+      ]
+    },
+    {
+      "strategy": "effort_result",
+      "exit_mode": "signal_05",
+      "trades": 107,
+      "wins": 61,
+      "win_rate": 57.009345794392516,
+      "profit_factor": 2.030678618689585,
+      "pnl_pct": 3.8552686550109865,
+      "avg_win_pct": 1.225065133897979,
+      "avg_loss_pct": -0.7999999999999999,
+      "avg_hold": 5.766355140186916,
+      "sl_exits": 46,
+      "sma20_exits": 57,
+      "z_rev_exits": 4,
+      "max_hold_exits": 0,
+      "month_wr": [
+        58.333333333333336,
+        36.36363636363637,
+        77.77777777777779,
+        57.89473684210527,
+        51.85185185185185
+      ],
+      "month_trades": [
+        12,
+        22,
+        27,
+        19,
+        27
+      ]
+    },
+    {
+      "strategy": "effort_result",
+      "exit_mode": "signal_10",
+      "trades": 105,
+      "wins": 66,
+      "win_rate": 62.857142857142854,
+      "profit_factor": 1.8023003099637753,
+      "pnl_pct": 3.685822797092387,
+      "avg_win_pct": 1.236178086447431,
+      "avg_loss_pct": -1.1607353520342225,
+      "avg_hold": 6.961904761904762,
+      "sl_exits": 34,
+      "sma20_exits": 67,
+      "z_rev_exits": 4,
+      "max_hold_exits": 0,
+      "month_wr": [
+        66.66666666666666,
+        40.909090909090914,
+        81.48148148148148,
+        68.42105263157895,
+        56.00000000000001
+      ],
+      "month_trades": [
+        12,
+        22,
+        27,
+        19,
+        25
+      ]
+    }
+  ]
+}
