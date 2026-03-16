@@ -246,6 +246,32 @@ pub fn scalp_entry(ind: &Ind1m) -> Option<(Direction, &'static str)> {
     None
 }
 
+/// Fix #3: Scalp entry using only stoch_cross (vol_spike_rev removed — 5.9% live WR)
+pub fn scalp_entry_stoch_only(ind: &Ind1m) -> Option<(Direction, &'static str)> {
+    if !ind.valid || ind.vol_ma == 0.0 { return None; }
+
+    if !ind.stoch_k.is_nan() && !ind.stoch_d.is_nan()
+        && !ind.stoch_k_prev.is_nan() && !ind.stoch_d_prev.is_nan()
+    {
+        let stoch_lo = config::SCALP_STOCH_EXTREME;
+        let stoch_hi = 100.0 - config::SCALP_STOCH_EXTREME;
+        if ind.stoch_k_prev <= ind.stoch_d_prev && ind.stoch_k > ind.stoch_d
+            && ind.stoch_k < stoch_lo && ind.stoch_d < stoch_lo
+            && passes_f6(ind, Direction::Long)
+        {
+            return Some((Direction::Long, "scalp_stoch_cross"));
+        }
+        if ind.stoch_k_prev >= ind.stoch_d_prev && ind.stoch_k < ind.stoch_d
+            && ind.stoch_k > stoch_hi && ind.stoch_d > stoch_hi
+            && passes_f6(ind, Direction::Short)
+        {
+            return Some((Direction::Short, "scalp_stoch_cross"));
+        }
+    }
+
+    None
+}
+
 /// F6 pre-entry filter: counter-momentum + active candles (RUN10.1/10.2 validated OOS)
 /// dir_roc_3 < -0.195 means price moved against our trade direction (counter-momentum entry)
 /// avg_body_3 > 0.072 means candles are active, not dojis

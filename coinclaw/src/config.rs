@@ -17,6 +17,8 @@ pub const SCALP_TP: f64 = 0.008;
 pub const SCALP_VOL_MULT: f64 = 3.5;
 pub const SCALP_RSI_EXTREME: f64 = 20.0;
 pub const SCALP_STOCH_EXTREME: f64 = 5.0;
+pub const SCALP_COOLDOWN_SECS: u64 = 300;  // Fix #1: 5 min cooldown after scalp SL
+pub const MAX_SCALP_OPENS_PER_CYCLE: usize = 3; // Fix #5: max simultaneous scalp opens per 1m cycle
 
 // F6 filter thresholds (RUN10.1 discovery, validated OOS in RUN10.2)
 pub const F6_DIR_ROC_3: f64 = -0.195;
@@ -32,6 +34,7 @@ pub const ISO_Z_SPREAD: f64 = 1.5;
 pub const ISO_RSI_THRESHOLD: f64 = 75.0;
 pub const ISO_VOL_SPIKE_MULT: f64 = 2.0;
 pub const ISO_SQUEEZE_FACTOR: f64 = 0.8;
+pub const ISO_SL_ESCALATE_COOLDOWN: u32 = 4; // Fix #4: cooldown after consecutive ISO SL (instead of 2)
 
 // Fetch intervals
 // OU Mean Reversion params (RUN11c: DASH only)

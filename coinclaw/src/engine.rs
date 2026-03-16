@@ -171,18 +171,26 @@ pub fn check_entry(
 /// Check scalp entry for coin at index `ci` (uses 1m indicators).
 /// Scalp direction must agree with market mode to avoid shorting into pumps / longing into dumps.
 pub fn check_scalp_entry(state: &mut SharedState, ci: usize) {
-    let cs = &state.coins[ci];
-    if cs.pos.is_some() { return; }
+    // Fix #2: block scalps in Squeeze regime
+    if state.coins[ci].regime == Regime::Squeeze { return; }
+    if state.coins[ci].pos.is_some() { return; }
 
-    let ind_1m = match &cs.ind_1m {
+    // Fix #1: respect time-based scalp cooldown
+    if let Some(until) = state.coins[ci].scalp_cooldown_until {
+        if std::time::Instant::now() < until { return; }
+        state.coins[ci].scalp_cooldown_until = None;
+    }
+
+    let ind_1m = match &state.coins[ci].ind_1m {
         Some(i) => i.clone(),
         None => return,
     };
 
-    let price = cs.candles_1m.last().map(|c| c.c).unwrap_or(0.0);
+    let price = state.coins[ci].candles_1m.last().map(|c| c.c).unwrap_or(0.0);
     if price == 0.0 { return; }
 
-    if let Some((dir, strat_name)) = strategies::scalp_entry_with_price(&ind_1m, price) {
+    // Fix #3: only use scalp_stoch_cross (vol_spike_rev removed — 5.9% WR is noise)
+    if let Some((dir, strat_name)) = strategies::scalp_entry_stoch_only(&ind_1m) {
         // Enforce: scalp direction must match market mode
         let mode = state.market_mode;
         match (mode, dir) {
@@ -190,7 +198,7 @@ pub fn check_scalp_entry(state: &mut SharedState, ci: usize) {
             (coordinator::MarketMode::Short, Direction::Long) => return,
             _ => {} // IsoShort allows both; matching directions always allowed
         }
-        let regime = cs.regime;
+        let regime = state.coins[ci].regime;
         open_position(state, ci, price, &regime.to_string(), strat_name, dir, TradeType::Scalp);
     }
 }
@@ -279,8 +287,27 @@ fn close_position(
         reason: reason.to_string(),
         dir: pos.dir.clone(),
     });
-    cs.cooldown = 2;
     cs.candles_held = 0;
+
+    // Fix #1: time-based scalp cooldown after SL
+    if trade_type == TradeType::Scalp && reason == "SL" {
+        cs.scalp_cooldown_until = Some(
+            std::time::Instant::now() + std::time::Duration::from_secs(config::SCALP_COOLDOWN_SECS)
+        );
+    }
+
+    // Fix #4: escalating cooldown for consecutive SL on regime trades
+    if reason == "SL" {
+        cs.consecutive_sl += 1;
+        if trade_type == TradeType::Regime && cs.consecutive_sl >= 2 {
+            cs.cooldown = config::ISO_SL_ESCALATE_COOLDOWN;
+        } else {
+            cs.cooldown = 2;
+        }
+    } else {
+        cs.consecutive_sl = 0;
+        cs.cooldown = 2;
+    }
 
     let action = if pos.dir == "long" { "SELL" } else { "COVER" };
     let tt = match trade_type {
