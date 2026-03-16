@@ -33,15 +33,6 @@ pub enum IsoShortStrat {
     IsoBbSqueeze,
 }
 
-/// RUN13 complementary strategies — fire when primary long_entry doesn't
-#[derive(Debug, Clone, Copy, PartialEq, Eq)]
-pub enum ComplementStrat {
-    LaguerreRsi { gamma_idx: u8 },  // 0=0.5, 1=0.6, 2=0.7, 3=0.8
-    KalmanFilter,
-    KstCross,
-    None,
-}
-
 #[derive(Debug, Clone, Copy, PartialEq, Eq)]
 pub enum Direction {
     Long,
@@ -84,20 +75,6 @@ impl std::fmt::Display for IsoShortStrat {
             Self::IsoAdrRev => write!(f, "iso_adr_rev"),
             Self::IsoVolSpike => write!(f, "iso_vol_spike"),
             Self::IsoBbSqueeze => write!(f, "iso_bb_squeeze"),
-        }
-    }
-}
-
-impl std::fmt::Display for ComplementStrat {
-    fn fmt(&self, f: &mut std::fmt::Formatter) -> std::fmt::Result {
-        match self {
-            Self::LaguerreRsi { gamma_idx } => {
-                let g = match gamma_idx { 0 => "0.5", 1 => "0.6", 2 => "0.7", _ => "0.8" };
-                write!(f, "laguerre_rsi_{}", g)
-            }
-            Self::KalmanFilter => write!(f, "kalman_filter"),
-            Self::KstCross => write!(f, "kst_cross"),
-            Self::None => write!(f, "none"),
         }
     }
 }
@@ -254,47 +231,6 @@ fn passes_f6(ind: &Ind1m, dir: Direction) -> bool {
     let sign = match dir { Direction::Long => 1.0, Direction::Short => -1.0 };
     let dir_roc_3 = ind.roc_3 * sign;
     dir_roc_3 < config::F6_DIR_ROC_3 && ind.avg_body_3 > config::F6_AVG_BODY_3
-}
-
-/// RUN13 complement entry — fires when primary long_entry didn't fire.
-/// These capture oversold conditions the primary strategy misses.
-pub fn complement_entry(ind: &Ind15m, strat: ComplementStrat, z_filter: f64) -> bool {
-    if !ind.valid || ind.z.is_nan() { return false; }
-    if matches!(strat, ComplementStrat::None) { return false; }
-    // z-score filter: price must be depressed enough
-    if ind.z > z_filter { return false; }
-    // Must be below SMA20 (same guard as primary longs)
-    if ind.p > ind.sma20 { return false; }
-
-    match strat {
-        ComplementStrat::LaguerreRsi { gamma_idx } => {
-            let (cur, prev) = match gamma_idx {
-                0 => (ind.laguerre_rsi_05, ind.laguerre_rsi_05_prev),
-                1 => (ind.laguerre_rsi_06, ind.laguerre_rsi_06_prev),
-                2 => (ind.laguerre_rsi_07, ind.laguerre_rsi_07_prev),
-                _ => (ind.laguerre_rsi_08, ind.laguerre_rsi_08_prev),
-            };
-            if cur.is_nan() || prev.is_nan() { return false; }
-            // Entry: Laguerre RSI < 20 and rising
-            cur < 20.0 && cur > prev
-        }
-        ComplementStrat::KalmanFilter => {
-            if ind.kalman_est.is_nan() || ind.kalman_var.is_nan() { return false; }
-            let std_dev = ind.kalman_var.sqrt();
-            // Entry: price below Kalman estimate by 2 std devs
-            ind.p < ind.kalman_est - 2.0 * std_dev && ind.p < ind.sma20
-        }
-        ComplementStrat::KstCross => {
-            if ind.kst.is_nan() || ind.kst_signal.is_nan()
-                || ind.kst_prev.is_nan() || ind.kst_signal_prev.is_nan()
-            {
-                return false;
-            }
-            // Entry: KST crosses above signal from below
-            ind.kst_prev <= ind.kst_signal_prev && ind.kst > ind.kst_signal
-        }
-        ComplementStrat::None => false,
-    }
 }
 
 /// Check scalp entry with actual price available (COINCLAW v10)

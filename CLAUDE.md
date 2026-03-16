@@ -85,6 +85,10 @@ archive/
   RUN6/  — ISO short (coin-specific overbought) strategies
   RUN7/  — Stop loss optimization (result: SL 0.5% → 0.3%)
   RUN8/  — Take profit optimization (result: TP does not help)
+  RUN10/ — Scalp indicator discovery, F6 filter validation, fee-aware TP/SL optimization
+  RUN11/ — STRAT1000 strategy discovery (45 strategies, result: DASH → OuMeanRev)
+  RUN12/ — Scalp market mode filter (scalps must match regime direction)
+  RUN13/ — STRAT1000 final sweep: complementary signals (Laguerre RSI, Kalman Filter, KST Cross)
 ```
 
 Each `RUNX.md` contains: goal, method, full results tables, per-coin breakdowns, and conclusions. These serve as the institutional memory of what was tested and why.
@@ -96,13 +100,18 @@ Each `RUNX.md` contains: goal, method, full results tables, per-coin breakdowns,
 - `runX_3_*.py` — Combined comparison
 - Templates: use the most recent prior RUN's scripts as templates (e.g., RUN8 scripts were based on `archive/RUN7/run7_*.py`)
 
-### Current System State (COINCLAW v8)
+### Current System State (COINCLAW v13)
 
-- **trader.py** — The live paper trading system. All RUN results flow into this file.
-- SL=0.3% (RUN7), no trailing, no TP (RUN8 confirmed TP hurts)
+- **coinclaw/** — Rust live trader. All RUN results flow into this codebase.
+- Regime trades: SL=0.3% (RUN7), no trailing, no TP (RUN8 confirmed TP hurts)
 - Signal exits: SMA20 crossback, Z-score reversion (after MIN_HOLD=2 candles)
 - 3-mode market regime: LONG (breadth ≤20%), ISO_SHORT (20-50%), SHORT (≥50%)
 - 18 coins, per-coin optimal long/short/ISO-short strategies
+- DASH uses OuMeanRev (RUN11c: OU half-life regime detection, dev=2.0σ threshold)
+- Complement signals (RUN13): Laguerre RSI, Kalman Filter, KST Cross as secondary long entries when primary doesn't fire. 15/18 coins have complement assignments (+14.2% portfolio P&L, 62.7% WR on 640 complement trades)
+- Scalp overlay (RUN10): TP=0.80%, SL=0.10%, F6 filter gate, vol_spike_rev + stoch_cross (bb_squeeze removed)
+- Scalp direction must match market mode (RUN12): no shorts in LONG mode, no longs in SHORT mode
+- 15m candle fetch: 150 bars (increased from 50 for OU indicator window)
 
 ## Backtest/Optimization Script Requirements
 

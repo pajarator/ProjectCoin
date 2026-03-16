@@ -137,11 +137,6 @@ pub fn check_entry(
             if strategies::long_entry(&ind, cfg.long_strat) {
                 open_position(state, ci, ind.p, &regime.to_string(),
                     &cfg.long_strat.to_string(), Direction::Long, TradeType::Regime);
-            } else if strategies::complement_entry(&ind, cfg.complement_strat, cfg.complement_z_filter) {
-                // RUN13: complementary long entry — fires at different times than primary
-                state.coins[ci].active_strat = Some(cfg.complement_strat.to_string());
-                open_position(state, ci, ind.p, &regime.to_string(),
-                    &cfg.complement_strat.to_string(), Direction::Long, TradeType::Regime);
             } else {
                 // Try ISO short
                 if strategies::iso_short_entry(&ind, cfg.iso_short_strat, ctx) {
