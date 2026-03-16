@@ -18,6 +18,9 @@ trading_log.txt
 
 # Environment
 .env
-coinclaw/target/
-run9_1_rust/target/
-run9_2_rust/target/
+
+# Rust build artifacts
+**/target/
+
+# Large files (GitHub 50MB+ warning)
+archive/RUN10/run10_1_trades.json

@@ -1,1 +1,0 @@
-/home/scamarena/ProjectCoin/run13/target/release/librun13_lib.rlib: /home/scamarena/ProjectCoin/run13/src/indicators.rs /home/scamarena/ProjectCoin/run13/src/lib.rs /home/scamarena/ProjectCoin/run13/src/strategies.rs

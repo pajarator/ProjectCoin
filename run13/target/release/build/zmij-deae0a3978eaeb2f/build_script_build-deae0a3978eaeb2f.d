@@ -1,5 +1,0 @@
-/home/scamarena/ProjectCoin/run13/target/release/build/zmij-deae0a3978eaeb2f/build_script_build-deae0a3978eaeb2f.d: /home/scamarena/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/zmij-1.0.21/build.rs
-
-/home/scamarena/ProjectCoin/run13/target/release/build/zmij-deae0a3978eaeb2f/build_script_build-deae0a3978eaeb2f: /home/scamarena/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/zmij-1.0.21/build.rs
-
-/home/scamarena/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/zmij-1.0.21/build.rs:
