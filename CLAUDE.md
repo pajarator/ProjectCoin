@@ -95,7 +95,9 @@ archive/
   RUN17/ — Monte Carlo validation of COINCLAW v13 primary long strategies. Result: POSITIVE — 18/18 ROBUST (100% prob_profit, p5_PF = actual PF). Portfolio p50 return +15,045%, typical max DD 4.0%. No COINCLAW changes needed (validation only).
   RUN19/ — Position sizing comparison: Fixed 1%/2%/5% vs Kelly(OOS) vs Half-Kelly(OOS). Result: NEGATIVE — 17/18 strategies lose money in OOS test half; Kelly amplifies losses 15–17× vs Fixed 1% in losing period. No COINCLAW changes. Fixed 2% remains default.
   RUN20/ — Momentum crowding filter (OHLCV proxy for funding-rate pressure). Result: NEGATIVE — Mom>1% filter improves P&L by 8.4pp but stays 10pts below 44% breakeven WR. VolCrowd and AntiMom filters are counterproductive. No COINCLAW changes.
-  RUN21/ — Sentiment regime filter (BTC RSI as Fear/Greed proxy). Result: NEGATIVE — Fear regime actually reduces WR (30.4% vs 33.6% baseline). P&L improvements in filtered regimes are sample-size artifacts. No regime clears 44% breakeven. No COINCLAW changes.
+  RUN21/ — Sentiment regime filter (BTC RSI as Fear/Greed proxy). Result: NEGATIVE — Fear regime reduces WR to 30.4% vs 33.6% baseline; opposite of hypothesis. No regime clears 44% breakeven. No COINCLAW changes.
+  RUN22/ — Genetic algorithm v2 strategy discovery. Result: NEGATIVE — 0/18 coins achieve >44% WR on OOS hold-out. Corrected Python bug (test-set fitness). GA overfits train regime; evolved rules degrade on test. z20+ADX most selected. No COINCLAW changes.
+  RUN23/ — Differential evolution parameter optimization. Result: NEGATIVE — 0/54 strategy-coin pairs achieve >44% WR on OOS. DE improves momentum PF (18/18 coins, +0.216 avg) but from a catastrophic baseline. Mean_reversion DE is neutral vs default (avg PFdelta -0.034). Volatility_breakout DE hurts 15/18 coins. Parameter tuning cannot fix regime mismatch. No COINCLAW changes.
 ```
 
 Each `RUNX.md` contains: goal, method, full results tables, per-coin breakdowns, and conclusions. These serve as the institutional memory of what was tested and why.
