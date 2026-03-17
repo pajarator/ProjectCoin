@@ -99,6 +99,7 @@ archive/
   RUN22/ — Genetic algorithm v2 strategy discovery. Result: NEGATIVE — 0/18 coins achieve >44% WR on OOS hold-out. Corrected Python bug (test-set fitness). GA overfits train regime; evolved rules degrade on test. z20+ADX most selected. No COINCLAW changes.
   RUN23/ — Differential evolution parameter optimization. Result: NEGATIVE — 0/54 strategy-coin pairs achieve >44% WR on OOS. DE improves momentum PF (18/18 coins, +0.216 avg) but from a catastrophic baseline. Mean_reversion DE is neutral vs default (avg PFdelta -0.034). Volatility_breakout DE hurts 15/18 coins. Parameter tuning cannot fix regime mismatch. No COINCLAW changes.
   RUN24/ — Ensemble strategy framework: voting/intersection of top-3 per coin. Result: NEGATIVE — 1/90 combinations (LINK AND) clears 44% WR. Majority vote reduces avg PF vs best single (0.811 vs 0.879). Strategies too correlated (all mean-reversion) for ensemble diversity. AND-intersection wins by trade filtering, not signal quality. No COINCLAW changes.
+  RUN25/ — ML regime detection: BTC 4-regime framework (BULL/BEAR × HIGH/LOW vol). Result: NEGATIVE — 1/72 combinations clears 44% WR. BEAR_HIGH_VOL is best (+0.41pp vs baseline at 34.20%). BULL_LOW_VOL worst (28.14%). Dropped circular ML (labels = f(features)). No COINCLAW changes.
 ```
 
 Each `RUNX.md` contains: goal, method, full results tables, per-coin breakdowns, and conclusions. These serve as the institutional memory of what was tested and why.
