@@ -93,6 +93,7 @@ archive/
   RUN15/ — Feature engineering pipeline: 66-feature ML matrix, disk cache for all 19 coins, 3 indicator bug fixes (doji NaN, CMF propagation, flat RSI)
   RUN16/ — ML feature importance + walk-forward: RF/XGB on 66 features across 19 coins. Result: NEGATIVE — 54.6% IS accuracy doesn't survive OOS (RF −1.9% vs baseline). ML gating helps only 21% of strategies. No COINCLAW changes.
   RUN17/ — Monte Carlo validation of COINCLAW v13 primary long strategies. Result: POSITIVE — 18/18 ROBUST (100% prob_profit, p5_PF = actual PF). Portfolio p50 return +15,045%, typical max DD 4.0%. No COINCLAW changes needed (validation only).
+  RUN19/ — Position sizing comparison: Fixed 1%/2%/5% vs Kelly(OOS) vs Half-Kelly(OOS). Result: NEGATIVE — 17/18 strategies lose money in OOS test half; Kelly amplifies losses 15–17× vs Fixed 1% in losing period. No COINCLAW changes. Fixed 2% remains default.
 ```
 
 Each `RUNX.md` contains: goal, method, full results tables, per-coin breakdowns, and conclusions. These serve as the institutional memory of what was tested and why.

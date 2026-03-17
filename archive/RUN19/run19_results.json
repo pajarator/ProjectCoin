@@ -1,0 +1,1013 @@
+{
+  "per_coin": [
+    {
+      "coin": "ADA",
+      "fixed_1pct": {
+        "calmar": -0.9981183678588349,
+        "fraction": 0.01,
+        "max_drawdown_pct": 1.8448971477765035,
+        "n_trades": 1869,
+        "sharpe": -7.133041073359186,
+        "total_return_pct": -1.8414257300061034,
+        "win_rate": 42.375601926163725
+      },
+      "fixed_2pct": {
+        "calmar": -0.9981363499752847,
+        "fraction": 0.02,
+        "max_drawdown_pct": 3.6564288235925844,
+        "n_trades": 1869,
+        "sharpe": -7.1330410733569884,
+        "total_return_pct": -3.649614519925126,
+        "win_rate": 42.375601926163725
+      },
+      "fixed_5pct": {
+        "calmar": -0.9981896236894496,
+        "fraction": 0.05,
+        "max_drawdown_pct": 8.896686486694472,
+        "n_trades": 1869,
+        "sharpe": -7.1330410733579885,
+        "total_return_pct": -8.880580136236567,
+        "win_rate": 42.375601926163725
+      },
+      "full_wr": 42.68129515654268,
+      "halfkelly": {
+        "calmar": -0.9982657209947121,
+        "fraction": 0.09387601529234554,
+        "max_drawdown_pct": 16.061278331561017,
+        "n_trades": 1869,
+        "sharpe": -7.133041073358114,
+        "total_return_pct": -16.033423593752506,
+        "win_rate": 42.375601926163725
+      },
+      "kelly_fraction_from_train": 0.1877520305846911,
+      "kelly_oos": {
+        "calmar": -0.9984212957880072,
+        "fraction": 0.1877520305846911,
+        "max_drawdown_pct": 29.5860584186039,
+        "n_trades": 1869,
+        "sharpe": -7.1330410733580845,
+        "total_return_pct": -29.539350783562185,
+        "win_rate": 42.375601926163725
+      },
+      "n_test": 1869,
+      "n_total_trades": 3737,
+      "n_train": 1868,
+      "strategy": "vwap_rev"
+    },
+    {
+      "coin": "ALGO",
+      "fixed_1pct": {
+        "calmar": -0.852835254820353,
+        "fraction": 0.01,
+        "max_drawdown_pct": 0.3214527328484204,
+        "n_trades": 481,
+        "sharpe": -1.9242223250145902,
+        "total_return_pct": -0.2741462233314815,
+        "win_rate": 40.12474012474013
+      },
+      "fixed_2pct": {
+        "calmar": -0.8532036203525869,
+        "fraction": 0.02,
+        "max_drawdown_pct": 0.6419858829401331,
+        "n_trades": 481,
+        "sharpe": -1.9242223250132446,
+        "total_return_pct": -0.5477446795397737,
+        "win_rate": 40.12474012474013
+      },
+      "fixed_5pct": {
+        "calmar": -0.8543054502315267,
+        "fraction": 0.05,
+        "max_drawdown_pct": 1.5980899325243196,
+        "n_trades": 481,
+        "sharpe": -1.9242223250134545,
+        "total_return_pct": -1.365256939315659,
+        "win_rate": 40.12474012474013
+      },
+      "full_wr": 36.31633714880333,
+      "halfkelly": {
+        "calmar": -0.854785985783052,
+        "fraction": 0.06312573319398437,
+        "max_drawdown_pct": 2.013827607653574,
+        "n_trades": 481,
+        "sharpe": -1.924222325013576,
+        "total_return_pct": -1.7213916168052856,
+        "win_rate": 40.12474012474013
+      },
+      "kelly_fraction_from_train": 0.12625146638796875,
+      "kelly_oos": {
+        "calmar": -0.8570839026097357,
+        "fraction": 0.12625146638796875,
+        "max_drawdown_pct": 3.991477075227843,
+        "n_trades": 481,
+        "sharpe": -1.9242223250132522,
+        "total_return_pct": -3.421030748813573,
+        "win_rate": 40.12474012474013
+      },
+      "n_test": 481,
+      "n_total_trades": 961,
+      "n_train": 480,
+      "strategy": "adr_rev"
+    },
+    {
+      "coin": "ATOM",
+      "fixed_1pct": {
+        "calmar": -0.9965115475230951,
+        "fraction": 0.01,
+        "max_drawdown_pct": 1.8859533384213862,
+        "n_trades": 1838,
+        "sharpe": -7.281163732203465,
+        "total_return_pct": -1.879374279826643,
+        "win_rate": 42.05658324265506
+      },
+      "fixed_2pct": {
+        "calmar": -0.9965454681361562,
+        "fraction": 0.02,
+        "max_drawdown_pct": 3.7370098167852297,
+        "n_trades": 1838,
+        "sharpe": -7.281163732203017,
+        "total_return_pct": -3.724100197297648,
+        "win_rate": 42.05658324265506
+      },
+      "fixed_5pct": {
+        "calmar": -0.9966459421603951,
+        "fraction": 0.05,
+        "max_drawdown_pct": 9.0870684475692,
+        "n_trades": 1838,
+        "sharpe": -7.281163732202748,
+        "total_return_pct": -9.056589894403604,
+        "win_rate": 42.05658324265506
+      },
+      "full_wr": 42.38302502720348,
+      "halfkelly": {
+        "calmar": -0.9967292572742406,
+        "fraction": 0.07532579799546665,
+        "max_drawdown_pct": 13.375640853216172,
+        "n_trades": 1838,
+        "sharpe": -7.281163732202785,
+        "total_return_pct": -13.331892573193144,
+        "win_rate": 42.05658324265506
+      },
+      "kelly_fraction_from_train": 0.1506515959909333,
+      "kelly_oos": {
+        "calmar": -0.9969689206886756,
+        "fraction": 0.1506515959909333,
+        "max_drawdown_pct": 24.99183876998516,
+        "n_trades": 1838,
+        "sharpe": -7.281163732202947,
+        "total_return_pct": -24.916086524537505,
+        "win_rate": 42.05658324265506
+      },
+      "n_test": 1838,
+      "n_total_trades": 3676,
+      "n_train": 1838,
+      "strategy": "vwap_rev"
+    },
+    {
+      "coin": "AVAX",
+      "fixed_1pct": {
+        "calmar": -0.9945726150449348,
+        "fraction": 0.01,
+        "max_drawdown_pct": 0.41035865022908186,
+        "n_trades": 449,
+        "sharpe": -2.8293410259453236,
+        "total_return_pct": -0.40813147586464765,
+        "win_rate": 34.29844097995546
+      },
+      "fixed_2pct": {
+        "calmar": -0.9945851783888245,
+        "fraction": 0.02,
+        "max_drawdown_pct": 0.8192440707289824,
+        "n_trades": 449,
+        "sharpe": -2.82934102594495,
+        "total_return_pct": -0.8148080102299717,
+        "win_rate": 34.29844097995546
+      },
+      "fixed_5pct": {
+        "calmar": -0.9946227707912734,
+        "fraction": 0.05,
+        "max_drawdown_pct": 2.037103631637456,
+        "n_trades": 449,
+        "sharpe": -2.8293410259454004,
+        "total_return_pct": -2.0261496584882117,
+        "win_rate": 34.29844097995546
+      },
+      "full_wr": 35.005574136008924,
+      "halfkelly": {
+        "calmar": -0.9946722567892231,
+        "fraction": 0.08967125374899294,
+        "max_drawdown_pct": 3.6274654864761215,
+        "n_trades": 449,
+        "sharpe": -2.829341025945404,
+        "total_return_pct": -3.6081392818582207,
+        "win_rate": 34.29844097995546
+      },
+      "kelly_fraction_from_train": 0.1793425074979859,
+      "kelly_oos": {
+        "calmar": -0.9947831644130898,
+        "fraction": 0.1793425074979859,
+        "max_drawdown_pct": 7.139184899249303,
+        "n_trades": 449,
+        "sharpe": -2.8293410259455887,
+        "total_return_pct": -7.101940945405367,
+        "win_rate": 34.29844097995546
+      },
+      "n_test": 449,
+      "n_total_trades": 897,
+      "n_train": 448,
+      "strategy": "adr_rev"
+    },
+    {
+      "coin": "BNB",
+      "fixed_1pct": {
+        "calmar": -0.9796221348207239,
+        "fraction": 0.01,
+        "max_drawdown_pct": 1.8163741400503746,
+        "n_trades": 1456,
+        "sharpe": -7.647878555423607,
+        "total_return_pct": -1.7793603127093045,
+        "win_rate": 47.39010989010989
+      },
+      "fixed_2pct": {
+        "calmar": -0.9798723346541629,
+        "fraction": 0.02,
+        "max_drawdown_pct": 3.6000727809306876,
+        "n_trades": 1456,
+        "sharpe": -7.647878555424315,
+        "total_return_pct": -3.527611720775458,
+        "win_rate": 47.39010989010989
+      },
+      "fixed_5pct": {
+        "calmar": -0.9806089812558899,
+        "fraction": 0.05,
+        "max_drawdown_pct": 8.760884086941005,
+        "n_trades": 1456,
+        "sharpe": -7.647878555424501,
+        "total_return_pct": -8.591001619396156,
+        "win_rate": 47.39010989010989
+      },
+      "full_wr": 48.16214359326692,
+      "halfkelly": {
+        "calmar": -0.980008818603496,
+        "fraction": 0.025494722534384156,
+        "max_drawdown_pct": 4.566466812707814,
+        "n_trades": 1456,
+        "sharpe": -7.647878555423753,
+        "total_return_pct": -4.4751777463138565,
+        "win_rate": 47.39010989010989
+      },
+      "kelly_fraction_from_train": 0.05098944506876831,
+      "kelly_oos": {
+        "calmar": -0.9806329228429762,
+        "fraction": 0.05098944506876831,
+        "max_drawdown_pct": 8.926351373911805,
+        "n_trades": 1456,
+        "sharpe": -7.64787855542457,
+        "total_return_pct": -8.75347403812255,
+        "win_rate": 47.39010989010989
+      },
+      "n_test": 1456,
+      "n_total_trades": 2911,
+      "n_train": 1455,
+      "strategy": "vwap_rev"
+    },
+    {
+      "coin": "BTC",
+      "fixed_1pct": {
+        "calmar": -0.9604361897292119,
+        "fraction": 0.01,
+        "max_drawdown_pct": 0.45887751714955505,
+        "n_trades": 482,
+        "sharpe": -3.1021075329585868,
+        "total_return_pct": -0.44072257412351973,
+        "win_rate": 42.738589211618255
+      },
+      "fixed_2pct": {
+        "calmar": -0.9605482228268771,
+        "fraction": 0.02,
+        "max_drawdown_pct": 0.915839059189132,
+        "n_trades": 482,
+        "sharpe": -3.102107532958104,
+        "total_return_pct": -0.8797075806995599,
+        "win_rate": 42.738589211618255
+      },
+      "fixed_5pct": {
+        "calmar": -0.9608830888924745,
+        "fraction": 0.05,
+        "max_drawdown_pct": 2.2752975137863864,
+        "n_trades": 482,
+        "sharpe": -3.102107532957706,
+        "total_return_pct": -2.1862949031964307,
+        "win_rate": 42.738589211618255
+      },
+      "full_wr": 43.25726141078838,
+      "halfkelly": {
+        "calmar": -0.9605952068514695,
+        "fraction": 0.024199233071589644,
+        "max_drawdown_pct": 1.1071583313405633,
+        "n_trades": 482,
+        "sharpe": -3.102107532957615,
+        "total_return_pct": -1.0635309863114162,
+        "win_rate": 42.738589211618255
+      },
+      "kelly_fraction_from_train": 0.04839846614317929,
+      "kelly_oos": {
+        "calmar": -0.960865258979614,
+        "fraction": 0.04839846614317929,
+        "max_drawdown_pct": 2.2031545970502435,
+        "n_trades": 482,
+        "sharpe": -3.102107532957663,
+        "total_return_pct": -2.116934712466809,
+        "win_rate": 42.738589211618255
+      },
+      "n_test": 482,
+      "n_total_trades": 964,
+      "n_train": 482,
+      "strategy": "bb_bounce"
+    },
+    {
+      "coin": "DASH",
+      "fixed_1pct": {
+        "calmar": 7.306239267679865,
+        "fraction": 0.01,
+        "max_drawdown_pct": 0.20488141497475582,
+        "n_trades": 1030,
+        "sharpe": 3.5601327599366877,
+        "total_return_pct": 1.4969126393063743,
+        "win_rate": 28.83495145631068
+      },
+      "fixed_2pct": {
+        "calmar": 7.36125249431675,
+        "fraction": 0.02,
+        "max_drawdown_pct": 0.4094976563754713,
+        "n_trades": 1030,
+        "sharpe": 3.5601327599370136,
+        "total_return_pct": 3.0144156444108012,
+        "win_rate": 28.83495145631068
+      },
+      "fixed_5pct": {
+        "calmar": 7.529242329925881,
+        "fraction": 0.05,
+        "max_drawdown_pct": 1.0217541555334857,
+        "n_trades": 1030,
+        "sharpe": 3.5601327599373556,
+        "total_return_pct": 7.693034638620393,
+        "win_rate": 28.83495145631068
+      },
+      "full_wr": 34.38562408936377,
+      "halfkelly": {
+        "calmar": 7.769390467828463,
+        "fraction": 0.09154914807057109,
+        "max_drawdown_pct": 1.865762911771042,
+        "n_trades": 1030,
+        "sharpe": 3.5601327599372894,
+        "total_return_pct": 14.49584058194181,
+        "win_rate": 28.83495145631068
+      },
+      "kelly_fraction_from_train": 0.18309829614114217,
+      "kelly_oos": {
+        "calmar": 8.330734647368253,
+        "fraction": 0.18309829614114217,
+        "max_drawdown_pct": 3.7092245300764457,
+        "n_trades": 1030,
+        "sharpe": 3.5601327599372414,
+        "total_return_pct": 30.900565307576073,
+        "win_rate": 28.83495145631068
+      },
+      "n_test": 1030,
+      "n_total_trades": 2059,
+      "n_train": 1029,
+      "strategy": "mean_rev"
+    },
+    {
+      "coin": "DOGE",
+      "fixed_1pct": {
+        "calmar": -0.8106085890652794,
+        "fraction": 0.01,
+        "max_drawdown_pct": 0.5540787159625801,
+        "n_trades": 541,
+        "sharpe": -1.8423659889452009,
+        "total_return_pct": -0.44914096617752874,
+        "win_rate": 31.42329020332717
+      },
+      "fixed_2pct": {
+        "calmar": -0.8113805039447383,
+        "fraction": 0.02,
+        "max_drawdown_pct": 1.105348439865874,
+        "n_trades": 541,
+        "sharpe": -1.8423659889443504,
+        "total_return_pct": -0.896858174172903,
+        "win_rate": 31.42329020332717
+      },
+      "fixed_5pct": {
+        "calmar": -0.8136829823166887,
+        "fraction": 0.05,
+        "max_drawdown_pct": 2.7424288467216957,
+        "n_trades": 541,
+        "sharpe": -1.8423659889449242,
+        "total_return_pct": -2.2314676827918265,
+        "win_rate": 31.42329020332717
+      },
+      "full_wr": 32.34750462107209,
+      "halfkelly": {
+        "calmar": -0.816519899791832,
+        "fraction": 0.08732447634778608,
+        "max_drawdown_pct": 4.744572630837643,
+        "n_trades": 541,
+        "sharpe": -1.842365988944804,
+        "total_return_pct": -3.874037969086621,
+        "win_rate": 31.42329020332717
+      },
+      "kelly_fraction_from_train": 0.17464895269557215,
+      "kelly_oos": {
+        "calmar": -0.8230377645092299,
+        "fraction": 0.17464895269557215,
+        "max_drawdown_pct": 9.282228196571367,
+        "n_trades": 541,
+        "sharpe": -1.842365988944834,
+        "total_return_pct": -7.639624344570639,
+        "win_rate": 31.42329020332717
+      },
+      "n_test": 541,
+      "n_total_trades": 1082,
+      "n_train": 541,
+      "strategy": "bb_bounce"
+    },
+    {
+      "coin": "DOT",
+      "fixed_1pct": {
+        "calmar": -1.0,
+        "fraction": 0.01,
+        "max_drawdown_pct": 1.404687919708722,
+        "n_trades": 1864,
+        "sharpe": -5.011845174295678,
+        "total_return_pct": -1.404687919708722,
+        "win_rate": 41.79184549356223
+      },
+      "fixed_2pct": {
+        "calmar": -1.0,
+        "fraction": 0.02,
+        "max_drawdown_pct": 2.790428584105775,
+        "n_trades": 1864,
+        "sharpe": -5.01184517429577,
+        "total_return_pct": -2.790428584105775,
+        "win_rate": 41.79184549356223
+      },
+      "fixed_5pct": {
+        "calmar": -1.0,
+        "fraction": 0.05,
+        "max_drawdown_pct": 6.836390813215658,
+        "n_trades": 1864,
+        "sharpe": -5.011845174296504,
+        "total_return_pct": -6.836390813215658,
+        "win_rate": 41.79184549356223
+      },
+      "full_wr": 41.80305876039711,
+      "halfkelly": {
+        "calmar": -1.0,
+        "fraction": 0.07548936900514834,
+        "max_drawdown_pct": 10.146544191647008,
+        "n_trades": 1864,
+        "sharpe": -5.011845174296421,
+        "total_return_pct": -10.146544191647008,
+        "win_rate": 41.79184549356223
+      },
+      "kelly_fraction_from_train": 0.15097873801029668,
+      "kelly_oos": {
+        "calmar": -1.0,
+        "fraction": 0.15097873801029668,
+        "max_drawdown_pct": 19.300597592580463,
+        "n_trades": 1864,
+        "sharpe": -5.011845174296336,
+        "total_return_pct": -19.300597592580463,
+        "win_rate": 41.79184549356223
+      },
+      "n_test": 1864,
+      "n_total_trades": 3727,
+      "n_train": 1863,
+      "strategy": "vwap_rev"
+    },
+    {
+      "coin": "ETH",
+      "fixed_1pct": {
+        "calmar": -0.9925948274382356,
+        "fraction": 0.01,
+        "max_drawdown_pct": 1.988696229565768,
+        "n_trades": 1640,
+        "sharpe": -8.881923122793454,
+        "total_return_pct": -1.9739695908129031,
+        "win_rate": 44.08536585365854
+      },
+      "fixed_2pct": {
+        "calmar": -0.9926699790675391,
+        "fraction": 0.02,
+        "max_drawdown_pct": 3.9383490323781674,
+        "n_trades": 1640,
+        "sharpe": -8.881923122793333,
+        "total_return_pct": -3.909480851531498,
+        "win_rate": 44.08536585365854
+      },
+      "fixed_5pct": {
+        "calmar": -0.9928924361518954,
+        "fraction": 0.05,
+        "max_drawdown_pct": 9.56053740154974,
+        "n_trades": 1640,
+        "sharpe": -8.881923122793301,
+        "total_return_pct": -9.492585271546032,
+        "win_rate": 44.08536585365854
+      },
+      "full_wr": 45.670731707317074,
+      "halfkelly": {
+        "calmar": -0.9930710517167101,
+        "fraction": 0.07453867296799349,
+        "max_drawdown_pct": 13.916735657465972,
+        "n_trades": 1640,
+        "sharpe": -8.881923122793657,
+        "total_return_pct": -13.820307315823174,
+        "win_rate": 44.08536585365854
+      },
+      "kelly_fraction_from_train": 0.14907734593598698,
+      "kelly_oos": {
+        "calmar": -0.9935951683041473,
+        "fraction": 0.14907734593598698,
+        "max_drawdown_pct": 25.91836226150952,
+        "n_trades": 1640,
+        "sharpe": -8.88192312279338,
+        "total_return_pct": -25.752359513392413,
+        "win_rate": 44.08536585365854
+      },
+      "n_test": 1640,
+      "n_total_trades": 3280,
+      "n_train": 1640,
+      "strategy": "vwap_rev"
+    },
+    {
+      "coin": "LINK",
+      "fixed_1pct": {
+        "calmar": -0.990986838655443,
+        "fraction": 0.01,
+        "max_drawdown_pct": 1.5088526975441034,
+        "n_trades": 1844,
+        "sharpe": -5.783324531354863,
+        "total_return_pct": -1.4952531647359684,
+        "win_rate": 43.655097613882866
+      },
+      "fixed_2pct": {
+        "calmar": -0.9910571747305059,
+        "fraction": 0.02,
+        "max_drawdown_pct": 2.9956076477231237,
+        "n_trades": 1844,
+        "sharpe": -5.783324531355346,
+        "total_return_pct": -2.9688184519535756,
+        "win_rate": 43.655097613882866
+      },
+      "fixed_5pct": {
+        "calmar": -0.9912660955681096,
+        "fraction": 0.05,
+        "max_drawdown_pct": 7.326395630676723,
+        "n_trades": 1844,
+        "sharpe": -5.783324531355136,
+        "total_return_pct": -7.262407591408174,
+        "win_rate": 43.655097613882866
+      },
+      "full_wr": 42.326464208242946,
+      "halfkelly": {
+        "calmar": -0.9914906797897864,
+        "fraction": 0.08276353471365205,
+        "max_drawdown_pct": 11.841788831211927,
+        "n_trades": 1844,
+        "sharpe": -5.783324531354992,
+        "total_return_pct": -11.741023258185415,
+        "win_rate": 43.655097613882866
+      },
+      "kelly_fraction_from_train": 0.1655270694273041,
+      "kelly_oos": {
+        "calmar": -0.9920413130157227,
+        "fraction": 0.1655270694273041,
+        "max_drawdown_pct": 22.317926742585957,
+        "n_trades": 1844,
+        "sharpe": -5.783324531355051,
+        "total_return_pct": -22.140305349503684,
+        "win_rate": 43.655097613882866
+      },
+      "n_test": 1844,
+      "n_total_trades": 3688,
+      "n_train": 1844,
+      "strategy": "vwap_rev"
+    },
+    {
+      "coin": "LTC",
+      "fixed_1pct": {
+        "calmar": -0.9997103082110619,
+        "fraction": 0.01,
+        "max_drawdown_pct": 1.7455039608491243,
+        "n_trades": 1713,
+        "sharpe": -7.016067397182671,
+        "total_return_pct": -1.7449983026841074,
+        "win_rate": 45.359019264448335
+      },
+      "fixed_2pct": {
+        "calmar": -0.9997129254427625,
+        "fraction": 0.02,
+        "max_drawdown_pct": 3.4611647498628146,
+        "n_trades": 1713,
+        "sharpe": -7.016067397182845,
+        "total_return_pct": -3.4601711375247217,
+        "win_rate": 45.359019264448335
+      },
+      "fixed_5pct": {
+        "calmar": -0.9997206848032253,
+        "fraction": 0.05,
+        "max_drawdown_pct": 8.434035662529233,
+        "n_trades": 1713,
+        "sharpe": -7.016067397183356,
+        "total_return_pct": -8.431679908198548,
+        "win_rate": 45.359019264448335
+      },
+      "full_wr": 45.650904845300644,
+      "halfkelly": {
+        "calmar": -0.9997310363053517,
+        "fraction": 0.0908844801562806,
+        "max_drawdown_pct": 14.809277217402778,
+        "n_trades": 1713,
+        "sharpe": -7.016067397183468,
+        "total_return_pct": -14.805294059487315,
+        "win_rate": 45.359019264448335
+      },
+      "kelly_fraction_from_train": 0.1817689603125612,
+      "kelly_oos": {
+        "calmar": -0.9997531260515672,
+        "fraction": 0.1817689603125612,
+        "max_drawdown_pct": 27.464042648447972,
+        "n_trades": 1713,
+        "sharpe": -7.016067397183474,
+        "total_return_pct": -27.457262491799423,
+        "win_rate": 45.359019264448335
+      },
+      "n_test": 1713,
+      "n_total_trades": 3426,
+      "n_train": 1713,
+      "strategy": "vwap_rev"
+    },
+    {
+      "coin": "NEAR",
+      "fixed_1pct": {
+        "calmar": -0.9347780766211246,
+        "fraction": 0.01,
+        "max_drawdown_pct": 1.1878506334262158,
+        "n_trades": 1950,
+        "sharpe": -3.528661669543686,
+        "total_return_pct": -1.1103767304273424,
+        "win_rate": 38.46153846153847
+      },
+      "fixed_2pct": {
+        "calmar": -0.935207752187479,
+        "fraction": 0.02,
+        "max_drawdown_pct": 2.3624786532875515,
+        "n_trades": 1950,
+        "sharpe": -3.528661669543155,
+        "total_return_pct": -2.2094083509319535,
+        "win_rate": 38.46153846153847
+      },
+      "fixed_5pct": {
+        "calmar": -0.9364863447092326,
+        "fraction": 0.05,
+        "max_drawdown_pct": 5.808377785651963,
+        "n_trades": 1950,
+        "sharpe": -3.5286616695437822,
+        "total_return_pct": -5.439466481175514,
+        "win_rate": 38.46153846153847
+      },
+      "full_wr": 39.23076923076923,
+      "halfkelly": {
+        "calmar": -0.9381157408872418,
+        "fraction": 0.08877611899673475,
+        "max_drawdown_pct": 10.093651349982508,
+        "n_trades": 1950,
+        "sharpe": -3.528661669543736,
+        "total_return_pct": -9.469013214446349,
+        "win_rate": 38.46153846153847
+      },
+      "kelly_fraction_from_train": 0.1775522379934695,
+      "kelly_oos": {
+        "calmar": -0.9417472208199901,
+        "fraction": 0.1775522379934695,
+        "max_drawdown_pct": 19.226219440576696,
+        "n_trades": 1950,
+        "sharpe": -3.528661669543635,
+        "total_return_pct": -18.106238725038367,
+        "win_rate": 38.46153846153847
+      },
+      "n_test": 1950,
+      "n_total_trades": 3900,
+      "n_train": 1950,
+      "strategy": "vwap_rev"
+    },
+    {
+      "coin": "SHIB",
+      "fixed_1pct": {
+        "calmar": -0.9996309909763584,
+        "fraction": 0.01,
+        "max_drawdown_pct": 2.24831255703607,
+        "n_trades": 1816,
+        "sharpe": -9.074759831429622,
+        "total_return_pct": -2.247482909414557,
+        "win_rate": 42.51101321585903
+      },
+      "fixed_2pct": {
+        "calmar": -0.9996352401516462,
+        "fraction": 0.02,
+        "max_drawdown_pct": 4.44670233210692,
+        "n_trades": 1816,
+        "sharpe": -9.07475983142801,
+        "total_return_pct": -4.445080353638586,
+        "win_rate": 42.51101321585903
+      },
+      "fixed_5pct": {
+        "calmar": -0.9996477943888777,
+        "fraction": 0.05,
+        "max_drawdown_pct": 10.753157414179675,
+        "n_trades": 1816,
+        "sharpe": -9.074759831427931,
+        "total_return_pct": -10.74937009180112,
+        "win_rate": 42.51101321585903
+      },
+      "full_wr": 42.46763976865877,
+      "halfkelly": {
+        "calmar": -0.9996602922324354,
+        "fraction": 0.08057825671567606,
+        "max_drawdown_pct": 16.7580680761901,
+        "n_trades": 1816,
+        "sharpe": -9.074759831428281,
+        "total_return_pct": -16.75237523029524,
+        "win_rate": 42.51101321585903
+      },
+      "kelly_fraction_from_train": 0.16115651343135212,
+      "kelly_oos": {
+        "calmar": -0.9996917857287617,
+        "fraction": 0.16115651343135212,
+        "max_drawdown_pct": 30.73721321532727,
+        "n_trades": 1816,
+        "sharpe": -9.074759831428066,
+        "total_return_pct": -30.727739567556213,
+        "win_rate": 42.51101321585903
+      },
+      "n_test": 1816,
+      "n_total_trades": 3631,
+      "n_train": 1815,
+      "strategy": "vwap_rev"
+    },
+    {
+      "coin": "SOL",
+      "fixed_1pct": {
+        "calmar": -0.9982515316630908,
+        "fraction": 0.01,
+        "max_drawdown_pct": 2.0235482643103446,
+        "n_trades": 1772,
+        "sharpe": -8.394466529844395,
+        "total_return_pct": -2.0200101542419904,
+        "win_rate": 41.59142212189616
+      },
+      "fixed_2pct": {
+        "calmar": -0.9982696518164974,
+        "fraction": 0.02,
+        "max_drawdown_pct": 4.006738582627524,
+        "n_trades": 1772,
+        "sharpe": -8.394466529843314,
+        "total_return_pct": -3.999805529799305,
+        "win_rate": 41.59142212189616
+      },
+      "fixed_5pct": {
+        "calmar": -0.9983232749106514,
+        "fraction": 0.05,
+        "max_drawdown_pct": 9.72201259529775,
+        "n_trades": 1772,
+        "sharpe": -8.394466529843806,
+        "total_return_pct": -9.705711452860251,
+        "win_rate": 41.59142212189616
+      },
+      "full_wr": 41.97008185153825,
+      "halfkelly": {
+        "calmar": -0.9983650059433328,
+        "fraction": 0.07378683707396372,
+        "max_drawdown_pct": 14.014120768733775,
+        "n_trades": 1772,
+        "sharpe": -8.39446652984318,
+        "total_return_pct": -13.991207764567479,
+        "win_rate": 41.59142212189616
+      },
+      "kelly_fraction_from_train": 0.14757367414792744,
+      "kelly_oos": {
+        "calmar": -0.9984900327993619,
+        "fraction": 0.14757367414792744,
+        "max_drawdown_pct": 26.08897911532867,
+        "n_trades": 1772,
+        "sharpe": -8.394466529843637,
+        "total_return_pct": -26.04958561256639,
+        "win_rate": 41.59142212189616
+      },
+      "n_test": 1772,
+      "n_total_trades": 3543,
+      "n_train": 1771,
+      "strategy": "vwap_rev"
+    },
+    {
+      "coin": "UNI",
+      "fixed_1pct": {
+        "calmar": -0.9993623901576614,
+        "fraction": 0.01,
+        "max_drawdown_pct": 1.4645846629383414,
+        "n_trades": 1951,
+        "sharpe": -4.883900996680561,
+        "total_return_pct": -1.4636508293423138,
+        "win_rate": 40.54331112250128
+      },
+      "fixed_2pct": {
+        "calmar": -0.9993673566234997,
+        "fraction": 0.02,
+        "max_drawdown_pct": 2.9086139226507477,
+        "n_trades": 1951,
+        "sharpe": -4.883900996680027,
+        "total_return_pct": -2.9067738073177862,
+        "win_rate": 40.54331112250128
+      },
+      "fixed_5pct": {
+        "calmar": -0.9993821091121822,
+        "fraction": 0.05,
+        "max_drawdown_pct": 7.120096902502482,
+        "n_trades": 1951,
+        "sharpe": -4.883900996680041,
+        "total_return_pct": -7.115697459506046,
+        "win_rate": 40.54331112250128
+      },
+      "full_wr": 40.322994104075875,
+      "halfkelly": {
+        "calmar": -0.9993998906329716,
+        "fraction": 0.08677162223549524,
+        "max_drawdown_pct": 12.04376893037701,
+        "n_trades": 1951,
+        "sharpe": -4.8839009966805165,
+        "total_return_pct": -12.036541351827564,
+        "win_rate": 40.54331112250128
+      },
+      "kelly_fraction_from_train": 0.17354324447099048,
+      "kelly_oos": {
+        "calmar": -0.9994405350402069,
+        "fraction": 0.17354324447099048,
+        "max_drawdown_pct": 22.690514707755366,
+        "n_trades": 1951,
+        "sharpe": -4.8839009966802704,
+        "total_return_pct": -22.677820159856708,
+        "win_rate": 40.54331112250128
+      },
+      "n_test": 1951,
+      "n_total_trades": 3901,
+      "n_train": 1950,
+      "strategy": "vwap_rev"
+    },
+    {
+      "coin": "XLM",
+      "fixed_1pct": {
+        "calmar": -0.9648205752174809,
+        "fraction": 0.01,
+        "max_drawdown_pct": 0.8876743817441688,
+        "n_trades": 745,
+        "sharpe": -4.552360296921786,
+        "total_return_pct": -0.8564465076002307,
+        "win_rate": 36.375838926174495
+      },
+      "fixed_2pct": {
+        "calmar": -0.9649861883870162,
+        "fraction": 0.02,
+        "max_drawdown_pct": 1.767816339839258,
+        "n_trades": 745,
+        "sharpe": -4.552360296922533,
+        "total_return_pct": -1.7059183515497716,
+        "win_rate": 36.375838926174495
+      },
+      "fixed_5pct": {
+        "calmar": -0.9654800989390538,
+        "fraction": 0.05,
+        "max_drawdown_pct": 4.363650718208103,
+        "n_trades": 745,
+        "sharpe": -4.552360296921864,
+        "total_return_pct": -4.213017927151032,
+        "win_rate": 36.375838926174495
+      },
+      "full_wr": 37.852348993288594,
+      "halfkelly": {
+        "calmar": -0.9661650992654511,
+        "fraction": 0.0920565130366387,
+        "max_drawdown_pct": 7.892555124320985,
+        "n_trades": 745,
+        "sharpe": -4.552360296921941,
+        "total_return_pct": -7.625511305147629,
+        "win_rate": 36.375838926174495
+      },
+      "kelly_fraction_from_train": 0.1841130260732774,
+      "kelly_oos": {
+        "calmar": -0.9676342583848979,
+        "fraction": 0.1841130260732774,
+        "max_drawdown_pct": 15.187497412782111,
+        "n_trades": 745,
+        "sharpe": -4.552360296921946,
+        "total_return_pct": -14.695942795739974,
+        "win_rate": 36.375838926174495
+      },
+      "n_test": 745,
+      "n_total_trades": 1490,
+      "n_train": 745,
+      "strategy": "dual_rsi"
+    },
+    {
+      "coin": "XRP",
+      "fixed_1pct": {
+        "calmar": -1.0,
+        "fraction": 0.01,
+        "max_drawdown_pct": 2.4000398236127327,
+        "n_trades": 1759,
+        "sharpe": -10.476971186333254,
+        "total_return_pct": -2.4000398236127327,
+        "win_rate": 41.89880613985219
+      },
+      "fixed_2pct": {
+        "calmar": -1.0,
+        "fraction": 0.02,
+        "max_drawdown_pct": 4.743021609246497,
+        "n_trades": 1759,
+        "sharpe": -10.47697118633382,
+        "total_return_pct": -4.743021609246497,
+        "win_rate": 41.89880613985219
+      },
+      "fixed_5pct": {
+        "calmar": -1.0,
+        "fraction": 0.05,
+        "max_drawdown_pct": 11.4428949721364,
+        "n_trades": 1759,
+        "sharpe": -10.476971186334739,
+        "total_return_pct": -11.4428949721364,
+        "win_rate": 41.89880613985219
+      },
+      "full_wr": 42.15463331438317,
+      "halfkelly": {
+        "calmar": -1.0,
+        "fraction": 0.0620215306736319,
+        "max_drawdown_pct": 13.994729934700445,
+        "n_trades": 1759,
+        "sharpe": -10.476971186333817,
+        "total_return_pct": -13.994729934700445,
+        "win_rate": 41.89880613985219
+      },
+      "kelly_fraction_from_train": 0.1240430613472638,
+      "kelly_oos": {
+        "calmar": -1.0,
+        "fraction": 0.1240430613472638,
+        "max_drawdown_pct": 26.047163175197845,
+        "n_trades": 1759,
+        "sharpe": -10.476971186334257,
+        "total_return_pct": -26.047163175197845,
+        "win_rate": 41.89880613985219
+      },
+      "n_test": 1759,
+      "n_total_trades": 3518,
+      "n_train": 1759,
+      "strategy": "vwap_rev"
+    }
+  ],
+  "summary": {
+    "best_risk_adjusted": "kelly_oos",
+    "kelly_fractions": {
+      "cap": 0.25,
+      "max": 0.1877520305846911,
+      "mean": 0.15091481287003725,
+      "median": 0.1655270694273041,
+      "min": 0.04839846614317929
+    },
+    "portfolio": {
+      "fixed_1pct": {
+        "avg_calmar": -0.5092556094512791,
+        "avg_dd": 1.3531458215637917,
+        "avg_return": -1.2384613808507625
+      },
+      "fixed_2pct": {
+        "avg_calmar": -0.5063291917982681,
+        "avg_dd": 2.6836859991242488,
+        "avg_return": -2.45360757032384
+      },
+      "fixed_5pct": {
+        "avg_calmar": -0.49738307488861355,
+        "avg_dd": 6.543714610964207,
+        "avg_return": -5.962973786900379
+      },
+      "halfkelly": {
+        "avg_calmar": -0.48434363750182463,
+        "avg_dd": 9.604078502644247,
+        "avg_return": -8.555238933972602
+      },
+      "kelly_oos": {
+        "avg_calmar": -0.45408066792265167,
+        "avg_dd": 18.044890787375998,
+        "avg_return": -15.863493987396332
+      }
+    }
+  }
+}
