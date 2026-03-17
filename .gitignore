@@ -11,6 +11,8 @@ data/
 # Trading state (live session data)
 trading_state.json
 trading_log.txt
+trading_state_v*.json
+trading_log_v*.txt
 
 # IDE
 .vscode/
