@@ -47,8 +47,8 @@ pub const FETCH_15M_LIMIT: u32 = 150;
 pub const FETCH_15M_INTERVAL_SECS: u64 = 60;
 pub const FETCH_1M_INTERVAL_SECS: u64 = 15;
 
-pub const STATE_FILE: &str = "/home/scamarena/ProjectCoin/trading_state.json";
-pub const LOG_FILE: &str = "/home/scamarena/ProjectCoin/trading_log.txt";
+pub const STATE_FILE: &str = concat!("/home/scamarena/ProjectCoin/trading_state_v", env!("CARGO_PKG_VERSION"), ".json");
+pub const LOG_FILE: &str = concat!("/home/scamarena/ProjectCoin/trading_log_v", env!("CARGO_PKG_VERSION"), ".txt");
 
 #[derive(Debug, Clone)]
 pub struct CoinConfig {
