@@ -101,6 +101,7 @@ archive/
   RUN24/ — Ensemble strategy framework: voting/intersection of top-3 per coin. Result: NEGATIVE — 1/90 combinations (LINK AND) clears 44% WR. Majority vote reduces avg PF vs best single (0.811 vs 0.879). Strategies too correlated (all mean-reversion) for ensemble diversity. AND-intersection wins by trade filtering, not signal quality. No COINCLAW changes.
   RUN25/ — ML regime detection: BTC 4-regime framework (BULL/BEAR × HIGH/LOW vol). Result: NEGATIVE — 1/72 combinations clears 44% WR. BEAR_HIGH_VOL is best (+0.41pp vs baseline at 34.20%). BULL_LOW_VOL worst (28.14%). Dropped circular ML (labels = f(features)). No COINCLAW changes.
   RUN26/ — ATR-based dynamic stops + trailing stops grid search (255 combos/coin). Result: NEGATIVE — WR rises +3pp but PF drops (only 3/18 improved). Breakeven WR INCREASES from 42.7% → 48.6% because ATR stop widens avg_loss faster than trailing stop grows avg_win. Trailing stops not suited to mean-reversion. No COINCLAW changes.
+  RUN27/ — Breakout momentum rider (hard rally/crash). Result: CONDITIONALLY POSITIVE — 4/36 coin-direction pairs meet criteria: NEAR long (48.4% WR, PF=1.60, t=31), NEAR short (46.2%, PF=1.84, t=26), DASH long (37.1%, PF=1.48, t=70, R:R=2.5), XLM long (50%, PF=1.68, t=20). First OOS profitability since RUN17. Needs walk-forward validation before COINCLAW integration.
 ```
 
 Each `RUNX.md` contains: goal, method, full results tables, per-coin breakdowns, and conclusions. These serve as the institutional memory of what was tested and why.
