@@ -45,6 +45,7 @@ async fn main() {
                 let tt = pos.trade_type.unwrap_or(state::TradeType::Regime);
                 let tt_label = match tt {
                     state::TradeType::Scalp => " [SCALP]",
+                    state::TradeType::Momentum => " [MOMENTUM]",
                     state::TradeType::Regime => "",
                 };
                 state.coins[ci].trades.push(state::TradeRecord {

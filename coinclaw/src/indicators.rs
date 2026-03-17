@@ -46,6 +46,11 @@ pub struct Ind15m {
     pub kst_signal: f64,
     pub kst_prev: f64,
     pub kst_signal_prev: f64,
+    // RUN27/28 momentum breakout indicators
+    pub ret16: f64,        // 16-bar compounded return (close[n-1]/close[n-17] - 1)
+    pub sma50: f64,        // 50-bar SMA (trend context filter)
+    pub atr14_price: f64,  // ATR(14) in price units (for stop/trail calculation)
+    pub adx_prev3: f64,    // ADX 3 bars ago (for "ADX rising" check)
     pub valid: bool,
 }
 
@@ -308,6 +313,7 @@ pub fn compute_15m_indicators(candles: &[Candle]) -> Option<Ind15m> {
 
     let sma20 = rolling_mean(&c, 20);
     let sma9 = rolling_mean(&c, 9);
+    let sma50 = rolling_mean(&c, 50);
     let std20 = rolling_std(&c, 20);
     let vol_ma = rolling_mean(&v, 20);
     let adr_lo = rolling_min(&l, 24);
@@ -410,7 +416,17 @@ pub fn compute_15m_indicators(candles: &[Candle]) -> Option<Ind15m> {
     let (kalman_est, kalman_var) = compute_kalman(&c, 0.0001, 1.0);
     let (kst_val, kst_sig, kst_prev, kst_sig_prev) = compute_kst(&c);
 
+    // Momentum breakout indicators
     let i = n - 1;
+    // 16-bar compounded return
+    let ret16 = if i >= 16 && c[i - 16] > 0.0 {
+        c[i] / c[i - 16] - 1.0
+    } else { 0.0 };
+    // ATR(14) in price units (Wilder's method: rolling mean of true range)
+    let atr14_price = if !atr[i].is_nan() { atr[i] } else { 0.0 };
+    // ADX 3 bars ago
+    let adx_prev3 = if i >= 3 && !adx[i - 3].is_nan() { adx[i - 3] } else { 0.0 };
+
     if sma20[i].is_nan() || std20[i].is_nan() || std20[i] == 0.0 {
         return None;
     }
@@ -461,6 +477,10 @@ pub fn compute_15m_indicators(candles: &[Candle]) -> Option<Ind15m> {
         kst_signal: kst_sig,
         kst_prev,
         kst_signal_prev: kst_sig_prev,
+        ret16,
+        sma50: if sma50[i].is_nan() { 0.0 } else { sma50[i] },
+        atr14_price,
+        adx_prev3,
         valid: !rsi14[i].is_nan() && !adx[i].is_nan(),
     })
 }

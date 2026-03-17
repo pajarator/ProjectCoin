@@ -11,6 +11,7 @@ use std::fs;
 pub enum TradeType {
     Regime,
     Scalp,
+    Momentum,
 }
 
 #[derive(Debug, Clone, Serialize, Deserialize)]
@@ -25,6 +26,13 @@ pub struct Position {
     pub last_price: Option<f64>,
     #[serde(skip_serializing_if = "Option::is_none")]
     pub trade_type: Option<TradeType>,
+    // RUN27/28 momentum breakout fields (None for regime/scalp positions)
+    #[serde(default, skip_serializing_if = "Option::is_none")]
+    pub atr_stop: Option<f64>,         // absolute ATR-based hard stop price
+    #[serde(default, skip_serializing_if = "Option::is_none")]
+    pub trail_distance: Option<f64>,   // trail_atr * ATR_at_entry (price units, fixed)
+    #[serde(default, skip_serializing_if = "Option::is_none")]
+    pub trail_act_price: Option<f64>,  // activation threshold (entry * (1 + trail_act))
 }
 
 #[derive(Debug, Clone, Serialize, Deserialize)]
