@@ -8,6 +8,7 @@ mod run15c;
 mod run15d;
 mod run15e;
 mod run19;
+mod run20;
 mod run17_2;
 mod run17_3;
 mod strategies;
@@ -32,6 +33,7 @@ fn main() {
         "run15d" => run15d::run(shutdown),
         "run15e" => run15e::run(shutdown),
         "run19"  => run19::run(shutdown),
+        "run20"  => run20::run(shutdown),
         "run17.2" => run17_2::run(shutdown),
         "run17.3" => run17_3::run(shutdown),
         _ => {
