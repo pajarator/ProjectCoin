@@ -1,0 +1,87 @@
+{
+  "without_nn": {
+    "Baseline (no filter)": {
+      "wr": 50.16034451163643,
+      "signals": 21828,
+      "pnl": 35.06726813342756
+    },
+    "1. Time-of-Day Filter": {
+      "wr": 51.025454545454544,
+      "signals": 6875,
+      "pnl": 41.883045955316476
+    },
+    "2. Regime Filter (ADX<25)": {
+      "wr": 49.536794266736585,
+      "signals": 5721,
+      "pnl": -19.320549124929123
+    },
+    "3. Liquidity Filter": {
+      "wr": 52.69253039953677,
+      "signals": 5181,
+      "pnl": 28.209983156720735
+    },
+    "4. Correlation Filter": {
+      "wr": 50.16034451163643,
+      "signals": 21828,
+      "pnl": 35.06726813342756
+    },
+    "5. Multi-Timeframe": {
+      "wr": 47.755367599219255,
+      "signals": 1537,
+      "pnl": -5.414545316136776
+    },
+    "6. Dynamic Sizing": {
+      "wr": 50.16034451163643,
+      "signals": 21828,
+      "pnl": 35.06726813342756
+    },
+    "7. Streak Filter": {
+      "wr": 50.16034451163643,
+      "signals": 21828,
+      "pnl": 35.06726813342756
+    }
+  },
+  "with_nn": {
+    "Baseline + NN": {
+      "wr": 53.624733475479744,
+      "signals": 2814,
+      "pnl": 32.264850249716744
+    },
+    "1. Time-of-Day Filter + NN": {
+      "wr": 54.84978540772533,
+      "signals": 1165,
+      "pnl": 9.10051241648473
+    },
+    "2. Regime Filter (ADX<25) + NN": {
+      "wr": 51.36186770428015,
+      "signals": 771,
+      "pnl": 5.662395447557712
+    },
+    "3. Liquidity Filter + NN": {
+      "wr": 56.68789808917197,
+      "signals": 942,
+      "pnl": 24.905456474894002
+    },
+    "4. Correlation Filter + NN": {
+      "wr": 53.624733475479744,
+      "signals": 2814,
+      "pnl": 32.264850249716744
+    },
+    "5. Multi-Timeframe + NN": {
+      "wr": 48.4251968503937,
+      "signals": 254,
+      "pnl": -1.621876900397512
+    },
+    "6. Dynamic Sizing + NN": {
+      "wr": 53.624733475479744,
+      "signals": 2814,
+      "pnl": 32.264850249716744
+    },
+    "7. Streak Filter + NN": {
+      "wr": 53.624733475479744,
+      "signals": 2814,
+      "pnl": 32.264850249716744
+    }
+  },
+  "best": "3. Liquidity Filter + NN"
+}

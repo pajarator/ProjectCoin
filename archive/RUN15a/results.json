@@ -1,0 +1,85 @@
+{
+  "experiment": "Bayesian vs Binary Strategy Backtest",
+  "date": "2026-03-16",
+  "description": "Comparing CoinClaw's binary threshold approach with Bayesian probabilistic decision making",
+  
+  "data": {
+    "source": "ProjectCoin/data_cache",
+    "coins": ["DASH", "UNI", "NEAR", "ADA", "LTC", "SHIB", "LINK", "ETH", "BTC", "BNB", "XRP", "SOL", "DOT", "AVAX", "ATOM", "DOGE"],
+    "timeframe": "15m",
+    "period": "1 year (35,040 bars per coin)",
+    "train_test_split": "50% train / 50% test (6 months each)"
+  },
+  
+  "strategies": {
+    "binary": {
+      "description": "CoinClaw original: z < -1.5, RSI < 40, vol > 1.2x MA",
+      "threshold": "hardcoded"
+    },
+    "bayesian": {
+      "description": "Learns P(up | z-score, RSI bin) from training data, enters when P(up) > 60%",
+      "threshold": "probabilistic"
+    },
+    "combined": {
+      "description": "Binary signal + Bayesian confirmation (prob_strat > 55%)",
+      "threshold": "hybrid"
+    }
+  },
+  
+  "results": {
+    "binary": {
+      "total_signals": 16980,
+      "win_rate": 51.4,
+      "return_pct": 6.4,
+      "coins_above_50pct": 13
+    },
+    "bayesian": {
+      "total_signals": 6204,
+      "win_rate": 50.6,
+      "return_pct": 4.4,
+      "coins_above_50pct": 9
+    },
+    "combined": {
+      "total_signals": 2176,
+      "win_rate": 52.4,
+      "return_pct": 4.6,
+      "coins_above_50pct": 1
+    }
+  },
+  
+  "per_coin_results": [
+    {"coin": "DASH", "binary_wr": 53, "bayesian_wr": 53, "binary_ret": 24.9, "bayesian_ret": 36.1},
+    {"coin": "UNI", "binary_wr": 52, "bayesian_wr": 44, "binary_ret": 3.9, "bayesian_ret": -1.6},
+    {"coin": "NEAR", "binary_wr": 52, "bayesian_wr": 55, "binary_ret": 12.1, "bayesian_ret": 3.8},
+    {"coin": "ADA", "binary_wr": 51, "bayesian_wr": 49, "binary_ret": -0.8, "bayesian_ret": -2.5},
+    {"coin": "LTC", "binary_wr": 52, "bayesian_wr": 51, "binary_ret": -4.9, "bayesian_ret": -2.9},
+    {"coin": "SHIB", "binary_wr": 47, "bayesian_wr": 49, "binary_ret": 8.7, "bayesian_ret": -2.0},
+    {"coin": "LINK", "binary_wr": 49, "bayesian_wr": 50, "binary_ret": -7.2, "bayesian_ret": 4.5},
+    {"coin": "ETH", "binary_wr": 53, "bayesian_wr": 50, "binary_ret": -15.7, "bayesian_ret": -11.7},
+    {"coin": "BTC", "binary_wr": 51, "bayesian_wr": 47, "binary_ret": -18.5, "bayesian_ret": -10.7},
+    {"coin": "BNB", "binary_wr": 55, "bayesian_wr": 51, "binary_ret": 1.3, "bayesian_ret": -10.2},
+    {"coin": "XRP", "binary_wr": 51, "bayesian_wr": 51, "binary_ret": -1.6, "bayesian_ret": -3.9},
+    {"coin": "SOL", "binary_wr": 53, "bayesian_wr": 53, "binary_ret": -4.2, "bayesian_ret": 0.5},
+    {"coin": "DOT", "binary_wr": 52, "bayesian_wr": 56, "binary_ret": 11.3, "bayesian_ret": -11.2},
+    {"coin": "AVAX", "binary_wr": 50, "bayesian_wr": 47, "binary_ret": -10.7, "bayesian_ret": -10.8},
+    {"coin": "ATOM", "binary_wr": 53, "bayesian_wr": 53, "binary_ret": 9.3, "bayesian_ret": -5.5},
+    {"coin": "DOGE", "binary_wr": 51, "bayesian_wr": 50, "binary_ret": -5.7, "bayesian_ret": -1.0}
+  ],
+  
+  "learned_probabilities": {
+    "z_bin_-2.0_to_-1.5": 60.2,
+    "z_bin_-1.5_to_-1.0": 52.5,
+    "z_bin_-1.0_to_-0.5": 43.2,
+    "z_bin_-0.5_to_0.0": 47.3,
+    "z_bin_0.0_to_0.5": 41.1,
+    "z_bin_0.5_to_1.0": 44.7,
+    "z_bin_1.0_to_1.5": 43.9,
+    "z_bin_1.5_to_2.0": 41.4
+  },
+  
+  "notes": [
+    "MATIC and FIL data not available in cache",
+    "Per-coin Bayesian models trained independently",
+    "Test period is last 6 months of data"
+  ]
+}

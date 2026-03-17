@@ -1,0 +1,383 @@
+{
+  "experiment": "RUN16",
+  "version": "v3 - Walk-Forward",
+  "results": [
+    {
+      "coin": "DASH",
+      "windows": 3,
+      "avg_wr": 54.2,
+      "total_signals": 1102,
+      "per_window": [
+        {
+          "window": 1,
+          "signals": 273,
+          "wr": 58.97435897435898
+        },
+        {
+          "window": 2,
+          "signals": 576,
+          "wr": 50.0
+        },
+        {
+          "window": 3,
+          "signals": 253,
+          "wr": 53.75494071146245
+        }
+      ]
+    },
+    {
+      "coin": "UNI",
+      "windows": 3,
+      "avg_wr": 51.0,
+      "total_signals": 381,
+      "per_window": [
+        {
+          "window": 1,
+          "signals": 168,
+          "wr": 48.214285714285715
+        },
+        {
+          "window": 2,
+          "signals": 94,
+          "wr": 51.06382978723404
+        },
+        {
+          "window": 3,
+          "signals": 119,
+          "wr": 53.78151260504202
+        }
+      ]
+    },
+    {
+      "coin": "NEAR",
+      "windows": 3,
+      "avg_wr": 53.3,
+      "total_signals": 344,
+      "per_window": [
+        {
+          "window": 1,
+          "signals": 148,
+          "wr": 50.67567567567568
+        },
+        {
+          "window": 2,
+          "signals": 103,
+          "wr": 64.07766990291263
+        },
+        {
+          "window": 3,
+          "signals": 93,
+          "wr": 45.16129032258064
+        }
+      ]
+    },
+    {
+      "coin": "ADA",
+      "windows": 3,
+      "avg_wr": 52.5,
+      "total_signals": 560,
+      "per_window": [
+        {
+          "window": 1,
+          "signals": 366,
+          "wr": 51.36612021857923
+        },
+        {
+          "window": 2,
+          "signals": 175,
+          "wr": 42.857142857142854
+        },
+        {
+          "window": 3,
+          "signals": 19,
+          "wr": 63.1578947368421
+        }
+      ]
+    },
+    {
+      "coin": "LTC",
+      "windows": 3,
+      "avg_wr": 54.9,
+      "total_signals": 916,
+      "per_window": [
+        {
+          "window": 1,
+          "signals": 296,
+          "wr": 58.108108108108105
+        },
+        {
+          "window": 2,
+          "signals": 347,
+          "wr": 52.73775216138329
+        },
+        {
+          "window": 3,
+          "signals": 273,
+          "wr": 53.84615384615385
+        }
+      ]
+    },
+    {
+      "coin": "SHIB",
+      "windows": 3,
+      "avg_wr": 48.9,
+      "total_signals": 612,
+      "per_window": [
+        {
+          "window": 1,
+          "signals": 285,
+          "wr": 49.473684210526315
+        },
+        {
+          "window": 2,
+          "signals": 222,
+          "wr": 48.64864864864865
+        },
+        {
+          "window": 3,
+          "signals": 105,
+          "wr": 48.57142857142857
+        }
+      ]
+    },
+    {
+      "coin": "LINK",
+      "windows": 3,
+      "avg_wr": 52.6,
+      "total_signals": 635,
+      "per_window": [
+        {
+          "window": 1,
+          "signals": 300,
+          "wr": 49.666666666666664
+        },
+        {
+          "window": 2,
+          "signals": 230,
+          "wr": 53.04347826086957
+        },
+        {
+          "window": 3,
+          "signals": 105,
+          "wr": 55.23809523809524
+        }
+      ]
+    },
+    {
+      "coin": "ETH",
+      "windows": 3,
+      "avg_wr": 58.4,
+      "total_signals": 896,
+      "per_window": [
+        {
+          "window": 1,
+          "signals": 339,
+          "wr": 53.98230088495575
+        },
+        {
+          "window": 2,
+          "signals": 307,
+          "wr": 54.72312703583062
+        },
+        {
+          "window": 3,
+          "signals": 250,
+          "wr": 66.4
+        }
+      ]
+    },
+    {
+      "coin": "BTC",
+      "windows": 3,
+      "avg_wr": 51.6,
+      "total_signals": 1107,
+      "per_window": [
+        {
+          "window": 1,
+          "signals": 429,
+          "wr": 50.116550116550115
+        },
+        {
+          "window": 2,
+          "signals": 382,
+          "wr": 49.47643979057592
+        },
+        {
+          "window": 3,
+          "signals": 296,
+          "wr": 55.067567567567565
+        }
+      ]
+    },
+    {
+      "coin": "BNB",
+      "windows": 3,
+      "avg_wr": 56.9,
+      "total_signals": 1376,
+      "per_window": [
+        {
+          "window": 1,
+          "signals": 420,
+          "wr": 55.47619047619048
+        },
+        {
+          "window": 2,
+          "signals": 526,
+          "wr": 58.174904942965775
+        },
+        {
+          "window": 3,
+          "signals": 430,
+          "wr": 56.97674418604651
+        }
+      ]
+    },
+    {
+      "coin": "XRP",
+      "windows": 3,
+      "avg_wr": 54.2,
+      "total_signals": 1069,
+      "per_window": [
+        {
+          "window": 1,
+          "signals": 369,
+          "wr": 55.82655826558266
+        },
+        {
+          "window": 2,
+          "signals": 448,
+          "wr": 51.11607142857143
+        },
+        {
+          "window": 3,
+          "signals": 252,
+          "wr": 55.55555555555556
+        }
+      ]
+    },
+    {
+      "coin": "SOL",
+      "windows": 3,
+      "avg_wr": 53.2,
+      "total_signals": 715,
+      "per_window": [
+        {
+          "window": 1,
+          "signals": 198,
+          "wr": 48.98989898989899
+        },
+        {
+          "window": 2,
+          "signals": 246,
+          "wr": 57.72357723577236
+        },
+        {
+          "window": 3,
+          "signals": 271,
+          "wr": 52.767527675276746
+        }
+      ]
+    },
+    {
+      "coin": "DOT",
+      "windows": 3,
+      "avg_wr": 54.2,
+      "total_signals": 914,
+      "per_window": [
+        {
+          "window": 1,
+          "signals": 333,
+          "wr": 58.55855855855856
+        },
+        {
+          "window": 2,
+          "signals": 365,
+          "wr": 50.68493150684932
+        },
+        {
+          "window": 3,
+          "signals": 216,
+          "wr": 53.24074074074075
+        }
+      ]
+    },
+    {
+      "coin": "AVAX",
+      "windows": 3,
+      "avg_wr": 51.9,
+      "total_signals": 302,
+      "per_window": [
+        {
+          "window": 1,
+          "signals": 102,
+          "wr": 55.88235294117647
+        },
+        {
+          "window": 2,
+          "signals": 155,
+          "wr": 55.483870967741936
+        },
+        {
+          "window": 3,
+          "signals": 45,
+          "wr": 44.44444444444444
+        }
+      ]
+    },
+    {
+      "coin": "ATOM",
+      "windows": 3,
+      "avg_wr": 53.8,
+      "total_signals": 700,
+      "per_window": [
+        {
+          "window": 1,
+          "signals": 205,
+          "wr": 59.02439024390244
+        },
+        {
+          "window": 2,
+          "signals": 294,
+          "wr": 53.74149659863946
+        },
+        {
+          "window": 3,
+          "signals": 201,
+          "wr": 48.756218905472636
+        }
+      ]
+    },
+    {
+      "coin": "DOGE",
+      "windows": 3,
+      "avg_wr": 49.8,
+      "total_signals": 777,
+      "per_window": [
+        {
+          "window": 1,
+          "signals": 338,
+          "wr": 53.55029585798816
+        },
+        {
+          "window": 2,
+          "signals": 292,
+          "wr": 49.65753424657534
+        },
+        {
+          "window": 3,
+          "signals": 147,
+          "wr": 46.25850340136054
+        }
+      ]
+    }
+  ],
+  "baseline": {
+    "avg_wr": 52.42010289496535,
+    "total_signals": 75823
+  },
+  "summary": {
+    "nn_avg_wr": 53.2125,
+    "nn_total_signals": 12406,
+    "delta": 0.7923971050346452
+  }
+}

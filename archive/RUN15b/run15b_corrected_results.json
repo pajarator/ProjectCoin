@@ -1,0 +1,299 @@
+{
+  "experiment": "RUN15b Scalp NN Filter — proper Rust implementation",
+  "tp_pct": 0.8,
+  "sl_pct": 0.1,
+  "max_hold_bars": 60,
+  "fee_pct": 0.1,
+  "slip_pct": 0.05,
+  "per_coin": [
+    {
+      "coin": "BTC",
+      "total_signals": 51152,
+      "train_signals": 25576,
+      "test_signals": 25576,
+      "binary": {
+        "n_trades": 25576,
+        "win_rate": 6.396621832968408,
+        "profit_factor": 0.06182650659312641,
+        "total_pnl": -7343.4863826262535,
+        "pct_of_binary": 100.0
+      },
+      "bay55": {
+        "n_trades": 0,
+        "win_rate": 0.0,
+        "profit_factor": 0.0,
+        "total_pnl": 0.0,
+        "pct_of_binary": 0.0
+      },
+      "bay60": {
+        "n_trades": 0,
+        "win_rate": 0.0,
+        "profit_factor": 0.0,
+        "total_pnl": 0.0,
+        "pct_of_binary": 0.0
+      }
+    },
+    {
+      "coin": "ETH",
+      "total_signals": 43606,
+      "train_signals": 21803,
+      "test_signals": 21803,
+      "binary": {
+        "n_trades": 21803,
+        "win_rate": 7.4531027840205475,
+        "profit_factor": 0.08882199219531127,
+        "total_pnl": -6217.886725738106,
+        "pct_of_binary": 100.0
+      },
+      "bay55": {
+        "n_trades": 0,
+        "win_rate": 0.0,
+        "profit_factor": 0.0,
+        "total_pnl": 0.0,
+        "pct_of_binary": 0.0
+      },
+      "bay60": {
+        "n_trades": 0,
+        "win_rate": 0.0,
+        "profit_factor": 0.0,
+        "total_pnl": 0.0,
+        "pct_of_binary": 0.0
+      }
+    },
+    {
+      "coin": "BNB",
+      "total_signals": 48995,
+      "train_signals": 24497,
+      "test_signals": 24498,
+      "binary": {
+        "n_trades": 24498,
+        "win_rate": 7.7271614009306875,
+        "profit_factor": 0.08412331990101876,
+        "total_pnl": -6973.371030320238,
+        "pct_of_binary": 100.0
+      },
+      "bay55": {
+        "n_trades": 0,
+        "win_rate": 0.0,
+        "profit_factor": 0.0,
+        "total_pnl": 0.0,
+        "pct_of_binary": 0.0
+      },
+      "bay60": {
+        "n_trades": 0,
+        "win_rate": 0.0,
+        "profit_factor": 0.0,
+        "total_pnl": 0.0,
+        "pct_of_binary": 0.0
+      }
+    },
+    {
+      "coin": "SOL",
+      "total_signals": 44764,
+      "train_signals": 22382,
+      "test_signals": 22382,
+      "binary": {
+        "n_trades": 22382,
+        "win_rate": 7.885801090161737,
+        "profit_factor": 0.10309336676712622,
+        "total_pnl": -6370.1838791411465,
+        "pct_of_binary": 100.0
+      },
+      "bay55": {
+        "n_trades": 0,
+        "win_rate": 0.0,
+        "profit_factor": 0.0,
+        "total_pnl": 0.0,
+        "pct_of_binary": 0.0
+      },
+      "bay60": {
+        "n_trades": 0,
+        "win_rate": 0.0,
+        "profit_factor": 0.0,
+        "total_pnl": 0.0,
+        "pct_of_binary": 0.0
+      }
+    },
+    {
+      "coin": "ADA",
+      "total_signals": 45228,
+      "train_signals": 22614,
+      "test_signals": 22614,
+      "binary": {
+        "n_trades": 22614,
+        "win_rate": 7.955248960820731,
+        "profit_factor": 0.10748161424777754,
+        "total_pnl": -6434.350606204849,
+        "pct_of_binary": 100.0
+      },
+      "bay55": {
+        "n_trades": 0,
+        "win_rate": 0.0,
+        "profit_factor": 0.0,
+        "total_pnl": 0.0,
+        "pct_of_binary": 0.0
+      },
+      "bay60": {
+        "n_trades": 0,
+        "win_rate": 0.0,
+        "profit_factor": 0.0,
+        "total_pnl": 0.0,
+        "pct_of_binary": 0.0
+      }
+    },
+    {
+      "coin": "XRP",
+      "total_signals": 45971,
+      "train_signals": 22985,
+      "test_signals": 22986,
+      "binary": {
+        "n_trades": 22986,
+        "win_rate": 7.68293744018098,
+        "profit_factor": 0.09499279478803475,
+        "total_pnl": -6558.502212889131,
+        "pct_of_binary": 100.0
+      },
+      "bay55": {
+        "n_trades": 0,
+        "win_rate": 0.0,
+        "profit_factor": 0.0,
+        "total_pnl": 0.0,
+        "pct_of_binary": 0.0
+      },
+      "bay60": {
+        "n_trades": 0,
+        "win_rate": 0.0,
+        "profit_factor": 0.0,
+        "total_pnl": 0.0,
+        "pct_of_binary": 0.0
+      }
+    },
+    {
+      "coin": "DOGE",
+      "total_signals": 45193,
+      "train_signals": 22596,
+      "test_signals": 22597,
+      "binary": {
+        "n_trades": 22597,
+        "win_rate": 7.3239810594326675,
+        "profit_factor": 0.0983446540395959,
+        "total_pnl": -6502.666854873013,
+        "pct_of_binary": 100.0
+      },
+      "bay55": {
+        "n_trades": 0,
+        "win_rate": 0.0,
+        "profit_factor": 0.0,
+        "total_pnl": 0.0,
+        "pct_of_binary": 0.0
+      },
+      "bay60": {
+        "n_trades": 0,
+        "win_rate": 0.0,
+        "profit_factor": 0.0,
+        "total_pnl": 0.0,
+        "pct_of_binary": 0.0
+      }
+    },
+    {
+      "coin": "LTC",
+      "total_signals": 46260,
+      "train_signals": 23130,
+      "test_signals": 23130,
+      "binary": {
+        "n_trades": 23130,
+        "win_rate": 7.449200172935582,
+        "profit_factor": 0.0913493187443097,
+        "total_pnl": -6699.594122612412,
+        "pct_of_binary": 100.0
+      },
+      "bay55": {
+        "n_trades": 0,
+        "win_rate": 0.0,
+        "profit_factor": 0.0,
+        "total_pnl": 0.0,
+        "pct_of_binary": 0.0
+      },
+      "bay60": {
+        "n_trades": 0,
+        "win_rate": 0.0,
+        "profit_factor": 0.0,
+        "total_pnl": 0.0,
+        "pct_of_binary": 0.0
+      }
+    },
+    {
+      "coin": "LINK",
+      "total_signals": 35522,
+      "train_signals": 17761,
+      "test_signals": 17761,
+      "binary": {
+        "n_trades": 17761,
+        "win_rate": 5.86115646641518,
+        "profit_factor": 0.08363138513828414,
+        "total_pnl": -5327.989529173351,
+        "pct_of_binary": 100.0
+      },
+      "bay55": {
+        "n_trades": 0,
+        "win_rate": 0.0,
+        "profit_factor": 0.0,
+        "total_pnl": 0.0,
+        "pct_of_binary": 0.0
+      },
+      "bay60": {
+        "n_trades": 0,
+        "win_rate": 0.0,
+        "profit_factor": 0.0,
+        "total_pnl": 0.0,
+        "pct_of_binary": 0.0
+      }
+    },
+    {
+      "coin": "DOT",
+      "total_signals": 44466,
+      "train_signals": 22233,
+      "test_signals": 22233,
+      "binary": {
+        "n_trades": 22233,
+        "win_rate": 7.7407457383169165,
+        "profit_factor": 0.10733228444654605,
+        "total_pnl": -6354.954623118106,
+        "pct_of_binary": 100.0
+      },
+      "bay55": {
+        "n_trades": 0,
+        "win_rate": 0.0,
+        "profit_factor": 0.0,
+        "total_pnl": 0.0,
+        "pct_of_binary": 0.0
+      },
+      "bay60": {
+        "n_trades": 0,
+        "win_rate": 0.0,
+        "profit_factor": 0.0,
+        "total_pnl": 0.0,
+        "pct_of_binary": 0.0
+      }
+    }
+  ],
+  "summary": {
+    "n_coins": 10,
+    "binary_avg_wr": 7.347595694618343,
+    "bay55_avg_wr": 0.0,
+    "bay60_avg_wr": 0.0,
+    "binary_avg_pf": 0.09209972368611308,
+    "bay55_avg_pf": 0.0,
+    "bay60_avg_pf": 0.0,
+    "binary_total_pnl": -64782.98596669661,
+    "bay55_total_pnl": 0.0,
+    "bay60_total_pnl": 0.0,
+    "binary_total_trades": 225580,
+    "bay55_total_trades": 0,
+    "bay60_total_trades": 0,
+    "coins_bay55_beats_wr": 0,
+    "coins_bay55_beats_pf": 0,
+    "coins_bay60_beats_wr": 0,
+    "coins_bay60_beats_pf": 0
+  }
+}

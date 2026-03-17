@@ -1,0 +1,1134 @@
+{
+  "per_coin": {
+    "ADA": {
+      "coin": "ADA",
+      "best_strategy": "bb_bounce_pro",
+      "n_trades": 18,
+      "base_win_rate": 44.44444444444444,
+      "sizing_results": {
+        "fixed_1pct": {
+          "method": "fixed_1pct",
+          "fraction": 0.01,
+          "total_return_pct": 0.009371806344424841,
+          "max_drawdown_pct": 0.008586745591672737,
+          "final_equity": 10000.937180634442,
+          "sharpe": 2.1960553042267676
+        },
+        "fixed_2pct": {
+          "method": "fixed_2pct",
+          "fraction": 0.02,
+          "total_return_pct": 0.018741891774989198,
+          "max_drawdown_pct": 0.017173025844138743,
+          "final_equity": 10001.874189177499,
+          "sharpe": 2.1960553042256175
+        },
+        "fixed_5pct": {
+          "method": "fixed_5pct",
+          "fraction": 0.05,
+          "total_return_pct": 0.04684181842048929,
+          "max_drawdown_pct": 0.042929074660964635,
+          "final_equity": 10004.684181842049,
+          "sharpe": 2.1960553042236506
+        },
+        "kelly": {
+          "method": "kelly",
+          "fraction": 0.12541603465070508,
+          "total_return_pct": 0.11741282177263203,
+          "max_drawdown_pct": 0.10765788169682265,
+          "final_equity": 10011.741282177263,
+          "sharpe": 2.1960553042248594
+        },
+        "half_kelly": {
+          "method": "half_kelly",
+          "fraction": 0.06270801732535254,
+          "total_return_pct": 0.05874028971436928,
+          "max_drawdown_pct": 0.05383808912450141,
+          "final_equity": 10005.874028971437,
+          "sharpe": 2.19605530422385
+        },
+        "optimal_f": {
+          "method": "optimal_f",
+          "fraction": 0.12492430647356044,
+          "total_return_pct": 0.11695300190711351,
+          "max_drawdown_pct": 0.10723592216420214,
+          "final_equity": 10011.695300190711,
+          "sharpe": 2.1960553042241853
+        }
+      },
+      "recommended": "optimal_f",
+      "recommended_return": 0.11695300190711351,
+      "recommended_dd": 0.10723592216420214
+    },
+    "ALGO": {
+      "coin": "ALGO",
+      "best_strategy": "vwap_reversion",
+      "n_trades": 1226,
+      "base_win_rate": 38.17292006525285,
+      "sizing_results": {
+        "fixed_1pct": {
+          "method": "fixed_1pct",
+          "fraction": 0.01,
+          "total_return_pct": 1.0009524376925583,
+          "max_drawdown_pct": 0.09216701383029938,
+          "final_equity": 10100.095243769256,
+          "sharpe": 1.7706084910870152
+        },
+        "fixed_2pct": {
+          "method": "fixed_2pct",
+          "fraction": 0.02,
+          "total_return_pct": 2.011252555390693,
+          "max_drawdown_pct": 0.18427479369416333,
+          "final_equity": 10201.12525553907,
+          "sharpe": 1.7706084910870994
+        },
+        "fixed_5pct": {
+          "method": "fixed_5pct",
+          "fraction": 0.05,
+          "total_return_pct": 5.099051412851022,
+          "max_drawdown_pct": 0.4602427797966763,
+          "final_equity": 10509.905141285102,
+          "sharpe": 1.7706084910872264
+        },
+        "kelly": {
+          "method": "kelly",
+          "fraction": 0.11711407549009294,
+          "total_return_pct": 12.32559253588892,
+          "max_drawdown_pct": 1.07569117739684,
+          "final_equity": 11232.559253588892,
+          "sharpe": 1.7706084910871396
+        },
+        "half_kelly": {
+          "method": "half_kelly",
+          "fraction": 0.05855703774504647,
+          "total_return_pct": 5.9956618708172575,
+          "max_drawdown_pct": 0.5388607065282066,
+          "final_equity": 10599.566187081726,
+          "sharpe": 1.7706084910871256
+        },
+        "optimal_f": {
+          "method": "optimal_f",
+          "fraction": 0.07974794065961374,
+          "total_return_pct": 8.246887070057292,
+          "max_drawdown_pct": 0.7333658635881343,
+          "final_equity": 10824.68870700573,
+          "sharpe": 1.7706084910871314
+        }
+      },
+      "recommended": "kelly",
+      "recommended_return": 12.32559253588892,
+      "recommended_dd": 1.07569117739684
+    },
+    "ATOM": {
+      "coin": "ATOM",
+      "best_strategy": "bb_bounce_pro",
+      "n_trades": 15,
+      "base_win_rate": 46.666666666666664,
+      "sizing_results": {
+        "fixed_1pct": {
+          "method": "fixed_1pct",
+          "fraction": 0.01,
+          "total_return_pct": 0.0018798425898785354,
+          "max_drawdown_pct": 0.012005459470673751,
+          "final_equity": 10000.187984258988,
+          "sharpe": 0.5282791278889222
+        },
+        "fixed_2pct": {
+          "method": "fixed_2pct",
+          "fraction": 0.02,
+          "total_return_pct": 0.0037575886284321315,
+          "max_drawdown_pct": 0.02400983792599146,
+          "final_equity": 10000.375758862843,
+          "sharpe": 0.5282791278902295
+        },
+        "fixed_5pct": {
+          "method": "fixed_5pct",
+          "fraction": 0.05,
+          "total_return_pct": 0.00937824830001773,
+          "max_drawdown_pct": 0.060016487848588485,
+          "final_equity": 10000.937824830002,
+          "sharpe": 0.5282791278917255
+        },
+        "kelly": {
+          "method": "kelly",
+          "fraction": 0.036866472759062074,
+          "total_return_pct": 0.006919933925728401,
+          "max_drawdown_pct": 0.04425454105650484,
+          "final_equity": 10000.691993392573,
+          "sharpe": 0.5282791278908742
+        },
+        "half_kelly": {
+          "method": "half_kelly",
+          "fraction": 0.018433236379531037,
+          "total_return_pct": 0.0034635287142737066,
+          "max_drawdown_pct": 0.022129106994999315,
+          "final_equity": 10000.346352871427,
+          "sharpe": 0.5282791278938873
+        },
+        "optimal_f": {
+          "method": "optimal_f",
+          "fraction": 0.03038588488369886,
+          "total_return_pct": 0.005705574674320814,
+          "max_drawdown_pct": 0.03647630287693897,
+          "final_equity": 10000.570557467432,
+          "sharpe": 0.528279127889578
+        }
+      },
+      "recommended": "fixed_5pct",
+      "recommended_return": 0.00937824830001773,
+      "recommended_dd": 0.060016487848588485
+    },
+    "AVAX": {
+      "coin": "AVAX",
+      "best_strategy": "vwap_reversion",
+      "n_trades": 1014,
+      "base_win_rate": 43.19526627218935,
+      "sizing_results": {
+        "fixed_1pct": {
+          "method": "fixed_1pct",
+          "fraction": 0.01,
+          "total_return_pct": 1.2873863842675928,
+          "max_drawdown_pct": 0.05351955004275422,
+          "final_equity": 10128.73863842676,
+          "sharpe": 3.0171238727237304
+        },
+        "fixed_2pct": {
+          "method": "fixed_2pct",
+          "fraction": 0.02,
+          "total_return_pct": 2.5908716085904233,
+          "max_drawdown_pct": 0.10701538342537502,
+          "final_equity": 10259.087160859042,
+          "sharpe": 3.017123872723427
+        },
+        "fixed_5pct": {
+          "method": "fixed_5pct",
+          "fraction": 0.05,
+          "total_return_pct": 6.5998844210449,
+          "max_drawdown_pct": 0.26736065669452846,
+          "final_equity": 10659.98844210449,
+          "sharpe": 3.0171238727234857
+        },
+        "kelly": {
+          "method": "kelly",
+          "fraction": 0.1856853646354406,
+          "total_return_pct": 26.714989588856607,
+          "max_drawdown_pct": 0.9899178511963569,
+          "final_equity": 12671.49895888566,
+          "sharpe": 3.017123872723641
+        },
+        "half_kelly": {
+          "method": "half_kelly",
+          "fraction": 0.0928426823177203,
+          "total_return_pct": 12.590121701338994,
+          "max_drawdown_pct": 0.4959784765268118,
+          "final_equity": 11259.0121701339,
+          "sharpe": 3.0171238727236664
+        },
+        "optimal_f": {
+          "method": "optimal_f",
+          "fraction": 0.14097780081998193,
+          "total_return_pct": 19.71073356195997,
+          "max_drawdown_pct": 0.7523199311726171,
+          "final_equity": 11971.073356195997,
+          "sharpe": 3.0171238727236367
+        }
+      },
+      "recommended": "kelly",
+      "recommended_return": 26.714989588856607,
+      "recommended_dd": 0.9899178511963569
+    },
+    "BNB": {
+      "coin": "BNB",
+      "best_strategy": "composite",
+      "n_trades": 51,
+      "base_win_rate": 56.86274509803921,
+      "sizing_results": {
+        "fixed_1pct": {
+          "method": "fixed_1pct",
+          "fraction": 0.01,
+          "total_return_pct": 0.05490350671676424,
+          "max_drawdown_pct": 0.012018608418445959,
+          "final_equity": 10005.490350671676,
+          "sharpe": 4.171538411423073
+        },
+        "fixed_2pct": {
+          "method": "fixed_2pct",
+          "fraction": 0.02,
+          "total_return_pct": 0.10982800209210836,
+          "max_drawdown_pct": 0.024036425351607688,
+          "final_equity": 10010.98280020921,
+          "sharpe": 4.17153841142079
+        },
+        "fixed_5pct": {
+          "method": "fixed_5pct",
+          "fraction": 0.05,
+          "total_return_pct": 0.27472745099676105,
+          "max_drawdown_pct": 0.060085126898060344,
+          "final_equity": 10027.472745099676,
+          "sharpe": 4.171538411422558
+        },
+        "kelly": {
+          "method": "kelly",
+          "fraction": 0.25,
+          "total_return_pct": 1.3788913308478732,
+          "max_drawdown_pct": 0.3002276865531166,
+          "final_equity": 10137.889133084787,
+          "sharpe": 4.171538411422222
+        },
+        "half_kelly": {
+          "method": "half_kelly",
+          "fraction": 0.125,
+          "total_return_pct": 0.6878031682694382,
+          "max_drawdown_pct": 0.1501757086483255,
+          "final_equity": 10068.780316826944,
+          "sharpe": 4.171538411422607
+        },
+        "optimal_f": {
+          "method": "optimal_f",
+          "fraction": 0.25,
+          "total_return_pct": 1.3788913308478732,
+          "max_drawdown_pct": 0.3002276865531166,
+          "final_equity": 10137.889133084787,
+          "sharpe": 4.171538411422222
+        }
+      },
+      "recommended": "kelly",
+      "recommended_return": 1.3788913308478732,
+      "recommended_dd": 0.3002276865531166
+    },
+    "BTC": {
+      "coin": "BTC",
+      "best_strategy": "vwap_reversion",
+      "n_trades": 629,
+      "base_win_rate": 46.10492845786963,
+      "sizing_results": {
+        "fixed_1pct": {
+          "method": "fixed_1pct",
+          "fraction": 0.01,
+          "total_return_pct": 0.21107481738339628,
+          "max_drawdown_pct": 0.06482766787524999,
+          "final_equity": 10021.10748173834,
+          "sharpe": 1.1833919211297255
+        },
+        "fixed_2pct": {
+          "method": "fixed_2pct",
+          "fraction": 0.02,
+          "total_return_pct": 0.42246668927973585,
+          "max_drawdown_pct": 0.1296256403003129,
+          "final_equity": 10042.246668927974,
+          "sharpe": 1.1833919211316672
+        },
+        "fixed_5pct": {
+          "method": "fixed_5pct",
+          "fraction": 0.05,
+          "total_return_pct": 1.058546332292699,
+          "max_drawdown_pct": 0.3238414142093649,
+          "final_equity": 10105.85463322927,
+          "sharpe": 1.1833919211315613
+        },
+        "kelly": {
+          "method": "kelly",
+          "fraction": 0.08750204116456546,
+          "total_return_pct": 1.8577113254977486,
+          "max_drawdown_pct": 0.5662486394548227,
+          "final_equity": 10185.771132549775,
+          "sharpe": 1.1833919211315833
+        },
+        "half_kelly": {
+          "method": "half_kelly",
+          "fraction": 0.04375102058228273,
+          "total_return_pct": 0.925815741813949,
+          "max_drawdown_pct": 0.283408432604338,
+          "final_equity": 10092.581574181395,
+          "sharpe": 1.1833919211321584
+        },
+        "optimal_f": {
+          "method": "optimal_f",
+          "fraction": 0.06138878340053802,
+          "total_return_pct": 1.300767371843067,
+          "max_drawdown_pct": 0.39750082962850725,
+          "final_equity": 10130.076737184307,
+          "sharpe": 1.1833919211317667
+        }
+      },
+      "recommended": "kelly",
+      "recommended_return": 1.8577113254977486,
+      "recommended_dd": 0.5662486394548227
+    },
+    "DASH": {
+      "coin": "DASH",
+      "best_strategy": "bb_bounce_pro",
+      "n_trades": 14,
+      "base_win_rate": 64.28571428571429,
+      "sizing_results": {
+        "fixed_1pct": {
+          "method": "fixed_1pct",
+          "fraction": 0.01,
+          "total_return_pct": 0.06109046567746191,
+          "max_drawdown_pct": 0.006006935138919125,
+          "final_equity": 10006.109046567746,
+          "sharpe": 6.146159184460122
+        },
+        "fixed_2pct": {
+          "method": "fixed_2pct",
+          "fraction": 0.02,
+          "total_return_pct": 0.12219779752995236,
+          "max_drawdown_pct": 0.012013689856182685,
+          "final_equity": 10012.219779752995,
+          "sharpe": 6.146159184460448
+        },
+        "fixed_5pct": {
+          "method": "fixed_5pct",
+          "fraction": 0.05,
+          "total_return_pct": 0.30562098417531164,
+          "max_drawdown_pct": 0.03003287147780575,
+          "final_equity": 10030.562098417531,
+          "sharpe": 6.146159184459188
+        },
+        "kelly": {
+          "method": "kelly",
+          "fraction": 0.25,
+          "total_return_pct": 1.5323201119816257,
+          "max_drawdown_pct": 0.150119251967274,
+          "final_equity": 10153.232011198163,
+          "sharpe": 6.146159184459844
+        },
+        "half_kelly": {
+          "method": "half_kelly",
+          "fraction": 0.125,
+          "total_return_pct": 0.7648429268550717,
+          "max_drawdown_pct": 0.07507372142789674,
+          "final_equity": 10076.484292685507,
+          "sharpe": 6.146159184459943
+        },
+        "optimal_f": {
+          "method": "optimal_f",
+          "fraction": 0.25,
+          "total_return_pct": 1.5323201119816257,
+          "max_drawdown_pct": 0.150119251967274,
+          "final_equity": 10153.232011198163,
+          "sharpe": 6.146159184459844
+        }
+      },
+      "recommended": "kelly",
+      "recommended_return": 1.5323201119816257,
+      "recommended_dd": 0.150119251967274
+    },
+    "DOGE": {
+      "coin": "DOGE",
+      "best_strategy": "vwap_reversion",
+      "n_trades": 1101,
+      "base_win_rate": 43.77838328792008,
+      "sizing_results": {
+        "fixed_1pct": {
+          "method": "fixed_1pct",
+          "fraction": 0.01,
+          "total_return_pct": 1.0879647465216657,
+          "max_drawdown_pct": 0.055822636114777995,
+          "final_equity": 10108.796474652167,
+          "sharpe": 2.514471976366279
+        },
+        "fixed_2pct": {
+          "method": "fixed_2pct",
+          "fraction": 0.02,
+          "total_return_pct": 2.1873221716613442,
+          "max_drawdown_pct": 0.11161775497221345,
+          "final_equity": 10218.732217166134,
+          "sharpe": 2.5144719763662104
+        },
+        "fixed_5pct": {
+          "method": "fixed_5pct",
+          "fraction": 0.05,
+          "total_return_pct": 5.554901053523227,
+          "max_drawdown_pct": 0.27883812137032854,
+          "final_equity": 10555.490105352323,
+          "sharpe": 2.514471976366145
+        },
+        "kelly": {
+          "method": "kelly",
+          "fraction": 0.16294750169132363,
+          "total_return_pct": 19.217988359288594,
+          "max_drawdown_pct": 0.9061936528581043,
+          "final_equity": 11921.79883592886,
+          "sharpe": 2.514471976366228
+        },
+        "half_kelly": {
+          "method": "half_kelly",
+          "fraction": 0.08147375084566182,
+          "total_return_pct": 9.202684723759248,
+          "max_drawdown_pct": 0.45400743365326957,
+          "final_equity": 10920.268472375925,
+          "sharpe": 2.51447197636621
+        },
+        "optimal_f": {
+          "method": "optimal_f",
+          "fraction": 0.11809552931497644,
+          "total_return_pct": 13.599959839711593,
+          "max_drawdown_pct": 0.6574863695714158,
+          "final_equity": 11359.99598397116,
+          "sharpe": 2.514471976366275
+        }
+      },
+      "recommended": "kelly",
+      "recommended_return": 19.217988359288594,
+      "recommended_dd": 0.9061936528581043
+    },
+    "DOT": {
+      "coin": "DOT",
+      "best_strategy": "vwap_reversion",
+      "n_trades": 1489,
+      "base_win_rate": 42.31027535258563,
+      "sizing_results": {
+        "fixed_1pct": {
+          "method": "fixed_1pct",
+          "fraction": 0.01,
+          "total_return_pct": 1.7537120962336303,
+          "max_drawdown_pct": 0.04816050941612273,
+          "final_equity": 10175.371209623363,
+          "sharpe": 2.8164606357648707
+        },
+        "fixed_2pct": {
+          "method": "fixed_2pct",
+          "fraction": 0.02,
+          "total_return_pct": 3.5374906757845928,
+          "max_drawdown_pct": 0.09630040139984375,
+          "final_equity": 10353.74906757846,
+          "sharpe": 2.8164606357645776
+        },
+        "fixed_5pct": {
+          "method": "fixed_5pct",
+          "fraction": 0.05,
+          "total_return_pct": 9.074301650532544,
+          "max_drawdown_pct": 0.24059644759291807,
+          "final_equity": 10907.430165053254,
+          "sharpe": 2.8164606357643356
+        },
+        "kelly": {
+          "method": "kelly",
+          "fraction": 0.171329743938886,
+          "total_return_pct": 34.57373756843981,
+          "max_drawdown_pct": 0.822288598104614,
+          "final_equity": 13457.373756843981,
+          "sharpe": 2.81646063576442
+        },
+        "half_kelly": {
+          "method": "half_kelly",
+          "fraction": 0.085664871969443,
+          "total_return_pct": 16.0341220633609,
+          "max_drawdown_pct": 0.4118987254651218,
+          "final_equity": 11603.41220633609,
+          "sharpe": 2.816460635764451
+        },
+        "optimal_f": {
+          "method": "optimal_f",
+          "fraction": 0.13093420658477498,
+          "total_return_pct": 25.49618403138802,
+          "max_drawdown_pct": 0.628955672757632,
+          "final_equity": 12549.618403138802,
+          "sharpe": 2.8164606357644164
+        }
+      },
+      "recommended": "kelly",
+      "recommended_return": 34.57373756843981,
+      "recommended_dd": 0.822288598104614
+    },
+    "ETH": {
+      "coin": "ETH",
+      "best_strategy": "vwap_reversion",
+      "n_trades": 602,
+      "base_win_rate": 45.84717607973422,
+      "sizing_results": {
+        "fixed_1pct": {
+          "method": "fixed_1pct",
+          "fraction": 0.01,
+          "total_return_pct": 0.645342366376517,
+          "max_drawdown_pct": 0.031707100629466814,
+          "final_equity": 10064.534236637652,
+          "sharpe": 2.892520851697307
+        },
+        "fixed_2pct": {
+          "method": "fixed_2pct",
+          "fraction": 0.02,
+          "total_return_pct": 1.2946327353400737,
+          "max_drawdown_pct": 0.06340632569518276,
+          "final_equity": 10129.463273534007,
+          "sharpe": 2.8925208516969354
+        },
+        "fixed_5pct": {
+          "method": "fixed_5pct",
+          "fraction": 0.05,
+          "total_return_pct": 3.2664201228915952,
+          "max_drawdown_pct": 0.15845675909994741,
+          "final_equity": 10326.64201228916,
+          "sharpe": 2.8925208516969616
+        },
+        "kelly": {
+          "method": "kelly",
+          "fraction": 0.18840001855239913,
+          "total_return_pct": 12.84366502531635,
+          "max_drawdown_pct": 0.5960394176169328,
+          "final_equity": 11284.366502531635,
+          "sharpe": 2.892520851697115
+        },
+        "half_kelly": {
+          "method": "half_kelly",
+          "fraction": 0.09420000927619956,
+          "total_return_pct": 6.2379488114551895,
+          "max_drawdown_pct": 0.2983687002932414,
+          "final_equity": 10623.794881145519,
+          "sharpe": 2.892520851697192
+        },
+        "optimal_f": {
+          "method": "optimal_f",
+          "fraction": 0.14280365259536407,
+          "total_return_pct": 9.599063269425825,
+          "max_drawdown_pct": 0.45204263400788847,
+          "final_equity": 10959.906326942582,
+          "sharpe": 2.8925208516970318
+        }
+      },
+      "recommended": "kelly",
+      "recommended_return": 12.84366502531635,
+      "recommended_dd": 0.5960394176169328
+    },
+    "LINK": {
+      "coin": "LINK",
+      "best_strategy": "bb_bounce_pro",
+      "n_trades": 23,
+      "base_win_rate": 52.17391304347826,
+      "sizing_results": {
+        "fixed_1pct": {
+          "method": "fixed_1pct",
+          "fraction": 0.01,
+          "total_return_pct": 0.04622931595349655,
+          "max_drawdown_pct": 0.006438118918728544,
+          "final_equity": 10004.62293159535,
+          "sharpe": 6.117444872422665
+        },
+        "fixed_2pct": {
+          "method": "fixed_2pct",
+          "fraction": 0.02,
+          "total_return_pct": 0.09247281413219753,
+          "max_drawdown_pct": 0.012876182521535823,
+          "final_equity": 10009.24728141322,
+          "sharpe": 6.117444872420483
+        },
+        "fixed_5pct": {
+          "method": "fixed_5pct",
+          "fraction": 0.05,
+          "total_return_pct": 0.23128841495245067,
+          "max_drawdown_pct": 0.03219004115335621,
+          "final_equity": 10023.128841495245,
+          "sharpe": 6.11744487242016
+        },
+        "kelly": {
+          "method": "kelly",
+          "fraction": 0.25,
+          "total_return_pct": 1.1599905284170382,
+          "max_drawdown_pct": 0.1609363135833509,
+          "final_equity": 10115.999052841704,
+          "sharpe": 6.11744487241976
+        },
+        "half_kelly": {
+          "method": "half_kelly",
+          "fraction": 0.125,
+          "total_return_pct": 0.5788861216860823,
+          "max_drawdown_pct": 0.08047250358401431,
+          "final_equity": 10057.888612168608,
+          "sharpe": 6.117444872420161
+        },
+        "optimal_f": {
+          "method": "optimal_f",
+          "fraction": 0.25,
+          "total_return_pct": 1.1599905284170382,
+          "max_drawdown_pct": 0.1609363135833509,
+          "final_equity": 10115.999052841704,
+          "sharpe": 6.11744487241976
+        }
+      },
+      "recommended": "kelly",
+      "recommended_return": 1.1599905284170382,
+      "recommended_dd": 0.1609363135833509
+    },
+    "LTC": {
+      "coin": "LTC",
+      "best_strategy": "vwap_reversion",
+      "n_trades": 1036,
+      "base_win_rate": 45.27027027027027,
+      "sizing_results": {
+        "fixed_1pct": {
+          "method": "fixed_1pct",
+          "fraction": 0.01,
+          "total_return_pct": 0.7997048234248723,
+          "max_drawdown_pct": 0.048080370497214885,
+          "final_equity": 10079.970482342487,
+          "sharpe": 2.1226676564346207
+        },
+        "fixed_2pct": {
+          "method": "fixed_2pct",
+          "fraction": 0.02,
+          "total_return_pct": 1.605450730180055,
+          "max_drawdown_pct": 0.09615234232431034,
+          "final_equity": 10160.545073018005,
+          "sharpe": 2.1226676564347033
+        },
+        "fixed_5pct": {
+          "method": "fixed_5pct",
+          "fraction": 0.05,
+          "total_return_pct": 4.059364807052261,
+          "max_drawdown_pct": 0.24031774792201893,
+          "final_equity": 10405.936480705226,
+          "sharpe": 2.1226676564348503
+        },
+        "kelly": {
+          "method": "kelly",
+          "fraction": 0.14702383935231783,
+          "total_return_pct": 12.384709228631072,
+          "max_drawdown_pct": 0.7060450645875885,
+          "final_equity": 11238.470922863107,
+          "sharpe": 2.1226676564346723
+        },
+        "half_kelly": {
+          "method": "half_kelly",
+          "fraction": 0.07351191967615892,
+          "total_return_pct": 6.021606131842928,
+          "max_drawdown_pct": 0.35325148087867175,
+          "final_equity": 10602.160613184293,
+          "sharpe": 2.1226676564345794
+        },
+        "optimal_f": {
+          "method": "optimal_f",
+          "fraction": 0.10602266223718328,
+          "total_return_pct": 8.792524661736552,
+          "max_drawdown_pct": 0.5093316538047626,
+          "final_equity": 10879.252466173655,
+          "sharpe": 2.1226676564346727
+        }
+      },
+      "recommended": "kelly",
+      "recommended_return": 12.384709228631072,
+      "recommended_dd": 0.7060450645875885
+    },
+    "NEAR": {
+      "coin": "NEAR",
+      "best_strategy": "bb_bounce_pro",
+      "n_trades": 21,
+      "base_win_rate": 47.61904761904761,
+      "sizing_results": {
+        "fixed_1pct": {
+          "method": "fixed_1pct",
+          "fraction": 0.01,
+          "total_return_pct": 0.056845752951521715,
+          "max_drawdown_pct": 0.018007648703740473,
+          "final_equity": 10005.684575295152,
+          "sharpe": 5.239909608260775
+        },
+        "fixed_2pct": {
+          "method": "fixed_2pct",
+          "fraction": 0.02,
+          "total_return_pct": 0.11370815235844929,
+          "max_drawdown_pct": 0.03601259503130092,
+          "final_equity": 10011.370815235845,
+          "sharpe": 5.239909608260108
+        },
+        "fixed_5pct": {
+          "method": "fixed_5pct",
+          "fraction": 0.05,
+          "total_return_pct": 0.28439521733323997,
+          "max_drawdown_pct": 0.09001122300095085,
+          "final_equity": 10028.439521733324,
+          "sharpe": 5.239909608259704
+        },
+        "kelly": {
+          "method": "kelly",
+          "fraction": 0.25,
+          "total_return_pct": 1.4261349788394,
+          "max_drawdown_pct": 0.44938125057991923,
+          "final_equity": 10142.61349788394,
+          "sharpe": 5.239909608259581
+        },
+        "half_kelly": {
+          "method": "half_kelly",
+          "fraction": 0.125,
+          "total_return_pct": 0.7117680734564237,
+          "max_drawdown_pct": 0.22490145710709242,
+          "final_equity": 10071.176807345642,
+          "sharpe": 5.23990960825957
+        },
+        "optimal_f": {
+          "method": "optimal_f",
+          "fraction": 0.25,
+          "total_return_pct": 1.4261349788394,
+          "max_drawdown_pct": 0.44938125057991923,
+          "final_equity": 10142.61349788394,
+          "sharpe": 5.239909608259581
+        }
+      },
+      "recommended": "kelly",
+      "recommended_return": 1.4261349788394,
+      "recommended_dd": 0.44938125057991923
+    },
+    "SHIB": {
+      "coin": "SHIB",
+      "best_strategy": "bb_bounce_pro",
+      "n_trades": 10,
+      "base_win_rate": 50.0,
+      "sizing_results": {
+        "fixed_1pct": {
+          "method": "fixed_1pct",
+          "fraction": 0.01,
+          "total_return_pct": -0.0010772270181223574,
+          "max_drawdown_pct": 0.008688325739906277,
+          "final_equity": 9999.892277298188,
+          "sharpe": -0.5657291391173672
+        },
+        "fixed_2pct": {
+          "method": "fixed_2pct",
+          "fraction": 0.02,
+          "total_return_pct": -0.0021553564879650366,
+          "max_drawdown_pct": 0.017376148883899684,
+          "final_equity": 9999.784464351203,
+          "sharpe": -0.5657291391144321
+        },
+        "fixed_5pct": {
+          "method": "fixed_5pct",
+          "fraction": 0.05,
+          "total_return_pct": -0.005395159248237177,
+          "max_drawdown_pct": 0.04343660288563747,
+          "final_equity": 9999.460484075176,
+          "sharpe": -0.5657291391170954
+        },
+        "kelly": {
+          "method": "kelly",
+          "fraction": 0.01,
+          "total_return_pct": -0.0010772270181223574,
+          "max_drawdown_pct": 0.008688325739906277,
+          "final_equity": 9999.892277298188,
+          "sharpe": -0.5657291391173672
+        },
+        "half_kelly": {
+          "method": "half_kelly",
+          "fraction": 0.01,
+          "total_return_pct": -0.0010772270181223574,
+          "max_drawdown_pct": 0.008688325739906277,
+          "final_equity": 9999.892277298188,
+          "sharpe": -0.5657291391173672
+        },
+        "optimal_f": {
+          "method": "optimal_f",
+          "fraction": 0.010005841643766819,
+          "total_return_pct": -0.0010778565595319378,
+          "max_drawdown_pct": 0.008693401003420836,
+          "final_equity": 9999.892214344047,
+          "sharpe": -0.5657291391237482
+        }
+      },
+      "recommended": "fixed_1pct",
+      "recommended_return": -0.0010772270181223574,
+      "recommended_dd": 0.008688325739906277
+    },
+    "SOL": {
+      "coin": "SOL",
+      "best_strategy": "vwap_reversion",
+      "n_trades": 757,
+      "base_win_rate": 45.70673712021136,
+      "sizing_results": {
+        "fixed_1pct": {
+          "method": "fixed_1pct",
+          "fraction": 0.01,
+          "total_return_pct": 0.9035964364599386,
+          "max_drawdown_pct": 0.0574375910350501,
+          "final_equity": 10090.359643645994,
+          "sharpe": 3.041193176365905
+        },
+        "fixed_2pct": {
+          "method": "fixed_2pct",
+          "fraction": 0.02,
+          "total_return_pct": 1.8150503278733778,
+          "max_drawdown_pct": 0.1148480905490577,
+          "final_equity": 10181.505032787338,
+          "sharpe": 3.041193176367053
+        },
+        "fixed_5pct": {
+          "method": "fixed_5pct",
+          "fraction": 0.05,
+          "total_return_pct": 4.59721489059355,
+          "max_drawdown_pct": 0.2869171195212668,
+          "final_equity": 10459.721489059355,
+          "sharpe": 3.041193176366995
+        },
+        "kelly": {
+          "method": "kelly",
+          "fraction": 0.19470002641065134,
+          "total_return_pct": 19.076785833067824,
+          "max_drawdown_pct": 1.11344718281123,
+          "final_equity": 11907.678583306782,
+          "sharpe": 3.041193176367067
+        },
+        "half_kelly": {
+          "method": "half_kelly",
+          "fraction": 0.09735001320532567,
+          "total_return_pct": 9.137876503606476,
+          "max_drawdown_pct": 0.5580040298619703,
+          "final_equity": 10913.787650360648,
+          "sharpe": 3.0411931763671647
+        },
+        "optimal_f": {
+          "method": "optimal_f",
+          "fraction": 0.14316551023895635,
+          "total_return_pct": 13.71162763832421,
+          "max_drawdown_pct": 0.8197288584273497,
+          "final_equity": 11371.16276383242,
+          "sharpe": 3.0411931763670643
+        }
+      },
+      "recommended": "kelly",
+      "recommended_return": 19.076785833067824,
+      "recommended_dd": 1.11344718281123
+    },
+    "TRX": {
+      "coin": "TRX",
+      "best_strategy": "stochastic_reversal",
+      "n_trades": 89,
+      "base_win_rate": 47.19101123595505,
+      "sizing_results": {
+        "fixed_1pct": {
+          "method": "fixed_1pct",
+          "fraction": 0.01,
+          "total_return_pct": -0.035574322473767093,
+          "max_drawdown_pct": 0.049106310591378134,
+          "final_equity": 9996.442567752623,
+          "sharpe": -2.079679137944935
+        },
+        "fixed_2pct": {
+          "method": "fixed_2pct",
+          "fraction": 0.02,
+          "total_return_pct": -0.07114441147234175,
+          "max_drawdown_pct": 0.09819547008177323,
+          "final_equity": 9992.885558852766,
+          "sharpe": -2.079679137943689
+        },
+        "fixed_5pct": {
+          "method": "fixed_5pct",
+          "fraction": 0.05,
+          "total_return_pct": -0.17782922949769273,
+          "max_drawdown_pct": 0.24536005574991576,
+          "final_equity": 9982.21707705023,
+          "sharpe": -2.0796791379448036
+        },
+        "kelly": {
+          "method": "kelly",
+          "fraction": 0.01,
+          "total_return_pct": -0.035574322473767093,
+          "max_drawdown_pct": 0.049106310591378134,
+          "final_equity": 9996.442567752623,
+          "sharpe": -2.079679137944935
+        },
+        "half_kelly": {
+          "method": "half_kelly",
+          "fraction": 0.01,
+          "total_return_pct": -0.035574322473767093,
+          "max_drawdown_pct": 0.049106310591378134,
+          "final_equity": 9996.442567752623,
+          "sharpe": -2.079679137944935
+        },
+        "optimal_f": {
+          "method": "optimal_f",
+          "fraction": 0.010005841643766819,
+          "total_return_pct": -0.035595102488841804,
+          "max_drawdown_pct": 0.04913499173606397,
+          "final_equity": 9996.440489751116,
+          "sharpe": -2.079679137940492
+        }
+      },
+      "recommended": "fixed_1pct",
+      "recommended_return": -0.035574322473767093,
+      "recommended_dd": 0.049106310591378134
+    },
+    "UNI": {
+      "coin": "UNI",
+      "best_strategy": "vwap_reversion",
+      "n_trades": 1109,
+      "base_win_rate": 41.2082957619477,
+      "sizing_results": {
+        "fixed_1pct": {
+          "method": "fixed_1pct",
+          "fraction": 0.01,
+          "total_return_pct": 1.5740002513598301,
+          "max_drawdown_pct": 0.059428620670367,
+          "final_equity": 10157.400025135983,
+          "sharpe": 3.0641722722130633
+        },
+        "fixed_2pct": {
+          "method": "fixed_2pct",
+          "fraction": 0.02,
+          "total_return_pct": 3.172143718442494,
+          "max_drawdown_pct": 0.11883236853191591,
+          "final_equity": 10317.21437184425,
+          "sharpe": 3.0641722722125917
+        },
+        "fixed_5pct": {
+          "method": "fixed_5pct",
+          "fraction": 0.05,
+          "total_return_pct": 8.115065139830111,
+          "max_drawdown_pct": 0.2968943935010687,
+          "final_equity": 10811.506513983011,
+          "sharpe": 3.0641722722128195
+        },
+        "kelly": {
+          "method": "kelly",
+          "fraction": 0.18374545508217469,
+          "total_return_pct": 33.107791831126654,
+          "max_drawdown_pct": 1.0880051925815226,
+          "final_equity": 13310.779183112665,
+          "sharpe": 3.064172272212827
+        },
+        "half_kelly": {
+          "method": "half_kelly",
+          "fraction": 0.09187272754108734,
+          "total_return_pct": 15.402007288163386,
+          "max_drawdown_pct": 0.5450516622982436,
+          "final_equity": 11540.200728816339,
+          "sharpe": 3.0641722722128275
+        },
+        "optimal_f": {
+          "method": "optimal_f",
+          "fraction": 0.1407887933737155,
+          "total_return_pct": 24.522161237055006,
+          "max_drawdown_pct": 0.8343990729815207,
+          "final_equity": 12452.2161237055,
+          "sharpe": 3.064172272212818
+        }
+      },
+      "recommended": "kelly",
+      "recommended_return": 33.107791831126654,
+      "recommended_dd": 1.0880051925815226
+    },
+    "XLM": {
+      "coin": "XLM",
+      "best_strategy": "mean_reversion_pro",
+      "n_trades": 61,
+      "base_win_rate": 42.62295081967213,
+      "sizing_results": {
+        "fixed_1pct": {
+          "method": "fixed_1pct",
+          "fraction": 0.01,
+          "total_return_pct": 0.12531905524963804,
+          "max_drawdown_pct": 0.015171608847756674,
+          "final_equity": 10012.531905524964,
+          "sharpe": 5.005599373999931
+        },
+        "fixed_2pct": {
+          "method": "fixed_2pct",
+          "fraction": 0.02,
+          "total_return_pct": 0.2507666565586806,
+          "max_drawdown_pct": 0.03034137643577338,
+          "final_equity": 10025.076665655868,
+          "sharpe": 5.005599374000825
+        },
+        "fixed_5pct": {
+          "method": "fixed_5pct",
+          "fraction": 0.05,
+          "total_return_pct": 0.6278817111786884,
+          "max_drawdown_pct": 0.07583963331702587,
+          "final_equity": 10062.788171117869,
+          "sharpe": 5.005599374002085
+        },
+        "kelly": {
+          "method": "kelly",
+          "fraction": 0.24198778501674154,
+          "total_return_pct": 3.0688525244830087,
+          "max_drawdown_pct": 0.36661792483759675,
+          "final_equity": 10306.8852524483,
+          "sharpe": 5.005599374001237
+        },
+        "half_kelly": {
+          "method": "half_kelly",
+          "fraction": 0.12099389250837077,
+          "total_return_pct": 1.5249376696851686,
+          "max_drawdown_pct": 0.18344360213266908,
+          "final_equity": 10152.493766968517,
+          "sharpe": 5.00559937400141
+        },
+        "optimal_f": {
+          "method": "optimal_f",
+          "fraction": 0.25,
+          "total_return_pct": 3.1717647189322635,
+          "max_drawdown_pct": 0.37873822857415806,
+          "final_equity": 10317.176471893226,
+          "sharpe": 5.005599374001319
+        }
+      },
+      "recommended": "optimal_f",
+      "recommended_return": 3.1717647189322635,
+      "recommended_dd": 0.37873822857415806
+    },
+    "XRP": {
+      "coin": "XRP",
+      "best_strategy": "vwap_reversion",
+      "n_trades": 1094,
+      "base_win_rate": 43.784277879341865,
+      "sizing_results": {
+        "fixed_1pct": {
+          "method": "fixed_1pct",
+          "fraction": 0.01,
+          "total_return_pct": 0.9417930563017216,
+          "max_drawdown_pct": 0.07309638269309023,
+          "final_equity": 10094.179305630172,
+          "sharpe": 2.131545300016272
+        },
+        "fixed_2pct": {
+          "method": "fixed_2pct",
+          "fraction": 0.02,
+          "total_return_pct": 1.8919937950115855,
+          "max_drawdown_pct": 0.14614891620965084,
+          "final_equity": 10189.199379501159,
+          "sharpe": 2.1315453000167293
+        },
+        "fixed_5pct": {
+          "method": "fixed_5pct",
+          "fraction": 0.05,
+          "total_return_pct": 4.793752381547656,
+          "max_drawdown_pct": 0.36504359872126635,
+          "final_equity": 10479.375238154766,
+          "sharpe": 2.1315453000167217
+        },
+        "kelly": {
+          "method": "kelly",
+          "fraction": 0.15008477995727146,
+          "total_return_pct": 15.051744775336992,
+          "max_drawdown_pct": 1.0924639654848798,
+          "final_equity": 11505.1744775337,
+          "sharpe": 2.131545300016632
+        },
+        "half_kelly": {
+          "method": "half_kelly",
+          "fraction": 0.07504238997863573,
+          "total_return_pct": 7.275823094498392,
+          "max_drawdown_pct": 0.5474633930524907,
+          "final_equity": 10727.58230944984,
+          "sharpe": 2.131545300016572
+        },
+        "optimal_f": {
+          "method": "optimal_f",
+          "fraction": 0.09991536290575707,
+          "total_return_pct": 9.796212712239758,
+          "max_drawdown_pct": 0.7283775898763585,
+          "final_equity": 10979.621271223976,
+          "sharpe": 2.1315453000165907
+        }
+      },
+      "recommended": "kelly",
+      "recommended_return": 15.051744775336992,
+      "recommended_dd": 1.0924639654848798
+    }
+  },
+  "summary": {
+    "method_recommendation_counts": {
+      "optimal_f": 2,
+      "kelly": 14,
+      "fixed_5pct": 1,
+      "fixed_1pct": 2
+    },
+    "best_overall": "kelly"
+  }
+}

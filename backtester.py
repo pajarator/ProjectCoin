@@ -31,6 +31,10 @@ class BacktestResult:
     profit_factor: float
     max_drawdown: float
     Sharpe_ratio: float
+    calmar_ratio: float = 0.0
+    recovery_factor: float = 0.0
+    total_pnl_pct: float = 0.0
+    equity_curve: list = None
     
     def summary(self) -> str:
         return f"""
@@ -69,19 +73,28 @@ class Backtester:
         self.slippage = slippage
         self.trades: list[Trade] = []
         
-    def run(self, entry_signal: pd.Series, exit_signal: pd.Series, 
+    def run(self, entry_signal: pd.Series, exit_signal: pd.Series,
             direction: str = 'long', stop_loss: Optional[float] = None,
-            take_profit: Optional[float] = None) -> BacktestResult:
+            take_profit: Optional[float] = None,
+            atr_stop_mult: Optional[float] = None,
+            trailing_stop_pct: Optional[float] = None,
+            trailing_activation_pct: Optional[float] = None) -> BacktestResult:
         """
         Run backtest with entry and exit signals.
-        
+
         Args:
             entry_signal: Series of boolean - True when to enter
             exit_signal: Series of boolean - True when to exit
             direction: 'long' or 'short'
-            stop_loss: Optional stop loss percentage
+            stop_loss: Optional fixed stop loss percentage
             take_profit: Optional take profit percentage
-            
+            atr_stop_mult: Optional ATR-based stop loss multiplier.
+                           Uses ATR column from df (must exist). Overrides stop_loss.
+            trailing_stop_pct: Optional trailing stop percentage.
+                               Trails behind highest price since entry.
+            trailing_activation_pct: Profit threshold to activate trailing stop.
+                                     If None, trailing starts immediately.
+
         Returns:
             BacktestResult with statistics
         """
@@ -90,37 +103,83 @@ class Backtester:
         position = None
         entry_price = 0
         entry_idx = None
-        
+        trailing_peak = 0
+        trailing_active = False
+
+        # Pre-compute ATR if needed
+        atr_values = None
+        if atr_stop_mult is not None:
+            from indicators import ATR as ATR_func
+            if 'ATR' in self.df.columns:
+                atr_values = self.df['ATR'].values
+            else:
+                atr_values = ATR_func(self.df['high'], self.df['low'], self.df['close'], 14).values
+
         # Align signals with dataframe
         entry_signal = entry_signal.reindex(self.df.index)
         exit_signal = exit_signal.reindex(self.df.index)
-        
+
         for i, (idx, row) in enumerate(self.df.iterrows()):
             close = row['close']
-            
-            # Check stop loss / take profit
+
+            # Check stop loss / take profit / trailing
             if position is not None:
                 pnl_pct = (close - entry_price) / entry_price * (1 if direction == 'long' else -1)
-                
-                if stop_loss and pnl_pct <= -stop_loss:
-                    # Stop loss hit
-                    exit_price = entry_price * (1 - stop_loss * (1 + self.slippage))
+
+                # Determine effective stop loss
+                effective_sl = stop_loss
+                if atr_stop_mult is not None and atr_values is not None and not np.isnan(atr_values[i]):
+                    effective_sl = (atr_values[i] * atr_stop_mult) / entry_price
+
+                if effective_sl and pnl_pct <= -effective_sl:
+                    exit_price = entry_price * (1 - effective_sl * (1 + self.slippage))
                     self._close_trade(idx, exit_price, 'stop_loss', direction)
                     position = None
+                    trailing_active = False
                     continue
-                    
+
                 if take_profit and pnl_pct >= take_profit:
-                    # Take profit hit
                     exit_price = entry_price * (1 + take_profit * (1 - self.slippage))
                     self._close_trade(idx, exit_price, 'take_profit', direction)
                     position = None
+                    trailing_active = False
                     continue
-            
+
+                # Trailing stop
+                if trailing_stop_pct is not None:
+                    if direction == 'long':
+                        trailing_peak = max(trailing_peak, close)
+                    else:
+                        trailing_peak = min(trailing_peak, close) if trailing_peak > 0 else close
+
+                    # Check activation
+                    if trailing_activation_pct is not None:
+                        if pnl_pct >= trailing_activation_pct:
+                            trailing_active = True
+                    else:
+                        trailing_active = True
+
+                    if trailing_active:
+                        if direction == 'long':
+                            trail_stop = trailing_peak * (1 - trailing_stop_pct)
+                            if close <= trail_stop:
+                                exit_price = close * (1 - self.slippage)
+                                self._close_trade(idx, exit_price, 'trailing_stop', direction)
+                                position = None
+                                trailing_active = False
+                                continue
+                        else:
+                            trail_stop = trailing_peak * (1 + trailing_stop_pct)
+                            if close >= trail_stop:
+                                exit_price = close * (1 + self.slippage)
+                                self._close_trade(idx, exit_price, 'trailing_stop', direction)
+                                position = None
+                                trailing_active = False
+                                continue
+
             # Entry signal
             if entry_signal.iloc[i] and position is None:
-                # Apply slippage to entry
                 entry_price = close * (1 + self.slippage if direction == 'long' else 1 - self.slippage)
-                # Create the trade
                 self.trades.append(Trade(
                     entry_time=idx,
                     entry_price=entry_price,
@@ -128,16 +187,18 @@ class Backtester:
                 ))
                 position = True
                 entry_idx = i
-                
+                trailing_peak = close
+                trailing_active = False
+
             # Exit signal
             elif exit_signal.iloc[i] and position is not None:
-                # Apply slippage to exit
                 exit_price = close * (1 - self.slippage if direction == 'long' else 1 + self.slippage)
                 self._close_trade(idx, exit_price, 'signal', direction)
                 position = None
-            
+                trailing_active = False
+
             # Exit without position - ignore
-        
+
         # Close any open position at the end
         if position is not None:
             exit_price = self.df.iloc[-1]['close']
@@ -201,7 +262,17 @@ class Backtester:
         # Sharpe ratio (simplified)
         returns = np.diff(equity_curve) / equity_curve[:-1]
         sharpe = np.mean(returns) / np.std(returns) * np.sqrt(252) if len(returns) > 1 and np.std(returns) > 0 else 0
-        
+
+        # Total P&L
+        total_pnl_pct = (equity - self.initial_balance) / self.initial_balance * 100
+
+        # Calmar ratio: annualized return / max drawdown
+        ann_return = np.mean(returns) * 252 * 100 if len(returns) > 0 else 0
+        calmar = ann_return / max_dd if max_dd > 0 else 0
+
+        # Recovery factor: total P&L / max drawdown
+        recovery = total_pnl_pct / max_dd if max_dd > 0 else 0
+
         return BacktestResult(
             trades=self.trades,
             total_trades=total,
@@ -212,7 +283,11 @@ class Backtester:
             avg_loss=avg_loss,
             profit_factor=profit_factor,
             max_drawdown=max_dd,
-            Sharpe_ratio=sharpe
+            Sharpe_ratio=sharpe,
+            calmar_ratio=calmar,
+            recovery_factor=recovery,
+            total_pnl_pct=total_pnl_pct,
+            equity_curve=equity_curve,
         )
 
 def scan_for_patterns(df: pd.DataFrame) -> pd.DataFrame:

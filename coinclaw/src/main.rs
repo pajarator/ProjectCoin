@@ -8,6 +8,9 @@ mod state;
 mod strategies;
 mod tui;
 
+#[cfg(feature = "backtest")]
+mod backtest;
+
 use config::COINS;
 use futures::future::join_all;
 use state::SharedState;
@@ -17,6 +20,15 @@ use tokio::sync::RwLock;
 
 #[tokio::main]
 async fn main() {
+    // Check for backtest mode
+    #[cfg(feature = "backtest")]
+    {
+        if std::env::args().any(|a| a == "--backtest") {
+            backtest::run_backtest().await;
+            return;
+        }
+    }
+
     let reset = std::env::args().any(|a| a == "--reset");
     if reset {
         let _ = std::fs::remove_file(config::STATE_FILE);

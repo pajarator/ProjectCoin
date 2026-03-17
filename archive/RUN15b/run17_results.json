@@ -1,0 +1,84 @@
+{
+  "experiment": "RUN17",
+  "description": "NN Scalp Trading on 1m",
+  "features": [
+    "rsi",
+    "vol_ratio",
+    "stoch_k",
+    "stoch_d",
+    "stoch_cross",
+    "bb_position",
+    "roc_3",
+    "avg_body_3",
+    "hour_of_day"
+  ],
+  "lookahead": 3,
+  "baseline": {
+    "avg_wr": 49.29,
+    "total_signals": 21831,
+    "per_coin": [
+      {
+        "coin": "BTC",
+        "signals": 2430,
+        "train_wr": 54.3,
+        "test_wr": 55.3
+      },
+      {
+        "coin": "ETH",
+        "signals": 2171,
+        "train_wr": 54.6,
+        "test_wr": 54.9
+      },
+      {
+        "coin": "BNB",
+        "signals": 2485,
+        "train_wr": 54.7,
+        "test_wr": 52.3
+      },
+      {
+        "coin": "SOL",
+        "signals": 2229,
+        "train_wr": 52.5,
+        "test_wr": 55.3
+      },
+      {
+        "coin": "ADA",
+        "signals": 2245,
+        "train_wr": 47.1,
+        "test_wr": 46.7
+      },
+      {
+        "coin": "XRP",
+        "signals": 2335,
+        "train_wr": 53.7,
+        "test_wr": 51.6
+      },
+      {
+        "coin": "DOGE",
+        "signals": 2192,
+        "train_wr": 52.6,
+        "test_wr": 51.6
+      },
+      {
+        "coin": "LTC",
+        "signals": 2436,
+        "train_wr": 48.0,
+        "test_wr": 47.7
+      },
+      {
+        "coin": "LINK",
+        "signals": 1236,
+        "train_wr": 35.4,
+        "test_wr": 37.9
+      },
+      {
+        "coin": "DOT",
+        "signals": 2072,
+        "train_wr": 43.1,
+        "test_wr": 39.6
+      }
+    ]
+  },
+  "best_threshold": 0.5,
+  "best_nn_wr": 56.529999999999994
+}

@@ -89,6 +89,10 @@ archive/
   RUN11/ — STRAT1000 strategy discovery (45 strategies, result: DASH → OuMeanRev)
   RUN12/ — Scalp market mode filter (scalps must match regime direction)
   RUN13/ — STRAT1000 final sweep: complementary signals (Laguerre RSI, Kalman Filter, KST Cross)
+  RUN14/ — Indicator library expansion: +18 indicators, requirements.txt, ML infrastructure (feature_engine, monte_carlo, walk_forward, risk, ensemble, dashboard)
+  RUN15/ — Feature engineering pipeline: 66-feature ML matrix, disk cache for all 19 coins, 3 indicator bug fixes (doji NaN, CMF propagation, flat RSI)
+  RUN16/ — ML feature importance + walk-forward: RF/XGB on 66 features across 19 coins. Result: NEGATIVE — 54.6% IS accuracy doesn't survive OOS (RF −1.9% vs baseline). ML gating helps only 21% of strategies. No COINCLAW changes.
+  RUN17/ — Monte Carlo validation of COINCLAW v13 primary long strategies. Result: POSITIVE — 18/18 ROBUST (100% prob_profit, p5_PF = actual PF). Portfolio p50 return +15,045%, typical max DD 4.0%. No COINCLAW changes needed (validation only).
 ```
 
 Each `RUNX.md` contains: goal, method, full results tables, per-coin breakdowns, and conclusions. These serve as the institutional memory of what was tested and why.

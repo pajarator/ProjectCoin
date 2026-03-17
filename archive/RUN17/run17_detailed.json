@@ -1,0 +1,171 @@
+{
+  "results": [
+    {
+      "coin": "BTC",
+      "baseline": {
+        "wins": 1332,
+        "losses": 1098
+      },
+      "kept": {
+        "wins": 193,
+        "losses": 162
+      },
+      "filtered": {
+        "wins": 479,
+        "losses": 381
+      }
+    },
+    {
+      "coin": "ETH",
+      "baseline": {
+        "wins": 1188,
+        "losses": 983
+      },
+      "kept": {
+        "wins": 268,
+        "losses": 215
+      },
+      "filtered": {
+        "wins": 328,
+        "losses": 275
+      }
+    },
+    {
+      "coin": "BNB",
+      "baseline": {
+        "wins": 1329,
+        "losses": 1156
+      },
+      "kept": {
+        "wins": 297,
+        "losses": 247
+      },
+      "filtered": {
+        "wins": 353,
+        "losses": 346
+      }
+    },
+    {
+      "coin": "SOL",
+      "baseline": {
+        "wins": 1202,
+        "losses": 1027
+      },
+      "kept": {
+        "wins": 135,
+        "losses": 120
+      },
+      "filtered": {
+        "wins": 482,
+        "losses": 378
+      }
+    },
+    {
+      "coin": "ADA",
+      "baseline": {
+        "wins": 1054,
+        "losses": 1191
+      },
+      "kept": {
+        "wins": 21,
+        "losses": 20
+      },
+      "filtered": {
+        "wins": 504,
+        "losses": 578
+      }
+    },
+    {
+      "coin": "XRP",
+      "baseline": {
+        "wins": 1230,
+        "losses": 1105
+      },
+      "kept": {
+        "wins": 282,
+        "losses": 261
+      },
+      "filtered": {
+        "wins": 321,
+        "losses": 304
+      }
+    },
+    {
+      "coin": "DOGE",
+      "baseline": {
+        "wins": 1142,
+        "losses": 1050
+      },
+      "kept": {
+        "wins": 149,
+        "losses": 139
+      },
+      "filtered": {
+        "wins": 417,
+        "losses": 391
+      }
+    },
+    {
+      "coin": "LTC",
+      "baseline": {
+        "wins": 1166,
+        "losses": 1270
+      },
+      "kept": {
+        "wins": 35,
+        "losses": 33
+      },
+      "filtered": {
+        "wins": 546,
+        "losses": 604
+      }
+    },
+    {
+      "coin": "LINK",
+      "baseline": {
+        "wins": 453,
+        "losses": 783
+      },
+      "kept": {
+        "wins": 0,
+        "losses": 0
+      },
+      "filtered": {
+        "wins": 234,
+        "losses": 384
+      }
+    },
+    {
+      "coin": "DOT",
+      "baseline": {
+        "wins": 856,
+        "losses": 1216
+      },
+      "kept": {
+        "wins": 2,
+        "losses": 2
+      },
+      "filtered": {
+        "wins": 408,
+        "losses": 624
+      }
+    }
+  ],
+  "summary": {
+    "baseline": {
+      "wins": 10952,
+      "losses": 10879,
+      "wr": 50.167193440520364
+    },
+    "kept": {
+      "wins": 1382,
+      "losses": 1199,
+      "wr": 53.545137543587764
+    },
+    "filtered": {
+      "wins": 4072,
+      "losses": 4265,
+      "wr": 48.8425092959098
+    }
+  }
+}

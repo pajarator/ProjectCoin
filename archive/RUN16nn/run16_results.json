@@ -1,0 +1,182 @@
+{
+  "experiment": "RUN16",
+  "description": "Neural Network Mean Reversion",
+  "model": "MLPClassifier(64, 32)",
+  "features": [
+    "z_score",
+    "rsi_14",
+    "rsi_7",
+    "bb_position",
+    "atr_pct",
+    "volatility_20",
+    "stoch_k",
+    "stoch_d",
+    "macd_hist_norm",
+    "cci_20",
+    "momentum_10",
+    "volume_ratio",
+    "obv_slope",
+    "cmf_20",
+    "adx_14",
+    "aroon_up",
+    "aroon_down",
+    "laguerre_rsi",
+    "kalman_dist",
+    "kst",
+    "kst_signal",
+    "hour_of_day",
+    "day_of_week"
+  ],
+  "lookahead": 4,
+  "results": [
+    {
+      "coin": "DASH",
+      "train_size": 17496,
+      "test_size": 17497,
+      "buy_signals": 11209,
+      "buy_win_rate": 43.5,
+      "final_balance": 10081.27,
+      "pnl_pct": 0.8
+    },
+    {
+      "coin": "UNI",
+      "train_size": 17496,
+      "test_size": 17497,
+      "buy_signals": 8582,
+      "buy_win_rate": 43.2,
+      "final_balance": 7704.88,
+      "pnl_pct": -23.0
+    },
+    {
+      "coin": "NEAR",
+      "train_size": 17496,
+      "test_size": 17497,
+      "buy_signals": 8804,
+      "buy_win_rate": 43.4,
+      "final_balance": 9727.63,
+      "pnl_pct": -2.7
+    },
+    {
+      "coin": "ADA",
+      "train_size": 17496,
+      "test_size": 17497,
+      "buy_signals": 8943,
+      "buy_win_rate": 41.7,
+      "final_balance": 12688.69,
+      "pnl_pct": 26.9
+    },
+    {
+      "coin": "LTC",
+      "train_size": 17496,
+      "test_size": 17497,
+      "buy_signals": 9960,
+      "buy_win_rate": 42.2,
+      "final_balance": 5380.1,
+      "pnl_pct": -46.2
+    },
+    {
+      "coin": "SHIB",
+      "train_size": 17496,
+      "test_size": 17497,
+      "buy_signals": 7988,
+      "buy_win_rate": 41.7,
+      "final_balance": 8359.4,
+      "pnl_pct": -16.4
+    },
+    {
+      "coin": "LINK",
+      "train_size": 17496,
+      "test_size": 17497,
+      "buy_signals": 8397,
+      "buy_win_rate": 43.6,
+      "final_balance": 6953.43,
+      "pnl_pct": -30.5
+    },
+    {
+      "coin": "ETH",
+      "train_size": 17496,
+      "test_size": 17497,
+      "buy_signals": 12180,
+      "buy_win_rate": 40.9,
+      "final_balance": 4924.73,
+      "pnl_pct": -50.8
+    },
+    {
+      "coin": "BTC",
+      "train_size": 17496,
+      "test_size": 17497,
+      "buy_signals": 8282,
+      "buy_win_rate": 39.9,
+      "final_balance": 10158.38,
+      "pnl_pct": 1.6
+    },
+    {
+      "coin": "BNB",
+      "train_size": 17496,
+      "test_size": 17497,
+      "buy_signals": 10152,
+      "buy_win_rate": 42.2,
+      "final_balance": 12228.01,
+      "pnl_pct": 22.3
+    },
+    {
+      "coin": "XRP",
+      "train_size": 17496,
+      "test_size": 17497,
+      "buy_signals": 8480,
+      "buy_win_rate": 41.9,
+      "final_balance": 6972.53,
+      "pnl_pct": -30.3
+    },
+    {
+      "coin": "SOL",
+      "train_size": 17496,
+      "test_size": 17497,
+      "buy_signals": 10544,
+      "buy_win_rate": 43.3,
+      "final_balance": 4986.17,
+      "pnl_pct": -50.1
+    },
+    {
+      "coin": "DOT",
+      "train_size": 17496,
+      "test_size": 17497,
+      "buy_signals": 8668,
+      "buy_win_rate": 43.1,
+      "final_balance": 6464.55,
+      "pnl_pct": -35.4
+    },
+    {
+      "coin": "AVAX",
+      "train_size": 17496,
+      "test_size": 17497,
+      "buy_signals": 8582,
+      "buy_win_rate": 42.0,
+      "final_balance": 7280.39,
+      "pnl_pct": -27.2
+    },
+    {
+      "coin": "ATOM",
+      "train_size": 17496,
+      "test_size": 17497,
+      "buy_signals": 7503,
+      "buy_win_rate": 42.3,
+      "final_balance": 9815.83,
+      "pnl_pct": -1.8
+    },
+    {
+      "coin": "DOGE",
+      "train_size": 17496,
+      "test_size": 17497,
+      "buy_signals": 8614,
+      "buy_win_rate": 42.3,
+      "final_balance": 8609.56,
+      "pnl_pct": -13.9
+    }
+  ],
+  "summary": {
+    "total_signals": 146888,
+    "avg_win_rate": 42.325,
+    "avg_pnl": -17.29375
+  }
+}

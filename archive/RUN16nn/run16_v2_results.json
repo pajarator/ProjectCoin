@@ -1,0 +1,422 @@
+{
+  "experiment": "RUN16",
+  "version": "v2 - NN as MR filter",
+  "description": "NN filters mean reversion signals, only enters when P(success) > threshold",
+  "z_threshold": -1.5,
+  "lookahead": 4,
+  "results_nn": [
+    {
+      "threshold": 0.5,
+      "avg_wr": 51.3625,
+      "total_signals": 24820,
+      "avg_pnl": -51.412499999999994,
+      "per_coin": [
+        {
+          "coin": "DASH",
+          "mr_signals": 4807,
+          "nn_filtered": 1779,
+          "nn_rejected": 625,
+          "win_rate": 53.0,
+          "pnl_pct": 34.3
+        },
+        {
+          "coin": "UNI",
+          "mr_signals": 4758,
+          "nn_filtered": 1478,
+          "nn_rejected": 901,
+          "win_rate": 51.3,
+          "pnl_pct": -58.0
+        },
+        {
+          "coin": "NEAR",
+          "mr_signals": 4867,
+          "nn_filtered": 1406,
+          "nn_rejected": 1028,
+          "win_rate": 51.0,
+          "pnl_pct": -51.5
+        },
+        {
+          "coin": "ADA",
+          "mr_signals": 4812,
+          "nn_filtered": 1368,
+          "nn_rejected": 1038,
+          "win_rate": 50.8,
+          "pnl_pct": -70.6
+        },
+        {
+          "coin": "LTC",
+          "mr_signals": 4562,
+          "nn_filtered": 1631,
+          "nn_rejected": 650,
+          "win_rate": 52.6,
+          "pnl_pct": -53.0
+        },
+        {
+          "coin": "SHIB",
+          "mr_signals": 4865,
+          "nn_filtered": 1627,
+          "nn_rejected": 806,
+          "win_rate": 46.7,
+          "pnl_pct": -56.1
+        },
+        {
+          "coin": "LINK",
+          "mr_signals": 4685,
+          "nn_filtered": 1409,
+          "nn_rejected": 934,
+          "win_rate": 51.6,
+          "pnl_pct": -62.6
+        },
+        {
+          "coin": "ETH",
+          "mr_signals": 4479,
+          "nn_filtered": 1465,
+          "nn_rejected": 775,
+          "win_rate": 54.3,
+          "pnl_pct": -54.9
+        },
+        {
+          "coin": "BTC",
+          "mr_signals": 4606,
+          "nn_filtered": 1571,
+          "nn_rejected": 732,
+          "win_rate": 52.1,
+          "pnl_pct": -38.9
+        },
+        {
+          "coin": "BNB",
+          "mr_signals": 4517,
+          "nn_filtered": 1786,
+          "nn_rejected": 473,
+          "win_rate": 55.5,
+          "pnl_pct": -29.6
+        },
+        {
+          "coin": "XRP",
+          "mr_signals": 4805,
+          "nn_filtered": 1741,
+          "nn_rejected": 662,
+          "win_rate": 51.2,
+          "pnl_pct": -55.0
+        },
+        {
+          "coin": "SOL",
+          "mr_signals": 4777,
+          "nn_filtered": 1415,
+          "nn_rejected": 974,
+          "win_rate": 54.0,
+          "pnl_pct": -62.8
+        },
+        {
+          "coin": "DOT",
+          "mr_signals": 4847,
+          "nn_filtered": 1733,
+          "nn_rejected": 691,
+          "win_rate": 50.2,
+          "pnl_pct": -66.9
+        },
+        {
+          "coin": "AVAX",
+          "mr_signals": 4826,
+          "nn_filtered": 1473,
+          "nn_rejected": 940,
+          "win_rate": 47.6,
+          "pnl_pct": -72.2
+        },
+        {
+          "coin": "ATOM",
+          "mr_signals": 4826,
+          "nn_filtered": 1428,
+          "nn_rejected": 985,
+          "win_rate": 49.6,
+          "pnl_pct": -61.0
+        },
+        {
+          "coin": "DOGE",
+          "mr_signals": 4765,
+          "nn_filtered": 1510,
+          "nn_rejected": 873,
+          "win_rate": 50.3,
+          "pnl_pct": -63.8
+        }
+      ]
+    },
+    {
+      "threshold": 0.55,
+      "avg_wr": 51.49374999999999,
+      "total_signals": 16919,
+      "avg_pnl": -51.125,
+      "per_coin": [
+        {
+          "coin": "DASH",
+          "mr_signals": 4807,
+          "nn_filtered": 1388,
+          "nn_rejected": 1016,
+          "win_rate": 52.4,
+          "pnl_pct": 36.1
+        },
+        {
+          "coin": "UNI",
+          "mr_signals": 4758,
+          "nn_filtered": 947,
+          "nn_rejected": 1432,
+          "win_rate": 49.7,
+          "pnl_pct": -58.0
+        },
+        {
+          "coin": "NEAR",
+          "mr_signals": 4867,
+          "nn_filtered": 824,
+          "nn_rejected": 1610,
+          "win_rate": 53.8,
+          "pnl_pct": -51.0
+        },
+        {
+          "coin": "ADA",
+          "mr_signals": 4812,
+          "nn_filtered": 753,
+          "nn_rejected": 1653,
+          "win_rate": 51.4,
+          "pnl_pct": -70.0
+        },
+        {
+          "coin": "LTC",
+          "mr_signals": 4562,
+          "nn_filtered": 1149,
+          "nn_rejected": 1132,
+          "win_rate": 53.6,
+          "pnl_pct": -53.0
+        },
+        {
+          "coin": "SHIB",
+          "mr_signals": 4865,
+          "nn_filtered": 1060,
+          "nn_rejected": 1373,
+          "win_rate": 48.1,
+          "pnl_pct": -55.8
+        },
+        {
+          "coin": "LINK",
+          "mr_signals": 4685,
+          "nn_filtered": 928,
+          "nn_rejected": 1415,
+          "win_rate": 51.0,
+          "pnl_pct": -62.6
+        },
+        {
+          "coin": "ETH",
+          "mr_signals": 4479,
+          "nn_filtered": 980,
+          "nn_rejected": 1260,
+          "win_rate": 54.1,
+          "pnl_pct": -54.5
+        },
+        {
+          "coin": "BTC",
+          "mr_signals": 4606,
+          "nn_filtered": 1184,
+          "nn_rejected": 1119,
+          "win_rate": 50.8,
+          "pnl_pct": -38.7
+        },
+        {
+          "coin": "BNB",
+          "mr_signals": 4517,
+          "nn_filtered": 1392,
+          "nn_rejected": 867,
+          "win_rate": 55.9,
+          "pnl_pct": -29.6
+        },
+        {
+          "coin": "XRP",
+          "mr_signals": 4805,
+          "nn_filtered": 1361,
+          "nn_rejected": 1042,
+          "win_rate": 51.5,
+          "pnl_pct": -55.0
+        },
+        {
+          "coin": "SOL",
+          "mr_signals": 4777,
+          "nn_filtered": 864,
+          "nn_rejected": 1525,
+          "win_rate": 53.7,
+          "pnl_pct": -62.4
+        },
+        {
+          "coin": "DOT",
+          "mr_signals": 4847,
+          "nn_filtered": 1149,
+          "nn_rejected": 1275,
+          "win_rate": 49.4,
+          "pnl_pct": -66.6
+        },
+        {
+          "coin": "AVAX",
+          "mr_signals": 4826,
+          "nn_filtered": 1104,
+          "nn_rejected": 1309,
+          "win_rate": 47.5,
+          "pnl_pct": -72.1
+        },
+        {
+          "coin": "ATOM",
+          "mr_signals": 4826,
+          "nn_filtered": 896,
+          "nn_rejected": 1517,
+          "win_rate": 50.1,
+          "pnl_pct": -61.0
+        },
+        {
+          "coin": "DOGE",
+          "mr_signals": 4765,
+          "nn_filtered": 940,
+          "nn_rejected": 1443,
+          "win_rate": 50.9,
+          "pnl_pct": -63.8
+        }
+      ]
+    },
+    {
+      "threshold": 0.6,
+      "avg_wr": 52.2,
+      "total_signals": 9880,
+      "avg_pnl": -50.881249999999994,
+      "per_coin": [
+        {
+          "coin": "DASH",
+          "mr_signals": 4807,
+          "nn_filtered": 1000,
+          "nn_rejected": 1404,
+          "win_rate": 52.8,
+          "pnl_pct": 35.2
+        },
+        {
+          "coin": "UNI",
+          "mr_signals": 4758,
+          "nn_filtered": 494,
+          "nn_rejected": 1885,
+          "win_rate": 52.2,
+          "pnl_pct": -57.9
+        },
+        {
+          "coin": "NEAR",
+          "mr_signals": 4867,
+          "nn_filtered": 423,
+          "nn_rejected": 2011,
+          "win_rate": 54.1,
+          "pnl_pct": -49.3
+        },
+        {
+          "coin": "ADA",
+          "mr_signals": 4812,
+          "nn_filtered": 355,
+          "nn_rejected": 2051,
+          "win_rate": 52.4,
+          "pnl_pct": -69.5
+        },
+        {
+          "coin": "LTC",
+          "mr_signals": 4562,
+          "nn_filtered": 646,
+          "nn_rejected": 1635,
+          "win_rate": 55.1,
+          "pnl_pct": -52.9
+        },
+        {
+          "coin": "SHIB",
+          "mr_signals": 4865,
+          "nn_filtered": 563,
+          "nn_rejected": 1870,
+          "win_rate": 48.3,
+          "pnl_pct": -55.5
+        },
+        {
+          "coin": "LINK",
+          "mr_signals": 4685,
+          "nn_filtered": 487,
+          "nn_rejected": 1856,
+          "win_rate": 53.8,
+          "pnl_pct": -62.3
+        },
+        {
+          "coin": "ETH",
+          "mr_signals": 4479,
+          "nn_filtered": 543,
+          "nn_rejected": 1697,
+          "win_rate": 55.8,
+          "pnl_pct": -54.4
+        },
+        {
+          "coin": "BTC",
+          "mr_signals": 4606,
+          "nn_filtered": 822,
+          "nn_rejected": 1481,
+          "win_rate": 51.0,
+          "pnl_pct": -39.2
+        },
+        {
+          "coin": "BNB",
+          "mr_signals": 4517,
+          "nn_filtered": 934,
+          "nn_rejected": 1325,
+          "win_rate": 56.1,
+          "pnl_pct": -29.6
+        },
+        {
+          "coin": "XRP",
+          "mr_signals": 4805,
+          "nn_filtered": 958,
+          "nn_rejected": 1445,
+          "win_rate": 52.5,
+          "pnl_pct": -55.0
+        },
+        {
+          "coin": "SOL",
+          "mr_signals": 4777,
+          "nn_filtered": 387,
+          "nn_rejected": 2002,
+          "win_rate": 50.4,
+          "pnl_pct": -63.5
+        },
+        {
+          "coin": "DOT",
+          "mr_signals": 4847,
+          "nn_filtered": 632,
+          "nn_rejected": 1792,
+          "win_rate": 51.7,
+          "pnl_pct": -64.7
+        },
+        {
+          "coin": "AVAX",
+          "mr_signals": 4826,
+          "nn_filtered": 742,
+          "nn_rejected": 1671,
+          "win_rate": 47.6,
+          "pnl_pct": -72.1
+        },
+        {
+          "coin": "ATOM",
+          "mr_signals": 4826,
+          "nn_filtered": 442,
+          "nn_rejected": 1971,
+          "win_rate": 50.7,
+          "pnl_pct": -60.0
+        },
+        {
+          "coin": "DOGE",
+          "mr_signals": 4765,
+          "nn_filtered": 452,
+          "nn_rejected": 1931,
+          "win_rate": 50.7,
+          "pnl_pct": -63.4
+        }
+      ]
+    }
+  ],
+  "baseline": {
+    "avg_wr": 52.420776869031656,
+    "total_signals": 75822
+  },
+  "best_threshold": 0.6
+}
