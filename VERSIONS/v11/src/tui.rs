@@ -22,17 +22,27 @@ pub fn render(frame: &mut Frame, state: &SharedState) {
         .split(area);
 
     // === HEADER ===
+    let total_pnl = state.total_balance() - (COINS.len() as f64 * INITIAL_CAPITAL);
     let scalp_info = format!("ScalpSL:{:.1}% TP:{:.1}%",
         config::SCALP_SL * 100.0, config::SCALP_TP * 100.0);
     let now = chrono::Local::now().format("%H:%M:%S");
-    let header = format!(
-        " COINCLAW v{} | Risk:{:.0}% | {:.0}x | SL:{:.1}% | {} | {}",
-        env!("CARGO_PKG_VERSION"),
-        config::RISK * 100.0, config::LEVERAGE, config::STOP_LOSS * 100.0,
-        scalp_info, now
-    );
-    let header_widget = Paragraph::new(header)
-        .style(Style::default().fg(Color::Cyan).add_modifier(Modifier::BOLD));
+    let header = Line::from(vec![
+        Span::styled(
+            format!(" COINCLAW v{} | ", env!("CARGO_PKG_VERSION")),
+            Style::default().fg(Color::Cyan).add_modifier(Modifier::BOLD),
+        ),
+        Span::styled(
+            format!("{:+.2}$", total_pnl),
+            Style::default().fg(Color::Yellow).add_modifier(Modifier::BOLD),
+        ),
+        Span::styled(
+            format!(" | Risk:{:.0}% | {:.0}x | SL:{:.1}% | {} | {}",
+                config::RISK * 100.0, config::LEVERAGE, config::STOP_LOSS * 100.0,
+                scalp_info, now),
+            Style::default().fg(Color::Cyan).add_modifier(Modifier::BOLD),
+        ),
+    ]);
+    let header_widget = Paragraph::new(header);
     frame.render_widget(header_widget, chunks[0]);
 
     // === BREADTH ===
