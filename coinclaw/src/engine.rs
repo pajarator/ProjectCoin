@@ -471,7 +471,7 @@ fn close_position(
         if trade_type == TradeType::Regime && cs.consecutive_sl >= 2 {
             cs.cooldown = config::ISO_SL_ESCALATE_COOLDOWN;
         } else {
-            cs.cooldown = 2;
+            cs.cooldown = 15; // ~15 minutes = 1 candle worth of cooling off after SL
         }
     } else {
         cs.consecutive_sl = 0;

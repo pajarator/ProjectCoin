@@ -50,7 +50,7 @@ pub const ISO_Z_SPREAD: f64 = 1.5;
 pub const ISO_RSI_THRESHOLD: f64 = 75.0;
 pub const ISO_VOL_SPIKE_MULT: f64 = 2.0;
 pub const ISO_SQUEEZE_FACTOR: f64 = 0.8;
-pub const ISO_SL_ESCALATE_COOLDOWN: u32 = 4; // Fix #4: cooldown after consecutive ISO SL (instead of 2)
+pub const ISO_SL_ESCALATE_COOLDOWN: u32 = 60; // Fix #4: cooldown after consecutive ISO SL (~1 hour = 4 candles)
 
 // Fetch intervals
 // OU Mean Reversion params (RUN11c: DASH only)
