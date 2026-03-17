@@ -41,23 +41,23 @@ use std::sync::atomic::{AtomicBool, Ordering};
 use crate::indicators::{atr, ema, rsi, rolling_mean, sma};
 use crate::loader::{load_ohlcv, COIN_STRATEGIES};
 
-const FEE:  f64 = 0.001;
-const SLIP: f64 = 0.0005;
+pub const FEE:  f64 = 0.001;
+pub const SLIP: f64 = 0.0005;
 
 // Grid
-const MOVE_THRESHOLDS: [f64; 4]  = [0.010, 0.015, 0.020, 0.025];
-const VOL_MULTS:       [f64; 3]  = [1.5, 2.0, 2.5];
-const ADX_THRESHOLDS:  [f64; 3]  = [20.0, 25.0, 30.0];
-const ATR_MULTS:       [f64; 3]  = [0.75, 1.0, 1.5];
+pub const MOVE_THRESHOLDS: [f64; 4]  = [0.010, 0.015, 0.020, 0.025];
+pub const VOL_MULTS:       [f64; 3]  = [1.5, 2.0, 2.5];
+pub const ADX_THRESHOLDS:  [f64; 3]  = [20.0, 25.0, 30.0];
+pub const ATR_MULTS:       [f64; 3]  = [0.75, 1.0, 1.5];
 // (trail_atr_mult, activation_pct): 0.0 trail = no trailing
-const TRAIL_CONFIGS: [(f64, f64); 3] = [
+pub const TRAIL_CONFIGS: [(f64, f64); 3] = [
     (0.0,  0.000),   // no trailing
     (0.75, 0.005),   // trail at peak − 0.75×ATR after +0.5% profit
     (1.0,  0.008),   // trail at peak − 1.0×ATR after +0.8% profit
 ];
 
 // ── ADX(14) via Wilder's RMA ─────────────────────────────────────────────────
-fn adx14(high: &[f64], low: &[f64], close: &[f64]) -> Vec<f64> {
+pub fn adx14(high: &[f64], low: &[f64], close: &[f64]) -> Vec<f64> {
     let n = high.len();
     let alpha = 1.0 / 14.0;
     let mut adx = vec![f64::NAN; n];
@@ -93,7 +93,7 @@ fn adx14(high: &[f64], low: &[f64], close: &[f64]) -> Vec<f64> {
 // ── Signal generators ────────────────────────────────────────────────────────
 
 /// 16-bar compounded return at bar i: close[i]/close[i-16] − 1
-fn bar16_return(close: &[f64]) -> Vec<f64> {
+pub fn bar16_return(close: &[f64]) -> Vec<f64> {
     let n = close.len();
     let mut out = vec![f64::NAN; n];
     for i in 16..n {
@@ -102,16 +102,16 @@ fn bar16_return(close: &[f64]) -> Vec<f64> {
     out
 }
 
-struct Params {
-    move_thresh: f64,
-    vol_mult:    f64,
-    adx_thresh:  f64,
-    atr_mult:    f64,
-    trail_atr:   f64,
-    trail_act:   f64,
+pub struct Params {
+    pub move_thresh: f64,
+    pub vol_mult:    f64,
+    pub adx_thresh:  f64,
+    pub atr_mult:    f64,
+    pub trail_atr:   f64,
+    pub trail_act:   f64,
 }
 
-fn signals_long(
+pub fn signals_long(
     close: &[f64], high: &[f64], low: &[f64], vol: &[f64],
     ret16: &[f64], vol_ma: &[f64], adx: &[f64], rsi14: &[f64],
     sma20: &[f64], sma50: &[f64],
@@ -138,7 +138,7 @@ fn signals_long(
     (entry, exit)
 }
 
-fn signals_short(
+pub fn signals_short(
     close: &[f64], high: &[f64], low: &[f64], vol: &[f64],
     ret16: &[f64], vol_ma: &[f64], adx: &[f64], rsi14: &[f64],
     sma20: &[f64], sma50: &[f64],
@@ -165,7 +165,7 @@ fn signals_short(
 
 // ── Trade simulation with ATR stop + optional trailing ────────────────────────
 /// Returns (n_trades, wr%, pf, total_pnl%, avg_win%, avg_loss%, sharpe_proxy)
-fn sim(
+pub fn sim(
     close: &[f64],
     atr_vals: &[f64],
     entry: &[bool],
