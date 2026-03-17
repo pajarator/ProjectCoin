@@ -28,7 +28,7 @@ pub fn render(frame: &mut Frame, state: &SharedState) {
     let now = chrono::Local::now().format("%H:%M:%S");
     let header = Line::from(vec![
         Span::styled(
-            format!(" COINCLAW v13 | "),
+            format!(" COINCLAW v{} | ", env!("CARGO_PKG_VERSION")),
             Style::default().fg(Color::Cyan).add_modifier(Modifier::BOLD),
         ),
         Span::styled(
