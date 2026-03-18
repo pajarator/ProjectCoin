@@ -32,6 +32,8 @@ pub struct TradeRecord {
     pub pnl: f64,
     pub reason: String,
     pub dir: String,
+    #[serde(default, skip_serializing_if = "Option::is_none")]
+    pub trade_type: Option<TradeType>,
 }
 
 #[derive(Debug, Clone, Default, Serialize, Deserialize)]
@@ -217,6 +219,21 @@ impl SharedState {
 
     pub fn total_wins(&self) -> usize {
         self.coins.iter().map(|c| c.win_count()).sum()
+    }
+
+    pub fn pnl_by_type(&self) -> (f64, f64) {
+        let (mut regime, mut scalp) = (0.0, 0.0);
+        for cs in &self.coins {
+            for t in &cs.trades {
+                let is_regime = match t.trade_type {
+                    Some(TradeType::Regime) => true,
+                    Some(_) => false,
+                    None => t.pnl.abs() >= 0.10 || t.reason == "SMA",
+                };
+                if is_regime { regime += t.pnl; } else { scalp += t.pnl; }
+            }
+        }
+        (regime, scalp)
     }
 }
 

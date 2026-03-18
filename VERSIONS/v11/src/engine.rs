@@ -265,6 +265,7 @@ fn close_position(
         pnl,
         reason: reason.to_string(),
         dir: pos.dir.clone(),
+        trade_type: Some(trade_type),
     });
     cs.cooldown = 2;
     cs.candles_held = 0;

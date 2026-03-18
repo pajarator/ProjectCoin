@@ -192,20 +192,17 @@ pub fn render(frame: &mut Frame, state: &SharedState) {
         format!("{}/{} ({:.0}%)", wins, trades, 100.0 * wins as f64 / trades as f64)
     } else { "-".to_string() };
 
-    let pnl_color = if total_pnl >= 0.0 { Color::Green } else { Color::Red };
+    let (regime_pnl, scalp_pnl) = state.pnl_by_type();
+    let r_color = if regime_pnl >= 0.0 { Color::Green } else { Color::Red };
+    let s_color = if scalp_pnl >= 0.0 { Color::Green } else { Color::Red };
+    let t_color = if total_pnl >= 0.0 { Color::Green } else { Color::Red };
     let summary = Line::from(vec![
-        Span::styled(
-            format!(" TOTAL: ${:.0} (", total),
-            Style::default().fg(Color::Cyan).add_modifier(Modifier::BOLD),
-        ),
-        Span::styled(
-            format!("{:+.0}", total_pnl),
-            Style::default().fg(pnl_color).add_modifier(Modifier::BOLD),
-        ),
-        Span::styled(
-            format!(") | {} trades | W: {} | 'q' quit", trades, wr_str),
-            Style::default(),
-        ),
+        Span::styled(" | ", Style::default().fg(Color::Cyan)),
+        Span::styled(format!("{:+.2} ", regime_pnl), Style::default().fg(r_color).add_modifier(Modifier::BOLD)),
+        Span::styled(format!("{:+.2} ", scalp_pnl), Style::default().fg(s_color).add_modifier(Modifier::BOLD)),
+        Span::styled("= ", Style::default()),
+        Span::styled(format!("{:+.2}", total_pnl), Style::default().fg(t_color).add_modifier(Modifier::BOLD)),
+        Span::styled(format!(" | {} trades | W: {} | 'q' quit", trades, wr_str), Style::default()),
     ]);
     frame.render_widget(Paragraph::new(summary), chunks[5]);
 

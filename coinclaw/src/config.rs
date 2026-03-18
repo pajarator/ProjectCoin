@@ -1,10 +1,11 @@
 use crate::strategies::{ComplementStrat, IsoShortStrat, LongStrat, ShortStrat};
 
-// ── COINCLAW v14: Momentum Breakout Layer ────────────────────────────────────
-// Independent signal layer (RUN27/28): fires on hard directional moves with
-// volume confirmation + ADX rising. Uses own ATR stop + trailing exit.
-// Enabled only for coins with confirmed persistence: NEAR, XLM, DASH.
-// Disabled for anti-momentum coins: ATOM, SHIB, LTC, ADA, DOT, BNB.
+// ── COINCLAW v16: Scalp TP=0.8% + MAX_HOLD=480 bars ─────────────────────────
+// Live paper trading showed TP=2.5% is unreachable (0 TP exits in 30+ trades).
+// Reverted SCALP_TP to 0.8% (v11 value) — the only TP setting that produces
+// both frequent wins AND meaningful per-trade profit.
+// MAX_HOLD=480 bars retained as safety net.
+// Regime trades unchanged. Momentum breakout layer (RUN27/28) retained.
 #[derive(Debug, Clone)]
 pub struct MomentumBreakout {
     pub move_thresh: f64,    // 16-bar compounded return threshold (e.g. 0.025 = 2.5%)
@@ -27,14 +28,14 @@ pub const SHORT_BREADTH_MIN: f64 = 0.50;
 pub const ISO_SHORT_BREADTH_MAX: f64 = 0.20;
 pub const LOG_LINES: usize = 50;
 
-// Scalp overlay params (RUN10 optimal)
+// Scalp overlay params (v16: TP=0.8% — live paper trading proved 2.5% unreachable)
 pub const SCALP_SL: f64 = 0.001;
-pub const SCALP_TP: f64 = 0.008;
+pub const SCALP_TP: f64 = 0.008;      // 0.8% TP (was 2.5%, 0 TP exits in 30+ trades)
+pub const SCALP_MAX_HOLD: u32 = 480;  // RUN31: ~8h in 1m bars before force-close
 pub const SCALP_VOL_MULT: f64 = 3.5;
 pub const SCALP_RSI_EXTREME: f64 = 20.0;
 pub const SCALP_STOCH_EXTREME: f64 = 5.0;
-pub const SCALP_COOLDOWN_SECS: u64 = 300;  // Fix #1: 5 min cooldown after scalp SL
-pub const MAX_SCALP_OPENS_PER_CYCLE: usize = 3; // Fix #5: max simultaneous scalp opens per 1m cycle
+pub const SCALP_BB_SQUEEZE: f64 = 0.4; // v9 bb_squeeze_break threshold
 
 // F6 filter thresholds (RUN10.1 discovery, validated OOS in RUN10.2)
 pub const F6_DIR_ROC_3: f64 = -0.195;

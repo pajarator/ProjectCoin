@@ -33,13 +33,19 @@ pub struct Position {
     pub trail_distance: Option<f64>,   // trail_atr * ATR_at_entry (price units, fixed)
     #[serde(default, skip_serializing_if = "Option::is_none")]
     pub trail_act_price: Option<f64>,  // activation threshold (entry * (1 + trail_act))
+    // RUN31: scalp MAX_HOLD counter
+    #[serde(default, skip_serializing_if = "Option::is_none")]
+    pub scalp_bars_held: Option<u32>,  // counts 1m bars since scalp entry; None for non-scalp
 }
+
 
 #[derive(Debug, Clone, Serialize, Deserialize)]
 pub struct TradeRecord {
     pub pnl: f64,
     pub reason: String,
     pub dir: String,
+    #[serde(default, skip_serializing_if = "Option::is_none")]
+    pub trade_type: Option<TradeType>,
 }
 
 #[derive(Debug, Clone, Default, Serialize, Deserialize)]
@@ -225,6 +231,24 @@ impl SharedState {
 
     pub fn total_wins(&self) -> usize {
         self.coins.iter().map(|c| c.win_count()).sum()
+    }
+
+    /// Realized P&L split by trade type.
+    /// Trades with trade_type tag use it directly; untagged legacy trades
+    /// use |pnl| >= 0.10 as regime heuristic.
+    pub fn pnl_by_type(&self) -> (f64, f64) {
+        let (mut regime, mut scalp) = (0.0, 0.0);
+        for cs in &self.coins {
+            for t in &cs.trades {
+                let is_regime = match t.trade_type {
+                    Some(TradeType::Regime) => true,
+                    Some(_) => false,
+                    None => t.pnl.abs() >= 0.10 || t.reason == "SMA",
+                };
+                if is_regime { regime += t.pnl; } else { scalp += t.pnl; }
+            }
+        }
+        (regime, scalp)
     }
 }
 

@@ -323,17 +323,17 @@ pub fn complement_entry(ind: &Ind15m, strat: ComplementStrat, z_filter: f64) -> 
     }
 }
 
-/// Check scalp entry with actual price available (COINCLAW v10)
-/// Strategies: vol_spike_rev + stoch_cross (bb_squeeze removed — RUN10.3 confirmed zero contribution)
-/// F6 filter gate applied to all candidates before entry
-pub fn scalp_entry_with_price(ind: &Ind1m, _price: f64) -> Option<(Direction, &'static str)> {
+/// v15: Full scalp entry with 3 strategies (v9 behavior restored)
+/// Strategies: vol_spike_rev + stoch_cross + bb_squeeze_break
+/// F6 filter gate on reversal strategies; bb_squeeze_break is a breakout (no F6)
+pub fn scalp_entry_with_price(ind: &Ind1m, price: f64) -> Option<(Direction, &'static str)> {
     if !ind.valid || ind.vol_ma == 0.0 { return None; }
 
     let vol_r = ind.vol / ind.vol_ma;
     let rsi_low = config::SCALP_RSI_EXTREME;
     let rsi_high = 100.0 - config::SCALP_RSI_EXTREME;
 
-    // 1. scalp_vol_spike_rev (re-enabled in v10 — profitable with wide TP + F6 filter)
+    // 1. scalp_vol_spike_rev (F6 filtered — counter-momentum reversal)
     if vol_r > config::SCALP_VOL_MULT {
         if ind.rsi < rsi_low && passes_f6(ind, Direction::Long) {
             return Some((Direction::Long, "scalp_vol_spike_rev"));
@@ -343,7 +343,7 @@ pub fn scalp_entry_with_price(ind: &Ind1m, _price: f64) -> Option<(Direction, &'
         }
     }
 
-    // 2. scalp_stoch_cross
+    // 2. scalp_stoch_cross (F6 filtered)
     if !ind.stoch_k.is_nan() && !ind.stoch_d.is_nan()
         && !ind.stoch_k_prev.is_nan() && !ind.stoch_d_prev.is_nan()
     {
@@ -360,6 +360,19 @@ pub fn scalp_entry_with_price(ind: &Ind1m, _price: f64) -> Option<(Direction, &'
             && passes_f6(ind, Direction::Short)
         {
             return Some((Direction::Short, "scalp_stoch_cross"));
+        }
+    }
+
+    // 3. scalp_bb_squeeze_break (v9 breakout signal — no F6, direction aligns with breakout)
+    if !ind.bb_width_avg.is_nan() && ind.bb_width_avg > 0.0 && !ind.bb_upper.is_nan() {
+        let squeeze = ind.bb_width < ind.bb_width_avg * config::SCALP_BB_SQUEEZE;
+        if squeeze && vol_r > 2.0 {
+            if price > ind.bb_upper {
+                return Some((Direction::Long, "scalp_bb_squeeze_break"));
+            }
+            if price < ind.bb_lower {
+                return Some((Direction::Short, "scalp_bb_squeeze_break"));
+            }
         }
     }
 

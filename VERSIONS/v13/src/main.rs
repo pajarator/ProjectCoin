@@ -51,6 +51,7 @@ async fn main() {
                     pnl: 0.0,
                     reason: "CLOSE_ALL".to_string(),
                     dir: pos.dir.clone(),
+                    trade_type: Some(tt),
                 });
                 let name = state.coins[ci].name;
                 state.log(format!("CLOSE_ALL {}{} @ entry {} | flat exit", name, tt_label, state::fmt_price(pos.e)));

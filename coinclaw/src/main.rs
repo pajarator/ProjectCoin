@@ -11,6 +11,15 @@ mod tui;
 #[cfg(feature = "backtest")]
 mod backtest;
 
+#[cfg(feature = "run30")]
+mod run30;
+
+#[cfg(feature = "run32")]
+mod run32;
+
+#[cfg(feature = "run33")]
+mod run33;
+
 use config::COINS;
 use futures::future::join_all;
 use state::SharedState;
@@ -25,6 +34,54 @@ async fn main() {
     {
         if std::env::args().any(|a| a == "--backtest") {
             backtest::run_backtest().await;
+            return;
+        }
+    }
+
+    // RUN33: uptrend short block filter
+    #[cfg(feature = "run33")]
+    {
+        if std::env::args().any(|a| a == "--run33") {
+            use std::sync::atomic::AtomicBool;
+            let shutdown = Arc::new(AtomicBool::new(false));
+            let sh2 = Arc::clone(&shutdown);
+            ctrlc::set_handler(move || {
+                eprintln!("\nInterrupted — saving partial results...");
+                sh2.store(true, std::sync::atomic::Ordering::SeqCst);
+            }).ok();
+            run33::run(shutdown);
+            return;
+        }
+    }
+
+    // RUN32: regime-only day-by-day backtest
+    #[cfg(feature = "run32")]
+    {
+        if std::env::args().any(|a| a == "--run32") {
+            use std::sync::atomic::AtomicBool;
+            let shutdown = Arc::new(AtomicBool::new(false));
+            let sh2 = Arc::clone(&shutdown);
+            ctrlc::set_handler(move || {
+                eprintln!("\nInterrupted — saving partial results...");
+                sh2.store(true, std::sync::atomic::Ordering::SeqCst);
+            }).ok();
+            run32::run(shutdown);
+            return;
+        }
+    }
+
+    // RUN30: day-by-day version comparison
+    #[cfg(feature = "run30")]
+    {
+        if std::env::args().any(|a| a == "--run30") {
+            use std::sync::atomic::AtomicBool;
+            let shutdown = Arc::new(AtomicBool::new(false));
+            let sh2 = Arc::clone(&shutdown);
+            ctrlc::set_handler(move || {
+                eprintln!("\nInterrupted — saving partial results...");
+                sh2.store(true, std::sync::atomic::Ordering::SeqCst);
+            }).ok();
+            run30::run(shutdown);
             return;
         }
     }
@@ -52,6 +109,7 @@ async fn main() {
                     pnl: 0.0,
                     reason: "CLOSE_ALL".to_string(),
                     dir: pos.dir.clone(),
+                    trade_type: Some(tt),
                 });
                 let name = state.coins[ci].name;
                 state.log(format!("CLOSE_ALL {}{} @ entry {} | flat exit", name, tt_label, state::fmt_price(pos.e)));
@@ -258,15 +316,10 @@ async fn run_trading_loop(shared: Arc<RwLock<SharedState>>, client: reqwest::Cli
                     }
                 }
             }
-            // Fix #5: cap scalp opens per cycle to prevent burst trading
-            let mut scalp_opens_this_cycle = 0usize;
+            // v16: market order scalp entry (zero-fee exchange deployment)
             for ci in 0..n {
-                if scalp_opens_this_cycle >= config::MAX_SCALP_OPENS_PER_CYCLE { break; }
                 if state.coins[ci].pos.is_none() {
                     engine::check_scalp_entry(&mut state, ci);
-                    if state.coins[ci].pos.is_some() {
-                        scalp_opens_this_cycle += 1;
-                    }
                 }
             }
 

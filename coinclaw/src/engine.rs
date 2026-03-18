@@ -65,6 +65,7 @@ fn open_momentum_position(
         atr_stop: Some(atr_stop),
         trail_distance: Some(trail_distance),
         trail_act_price: Some(trail_act_price),
+        scalp_bars_held: None,
     });
     cs.candles_held = 0;
     cs.active_strat = Some("momentum".to_string());
@@ -196,6 +197,18 @@ pub fn check_exit(state: &mut SharedState, ci: usize) -> bool {
         }
         if pnl <= -config::SCALP_SL {
             close_position(state, ci, check_price, "SL", TradeType::Scalp);
+            return true;
+        }
+
+        // RUN31: Increment MAX_HOLD counter (scoped borrow ends before close_position)
+        let max_hold_reached = {
+            let p = state.coins[ci].pos.as_mut().unwrap();
+            let held = p.scalp_bars_held.get_or_insert(0);
+            *held += 1;
+            *held >= config::SCALP_MAX_HOLD
+        };
+        if max_hold_reached {
+            close_position(state, ci, check_price, "MAX_HOLD", TradeType::Scalp);
             return true;
         }
         return false;
@@ -334,17 +347,10 @@ pub fn check_entry(
 }
 
 /// Check scalp entry for coin at index `ci` (uses 1m indicators).
-/// Scalp direction must agree with market mode to avoid shorting into pumps / longing into dumps.
+/// v16: market entry, TP=2.5%, MAX_HOLD=480 bars. Designed for zero-fee exchange.
+/// Signal edge confirmed +$149/year at 0% RT fee (RUN31 opt1). Any non-zero RT fee kills edge.
 pub fn check_scalp_entry(state: &mut SharedState, ci: usize) {
-    // Fix #2: block scalps in Squeeze regime
-    if state.coins[ci].regime == Regime::Squeeze { return; }
     if state.coins[ci].pos.is_some() { return; }
-
-    // Fix #1: respect time-based scalp cooldown
-    if let Some(until) = state.coins[ci].scalp_cooldown_until {
-        if std::time::Instant::now() < until { return; }
-        state.coins[ci].scalp_cooldown_until = None;
-    }
 
     let ind_1m = match &state.coins[ci].ind_1m {
         Some(i) => i.clone(),
@@ -354,15 +360,7 @@ pub fn check_scalp_entry(state: &mut SharedState, ci: usize) {
     let price = state.coins[ci].candles_1m.last().map(|c| c.c).unwrap_or(0.0);
     if price == 0.0 { return; }
 
-    // Fix #3: only use scalp_stoch_cross (vol_spike_rev removed — 5.9% WR is noise)
-    if let Some((dir, strat_name)) = strategies::scalp_entry_stoch_only(&ind_1m) {
-        // Enforce: scalp direction must match market mode
-        let mode = state.market_mode;
-        match (mode, dir) {
-            (coordinator::MarketMode::Long, Direction::Short) => return,
-            (coordinator::MarketMode::Short, Direction::Long) => return,
-            _ => {} // IsoShort allows both; matching directions always allowed
-        }
+    if let Some((dir, strat_name)) = strategies::scalp_entry_with_price(&ind_1m, price) {
         let regime = state.coins[ci].regime;
         open_position(state, ci, price, &regime.to_string(), strat_name, dir, TradeType::Scalp);
     }
@@ -400,6 +398,7 @@ fn open_position(
         atr_stop: None,
         trail_distance: None,
         trail_act_price: None,
+        scalp_bars_held: if trade_type == TradeType::Scalp { Some(0) } else { None },
     });
     cs.candles_held = 0;
     cs.active_strat = Some(strat.to_string());
@@ -455,23 +454,17 @@ fn close_position(
         pnl,
         reason: reason.to_string(),
         dir: pos.dir.clone(),
+        trade_type: Some(trade_type),
     });
     cs.candles_held = 0;
 
-    // Fix #1: time-based scalp cooldown after SL
-    if trade_type == TradeType::Scalp && reason == "SL" {
-        cs.scalp_cooldown_until = Some(
-            std::time::Instant::now() + std::time::Duration::from_secs(config::SCALP_COOLDOWN_SECS)
-        );
-    }
-
-    // Fix #4: escalating cooldown for consecutive SL on regime trades
+    // v15: scalps get minimal cooldown (v9 behavior). Regime keeps escalating cooldown.
     if reason == "SL" {
         cs.consecutive_sl += 1;
         if trade_type == TradeType::Regime && cs.consecutive_sl >= 2 {
             cs.cooldown = config::ISO_SL_ESCALATE_COOLDOWN;
         } else {
-            cs.cooldown = 15; // ~15 minutes = 1 candle worth of cooling off after SL
+            cs.cooldown = 2;
         }
     } else {
         cs.consecutive_sl = 0;
