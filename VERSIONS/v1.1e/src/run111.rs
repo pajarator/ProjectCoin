@@ -1,0 +1,326 @@
+/// RUN111 — MACD Histogram Slope Exit: Exit When MACD Histogram Confirms Mean Reversion Complete
+///
+/// Grid: TRAIL [0.30, 0.50, 0.70] × FLIP [true, false]
+/// 6 configs × 18 coins = 108 simulations (parallel per coin)
+///
+/// Run: cargo run --release --features run111 -- --run111
+
+use rayon::prelude::*;
+use serde::Serialize;
+use std::sync::atomic::{AtomicBool, AtomicUsize, Ordering};
+use std::sync::Arc;
+
+const INITIAL_BAL: f64 = 100.0;
+const SL_PCT: f64 = 0.003;
+const MIN_HOLD_BARS: usize = 2;
+const COOLDOWN: usize = 2;
+const POSITION_SIZE: f64 = 0.02;
+const LEVERAGE: f64 = 5.0;
+
+const N_COINS: usize = 18;
+const COIN_NAMES: [&str; N_COINS] = [
+    "DASH","UNI","NEAR","ADA","LTC","SHIB","LINK","ETH",
+    "DOT","XRP","ATOM","SOL","DOGE","XLM","AVAX","ALGO","BNB","BTC",
+];
+
+#[derive(Clone, Copy, PartialEq, Debug)]
+struct MacdHistCfg {
+    trail: f64,      // 0.0 = disabled, else exit when hist fades to this fraction of entry hist
+    flip: bool,      // exit on histogram zero-cross
+    is_baseline: bool,
+}
+
+impl MacdHistCfg {
+    fn label(&self) -> String {
+        if self.is_baseline { "BASELINE".to_string() }
+        else {
+            let flip_str = if self.flip { "FLIP" } else { "NOFLIP" };
+            format!("TR{:.2}_{}", self.trail, flip_str)
+        }
+    }
+}
+
+fn build_grid() -> Vec<MacdHistCfg> {
+    let mut grid = vec![MacdHistCfg { trail: 0.0, flip: false, is_baseline: true }];
+    for &tr in &[0.30, 0.50, 0.70] {
+        for &fl in &[true, false] {
+            grid.push(MacdHistCfg { trail: tr, flip: fl, is_baseline: false });
+        }
+    }
+    grid
+}
+
+struct CoinData {
+    name: String,
+    opens: Vec<f64>,
+    closes: Vec<f64>,
+    highs: Vec<f64>,
+    lows: Vec<f64>,
+    zscore: Vec<f64>,
+    macd_hist: Vec<f64>,
+}
+
+#[derive(Serialize)]
+struct CoinResult {
+    coin: String,
+    pnl: f64,
+    trades: usize,
+    wins: usize,
+    losses: usize,
+    flats: usize,
+    wr: f64,
+    pf: f64,
+    hist_exits: usize,
+    hist_exit_wins: usize,
+    hist_exit_losses: usize,
+}
+#[derive(Serialize)]
+struct ConfigResult {
+    label: String,
+    total_pnl: f64,
+    portfolio_wr: f64,
+    total_trades: usize,
+    wins: usize,
+    losses: usize,
+    pf: f64,
+    is_baseline: bool,
+    coins: Vec<CoinResult>,
+    hist_exits_total: usize,
+    hist_exit_wins_total: usize,
+    hist_exit_losses_total: usize,
+}
+#[derive(Serialize)]
+struct Output { notes: String, configs: Vec<ConfigResult> }
+
+fn ema(data: &[f64], period: usize) -> Vec<f64> {
+    let n = data.len();
+    let mut out = vec![f64::NAN; n];
+    if period == 0 || n < period { return out; }
+    let alpha = 2.0 / (period as f64 + 1.0);
+    let mut ema_val = data[0];
+    for i in 0..n {
+        if i < period - 1 {
+            out[i] = f64::NAN;
+        } else if i == period - 1 {
+            ema_val = data[0..period].iter().sum::<f64>() / period as f64;
+            out[i] = ema_val;
+        } else {
+            ema_val = alpha * data[i] + (1.0 - alpha) * ema_val;
+            out[i] = ema_val;
+        }
+    }
+    out
+}
+
+fn load_15m(coin: &str) -> Option<CoinData> {
+    let path = format!("/home/scamarena/ProjectCoin/data_cache/{}_USDT_15m_5months.csv", coin);
+    let data = std::fs::read_to_string(&path).ok()?;
+    let mut opens = Vec::new(); let mut closes = Vec::new();
+    let mut highs = Vec::new(); let mut lows = Vec::new();
+    for line in data.lines().skip(1) {
+        let mut it = line.splitn(7, ','); let _ts = it.next()?;
+        let oo: f64 = it.next()?.parse().ok()?;
+        let hh: f64 = it.next()?.parse().ok()?;
+        let ll: f64 = it.next()?.parse().ok()?;
+        let cc: f64 = it.next()?.parse().ok()?;
+        let _vv: f64 = it.next()?.parse().ok()?;
+        if oo.is_nan() || cc.is_nan() { continue; }
+        opens.push(oo); highs.push(hh); lows.push(ll); closes.push(cc);
+    }
+    if closes.len() < 50 { return None; }
+    let n = closes.len();
+
+    let mut zscore = vec![f64::NAN; n];
+    for i in 20..n {
+        let window = &closes[i+1-20..=i];
+        let mean = window.iter().sum::<f64>()/20.0;
+        let std = (window.iter().map(|x|(x-mean).powi(2)).sum::<f64>()/20.0).sqrt();
+        zscore[i] = if std > 0.0 { (closes[i] - mean) / std } else { 0.0 };
+    }
+
+    // MACD: EMA12 - EMA26, signal = EMA9 of MACD
+    let ema12 = ema(&closes, 12);
+    let ema26 = ema(&closes, 26);
+    let mut macd_line = vec![f64::NAN; n];
+    for i in 0..n {
+        if !ema12[i].is_nan() && !ema26[i].is_nan() {
+            macd_line[i] = ema12[i] - ema26[i];
+        }
+    }
+    let sig_line = ema(&macd_line, 9);
+    let mut macd_hist = vec![f64::NAN; n];
+    for i in 0..n {
+        if !macd_line[i].is_nan() && !sig_line[i].is_nan() {
+            macd_hist[i] = macd_line[i] - sig_line[i];
+        }
+    }
+
+    Some(CoinData { name: coin.to_string(), opens, closes, highs, lows, zscore, macd_hist })
+}
+
+fn regime_signal(z: f64) -> Option<i8> {
+    if z.is_nan() { return None; }
+    if z < -2.0 { return Some(1); }
+    if z > 2.0 { return Some(-1); }
+    None
+}
+
+fn simulate(d: &CoinData, cfg: &MacdHistCfg) -> CoinResult {
+    let n = d.closes.len();
+    let mut bal = INITIAL_BAL;
+    let mut pos: Option<(i8, f64, usize, f64)> = None; // (dir, entry, entry_bar, entry_hist)
+    let mut cooldown = 0usize;
+
+    let mut wins = 0usize; let mut losses = 0usize; let mut flats = 0usize;
+    let mut hist_exits = 0usize; let mut hist_exit_wins = 0usize; let mut hist_exit_losses = 0usize;
+
+    for i in 20..n {
+        cooldown = cooldown.saturating_sub(1);
+
+        if let Some((dir, entry, entry_bar, entry_hist)) = pos.as_mut() {
+            let pct = if *dir == 1 { (d.closes[i]-*entry)/ *entry } else { (*entry-d.closes[i])/ *entry };
+            let mut closed = false;
+            let mut exit_pct = 0.0;
+
+            // SL
+            if pct <= -SL_PCT { exit_pct = -SL_PCT; closed = true; }
+            // Regime flip
+            if !closed {
+                let new_dir = regime_signal(d.zscore[i]);
+                if new_dir.is_some() && new_dir != Some(*dir) { exit_pct = pct; closed = true; }
+            }
+            // End of data
+            if !closed && i >= n - 1 { exit_pct = pct; closed = true; }
+            // Z0 + MIN_HOLD
+            if !closed && i >= *entry_bar + MIN_HOLD_BARS {
+                if (*dir == 1 && d.zscore[i] >= 0.0) || (*dir == -1 && d.zscore[i] <= 0.0) {
+                    exit_pct = pct; closed = true;
+                }
+            }
+            // MACD histogram exit (only for non-baseline configs with trail > 0.0 or flip)
+            if !closed && !cfg.is_baseline {
+                let current_hist = d.macd_hist[i];
+                if !current_hist.is_nan() && (*entry_hist).abs() > 1e-10 {
+                    let flip_exit = if cfg.flip {
+                        (*entry_hist > 0.0 && current_hist < 0.0) || (*entry_hist < 0.0 && current_hist > 0.0)
+                    } else { false };
+
+                    let trail_exit = if cfg.trail > 0.0 {
+                        current_hist.abs() < (*entry_hist).abs() * cfg.trail
+                    } else { false };
+
+                    if flip_exit || trail_exit {
+                        exit_pct = pct;
+                        closed = true;
+                        hist_exits += 1;
+                        let net = bal * POSITION_SIZE * LEVERAGE * exit_pct;
+                        if net > 1e-10 { hist_exit_wins += 1; }
+                        else if net < -1e-10 { hist_exit_losses += 1; }
+                    }
+                }
+            }
+
+            if closed {
+                let net = bal * POSITION_SIZE * LEVERAGE * exit_pct;
+                bal += net;
+                if net > 1e-10 { wins += 1; }
+                else if net < -1e-10 { losses += 1; }
+                else { flats += 1; }
+                pos = None;
+                cooldown = COOLDOWN;
+            }
+        } else if cooldown == 0 {
+            if let Some(dir) = regime_signal(d.zscore[i]) {
+                if i + 1 < n {
+                    let entry_price = d.opens[i + 1];
+                    if entry_price > 0.0 {
+                        let entry_hist = d.macd_hist[i];
+                        pos = Some((dir, entry_price, i, if entry_hist.is_nan() { 0.0 } else { entry_hist }));
+                    }
+                }
+            }
+        }
+    }
+
+    let total_trades = wins + losses + flats;
+    let pnl = bal - INITIAL_BAL;
+    let wr = if total_trades > 0 { wins as f64 / total_trades as f64 * 100.0 } else { 0.0 };
+    let avg_win = POSITION_SIZE * LEVERAGE * SL_PCT * wins as f64;
+    let avg_loss = POSITION_SIZE * LEVERAGE * SL_PCT * losses as f64;
+    let pf = if losses > 0 { avg_win / avg_loss } else { 0.0 };
+
+    CoinResult { coin: d.name.clone(), pnl, trades: total_trades, wins, losses, flats, wr, pf, hist_exits, hist_exit_wins, hist_exit_losses }
+}
+
+pub fn run(shutdown: Arc<AtomicBool>) {
+    eprintln!("RUN111 — MACD Histogram Slope Exit Grid Search\n");
+    let mut raw_data: Vec<Option<CoinData>> = Vec::new();
+    for &name in &COIN_NAMES {
+        let loaded = load_15m(name);
+        if let Some(ref d) = loaded { eprintln!("  {} — {} bars", name, d.closes.len()); }
+        raw_data.push(loaded);
+    }
+    if !raw_data.iter().all(|r| r.is_some()) { eprintln!("Missing data!"); return; }
+    if shutdown.load(Ordering::SeqCst) { return; }
+    let data: Vec<CoinData> = raw_data.into_iter().map(|r| r.unwrap()).collect();
+
+    let grid = build_grid();
+    eprintln!("\nGrid: {} configs × {} coins = {} simulations", grid.len(), N_COINS, grid.len() * N_COINS);
+
+    let done = AtomicUsize::new(0);
+    let total_sims = grid.len() * N_COINS;
+
+    let all_results: Vec<ConfigResult> = grid.par_iter().map(|cfg| {
+        if shutdown.load(Ordering::SeqCst) {
+            return ConfigResult { label: cfg.label(), total_pnl: 0.0, portfolio_wr: 0.0, total_trades: 0, wins: 0, losses: 0, pf: 0.0, is_baseline: cfg.is_baseline, coins: vec![], hist_exits_total: 0, hist_exit_wins_total: 0, hist_exit_losses_total: 0 };
+        }
+        let coin_results: Vec<CoinResult> = data.iter().map(|d| simulate(d, cfg)).collect();
+
+        let total_pnl: f64 = coin_results.iter().map(|c| c.pnl).sum();
+        let total_trades: usize = coin_results.iter().map(|c| c.trades).sum();
+        let total_wins: usize = coin_results.iter().map(|c| c.wins).sum();
+        let total_losses: usize = coin_results.iter().map(|c| c.losses).sum();
+        let portfolio_wr = if total_trades > 0 { total_wins as f64 / total_trades as f64 * 100.0 } else { 0.0 };
+        let avg_win_f = POSITION_SIZE * LEVERAGE * SL_PCT * (total_wins as f64);
+        let avg_loss_f = POSITION_SIZE * LEVERAGE * SL_PCT * (total_losses as f64);
+        let pf = if total_losses > 0 { avg_win_f / avg_loss_f } else { 0.0 };
+        let hist_exits_total: usize = coin_results.iter().map(|c| c.hist_exits).sum();
+        let hist_exit_wins_total: usize = coin_results.iter().map(|c| c.hist_exit_wins).sum();
+        let hist_exit_losses_total: usize = coin_results.iter().map(|c| c.hist_exit_losses).sum();
+
+        let d = done.fetch_add(N_COINS, Ordering::SeqCst) + N_COINS;
+        eprintln!("  [{:>4}/{}] {}  PnL={:>+8.2}  WR={:>5.1}%  trades={}  hist_exits={}",
+            d, total_sims, cfg.label(), total_pnl, portfolio_wr, total_trades, hist_exits_total);
+
+        ConfigResult { label: cfg.label(), total_pnl, portfolio_wr, total_trades, wins: total_wins, losses: total_losses, pf, is_baseline: cfg.is_baseline, coins: coin_results, hist_exits_total, hist_exit_wins_total, hist_exit_losses_total }
+    }).collect();
+
+    if shutdown.load(Ordering::SeqCst) { return; }
+
+    let baseline = all_results.iter().find(|r| r.is_baseline).unwrap();
+    let mut sorted: Vec<&ConfigResult> = all_results.iter().collect();
+    sorted.sort_by(|a,b| b.total_pnl.partial_cmp(&a.total_pnl).unwrap_or(std::cmp::Ordering::Equal));
+
+    println!("\n=== RUN111 MACD Histogram Slope Exit Results ===");
+    println!("Baseline: PnL={:+.2}  WR={:.1}%  Trades={}", baseline.total_pnl, baseline.portfolio_wr, baseline.total_trades);
+    println!("\n{:>3}  {:<20} {:>8} {:>8} {:>6} {:>7} {:>10} {:>10}",
+        "#", "Config", "PnL", "ΔPnL", "WR%", "Trades", "HistExits", "HistExitWR%");
+    println!("{}", "-".repeat(80));
+    for (i, r) in sorted.iter().enumerate().take(10) {
+        let delta = r.total_pnl - baseline.total_pnl;
+        let hist_wr = if r.hist_exits_total > 0 { r.hist_exit_wins_total as f64 / (r.hist_exit_wins_total + r.hist_exit_losses_total) as f64 * 100.0 } else { 0.0 };
+        println!("{:>3}  {:<20} {:>+8.2} {:>+8.2} {:>5.1}%  {:>6} {:>10} {:>9.1}%",
+            i+1, r.label, r.total_pnl, delta, r.portfolio_wr, r.total_trades, r.hist_exits_total, hist_wr);
+    }
+    println!("{}", "=".repeat(80));
+
+    let best = sorted.first().unwrap();
+    let is_positive = best.total_pnl > baseline.total_pnl;
+    println!("\nVERDICT: {}", if is_positive { "POSITIVE" } else { "NEGATIVE" });
+
+    let notes = format!("RUN111 MACD histogram exit. {} configs. Baseline PnL={:.2}. Best: {} (PnL={:.2}, Δ={:+.2})",
+        all_results.len(), baseline.total_pnl, best.label, best.total_pnl, best.total_pnl - baseline.total_pnl);
+    let output = Output { notes, configs: all_results };
+    std::fs::write("/home/scamarena/ProjectCoin/run111_1_results.json", &serde_json::to_string_pretty(&output).unwrap()).ok();
+    eprintln!("\nSaved → run111_1_results.json");
+}
