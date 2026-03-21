@@ -81,6 +81,27 @@ pub fn check_exit(state: &mut SharedState, ci: usize) -> bool {
                 close_position(state, ci, price, "Z0", TradeType::Regime);
                 return true;
             }
+            // RUN82: regime decay exit — ADX has risen significantly above entry
+            if config::REGIME_DECAY_ENABLE && held >= config::REGIME_DECAY_GRACE_BARS {
+                if let Some(entry_adx) = pos.entry_adx {
+                    if ind.adx > entry_adx + config::REGIME_DECAY_ADX_RISE {
+                        close_position(state, ci, price, "DECAY", TradeType::Regime);
+                        return true;
+                    }
+                }
+            }
+            // RUN88: trailing z-score exit — z has recovered Z_RECOVERY_PCT toward 0
+            if config::TRAILING_Z_EXIT_ENABLE && held >= config::Z_RECOVERY_MIN_HOLD {
+                if let Some(entry_z) = pos.entry_z {
+                    if entry_z < 0.0 {
+                        let threshold = entry_z + entry_z.abs() * config::Z_RECOVERY_PCT;
+                        if ind.z >= threshold {
+                            close_position(state, ci, price, "ZREC", TradeType::Regime);
+                            return true;
+                        }
+                    }
+                }
+            }
         }
     } else {
         let pnl = (pos.e - price) / pos.e;
@@ -96,6 +117,27 @@ pub fn check_exit(state: &mut SharedState, ci: usize) -> bool {
             if ind.z < -0.5 {
                 close_position(state, ci, price, "Z0", TradeType::Regime);
                 return true;
+            }
+            // RUN82: regime decay exit — ADX has risen significantly above entry
+            if config::REGIME_DECAY_ENABLE && held >= config::REGIME_DECAY_GRACE_BARS {
+                if let Some(entry_adx) = pos.entry_adx {
+                    if ind.adx > entry_adx + config::REGIME_DECAY_ADX_RISE {
+                        close_position(state, ci, price, "DECAY", TradeType::Regime);
+                        return true;
+                    }
+                }
+            }
+            // RUN88: trailing z-score exit — z has recovered Z_RECOVERY_PCT toward 0
+            if config::TRAILING_Z_EXIT_ENABLE && held >= config::Z_RECOVERY_MIN_HOLD {
+                if let Some(entry_z) = pos.entry_z {
+                    if entry_z > 0.0 {
+                        let threshold = entry_z - entry_z.abs() * config::Z_RECOVERY_PCT;
+                        if ind.z <= threshold {
+                            close_position(state, ci, price, "ZREC", TradeType::Regime);
+                            return true;
+                        }
+                    }
+                }
             }
         }
     }
@@ -154,7 +196,7 @@ pub fn check_entry(
                     let strat = format!("{}[REENTRY]", active_strat.as_deref().unwrap_or("Unknown"));
                     open_position(state, ci, ind.p, &regime.to_string(),
                         &strat, Direction::Long, TradeType::Regime,
-                        Some(ind.z), Some(config::REENTRY_SIZE_PCT));
+                        Some(ind.z), Some(ind.adx), Some(config::REENTRY_SIZE_PCT));
                     state.coins[ci].reentry_count += 1;
                     state.coins[ci].last_entry_z = Some(ind.z);
                 }
@@ -183,14 +225,14 @@ pub fn check_entry(
             if strategies::long_entry(&ind, cfg.long_strat) {
                 open_position(state, ci, ind.p, &regime.to_string(),
                     &cfg.long_strat.to_string(), Direction::Long, TradeType::Regime,
-                    Some(ind.z), None);
+                    Some(ind.z), Some(ind.adx), None);
             } else {
                 // Try ISO short
                 if strategies::iso_short_entry(&ind, cfg.iso_short_strat, ctx) {
                     state.coins[ci].active_strat = Some(cfg.iso_short_strat.to_string());
                     open_position(state, ci, ind.p, &regime.to_string(),
                         &cfg.iso_short_strat.to_string(), Direction::Short, TradeType::Regime,
-                        Some(ind.z), None);
+                        Some(ind.z), Some(ind.adx), None);
                 }
             }
         }
@@ -199,7 +241,7 @@ pub fn check_entry(
             if strategies::iso_short_entry(&ind, cfg.iso_short_strat, ctx) {
                 open_position(state, ci, ind.p, &regime.to_string(),
                     &cfg.iso_short_strat.to_string(), Direction::Short, TradeType::Regime,
-                    Some(ind.z), None);
+                    Some(ind.z), Some(ind.adx), None);
             }
         }
         MarketMode::Short => {
@@ -207,7 +249,7 @@ pub fn check_entry(
             if strategies::short_entry(&ind, cfg.short_strat) {
                 open_position(state, ci, ind.p, &regime.to_string(),
                     &cfg.short_strat.to_string(), Direction::Short, TradeType::Regime,
-                    Some(ind.z), None);
+                    Some(ind.z), Some(ind.adx), None);
             }
         }
     }
@@ -228,7 +270,7 @@ pub fn check_scalp_entry(state: &mut SharedState, ci: usize) {
 
     if let Some((dir, strat_name)) = strategies::scalp_entry_with_price(&ind_1m, price) {
         let regime = cs.regime;
-        open_position(state, ci, price, &regime.to_string(), strat_name, dir, TradeType::Scalp, None, None);
+        open_position(state, ci, price, &regime.to_string(), strat_name, dir, TradeType::Scalp, None, None, None);
     }
 }
 
@@ -241,6 +283,7 @@ fn open_position(
     dir: Direction,
     trade_type: TradeType,
     entry_z: Option<f64>,
+    entry_adx: Option<f64>,
     size_mult: Option<f64>,
 ) {
     let cs = &mut state.coins[ci];
@@ -265,6 +308,7 @@ fn open_position(
         last_price: None,
         trade_type: Some(trade_type),
         entry_z,
+        entry_adx,
     });
     cs.candles_held = 0;
     cs.active_strat = Some(strat.to_string());

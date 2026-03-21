@@ -16,6 +16,16 @@ pub const REENTRY_Z_MULT: f64 = 1.1;      // z-score must be 1.1× more extreme 
 pub const REENTRY_SIZE_PCT: f64 = 0.7;   // re-entry at 70% of normal position size
 pub const MAX_REENTRY_COUNT: u32 = 1;    // max 1 re-entry per coin per cycle
 
+// RUN82: Regime decay exit
+pub const REGIME_DECAY_ENABLE: bool = true;
+pub const REGIME_DECAY_ADX_RISE: f64 = 25.0;
+pub const REGIME_DECAY_GRACE_BARS: u32 = 5;
+
+// RUN88: Trailing z-score exit
+pub const TRAILING_Z_EXIT_ENABLE: bool = true;
+pub const Z_RECOVERY_PCT: f64 = 0.75;
+pub const Z_RECOVERY_MIN_HOLD: u32 = 8;
+
 // Scalp overlay params (RUN9 optimal)
 pub const SCALP_SL: f64 = 0.001;
 pub const SCALP_TP: f64 = 0.002;

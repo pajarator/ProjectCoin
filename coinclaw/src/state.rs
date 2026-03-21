@@ -28,6 +28,9 @@ pub struct Position {
     // RUN94: partial reentry after cooldown — entry z-score for reentry threshold
     #[serde(skip_serializing_if = "Option::is_none")]
     pub entry_z: Option<f64>,
+    // RUN82: regime decay exit — entry ADX for decay threshold
+    #[serde(skip_serializing_if = "Option::is_none")]
+    pub entry_adx: Option<f64>,
 }
 
 #[derive(Debug, Clone, Serialize, Deserialize)]
