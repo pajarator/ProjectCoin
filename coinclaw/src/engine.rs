@@ -40,6 +40,24 @@ pub fn check_exit(state: &mut SharedState, ci: usize) -> bool {
             close_position(state, ci, check_price, "SL", TradeType::Scalp);
             return true;
         }
+
+        // RUN35: stoch_50 exit — close while profitable when stochastic exits overbought/oversold zone
+        // (Stoch K > 50 for longs, < 50 for shorts, both while pnl > 0)
+        if pnl > 0.0 {
+            if let Some(ref ind_1m) = state.coins[ci].ind_1m {
+                if !ind_1m.stoch_k.is_nan() {
+                    if pos.dir == "long" && ind_1m.stoch_k > 50.0 {
+                        close_position(state, ci, check_price, "STOCH", TradeType::Scalp);
+                        return true;
+                    }
+                    if pos.dir == "short" && ind_1m.stoch_k < 50.0 {
+                        close_position(state, ci, check_price, "STOCH", TradeType::Scalp);
+                        return true;
+                    }
+                }
+            }
+        }
+
         return false;
     }
 
@@ -367,6 +385,13 @@ fn close_position(
     });
     cs.cooldown = 2;
     cs.candles_held = 0;
+    // RUN75: record PnL percentage for regime trades for Sharpe computation
+    if trade_type == TradeType::Regime {
+        cs.trade_pnls_pct.push_back(pnl_pct);
+        if cs.trade_pnls_pct.len() > config::SHARPE_WINDOW * 2 {
+            cs.trade_pnls_pct.pop_front();
+        }
+    }
     // RUN94: save entry_z for partial reentry threshold, reset reentry count
     if trade_type == TradeType::Regime {
         cs.last_entry_z = pos.entry_z;

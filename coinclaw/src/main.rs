@@ -192,6 +192,9 @@ async fn run_trading_loop(shared: Arc<RwLock<SharedState>>, client: reqwest::Cli
             state.total_count = total;
             state.market_mode = mode;
 
+            // RUN75: Sharpe-weighted capital rebalance (every SHARPE_REBAL_FREQ fetch cycles)
+            state.rebalance_by_sharpe();
+
             // Phase 5: Check exits then entries
             let n = state.coins.len();
             for ci in 0..n {

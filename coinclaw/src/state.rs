@@ -1,4 +1,4 @@
-use crate::config::{self, COINS, INITIAL_CAPITAL};
+use crate::config::{self, COINS, INITIAL_CAPITAL, SHARPE_WINDOW};
 use crate::coordinator::{MarketMode, Regime};
 use crate::indicators::{Candle, Ind15m, Ind1m};
 use serde::{Deserialize, Serialize};
@@ -74,6 +74,9 @@ pub struct CoinState {
     pub ind_1m: Option<Ind1m>,
     pub candles_15m: Vec<Candle>,
     pub candles_1m: Vec<Candle>,
+    // RUN75: Sharpe-weighted capital allocation
+    pub trade_pnls_pct: VecDeque<f64>,  // trailing closed-trade PnL percentages
+    pub last_rebalance_bar: u32,         // last bar index when rebalance ran
 }
 
 impl CoinState {
@@ -97,6 +100,25 @@ impl CoinState {
         self.trades.iter().filter(|t| t.pnl > 0.0).count()
     }
 
+    /// Compute trailing Sharpe ratio from the last SHARPE_WINDOW closed-trade PnL percentages.
+    /// Returns 0.0 if fewer than 2 trades available.
+    pub fn trailing_sharpe(&self) -> f64 {
+        let n = self.trade_pnls_pct.len();
+        if n < 2 { return 0.0; }
+        let window = SHARPE_WINDOW;
+        let start = if n > window { n - window } else { 0 };
+        let trades_slice: Vec<f64> = self.trade_pnls_pct.iter().skip(start).cloned().collect();
+        if trades_slice.len() < 2 { return 0.0; }
+        let mean: f64 = trades_slice.iter().sum::<f64>() / trades_slice.len() as f64;
+        let variance: f64 = trades_slice.iter().map(|x| (x - mean).powi(2)).sum::<f64>() / trades_slice.len() as f64;
+        let std = variance.sqrt();
+        if std == 0.0 { return 0.0; }
+        // Annualize for 15m bars: 35040 bars/year
+        let annualized_mean = mean * 35040.0;
+        let annualized_std = std * (35040.0_f64.sqrt());
+        annualized_mean / annualized_std
+    }
+
     pub fn to_persist(&self) -> CoinPersist {
         CoinPersist {
             bal: self.bal,
@@ -118,6 +140,7 @@ pub struct SharedState {
     pub total_count: usize,
     pub market_mode: MarketMode,
     pub running: bool,
+    pub bars_since_rebal: u32,  // RUN75: bar counter since last Sharpe rebalance
 }
 
 impl SharedState {
@@ -141,6 +164,8 @@ impl SharedState {
                 ind_1m: None,
                 candles_15m: Vec::new(),
                 candles_1m: Vec::new(),
+                trade_pnls_pct: VecDeque::with_capacity(SHARPE_WINDOW * 2),
+                last_rebalance_bar: 0,
             });
         }
 
@@ -163,6 +188,7 @@ impl SharedState {
             total_count: 0,
             market_mode: MarketMode::Long,
             running: true,
+            bars_since_rebal: 0,
         };
         state.load_state();
         state
@@ -249,6 +275,43 @@ impl SharedState {
             }
         }
         (regime, scalp)
+    }
+
+    /// RUN75: Rebalance per-coin capital every SHARPE_REBAL_FREQ bars based on
+    /// trailing Sharpe ratio of closed regime trades.
+    /// Called from the 15m fetch loop in main.rs.
+    pub fn rebalance_by_sharpe(&mut self) {
+        use crate::config::{SHARPE_REBAL_FREQ, SHARPE_MIN_CAP, SHARPE_MAX_CAP, INITIAL_CAPITAL, RISK};
+
+        self.bars_since_rebal += 1;
+        if self.bars_since_rebal < SHARPE_REBAL_FREQ { return; }
+        self.bars_since_rebal = 0;
+
+        // Compute trailing Sharpe for each coin
+        let sharpes: Vec<f64> = self.coins.iter().map(|c| c.trailing_sharpe()).collect();
+
+        let sum_sharpe: f64 = sharpes.iter().sum();
+        if !sum_sharpe.is_finite() || sum_sharpe <= 0.0 { return; }
+
+        let total_portfolio: f64 = self.coins.iter().map(|c| c.bal).sum();
+        let base_cap = INITIAL_CAPITAL * RISK; // $10 per coin at 10% risk
+
+        // Target capital: weight by Sharpe, clamped to [min_cap, max_cap]
+        let mut targets: Vec<f64> = Vec::with_capacity(self.coins.len());
+        for &sh in &sharpes {
+            let weight = sh / sum_sharpe;
+            let target = (total_portfolio * weight).max(base_cap * SHARPE_MIN_CAP).min(base_cap * SHARPE_MAX_CAP);
+            targets.push(target);
+        }
+
+        // Apply capital redistribution (coins with surplus give to those with deficit)
+        for ci in 0..self.coins.len() {
+            self.coins[ci].last_rebalance_bar = self.bars_since_rebal;
+            let diff = targets[ci] - self.coins[ci].bal;
+            self.coins[ci].bal += diff;
+        }
+
+        self.log(format!("[RUN75] Sharpe rebalance: portfolio=${:.2}", total_portfolio));
     }
 }
 

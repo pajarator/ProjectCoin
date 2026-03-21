@@ -11,6 +11,12 @@ pub const SHORT_BREADTH_MIN: f64 = 0.50;
 pub const ISO_SHORT_BREADTH_MAX: f64 = 0.20;
 pub const LOG_LINES: usize = 50;
 
+// RUN75: Sharpe-weighted capital allocation
+pub const SHARPE_REBAL_FREQ: u32 = 336;   // rebalance every ~336 bars (~2 weeks of 15m)
+pub const SHARPE_WINDOW: usize = 10;       // trailing trades for Sharpe computation
+pub const SHARPE_MIN_CAP: f64 = 0.50;    // min 50% of base allocation
+pub const SHARPE_MAX_CAP: f64 = 3.00;     // max 300% of base allocation
+
 // RUN94: Partial reentry after cooldown
 pub const REENTRY_Z_MULT: f64 = 1.1;      // z-score must be 1.1× more extreme than original entry
 pub const REENTRY_SIZE_PCT: f64 = 0.7;   // re-entry at 70% of normal position size
