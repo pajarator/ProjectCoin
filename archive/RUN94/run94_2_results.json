@@ -1,0 +1,38 @@
+{
+  "best_config": "ZM1.1_SP0.7_MC1",
+  "z_mult": 1.1,
+  "size_pct": 0.7,
+  "max_count": 1,
+  "windows": [
+    {
+      "window": 1,
+      "train_pnl_baseline": 124.71597427397707,
+      "train_pnl_best": 129.68776846394104,
+      "train_delta": 4.971794189963973,
+      "test_pnl_baseline": 42.89002034169336,
+      "test_pnl_best": 50.78258869891209,
+      "test_delta": 7.892568357218735,
+      "pass": true
+    },
+    {
+      "window": 2,
+      "train_pnl_baseline": 92.39659800104718,
+      "train_pnl_best": 104.57706535688581,
+      "train_delta": 12.18046735583863,
+      "test_pnl_baseline": 52.46660284491797,
+      "test_pnl_best": 59.89467468253224,
+      "test_delta": 7.428071837614269,
+      "pass": true
+    },
+    {
+      "window": 3,
+      "train_pnl_baseline": 96.37283240574584,
+      "train_pnl_best": 112.09584084210456,
+      "train_delta": 15.723008436358725,
+      "test_pnl_baseline": 57.10178329061007,
+      "test_pnl_best": 57.90449591462388,
+      "test_delta": 0.8027126240138074,
+      "pass": true
+    }
+  ]
+}

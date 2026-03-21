@@ -1,0 +1,593 @@
+{
+  "notes": "RUN39.2 walk-forward: 3 windows train=2mo test=1mo. Avg ΔPnL=0.2, Avg positive=17%, All positive=false",
+  "windows": [
+    {
+      "window_idx": 0,
+      "train_start": "bar_0",
+      "train_end": "bar_0",
+      "test_start": "bar_0",
+      "test_end": "bar_2880",
+      "n_train": 0,
+      "n_test": 2880,
+      "coins": [
+        {
+          "coin": "DASH",
+          "train_pnl": 0.0,
+          "train_wr": 0.0,
+          "test_pnl": 0.0,
+          "test_wr": 0.0,
+          "test_delta_pnl": 0.0,
+          "best_train_cfg": "W2_L2_C2_60_C3_60",
+          "is_positive": false
+        },
+        {
+          "coin": "DASH",
+          "train_pnl": 0.0,
+          "train_wr": 0.0,
+          "test_pnl": 1.104780999534455,
+          "test_wr": 64.0,
+          "test_delta_pnl": 0.0,
+          "best_train_cfg": "W2_L2_C2_60_C3_60",
+          "is_positive": false
+        },
+        {
+          "coin": "DASH",
+          "train_pnl": 0.0,
+          "train_wr": 0.0,
+          "test_pnl": 1.6261591746122122,
+          "test_wr": 46.808510638297875,
+          "test_delta_pnl": 0.0,
+          "best_train_cfg": "W2_L2_C2_60_C3_60",
+          "is_positive": false
+        },
+        {
+          "coin": "DASH",
+          "train_pnl": 0.0,
+          "train_wr": 0.0,
+          "test_pnl": 0.9328491739978517,
+          "test_wr": 53.333333333333336,
+          "test_delta_pnl": 0.0,
+          "best_train_cfg": "W2_L2_C2_60_C3_60",
+          "is_positive": false
+        },
+        {
+          "coin": "DASH",
+          "train_pnl": 0.0,
+          "train_wr": 0.0,
+          "test_pnl": -1.1917173529714091,
+          "test_wr": 23.076923076923077,
+          "test_delta_pnl": 0.0,
+          "best_train_cfg": "W2_L2_C2_60_C3_60",
+          "is_positive": false
+        },
+        {
+          "coin": "DASH",
+          "train_pnl": 0.0,
+          "train_wr": 0.0,
+          "test_pnl": 1.2274900677924734,
+          "test_wr": 56.666666666666664,
+          "test_delta_pnl": 0.0,
+          "best_train_cfg": "W2_L2_C2_60_C3_60",
+          "is_positive": false
+        },
+        {
+          "coin": "DASH",
+          "train_pnl": 0.0,
+          "train_wr": 0.0,
+          "test_pnl": -0.5083917047693376,
+          "test_wr": 33.33333333333333,
+          "test_delta_pnl": 0.0,
+          "best_train_cfg": "W2_L2_C2_60_C3_60",
+          "is_positive": false
+        },
+        {
+          "coin": "DASH",
+          "train_pnl": 0.0,
+          "train_wr": 0.0,
+          "test_pnl": 0.06551936737605502,
+          "test_wr": 55.55555555555556,
+          "test_delta_pnl": 0.0,
+          "best_train_cfg": "W2_L2_C2_60_C3_60",
+          "is_positive": false
+        },
+        {
+          "coin": "DASH",
+          "train_pnl": 0.0,
+          "train_wr": 0.0,
+          "test_pnl": 0.8721433054972749,
+          "test_wr": 50.0,
+          "test_delta_pnl": 0.0,
+          "best_train_cfg": "W2_L2_C2_60_C3_60",
+          "is_positive": false
+        },
+        {
+          "coin": "DASH",
+          "train_pnl": 0.0,
+          "train_wr": 0.0,
+          "test_pnl": 1.478483757826325,
+          "test_wr": 58.139534883720934,
+          "test_delta_pnl": 0.0,
+          "best_train_cfg": "W2_L2_C2_60_C3_60",
+          "is_positive": false
+        },
+        {
+          "coin": "DASH",
+          "train_pnl": 0.0,
+          "train_wr": 0.0,
+          "test_pnl": -0.24518682257212276,
+          "test_wr": 36.36363636363637,
+          "test_delta_pnl": 0.0,
+          "best_train_cfg": "W2_L2_C2_60_C3_60",
+          "is_positive": false
+        },
+        {
+          "coin": "DASH",
+          "train_pnl": 0.0,
+          "train_wr": 0.0,
+          "test_pnl": -0.21165258015616928,
+          "test_wr": 33.33333333333333,
+          "test_delta_pnl": 0.0,
+          "best_train_cfg": "W2_L2_C2_60_C3_60",
+          "is_positive": false
+        },
+        {
+          "coin": "DASH",
+          "train_pnl": 0.0,
+          "train_wr": 0.0,
+          "test_pnl": -0.05765484658661535,
+          "test_wr": 52.38095238095239,
+          "test_delta_pnl": 0.0,
+          "best_train_cfg": "W2_L2_C2_60_C3_60",
+          "is_positive": false
+        },
+        {
+          "coin": "DASH",
+          "train_pnl": 0.0,
+          "train_wr": 0.0,
+          "test_pnl": -0.07863287302518529,
+          "test_wr": 35.483870967741936,
+          "test_delta_pnl": 0.0,
+          "best_train_cfg": "W2_L2_C2_60_C3_60",
+          "is_positive": false
+        },
+        {
+          "coin": "DASH",
+          "train_pnl": 0.0,
+          "train_wr": 0.0,
+          "test_pnl": -0.0835800890918108,
+          "test_wr": 38.095238095238095,
+          "test_delta_pnl": 0.0,
+          "best_train_cfg": "W2_L2_C2_60_C3_60",
+          "is_positive": false
+        },
+        {
+          "coin": "DASH",
+          "train_pnl": 0.0,
+          "train_wr": 0.0,
+          "test_pnl": 1.436719770851937,
+          "test_wr": 51.42857142857142,
+          "test_delta_pnl": 0.0,
+          "best_train_cfg": "W2_L2_C2_60_C3_60",
+          "is_positive": false
+        },
+        {
+          "coin": "DASH",
+          "train_pnl": 0.0,
+          "train_wr": 0.0,
+          "test_pnl": 0.4540016766499093,
+          "test_wr": 70.83333333333334,
+          "test_delta_pnl": 0.0,
+          "best_train_cfg": "W2_L2_C2_60_C3_60",
+          "is_positive": false
+        },
+        {
+          "coin": "DASH",
+          "train_pnl": 0.0,
+          "train_wr": 0.0,
+          "test_pnl": 0.8846106538618415,
+          "test_wr": 68.08510638297872,
+          "test_delta_pnl": 0.0,
+          "best_train_cfg": "W2_L2_C2_60_C3_60",
+          "is_positive": false
+        }
+      ],
+      "portfolio_train_pnl": 0.0,
+      "portfolio_test_pnl": 7.705941678827685,
+      "portfolio_baseline_test_pnl": 7.705941678827685,
+      "portfolio_delta": 0.0,
+      "pct_positive": 0.0
+    },
+    {
+      "window_idx": 1,
+      "train_start": "bar_0",
+      "train_end": "bar_2880",
+      "test_start": "bar_2880",
+      "test_end": "bar_5760",
+      "n_train": 2880,
+      "n_test": 2880,
+      "coins": [
+        {
+          "coin": "UNI",
+          "train_pnl": 0.0,
+          "train_wr": 0.0,
+          "test_pnl": 0.0,
+          "test_wr": 0.0,
+          "test_delta_pnl": 0.0,
+          "best_train_cfg": "W2_L2_C2_60_C3_60",
+          "is_positive": false
+        },
+        {
+          "coin": "UNI",
+          "train_pnl": 1.104780999534455,
+          "train_wr": 64.0,
+          "test_pnl": -0.5338046798250389,
+          "test_wr": 63.63636363636363,
+          "test_delta_pnl": 0.0,
+          "best_train_cfg": "W2_L2_C2_60_C3_60",
+          "is_positive": false
+        },
+        {
+          "coin": "UNI",
+          "train_pnl": 1.6261591746122122,
+          "train_wr": 46.808510638297875,
+          "test_pnl": 1.4614197603603998,
+          "test_wr": 50.847457627118644,
+          "test_delta_pnl": 0.0,
+          "best_train_cfg": "W2_L2_C2_60_C3_60",
+          "is_positive": false
+        },
+        {
+          "coin": "UNI",
+          "train_pnl": 0.9328491739978517,
+          "train_wr": 53.333333333333336,
+          "test_pnl": -0.9034291801402787,
+          "test_wr": 35.714285714285715,
+          "test_delta_pnl": 0.0,
+          "best_train_cfg": "W2_L2_C2_60_C3_60",
+          "is_positive": false
+        },
+        {
+          "coin": "UNI",
+          "train_pnl": -1.1917173529714091,
+          "train_wr": 23.076923076923077,
+          "test_pnl": -1.0193351455594666,
+          "test_wr": 33.33333333333333,
+          "test_delta_pnl": 0.09926167817923215,
+          "best_train_cfg": "W1_L2_C2_4_C3_8",
+          "is_positive": true
+        },
+        {
+          "coin": "UNI",
+          "train_pnl": 1.2274900677924734,
+          "train_wr": 56.666666666666664,
+          "test_pnl": 1.1247839821946854,
+          "test_wr": 58.333333333333336,
+          "test_delta_pnl": 0.6630074695736994,
+          "best_train_cfg": "W1_L2_C2_4_C3_8",
+          "is_positive": true
+        },
+        {
+          "coin": "UNI",
+          "train_pnl": -0.5083917047693376,
+          "train_wr": 33.33333333333333,
+          "test_pnl": 0.7907105319966377,
+          "test_wr": 68.0,
+          "test_delta_pnl": 0.0,
+          "best_train_cfg": "W1_L2_C2_4_C3_8",
+          "is_positive": false
+        },
+        {
+          "coin": "UNI",
+          "train_pnl": 0.06551936737605502,
+          "train_wr": 55.55555555555556,
+          "test_pnl": -1.0588437541827034,
+          "test_wr": 50.943396226415096,
+          "test_delta_pnl": -0.16754041580713874,
+          "best_train_cfg": "W2_L3_C2_12_C3_20",
+          "is_positive": false
+        },
+        {
+          "coin": "UNI",
+          "train_pnl": 0.8721433054972749,
+          "train_wr": 50.0,
+          "test_pnl": 1.1528723651437076,
+          "test_wr": 58.82352941176471,
+          "test_delta_pnl": 0.0,
+          "best_train_cfg": "W2_L2_C2_60_C3_60",
+          "is_positive": false
+        },
+        {
+          "coin": "UNI",
+          "train_pnl": 1.478483757826325,
+          "train_wr": 58.139534883720934,
+          "test_pnl": -0.39648939468304434,
+          "test_wr": 50.74626865671642,
+          "test_delta_pnl": 0.023311209154940116,
+          "best_train_cfg": "W3_L3_C2_6_C3_8",
+          "is_positive": true
+        },
+        {
+          "coin": "UNI",
+          "train_pnl": -0.24518682257212276,
+          "train_wr": 36.36363636363637,
+          "test_pnl": 0.08395892552243822,
+          "test_wr": 45.65217391304348,
+          "test_delta_pnl": -0.27293448043531043,
+          "best_train_cfg": "W1_L2_C2_4_C3_8",
+          "is_positive": false
+        },
+        {
+          "coin": "UNI",
+          "train_pnl": -0.21165258015616928,
+          "train_wr": 33.33333333333333,
+          "test_pnl": -0.04690931716186242,
+          "test_wr": 42.10526315789473,
+          "test_delta_pnl": 0.0,
+          "best_train_cfg": "W2_L2_C2_60_C3_60",
+          "is_positive": false
+        },
+        {
+          "coin": "UNI",
+          "train_pnl": -0.05765484658661535,
+          "train_wr": 52.38095238095239,
+          "test_pnl": 0.7547673811296818,
+          "test_wr": 69.23076923076923,
+          "test_delta_pnl": 0.0,
+          "best_train_cfg": "W2_L2_C2_60_C3_60",
+          "is_positive": false
+        },
+        {
+          "coin": "UNI",
+          "train_pnl": -0.07863287302518529,
+          "train_wr": 35.483870967741936,
+          "test_pnl": 0.5624921900156323,
+          "test_wr": 40.845070422535215,
+          "test_delta_pnl": 0.6953379931252357,
+          "best_train_cfg": "W3_L4_C2_12_C3_12",
+          "is_positive": true
+        },
+        {
+          "coin": "UNI",
+          "train_pnl": -0.0835800890918108,
+          "train_wr": 38.095238095238095,
+          "test_pnl": -1.1142870477923452,
+          "test_wr": 22.22222222222222,
+          "test_delta_pnl": 0.0015353819558185933,
+          "best_train_cfg": "W3_L2_C2_4_C3_8",
+          "is_positive": true
+        },
+        {
+          "coin": "UNI",
+          "train_pnl": 1.436719770851937,
+          "train_wr": 51.42857142857142,
+          "test_pnl": -0.40660454725889394,
+          "test_wr": 44.11764705882353,
+          "test_delta_pnl": 0.0,
+          "best_train_cfg": "W2_L2_C2_60_C3_60",
+          "is_positive": false
+        },
+        {
+          "coin": "UNI",
+          "train_pnl": 0.4540016766499093,
+          "train_wr": 70.83333333333334,
+          "test_pnl": -0.3973559917781131,
+          "test_wr": 50.0,
+          "test_delta_pnl": 0.0,
+          "best_train_cfg": "W2_L2_C2_60_C3_60",
+          "is_positive": false
+        },
+        {
+          "coin": "UNI",
+          "train_pnl": 0.8846106538618415,
+          "train_wr": 68.08510638297872,
+          "test_pnl": -0.23490335872043033,
+          "test_wr": 44.680851063829785,
+          "test_delta_pnl": -0.09231553849406282,
+          "best_train_cfg": "W1_L2_C2_6_C3_8",
+          "is_positive": false
+        }
+      ],
+      "portfolio_train_pnl": 0.0,
+      "portfolio_test_pnl": -0.1809572807389941,
+      "portfolio_baseline_test_pnl": -1.130620577991408,
+      "portfolio_delta": 0.9496632972524139,
+      "pct_positive": 27.77777777777778
+    },
+    {
+      "window_idx": 2,
+      "train_start": "bar_0",
+      "train_end": "bar_5760",
+      "test_start": "bar_5760",
+      "test_end": "bar_8640",
+      "n_train": 5760,
+      "n_test": 2880,
+      "coins": [
+        {
+          "coin": "NEAR",
+          "train_pnl": 0.0,
+          "train_wr": 0.0,
+          "test_pnl": 0.0,
+          "test_wr": 0.0,
+          "test_delta_pnl": 0.0,
+          "best_train_cfg": "W2_L2_C2_60_C3_60",
+          "is_positive": false
+        },
+        {
+          "coin": "NEAR",
+          "train_pnl": 0.5703865824415288,
+          "train_wr": 63.829787234042556,
+          "test_pnl": 0.4498778138882926,
+          "test_wr": 55.172413793103445,
+          "test_delta_pnl": 0.0,
+          "best_train_cfg": "W2_L2_C2_60_C3_60",
+          "is_positive": false
+        },
+        {
+          "coin": "NEAR",
+          "train_pnl": 2.9628883053848085,
+          "train_wr": 48.07692307692308,
+          "test_pnl": -0.6851465565971466,
+          "test_wr": 45.3125,
+          "test_delta_pnl": -0.0831313194479435,
+          "best_train_cfg": "W1_L2_C2_12_C3_8",
+          "is_positive": false
+        },
+        {
+          "coin": "NEAR",
+          "train_pnl": 0.02857723069291751,
+          "train_wr": 44.827586206896555,
+          "test_pnl": 0.5187233353572083,
+          "test_wr": 59.09090909090909,
+          "test_delta_pnl": -0.04545436355238053,
+          "best_train_cfg": "W1_L2_C2_4_C3_8",
+          "is_positive": false
+        },
+        {
+          "coin": "NEAR",
+          "train_pnl": -2.308981125464584,
+          "train_wr": 27.586206896551722,
+          "test_pnl": 0.5347287343221296,
+          "test_wr": 56.00000000000001,
+          "test_delta_pnl": 0.0,
+          "best_train_cfg": "W1_L2_C2_4_C3_20",
+          "is_positive": false
+        },
+        {
+          "coin": "NEAR",
+          "train_pnl": 1.68983340649595,
+          "train_wr": 55.55555555555556,
+          "test_pnl": 0.15320318414774192,
+          "test_wr": 54.285714285714285,
+          "test_delta_pnl": 0.18884726414398756,
+          "best_train_cfg": "W1_L2_C2_4_C3_8",
+          "is_positive": true
+        },
+        {
+          "coin": "NEAR",
+          "train_pnl": 0.28191683655188626,
+          "train_wr": 56.75675675675676,
+          "test_pnl": 0.21452529267185128,
+          "test_wr": 42.857142857142854,
+          "test_delta_pnl": -0.20000997527176878,
+          "best_train_cfg": "W1_L2_C2_4_C3_8",
+          "is_positive": false
+        },
+        {
+          "coin": "NEAR",
+          "train_pnl": -0.5907698874272,
+          "train_wr": 53.333333333333336,
+          "test_pnl": -0.2822441571491936,
+          "test_wr": 53.2258064516129,
+          "test_delta_pnl": -0.05664297180032918,
+          "best_train_cfg": "W2_L3_C2_12_C3_20",
+          "is_positive": false
+        },
+        {
+          "coin": "NEAR",
+          "train_pnl": 2.0260211405565087,
+          "train_wr": 54.83870967741935,
+          "test_pnl": -0.14921663813333907,
+          "test_wr": 50.0,
+          "test_delta_pnl": 0.0,
+          "best_train_cfg": "W2_L2_C2_60_C3_60",
+          "is_positive": false
+        },
+        {
+          "coin": "NEAR",
+          "train_pnl": 1.1651153125434348,
+          "train_wr": 52.17391304347826,
+          "test_pnl": 0.808623642870316,
+          "test_wr": 57.14285714285714,
+          "test_delta_pnl": 0.30874174948382915,
+          "best_train_cfg": "W3_L5_C2_6_C3_8",
+          "is_positive": true
+        },
+        {
+          "coin": "NEAR",
+          "train_pnl": -0.08864928998480082,
+          "train_wr": 43.05555555555556,
+          "test_pnl": -0.6292823557424754,
+          "test_wr": 35.714285714285715,
+          "test_delta_pnl": -0.06803396237569359,
+          "best_train_cfg": "W3_L2_C2_4_C3_8",
+          "is_positive": false
+        },
+        {
+          "coin": "NEAR",
+          "train_pnl": -0.25855196884003817,
+          "train_wr": 38.70967741935484,
+          "test_pnl": -0.7293873149761794,
+          "test_wr": 37.5,
+          "test_delta_pnl": 0.0,
+          "best_train_cfg": "W2_L2_C2_60_C3_60",
+          "is_positive": false
+        },
+        {
+          "coin": "NEAR",
+          "train_pnl": 0.6970690185460171,
+          "train_wr": 61.702127659574465,
+          "test_pnl": -1.6132659038148631,
+          "test_wr": 37.93103448275862,
+          "test_delta_pnl": 0.0,
+          "best_train_cfg": "W2_L2_C2_60_C3_60",
+          "is_positive": false
+        },
+        {
+          "coin": "NEAR",
+          "train_pnl": -0.2216738500661677,
+          "train_wr": 39.02439024390244,
+          "test_pnl": -0.08311885799719221,
+          "test_wr": 46.55172413793103,
+          "test_delta_pnl": 0.08088528192513422,
+          "best_train_cfg": "W1_L3_C2_12_C3_20",
+          "is_positive": true
+        },
+        {
+          "coin": "NEAR",
+          "train_pnl": -1.199309258302037,
+          "train_wr": 27.77777777777778,
+          "test_pnl": 0.4815392290087175,
+          "test_wr": 56.52173913043478,
+          "test_delta_pnl": 0.042481488651333166,
+          "best_train_cfg": "W3_L2_C2_4_C3_8",
+          "is_positive": true
+        },
+        {
+          "coin": "NEAR",
+          "train_pnl": 0.7797270067680984,
+          "train_wr": 46.26865671641791,
+          "test_pnl": 0.7623254324479376,
+          "test_wr": 68.75,
+          "test_delta_pnl": 0.0,
+          "best_train_cfg": "W2_L2_C2_60_C3_60",
+          "is_positive": false
+        },
+        {
+          "coin": "NEAR",
+          "train_pnl": 0.0564652845848741,
+          "train_wr": 61.904761904761905,
+          "test_pnl": 0.3823704735054889,
+          "test_wr": 63.1578947368421,
+          "test_delta_pnl": 0.0,
+          "best_train_cfg": "W1_L2_C2_4_C3_8",
+          "is_positive": false
+        },
+        {
+          "coin": "NEAR",
+          "train_pnl": 0.7720453957274458,
+          "train_wr": 57.647058823529406,
+          "test_pnl": -0.3351409125581313,
+          "test_wr": 38.18181818181819,
+          "test_delta_pnl": -0.4210907675900444,
+          "best_train_cfg": "W2_L5_C2_8_C3_8",
+          "is_positive": false
+        }
+      ],
+      "portfolio_train_pnl": 0.0,
+      "portfolio_test_pnl": -0.20088555874883696,
+      "portfolio_baseline_test_pnl": 0.0525220170850389,
+      "portfolio_delta": -0.25340757583387585,
+      "pct_positive": 22.22222222222222
+    }
+  ]
+}

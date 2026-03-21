@@ -1,0 +1,6406 @@
+{
+  "notes": "RUN77 recovery rate exit. 37 configs. Baseline PnL=293.21. Best: BASELINE (PnL=293.21, Δ=+0.00)",
+  "configs": [
+    {
+      "label": "BASELINE",
+      "total_pnl": 293.2113963789643,
+      "portfolio_wr": 25.90076178711139,
+      "total_trades": 9714,
+      "pf": 0.3495901069890232,
+      "is_baseline": true,
+      "recovery_exit_rate": 0.0,
+      "coins": [
+        {
+          "coin": "DASH",
+          "pnl": 38.81785941152924,
+          "trades": 583,
+          "wins": 116,
+          "losses": 467,
+          "wr": 19.897084048027445,
+          "recovery_exits": 0
+        },
+        {
+          "coin": "UNI",
+          "pnl": 19.609860119280455,
+          "trades": 548,
+          "wins": 130,
+          "losses": 418,
+          "wr": 23.722627737226276,
+          "recovery_exits": 0
+        },
+        {
+          "coin": "NEAR",
+          "pnl": 17.361808926955703,
+          "trades": 557,
+          "wins": 125,
+          "losses": 432,
+          "wr": 22.44165170556553,
+          "recovery_exits": 0
+        },
+        {
+          "coin": "ADA",
+          "pnl": 14.962745985739218,
+          "trades": 539,
+          "wins": 137,
+          "losses": 402,
+          "wr": 25.41743970315399,
+          "recovery_exits": 0
+        },
+        {
+          "coin": "LTC",
+          "pnl": 13.034188975838987,
+          "trades": 522,
+          "wins": 136,
+          "losses": 386,
+          "wr": 26.053639846743295,
+          "recovery_exits": 0
+        },
+        {
+          "coin": "SHIB",
+          "pnl": 10.443017120704582,
+          "trades": 545,
+          "wins": 126,
+          "losses": 419,
+          "wr": 23.119266055045873,
+          "recovery_exits": 0
+        },
+        {
+          "coin": "LINK",
+          "pnl": 16.32556193507928,
+          "trades": 528,
+          "wins": 129,
+          "losses": 399,
+          "wr": 24.431818181818183,
+          "recovery_exits": 0
+        },
+        {
+          "coin": "ETH",
+          "pnl": 12.514440010168386,
+          "trades": 518,
+          "wins": 154,
+          "losses": 364,
+          "wr": 29.72972972972973,
+          "recovery_exits": 0
+        },
+        {
+          "coin": "DOT",
+          "pnl": 20.660804121599497,
+          "trades": 550,
+          "wins": 141,
+          "losses": 408,
+          "wr": 25.636363636363633,
+          "recovery_exits": 0
+        },
+        {
+          "coin": "XRP",
+          "pnl": 15.531702068236939,
+          "trades": 549,
+          "wins": 154,
+          "losses": 395,
+          "wr": 28.051001821493628,
+          "recovery_exits": 0
+        },
+        {
+          "coin": "ATOM",
+          "pnl": 13.98267756015511,
+          "trades": 549,
+          "wins": 128,
+          "losses": 421,
+          "wr": 23.31511839708561,
+          "recovery_exits": 0
+        },
+        {
+          "coin": "SOL",
+          "pnl": 15.628923369670872,
+          "trades": 547,
+          "wins": 156,
+          "losses": 391,
+          "wr": 28.519195612431442,
+          "recovery_exits": 0
+        },
+        {
+          "coin": "DOGE",
+          "pnl": 14.681303669542984,
+          "trades": 544,
+          "wins": 143,
+          "losses": 401,
+          "wr": 26.286764705882355,
+          "recovery_exits": 0
+        },
+        {
+          "coin": "XLM",
+          "pnl": 14.363778159767861,
+          "trades": 540,
+          "wins": 133,
+          "losses": 407,
+          "wr": 24.62962962962963,
+          "recovery_exits": 0
+        },
+        {
+          "coin": "AVAX",
+          "pnl": 16.81098024652904,
+          "trades": 542,
+          "wins": 147,
+          "losses": 395,
+          "wr": 27.121771217712176,
+          "recovery_exits": 0
+        },
+        {
+          "coin": "ALGO",
+          "pnl": 17.743517646386678,
+          "trades": 538,
+          "wins": 133,
+          "losses": 405,
+          "wr": 24.721189591078065,
+          "recovery_exits": 0
+        },
+        {
+          "coin": "BNB",
+          "pnl": 10.33965238800559,
+          "trades": 518,
+          "wins": 152,
+          "losses": 366,
+          "wr": 29.343629343629345,
+          "recovery_exits": 0
+        },
+        {
+          "coin": "BTC",
+          "pnl": 10.398574663773829,
+          "trades": 497,
+          "wins": 176,
+          "losses": 321,
+          "wr": 35.412474849094565,
+          "recovery_exits": 0
+        }
+      ]
+    },
+    {
+      "label": "MB15_MV0.010_GR5",
+      "total_pnl": 287.0577698277136,
+      "portfolio_wr": 26.629944917376065,
+      "total_trades": 9985,
+      "pf": 0.36369853645192185,
+      "is_baseline": false,
+      "recovery_exit_rate": 4.406609914872309,
+      "coins": [
+        {
+          "coin": "DASH",
+          "pnl": 37.28815544156288,
+          "trades": 603,
+          "wins": 124,
+          "losses": 479,
+          "wr": 20.563847429519072,
+          "recovery_exits": 25
+        },
+        {
+          "coin": "UNI",
+          "pnl": 19.51457725868785,
+          "trades": 560,
+          "wins": 140,
+          "losses": 420,
+          "wr": 25.0,
+          "recovery_exits": 25
+        },
+        {
+          "coin": "NEAR",
+          "pnl": 16.847402357409777,
+          "trades": 571,
+          "wins": 131,
+          "losses": 440,
+          "wr": 22.942206654991242,
+          "recovery_exits": 22
+        },
+        {
+          "coin": "ADA",
+          "pnl": 15.628896174382405,
+          "trades": 546,
+          "wins": 142,
+          "losses": 404,
+          "wr": 26.00732600732601,
+          "recovery_exits": 22
+        },
+        {
+          "coin": "LTC",
+          "pnl": 13.240705238730882,
+          "trades": 536,
+          "wins": 149,
+          "losses": 387,
+          "wr": 27.798507462686565,
+          "recovery_exits": 21
+        },
+        {
+          "coin": "SHIB",
+          "pnl": 10.570165275475546,
+          "trades": 564,
+          "wins": 135,
+          "losses": 425,
+          "wr": 23.93617021276596,
+          "recovery_exits": 22
+        },
+        {
+          "coin": "LINK",
+          "pnl": 16.617699167375264,
+          "trades": 545,
+          "wins": 139,
+          "losses": 404,
+          "wr": 25.504587155963304,
+          "recovery_exits": 24
+        },
+        {
+          "coin": "ETH",
+          "pnl": 12.556835119360088,
+          "trades": 537,
+          "wins": 165,
+          "losses": 372,
+          "wr": 30.726256983240223,
+          "recovery_exits": 34
+        },
+        {
+          "coin": "DOT",
+          "pnl": 20.482401761583034,
+          "trades": 564,
+          "wins": 150,
+          "losses": 413,
+          "wr": 26.595744680851062,
+          "recovery_exits": 15
+        },
+        {
+          "coin": "XRP",
+          "pnl": 14.57915855827163,
+          "trades": 561,
+          "wins": 160,
+          "losses": 401,
+          "wr": 28.520499108734406,
+          "recovery_exits": 27
+        },
+        {
+          "coin": "ATOM",
+          "pnl": 13.14803908456355,
+          "trades": 567,
+          "wins": 139,
+          "losses": 425,
+          "wr": 24.514991181657848,
+          "recovery_exits": 30
+        },
+        {
+          "coin": "SOL",
+          "pnl": 15.44236789226855,
+          "trades": 556,
+          "wins": 162,
+          "losses": 394,
+          "wr": 29.136690647482016,
+          "recovery_exits": 17
+        },
+        {
+          "coin": "DOGE",
+          "pnl": 14.393942998472923,
+          "trades": 557,
+          "wins": 151,
+          "losses": 405,
+          "wr": 27.109515260323157,
+          "recovery_exits": 24
+        },
+        {
+          "coin": "XLM",
+          "pnl": 14.874107223149593,
+          "trades": 553,
+          "wins": 146,
+          "losses": 407,
+          "wr": 26.40144665461121,
+          "recovery_exits": 20
+        },
+        {
+          "coin": "AVAX",
+          "pnl": 17.124521894632025,
+          "trades": 560,
+          "wins": 158,
+          "losses": 401,
+          "wr": 28.214285714285715,
+          "recovery_exits": 25
+        },
+        {
+          "coin": "ALGO",
+          "pnl": 16.732880950068292,
+          "trades": 552,
+          "wins": 135,
+          "losses": 414,
+          "wr": 24.456521739130434,
+          "recovery_exits": 19
+        },
+        {
+          "coin": "BNB",
+          "pnl": 9.050572520575102,
+          "trades": 532,
+          "wins": 157,
+          "losses": 375,
+          "wr": 29.51127819548872,
+          "recovery_exits": 32
+        },
+        {
+          "coin": "BTC",
+          "pnl": 8.965340911144253,
+          "trades": 521,
+          "wins": 176,
+          "losses": 345,
+          "wr": 33.78119001919386,
+          "recovery_exits": 36
+        }
+      ]
+    },
+    {
+      "label": "MB15_MV0.010_GR10",
+      "total_pnl": 288.28353190856336,
+      "portfolio_wr": 26.56030503712623,
+      "total_trades": 9966,
+      "pf": 0.3623049548316452,
+      "is_baseline": false,
+      "recovery_exit_rate": 4.134055789684929,
+      "coins": [
+        {
+          "coin": "DASH",
+          "pnl": 37.65563898575408,
+          "trades": 603,
+          "wins": 123,
+          "losses": 480,
+          "wr": 20.398009950248756,
+          "recovery_exits": 21
+        },
+        {
+          "coin": "UNI",
+          "pnl": 19.51457725868785,
+          "trades": 560,
+          "wins": 140,
+          "losses": 420,
+          "wr": 25.0,
+          "recovery_exits": 25
+        },
+        {
+          "coin": "NEAR",
+          "pnl": 16.85616006149361,
+          "trades": 570,
+          "wins": 131,
+          "losses": 439,
+          "wr": 22.982456140350877,
+          "recovery_exits": 21
+        },
+        {
+          "coin": "ADA",
+          "pnl": 15.627812526624965,
+          "trades": 546,
+          "wins": 142,
+          "losses": 404,
+          "wr": 26.00732600732601,
+          "recovery_exits": 21
+        },
+        {
+          "coin": "LTC",
+          "pnl": 13.052584006100133,
+          "trades": 535,
+          "wins": 148,
+          "losses": 387,
+          "wr": 27.663551401869157,
+          "recovery_exits": 19
+        },
+        {
+          "coin": "SHIB",
+          "pnl": 10.478461326502995,
+          "trades": 562,
+          "wins": 133,
+          "losses": 427,
+          "wr": 23.665480427046262,
+          "recovery_exits": 18
+        },
+        {
+          "coin": "LINK",
+          "pnl": 16.854150301129152,
+          "trades": 545,
+          "wins": 139,
+          "losses": 404,
+          "wr": 25.504587155963304,
+          "recovery_exits": 23
+        },
+        {
+          "coin": "ETH",
+          "pnl": 12.791539285538349,
+          "trades": 535,
+          "wins": 163,
+          "losses": 372,
+          "wr": 30.467289719626166,
+          "recovery_exits": 30
+        },
+        {
+          "coin": "DOT",
+          "pnl": 20.482401761583034,
+          "trades": 564,
+          "wins": 150,
+          "losses": 413,
+          "wr": 26.595744680851062,
+          "recovery_exits": 15
+        },
+        {
+          "coin": "XRP",
+          "pnl": 14.599985714637924,
+          "trades": 561,
+          "wins": 160,
+          "losses": 401,
+          "wr": 28.520499108734406,
+          "recovery_exits": 26
+        },
+        {
+          "coin": "ATOM",
+          "pnl": 13.002427665338104,
+          "trades": 565,
+          "wins": 135,
+          "losses": 427,
+          "wr": 23.893805309734514,
+          "recovery_exits": 28
+        },
+        {
+          "coin": "SOL",
+          "pnl": 15.657857693119212,
+          "trades": 554,
+          "wins": 163,
+          "losses": 391,
+          "wr": 29.422382671480147,
+          "recovery_exits": 16
+        },
+        {
+          "coin": "DOGE",
+          "pnl": 14.530978695386466,
+          "trades": 555,
+          "wins": 151,
+          "losses": 403,
+          "wr": 27.207207207207208,
+          "recovery_exits": 23
+        },
+        {
+          "coin": "XLM",
+          "pnl": 14.798163230697938,
+          "trades": 551,
+          "wins": 145,
+          "losses": 406,
+          "wr": 26.31578947368421,
+          "recovery_exits": 19
+        },
+        {
+          "coin": "AVAX",
+          "pnl": 17.124521894632025,
+          "trades": 560,
+          "wins": 158,
+          "losses": 401,
+          "wr": 28.214285714285715,
+          "recovery_exits": 25
+        },
+        {
+          "coin": "ALGO",
+          "pnl": 16.723107601026882,
+          "trades": 552,
+          "wins": 135,
+          "losses": 414,
+          "wr": 24.456521739130434,
+          "recovery_exits": 19
+        },
+        {
+          "coin": "BNB",
+          "pnl": 9.571882942788733,
+          "trades": 531,
+          "wins": 158,
+          "losses": 373,
+          "wr": 29.75517890772128,
+          "recovery_exits": 29
+        },
+        {
+          "coin": "BTC",
+          "pnl": 8.96128095752185,
+          "trades": 517,
+          "wins": 173,
+          "losses": 344,
+          "wr": 33.46228239845261,
+          "recovery_exits": 34
+        }
+      ]
+    },
+    {
+      "label": "MB15_MV0.010_GR15",
+      "total_pnl": 289.8743132371108,
+      "portfolio_wr": 26.57553522967132,
+      "total_trades": 9949,
+      "pf": 0.36248971757608994,
+      "is_baseline": false,
+      "recovery_exit_rate": 3.889838174690924,
+      "coins": [
+        {
+          "coin": "DASH",
+          "pnl": 38.745766855381476,
+          "trades": 601,
+          "wins": 123,
+          "losses": 478,
+          "wr": 20.465890183028286,
+          "recovery_exits": 19
+        },
+        {
+          "coin": "UNI",
+          "pnl": 19.43216694437392,
+          "trades": 560,
+          "wins": 140,
+          "losses": 420,
+          "wr": 25.0,
+          "recovery_exits": 25
+        },
+        {
+          "coin": "NEAR",
+          "pnl": 16.848605845961785,
+          "trades": 570,
+          "wins": 131,
+          "losses": 439,
+          "wr": 22.982456140350877,
+          "recovery_exits": 21
+        },
+        {
+          "coin": "ADA",
+          "pnl": 15.872821849123639,
+          "trades": 545,
+          "wins": 142,
+          "losses": 403,
+          "wr": 26.055045871559635,
+          "recovery_exits": 20
+        },
+        {
+          "coin": "LTC",
+          "pnl": 13.199771838541793,
+          "trades": 534,
+          "wins": 148,
+          "losses": 386,
+          "wr": 27.715355805243448,
+          "recovery_exits": 19
+        },
+        {
+          "coin": "SHIB",
+          "pnl": 10.364488403569183,
+          "trades": 561,
+          "wins": 132,
+          "losses": 427,
+          "wr": 23.52941176470588,
+          "recovery_exits": 17
+        },
+        {
+          "coin": "LINK",
+          "pnl": 17.20359924704701,
+          "trades": 543,
+          "wins": 140,
+          "losses": 402,
+          "wr": 25.78268876611418,
+          "recovery_exits": 22
+        },
+        {
+          "coin": "ETH",
+          "pnl": 12.794246807834185,
+          "trades": 534,
+          "wins": 163,
+          "losses": 371,
+          "wr": 30.52434456928839,
+          "recovery_exits": 29
+        },
+        {
+          "coin": "DOT",
+          "pnl": 20.274187671115584,
+          "trades": 563,
+          "wins": 149,
+          "losses": 413,
+          "wr": 26.465364120781526,
+          "recovery_exits": 14
+        },
+        {
+          "coin": "XRP",
+          "pnl": 14.717404429449616,
+          "trades": 561,
+          "wins": 160,
+          "losses": 401,
+          "wr": 28.520499108734406,
+          "recovery_exits": 24
+        },
+        {
+          "coin": "ATOM",
+          "pnl": 12.801347689809916,
+          "trades": 564,
+          "wins": 132,
+          "losses": 429,
+          "wr": 23.404255319148938,
+          "recovery_exits": 26
+        },
+        {
+          "coin": "SOL",
+          "pnl": 15.657857693119212,
+          "trades": 554,
+          "wins": 163,
+          "losses": 391,
+          "wr": 29.422382671480147,
+          "recovery_exits": 16
+        },
+        {
+          "coin": "DOGE",
+          "pnl": 14.354989039350343,
+          "trades": 555,
+          "wins": 150,
+          "losses": 404,
+          "wr": 27.027027027027028,
+          "recovery_exits": 21
+        },
+        {
+          "coin": "XLM",
+          "pnl": 14.562460406097316,
+          "trades": 551,
+          "wins": 145,
+          "losses": 406,
+          "wr": 26.31578947368421,
+          "recovery_exits": 18
+        },
+        {
+          "coin": "AVAX",
+          "pnl": 17.077737583909183,
+          "trades": 558,
+          "wins": 157,
+          "losses": 401,
+          "wr": 28.136200716845877,
+          "recovery_exits": 23
+        },
+        {
+          "coin": "ALGO",
+          "pnl": 16.871915022975415,
+          "trades": 551,
+          "wins": 135,
+          "losses": 413,
+          "wr": 24.500907441016334,
+          "recovery_exits": 18
+        },
+        {
+          "coin": "BNB",
+          "pnl": 10.025357891372423,
+          "trades": 528,
+          "wins": 161,
+          "losses": 367,
+          "wr": 30.492424242424242,
+          "recovery_exits": 24
+        },
+        {
+          "coin": "BTC",
+          "pnl": 9.069588018078761,
+          "trades": 516,
+          "wins": 173,
+          "losses": 343,
+          "wr": 33.52713178294574,
+          "recovery_exits": 31
+        }
+      ]
+    },
+    {
+      "label": "MB15_MV0.015_GR5",
+      "total_pnl": 287.2879265192238,
+      "portfolio_wr": 26.81296758104738,
+      "total_trades": 10025,
+      "pf": 0.36721311475409835,
+      "is_baseline": false,
+      "recovery_exit_rate": 5.13715710723192,
+      "coins": [
+        {
+          "coin": "DASH",
+          "pnl": 38.2016705951757,
+          "trades": 603,
+          "wins": 127,
+          "losses": 476,
+          "wr": 21.06135986733002,
+          "recovery_exits": 25
+        },
+        {
+          "coin": "UNI",
+          "pnl": 19.682974705197097,
+          "trades": 562,
+          "wins": 141,
+          "losses": 421,
+          "wr": 25.088967971530252,
+          "recovery_exits": 30
+        },
+        {
+          "coin": "NEAR",
+          "pnl": 16.68888706912493,
+          "trades": 572,
+          "wins": 134,
+          "losses": 438,
+          "wr": 23.426573426573427,
+          "recovery_exits": 26
+        },
+        {
+          "coin": "ADA",
+          "pnl": 15.182989968276402,
+          "trades": 549,
+          "wins": 142,
+          "losses": 407,
+          "wr": 25.865209471766846,
+          "recovery_exits": 25
+        },
+        {
+          "coin": "LTC",
+          "pnl": 13.037806042971965,
+          "trades": 538,
+          "wins": 149,
+          "losses": 389,
+          "wr": 27.695167286245354,
+          "recovery_exits": 25
+        },
+        {
+          "coin": "SHIB",
+          "pnl": 10.616988695242227,
+          "trades": 565,
+          "wins": 135,
+          "losses": 425,
+          "wr": 23.893805309734514,
+          "recovery_exits": 23
+        },
+        {
+          "coin": "LINK",
+          "pnl": 16.83886473291068,
+          "trades": 548,
+          "wins": 141,
+          "losses": 404,
+          "wr": 25.72992700729927,
+          "recovery_exits": 27
+        },
+        {
+          "coin": "ETH",
+          "pnl": 12.260671966178336,
+          "trades": 541,
+          "wins": 168,
+          "losses": 373,
+          "wr": 31.053604436229204,
+          "recovery_exits": 45
+        },
+        {
+          "coin": "DOT",
+          "pnl": 21.031668980281694,
+          "trades": 564,
+          "wins": 152,
+          "losses": 411,
+          "wr": 26.95035460992908,
+          "recovery_exits": 19
+        },
+        {
+          "coin": "XRP",
+          "pnl": 14.831409623500647,
+          "trades": 564,
+          "wins": 162,
+          "losses": 402,
+          "wr": 28.723404255319153,
+          "recovery_exits": 34
+        },
+        {
+          "coin": "ATOM",
+          "pnl": 13.050129273407066,
+          "trades": 569,
+          "wins": 140,
+          "losses": 426,
+          "wr": 24.604569420035148,
+          "recovery_exits": 36
+        },
+        {
+          "coin": "SOL",
+          "pnl": 15.763956185733491,
+          "trades": 560,
+          "wins": 166,
+          "losses": 394,
+          "wr": 29.642857142857142,
+          "recovery_exits": 21
+        },
+        {
+          "coin": "DOGE",
+          "pnl": 13.235865141222774,
+          "trades": 561,
+          "wins": 150,
+          "losses": 410,
+          "wr": 26.737967914438503,
+          "recovery_exits": 32
+        },
+        {
+          "coin": "XLM",
+          "pnl": 15.108831481881225,
+          "trades": 556,
+          "wins": 147,
+          "losses": 409,
+          "wr": 26.43884892086331,
+          "recovery_exits": 25
+        },
+        {
+          "coin": "AVAX",
+          "pnl": 17.11116554996329,
+          "trades": 562,
+          "wins": 158,
+          "losses": 403,
+          "wr": 28.11387900355872,
+          "recovery_exits": 25
+        },
+        {
+          "coin": "ALGO",
+          "pnl": 16.500270712787398,
+          "trades": 556,
+          "wins": 140,
+          "losses": 413,
+          "wr": 25.179856115107913,
+          "recovery_exits": 24
+        },
+        {
+          "coin": "BNB",
+          "pnl": 9.137513455701978,
+          "trades": 533,
+          "wins": 159,
+          "losses": 374,
+          "wr": 29.831144465290805,
+          "recovery_exits": 34
+        },
+        {
+          "coin": "BTC",
+          "pnl": 9.006262339666819,
+          "trades": 522,
+          "wins": 177,
+          "losses": 345,
+          "wr": 33.90804597701149,
+          "recovery_exits": 39
+        }
+      ]
+    },
+    {
+      "label": "MB15_MV0.015_GR10",
+      "total_pnl": 287.8269885502639,
+      "portfolio_wr": 26.756053632179306,
+      "total_trades": 9994,
+      "pf": 0.3661007667031764,
+      "is_baseline": false,
+      "recovery_exit_rate": 4.642785671402842,
+      "coins": [
+        {
+          "coin": "DASH",
+          "pnl": 38.2016705951757,
+          "trades": 603,
+          "wins": 127,
+          "losses": 476,
+          "wr": 21.06135986733002,
+          "recovery_exits": 25
+        },
+        {
+          "coin": "UNI",
+          "pnl": 19.61506477196157,
+          "trades": 561,
+          "wins": 140,
+          "losses": 421,
+          "wr": 24.9554367201426,
+          "recovery_exits": 25
+        },
+        {
+          "coin": "NEAR",
+          "pnl": 16.567394777604036,
+          "trades": 571,
+          "wins": 133,
+          "losses": 438,
+          "wr": 23.29246935201401,
+          "recovery_exits": 25
+        },
+        {
+          "coin": "ADA",
+          "pnl": 15.593221160049723,
+          "trades": 546,
+          "wins": 142,
+          "losses": 404,
+          "wr": 26.00732600732601,
+          "recovery_exits": 25
+        },
+        {
+          "coin": "LTC",
+          "pnl": 12.805790529591064,
+          "trades": 537,
+          "wins": 148,
+          "losses": 389,
+          "wr": 27.560521415270017,
+          "recovery_exits": 22
+        },
+        {
+          "coin": "SHIB",
+          "pnl": 10.402206147068128,
+          "trades": 565,
+          "wins": 134,
+          "losses": 427,
+          "wr": 23.716814159292035,
+          "recovery_exits": 23
+        },
+        {
+          "coin": "LINK",
+          "pnl": 16.67392503249272,
+          "trades": 545,
+          "wins": 138,
+          "losses": 404,
+          "wr": 25.321100917431195,
+          "recovery_exits": 25
+        },
+        {
+          "coin": "ETH",
+          "pnl": 12.448868176716829,
+          "trades": 538,
+          "wins": 167,
+          "losses": 371,
+          "wr": 31.04089219330855,
+          "recovery_exits": 38
+        },
+        {
+          "coin": "DOT",
+          "pnl": 20.77227624935182,
+          "trades": 564,
+          "wins": 151,
+          "losses": 412,
+          "wr": 26.773049645390074,
+          "recovery_exits": 18
+        },
+        {
+          "coin": "XRP",
+          "pnl": 14.622147560944725,
+          "trades": 561,
+          "wins": 160,
+          "losses": 401,
+          "wr": 28.520499108734406,
+          "recovery_exits": 27
+        },
+        {
+          "coin": "ATOM",
+          "pnl": 13.202849612455708,
+          "trades": 567,
+          "wins": 139,
+          "losses": 425,
+          "wr": 24.514991181657848,
+          "recovery_exits": 31
+        },
+        {
+          "coin": "SOL",
+          "pnl": 15.656149290178163,
+          "trades": 557,
+          "wins": 163,
+          "losses": 394,
+          "wr": 29.263913824057454,
+          "recovery_exits": 18
+        },
+        {
+          "coin": "DOGE",
+          "pnl": 14.393942998472923,
+          "trades": 557,
+          "wins": 151,
+          "losses": 405,
+          "wr": 27.109515260323157,
+          "recovery_exits": 24
+        },
+        {
+          "coin": "XLM",
+          "pnl": 15.019315507861563,
+          "trades": 553,
+          "wins": 147,
+          "losses": 406,
+          "wr": 26.582278481012654,
+          "recovery_exits": 21
+        },
+        {
+          "coin": "AVAX",
+          "pnl": 17.209651173911382,
+          "trades": 560,
+          "wins": 158,
+          "losses": 401,
+          "wr": 28.214285714285715,
+          "recovery_exits": 25
+        },
+        {
+          "coin": "ALGO",
+          "pnl": 16.520162128100566,
+          "trades": 555,
+          "wins": 140,
+          "losses": 412,
+          "wr": 25.225225225225223,
+          "recovery_exits": 23
+        },
+        {
+          "coin": "BNB",
+          "pnl": 9.139354470768637,
+          "trades": 533,
+          "wins": 159,
+          "losses": 374,
+          "wr": 29.831144465290805,
+          "recovery_exits": 33
+        },
+        {
+          "coin": "BTC",
+          "pnl": 8.982998367558679,
+          "trades": 521,
+          "wins": 177,
+          "losses": 344,
+          "wr": 33.97312859884837,
+          "recovery_exits": 36
+        }
+      ]
+    },
+    {
+      "label": "MB15_MV0.015_GR15",
+      "total_pnl": 288.3169590165455,
+      "portfolio_wr": 26.65129798536634,
+      "total_trades": 9977,
+      "pf": 0.3639474404598961,
+      "is_baseline": false,
+      "recovery_exit_rate": 4.259797534328957,
+      "coins": [
+        {
+          "coin": "DASH",
+          "pnl": 37.99123899773625,
+          "trades": 603,
+          "wins": 125,
+          "losses": 478,
+          "wr": 20.729684908789388,
+          "recovery_exits": 23
+        },
+        {
+          "coin": "UNI",
+          "pnl": 19.51457725868785,
+          "trades": 560,
+          "wins": 140,
+          "losses": 420,
+          "wr": 25.0,
+          "recovery_exits": 25
+        },
+        {
+          "coin": "NEAR",
+          "pnl": 16.648816408818575,
+          "trades": 571,
+          "wins": 132,
+          "losses": 439,
+          "wr": 23.117338003502628,
+          "recovery_exits": 24
+        },
+        {
+          "coin": "ADA",
+          "pnl": 15.75285716329968,
+          "trades": 546,
+          "wins": 142,
+          "losses": 404,
+          "wr": 26.00732600732601,
+          "recovery_exits": 22
+        },
+        {
+          "coin": "LTC",
+          "pnl": 13.03228418102735,
+          "trades": 536,
+          "wins": 148,
+          "losses": 388,
+          "wr": 27.611940298507463,
+          "recovery_exits": 19
+        },
+        {
+          "coin": "SHIB",
+          "pnl": 10.564985361427446,
+          "trades": 563,
+          "wins": 135,
+          "losses": 425,
+          "wr": 23.978685612788635,
+          "recovery_exits": 20
+        },
+        {
+          "coin": "LINK",
+          "pnl": 17.289875962234518,
+          "trades": 544,
+          "wins": 141,
+          "losses": 402,
+          "wr": 25.919117647058826,
+          "recovery_exits": 23
+        },
+        {
+          "coin": "ETH",
+          "pnl": 12.72235150087269,
+          "trades": 536,
+          "wins": 165,
+          "losses": 371,
+          "wr": 30.783582089552237,
+          "recovery_exits": 33
+        },
+        {
+          "coin": "DOT",
+          "pnl": 20.501526915593303,
+          "trades": 564,
+          "wins": 150,
+          "losses": 413,
+          "wr": 26.595744680851062,
+          "recovery_exits": 16
+        },
+        {
+          "coin": "XRP",
+          "pnl": 14.553361856123956,
+          "trades": 561,
+          "wins": 160,
+          "losses": 401,
+          "wr": 28.520499108734406,
+          "recovery_exits": 25
+        },
+        {
+          "coin": "ATOM",
+          "pnl": 13.13256481811959,
+          "trades": 566,
+          "wins": 136,
+          "losses": 427,
+          "wr": 24.02826855123675,
+          "recovery_exits": 29
+        },
+        {
+          "coin": "SOL",
+          "pnl": 15.657857693119212,
+          "trades": 554,
+          "wins": 163,
+          "losses": 391,
+          "wr": 29.422382671480147,
+          "recovery_exits": 16
+        },
+        {
+          "coin": "DOGE",
+          "pnl": 14.335662899552148,
+          "trades": 556,
+          "wins": 151,
+          "losses": 404,
+          "wr": 27.15827338129496,
+          "recovery_exits": 23
+        },
+        {
+          "coin": "XLM",
+          "pnl": 14.765959088924518,
+          "trades": 552,
+          "wins": 145,
+          "losses": 407,
+          "wr": 26.268115942028984,
+          "recovery_exits": 18
+        },
+        {
+          "coin": "AVAX",
+          "pnl": 17.124521894632025,
+          "trades": 559,
+          "wins": 158,
+          "losses": 401,
+          "wr": 28.264758497316638,
+          "recovery_exits": 24
+        },
+        {
+          "coin": "ALGO",
+          "pnl": 16.84692705451691,
+          "trades": 554,
+          "wins": 136,
+          "losses": 415,
+          "wr": 24.548736462093864,
+          "recovery_exits": 19
+        },
+        {
+          "coin": "BNB",
+          "pnl": 9.326418933461724,
+          "trades": 533,
+          "wins": 160,
+          "losses": 373,
+          "wr": 30.0187617260788,
+          "recovery_exits": 30
+        },
+        {
+          "coin": "BTC",
+          "pnl": 8.555171028397822,
+          "trades": 519,
+          "wins": 172,
+          "losses": 347,
+          "wr": 33.140655105973025,
+          "recovery_exits": 36
+        }
+      ]
+    },
+    {
+      "label": "MB15_MV0.020_GR5",
+      "total_pnl": 289.1209865846346,
+      "portfolio_wr": 26.926518842597197,
+      "total_trades": 10057,
+      "pf": 0.369491062900805,
+      "is_baseline": false,
+      "recovery_exit_rate": 5.717410758675549,
+      "coins": [
+        {
+          "coin": "DASH",
+          "pnl": 39.75956936231151,
+          "trades": 603,
+          "wins": 129,
+          "losses": 474,
+          "wr": 21.393034825870647,
+          "recovery_exits": 26
+        },
+        {
+          "coin": "UNI",
+          "pnl": 20.025428651748285,
+          "trades": 565,
+          "wins": 142,
+          "losses": 423,
+          "wr": 25.13274336283186,
+          "recovery_exits": 32
+        },
+        {
+          "coin": "NEAR",
+          "pnl": 16.578600644674097,
+          "trades": 575,
+          "wins": 135,
+          "losses": 439,
+          "wr": 23.47826086956522,
+          "recovery_exits": 28
+        },
+        {
+          "coin": "ADA",
+          "pnl": 15.130544346374123,
+          "trades": 550,
+          "wins": 143,
+          "losses": 407,
+          "wr": 26.0,
+          "recovery_exits": 26
+        },
+        {
+          "coin": "LTC",
+          "pnl": 12.855613163913972,
+          "trades": 540,
+          "wins": 150,
+          "losses": 390,
+          "wr": 27.77777777777778,
+          "recovery_exits": 27
+        },
+        {
+          "coin": "SHIB",
+          "pnl": 10.637086028591668,
+          "trades": 566,
+          "wins": 133,
+          "losses": 428,
+          "wr": 23.498233215547703,
+          "recovery_exits": 28
+        },
+        {
+          "coin": "LINK",
+          "pnl": 16.96329214645013,
+          "trades": 551,
+          "wins": 140,
+          "losses": 406,
+          "wr": 25.40834845735027,
+          "recovery_exits": 33
+        },
+        {
+          "coin": "ETH",
+          "pnl": 12.714158917139017,
+          "trades": 545,
+          "wins": 170,
+          "losses": 375,
+          "wr": 31.19266055045872,
+          "recovery_exits": 47
+        },
+        {
+          "coin": "DOT",
+          "pnl": 21.167071355902664,
+          "trades": 566,
+          "wins": 153,
+          "losses": 412,
+          "wr": 27.03180212014134,
+          "recovery_exits": 23
+        },
+        {
+          "coin": "XRP",
+          "pnl": 14.884147235705186,
+          "trades": 564,
+          "wins": 164,
+          "losses": 400,
+          "wr": 29.078014184397162,
+          "recovery_exits": 37
+        },
+        {
+          "coin": "ATOM",
+          "pnl": 13.254230654376244,
+          "trades": 571,
+          "wins": 143,
+          "losses": 426,
+          "wr": 25.04378283712785,
+          "recovery_exits": 40
+        },
+        {
+          "coin": "SOL",
+          "pnl": 15.713362050364665,
+          "trades": 562,
+          "wins": 169,
+          "losses": 393,
+          "wr": 30.071174377224196,
+          "recovery_exits": 26
+        },
+        {
+          "coin": "DOGE",
+          "pnl": 13.277493299119143,
+          "trades": 563,
+          "wins": 153,
+          "losses": 409,
+          "wr": 27.175843694493786,
+          "recovery_exits": 35
+        },
+        {
+          "coin": "XLM",
+          "pnl": 14.596691198321054,
+          "trades": 559,
+          "wins": 147,
+          "losses": 412,
+          "wr": 26.29695885509839,
+          "recovery_exits": 33
+        },
+        {
+          "coin": "AVAX",
+          "pnl": 17.573051036694082,
+          "trades": 561,
+          "wins": 162,
+          "losses": 398,
+          "wr": 28.87700534759358,
+          "recovery_exits": 25
+        },
+        {
+          "coin": "ALGO",
+          "pnl": 16.044612993134223,
+          "trades": 557,
+          "wins": 139,
+          "losses": 414,
+          "wr": 24.95511669658887,
+          "recovery_exits": 28
+        },
+        {
+          "coin": "BNB",
+          "pnl": 8.933043063227046,
+          "trades": 536,
+          "wins": 159,
+          "losses": 377,
+          "wr": 29.66417910447761,
+          "recovery_exits": 40
+        },
+        {
+          "coin": "BTC",
+          "pnl": 9.0129904365875,
+          "trades": 523,
+          "wins": 177,
+          "losses": 346,
+          "wr": 33.84321223709369,
+          "recovery_exits": 41
+        }
+      ]
+    },
+    {
+      "label": "MB15_MV0.020_GR10",
+      "total_pnl": 288.6605506996534,
+      "portfolio_wr": 26.834862385321102,
+      "total_trades": 10028,
+      "pf": 0.36762295081967217,
+      "is_baseline": false,
+      "recovery_exit_rate": 5.095731950538492,
+      "coins": [
+        {
+          "coin": "DASH",
+          "pnl": 38.761801524916734,
+          "trades": 603,
+          "wins": 128,
+          "losses": 475,
+          "wr": 21.22719734660033,
+          "recovery_exits": 26
+        },
+        {
+          "coin": "UNI",
+          "pnl": 19.943374577132886,
+          "trades": 563,
+          "wins": 142,
+          "losses": 421,
+          "wr": 25.22202486678508,
+          "recovery_exits": 29
+        },
+        {
+          "coin": "NEAR",
+          "pnl": 16.705327755057212,
+          "trades": 574,
+          "wins": 135,
+          "losses": 439,
+          "wr": 23.519163763066203,
+          "recovery_exits": 27
+        },
+        {
+          "coin": "ADA",
+          "pnl": 15.069974110216975,
+          "trades": 550,
+          "wins": 142,
+          "losses": 408,
+          "wr": 25.818181818181817,
+          "recovery_exits": 26
+        },
+        {
+          "coin": "LTC",
+          "pnl": 13.086872458433675,
+          "trades": 538,
+          "wins": 149,
+          "losses": 389,
+          "wr": 27.695167286245354,
+          "recovery_exits": 25
+        },
+        {
+          "coin": "SHIB",
+          "pnl": 10.548159344213772,
+          "trades": 565,
+          "wins": 134,
+          "losses": 427,
+          "wr": 23.716814159292035,
+          "recovery_exits": 24
+        },
+        {
+          "coin": "LINK",
+          "pnl": 16.854613447280215,
+          "trades": 548,
+          "wins": 141,
+          "losses": 403,
+          "wr": 25.72992700729927,
+          "recovery_exits": 28
+        },
+        {
+          "coin": "ETH",
+          "pnl": 12.212629896580367,
+          "trades": 542,
+          "wins": 167,
+          "losses": 375,
+          "wr": 30.81180811808118,
+          "recovery_exits": 44
+        },
+        {
+          "coin": "DOT",
+          "pnl": 21.029213805127412,
+          "trades": 564,
+          "wins": 152,
+          "losses": 411,
+          "wr": 26.95035460992908,
+          "recovery_exits": 18
+        },
+        {
+          "coin": "XRP",
+          "pnl": 14.962687698287851,
+          "trades": 563,
+          "wins": 162,
+          "losses": 401,
+          "wr": 28.774422735346363,
+          "recovery_exits": 30
+        },
+        {
+          "coin": "ATOM",
+          "pnl": 12.969715306303499,
+          "trades": 570,
+          "wins": 139,
+          "losses": 428,
+          "wr": 24.385964912280702,
+          "recovery_exits": 37
+        },
+        {
+          "coin": "SOL",
+          "pnl": 15.809602462727739,
+          "trades": 560,
+          "wins": 166,
+          "losses": 394,
+          "wr": 29.642857142857142,
+          "recovery_exits": 23
+        },
+        {
+          "coin": "DOGE",
+          "pnl": 13.629873979217791,
+          "trades": 560,
+          "wins": 151,
+          "losses": 408,
+          "wr": 26.96428571428571,
+          "recovery_exits": 29
+        },
+        {
+          "coin": "XLM",
+          "pnl": 15.091742261091,
+          "trades": 556,
+          "wins": 147,
+          "losses": 409,
+          "wr": 26.43884892086331,
+          "recovery_exits": 24
+        },
+        {
+          "coin": "AVAX",
+          "pnl": 17.311749966592117,
+          "trades": 561,
+          "wins": 160,
+          "losses": 400,
+          "wr": 28.520499108734406,
+          "recovery_exits": 26
+        },
+        {
+          "coin": "ALGO",
+          "pnl": 16.533529177056877,
+          "trades": 556,
+          "wins": 140,
+          "losses": 413,
+          "wr": 25.179856115107913,
+          "recovery_exits": 23
+        },
+        {
+          "coin": "BNB",
+          "pnl": 9.149178732918145,
+          "trades": 533,
+          "wins": 159,
+          "losses": 374,
+          "wr": 29.831144465290805,
+          "recovery_exits": 34
+        },
+        {
+          "coin": "BTC",
+          "pnl": 8.99050419649916,
+          "trades": 522,
+          "wins": 177,
+          "losses": 345,
+          "wr": 33.90804597701149,
+          "recovery_exits": 38
+        }
+      ]
+    },
+    {
+      "label": "MB15_MV0.020_GR15",
+      "total_pnl": 288.1823278750139,
+      "portfolio_wr": 26.696696696696698,
+      "total_trades": 9990,
+      "pf": 0.3649924729711236,
+      "is_baseline": false,
+      "recovery_exit_rate": 4.544544544544545,
+      "coins": [
+        {
+          "coin": "DASH",
+          "pnl": 38.14103321950421,
+          "trades": 603,
+          "wins": 126,
+          "losses": 477,
+          "wr": 20.8955223880597,
+          "recovery_exits": 23
+        },
+        {
+          "coin": "UNI",
+          "pnl": 19.51457725868785,
+          "trades": 560,
+          "wins": 140,
+          "losses": 420,
+          "wr": 25.0,
+          "recovery_exits": 25
+        },
+        {
+          "coin": "NEAR",
+          "pnl": 16.559411166944116,
+          "trades": 571,
+          "wins": 133,
+          "losses": 438,
+          "wr": 23.29246935201401,
+          "recovery_exits": 25
+        },
+        {
+          "coin": "ADA",
+          "pnl": 15.58061635987221,
+          "trades": 546,
+          "wins": 142,
+          "losses": 404,
+          "wr": 26.00732600732601,
+          "recovery_exits": 24
+        },
+        {
+          "coin": "LTC",
+          "pnl": 12.64398888302523,
+          "trades": 537,
+          "wins": 147,
+          "losses": 390,
+          "wr": 27.37430167597765,
+          "recovery_exits": 22
+        },
+        {
+          "coin": "SHIB",
+          "pnl": 10.58722330776115,
+          "trades": 564,
+          "wins": 135,
+          "losses": 425,
+          "wr": 23.93617021276596,
+          "recovery_exits": 22
+        },
+        {
+          "coin": "LINK",
+          "pnl": 16.561240189335194,
+          "trades": 545,
+          "wins": 138,
+          "losses": 404,
+          "wr": 25.321100917431195,
+          "recovery_exits": 26
+        },
+        {
+          "coin": "ETH",
+          "pnl": 12.67845315425032,
+          "trades": 538,
+          "wins": 168,
+          "losses": 370,
+          "wr": 31.226765799256505,
+          "recovery_exits": 36
+        },
+        {
+          "coin": "DOT",
+          "pnl": 20.77227624935182,
+          "trades": 564,
+          "wins": 151,
+          "losses": 412,
+          "wr": 26.773049645390074,
+          "recovery_exits": 18
+        },
+        {
+          "coin": "XRP",
+          "pnl": 14.635516544582956,
+          "trades": 561,
+          "wins": 160,
+          "losses": 401,
+          "wr": 28.520499108734406,
+          "recovery_exits": 27
+        },
+        {
+          "coin": "ATOM",
+          "pnl": 13.140728463972948,
+          "trades": 567,
+          "wins": 137,
+          "losses": 427,
+          "wr": 24.16225749559083,
+          "recovery_exits": 31
+        },
+        {
+          "coin": "SOL",
+          "pnl": 15.494881339069593,
+          "trades": 558,
+          "wins": 163,
+          "losses": 395,
+          "wr": 29.211469534050178,
+          "recovery_exits": 19
+        },
+        {
+          "coin": "DOGE",
+          "pnl": 14.335662899552148,
+          "trades": 556,
+          "wins": 151,
+          "losses": 404,
+          "wr": 27.15827338129496,
+          "recovery_exits": 23
+        },
+        {
+          "coin": "XLM",
+          "pnl": 14.971411760641757,
+          "trades": 553,
+          "wins": 145,
+          "losses": 408,
+          "wr": 26.220614828209765,
+          "recovery_exits": 20
+        },
+        {
+          "coin": "AVAX",
+          "pnl": 17.36431106710988,
+          "trades": 560,
+          "wins": 160,
+          "losses": 399,
+          "wr": 28.57142857142857,
+          "recovery_exits": 26
+        },
+        {
+          "coin": "ALGO",
+          "pnl": 17.369454013050046,
+          "trades": 555,
+          "wins": 138,
+          "losses": 414,
+          "wr": 24.864864864864867,
+          "recovery_exits": 19
+        },
+        {
+          "coin": "BNB",
+          "pnl": 9.258779980100357,
+          "trades": 533,
+          "wins": 160,
+          "losses": 373,
+          "wr": 30.0187617260788,
+          "recovery_exits": 32
+        },
+        {
+          "coin": "BTC",
+          "pnl": 8.572762018202084,
+          "trades": 519,
+          "wins": 173,
+          "losses": 346,
+          "wr": 33.33333333333333,
+          "recovery_exits": 36
+        }
+      ]
+    },
+    {
+      "label": "MB15_MV0.025_GR5",
+      "total_pnl": 289.568920418115,
+      "portfolio_wr": 27.165743670886076,
+      "total_trades": 10112,
+      "pf": 0.37419970031330874,
+      "is_baseline": false,
+      "recovery_exit_rate": 6.339003164556963,
+      "coins": [
+        {
+          "coin": "DASH",
+          "pnl": 41.1026733850492,
+          "trades": 606,
+          "wins": 135,
+          "losses": 471,
+          "wr": 22.277227722772277,
+          "recovery_exits": 30
+        },
+        {
+          "coin": "UNI",
+          "pnl": 19.436743723658893,
+          "trades": 570,
+          "wins": 142,
+          "losses": 428,
+          "wr": 24.912280701754387,
+          "recovery_exits": 36
+        },
+        {
+          "coin": "NEAR",
+          "pnl": 17.03250576490602,
+          "trades": 579,
+          "wins": 138,
+          "losses": 440,
+          "wr": 23.83419689119171,
+          "recovery_exits": 32
+        },
+        {
+          "coin": "ADA",
+          "pnl": 15.139538228256328,
+          "trades": 555,
+          "wins": 146,
+          "losses": 408,
+          "wr": 26.306306306306304,
+          "recovery_exits": 30
+        },
+        {
+          "coin": "LTC",
+          "pnl": 12.686859369565667,
+          "trades": 542,
+          "wins": 152,
+          "losses": 390,
+          "wr": 28.044280442804425,
+          "recovery_exits": 30
+        },
+        {
+          "coin": "SHIB",
+          "pnl": 9.981033975623575,
+          "trades": 572,
+          "wins": 137,
+          "losses": 429,
+          "wr": 23.95104895104895,
+          "recovery_exits": 35
+        },
+        {
+          "coin": "LINK",
+          "pnl": 16.673144728982606,
+          "trades": 553,
+          "wins": 140,
+          "losses": 408,
+          "wr": 25.31645569620253,
+          "recovery_exits": 37
+        },
+        {
+          "coin": "ETH",
+          "pnl": 12.447043211398565,
+          "trades": 552,
+          "wins": 171,
+          "losses": 381,
+          "wr": 30.978260869565215,
+          "recovery_exits": 52
+        },
+        {
+          "coin": "DOT",
+          "pnl": 20.665320382445728,
+          "trades": 568,
+          "wins": 154,
+          "losses": 412,
+          "wr": 27.11267605633803,
+          "recovery_exits": 30
+        },
+        {
+          "coin": "XRP",
+          "pnl": 15.27133587974248,
+          "trades": 566,
+          "wins": 165,
+          "losses": 400,
+          "wr": 29.151943462897528,
+          "recovery_exits": 36
+        },
+        {
+          "coin": "ATOM",
+          "pnl": 13.835188361284963,
+          "trades": 572,
+          "wins": 146,
+          "losses": 425,
+          "wr": 25.524475524475527,
+          "recovery_exits": 41
+        },
+        {
+          "coin": "SOL",
+          "pnl": 15.401354223554492,
+          "trades": 565,
+          "wins": 170,
+          "losses": 395,
+          "wr": 30.08849557522124,
+          "recovery_exits": 32
+        },
+        {
+          "coin": "DOGE",
+          "pnl": 13.593969196006654,
+          "trades": 563,
+          "wins": 155,
+          "losses": 406,
+          "wr": 27.53108348134991,
+          "recovery_exits": 35
+        },
+        {
+          "coin": "XLM",
+          "pnl": 14.621716832770602,
+          "trades": 561,
+          "wins": 148,
+          "losses": 413,
+          "wr": 26.38146167557932,
+          "recovery_exits": 36
+        },
+        {
+          "coin": "AVAX",
+          "pnl": 17.655833748175056,
+          "trades": 563,
+          "wins": 165,
+          "losses": 397,
+          "wr": 29.307282415630553,
+          "recovery_exits": 28
+        },
+        {
+          "coin": "ALGO",
+          "pnl": 15.673146580094027,
+          "trades": 561,
+          "wins": 140,
+          "losses": 417,
+          "wr": 24.9554367201426,
+          "recovery_exits": 33
+        },
+        {
+          "coin": "BNB",
+          "pnl": 9.241071560370543,
+          "trades": 539,
+          "wins": 164,
+          "losses": 375,
+          "wr": 30.426716141001855,
+          "recovery_exits": 41
+        },
+        {
+          "coin": "BTC",
+          "pnl": 9.110441266229614,
+          "trades": 525,
+          "wins": 179,
+          "losses": 346,
+          "wr": 34.095238095238095,
+          "recovery_exits": 47
+        }
+      ]
+    },
+    {
+      "label": "MB15_MV0.025_GR10",
+      "total_pnl": 288.3956210056225,
+      "portfolio_wr": 26.888667992047715,
+      "total_trades": 10060,
+      "pf": 0.36867929671527877,
+      "is_baseline": false,
+      "recovery_exit_rate": 5.606361829025845,
+      "coins": [
+        {
+          "coin": "DASH",
+          "pnl": 39.827854208094635,
+          "trades": 603,
+          "wins": 129,
+          "losses": 474,
+          "wr": 21.393034825870647,
+          "recovery_exits": 26
+        },
+        {
+          "coin": "UNI",
+          "pnl": 19.97504552355568,
+          "trades": 565,
+          "wins": 142,
+          "losses": 423,
+          "wr": 25.13274336283186,
+          "recovery_exits": 32
+        },
+        {
+          "coin": "NEAR",
+          "pnl": 17.172293033470822,
+          "trades": 576,
+          "wins": 138,
+          "losses": 437,
+          "wr": 23.958333333333336,
+          "recovery_exits": 28
+        },
+        {
+          "coin": "ADA",
+          "pnl": 15.086503590086267,
+          "trades": 550,
+          "wins": 142,
+          "losses": 408,
+          "wr": 25.818181818181817,
+          "recovery_exits": 26
+        },
+        {
+          "coin": "LTC",
+          "pnl": 12.796404929332269,
+          "trades": 541,
+          "wins": 151,
+          "losses": 390,
+          "wr": 27.911275415896487,
+          "recovery_exits": 28
+        },
+        {
+          "coin": "SHIB",
+          "pnl": 9.968579045292302,
+          "trades": 567,
+          "wins": 132,
+          "losses": 430,
+          "wr": 23.28042328042328,
+          "recovery_exits": 26
+        },
+        {
+          "coin": "LINK",
+          "pnl": 16.777098133728288,
+          "trades": 550,
+          "wins": 140,
+          "losses": 406,
+          "wr": 25.454545454545453,
+          "recovery_exits": 32
+        },
+        {
+          "coin": "ETH",
+          "pnl": 12.546036078151133,
+          "trades": 546,
+          "wins": 169,
+          "losses": 377,
+          "wr": 30.952380952380953,
+          "recovery_exits": 47
+        },
+        {
+          "coin": "DOT",
+          "pnl": 20.801356874392,
+          "trades": 566,
+          "wins": 151,
+          "losses": 414,
+          "wr": 26.67844522968198,
+          "recovery_exits": 22
+        },
+        {
+          "coin": "XRP",
+          "pnl": 14.81100513791209,
+          "trades": 564,
+          "wins": 163,
+          "losses": 401,
+          "wr": 28.900709219858157,
+          "recovery_exits": 36
+        },
+        {
+          "coin": "ATOM",
+          "pnl": 13.228694187486894,
+          "trades": 572,
+          "wins": 143,
+          "losses": 427,
+          "wr": 25.0,
+          "recovery_exits": 41
+        },
+        {
+          "coin": "SOL",
+          "pnl": 15.639466176348066,
+          "trades": 562,
+          "wins": 168,
+          "losses": 394,
+          "wr": 29.8932384341637,
+          "recovery_exits": 25
+        },
+        {
+          "coin": "DOGE",
+          "pnl": 13.372012171854351,
+          "trades": 563,
+          "wins": 153,
+          "losses": 409,
+          "wr": 27.175843694493786,
+          "recovery_exits": 34
+        },
+        {
+          "coin": "XLM",
+          "pnl": 14.598945893041844,
+          "trades": 558,
+          "wins": 145,
+          "losses": 413,
+          "wr": 25.985663082437277,
+          "recovery_exits": 30
+        },
+        {
+          "coin": "AVAX",
+          "pnl": 17.185650514392748,
+          "trades": 563,
+          "wins": 160,
+          "losses": 402,
+          "wr": 28.419182948490228,
+          "recovery_exits": 27
+        },
+        {
+          "coin": "ALGO",
+          "pnl": 16.383004067070956,
+          "trades": 558,
+          "wins": 142,
+          "losses": 413,
+          "wr": 25.448028673835125,
+          "recovery_exits": 28
+        },
+        {
+          "coin": "BNB",
+          "pnl": 9.211900966310836,
+          "trades": 533,
+          "wins": 160,
+          "losses": 373,
+          "wr": 30.0187617260788,
+          "recovery_exits": 35
+        },
+        {
+          "coin": "BTC",
+          "pnl": 9.01377047510131,
+          "trades": 523,
+          "wins": 177,
+          "losses": 346,
+          "wr": 33.84321223709369,
+          "recovery_exits": 41
+        }
+      ]
+    },
+    {
+      "label": "MB15_MV0.025_GR15",
+      "total_pnl": 287.8339040461007,
+      "portfolio_wr": 26.79177480535037,
+      "total_trades": 10018,
+      "pf": 0.3667668761956818,
+      "is_baseline": false,
+      "recovery_exit_rate": 4.891195847474545,
+      "coins": [
+        {
+          "coin": "DASH",
+          "pnl": 38.14292261231239,
+          "trades": 603,
+          "wins": 126,
+          "losses": 477,
+          "wr": 20.8955223880597,
+          "recovery_exits": 23
+        },
+        {
+          "coin": "UNI",
+          "pnl": 19.86297689190998,
+          "trades": 563,
+          "wins": 141,
+          "losses": 422,
+          "wr": 25.044404973357015,
+          "recovery_exits": 27
+        },
+        {
+          "coin": "NEAR",
+          "pnl": 16.58381834608265,
+          "trades": 573,
+          "wins": 134,
+          "losses": 439,
+          "wr": 23.38568935427574,
+          "recovery_exits": 26
+        },
+        {
+          "coin": "ADA",
+          "pnl": 15.269775580564882,
+          "trades": 549,
+          "wins": 142,
+          "losses": 407,
+          "wr": 25.865209471766846,
+          "recovery_exits": 25
+        },
+        {
+          "coin": "LTC",
+          "pnl": 12.924348743930011,
+          "trades": 538,
+          "wins": 148,
+          "losses": 390,
+          "wr": 27.509293680297397,
+          "recovery_exits": 24
+        },
+        {
+          "coin": "SHIB",
+          "pnl": 10.235040000026771,
+          "trades": 566,
+          "wins": 134,
+          "losses": 428,
+          "wr": 23.674911660777383,
+          "recovery_exits": 25
+        },
+        {
+          "coin": "LINK",
+          "pnl": 16.534445241882693,
+          "trades": 546,
+          "wins": 139,
+          "losses": 404,
+          "wr": 25.457875457875456,
+          "recovery_exits": 28
+        },
+        {
+          "coin": "ETH",
+          "pnl": 12.394583060487975,
+          "trades": 540,
+          "wins": 168,
+          "losses": 372,
+          "wr": 31.11111111111111,
+          "recovery_exits": 40
+        },
+        {
+          "coin": "DOT",
+          "pnl": 21.029213805127412,
+          "trades": 564,
+          "wins": 152,
+          "losses": 411,
+          "wr": 26.95035460992908,
+          "recovery_exits": 18
+        },
+        {
+          "coin": "XRP",
+          "pnl": 14.982796542864051,
+          "trades": 562,
+          "wins": 162,
+          "losses": 400,
+          "wr": 28.825622775800714,
+          "recovery_exits": 29
+        },
+        {
+          "coin": "ATOM",
+          "pnl": 13.082886874559634,
+          "trades": 569,
+          "wins": 138,
+          "losses": 428,
+          "wr": 24.253075571177504,
+          "recovery_exits": 35
+        },
+        {
+          "coin": "SOL",
+          "pnl": 15.947682913864497,
+          "trades": 559,
+          "wins": 166,
+          "losses": 393,
+          "wr": 29.695885509838998,
+          "recovery_exits": 21
+        },
+        {
+          "coin": "DOGE",
+          "pnl": 13.862453156992856,
+          "trades": 559,
+          "wins": 150,
+          "losses": 408,
+          "wr": 26.833631484794275,
+          "recovery_exits": 25
+        },
+        {
+          "coin": "XLM",
+          "pnl": 14.877574185521098,
+          "trades": 555,
+          "wins": 147,
+          "losses": 408,
+          "wr": 26.486486486486488,
+          "recovery_exits": 24
+        },
+        {
+          "coin": "AVAX",
+          "pnl": 17.311749966592117,
+          "trades": 561,
+          "wins": 160,
+          "losses": 400,
+          "wr": 28.520499108734406,
+          "recovery_exits": 26
+        },
+        {
+          "coin": "ALGO",
+          "pnl": 16.533529177056877,
+          "trades": 556,
+          "wins": 140,
+          "losses": 413,
+          "wr": 25.179856115107913,
+          "recovery_exits": 23
+        },
+        {
+          "coin": "BNB",
+          "pnl": 9.282075862831576,
+          "trades": 533,
+          "wins": 160,
+          "losses": 373,
+          "wr": 30.0187617260788,
+          "recovery_exits": 33
+        },
+        {
+          "coin": "BTC",
+          "pnl": 8.976031083493254,
+          "trades": 522,
+          "wins": 177,
+          "losses": 345,
+          "wr": 33.90804597701149,
+          "recovery_exits": 38
+        }
+      ]
+    },
+    {
+      "label": "MB20_MV0.010_GR5",
+      "total_pnl": 287.5554477432519,
+      "portfolio_wr": 26.64526484751204,
+      "total_trades": 9968,
+      "pf": 0.3638356164383561,
+      "is_baseline": false,
+      "recovery_exit_rate": 3.982744783306581,
+      "coins": [
+        {
+          "coin": "DASH",
+          "pnl": 37.74896192290774,
+          "trades": 601,
+          "wins": 124,
+          "losses": 477,
+          "wr": 20.632279534109816,
+          "recovery_exits": 22
+        },
+        {
+          "coin": "UNI",
+          "pnl": 19.51457725868785,
+          "trades": 560,
+          "wins": 140,
+          "losses": 420,
+          "wr": 25.0,
+          "recovery_exits": 25
+        },
+        {
+          "coin": "NEAR",
+          "pnl": 16.847402357409777,
+          "trades": 571,
+          "wins": 131,
+          "losses": 440,
+          "wr": 22.942206654991242,
+          "recovery_exits": 22
+        },
+        {
+          "coin": "ADA",
+          "pnl": 15.383782894493208,
+          "trades": 545,
+          "wins": 141,
+          "losses": 404,
+          "wr": 25.871559633027523,
+          "recovery_exits": 15
+        },
+        {
+          "coin": "LTC",
+          "pnl": 13.074355509358085,
+          "trades": 536,
+          "wins": 148,
+          "losses": 388,
+          "wr": 27.611940298507463,
+          "recovery_exits": 18
+        },
+        {
+          "coin": "SHIB",
+          "pnl": 10.56273642296459,
+          "trades": 564,
+          "wins": 135,
+          "losses": 425,
+          "wr": 23.93617021276596,
+          "recovery_exits": 21
+        },
+        {
+          "coin": "LINK",
+          "pnl": 17.022853674484438,
+          "trades": 543,
+          "wins": 140,
+          "losses": 402,
+          "wr": 25.78268876611418,
+          "recovery_exits": 23
+        },
+        {
+          "coin": "ETH",
+          "pnl": 12.169003384093799,
+          "trades": 536,
+          "wins": 163,
+          "losses": 373,
+          "wr": 30.410447761194032,
+          "recovery_exits": 29
+        },
+        {
+          "coin": "DOT",
+          "pnl": 20.482401761583034,
+          "trades": 564,
+          "wins": 150,
+          "losses": 413,
+          "wr": 26.595744680851062,
+          "recovery_exits": 15
+        },
+        {
+          "coin": "XRP",
+          "pnl": 14.586158245993843,
+          "trades": 561,
+          "wins": 160,
+          "losses": 401,
+          "wr": 28.520499108734406,
+          "recovery_exits": 26
+        },
+        {
+          "coin": "ATOM",
+          "pnl": 13.128848524818821,
+          "trades": 567,
+          "wins": 139,
+          "losses": 426,
+          "wr": 24.514991181657848,
+          "recovery_exits": 29
+        },
+        {
+          "coin": "SOL",
+          "pnl": 15.44236789226855,
+          "trades": 556,
+          "wins": 162,
+          "losses": 394,
+          "wr": 29.136690647482016,
+          "recovery_exits": 17
+        },
+        {
+          "coin": "DOGE",
+          "pnl": 14.157691064506153,
+          "trades": 556,
+          "wins": 150,
+          "losses": 405,
+          "wr": 26.978417266187048,
+          "recovery_exits": 21
+        },
+        {
+          "coin": "XLM",
+          "pnl": 14.51365241833328,
+          "trades": 551,
+          "wins": 145,
+          "losses": 406,
+          "wr": 26.31578947368421,
+          "recovery_exits": 16
+        },
+        {
+          "coin": "AVAX",
+          "pnl": 17.15835824358321,
+          "trades": 558,
+          "wins": 158,
+          "losses": 400,
+          "wr": 28.31541218637993,
+          "recovery_exits": 23
+        },
+        {
+          "coin": "ALGO",
+          "pnl": 17.160050231529112,
+          "trades": 551,
+          "wins": 136,
+          "losses": 412,
+          "wr": 24.682395644283122,
+          "recovery_exits": 18
+        },
+        {
+          "coin": "BNB",
+          "pnl": 9.440726723995269,
+          "trades": 530,
+          "wins": 157,
+          "losses": 373,
+          "wr": 29.62264150943396,
+          "recovery_exits": 26
+        },
+        {
+          "coin": "BTC",
+          "pnl": 9.161519212241089,
+          "trades": 518,
+          "wins": 177,
+          "losses": 341,
+          "wr": 34.16988416988417,
+          "recovery_exits": 31
+        }
+      ]
+    },
+    {
+      "label": "MB20_MV0.010_GR10",
+      "total_pnl": 289.081616011541,
+      "portfolio_wr": 26.592964824120603,
+      "total_trades": 9950,
+      "pf": 0.3627639155470249,
+      "is_baseline": false,
+      "recovery_exit_rate": 3.7185929648241203,
+      "coins": [
+        {
+          "coin": "DASH",
+          "pnl": 38.10937712598218,
+          "trades": 601,
+          "wins": 123,
+          "losses": 478,
+          "wr": 20.465890183028286,
+          "recovery_exits": 18
+        },
+        {
+          "coin": "UNI",
+          "pnl": 19.51457725868785,
+          "trades": 560,
+          "wins": 140,
+          "losses": 420,
+          "wr": 25.0,
+          "recovery_exits": 25
+        },
+        {
+          "coin": "NEAR",
+          "pnl": 16.85616006149361,
+          "trades": 570,
+          "wins": 131,
+          "losses": 439,
+          "wr": 22.982456140350877,
+          "recovery_exits": 21
+        },
+        {
+          "coin": "ADA",
+          "pnl": 15.382701543881723,
+          "trades": 545,
+          "wins": 141,
+          "losses": 404,
+          "wr": 25.871559633027523,
+          "recovery_exits": 14
+        },
+        {
+          "coin": "LTC",
+          "pnl": 13.048979882259431,
+          "trades": 535,
+          "wins": 148,
+          "losses": 387,
+          "wr": 27.663551401869157,
+          "recovery_exits": 17
+        },
+        {
+          "coin": "SHIB",
+          "pnl": 10.471038635284444,
+          "trades": 562,
+          "wins": 133,
+          "losses": 427,
+          "wr": 23.665480427046262,
+          "recovery_exits": 17
+        },
+        {
+          "coin": "LINK",
+          "pnl": 17.26012628939621,
+          "trades": 543,
+          "wins": 140,
+          "losses": 402,
+          "wr": 25.78268876611418,
+          "recovery_exits": 22
+        },
+        {
+          "coin": "ETH",
+          "pnl": 12.409320900576418,
+          "trades": 534,
+          "wins": 161,
+          "losses": 373,
+          "wr": 30.1498127340824,
+          "recovery_exits": 26
+        },
+        {
+          "coin": "DOT",
+          "pnl": 20.482401761583034,
+          "trades": 564,
+          "wins": 150,
+          "losses": 413,
+          "wr": 26.595744680851062,
+          "recovery_exits": 15
+        },
+        {
+          "coin": "XRP",
+          "pnl": 14.606986674699641,
+          "trades": 561,
+          "wins": 160,
+          "losses": 401,
+          "wr": 28.520499108734406,
+          "recovery_exits": 25
+        },
+        {
+          "coin": "ATOM",
+          "pnl": 12.98326180212942,
+          "trades": 565,
+          "wins": 135,
+          "losses": 428,
+          "wr": 23.893805309734514,
+          "recovery_exits": 27
+        },
+        {
+          "coin": "SOL",
+          "pnl": 15.657857693119212,
+          "trades": 554,
+          "wins": 163,
+          "losses": 391,
+          "wr": 29.422382671480147,
+          "recovery_exits": 16
+        },
+        {
+          "coin": "DOGE",
+          "pnl": 14.350047560104471,
+          "trades": 555,
+          "wins": 150,
+          "losses": 404,
+          "wr": 27.027027027027028,
+          "recovery_exits": 20
+        },
+        {
+          "coin": "XLM",
+          "pnl": 14.437946724812832,
+          "trades": 549,
+          "wins": 144,
+          "losses": 405,
+          "wr": 26.229508196721312,
+          "recovery_exits": 15
+        },
+        {
+          "coin": "AVAX",
+          "pnl": 17.15835824358321,
+          "trades": 558,
+          "wins": 158,
+          "losses": 400,
+          "wr": 28.31541218637993,
+          "recovery_exits": 23
+        },
+        {
+          "coin": "ALGO",
+          "pnl": 17.150241118147363,
+          "trades": 551,
+          "wins": 136,
+          "losses": 412,
+          "wr": 24.682395644283122,
+          "recovery_exits": 18
+        },
+        {
+          "coin": "BNB",
+          "pnl": 9.99719663121624,
+          "trades": 529,
+          "wins": 158,
+          "losses": 371,
+          "wr": 29.867674858223065,
+          "recovery_exits": 23
+        },
+        {
+          "coin": "BTC",
+          "pnl": 9.205036104583712,
+          "trades": 514,
+          "wins": 175,
+          "losses": 339,
+          "wr": 34.04669260700389,
+          "recovery_exits": 28
+        }
+      ]
+    },
+    {
+      "label": "MB20_MV0.010_GR15",
+      "total_pnl": 290.4624750247401,
+      "portfolio_wr": 26.590177133655395,
+      "total_trades": 9936,
+      "pf": 0.3627127951674904,
+      "is_baseline": false,
+      "recovery_exit_rate": 3.542673107890499,
+      "coins": [
+        {
+          "coin": "DASH",
+          "pnl": 39.20309825626933,
+          "trades": 599,
+          "wins": 123,
+          "losses": 476,
+          "wr": 20.534223706176963,
+          "recovery_exits": 16
+        },
+        {
+          "coin": "UNI",
+          "pnl": 19.43216694437392,
+          "trades": 560,
+          "wins": 140,
+          "losses": 420,
+          "wr": 25.0,
+          "recovery_exits": 25
+        },
+        {
+          "coin": "NEAR",
+          "pnl": 16.848605845961785,
+          "trades": 570,
+          "wins": 131,
+          "losses": 439,
+          "wr": 22.982456140350877,
+          "recovery_exits": 21
+        },
+        {
+          "coin": "ADA",
+          "pnl": 15.62719148895279,
+          "trades": 544,
+          "wins": 141,
+          "losses": 403,
+          "wr": 25.919117647058826,
+          "recovery_exits": 13
+        },
+        {
+          "coin": "LTC",
+          "pnl": 13.19616302234337,
+          "trades": 534,
+          "wins": 148,
+          "losses": 386,
+          "wr": 27.715355805243448,
+          "recovery_exits": 17
+        },
+        {
+          "coin": "SHIB",
+          "pnl": 10.357073369823638,
+          "trades": 561,
+          "wins": 132,
+          "losses": 427,
+          "wr": 23.52941176470588,
+          "recovery_exits": 16
+        },
+        {
+          "coin": "LINK",
+          "pnl": 17.173871457632345,
+          "trades": 542,
+          "wins": 139,
+          "losses": 402,
+          "wr": 25.645756457564577,
+          "recovery_exits": 21
+        },
+        {
+          "coin": "ETH",
+          "pnl": 12.412019247850452,
+          "trades": 533,
+          "wins": 161,
+          "losses": 372,
+          "wr": 30.206378986866795,
+          "recovery_exits": 25
+        },
+        {
+          "coin": "DOT",
+          "pnl": 20.274187671115584,
+          "trades": 563,
+          "wins": 149,
+          "losses": 413,
+          "wr": 26.465364120781526,
+          "recovery_exits": 14
+        },
+        {
+          "coin": "XRP",
+          "pnl": 14.717404429449616,
+          "trades": 561,
+          "wins": 160,
+          "losses": 401,
+          "wr": 28.520499108734406,
+          "recovery_exits": 24
+        },
+        {
+          "coin": "ATOM",
+          "pnl": 12.76750728550303,
+          "trades": 564,
+          "wins": 132,
+          "losses": 430,
+          "wr": 23.404255319148938,
+          "recovery_exits": 25
+        },
+        {
+          "coin": "SOL",
+          "pnl": 15.657857693119212,
+          "trades": 554,
+          "wins": 163,
+          "losses": 391,
+          "wr": 29.422382671480147,
+          "recovery_exits": 16
+        },
+        {
+          "coin": "DOGE",
+          "pnl": 14.350047560104471,
+          "trades": 555,
+          "wins": 150,
+          "losses": 404,
+          "wr": 27.027027027027028,
+          "recovery_exits": 20
+        },
+        {
+          "coin": "XLM",
+          "pnl": 14.27422623149458,
+          "trades": 549,
+          "wins": 144,
+          "losses": 405,
+          "wr": 26.229508196721312,
+          "recovery_exits": 15
+        },
+        {
+          "coin": "AVAX",
+          "pnl": 17.111560417242842,
+          "trades": 557,
+          "wins": 157,
+          "losses": 400,
+          "wr": 28.186714542190305,
+          "recovery_exits": 22
+        },
+        {
+          "coin": "ALGO",
+          "pnl": 17.299593082121845,
+          "trades": 550,
+          "wins": 136,
+          "losses": 411,
+          "wr": 24.727272727272727,
+          "recovery_exits": 17
+        },
+        {
+          "coin": "BNB",
+          "pnl": 10.461818874247498,
+          "trades": 526,
+          "wins": 161,
+          "losses": 365,
+          "wr": 30.60836501901141,
+          "recovery_exits": 19
+        },
+        {
+          "coin": "BTC",
+          "pnl": 9.298082147133783,
+          "trades": 514,
+          "wins": 175,
+          "losses": 339,
+          "wr": 34.04669260700389,
+          "recovery_exits": 26
+        }
+      ]
+    },
+    {
+      "label": "MB20_MV0.015_GR5",
+      "total_pnl": 289.30871800875457,
+      "portfolio_wr": 26.899240303878447,
+      "total_trades": 10004,
+      "pf": 0.36863013698630137,
+      "is_baseline": false,
+      "recovery_exit_rate": 4.568172730907636,
+      "coins": [
+        {
+          "coin": "DASH",
+          "pnl": 38.665543282066636,
+          "trades": 601,
+          "wins": 127,
+          "losses": 474,
+          "wr": 21.13144758735441,
+          "recovery_exits": 22
+        },
+        {
+          "coin": "UNI",
+          "pnl": 19.723336649722,
+          "trades": 562,
+          "wins": 141,
+          "losses": 421,
+          "wr": 25.088967971530252,
+          "recovery_exits": 28
+        },
+        {
+          "coin": "NEAR",
+          "pnl": 16.68888706912493,
+          "trades": 572,
+          "wins": 134,
+          "losses": 438,
+          "wr": 23.426573426573427,
+          "recovery_exits": 26
+        },
+        {
+          "coin": "ADA",
+          "pnl": 15.208869214336175,
+          "trades": 548,
+          "wins": 142,
+          "losses": 406,
+          "wr": 25.91240875912409,
+          "recovery_exits": 19
+        },
+        {
+          "coin": "LTC",
+          "pnl": 12.871754370964908,
+          "trades": 538,
+          "wins": 148,
+          "losses": 390,
+          "wr": 27.509293680297397,
+          "recovery_exits": 22
+        },
+        {
+          "coin": "SHIB",
+          "pnl": 10.610047147490675,
+          "trades": 565,
+          "wins": 135,
+          "losses": 426,
+          "wr": 23.893805309734514,
+          "recovery_exits": 22
+        },
+        {
+          "coin": "LINK",
+          "pnl": 17.325832399952944,
+          "trades": 547,
+          "wins": 143,
+          "losses": 402,
+          "wr": 26.142595978062154,
+          "recovery_exits": 27
+        },
+        {
+          "coin": "ETH",
+          "pnl": 11.916901932518769,
+          "trades": 539,
+          "wins": 166,
+          "losses": 373,
+          "wr": 30.79777365491651,
+          "recovery_exits": 37
+        },
+        {
+          "coin": "DOT",
+          "pnl": 21.029213805127412,
+          "trades": 564,
+          "wins": 152,
+          "losses": 411,
+          "wr": 26.95035460992908,
+          "recovery_exits": 18
+        },
+        {
+          "coin": "XRP",
+          "pnl": 14.941365714154585,
+          "trades": 564,
+          "wins": 163,
+          "losses": 401,
+          "wr": 28.900709219858157,
+          "recovery_exits": 30
+        },
+        {
+          "coin": "ATOM",
+          "pnl": 13.030955319731007,
+          "trades": 569,
+          "wins": 140,
+          "losses": 427,
+          "wr": 24.604569420035148,
+          "recovery_exits": 35
+        },
+        {
+          "coin": "SOL",
+          "pnl": 15.92721220354754,
+          "trades": 559,
+          "wins": 166,
+          "losses": 393,
+          "wr": 29.695885509838998,
+          "recovery_exits": 20
+        },
+        {
+          "coin": "DOGE",
+          "pnl": 13.644941932630715,
+          "trades": 558,
+          "wins": 150,
+          "losses": 407,
+          "wr": 26.881720430107524,
+          "recovery_exits": 23
+        },
+        {
+          "coin": "XLM",
+          "pnl": 14.730604555688771,
+          "trades": 554,
+          "wins": 146,
+          "losses": 408,
+          "wr": 26.353790613718413,
+          "recovery_exits": 20
+        },
+        {
+          "coin": "AVAX",
+          "pnl": 17.345640404253814,
+          "trades": 559,
+          "wins": 160,
+          "losses": 399,
+          "wr": 28.622540250447226,
+          "recovery_exits": 24
+        },
+        {
+          "coin": "ALGO",
+          "pnl": 16.904000553382957,
+          "trades": 555,
+          "wins": 141,
+          "losses": 411,
+          "wr": 25.405405405405407,
+          "recovery_exits": 22
+        },
+        {
+          "coin": "BNB",
+          "pnl": 9.527978710870954,
+          "trades": 531,
+          "wins": 159,
+          "losses": 372,
+          "wr": 29.943502824858758,
+          "recovery_exits": 28
+        },
+        {
+          "coin": "BTC",
+          "pnl": 9.215632743189786,
+          "trades": 519,
+          "wins": 178,
+          "losses": 341,
+          "wr": 34.296724470134876,
+          "recovery_exits": 34
+        }
+      ]
+    },
+    {
+      "label": "MB20_MV0.015_GR10",
+      "total_pnl": 288.3072954581512,
+      "portfolio_wr": 26.771574621629746,
+      "total_trades": 9977,
+      "pf": 0.3662416015357192,
+      "is_baseline": false,
+      "recovery_exit_rate": 4.229728375263106,
+      "coins": [
+        {
+          "coin": "DASH",
+          "pnl": 38.665543282066636,
+          "trades": 601,
+          "wins": 127,
+          "losses": 474,
+          "wr": 21.13144758735441,
+          "recovery_exits": 22
+        },
+        {
+          "coin": "UNI",
+          "pnl": 19.61506477196157,
+          "trades": 561,
+          "wins": 140,
+          "losses": 421,
+          "wr": 24.9554367201426,
+          "recovery_exits": 25
+        },
+        {
+          "coin": "NEAR",
+          "pnl": 16.567394777604036,
+          "trades": 571,
+          "wins": 133,
+          "losses": 438,
+          "wr": 23.29246935201401,
+          "recovery_exits": 25
+        },
+        {
+          "coin": "ADA",
+          "pnl": 15.348183505026327,
+          "trades": 545,
+          "wins": 141,
+          "losses": 404,
+          "wr": 25.871559633027523,
+          "recovery_exits": 18
+        },
+        {
+          "coin": "LTC",
+          "pnl": 12.64039778522394,
+          "trades": 537,
+          "wins": 147,
+          "losses": 390,
+          "wr": 27.37430167597765,
+          "recovery_exits": 20
+        },
+        {
+          "coin": "SHIB",
+          "pnl": 10.394788579188884,
+          "trades": 565,
+          "wins": 134,
+          "losses": 427,
+          "wr": 23.716814159292035,
+          "recovery_exits": 22
+        },
+        {
+          "coin": "LINK",
+          "pnl": 17.079274880127613,
+          "trades": 543,
+          "wins": 139,
+          "losses": 402,
+          "wr": 25.59852670349908,
+          "recovery_exits": 24
+        },
+        {
+          "coin": "ETH",
+          "pnl": 12.061408458011528,
+          "trades": 537,
+          "wins": 165,
+          "losses": 372,
+          "wr": 30.726256983240223,
+          "recovery_exits": 33
+        },
+        {
+          "coin": "DOT",
+          "pnl": 20.77227624935182,
+          "trades": 564,
+          "wins": 151,
+          "losses": 412,
+          "wr": 26.773049645390074,
+          "recovery_exits": 18
+        },
+        {
+          "coin": "XRP",
+          "pnl": 14.629149874882685,
+          "trades": 561,
+          "wins": 160,
+          "losses": 401,
+          "wr": 28.520499108734406,
+          "recovery_exits": 26
+        },
+        {
+          "coin": "ATOM",
+          "pnl": 13.183649756529334,
+          "trades": 567,
+          "wins": 139,
+          "losses": 426,
+          "wr": 24.514991181657848,
+          "recovery_exits": 30
+        },
+        {
+          "coin": "SOL",
+          "pnl": 15.656149290178163,
+          "trades": 557,
+          "wins": 163,
+          "losses": 394,
+          "wr": 29.263913824057454,
+          "recovery_exits": 18
+        },
+        {
+          "coin": "DOGE",
+          "pnl": 14.157691064506153,
+          "trades": 556,
+          "wins": 150,
+          "losses": 405,
+          "wr": 26.978417266187048,
+          "recovery_exits": 21
+        },
+        {
+          "coin": "XLM",
+          "pnl": 14.658405064910681,
+          "trades": 551,
+          "wins": 146,
+          "losses": 405,
+          "wr": 26.497277676950997,
+          "recovery_exits": 17
+        },
+        {
+          "coin": "AVAX",
+          "pnl": 17.24351211603866,
+          "trades": 558,
+          "wins": 158,
+          "losses": 400,
+          "wr": 28.31541218637993,
+          "recovery_exits": 23
+        },
+        {
+          "coin": "ALGO",
+          "pnl": 16.946552991813277,
+          "trades": 554,
+          "wins": 141,
+          "losses": 410,
+          "wr": 25.451263537906136,
+          "recovery_exits": 22
+        },
+        {
+          "coin": "BNB",
+          "pnl": 9.508644552059565,
+          "trades": 531,
+          "wins": 159,
+          "losses": 372,
+          "wr": 29.943502824858758,
+          "recovery_exits": 27
+        },
+        {
+          "coin": "BTC",
+          "pnl": 9.179208458670246,
+          "trades": 518,
+          "wins": 178,
+          "losses": 340,
+          "wr": 34.36293436293436,
+          "recovery_exits": 31
+        }
+      ]
+    },
+    {
+      "label": "MB20_MV0.015_GR15",
+      "total_pnl": 288.74638629076094,
+      "portfolio_wr": 26.65863695673994,
+      "total_trades": 9963,
+      "pf": 0.3640350877192982,
+      "is_baseline": false,
+      "recovery_exit_rate": 3.884372177055104,
+      "coins": [
+        {
+          "coin": "DASH",
+          "pnl": 38.44608333692844,
+          "trades": 601,
+          "wins": 125,
+          "losses": 476,
+          "wr": 20.798668885191347,
+          "recovery_exits": 20
+        },
+        {
+          "coin": "UNI",
+          "pnl": 19.51457725868785,
+          "trades": 560,
+          "wins": 140,
+          "losses": 420,
+          "wr": 25.0,
+          "recovery_exits": 25
+        },
+        {
+          "coin": "NEAR",
+          "pnl": 16.648816408818575,
+          "trades": 571,
+          "wins": 132,
+          "losses": 439,
+          "wr": 23.117338003502628,
+          "recovery_exits": 24
+        },
+        {
+          "coin": "ADA",
+          "pnl": 15.507481107533536,
+          "trades": 545,
+          "wins": 141,
+          "losses": 404,
+          "wr": 25.871559633027523,
+          "recovery_exits": 15
+        },
+        {
+          "coin": "LTC",
+          "pnl": 13.028680704346272,
+          "trades": 536,
+          "wins": 148,
+          "losses": 388,
+          "wr": 27.611940298507463,
+          "recovery_exits": 17
+        },
+        {
+          "coin": "SHIB",
+          "pnl": 10.557556856938163,
+          "trades": 563,
+          "wins": 135,
+          "losses": 425,
+          "wr": 23.978685612788635,
+          "recovery_exits": 19
+        },
+        {
+          "coin": "LINK",
+          "pnl": 17.26012628939621,
+          "trades": 543,
+          "wins": 140,
+          "losses": 402,
+          "wr": 25.78268876611418,
+          "recovery_exits": 22
+        },
+        {
+          "coin": "ETH",
+          "pnl": 12.340367573597078,
+          "trades": 535,
+          "wins": 163,
+          "losses": 372,
+          "wr": 30.467289719626166,
+          "recovery_exits": 29
+        },
+        {
+          "coin": "DOT",
+          "pnl": 20.501526915593303,
+          "trades": 564,
+          "wins": 150,
+          "losses": 413,
+          "wr": 26.595744680851062,
+          "recovery_exits": 16
+        },
+        {
+          "coin": "XRP",
+          "pnl": 14.553361856123956,
+          "trades": 561,
+          "wins": 160,
+          "losses": 401,
+          "wr": 28.520499108734406,
+          "recovery_exits": 25
+        },
+        {
+          "coin": "ATOM",
+          "pnl": 13.113376882899573,
+          "trades": 566,
+          "wins": 136,
+          "losses": 428,
+          "wr": 24.02826855123675,
+          "recovery_exits": 28
+        },
+        {
+          "coin": "SOL",
+          "pnl": 15.657857693119212,
+          "trades": 554,
+          "wins": 163,
+          "losses": 391,
+          "wr": 29.422382671480147,
+          "recovery_exits": 16
+        },
+        {
+          "coin": "DOGE",
+          "pnl": 14.157691064506153,
+          "trades": 556,
+          "wins": 150,
+          "losses": 405,
+          "wr": 26.978417266187048,
+          "recovery_exits": 21
+        },
+        {
+          "coin": "XLM",
+          "pnl": 14.477212920474145,
+          "trades": 550,
+          "wins": 144,
+          "losses": 406,
+          "wr": 26.181818181818183,
+          "recovery_exits": 15
+        },
+        {
+          "coin": "AVAX",
+          "pnl": 17.15835824358321,
+          "trades": 558,
+          "wins": 158,
+          "losses": 400,
+          "wr": 28.31541218637993,
+          "recovery_exits": 23
+        },
+        {
+          "coin": "ALGO",
+          "pnl": 17.27451367333893,
+          "trades": 553,
+          "wins": 137,
+          "losses": 413,
+          "wr": 24.77396021699819,
+          "recovery_exits": 18
+        },
+        {
+          "coin": "BNB",
+          "pnl": 9.750779829983415,
+          "trades": 531,
+          "wins": 160,
+          "losses": 371,
+          "wr": 30.131826741996232,
+          "recovery_exits": 24
+        },
+        {
+          "coin": "BTC",
+          "pnl": 8.798017674892975,
+          "trades": 516,
+          "wins": 174,
+          "losses": 342,
+          "wr": 33.72093023255814,
+          "recovery_exits": 30
+        }
+      ]
+    },
+    {
+      "label": "MB20_MV0.020_GR5",
+      "total_pnl": 289.6706369253492,
+      "portfolio_wr": 26.976373242946867,
+      "total_trades": 10031,
+      "pf": 0.3702284854289233,
+      "is_baseline": false,
+      "recovery_exit_rate": 5.044362476323397,
+      "coins": [
+        {
+          "coin": "DASH",
+          "pnl": 39.200204207231195,
+          "trades": 602,
+          "wins": 128,
+          "losses": 474,
+          "wr": 21.262458471760798,
+          "recovery_exits": 23
+        },
+        {
+          "coin": "UNI",
+          "pnl": 20.06590608560863,
+          "trades": 565,
+          "wins": 142,
+          "losses": 423,
+          "wr": 25.13274336283186,
+          "recovery_exits": 30
+        },
+        {
+          "coin": "NEAR",
+          "pnl": 16.578600644674097,
+          "trades": 575,
+          "wins": 135,
+          "losses": 439,
+          "wr": 23.47826086956522,
+          "recovery_exits": 28
+        },
+        {
+          "coin": "ADA",
+          "pnl": 15.112361157643676,
+          "trades": 549,
+          "wins": 142,
+          "losses": 407,
+          "wr": 25.865209471766846,
+          "recovery_exits": 20
+        },
+        {
+          "coin": "LTC",
+          "pnl": 12.689829131852036,
+          "trades": 540,
+          "wins": 149,
+          "losses": 391,
+          "wr": 27.59259259259259,
+          "recovery_exits": 24
+        },
+        {
+          "coin": "SHIB",
+          "pnl": 10.290100987962006,
+          "trades": 565,
+          "wins": 132,
+          "losses": 429,
+          "wr": 23.36283185840708,
+          "recovery_exits": 24
+        },
+        {
+          "coin": "LINK",
+          "pnl": 16.733939443997613,
+          "trades": 549,
+          "wins": 139,
+          "losses": 406,
+          "wr": 25.318761384335154,
+          "recovery_exits": 31
+        },
+        {
+          "coin": "ETH",
+          "pnl": 12.233428837856636,
+          "trades": 541,
+          "wins": 167,
+          "losses": 374,
+          "wr": 30.868761552680223,
+          "recovery_exits": 38
+        },
+        {
+          "coin": "DOT",
+          "pnl": 21.00335807872672,
+          "trades": 565,
+          "wins": 152,
+          "losses": 411,
+          "wr": 26.902654867256636,
+          "recovery_exits": 20
+        },
+        {
+          "coin": "XRP",
+          "pnl": 14.994153824926357,
+          "trades": 564,
+          "wins": 165,
+          "losses": 399,
+          "wr": 29.25531914893617,
+          "recovery_exits": 33
+        },
+        {
+          "coin": "ATOM",
+          "pnl": 13.23502208392921,
+          "trades": 571,
+          "wins": 143,
+          "losses": 427,
+          "wr": 25.04378283712785,
+          "recovery_exits": 39
+        },
+        {
+          "coin": "SOL",
+          "pnl": 15.876546717843596,
+          "trades": 561,
+          "wins": 169,
+          "losses": 392,
+          "wr": 30.124777183600713,
+          "recovery_exits": 25
+        },
+        {
+          "coin": "DOGE",
+          "pnl": 13.79816895776895,
+          "trades": 560,
+          "wins": 153,
+          "losses": 406,
+          "wr": 27.32142857142857,
+          "recovery_exits": 26
+        },
+        {
+          "coin": "XLM",
+          "pnl": 14.230838175598606,
+          "trades": 556,
+          "wins": 146,
+          "losses": 410,
+          "wr": 26.258992805755394,
+          "recovery_exits": 26
+        },
+        {
+          "coin": "AVAX",
+          "pnl": 17.631646874522332,
+          "trades": 559,
+          "wins": 162,
+          "losses": 397,
+          "wr": 28.980322003577818,
+          "recovery_exits": 26
+        },
+        {
+          "coin": "ALGO",
+          "pnl": 17.330812333764086,
+          "trades": 555,
+          "wins": 143,
+          "losses": 409,
+          "wr": 25.765765765765764,
+          "recovery_exits": 24
+        },
+        {
+          "coin": "BNB",
+          "pnl": 9.412278604855103,
+          "trades": 533,
+          "wins": 160,
+          "losses": 373,
+          "wr": 30.0187617260788,
+          "recovery_exits": 32
+        },
+        {
+          "coin": "BTC",
+          "pnl": 9.253440776588377,
+          "trades": 521,
+          "wins": 179,
+          "losses": 342,
+          "wr": 34.357005758157385,
+          "recovery_exits": 37
+        }
+      ]
+    },
+    {
+      "label": "MB20_MV0.020_GR10",
+      "total_pnl": 289.3212227966628,
+      "portfolio_wr": 26.84852118305356,
+      "total_trades": 10008,
+      "pf": 0.36772957438073084,
+      "is_baseline": false,
+      "recovery_exit_rate": 4.616306954436451,
+      "coins": [
+        {
+          "coin": "DASH",
+          "pnl": 38.665543282066636,
+          "trades": 601,
+          "wins": 127,
+          "losses": 474,
+          "wr": 21.13144758735441,
+          "recovery_exits": 22
+        },
+        {
+          "coin": "UNI",
+          "pnl": 19.901332881946104,
+          "trades": 563,
+          "wins": 141,
+          "losses": 422,
+          "wr": 25.044404973357015,
+          "recovery_exits": 28
+        },
+        {
+          "coin": "NEAR",
+          "pnl": 16.705327755057212,
+          "trades": 574,
+          "wins": 135,
+          "losses": 439,
+          "wr": 23.519163763066203,
+          "recovery_exits": 27
+        },
+        {
+          "coin": "ADA",
+          "pnl": 15.095827963940579,
+          "trades": 549,
+          "wins": 142,
+          "losses": 407,
+          "wr": 25.865209471766846,
+          "recovery_exits": 20
+        },
+        {
+          "coin": "LTC",
+          "pnl": 12.920748708237994,
+          "trades": 538,
+          "wins": 148,
+          "losses": 390,
+          "wr": 27.509293680297397,
+          "recovery_exits": 22
+        },
+        {
+          "coin": "SHIB",
+          "pnl": 10.54073197021026,
+          "trades": 565,
+          "wins": 134,
+          "losses": 427,
+          "wr": 23.716814159292035,
+          "recovery_exits": 23
+        },
+        {
+          "coin": "LINK",
+          "pnl": 17.260591044614785,
+          "trades": 546,
+          "wins": 142,
+          "losses": 401,
+          "wr": 26.00732600732601,
+          "recovery_exits": 27
+        },
+        {
+          "coin": "ETH",
+          "pnl": 11.898712668819627,
+          "trades": 540,
+          "wins": 165,
+          "losses": 375,
+          "wr": 30.555555555555557,
+          "recovery_exits": 38
+        },
+        {
+          "coin": "DOT",
+          "pnl": 21.029213805127412,
+          "trades": 564,
+          "wins": 152,
+          "losses": 411,
+          "wr": 26.95035460992908,
+          "recovery_exits": 18
+        },
+        {
+          "coin": "XRP",
+          "pnl": 14.96971081596216,
+          "trades": 563,
+          "wins": 162,
+          "losses": 401,
+          "wr": 28.774422735346363,
+          "recovery_exits": 29
+        },
+        {
+          "coin": "ATOM",
+          "pnl": 12.950554991299896,
+          "trades": 570,
+          "wins": 139,
+          "losses": 429,
+          "wr": 24.385964912280702,
+          "recovery_exits": 36
+        },
+        {
+          "coin": "SOL",
+          "pnl": 15.972922853163993,
+          "trades": 559,
+          "wins": 166,
+          "losses": 393,
+          "wr": 29.695885509838998,
+          "recovery_exits": 22
+        },
+        {
+          "coin": "DOGE",
+          "pnl": 13.64737661619202,
+          "trades": 558,
+          "wins": 150,
+          "losses": 407,
+          "wr": 26.881720430107524,
+          "recovery_exits": 23
+        },
+        {
+          "coin": "XLM",
+          "pnl": 14.730604555688771,
+          "trades": 554,
+          "wins": 146,
+          "losses": 408,
+          "wr": 26.353790613718413,
+          "recovery_exits": 20
+        },
+        {
+          "coin": "AVAX",
+          "pnl": 17.345640404253814,
+          "trades": 559,
+          "wins": 160,
+          "losses": 399,
+          "wr": 28.622540250447226,
+          "recovery_exits": 24
+        },
+        {
+          "coin": "ALGO",
+          "pnl": 16.959968955802267,
+          "trades": 555,
+          "wins": 141,
+          "losses": 411,
+          "wr": 25.405405405405407,
+          "recovery_exits": 22
+        },
+        {
+          "coin": "BNB",
+          "pnl": 9.539685723373822,
+          "trades": 531,
+          "wins": 159,
+          "losses": 372,
+          "wr": 29.943502824858758,
+          "recovery_exits": 28
+        },
+        {
+          "coin": "BTC",
+          "pnl": 9.186727800905487,
+          "trades": 519,
+          "wins": 178,
+          "losses": 341,
+          "wr": 34.296724470134876,
+          "recovery_exits": 33
+        }
+      ]
+    },
+    {
+      "label": "MB20_MV0.020_GR15",
+      "total_pnl": 289.0319044845412,
+      "portfolio_wr": 26.719470623621415,
+      "total_trades": 9974,
+      "pf": 0.36526864035087725,
+      "is_baseline": false,
+      "recovery_exit_rate": 4.1507920593543215,
+      "coins": [
+        {
+          "coin": "DASH",
+          "pnl": 38.61468627257179,
+          "trades": 601,
+          "wins": 126,
+          "losses": 475,
+          "wr": 20.965058236272878,
+          "recovery_exits": 21
+        },
+        {
+          "coin": "UNI",
+          "pnl": 19.51457725868785,
+          "trades": 560,
+          "wins": 140,
+          "losses": 420,
+          "wr": 25.0,
+          "recovery_exits": 25
+        },
+        {
+          "coin": "NEAR",
+          "pnl": 16.559411166944116,
+          "trades": 571,
+          "wins": 133,
+          "losses": 438,
+          "wr": 23.29246935201401,
+          "recovery_exits": 25
+        },
+        {
+          "coin": "ADA",
+          "pnl": 15.335605424847046,
+          "trades": 545,
+          "wins": 141,
+          "losses": 404,
+          "wr": 25.871559633027523,
+          "recovery_exits": 17
+        },
+        {
+          "coin": "LTC",
+          "pnl": 12.64039778522394,
+          "trades": 537,
+          "wins": 147,
+          "losses": 390,
+          "wr": 27.37430167597765,
+          "recovery_exits": 20
+        },
+        {
+          "coin": "SHIB",
+          "pnl": 10.579793309176097,
+          "trades": 564,
+          "wins": 135,
+          "losses": 425,
+          "wr": 23.93617021276596,
+          "recovery_exits": 21
+        },
+        {
+          "coin": "LINK",
+          "pnl": 16.96619854603506,
+          "trades": 543,
+          "wins": 139,
+          "losses": 402,
+          "wr": 25.59852670349908,
+          "recovery_exits": 25
+        },
+        {
+          "coin": "ETH",
+          "pnl": 12.429665390937757,
+          "trades": 537,
+          "wins": 166,
+          "losses": 371,
+          "wr": 30.91247672253259,
+          "recovery_exits": 31
+        },
+        {
+          "coin": "DOT",
+          "pnl": 20.77227624935182,
+          "trades": 564,
+          "wins": 151,
+          "losses": 412,
+          "wr": 26.773049645390074,
+          "recovery_exits": 18
+        },
+        {
+          "coin": "XRP",
+          "pnl": 14.642519675237551,
+          "trades": 561,
+          "wins": 160,
+          "losses": 401,
+          "wr": 28.520499108734406,
+          "recovery_exits": 26
+        },
+        {
+          "coin": "ATOM",
+          "pnl": 13.121539144151669,
+          "trades": 567,
+          "wins": 137,
+          "losses": 428,
+          "wr": 24.16225749559083,
+          "recovery_exits": 30
+        },
+        {
+          "coin": "SOL",
+          "pnl": 15.494881339069593,
+          "trades": 558,
+          "wins": 163,
+          "losses": 395,
+          "wr": 29.211469534050178,
+          "recovery_exits": 19
+        },
+        {
+          "coin": "DOGE",
+          "pnl": 14.157691064506153,
+          "trades": 556,
+          "wins": 150,
+          "losses": 405,
+          "wr": 26.978417266187048,
+          "recovery_exits": 21
+        },
+        {
+          "coin": "XLM",
+          "pnl": 14.610651631249539,
+          "trades": 551,
+          "wins": 144,
+          "losses": 407,
+          "wr": 26.13430127041742,
+          "recovery_exits": 16
+        },
+        {
+          "coin": "AVAX",
+          "pnl": 17.398216689258348,
+          "trades": 558,
+          "wins": 160,
+          "losses": 398,
+          "wr": 28.673835125448026,
+          "recovery_exits": 24
+        },
+        {
+          "coin": "ALGO",
+          "pnl": 17.79895275349189,
+          "trades": 554,
+          "wins": 139,
+          "losses": 412,
+          "wr": 25.09025270758123,
+          "recovery_exits": 18
+        },
+        {
+          "coin": "BNB",
+          "pnl": 9.62847415628687,
+          "trades": 531,
+          "wins": 160,
+          "losses": 371,
+          "wr": 30.131826741996232,
+          "recovery_exits": 26
+        },
+        {
+          "coin": "BTC",
+          "pnl": 8.766366627514088,
+          "trades": 516,
+          "wins": 174,
+          "losses": 342,
+          "wr": 33.72093023255814,
+          "recovery_exits": 31
+        }
+      ]
+    },
+    {
+      "label": "MB20_MV0.025_GR5",
+      "total_pnl": 289.3271049993788,
+      "portfolio_wr": 27.21142403808013,
+      "total_trades": 10084,
+      "pf": 0.3749658376605629,
+      "is_baseline": false,
+      "recovery_exit_rate": 5.563268544228481,
+      "coins": [
+        {
+          "coin": "DASH",
+          "pnl": 40.59057744110834,
+          "trades": 605,
+          "wins": 135,
+          "losses": 470,
+          "wr": 22.31404958677686,
+          "recovery_exits": 27
+        },
+        {
+          "coin": "UNI",
+          "pnl": 19.54278099666044,
+          "trades": 568,
+          "wins": 142,
+          "losses": 426,
+          "wr": 25.0,
+          "recovery_exits": 35
+        },
+        {
+          "coin": "NEAR",
+          "pnl": 17.05038970527353,
+          "trades": 578,
+          "wins": 138,
+          "losses": 439,
+          "wr": 23.875432525951556,
+          "recovery_exits": 31
+        },
+        {
+          "coin": "ADA",
+          "pnl": 15.068822804649628,
+          "trades": 554,
+          "wins": 145,
+          "losses": 408,
+          "wr": 26.173285198555956,
+          "recovery_exits": 23
+        },
+        {
+          "coin": "LTC",
+          "pnl": 12.630707873713789,
+          "trades": 541,
+          "wins": 150,
+          "losses": 391,
+          "wr": 27.726432532347506,
+          "recovery_exits": 25
+        },
+        {
+          "coin": "SHIB",
+          "pnl": 9.556828040965627,
+          "trades": 571,
+          "wins": 135,
+          "losses": 431,
+          "wr": 23.642732049036777,
+          "recovery_exits": 29
+        },
+        {
+          "coin": "LINK",
+          "pnl": 16.23200854906797,
+          "trades": 551,
+          "wins": 139,
+          "losses": 408,
+          "wr": 25.226860254083483,
+          "recovery_exits": 34
+        },
+        {
+          "coin": "ETH",
+          "pnl": 12.348182185813968,
+          "trades": 549,
+          "wins": 172,
+          "losses": 377,
+          "wr": 31.329690346083787,
+          "recovery_exits": 42
+        },
+        {
+          "coin": "DOT",
+          "pnl": 20.24964308152495,
+          "trades": 567,
+          "wins": 152,
+          "losses": 412,
+          "wr": 26.807760141093475,
+          "recovery_exits": 25
+        },
+        {
+          "coin": "XRP",
+          "pnl": 15.390242322582282,
+          "trades": 566,
+          "wins": 166,
+          "losses": 399,
+          "wr": 29.328621908127207,
+          "recovery_exits": 32
+        },
+        {
+          "coin": "ATOM",
+          "pnl": 13.815881257061449,
+          "trades": 572,
+          "wins": 146,
+          "losses": 426,
+          "wr": 25.524475524475527,
+          "recovery_exits": 40
+        },
+        {
+          "coin": "SOL",
+          "pnl": 15.548349447996216,
+          "trades": 563,
+          "wins": 169,
+          "losses": 394,
+          "wr": 30.017761989342805,
+          "recovery_exits": 30
+        },
+        {
+          "coin": "DOGE",
+          "pnl": 14.184868526750563,
+          "trades": 561,
+          "wins": 155,
+          "losses": 404,
+          "wr": 27.629233511586452,
+          "recovery_exits": 26
+        },
+        {
+          "coin": "XLM",
+          "pnl": 14.253436412207662,
+          "trades": 558,
+          "wins": 147,
+          "losses": 411,
+          "wr": 26.344086021505376,
+          "recovery_exits": 28
+        },
+        {
+          "coin": "AVAX",
+          "pnl": 17.719462699987062,
+          "trades": 562,
+          "wins": 166,
+          "losses": 396,
+          "wr": 29.537366548042705,
+          "recovery_exits": 29
+        },
+        {
+          "coin": "ALGO",
+          "pnl": 16.06313913829152,
+          "trades": 559,
+          "wins": 141,
+          "losses": 413,
+          "wr": 25.223613595706617,
+          "recovery_exits": 30
+        },
+        {
+          "coin": "BNB",
+          "pnl": 9.812758600845243,
+          "trades": 536,
+          "wins": 166,
+          "losses": 370,
+          "wr": 30.970149253731343,
+          "recovery_exits": 34
+        },
+        {
+          "coin": "BTC",
+          "pnl": 9.269025914878426,
+          "trades": 523,
+          "wins": 180,
+          "losses": 343,
+          "wr": 34.41682600382409,
+          "recovery_exits": 41
+        }
+      ]
+    },
+    {
+      "label": "MB20_MV0.025_GR10",
+      "total_pnl": 289.4580571293849,
+      "portfolio_wr": 26.937636979477986,
+      "total_trades": 10038,
+      "pf": 0.36944937833037295,
+      "is_baseline": false,
+      "recovery_exit_rate": 5.040844789798764,
+      "coins": [
+        {
+          "coin": "DASH",
+          "pnl": 39.730856450789105,
+          "trades": 601,
+          "wins": 128,
+          "losses": 473,
+          "wr": 21.29783693843594,
+          "recovery_exits": 22
+        },
+        {
+          "coin": "UNI",
+          "pnl": 20.015505966185486,
+          "trades": 565,
+          "wins": 142,
+          "losses": 423,
+          "wr": 25.13274336283186,
+          "recovery_exits": 30
+        },
+        {
+          "coin": "NEAR",
+          "pnl": 17.172293033470822,
+          "trades": 576,
+          "wins": 138,
+          "losses": 437,
+          "wr": 23.958333333333336,
+          "recovery_exits": 28
+        },
+        {
+          "coin": "ADA",
+          "pnl": 15.112361157643676,
+          "trades": 549,
+          "wins": 142,
+          "losses": 407,
+          "wr": 25.865209471766846,
+          "recovery_exits": 20
+        },
+        {
+          "coin": "LTC",
+          "pnl": 12.630707873713789,
+          "trades": 541,
+          "wins": 150,
+          "losses": 391,
+          "wr": 27.726432532347506,
+          "recovery_exits": 25
+        },
+        {
+          "coin": "SHIB",
+          "pnl": 9.961678187190543,
+          "trades": 567,
+          "wins": 132,
+          "losses": 431,
+          "wr": 23.28042328042328,
+          "recovery_exits": 25
+        },
+        {
+          "coin": "LINK",
+          "pnl": 16.747478523033053,
+          "trades": 549,
+          "wins": 139,
+          "losses": 406,
+          "wr": 25.318761384335154,
+          "recovery_exits": 31
+        },
+        {
+          "coin": "ETH",
+          "pnl": 12.228015371408432,
+          "trades": 543,
+          "wins": 167,
+          "losses": 376,
+          "wr": 30.755064456721914,
+          "recovery_exits": 39
+        },
+        {
+          "coin": "DOT",
+          "pnl": 20.798906371209682,
+          "trades": 566,
+          "wins": 151,
+          "losses": 414,
+          "wr": 26.67844522968198,
+          "recovery_exits": 21
+        },
+        {
+          "coin": "XRP",
+          "pnl": 14.92094169037982,
+          "trades": 564,
+          "wins": 164,
+          "losses": 400,
+          "wr": 29.078014184397162,
+          "recovery_exits": 32
+        },
+        {
+          "coin": "ATOM",
+          "pnl": 13.20948994817185,
+          "trades": 572,
+          "wins": 143,
+          "losses": 428,
+          "wr": 25.0,
+          "recovery_exits": 40
+        },
+        {
+          "coin": "SOL",
+          "pnl": 15.802546632235476,
+          "trades": 561,
+          "wins": 168,
+          "losses": 393,
+          "wr": 29.946524064171122,
+          "recovery_exits": 24
+        },
+        {
+          "coin": "DOGE",
+          "pnl": 13.79816895776895,
+          "trades": 560,
+          "wins": 153,
+          "losses": 406,
+          "wr": 27.32142857142857,
+          "recovery_exits": 26
+        },
+        {
+          "coin": "XLM",
+          "pnl": 14.22239435922809,
+          "trades": 556,
+          "wins": 144,
+          "losses": 412,
+          "wr": 25.899280575539567,
+          "recovery_exits": 25
+        },
+        {
+          "coin": "AVAX",
+          "pnl": 17.494597424963303,
+          "trades": 560,
+          "wins": 162,
+          "losses": 398,
+          "wr": 28.92857142857143,
+          "recovery_exits": 27
+        },
+        {
+          "coin": "ALGO",
+          "pnl": 16.786327521965504,
+          "trades": 557,
+          "wins": 143,
+          "losses": 411,
+          "wr": 25.673249551166965,
+          "recovery_exits": 26
+        },
+        {
+          "coin": "BNB",
+          "pnl": 9.602632360384419,
+          "trades": 531,
+          "wins": 160,
+          "losses": 371,
+          "wr": 30.131826741996232,
+          "recovery_exits": 29
+        },
+        {
+          "coin": "BTC",
+          "pnl": 9.223155299642912,
+          "trades": 520,
+          "wins": 178,
+          "losses": 342,
+          "wr": 34.23076923076923,
+          "recovery_exits": 36
+        }
+      ]
+    },
+    {
+      "label": "MB20_MV0.025_GR15",
+      "total_pnl": 288.8629774294691,
+      "portfolio_wr": 26.83,
+      "total_trades": 10000,
+      "pf": 0.3673329682365827,
+      "is_baseline": false,
+      "recovery_exit_rate": 4.52,
+      "coins": [
+        {
+          "coin": "DASH",
+          "pnl": 38.61658214366258,
+          "trades": 601,
+          "wins": 126,
+          "losses": 475,
+          "wr": 20.965058236272878,
+          "recovery_exits": 21
+        },
+        {
+          "coin": "UNI",
+          "pnl": 19.86297689190998,
+          "trades": 563,
+          "wins": 141,
+          "losses": 422,
+          "wr": 25.044404973357015,
+          "recovery_exits": 27
+        },
+        {
+          "coin": "NEAR",
+          "pnl": 16.58381834608265,
+          "trades": 573,
+          "wins": 134,
+          "losses": 439,
+          "wr": 23.38568935427574,
+          "recovery_exits": 26
+        },
+        {
+          "coin": "ADA",
+          "pnl": 15.295674325564747,
+          "trades": 548,
+          "wins": 142,
+          "losses": 406,
+          "wr": 25.91240875912409,
+          "recovery_exits": 19
+        },
+        {
+          "coin": "LTC",
+          "pnl": 12.920748708237994,
+          "trades": 538,
+          "wins": 148,
+          "losses": 390,
+          "wr": 27.509293680297397,
+          "recovery_exits": 22
+        },
+        {
+          "coin": "SHIB",
+          "pnl": 10.227633663501493,
+          "trades": 566,
+          "wins": 134,
+          "losses": 428,
+          "wr": 23.674911660777383,
+          "recovery_exits": 24
+        },
+        {
+          "coin": "LINK",
+          "pnl": 16.93931050727801,
+          "trades": 544,
+          "wins": 140,
+          "losses": 402,
+          "wr": 25.735294117647058,
+          "recovery_exits": 27
+        },
+        {
+          "coin": "ETH",
+          "pnl": 12.10907513709752,
+          "trades": 538,
+          "wins": 166,
+          "losses": 372,
+          "wr": 30.855018587360593,
+          "recovery_exits": 36
+        },
+        {
+          "coin": "DOT",
+          "pnl": 21.029213805127412,
+          "trades": 564,
+          "wins": 152,
+          "losses": 411,
+          "wr": 26.95035460992908,
+          "recovery_exits": 18
+        },
+        {
+          "coin": "XRP",
+          "pnl": 14.98982088899595,
+          "trades": 562,
+          "wins": 162,
+          "losses": 400,
+          "wr": 28.825622775800714,
+          "recovery_exits": 28
+        },
+        {
+          "coin": "ATOM",
+          "pnl": 13.063707365005712,
+          "trades": 569,
+          "wins": 138,
+          "losses": 429,
+          "wr": 24.253075571177504,
+          "recovery_exits": 34
+        },
+        {
+          "coin": "SOL",
+          "pnl": 15.947682913864497,
+          "trades": 559,
+          "wins": 166,
+          "losses": 393,
+          "wr": 29.695885509838998,
+          "recovery_exits": 21
+        },
+        {
+          "coin": "DOGE",
+          "pnl": 13.62993737592548,
+          "trades": 558,
+          "wins": 149,
+          "losses": 408,
+          "wr": 26.70250896057348,
+          "recovery_exits": 23
+        },
+        {
+          "coin": "XLM",
+          "pnl": 14.517108501984623,
+          "trades": 553,
+          "wins": 146,
+          "losses": 407,
+          "wr": 26.40144665461121,
+          "recovery_exits": 20
+        },
+        {
+          "coin": "AVAX",
+          "pnl": 17.345640404253814,
+          "trades": 559,
+          "wins": 160,
+          "losses": 399,
+          "wr": 28.622540250447226,
+          "recovery_exits": 24
+        },
+        {
+          "coin": "ALGO",
+          "pnl": 16.959968955802267,
+          "trades": 555,
+          "wins": 141,
+          "losses": 411,
+          "wr": 25.405405405405407,
+          "recovery_exits": 22
+        },
+        {
+          "coin": "BNB",
+          "pnl": 9.65184886428213,
+          "trades": 531,
+          "wins": 160,
+          "losses": 371,
+          "wr": 30.131826741996232,
+          "recovery_exits": 27
+        },
+        {
+          "coin": "BTC",
+          "pnl": 9.17222863089215,
+          "trades": 519,
+          "wins": 178,
+          "losses": 341,
+          "wr": 34.296724470134876,
+          "recovery_exits": 33
+        }
+      ]
+    },
+    {
+      "label": "MB30_MV0.010_GR5",
+      "total_pnl": 290.1796638531984,
+      "portfolio_wr": 26.363176530096105,
+      "total_trades": 9885,
+      "pf": 0.35841012240407105,
+      "is_baseline": false,
+      "recovery_exit_rate": 2.4582701062215477,
+      "coins": [
+        {
+          "coin": "DASH",
+          "pnl": 38.64716192009456,
+          "trades": 595,
+          "wins": 120,
+          "losses": 475,
+          "wr": 20.168067226890756,
+          "recovery_exits": 13
+        },
+        {
+          "coin": "UNI",
+          "pnl": 19.05738808063809,
+          "trades": 557,
+          "wins": 134,
+          "losses": 422,
+          "wr": 24.057450628366247,
+          "recovery_exits": 17
+        },
+        {
+          "coin": "NEAR",
+          "pnl": 16.766162821043963,
+          "trades": 565,
+          "wins": 130,
+          "losses": 435,
+          "wr": 23.008849557522122,
+          "recovery_exits": 14
+        },
+        {
+          "coin": "ADA",
+          "pnl": 15.269945895418985,
+          "trades": 543,
+          "wins": 138,
+          "losses": 405,
+          "wr": 25.41436464088398,
+          "recovery_exits": 6
+        },
+        {
+          "coin": "LTC",
+          "pnl": 13.217327322276915,
+          "trades": 533,
+          "wins": 145,
+          "losses": 388,
+          "wr": 27.204502814258912,
+          "recovery_exits": 14
+        },
+        {
+          "coin": "SHIB",
+          "pnl": 10.301137762626695,
+          "trades": 557,
+          "wins": 131,
+          "losses": 425,
+          "wr": 23.518850987432675,
+          "recovery_exits": 13
+        },
+        {
+          "coin": "LINK",
+          "pnl": 17.30756991349557,
+          "trades": 538,
+          "wins": 138,
+          "losses": 400,
+          "wr": 25.650557620817843,
+          "recovery_exits": 13
+        },
+        {
+          "coin": "ETH",
+          "pnl": 12.322370284168699,
+          "trades": 529,
+          "wins": 158,
+          "losses": 371,
+          "wr": 29.867674858223065,
+          "recovery_exits": 18
+        },
+        {
+          "coin": "DOT",
+          "pnl": 20.353991640916902,
+          "trades": 561,
+          "wins": 148,
+          "losses": 411,
+          "wr": 26.38146167557932,
+          "recovery_exits": 12
+        },
+        {
+          "coin": "XRP",
+          "pnl": 15.16097770912468,
+          "trades": 558,
+          "wins": 160,
+          "losses": 398,
+          "wr": 28.673835125448026,
+          "recovery_exits": 15
+        },
+        {
+          "coin": "ATOM",
+          "pnl": 13.453838914072577,
+          "trades": 561,
+          "wins": 134,
+          "losses": 425,
+          "wr": 23.885918003565063,
+          "recovery_exits": 17
+        },
+        {
+          "coin": "SOL",
+          "pnl": 15.791339320460438,
+          "trades": 550,
+          "wins": 161,
+          "losses": 389,
+          "wr": 29.272727272727273,
+          "recovery_exits": 8
+        },
+        {
+          "coin": "DOGE",
+          "pnl": 15.302945642141921,
+          "trades": 550,
+          "wins": 150,
+          "losses": 399,
+          "wr": 27.27272727272727,
+          "recovery_exits": 10
+        },
+        {
+          "coin": "XLM",
+          "pnl": 14.472097312600269,
+          "trades": 548,
+          "wins": 142,
+          "losses": 406,
+          "wr": 25.91240875912409,
+          "recovery_exits": 13
+        },
+        {
+          "coin": "AVAX",
+          "pnl": 16.898109392858856,
+          "trades": 553,
+          "wins": 153,
+          "losses": 399,
+          "wr": 27.66726943942134,
+          "recovery_exits": 14
+        },
+        {
+          "coin": "ALGO",
+          "pnl": 17.100459233386403,
+          "trades": 549,
+          "wins": 136,
+          "losses": 413,
+          "wr": 24.772313296903462,
+          "recovery_exits": 13
+        },
+        {
+          "coin": "BNB",
+          "pnl": 9.124341526115927,
+          "trades": 527,
+          "wins": 153,
+          "losses": 374,
+          "wr": 29.03225806451613,
+          "recovery_exits": 16
+        },
+        {
+          "coin": "BTC",
+          "pnl": 9.632499161756911,
+          "trades": 511,
+          "wins": 175,
+          "losses": 336,
+          "wr": 34.24657534246575,
+          "recovery_exits": 17
+        }
+      ]
+    },
+    {
+      "label": "MB30_MV0.010_GR10",
+      "total_pnl": 291.54238990428536,
+      "portfolio_wr": 26.3648333839765,
+      "total_trades": 9873,
+      "pf": 0.35834251101321585,
+      "is_baseline": false,
+      "recovery_exit_rate": 2.3093284715891826,
+      "coins": [
+        {
+          "coin": "DASH",
+          "pnl": 39.140737676859544,
+          "trades": 595,
+          "wins": 120,
+          "losses": 475,
+          "wr": 20.168067226890756,
+          "recovery_exits": 12
+        },
+        {
+          "coin": "UNI",
+          "pnl": 19.420758383913054,
+          "trades": 556,
+          "wins": 135,
+          "losses": 420,
+          "wr": 24.280575539568343,
+          "recovery_exits": 17
+        },
+        {
+          "coin": "NEAR",
+          "pnl": 16.766162821043963,
+          "trades": 565,
+          "wins": 130,
+          "losses": 435,
+          "wr": 23.008849557522122,
+          "recovery_exits": 14
+        },
+        {
+          "coin": "ADA",
+          "pnl": 15.258893136838012,
+          "trades": 543,
+          "wins": 138,
+          "losses": 405,
+          "wr": 25.41436464088398,
+          "recovery_exits": 5
+        },
+        {
+          "coin": "LTC",
+          "pnl": 13.206768834479078,
+          "trades": 532,
+          "wins": 145,
+          "losses": 387,
+          "wr": 27.25563909774436,
+          "recovery_exits": 14
+        },
+        {
+          "coin": "SHIB",
+          "pnl": 10.225862390298275,
+          "trades": 556,
+          "wins": 130,
+          "losses": 426,
+          "wr": 23.381294964028775,
+          "recovery_exits": 8
+        },
+        {
+          "coin": "LINK",
+          "pnl": 17.30756991349557,
+          "trades": 538,
+          "wins": 138,
+          "losses": 400,
+          "wr": 25.650557620817843,
+          "recovery_exits": 13
+        },
+        {
+          "coin": "ETH",
+          "pnl": 12.313105491043572,
+          "trades": 529,
+          "wins": 157,
+          "losses": 372,
+          "wr": 29.678638941398866,
+          "recovery_exits": 18
+        },
+        {
+          "coin": "DOT",
+          "pnl": 20.152305017598678,
+          "trades": 560,
+          "wins": 147,
+          "losses": 411,
+          "wr": 26.25,
+          "recovery_exits": 11
+        },
+        {
+          "coin": "XRP",
+          "pnl": 15.149173906495037,
+          "trades": 558,
+          "wins": 160,
+          "losses": 398,
+          "wr": 28.673835125448026,
+          "recovery_exits": 15
+        },
+        {
+          "coin": "ATOM",
+          "pnl": 13.255166420453435,
+          "trades": 560,
+          "wins": 133,
+          "losses": 425,
+          "wr": 23.75,
+          "recovery_exits": 16
+        },
+        {
+          "coin": "SOL",
+          "pnl": 15.784931476666216,
+          "trades": 550,
+          "wins": 161,
+          "losses": 389,
+          "wr": 29.272727272727273,
+          "recovery_exits": 8
+        },
+        {
+          "coin": "DOGE",
+          "pnl": 15.367662973457527,
+          "trades": 548,
+          "wins": 149,
+          "losses": 398,
+          "wr": 27.189781021897808,
+          "recovery_exits": 8
+        },
+        {
+          "coin": "XLM",
+          "pnl": 14.451415813537594,
+          "trades": 548,
+          "wins": 142,
+          "losses": 406,
+          "wr": 25.91240875912409,
+          "recovery_exits": 13
+        },
+        {
+          "coin": "AVAX",
+          "pnl": 16.888126633730508,
+          "trades": 553,
+          "wins": 153,
+          "losses": 400,
+          "wr": 27.66726943942134,
+          "recovery_exits": 14
+        },
+        {
+          "coin": "ALGO",
+          "pnl": 17.240738240027724,
+          "trades": 548,
+          "wins": 136,
+          "losses": 412,
+          "wr": 24.817518248175183,
+          "recovery_exits": 12
+        },
+        {
+          "coin": "BNB",
+          "pnl": 9.648068905831352,
+          "trades": 525,
+          "wins": 154,
+          "losses": 371,
+          "wr": 29.333333333333332,
+          "recovery_exits": 15
+        },
+        {
+          "coin": "BTC",
+          "pnl": 9.964941868516192,
+          "trades": 509,
+          "wins": 175,
+          "losses": 334,
+          "wr": 34.3811394891945,
+          "recovery_exits": 15
+        }
+      ]
+    },
+    {
+      "label": "MB30_MV0.010_GR15",
+      "total_pnl": 291.1433283389338,
+      "portfolio_wr": 26.313121070776717,
+      "total_trades": 9862,
+      "pf": 0.35738878942294444,
+      "is_baseline": false,
+      "recovery_exit_rate": 2.1800851754208073,
+      "coins": [
+        {
+          "coin": "DASH",
+          "pnl": 38.3997016508082,
+          "trades": 594,
+          "wins": 119,
+          "losses": 475,
+          "wr": 20.033670033670035,
+          "recovery_exits": 11
+        },
+        {
+          "coin": "UNI",
+          "pnl": 19.420758383913054,
+          "trades": 556,
+          "wins": 135,
+          "losses": 420,
+          "wr": 24.280575539568343,
+          "recovery_exits": 17
+        },
+        {
+          "coin": "NEAR",
+          "pnl": 16.758614423421463,
+          "trades": 565,
+          "wins": 130,
+          "losses": 435,
+          "wr": 23.008849557522122,
+          "recovery_exits": 14
+        },
+        {
+          "coin": "ADA",
+          "pnl": 15.258893136838012,
+          "trades": 543,
+          "wins": 138,
+          "losses": 405,
+          "wr": 25.41436464088398,
+          "recovery_exits": 5
+        },
+        {
+          "coin": "LTC",
+          "pnl": 13.4085114867827,
+          "trades": 531,
+          "wins": 145,
+          "losses": 386,
+          "wr": 27.30696798493409,
+          "recovery_exits": 14
+        },
+        {
+          "coin": "SHIB",
+          "pnl": 10.138495827107405,
+          "trades": 555,
+          "wins": 130,
+          "losses": 425,
+          "wr": 23.423423423423422,
+          "recovery_exits": 7
+        },
+        {
+          "coin": "LINK",
+          "pnl": 17.30756991349557,
+          "trades": 538,
+          "wins": 138,
+          "losses": 400,
+          "wr": 25.650557620817843,
+          "recovery_exits": 13
+        },
+        {
+          "coin": "ETH",
+          "pnl": 12.506187646033723,
+          "trades": 529,
+          "wins": 157,
+          "losses": 372,
+          "wr": 29.678638941398866,
+          "recovery_exits": 17
+        },
+        {
+          "coin": "DOT",
+          "pnl": 20.436653217704247,
+          "trades": 559,
+          "wins": 146,
+          "losses": 411,
+          "wr": 26.118067978533094,
+          "recovery_exits": 9
+        },
+        {
+          "coin": "XRP",
+          "pnl": 15.271023188420997,
+          "trades": 557,
+          "wins": 159,
+          "losses": 398,
+          "wr": 28.545780969479356,
+          "recovery_exits": 13
+        },
+        {
+          "coin": "ATOM",
+          "pnl": 13.18570214313165,
+          "trades": 559,
+          "wins": 132,
+          "losses": 425,
+          "wr": 23.613595706618963,
+          "recovery_exits": 16
+        },
+        {
+          "coin": "SOL",
+          "pnl": 15.784931476666216,
+          "trades": 550,
+          "wins": 161,
+          "losses": 389,
+          "wr": 29.272727272727273,
+          "recovery_exits": 8
+        },
+        {
+          "coin": "DOGE",
+          "pnl": 15.367662973457527,
+          "trades": 548,
+          "wins": 149,
+          "losses": 398,
+          "wr": 27.189781021897808,
+          "recovery_exits": 8
+        },
+        {
+          "coin": "XLM",
+          "pnl": 14.287676050685619,
+          "trades": 548,
+          "wins": 142,
+          "losses": 406,
+          "wr": 25.91240875912409,
+          "recovery_exits": 13
+        },
+        {
+          "coin": "AVAX",
+          "pnl": 16.713531093495007,
+          "trades": 551,
+          "wins": 151,
+          "losses": 400,
+          "wr": 27.404718693284934,
+          "recovery_exits": 13
+        },
+        {
+          "coin": "ALGO",
+          "pnl": 17.390205576559694,
+          "trades": 547,
+          "wins": 136,
+          "losses": 411,
+          "wr": 24.862888482632542,
+          "recovery_exits": 11
+        },
+        {
+          "coin": "BNB",
+          "pnl": 9.566935847304151,
+          "trades": 523,
+          "wins": 152,
+          "losses": 371,
+          "wr": 29.063097514340345,
+          "recovery_exits": 12
+        },
+        {
+          "coin": "BTC",
+          "pnl": 9.940274303108609,
+          "trades": 509,
+          "wins": 175,
+          "losses": 334,
+          "wr": 34.3811394891945,
+          "recovery_exits": 14
+        }
+      ]
+    },
+    {
+      "label": "MB30_MV0.015_GR5",
+      "total_pnl": 292.2507423754166,
+      "portfolio_wr": 26.536792167154537,
+      "total_trades": 9907,
+      "pf": 0.3616728573393864,
+      "is_baseline": false,
+      "recovery_exit_rate": 2.765721207227213,
+      "coins": [
+        {
+          "coin": "DASH",
+          "pnl": 39.29401183063143,
+          "trades": 596,
+          "wins": 122,
+          "losses": 474,
+          "wr": 20.469798657718123,
+          "recovery_exits": 14
+        },
+        {
+          "coin": "UNI",
+          "pnl": 19.073327627292713,
+          "trades": 557,
+          "wins": 134,
+          "losses": 422,
+          "wr": 24.057450628366247,
+          "recovery_exits": 18
+        },
+        {
+          "coin": "NEAR",
+          "pnl": 16.48645880812697,
+          "trades": 565,
+          "wins": 132,
+          "losses": 433,
+          "wr": 23.36283185840708,
+          "recovery_exits": 17
+        },
+        {
+          "coin": "ADA",
+          "pnl": 15.583882213552826,
+          "trades": 544,
+          "wins": 139,
+          "losses": 405,
+          "wr": 25.551470588235293,
+          "recovery_exits": 8
+        },
+        {
+          "coin": "LTC",
+          "pnl": 13.251415140575773,
+          "trades": 534,
+          "wins": 147,
+          "losses": 387,
+          "wr": 27.52808988764045,
+          "recovery_exits": 17
+        },
+        {
+          "coin": "SHIB",
+          "pnl": 10.303861816664607,
+          "trades": 557,
+          "wins": 131,
+          "losses": 424,
+          "wr": 23.518850987432675,
+          "recovery_exits": 14
+        },
+        {
+          "coin": "LINK",
+          "pnl": 16.964859981687212,
+          "trades": 539,
+          "wins": 137,
+          "losses": 402,
+          "wr": 25.41743970315399,
+          "recovery_exits": 15
+        },
+        {
+          "coin": "ETH",
+          "pnl": 12.288794597060189,
+          "trades": 533,
+          "wins": 162,
+          "losses": 371,
+          "wr": 30.393996247654787,
+          "recovery_exits": 21
+        },
+        {
+          "coin": "DOT",
+          "pnl": 20.679033299122196,
+          "trades": 561,
+          "wins": 149,
+          "losses": 410,
+          "wr": 26.559714795008915,
+          "recovery_exits": 14
+        },
+        {
+          "coin": "XRP",
+          "pnl": 15.454410784391271,
+          "trades": 559,
+          "wins": 161,
+          "losses": 398,
+          "wr": 28.80143112701252,
+          "recovery_exits": 17
+        },
+        {
+          "coin": "ATOM",
+          "pnl": 13.63024145726321,
+          "trades": 563,
+          "wins": 134,
+          "losses": 427,
+          "wr": 23.80106571936057,
+          "recovery_exits": 20
+        },
+        {
+          "coin": "SOL",
+          "pnl": 16.021628083478944,
+          "trades": 553,
+          "wins": 164,
+          "losses": 389,
+          "wr": 29.65641952983725,
+          "recovery_exits": 11
+        },
+        {
+          "coin": "DOGE",
+          "pnl": 14.956354203499558,
+          "trades": 551,
+          "wins": 150,
+          "losses": 400,
+          "wr": 27.223230490018146,
+          "recovery_exits": 11
+        },
+        {
+          "coin": "XLM",
+          "pnl": 14.713812101435025,
+          "trades": 549,
+          "wins": 143,
+          "losses": 406,
+          "wr": 26.04735883424408,
+          "recovery_exits": 14
+        },
+        {
+          "coin": "AVAX",
+          "pnl": 17.084975535689793,
+          "trades": 554,
+          "wins": 155,
+          "losses": 398,
+          "wr": 27.978339350180505,
+          "recovery_exits": 15
+        },
+        {
+          "coin": "ALGO",
+          "pnl": 17.73903679100414,
+          "trades": 552,
+          "wins": 139,
+          "losses": 413,
+          "wr": 25.181159420289855,
+          "recovery_exits": 13
+        },
+        {
+          "coin": "BNB",
+          "pnl": 9.18884088382407,
+          "trades": 528,
+          "wins": 155,
+          "losses": 373,
+          "wr": 29.35606060606061,
+          "recovery_exits": 17
+        },
+        {
+          "coin": "BTC",
+          "pnl": 9.535797220116734,
+          "trades": 512,
+          "wins": 175,
+          "losses": 337,
+          "wr": 34.1796875,
+          "recovery_exits": 18
+        }
+      ]
+    },
+    {
+      "label": "MB30_MV0.015_GR10",
+      "total_pnl": 291.22294817040466,
+      "portfolio_wr": 26.455133387227164,
+      "total_trades": 9896,
+      "pf": 0.3601595817856651,
+      "is_baseline": false,
+      "recovery_exit_rate": 2.6576394502829426,
+      "coins": [
+        {
+          "coin": "DASH",
+          "pnl": 39.29401183063143,
+          "trades": 596,
+          "wins": 122,
+          "losses": 474,
+          "wr": 20.469798657718123,
+          "recovery_exits": 14
+        },
+        {
+          "coin": "UNI",
+          "pnl": 19.05738808063809,
+          "trades": 557,
+          "wins": 134,
+          "losses": 422,
+          "wr": 24.057450628366247,
+          "recovery_exits": 17
+        },
+        {
+          "coin": "NEAR",
+          "pnl": 16.48645880812697,
+          "trades": 565,
+          "wins": 132,
+          "losses": 433,
+          "wr": 23.36283185840708,
+          "recovery_exits": 17
+        },
+        {
+          "coin": "ADA",
+          "pnl": 15.410614672085487,
+          "trades": 543,
+          "wins": 138,
+          "losses": 405,
+          "wr": 25.41436464088398,
+          "recovery_exits": 8
+        },
+        {
+          "coin": "LTC",
+          "pnl": 12.778265074627129,
+          "trades": 534,
+          "wins": 144,
+          "losses": 390,
+          "wr": 26.96629213483146,
+          "recovery_exits": 16
+        },
+        {
+          "coin": "SHIB",
+          "pnl": 10.278290039264363,
+          "trades": 557,
+          "wins": 131,
+          "losses": 424,
+          "wr": 23.518850987432675,
+          "recovery_exits": 14
+        },
+        {
+          "coin": "LINK",
+          "pnl": 17.112084305379994,
+          "trades": 538,
+          "wins": 136,
+          "losses": 402,
+          "wr": 25.27881040892193,
+          "recovery_exits": 13
+        },
+        {
+          "coin": "ETH",
+          "pnl": 12.287524141993075,
+          "trades": 532,
+          "wins": 161,
+          "losses": 371,
+          "wr": 30.263157894736842,
+          "recovery_exits": 21
+        },
+        {
+          "coin": "DOT",
+          "pnl": 20.679033299122196,
+          "trades": 561,
+          "wins": 149,
+          "losses": 410,
+          "wr": 26.559714795008915,
+          "recovery_exits": 14
+        },
+        {
+          "coin": "XRP",
+          "pnl": 15.151234990093329,
+          "trades": 558,
+          "wins": 160,
+          "losses": 398,
+          "wr": 28.673835125448026,
+          "recovery_exits": 16
+        },
+        {
+          "coin": "ATOM",
+          "pnl": 13.498350378574273,
+          "trades": 561,
+          "wins": 134,
+          "losses": 425,
+          "wr": 23.885918003565063,
+          "recovery_exits": 18
+        },
+        {
+          "coin": "SOL",
+          "pnl": 15.68696483930573,
+          "trades": 552,
+          "wins": 162,
+          "losses": 390,
+          "wr": 29.347826086956523,
+          "recovery_exits": 10
+        },
+        {
+          "coin": "DOGE",
+          "pnl": 15.302945642141921,
+          "trades": 550,
+          "wins": 150,
+          "losses": 399,
+          "wr": 27.27272727272727,
+          "recovery_exits": 10
+        },
+        {
+          "coin": "XLM",
+          "pnl": 14.728497892896044,
+          "trades": 548,
+          "wins": 143,
+          "losses": 405,
+          "wr": 26.094890510948904,
+          "recovery_exits": 13
+        },
+        {
+          "coin": "AVAX",
+          "pnl": 16.98307410939057,
+          "trades": 553,
+          "wins": 153,
+          "losses": 399,
+          "wr": 27.66726943942134,
+          "recovery_exits": 14
+        },
+        {
+          "coin": "ALGO",
+          "pnl": 17.781893178212087,
+          "trades": 551,
+          "wins": 139,
+          "losses": 412,
+          "wr": 25.226860254083483,
+          "recovery_exits": 13
+        },
+        {
+          "coin": "BNB",
+          "pnl": 9.181173507498997,
+          "trades": 528,
+          "wins": 155,
+          "losses": 373,
+          "wr": 29.35606060606061,
+          "recovery_exits": 17
+        },
+        {
+          "coin": "BTC",
+          "pnl": 9.525143380423017,
+          "trades": 512,
+          "wins": 175,
+          "losses": 337,
+          "wr": 34.1796875,
+          "recovery_exits": 18
+        }
+      ]
+    },
+    {
+      "label": "MB30_MV0.015_GR15",
+      "total_pnl": 290.8678796256829,
+      "portfolio_wr": 26.41051567239636,
+      "total_trades": 9890,
+      "pf": 0.3592847317744154,
+      "is_baseline": false,
+      "recovery_exit_rate": 2.487360970677452,
+      "coins": [
+        {
+          "coin": "DASH",
+          "pnl": 39.43382352359555,
+          "trades": 596,
+          "wins": 122,
+          "losses": 474,
+          "wr": 20.469798657718123,
+          "recovery_exits": 13
+        },
+        {
+          "coin": "UNI",
+          "pnl": 19.05738808063809,
+          "trades": 557,
+          "wins": 134,
+          "losses": 422,
+          "wr": 24.057450628366247,
+          "recovery_exits": 17
+        },
+        {
+          "coin": "NEAR",
+          "pnl": 16.590899789232992,
+          "trades": 565,
+          "wins": 131,
+          "losses": 434,
+          "wr": 23.1858407079646,
+          "recovery_exits": 16
+        },
+        {
+          "coin": "ADA",
+          "pnl": 15.394603520509634,
+          "trades": 543,
+          "wins": 138,
+          "losses": 405,
+          "wr": 25.41436464088398,
+          "recovery_exits": 7
+        },
+        {
+          "coin": "LTC",
+          "pnl": 13.217327322276915,
+          "trades": 533,
+          "wins": 145,
+          "losses": 388,
+          "wr": 27.204502814258912,
+          "recovery_exits": 14
+        },
+        {
+          "coin": "SHIB",
+          "pnl": 10.266026226664607,
+          "trades": 557,
+          "wins": 131,
+          "losses": 425,
+          "wr": 23.518850987432675,
+          "recovery_exits": 11
+        },
+        {
+          "coin": "LINK",
+          "pnl": 17.30756991349557,
+          "trades": 538,
+          "wins": 138,
+          "losses": 400,
+          "wr": 25.650557620817843,
+          "recovery_exits": 13
+        },
+        {
+          "coin": "ETH",
+          "pnl": 12.255572957858362,
+          "trades": 530,
+          "wins": 160,
+          "losses": 370,
+          "wr": 30.18867924528302,
+          "recovery_exits": 20
+        },
+        {
+          "coin": "DOT",
+          "pnl": 20.171377772661657,
+          "trades": 560,
+          "wins": 147,
+          "losses": 411,
+          "wr": 26.25,
+          "recovery_exits": 12
+        },
+        {
+          "coin": "XRP",
+          "pnl": 15.16097770912468,
+          "trades": 558,
+          "wins": 160,
+          "losses": 398,
+          "wr": 28.673835125448026,
+          "recovery_exits": 15
+        },
+        {
+          "coin": "ATOM",
+          "pnl": 13.453838914072577,
+          "trades": 561,
+          "wins": 134,
+          "losses": 425,
+          "wr": 23.885918003565063,
+          "recovery_exits": 17
+        },
+        {
+          "coin": "SOL",
+          "pnl": 15.791339320460438,
+          "trades": 550,
+          "wins": 161,
+          "losses": 389,
+          "wr": 29.272727272727273,
+          "recovery_exits": 8
+        },
+        {
+          "coin": "DOGE",
+          "pnl": 15.302945642141921,
+          "trades": 550,
+          "wins": 150,
+          "losses": 399,
+          "wr": 27.27272727272727,
+          "recovery_exits": 10
+        },
+        {
+          "coin": "XLM",
+          "pnl": 14.522258497302147,
+          "trades": 548,
+          "wins": 142,
+          "losses": 406,
+          "wr": 25.91240875912409,
+          "recovery_exits": 13
+        },
+        {
+          "coin": "AVAX",
+          "pnl": 16.898109392858856,
+          "trades": 553,
+          "wins": 153,
+          "losses": 399,
+          "wr": 27.66726943942134,
+          "recovery_exits": 14
+        },
+        {
+          "coin": "ALGO",
+          "pnl": 17.214864455771348,
+          "trades": 551,
+          "wins": 137,
+          "losses": 414,
+          "wr": 24.863883847549907,
+          "recovery_exits": 13
+        },
+        {
+          "coin": "BNB",
+          "pnl": 9.321558501498174,
+          "trades": 528,
+          "wins": 155,
+          "losses": 373,
+          "wr": 29.35606060606061,
+          "recovery_exits": 15
+        },
+        {
+          "coin": "BTC",
+          "pnl": 9.507398085519398,
+          "trades": 512,
+          "wins": 174,
+          "losses": 338,
+          "wr": 33.984375,
+          "recovery_exits": 18
+        }
+      ]
+    },
+    {
+      "label": "MB30_MV0.020_GR5",
+      "total_pnl": 290.3076103371967,
+      "portfolio_wr": 26.571946795646916,
+      "total_trades": 9924,
+      "pf": 0.3623746049196097,
+      "is_baseline": false,
+      "recovery_exit_rate": 3.053204353083434,
+      "coins": [
+        {
+          "coin": "DASH",
+          "pnl": 39.35474076003115,
+          "trades": 596,
+          "wins": 122,
+          "losses": 474,
+          "wr": 20.469798657718123,
+          "recovery_exits": 14
+        },
+        {
+          "coin": "UNI",
+          "pnl": 19.26901594297668,
+          "trades": 558,
+          "wins": 135,
+          "losses": 422,
+          "wr": 24.193548387096776,
+          "recovery_exits": 20
+        },
+        {
+          "coin": "NEAR",
+          "pnl": 16.35298947277387,
+          "trades": 568,
+          "wins": 133,
+          "losses": 435,
+          "wr": 23.41549295774648,
+          "recovery_exits": 21
+        },
+        {
+          "coin": "ADA",
+          "pnl": 15.487060016325458,
+          "trades": 545,
+          "wins": 139,
+          "losses": 406,
+          "wr": 25.504587155963304,
+          "recovery_exits": 9
+        },
+        {
+          "coin": "LTC",
+          "pnl": 13.326884836224124,
+          "trades": 534,
+          "wins": 148,
+          "losses": 386,
+          "wr": 27.715355805243448,
+          "recovery_exits": 17
+        },
+        {
+          "coin": "SHIB",
+          "pnl": 10.082138356540696,
+          "trades": 558,
+          "wins": 130,
+          "losses": 426,
+          "wr": 23.297491039426525,
+          "recovery_exits": 15
+        },
+        {
+          "coin": "LINK",
+          "pnl": 16.369895724062758,
+          "trades": 540,
+          "wins": 137,
+          "losses": 403,
+          "wr": 25.37037037037037,
+          "recovery_exits": 19
+        },
+        {
+          "coin": "ETH",
+          "pnl": 12.506785323252402,
+          "trades": 533,
+          "wins": 162,
+          "losses": 371,
+          "wr": 30.393996247654787,
+          "recovery_exits": 21
+        },
+        {
+          "coin": "DOT",
+          "pnl": 20.190141853054286,
+          "trades": 562,
+          "wins": 147,
+          "losses": 413,
+          "wr": 26.156583629893237,
+          "recovery_exits": 14
+        },
+        {
+          "coin": "XRP",
+          "pnl": 15.490772450107684,
+          "trades": 559,
+          "wins": 162,
+          "losses": 397,
+          "wr": 28.980322003577818,
+          "recovery_exits": 18
+        },
+        {
+          "coin": "ATOM",
+          "pnl": 13.6816629744051,
+          "trades": 564,
+          "wins": 136,
+          "losses": 426,
+          "wr": 24.113475177304963,
+          "recovery_exits": 23
+        },
+        {
+          "coin": "SOL",
+          "pnl": 15.82300911828689,
+          "trades": 555,
+          "wins": 165,
+          "losses": 390,
+          "wr": 29.72972972972973,
+          "recovery_exits": 15
+        },
+        {
+          "coin": "DOGE",
+          "pnl": 14.585674062699056,
+          "trades": 553,
+          "wins": 151,
+          "losses": 401,
+          "wr": 27.305605786618447,
+          "recovery_exits": 13
+        },
+        {
+          "coin": "XLM",
+          "pnl": 14.216791772106788,
+          "trades": 551,
+          "wins": 142,
+          "losses": 409,
+          "wr": 25.771324863883848,
+          "recovery_exits": 17
+        },
+        {
+          "coin": "AVAX",
+          "pnl": 17.18411411468115,
+          "trades": 554,
+          "wins": 155,
+          "losses": 397,
+          "wr": 27.978339350180505,
+          "recovery_exits": 15
+        },
+        {
+          "coin": "ALGO",
+          "pnl": 17.438324646754126,
+          "trades": 552,
+          "wins": 142,
+          "losses": 410,
+          "wr": 25.724637681159418,
+          "recovery_exits": 15
+        },
+        {
+          "coin": "BNB",
+          "pnl": 9.213476412646344,
+          "trades": 528,
+          "wins": 155,
+          "losses": 373,
+          "wr": 29.35606060606061,
+          "recovery_exits": 17
+        },
+        {
+          "coin": "BTC",
+          "pnl": 9.734132500268146,
+          "trades": 514,
+          "wins": 176,
+          "losses": 338,
+          "wr": 34.24124513618677,
+          "recovery_exits": 20
+        }
+      ]
+    },
+    {
+      "label": "MB30_MV0.020_GR10",
+      "total_pnl": 291.8010895443582,
+      "portfolio_wr": 26.51805527536817,
+      "total_trades": 9914,
+      "pf": 0.36137457044673543,
+      "is_baseline": false,
+      "recovery_exit_rate": 2.8848093605003027,
+      "coins": [
+        {
+          "coin": "DASH",
+          "pnl": 39.30463118046973,
+          "trades": 596,
+          "wins": 122,
+          "losses": 474,
+          "wr": 20.469798657718123,
+          "recovery_exits": 14
+        },
+        {
+          "coin": "UNI",
+          "pnl": 19.185393994586107,
+          "trades": 557,
+          "wins": 134,
+          "losses": 422,
+          "wr": 24.057450628366247,
+          "recovery_exits": 19
+        },
+        {
+          "coin": "NEAR",
+          "pnl": 16.47553586238071,
+          "trades": 568,
+          "wins": 133,
+          "losses": 435,
+          "wr": 23.41549295774648,
+          "recovery_exits": 20
+        },
+        {
+          "coin": "ADA",
+          "pnl": 15.470473005910108,
+          "trades": 545,
+          "wins": 139,
+          "losses": 406,
+          "wr": 25.504587155963304,
+          "recovery_exits": 9
+        },
+        {
+          "coin": "LTC",
+          "pnl": 13.300574277518038,
+          "trades": 534,
+          "wins": 147,
+          "losses": 387,
+          "wr": 27.52808988764045,
+          "recovery_exits": 17
+        },
+        {
+          "coin": "SHIB",
+          "pnl": 10.33229674987929,
+          "trades": 558,
+          "wins": 132,
+          "losses": 424,
+          "wr": 23.655913978494624,
+          "recovery_exits": 14
+        },
+        {
+          "coin": "LINK",
+          "pnl": 16.735390947288664,
+          "trades": 539,
+          "wins": 137,
+          "losses": 402,
+          "wr": 25.41743970315399,
+          "recovery_exits": 17
+        },
+        {
+          "coin": "ETH",
+          "pnl": 12.146102841336017,
+          "trades": 533,
+          "wins": 160,
+          "losses": 373,
+          "wr": 30.0187617260788,
+          "recovery_exits": 21
+        },
+        {
+          "coin": "DOT",
+          "pnl": 20.679033299122196,
+          "trades": 561,
+          "wins": 149,
+          "losses": 410,
+          "wr": 26.559714795008915,
+          "recovery_exits": 14
+        },
+        {
+          "coin": "XRP",
+          "pnl": 15.477087810815945,
+          "trades": 559,
+          "wins": 161,
+          "losses": 398,
+          "wr": 28.80143112701252,
+          "recovery_exits": 17
+        },
+        {
+          "coin": "ATOM",
+          "pnl": 13.662551613626547,
+          "trades": 564,
+          "wins": 135,
+          "losses": 427,
+          "wr": 23.93617021276596,
+          "recovery_exits": 21
+        },
+        {
+          "coin": "SOL",
+          "pnl": 15.78762502977294,
+          "trades": 554,
+          "wins": 164,
+          "losses": 390,
+          "wr": 29.602888086642597,
+          "recovery_exits": 14
+        },
+        {
+          "coin": "DOGE",
+          "pnl": 14.958816982230275,
+          "trades": 551,
+          "wins": 150,
+          "losses": 400,
+          "wr": 27.223230490018146,
+          "recovery_exits": 11
+        },
+        {
+          "coin": "XLM",
+          "pnl": 14.73917106599896,
+          "trades": 549,
+          "wins": 143,
+          "losses": 406,
+          "wr": 26.04735883424408,
+          "recovery_exits": 14
+        },
+        {
+          "coin": "AVAX",
+          "pnl": 17.050874771007912,
+          "trades": 554,
+          "wins": 154,
+          "losses": 398,
+          "wr": 27.79783393501805,
+          "recovery_exits": 15
+        },
+        {
+          "coin": "ALGO",
+          "pnl": 17.795404971394788,
+          "trades": 552,
+          "wins": 139,
+          "losses": 413,
+          "wr": 25.181159420289855,
+          "recovery_exits": 13
+        },
+        {
+          "coin": "BNB",
+          "pnl": 9.18884088382407,
+          "trades": 528,
+          "wins": 155,
+          "losses": 373,
+          "wr": 29.35606060606061,
+          "recovery_exits": 17
+        },
+        {
+          "coin": "BTC",
+          "pnl": 9.511284257195982,
+          "trades": 512,
+          "wins": 175,
+          "losses": 337,
+          "wr": 34.1796875,
+          "recovery_exits": 19
+        }
+      ]
+    },
+    {
+      "label": "MB30_MV0.020_GR15",
+      "total_pnl": 291.81637680258376,
+      "portfolio_wr": 26.500303091533645,
+      "total_trades": 9898,
+      "pf": 0.36099642169006324,
+      "is_baseline": false,
+      "recovery_exit_rate": 2.6773085471812488,
+      "coins": [
+        {
+          "coin": "DASH",
+          "pnl": 39.32233009686726,
+          "trades": 596,
+          "wins": 122,
+          "losses": 474,
+          "wr": 20.469798657718123,
+          "recovery_exits": 14
+        },
+        {
+          "coin": "UNI",
+          "pnl": 19.05738808063809,
+          "trades": 557,
+          "wins": 134,
+          "losses": 422,
+          "wr": 24.057450628366247,
+          "recovery_exits": 17
+        },
+        {
+          "coin": "NEAR",
+          "pnl": 16.501538937430993,
+          "trades": 565,
+          "wins": 132,
+          "losses": 433,
+          "wr": 23.36283185840708,
+          "recovery_exits": 17
+        },
+        {
+          "coin": "ADA",
+          "pnl": 15.410614672085487,
+          "trades": 543,
+          "wins": 138,
+          "losses": 405,
+          "wr": 25.41436464088398,
+          "recovery_exits": 8
+        },
+        {
+          "coin": "LTC",
+          "pnl": 13.174483982856003,
+          "trades": 534,
+          "wins": 146,
+          "losses": 388,
+          "wr": 27.340823970037455,
+          "recovery_exits": 16
+        },
+        {
+          "coin": "SHIB",
+          "pnl": 10.278290039264363,
+          "trades": 557,
+          "wins": 131,
+          "losses": 424,
+          "wr": 23.518850987432675,
+          "recovery_exits": 14
+        },
+        {
+          "coin": "LINK",
+          "pnl": 16.998976283616443,
+          "trades": 538,
+          "wins": 136,
+          "losses": 402,
+          "wr": 25.27881040892193,
+          "recovery_exits": 14
+        },
+        {
+          "coin": "ETH",
+          "pnl": 12.288794597060189,
+          "trades": 533,
+          "wins": 162,
+          "losses": 371,
+          "wr": 30.393996247654787,
+          "recovery_exits": 21
+        },
+        {
+          "coin": "DOT",
+          "pnl": 20.679033299122196,
+          "trades": 561,
+          "wins": 149,
+          "losses": 410,
+          "wr": 26.559714795008915,
+          "recovery_exits": 14
+        },
+        {
+          "coin": "XRP",
+          "pnl": 15.164665683979933,
+          "trades": 558,
+          "wins": 160,
+          "losses": 398,
+          "wr": 28.673835125448026,
+          "recovery_exits": 16
+        },
+        {
+          "coin": "ATOM",
+          "pnl": 13.498350378574273,
+          "trades": 561,
+          "wins": 134,
+          "losses": 425,
+          "wr": 23.885918003565063,
+          "recovery_exits": 18
+        },
+        {
+          "coin": "SOL",
+          "pnl": 15.68696483930573,
+          "trades": 552,
+          "wins": 162,
+          "losses": 390,
+          "wr": 29.347826086956523,
+          "recovery_exits": 10
+        },
+        {
+          "coin": "DOGE",
+          "pnl": 15.302945642141921,
+          "trades": 550,
+          "wins": 150,
+          "losses": 399,
+          "wr": 27.27272727272727,
+          "recovery_exits": 10
+        },
+        {
+          "coin": "XLM",
+          "pnl": 14.861544183636383,
+          "trades": 548,
+          "wins": 143,
+          "losses": 405,
+          "wr": 26.094890510948904,
+          "recovery_exits": 13
+        },
+        {
+          "coin": "AVAX",
+          "pnl": 17.137435030753224,
+          "trades": 553,
+          "wins": 155,
+          "losses": 397,
+          "wr": 28.028933092224236,
+          "recovery_exits": 15
+        },
+        {
+          "coin": "ALGO",
+          "pnl": 17.73903679100414,
+          "trades": 552,
+          "wins": 139,
+          "losses": 413,
+          "wr": 25.181159420289855,
+          "recovery_exits": 13
+        },
+        {
+          "coin": "BNB",
+          "pnl": 9.18884088382407,
+          "trades": 528,
+          "wins": 155,
+          "losses": 373,
+          "wr": 29.35606060606061,
+          "recovery_exits": 17
+        },
+        {
+          "coin": "BTC",
+          "pnl": 9.525143380423017,
+          "trades": 512,
+          "wins": 175,
+          "losses": 337,
+          "wr": 34.1796875,
+          "recovery_exits": 18
+        }
+      ]
+    },
+    {
+      "label": "MB30_MV0.025_GR5",
+      "total_pnl": 290.90178617909316,
+      "portfolio_wr": 26.73963249322221,
+      "total_trades": 9959,
+      "pf": 0.36569623729744577,
+      "is_baseline": false,
+      "recovery_exit_rate": 3.4541620644643034,
+      "coins": [
+        {
+          "coin": "DASH",
+          "pnl": 39.23055709140576,
+          "trades": 597,
+          "wins": 124,
+          "losses": 473,
+          "wr": 20.770519262981573,
+          "recovery_exits": 16
+        },
+        {
+          "coin": "UNI",
+          "pnl": 18.984857953046742,
+          "trades": 559,
+          "wins": 134,
+          "losses": 423,
+          "wr": 23.97137745974955,
+          "recovery_exits": 23
+        },
+        {
+          "coin": "NEAR",
+          "pnl": 17.14311489045454,
+          "trades": 570,
+          "wins": 137,
+          "losses": 433,
+          "wr": 24.035087719298247,
+          "recovery_exits": 22
+        },
+        {
+          "coin": "ADA",
+          "pnl": 15.61299679783744,
+          "trades": 549,
+          "wins": 142,
+          "losses": 407,
+          "wr": 25.865209471766846,
+          "recovery_exits": 12
+        },
+        {
+          "coin": "LTC",
+          "pnl": 13.28086542692435,
+          "trades": 535,
+          "wins": 149,
+          "losses": 386,
+          "wr": 27.850467289719628,
+          "recovery_exits": 18
+        },
+        {
+          "coin": "SHIB",
+          "pnl": 9.799020096015909,
+          "trades": 563,
+          "wins": 132,
+          "losses": 428,
+          "wr": 23.44582593250444,
+          "recovery_exits": 20
+        },
+        {
+          "coin": "LINK",
+          "pnl": 16.186592567042467,
+          "trades": 543,
+          "wins": 137,
+          "losses": 405,
+          "wr": 25.23020257826888,
+          "recovery_exits": 21
+        },
+        {
+          "coin": "ETH",
+          "pnl": 13.23096909531094,
+          "trades": 537,
+          "wins": 167,
+          "losses": 370,
+          "wr": 31.098696461824954,
+          "recovery_exits": 22
+        },
+        {
+          "coin": "DOT",
+          "pnl": 20.184626840873847,
+          "trades": 564,
+          "wins": 148,
+          "losses": 413,
+          "wr": 26.24113475177305,
+          "recovery_exits": 17
+        },
+        {
+          "coin": "XRP",
+          "pnl": 15.802779453996777,
+          "trades": 560,
+          "wins": 164,
+          "losses": 396,
+          "wr": 29.28571428571429,
+          "recovery_exits": 20
+        },
+        {
+          "coin": "ATOM",
+          "pnl": 14.183234134766934,
+          "trades": 564,
+          "wins": 137,
+          "losses": 425,
+          "wr": 24.29078014184397,
+          "recovery_exits": 24
+        },
+        {
+          "coin": "SOL",
+          "pnl": 15.948094573871373,
+          "trades": 556,
+          "wins": 165,
+          "losses": 391,
+          "wr": 29.676258992805753,
+          "recovery_exits": 18
+        },
+        {
+          "coin": "DOGE",
+          "pnl": 14.879024002739882,
+          "trades": 553,
+          "wins": 152,
+          "losses": 399,
+          "wr": 27.48643761301989,
+          "recovery_exits": 13
+        },
+        {
+          "coin": "XLM",
+          "pnl": 14.062478020641564,
+          "trades": 551,
+          "wins": 141,
+          "losses": 410,
+          "wr": 25.58983666061706,
+          "recovery_exits": 18
+        },
+        {
+          "coin": "AVAX",
+          "pnl": 17.165629378883466,
+          "trades": 556,
+          "wins": 158,
+          "losses": 397,
+          "wr": 28.41726618705036,
+          "recovery_exits": 17
+        },
+        {
+          "coin": "ALGO",
+          "pnl": 16.15859168776487,
+          "trades": 556,
+          "wins": 141,
+          "losses": 415,
+          "wr": 25.359712230215827,
+          "recovery_exits": 20
+        },
+        {
+          "coin": "BNB",
+          "pnl": 9.30116782962584,
+          "trades": 529,
+          "wins": 157,
+          "losses": 372,
+          "wr": 29.678638941398866,
+          "recovery_exits": 18
+        },
+        {
+          "coin": "BTC",
+          "pnl": 9.747186337890497,
+          "trades": 517,
+          "wins": 178,
+          "losses": 339,
+          "wr": 34.4294003868472,
+          "recovery_exits": 25
+        }
+      ]
+    },
+    {
+      "label": "MB30_MV0.025_GR10",
+      "total_pnl": 290.60333797122667,
+      "portfolio_wr": 26.60024154589372,
+      "total_trades": 9936,
+      "pf": 0.36289990388576127,
+      "is_baseline": false,
+      "recovery_exit_rate": 3.1803542673107894,
+      "coins": [
+        {
+          "coin": "DASH",
+          "pnl": 39.42282781142518,
+          "trades": 596,
+          "wins": 122,
+          "losses": 474,
+          "wr": 20.469798657718123,
+          "recovery_exits": 14
+        },
+        {
+          "coin": "UNI",
+          "pnl": 19.258723128593658,
+          "trades": 558,
+          "wins": 135,
+          "losses": 422,
+          "wr": 24.193548387096776,
+          "recovery_exits": 20
+        },
+        {
+          "coin": "NEAR",
+          "pnl": 16.945532905974687,
+          "trades": 569,
+          "wins": 136,
+          "losses": 433,
+          "wr": 23.901581722319857,
+          "recovery_exits": 21
+        },
+        {
+          "coin": "ADA",
+          "pnl": 15.515675126967324,
+          "trades": 546,
+          "wins": 139,
+          "losses": 407,
+          "wr": 25.457875457875456,
+          "recovery_exits": 10
+        },
+        {
+          "coin": "LTC",
+          "pnl": 13.267429355068245,
+          "trades": 535,
+          "wins": 149,
+          "losses": 386,
+          "wr": 27.850467289719628,
+          "recovery_exits": 18
+        },
+        {
+          "coin": "SHIB",
+          "pnl": 9.844561527874887,
+          "trades": 560,
+          "wins": 130,
+          "losses": 428,
+          "wr": 23.214285714285715,
+          "recovery_exits": 16
+        },
+        {
+          "coin": "LINK",
+          "pnl": 16.369895724062758,
+          "trades": 540,
+          "wins": 137,
+          "losses": 403,
+          "wr": 25.37037037037037,
+          "recovery_exits": 19
+        },
+        {
+          "coin": "ETH",
+          "pnl": 12.501358671728966,
+          "trades": 535,
+          "wins": 162,
+          "losses": 373,
+          "wr": 30.2803738317757,
+          "recovery_exits": 22
+        },
+        {
+          "coin": "DOT",
+          "pnl": 20.17636474479059,
+          "trades": 563,
+          "wins": 147,
+          "losses": 414,
+          "wr": 26.1101243339254,
+          "recovery_exits": 17
+        },
+        {
+          "coin": "XRP",
+          "pnl": 15.512039065665974,
+          "trades": 559,
+          "wins": 162,
+          "losses": 397,
+          "wr": 28.980322003577818,
+          "recovery_exits": 18
+        },
+        {
+          "coin": "ATOM",
+          "pnl": 13.656030130442446,
+          "trades": 565,
+          "wins": 136,
+          "losses": 427,
+          "wr": 24.07079646017699,
+          "recovery_exits": 24
+        },
+        {
+          "coin": "SOL",
+          "pnl": 15.82300911828689,
+          "trades": 555,
+          "wins": 165,
+          "losses": 390,
+          "wr": 29.72972972972973,
+          "recovery_exits": 15
+        },
+        {
+          "coin": "DOGE",
+          "pnl": 14.59411629665911,
+          "trades": 553,
+          "wins": 151,
+          "losses": 401,
+          "wr": 27.305605786618447,
+          "recovery_exits": 13
+        },
+        {
+          "coin": "XLM",
+          "pnl": 14.275495909519861,
+          "trades": 551,
+          "wins": 142,
+          "losses": 409,
+          "wr": 25.771324863883848,
+          "recovery_exits": 18
+        },
+        {
+          "coin": "AVAX",
+          "pnl": 17.05757903732635,
+          "trades": 555,
+          "wins": 155,
+          "losses": 398,
+          "wr": 27.927927927927925,
+          "recovery_exits": 16
+        },
+        {
+          "coin": "ALGO",
+          "pnl": 17.419049774543836,
+          "trades": 554,
+          "wins": 144,
+          "losses": 410,
+          "wr": 25.992779783393498,
+          "recovery_exits": 18
+        },
+        {
+          "coin": "BNB",
+          "pnl": 9.214314475306153,
+          "trades": 528,
+          "wins": 155,
+          "losses": 373,
+          "wr": 29.35606060606061,
+          "recovery_exits": 17
+        },
+        {
+          "coin": "BTC",
+          "pnl": 9.749335166989752,
+          "trades": 514,
+          "wins": 176,
+          "losses": 338,
+          "wr": 34.24124513618677,
+          "recovery_exits": 20
+        }
+      ]
+    },
+    {
+      "label": "MB30_MV0.025_GR15",
+      "total_pnl": 290.65298802291704,
+      "portfolio_wr": 26.522791448164583,
+      "total_trades": 9916,
+      "pf": 0.3614623419461243,
+      "is_baseline": false,
+      "recovery_exit_rate": 2.934651068979427,
+      "coins": [
+        {
+          "coin": "DASH",
+          "pnl": 39.30463118046973,
+          "trades": 596,
+          "wins": 122,
+          "losses": 474,
+          "wr": 20.469798657718123,
+          "recovery_exits": 14
+        },
+        {
+          "coin": "UNI",
+          "pnl": 19.19901488847512,
+          "trades": 558,
+          "wins": 134,
+          "losses": 423,
+          "wr": 24.014336917562723,
+          "recovery_exits": 19
+        },
+        {
+          "coin": "NEAR",
+          "pnl": 16.47553586238071,
+          "trades": 568,
+          "wins": 133,
+          "losses": 435,
+          "wr": 23.41549295774648,
+          "recovery_exits": 20
+        },
+        {
+          "coin": "ADA",
+          "pnl": 15.470473005910108,
+          "trades": 545,
+          "wins": 139,
+          "losses": 406,
+          "wr": 25.504587155963304,
+          "recovery_exits": 9
+        },
+        {
+          "coin": "LTC",
+          "pnl": 13.300574277518038,
+          "trades": 534,
+          "wins": 147,
+          "losses": 387,
+          "wr": 27.52808988764045,
+          "recovery_exits": 17
+        },
+        {
+          "coin": "SHIB",
+          "pnl": 10.019788820250184,
+          "trades": 559,
+          "wins": 132,
+          "losses": 425,
+          "wr": 23.613595706618963,
+          "recovery_exits": 15
+        },
+        {
+          "coin": "LINK",
+          "pnl": 16.735390947288664,
+          "trades": 539,
+          "wins": 137,
+          "losses": 402,
+          "wr": 25.41743970315399,
+          "recovery_exits": 17
+        },
+        {
+          "coin": "ETH",
+          "pnl": 12.148178747894718,
+          "trades": 533,
+          "wins": 160,
+          "losses": 373,
+          "wr": 30.0187617260788,
+          "recovery_exits": 22
+        },
+        {
+          "coin": "DOT",
+          "pnl": 20.81191884742796,
+          "trades": 561,
+          "wins": 150,
+          "losses": 409,
+          "wr": 26.737967914438503,
+          "recovery_exits": 15
+        },
+        {
+          "coin": "XRP",
+          "pnl": 15.477087810815945,
+          "trades": 559,
+          "wins": 161,
+          "losses": 398,
+          "wr": 28.80143112701252,
+          "recovery_exits": 17
+        },
+        {
+          "coin": "ATOM",
+          "pnl": 13.655575455054816,
+          "trades": 564,
+          "wins": 135,
+          "losses": 427,
+          "wr": 23.93617021276596,
+          "recovery_exits": 21
+        },
+        {
+          "coin": "SOL",
+          "pnl": 15.78762502977294,
+          "trades": 554,
+          "wins": 164,
+          "losses": 390,
+          "wr": 29.602888086642597,
+          "recovery_exits": 14
+        },
+        {
+          "coin": "DOGE",
+          "pnl": 14.958816982230275,
+          "trades": 551,
+          "wins": 150,
+          "losses": 400,
+          "wr": 27.223230490018146,
+          "recovery_exits": 11
+        },
+        {
+          "coin": "XLM",
+          "pnl": 14.439269469652274,
+          "trades": 549,
+          "wins": 142,
+          "losses": 407,
+          "wr": 25.865209471766846,
+          "recovery_exits": 15
+        },
+        {
+          "coin": "AVAX",
+          "pnl": 17.050874771007912,
+          "trades": 554,
+          "wins": 154,
+          "losses": 398,
+          "wr": 27.79783393501805,
+          "recovery_exits": 15
+        },
+        {
+          "coin": "ALGO",
+          "pnl": 17.1181067857476,
+          "trades": 552,
+          "wins": 140,
+          "losses": 412,
+          "wr": 25.36231884057971,
+          "recovery_exits": 14
+        },
+        {
+          "coin": "BNB",
+          "pnl": 9.18884088382407,
+          "trades": 528,
+          "wins": 155,
+          "losses": 373,
+          "wr": 29.35606060606061,
+          "recovery_exits": 17
+        },
+        {
+          "coin": "BTC",
+          "pnl": 9.511284257195982,
+          "trades": 512,
+          "wins": 175,
+          "losses": 337,
+          "wr": 34.1796875,
+          "recovery_exits": 19
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,109 @@
+{
+  "notes": "RUN52 z-score position sizing. 13 configs. Baseline PnL=176.97. Best: DISABLED (PnL=176.97, Δ=+0.00)",
+  "configs": [
+    {
+      "label": "DISABLED",
+      "total_pnl": 176.96836249314734,
+      "portfolio_wr": 54.71160850274816,
+      "total_trades": 15101,
+      "pf": 0.0,
+      "is_baseline": true
+    },
+    {
+      "label": "CM0.25_ZM2.5",
+      "total_pnl": 154.9310203046038,
+      "portfolio_wr": 54.71160850274816,
+      "total_trades": 15101,
+      "pf": 0.0,
+      "is_baseline": false
+    },
+    {
+      "label": "CM0.25_ZM3.0",
+      "total_pnl": 157.76857781014746,
+      "portfolio_wr": 54.71160850274816,
+      "total_trades": 15101,
+      "pf": 0.0,
+      "is_baseline": false
+    },
+    {
+      "label": "CM0.25_ZM3.5",
+      "total_pnl": 161.53795611945995,
+      "portfolio_wr": 54.71160850274816,
+      "total_trades": 15101,
+      "pf": 0.0,
+      "is_baseline": false
+    },
+    {
+      "label": "CM0.50_ZM2.5",
+      "total_pnl": 133.13729286342448,
+      "portfolio_wr": 54.71160850274816,
+      "total_trades": 15101,
+      "pf": 0.0,
+      "is_baseline": false
+    },
+    {
+      "label": "CM0.50_ZM3.0",
+      "total_pnl": 138.75388828439694,
+      "portfolio_wr": 54.71160850274816,
+      "total_trades": 15101,
+      "pf": 0.0,
+      "is_baseline": false
+    },
+    {
+      "label": "CM0.50_ZM3.5",
+      "total_pnl": 146.22715267403277,
+      "portfolio_wr": 54.71160850274816,
+      "total_trades": 15101,
+      "pf": 0.0,
+      "is_baseline": false
+    },
+    {
+      "label": "CM0.75_ZM2.5",
+      "total_pnl": 111.58451037255625,
+      "portfolio_wr": 54.71160850274816,
+      "total_trades": 15101,
+      "pf": 0.0,
+      "is_baseline": false
+    },
+    {
+      "label": "CM0.75_ZM3.0",
+      "total_pnl": 119.92252310639559,
+      "portfolio_wr": 54.71160850274816,
+      "total_trades": 15101,
+      "pf": 0.0,
+      "is_baseline": false
+    },
+    {
+      "label": "CM0.75_ZM3.5",
+      "total_pnl": 131.0350318405457,
+      "portfolio_wr": 54.71160850274816,
+      "total_trades": 15101,
+      "pf": 0.0,
+      "is_baseline": false
+    },
+    {
+      "label": "CM1.00_ZM2.5",
+      "total_pnl": 90.27003202959222,
+      "portfolio_wr": 54.71160850274816,
+      "total_trades": 15101,
+      "pf": 0.0,
+      "is_baseline": false
+    },
+    {
+      "label": "CM1.00_ZM3.0",
+      "total_pnl": 101.27272827389783,
+      "portfolio_wr": 54.71160850274816,
+      "total_trades": 15101,
+      "pf": 0.0,
+      "is_baseline": false
+    },
+    {
+      "label": "CM1.00_ZM3.5",
+      "total_pnl": 115.96068033024595,
+      "portfolio_wr": 54.71160850274816,
+      "total_trades": 15101,
+      "pf": 0.0,
+      "is_baseline": false
+    }
+  ]
+}

@@ -1,0 +1,29 @@
+{
+  "windows": [
+    {
+      "window": 1,
+      "train_pnl": 89.24449415901898,
+      "test_pnl": 72.93510048774948,
+      "test_delta": 38.21710295419925,
+      "best_cfg": "L10_M0.7_T0.2",
+      "best_train_pnl": 110.90183675957653
+    },
+    {
+      "window": 2,
+      "train_pnl": 66.92630785855391,
+      "test_pnl": 34.71821087453486,
+      "test_delta": 18.29895071458101,
+      "best_cfg": "L10_M0.7_T0.2",
+      "best_train_pnl": 83.53565723306077
+    },
+    {
+      "window": 3,
+      "train_pnl": 72.57497760446283,
+      "test_pnl": 0.0,
+      "test_delta": 0.0,
+      "best_cfg": "L10_M0.7_T0.2",
+      "best_train_pnl": 90.7919737555426
+    }
+  ],
+  "summary": "RUN68.2 walk-forward: 2/3 windows positive, avg delta=+18.84"
+}

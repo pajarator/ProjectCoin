@@ -8,18 +8,6 @@ mod state;
 mod strategies;
 mod tui;
 
-#[cfg(feature = "backtest")]
-mod backtest;
-
-#[cfg(feature = "run30")]
-mod run30;
-
-#[cfg(feature = "run32")]
-mod run32;
-
-#[cfg(feature = "run33")]
-mod run33;
-
 use config::COINS;
 use futures::future::join_all;
 use state::SharedState;
@@ -29,63 +17,6 @@ use tokio::sync::RwLock;
 
 #[tokio::main]
 async fn main() {
-    // Check for backtest mode
-    #[cfg(feature = "backtest")]
-    {
-        if std::env::args().any(|a| a == "--backtest") {
-            backtest::run_backtest().await;
-            return;
-        }
-    }
-
-    // RUN33: uptrend short block filter
-    #[cfg(feature = "run33")]
-    {
-        if std::env::args().any(|a| a == "--run33") {
-            use std::sync::atomic::AtomicBool;
-            let shutdown = Arc::new(AtomicBool::new(false));
-            let sh2 = Arc::clone(&shutdown);
-            ctrlc::set_handler(move || {
-                eprintln!("\nInterrupted — saving partial results...");
-                sh2.store(true, std::sync::atomic::Ordering::SeqCst);
-            }).ok();
-            run33::run(shutdown);
-            return;
-        }
-    }
-
-    // RUN32: regime-only day-by-day backtest
-    #[cfg(feature = "run32")]
-    {
-        if std::env::args().any(|a| a == "--run32") {
-            use std::sync::atomic::AtomicBool;
-            let shutdown = Arc::new(AtomicBool::new(false));
-            let sh2 = Arc::clone(&shutdown);
-            ctrlc::set_handler(move || {
-                eprintln!("\nInterrupted — saving partial results...");
-                sh2.store(true, std::sync::atomic::Ordering::SeqCst);
-            }).ok();
-            run32::run(shutdown);
-            return;
-        }
-    }
-
-    // RUN30: day-by-day version comparison
-    #[cfg(feature = "run30")]
-    {
-        if std::env::args().any(|a| a == "--run30") {
-            use std::sync::atomic::AtomicBool;
-            let shutdown = Arc::new(AtomicBool::new(false));
-            let sh2 = Arc::clone(&shutdown);
-            ctrlc::set_handler(move || {
-                eprintln!("\nInterrupted — saving partial results...");
-                sh2.store(true, std::sync::atomic::Ordering::SeqCst);
-            }).ok();
-            run30::run(shutdown);
-            return;
-        }
-    }
-
     let reset = std::env::args().any(|a| a == "--reset");
     if reset {
         let _ = std::fs::remove_file(config::STATE_FILE);
@@ -102,7 +33,7 @@ async fn main() {
                 let tt = pos.trade_type.unwrap_or(state::TradeType::Regime);
                 let tt_label = match tt {
                     state::TradeType::Scalp => " [SCALP]",
-                    state::TradeType::Momentum => " [MOMENTUM]",
+                    state::TradeType::Momentum => " [MOM]",
                     state::TradeType::Regime => "",
                 };
                 state.coins[ci].trades.push(state::TradeRecord {
@@ -233,7 +164,7 @@ async fn run_trading_loop(shared: Arc<RwLock<SharedState>>, client: reqwest::Cli
                     let client = client.clone();
                     let symbol = cfg.binance_symbol;
                     async move {
-                        fetcher::fetch_klines(&client, symbol, "15m", config::FETCH_15M_LIMIT).await
+                        fetcher::fetch_klines(&client, symbol, "15m", 50).await
                     }
                 })
                 .collect();
@@ -269,6 +200,10 @@ async fn run_trading_loop(shared: Arc<RwLock<SharedState>>, client: reqwest::Cli
             }
             for ci in 0..n {
                 engine::check_entry(&mut state, ci, mode, &ctx);
+            }
+            // Momentum layer (RUN27+28): independent breakout entries for persistence coins
+            for ci in 0..n {
+                engine::check_momentum_entry(&mut state, ci);
             }
 
             // Phase 6: Save state
@@ -306,19 +241,24 @@ async fn run_trading_loop(shared: Arc<RwLock<SharedState>>, client: reqwest::Cli
                 }
             }
 
-            // Check scalp exits and entries
+            // Check scalp + momentum exits and scalp entries
             let n = state.coins.len();
             for ci in 0..n {
                 let cs = &state.coins[ci];
                 if let Some(ref pos) = cs.pos {
-                    if pos.trade_type == Some(crate::state::TradeType::Scalp) {
-                        engine::check_exit(&mut state, ci);
+                    match pos.trade_type {
+                        Some(crate::state::TradeType::Scalp) |
+                        Some(crate::state::TradeType::Momentum) => {
+                            engine::check_exit(&mut state, ci);
+                        }
+                        _ => {}
                     }
                 }
             }
-            // v16: market order scalp entry (zero-fee exchange deployment)
             for ci in 0..n {
-                if state.coins[ci].pos.is_none() {
+                let cs = &state.coins[ci];
+                // Only enter scalps if no position at all
+                if cs.pos.is_none() {
                     engine::check_scalp_entry(&mut state, ci);
                 }
             }

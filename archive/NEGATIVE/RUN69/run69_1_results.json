@@ -1,0 +1,109 @@
+{
+  "notes": "RUN69 winning streak. 13 configs. Baseline PnL=324.75. Best: SC2_SE-0.3 (PnL=326.26, Δ=+1.51)",
+  "configs": [
+    {
+      "label": "SC0_SE-0.5",
+      "total_pnl": 324.7463771869835,
+      "portfolio_wr": 36.14185110663984,
+      "total_trades": 11928,
+      "pf": 0.5660451680672269,
+      "is_baseline": true
+    },
+    {
+      "label": "SC2_SE-0.3",
+      "total_pnl": 326.25938583129044,
+      "portfolio_wr": 36.455548128342244,
+      "total_trades": 11968,
+      "pf": 0.5737769594950026,
+      "is_baseline": false
+    },
+    {
+      "label": "SC2_SE-0.4",
+      "total_pnl": 323.28964799656745,
+      "portfolio_wr": 36.194623565865506,
+      "total_trades": 11941,
+      "pf": 0.5674149927793095,
+      "is_baseline": false
+    },
+    {
+      "label": "SC2_SE-0.5",
+      "total_pnl": 324.7463771869835,
+      "portfolio_wr": 36.14185110663984,
+      "total_trades": 11928,
+      "pf": 0.5660451680672269,
+      "is_baseline": false
+    },
+    {
+      "label": "SC3_SE-0.3",
+      "total_pnl": 325.67887534586214,
+      "portfolio_wr": 36.28525989788231,
+      "total_trades": 11947,
+      "pf": 0.5695703586913676,
+      "is_baseline": false
+    },
+    {
+      "label": "SC3_SE-0.4",
+      "total_pnl": 324.4431434064346,
+      "portfolio_wr": 36.16254713028906,
+      "total_trades": 11935,
+      "pf": 0.5666272810817908,
+      "is_baseline": false
+    },
+    {
+      "label": "SC3_SE-0.5",
+      "total_pnl": 324.7463771869835,
+      "portfolio_wr": 36.14185110663984,
+      "total_trades": 11928,
+      "pf": 0.5660451680672269,
+      "is_baseline": false
+    },
+    {
+      "label": "SC4_SE-0.3",
+      "total_pnl": 325.2839319873456,
+      "portfolio_wr": 36.21209582844698,
+      "total_trades": 11938,
+      "pf": 0.5677698975571316,
+      "is_baseline": false
+    },
+    {
+      "label": "SC4_SE-0.4",
+      "total_pnl": 324.8033332434941,
+      "portfolio_wr": 36.157907970832284,
+      "total_trades": 11931,
+      "pf": 0.5664390756302522,
+      "is_baseline": false
+    },
+    {
+      "label": "SC4_SE-0.5",
+      "total_pnl": 324.7463771869835,
+      "portfolio_wr": 36.14185110663984,
+      "total_trades": 11928,
+      "pf": 0.5660451680672269,
+      "is_baseline": false
+    },
+    {
+      "label": "SC5_SE-0.3",
+      "total_pnl": 325.0233775149842,
+      "portfolio_wr": 36.16628949794652,
+      "total_trades": 11931,
+      "pf": 0.566644780039396,
+      "is_baseline": false
+    },
+    {
+      "label": "SC5_SE-0.4",
+      "total_pnl": 324.7871980816144,
+      "portfolio_wr": 36.14720429206136,
+      "total_trades": 11929,
+      "pf": 0.5661764705882354,
+      "is_baseline": false
+    },
+    {
+      "label": "SC5_SE-0.5",
+      "total_pnl": 324.7463771869835,
+      "portfolio_wr": 36.14185110663984,
+      "total_trades": 11928,
+      "pf": 0.5660451680672269,
+      "is_baseline": false
+    }
+  ]
+}

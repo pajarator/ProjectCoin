@@ -24,6 +24,36 @@ async fn main() {
         eprintln!("State reset!");
     }
 
+    // --close-all: close all open positions at entry price and exit
+    if std::env::args().any(|a| a == "--close-all") {
+        let mut state = SharedState::new();
+        let mut closed = 0usize;
+        for ci in 0..state.coins.len() {
+            if let Some(ref pos) = state.coins[ci].pos.clone() {
+                let tt = pos.trade_type.unwrap_or(state::TradeType::Regime);
+                let tt_label = match tt {
+                    state::TradeType::Scalp => " [SCALP]",
+                    state::TradeType::Regime => "",
+                };
+                state.coins[ci].trades.push(state::TradeRecord {
+                    pnl: 0.0,
+                    reason: "CLOSE_ALL".to_string(),
+                    dir: pos.dir.clone(),
+                    trade_type: Some(tt),
+                });
+                let name = state.coins[ci].name;
+                state.log(format!("CLOSE_ALL {}{} @ entry {} | flat exit", name, tt_label, state::fmt_price(pos.e)));
+                state.coins[ci].pos = None;
+                state.coins[ci].candles_held = 0;
+                state.coins[ci].cooldown = 0;
+                closed += 1;
+            }
+        }
+        state.save_state();
+        eprintln!("Closed {} positions. State saved.", closed);
+        return;
+    }
+
     let shared = Arc::new(RwLock::new(SharedState::new()));
     let client = reqwest::Client::builder()
         .pool_max_idle_per_host(20)

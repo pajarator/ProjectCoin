@@ -1,0 +1,4805 @@
+{
+  "notes": "RUN82 regime decay. 25 configs. Baseline PnL=292.85. Best: AR25_RST_G5 (PnL=316.31, Δ=+23.47)",
+  "configs": [
+    {
+      "label": "BASELINE",
+      "total_pnl": 292.84838529531635,
+      "portfolio_wr": 25.89543021819679,
+      "total_trades": 9716,
+      "pf": 0.34949298513682453,
+      "is_baseline": true,
+      "decay_exit_rate": 0.0,
+      "decay_exit_pnl_sum": 0.0,
+      "coins": [
+        {
+          "coin": "DASH",
+          "pnl": 38.81785941152924,
+          "trades": 583,
+          "wins": 116,
+          "losses": 467,
+          "wr": 19.897084048027445,
+          "decay_exits": 0,
+          "decay_pnl": 0.0
+        },
+        {
+          "coin": "UNI",
+          "pnl": 19.609860119280455,
+          "trades": 548,
+          "wins": 130,
+          "losses": 418,
+          "wr": 23.722627737226276,
+          "decay_exits": 0,
+          "decay_pnl": 0.0
+        },
+        {
+          "coin": "NEAR",
+          "pnl": 17.361808926955703,
+          "trades": 557,
+          "wins": 125,
+          "losses": 432,
+          "wr": 22.44165170556553,
+          "decay_exits": 0,
+          "decay_pnl": 0.0
+        },
+        {
+          "coin": "ADA",
+          "pnl": 14.962745985739218,
+          "trades": 539,
+          "wins": 137,
+          "losses": 402,
+          "wr": 25.41743970315399,
+          "decay_exits": 0,
+          "decay_pnl": 0.0
+        },
+        {
+          "coin": "LTC",
+          "pnl": 13.034188975838987,
+          "trades": 522,
+          "wins": 136,
+          "losses": 386,
+          "wr": 26.053639846743295,
+          "decay_exits": 0,
+          "decay_pnl": 0.0
+        },
+        {
+          "coin": "SHIB",
+          "pnl": 10.423106715599005,
+          "trades": 545,
+          "wins": 126,
+          "losses": 419,
+          "wr": 23.119266055045873,
+          "decay_exits": 0,
+          "decay_pnl": 0.0
+        },
+        {
+          "coin": "LINK",
+          "pnl": 16.351761385965546,
+          "trades": 528,
+          "wins": 129,
+          "losses": 399,
+          "wr": 24.431818181818183,
+          "decay_exits": 0,
+          "decay_pnl": 0.0
+        },
+        {
+          "coin": "ETH",
+          "pnl": 12.514440010168386,
+          "trades": 518,
+          "wins": 154,
+          "losses": 364,
+          "wr": 29.72972972972973,
+          "decay_exits": 0,
+          "decay_pnl": 0.0
+        },
+        {
+          "coin": "DOT",
+          "pnl": 20.124394050708688,
+          "trades": 551,
+          "wins": 140,
+          "losses": 410,
+          "wr": 25.40834845735027,
+          "decay_exits": 0,
+          "decay_pnl": 0.0
+        },
+        {
+          "coin": "XRP",
+          "pnl": 15.43673655207445,
+          "trades": 550,
+          "wins": 154,
+          "losses": 396,
+          "wr": 28.000000000000004,
+          "decay_exits": 0,
+          "decay_pnl": 0.0
+        },
+        {
+          "coin": "ATOM",
+          "pnl": 13.98267756015511,
+          "trades": 549,
+          "wins": 128,
+          "losses": 421,
+          "wr": 23.31511839708561,
+          "decay_exits": 0,
+          "decay_pnl": 0.0
+        },
+        {
+          "coin": "SOL",
+          "pnl": 15.628923369670872,
+          "trades": 547,
+          "wins": 156,
+          "losses": 391,
+          "wr": 28.519195612431442,
+          "decay_exits": 0,
+          "decay_pnl": 0.0
+        },
+        {
+          "coin": "DOGE",
+          "pnl": 14.94337912716773,
+          "trades": 544,
+          "wins": 144,
+          "losses": 400,
+          "wr": 26.47058823529412,
+          "decay_exits": 0,
+          "decay_pnl": 0.0
+        },
+        {
+          "coin": "XLM",
+          "pnl": 14.363778159767861,
+          "trades": 540,
+          "wins": 133,
+          "losses": 407,
+          "wr": 24.62962962962963,
+          "decay_exits": 0,
+          "decay_pnl": 0.0
+        },
+        {
+          "coin": "AVAX",
+          "pnl": 16.81098024652904,
+          "trades": 542,
+          "wins": 147,
+          "losses": 395,
+          "wr": 27.121771217712176,
+          "decay_exits": 0,
+          "decay_pnl": 0.0
+        },
+        {
+          "coin": "ALGO",
+          "pnl": 17.743517646386678,
+          "trades": 538,
+          "wins": 133,
+          "losses": 405,
+          "wr": 24.721189591078065,
+          "decay_exits": 0,
+          "decay_pnl": 0.0
+        },
+        {
+          "coin": "BNB",
+          "pnl": 10.33965238800559,
+          "trades": 518,
+          "wins": 152,
+          "losses": 366,
+          "wr": 29.343629343629345,
+          "decay_exits": 0,
+          "decay_pnl": 0.0
+        },
+        {
+          "coin": "BTC",
+          "pnl": 10.398574663773829,
+          "trades": 497,
+          "wins": 176,
+          "losses": 321,
+          "wr": 35.412474849094565,
+          "decay_exits": 0,
+          "decay_pnl": 0.0
+        }
+      ]
+    },
+    {
+      "label": "AR10_RST_G3",
+      "total_pnl": 272.5044138862399,
+      "portfolio_wr": 40.47800661072972,
+      "total_trades": 11799,
+      "pf": 0.6976336546888696,
+      "is_baseline": false,
+      "decay_exit_rate": 41.249258411729805,
+      "decay_exit_pnl_sum": 200.45366717512198,
+      "coins": [
+        {
+          "coin": "DASH",
+          "pnl": 35.653099305188135,
+          "trades": 690,
+          "wins": 252,
+          "losses": 434,
+          "wr": 36.52173913043478,
+          "decay_exits": 226,
+          "decay_pnl": 24.195848801984646
+        },
+        {
+          "coin": "UNI",
+          "pnl": 17.421790065629864,
+          "trades": 646,
+          "wins": 254,
+          "losses": 388,
+          "wr": 39.318885448916404,
+          "decay_exits": 260,
+          "decay_pnl": 11.573354759513347
+        },
+        {
+          "coin": "NEAR",
+          "pnl": 20.788213079874296,
+          "trades": 667,
+          "wins": 269,
+          "losses": 382,
+          "wr": 40.32983508245877,
+          "decay_exits": 269,
+          "decay_pnl": 15.165973386453729
+        },
+        {
+          "coin": "ADA",
+          "pnl": 19.317711871146884,
+          "trades": 650,
+          "wins": 280,
+          "losses": 367,
+          "wr": 43.07692307692308,
+          "decay_exits": 264,
+          "decay_pnl": 12.68435397393882
+        },
+        {
+          "coin": "LTC",
+          "pnl": 11.955146969830238,
+          "trades": 631,
+          "wins": 250,
+          "losses": 376,
+          "wr": 39.61965134706815,
+          "decay_exits": 270,
+          "decay_pnl": 10.771904924767735
+        },
+        {
+          "coin": "SHIB",
+          "pnl": 10.870358923558157,
+          "trades": 678,
+          "wins": 252,
+          "losses": 398,
+          "wr": 37.16814159292036,
+          "decay_exits": 282,
+          "decay_pnl": 9.548745610091824
+        },
+        {
+          "coin": "LINK",
+          "pnl": 14.356132269664798,
+          "trades": 634,
+          "wins": 250,
+          "losses": 363,
+          "wr": 39.43217665615142,
+          "decay_exits": 260,
+          "decay_pnl": 9.82497709690482
+        },
+        {
+          "coin": "ETH",
+          "pnl": 10.355767013648347,
+          "trades": 647,
+          "wins": 268,
+          "losses": 379,
+          "wr": 41.42194744976816,
+          "decay_exits": 271,
+          "decay_pnl": 7.500483172791585
+        },
+        {
+          "coin": "DOT",
+          "pnl": 18.756242315324812,
+          "trades": 657,
+          "wins": 259,
+          "losses": 384,
+          "wr": 39.42161339421613,
+          "decay_exits": 258,
+          "decay_pnl": 14.223524903800655
+        },
+        {
+          "coin": "XRP",
+          "pnl": 11.042931169838269,
+          "trades": 678,
+          "wins": 293,
+          "losses": 382,
+          "wr": 43.21533923303835,
+          "decay_exits": 297,
+          "decay_pnl": 9.067010990756206
+        },
+        {
+          "coin": "ATOM",
+          "pnl": 14.491983354829102,
+          "trades": 656,
+          "wins": 252,
+          "losses": 385,
+          "wr": 38.41463414634146,
+          "decay_exits": 268,
+          "decay_pnl": 11.309362747592907
+        },
+        {
+          "coin": "SOL",
+          "pnl": 10.170624786941843,
+          "trades": 662,
+          "wins": 263,
+          "losses": 398,
+          "wr": 39.72809667673716,
+          "decay_exits": 265,
+          "decay_pnl": 9.622048948194168
+        },
+        {
+          "coin": "DOGE",
+          "pnl": 12.003154325828348,
+          "trades": 660,
+          "wins": 269,
+          "losses": 390,
+          "wr": 40.75757575757576,
+          "decay_exits": 275,
+          "decay_pnl": 10.408769016090314
+        },
+        {
+          "coin": "XLM",
+          "pnl": 14.096222652146167,
+          "trades": 652,
+          "wins": 250,
+          "losses": 388,
+          "wr": 38.34355828220859,
+          "decay_exits": 254,
+          "decay_pnl": 10.375240212457708
+        },
+        {
+          "coin": "AVAX",
+          "pnl": 14.68438273023088,
+          "trades": 652,
+          "wins": 252,
+          "losses": 381,
+          "wr": 38.65030674846626,
+          "decay_exits": 264,
+          "decay_pnl": 8.437503742345301
+        },
+        {
+          "coin": "ALGO",
+          "pnl": 18.025949196896292,
+          "trades": 649,
+          "wins": 262,
+          "losses": 362,
+          "wr": 40.36979969183359,
+          "decay_exits": 274,
+          "decay_pnl": 13.333946654158794
+        },
+        {
+          "coin": "BNB",
+          "pnl": 7.851674076406113,
+          "trades": 654,
+          "wins": 290,
+          "losses": 364,
+          "wr": 44.342507645259936,
+          "decay_exits": 307,
+          "decay_pnl": 7.114693825463178
+        },
+        {
+          "coin": "BTC",
+          "pnl": 10.663029779257315,
+          "trades": 636,
+          "wins": 311,
+          "losses": 325,
+          "wr": 48.89937106918239,
+          "decay_exits": 303,
+          "decay_pnl": 5.2959244078162815
+        }
+      ]
+    },
+    {
+      "label": "AR10_RST_G5",
+      "total_pnl": 301.94314265849425,
+      "portfolio_wr": 36.62122427158514,
+      "total_trades": 11223,
+      "pf": 0.5858038768529076,
+      "is_baseline": false,
+      "decay_exit_rate": 30.473135525260624,
+      "decay_exit_pnl_sum": 181.0381930108649,
+      "coins": [
+        {
+          "coin": "DASH",
+          "pnl": 41.541192860974775,
+          "trades": 659,
+          "wins": 206,
+          "losses": 452,
+          "wr": 31.25948406676783,
+          "decay_exits": 154,
+          "decay_pnl": 23.46086066578624
+        },
+        {
+          "coin": "UNI",
+          "pnl": 20.864596351451894,
+          "trades": 622,
+          "wins": 227,
+          "losses": 394,
+          "wr": 36.4951768488746,
+          "decay_exits": 185,
+          "decay_pnl": 12.888356492825842
+        },
+        {
+          "coin": "NEAR",
+          "pnl": 21.49575158823147,
+          "trades": 630,
+          "wins": 215,
+          "losses": 403,
+          "wr": 34.12698412698413,
+          "decay_exits": 180,
+          "decay_pnl": 11.152350433945722
+        },
+        {
+          "coin": "ADA",
+          "pnl": 18.736787680331233,
+          "trades": 622,
+          "wins": 233,
+          "losses": 386,
+          "wr": 37.459807073954984,
+          "decay_exits": 189,
+          "decay_pnl": 9.97030867634638
+        },
+        {
+          "coin": "LTC",
+          "pnl": 12.159946115982493,
+          "trades": 600,
+          "wins": 219,
+          "losses": 379,
+          "wr": 36.5,
+          "decay_exits": 192,
+          "decay_pnl": 8.581110566967427
+        },
+        {
+          "coin": "SHIB",
+          "pnl": 13.707122551098024,
+          "trades": 642,
+          "wins": 220,
+          "losses": 401,
+          "wr": 34.26791277258567,
+          "decay_exits": 203,
+          "decay_pnl": 9.333416362066465
+        },
+        {
+          "coin": "LINK",
+          "pnl": 14.001196821529561,
+          "trades": 609,
+          "wins": 216,
+          "losses": 377,
+          "wr": 35.467980295566505,
+          "decay_exits": 188,
+          "decay_pnl": 9.9247173368397
+        },
+        {
+          "coin": "ETH",
+          "pnl": 12.959572767721212,
+          "trades": 614,
+          "wins": 241,
+          "losses": 373,
+          "wr": 39.25081433224756,
+          "decay_exits": 198,
+          "decay_pnl": 8.02835753285581
+        },
+        {
+          "coin": "DOT",
+          "pnl": 20.43323209472564,
+          "trades": 628,
+          "wins": 217,
+          "losses": 405,
+          "wr": 34.554140127388536,
+          "decay_exits": 169,
+          "decay_pnl": 12.290703452854025
+        },
+        {
+          "coin": "XRP",
+          "pnl": 15.583354774170928,
+          "trades": 637,
+          "wins": 238,
+          "losses": 395,
+          "wr": 37.362637362637365,
+          "decay_exits": 199,
+          "decay_pnl": 8.561291102935742
+        },
+        {
+          "coin": "ATOM",
+          "pnl": 14.765106185579015,
+          "trades": 626,
+          "wins": 220,
+          "losses": 398,
+          "wr": 35.14376996805112,
+          "decay_exits": 194,
+          "decay_pnl": 10.336120881476436
+        },
+        {
+          "coin": "SOL",
+          "pnl": 11.435632723968553,
+          "trades": 632,
+          "wins": 232,
+          "losses": 397,
+          "wr": 36.708860759493675,
+          "decay_exits": 185,
+          "decay_pnl": 7.804146000102895
+        },
+        {
+          "coin": "DOGE",
+          "pnl": 14.193056949313487,
+          "trades": 629,
+          "wins": 235,
+          "losses": 393,
+          "wr": 37.36089030206677,
+          "decay_exits": 193,
+          "decay_pnl": 8.48110053353667
+        },
+        {
+          "coin": "XLM",
+          "pnl": 14.513334055344728,
+          "trades": 616,
+          "wins": 216,
+          "losses": 398,
+          "wr": 35.064935064935064,
+          "decay_exits": 159,
+          "decay_pnl": 7.905541164544579
+        },
+        {
+          "coin": "AVAX",
+          "pnl": 15.911100167208602,
+          "trades": 623,
+          "wins": 227,
+          "losses": 385,
+          "wr": 36.43659711075441,
+          "decay_exits": 177,
+          "decay_pnl": 7.440644724704773
+        },
+        {
+          "coin": "ALGO",
+          "pnl": 20.610596915494426,
+          "trades": 610,
+          "wins": 231,
+          "losses": 373,
+          "wr": 37.868852459016395,
+          "decay_exits": 186,
+          "decay_pnl": 13.129298070868982
+        },
+        {
+          "coin": "BNB",
+          "pnl": 7.826705417576491,
+          "trades": 623,
+          "wins": 251,
+          "losses": 372,
+          "wr": 40.28892455858748,
+          "decay_exits": 234,
+          "decay_pnl": 6.859716723781018
+        },
+        {
+          "coin": "BTC",
+          "pnl": 11.204856637791778,
+          "trades": 601,
+          "wins": 266,
+          "losses": 335,
+          "wr": 44.259567387687184,
+          "decay_exits": 235,
+          "decay_pnl": 4.890152288426167
+        }
+      ]
+    },
+    {
+      "label": "AR10_RST_G10",
+      "total_pnl": 310.7177640225656,
+      "portfolio_wr": 31.051832162521357,
+      "total_trades": 10534,
+      "pf": 0.45260827452608277,
+      "is_baseline": false,
+      "decay_exit_rate": 16.223656730586672,
+      "decay_exit_pnl_sum": 115.62634966085784,
+      "coins": [
+        {
+          "coin": "DASH",
+          "pnl": 36.2532142234671,
+          "trades": 623,
+          "wins": 153,
+          "losses": 470,
+          "wr": 24.558587479935795,
+          "decay_exits": 71,
+          "decay_pnl": 12.234290747346156
+        },
+        {
+          "coin": "UNI",
+          "pnl": 23.048272208447884,
+          "trades": 590,
+          "wins": 182,
+          "losses": 407,
+          "wr": 30.847457627118647,
+          "decay_exits": 94,
+          "decay_pnl": 9.411352519913493
+        },
+        {
+          "coin": "NEAR",
+          "pnl": 19.203006153870902,
+          "trades": 595,
+          "wins": 160,
+          "losses": 433,
+          "wr": 26.89075630252101,
+          "decay_exits": 73,
+          "decay_pnl": 6.1828709395688355
+        },
+        {
+          "coin": "ADA",
+          "pnl": 16.996585777100123,
+          "trades": 587,
+          "wins": 175,
+          "losses": 412,
+          "wr": 29.81260647359455,
+          "decay_exits": 87,
+          "decay_pnl": 4.591681086868019
+        },
+        {
+          "coin": "LTC",
+          "pnl": 14.522640683367442,
+          "trades": 567,
+          "wins": 179,
+          "losses": 387,
+          "wr": 31.569664902998234,
+          "decay_exits": 100,
+          "decay_pnl": 5.392273399267601
+        },
+        {
+          "coin": "SHIB",
+          "pnl": 12.055623015294614,
+          "trades": 595,
+          "wins": 168,
+          "losses": 420,
+          "wr": 28.235294117647058,
+          "decay_exits": 94,
+          "decay_pnl": 5.151482487305388
+        },
+        {
+          "coin": "LINK",
+          "pnl": 16.280010103394574,
+          "trades": 574,
+          "wins": 171,
+          "losses": 397,
+          "wr": 29.790940766550523,
+          "decay_exits": 92,
+          "decay_pnl": 7.850436728046238
+        },
+        {
+          "coin": "ETH",
+          "pnl": 12.880704929107182,
+          "trades": 577,
+          "wins": 199,
+          "losses": 378,
+          "wr": 34.48873483535528,
+          "decay_exits": 108,
+          "decay_pnl": 5.405605670152277
+        },
+        {
+          "coin": "DOT",
+          "pnl": 20.341246248703257,
+          "trades": 595,
+          "wins": 182,
+          "losses": 409,
+          "wr": 30.58823529411765,
+          "decay_exits": 93,
+          "decay_pnl": 8.305594587240357
+        },
+        {
+          "coin": "XRP",
+          "pnl": 16.54105564094027,
+          "trades": 596,
+          "wins": 200,
+          "losses": 396,
+          "wr": 33.557046979865774,
+          "decay_exits": 100,
+          "decay_pnl": 6.0211663505885
+        },
+        {
+          "coin": "ATOM",
+          "pnl": 15.815717811155281,
+          "trades": 589,
+          "wins": 173,
+          "losses": 411,
+          "wr": 29.37181663837012,
+          "decay_exits": 93,
+          "decay_pnl": 5.698780486658263
+        },
+        {
+          "coin": "SOL",
+          "pnl": 14.68513483759682,
+          "trades": 595,
+          "wins": 193,
+          "losses": 400,
+          "wr": 32.436974789915965,
+          "decay_exits": 107,
+          "decay_pnl": 6.748539126134934
+        },
+        {
+          "coin": "DOGE",
+          "pnl": 14.41063509631445,
+          "trades": 586,
+          "wins": 179,
+          "losses": 407,
+          "wr": 30.546075085324233,
+          "decay_exits": 97,
+          "decay_pnl": 4.355205064796569
+        },
+        {
+          "coin": "XLM",
+          "pnl": 15.625574580874556,
+          "trades": 584,
+          "wins": 170,
+          "losses": 412,
+          "wr": 29.10958904109589,
+          "decay_exits": 76,
+          "decay_pnl": 6.264460180054287
+        },
+        {
+          "coin": "AVAX",
+          "pnl": 18.874841068340103,
+          "trades": 584,
+          "wins": 187,
+          "losses": 394,
+          "wr": 32.02054794520548,
+          "decay_exits": 88,
+          "decay_pnl": 5.036637526515948
+        },
+        {
+          "coin": "ALGO",
+          "pnl": 20.36133050161456,
+          "trades": 574,
+          "wins": 179,
+          "losses": 392,
+          "wr": 31.18466898954704,
+          "decay_exits": 87,
+          "decay_pnl": 7.37982015253074
+        },
+        {
+          "coin": "BNB",
+          "pnl": 9.995733691270317,
+          "trades": 570,
+          "wins": 192,
+          "losses": 378,
+          "wr": 33.68421052631579,
+          "decay_exits": 117,
+          "decay_pnl": 4.638339095192807
+        },
+        {
+          "coin": "BTC",
+          "pnl": 12.826437451706155,
+          "trades": 553,
+          "wins": 229,
+          "losses": 324,
+          "wr": 41.41048824593128,
+          "decay_exits": 132,
+          "decay_pnl": 4.957813512677431
+        }
+      ]
+    },
+    {
+      "label": "AR10_RSF_G3",
+      "total_pnl": 272.5044138862399,
+      "portfolio_wr": 40.47800661072972,
+      "total_trades": 11799,
+      "pf": 0.6976336546888696,
+      "is_baseline": false,
+      "decay_exit_rate": 41.249258411729805,
+      "decay_exit_pnl_sum": 200.45366717512198,
+      "coins": [
+        {
+          "coin": "DASH",
+          "pnl": 35.653099305188135,
+          "trades": 690,
+          "wins": 252,
+          "losses": 434,
+          "wr": 36.52173913043478,
+          "decay_exits": 226,
+          "decay_pnl": 24.195848801984646
+        },
+        {
+          "coin": "UNI",
+          "pnl": 17.421790065629864,
+          "trades": 646,
+          "wins": 254,
+          "losses": 388,
+          "wr": 39.318885448916404,
+          "decay_exits": 260,
+          "decay_pnl": 11.573354759513347
+        },
+        {
+          "coin": "NEAR",
+          "pnl": 20.788213079874296,
+          "trades": 667,
+          "wins": 269,
+          "losses": 382,
+          "wr": 40.32983508245877,
+          "decay_exits": 269,
+          "decay_pnl": 15.165973386453729
+        },
+        {
+          "coin": "ADA",
+          "pnl": 19.317711871146884,
+          "trades": 650,
+          "wins": 280,
+          "losses": 367,
+          "wr": 43.07692307692308,
+          "decay_exits": 264,
+          "decay_pnl": 12.68435397393882
+        },
+        {
+          "coin": "LTC",
+          "pnl": 11.955146969830238,
+          "trades": 631,
+          "wins": 250,
+          "losses": 376,
+          "wr": 39.61965134706815,
+          "decay_exits": 270,
+          "decay_pnl": 10.771904924767735
+        },
+        {
+          "coin": "SHIB",
+          "pnl": 10.870358923558157,
+          "trades": 678,
+          "wins": 252,
+          "losses": 398,
+          "wr": 37.16814159292036,
+          "decay_exits": 282,
+          "decay_pnl": 9.548745610091824
+        },
+        {
+          "coin": "LINK",
+          "pnl": 14.356132269664798,
+          "trades": 634,
+          "wins": 250,
+          "losses": 363,
+          "wr": 39.43217665615142,
+          "decay_exits": 260,
+          "decay_pnl": 9.82497709690482
+        },
+        {
+          "coin": "ETH",
+          "pnl": 10.355767013648347,
+          "trades": 647,
+          "wins": 268,
+          "losses": 379,
+          "wr": 41.42194744976816,
+          "decay_exits": 271,
+          "decay_pnl": 7.500483172791585
+        },
+        {
+          "coin": "DOT",
+          "pnl": 18.756242315324812,
+          "trades": 657,
+          "wins": 259,
+          "losses": 384,
+          "wr": 39.42161339421613,
+          "decay_exits": 258,
+          "decay_pnl": 14.223524903800655
+        },
+        {
+          "coin": "XRP",
+          "pnl": 11.042931169838269,
+          "trades": 678,
+          "wins": 293,
+          "losses": 382,
+          "wr": 43.21533923303835,
+          "decay_exits": 297,
+          "decay_pnl": 9.067010990756206
+        },
+        {
+          "coin": "ATOM",
+          "pnl": 14.491983354829102,
+          "trades": 656,
+          "wins": 252,
+          "losses": 385,
+          "wr": 38.41463414634146,
+          "decay_exits": 268,
+          "decay_pnl": 11.309362747592907
+        },
+        {
+          "coin": "SOL",
+          "pnl": 10.170624786941843,
+          "trades": 662,
+          "wins": 263,
+          "losses": 398,
+          "wr": 39.72809667673716,
+          "decay_exits": 265,
+          "decay_pnl": 9.622048948194168
+        },
+        {
+          "coin": "DOGE",
+          "pnl": 12.003154325828348,
+          "trades": 660,
+          "wins": 269,
+          "losses": 390,
+          "wr": 40.75757575757576,
+          "decay_exits": 275,
+          "decay_pnl": 10.408769016090314
+        },
+        {
+          "coin": "XLM",
+          "pnl": 14.096222652146167,
+          "trades": 652,
+          "wins": 250,
+          "losses": 388,
+          "wr": 38.34355828220859,
+          "decay_exits": 254,
+          "decay_pnl": 10.375240212457708
+        },
+        {
+          "coin": "AVAX",
+          "pnl": 14.68438273023088,
+          "trades": 652,
+          "wins": 252,
+          "losses": 381,
+          "wr": 38.65030674846626,
+          "decay_exits": 264,
+          "decay_pnl": 8.437503742345301
+        },
+        {
+          "coin": "ALGO",
+          "pnl": 18.025949196896292,
+          "trades": 649,
+          "wins": 262,
+          "losses": 362,
+          "wr": 40.36979969183359,
+          "decay_exits": 274,
+          "decay_pnl": 13.333946654158794
+        },
+        {
+          "coin": "BNB",
+          "pnl": 7.851674076406113,
+          "trades": 654,
+          "wins": 290,
+          "losses": 364,
+          "wr": 44.342507645259936,
+          "decay_exits": 307,
+          "decay_pnl": 7.114693825463178
+        },
+        {
+          "coin": "BTC",
+          "pnl": 10.663029779257315,
+          "trades": 636,
+          "wins": 311,
+          "losses": 325,
+          "wr": 48.89937106918239,
+          "decay_exits": 303,
+          "decay_pnl": 5.2959244078162815
+        }
+      ]
+    },
+    {
+      "label": "AR10_RSF_G5",
+      "total_pnl": 301.94314265849425,
+      "portfolio_wr": 36.62122427158514,
+      "total_trades": 11223,
+      "pf": 0.5858038768529076,
+      "is_baseline": false,
+      "decay_exit_rate": 30.473135525260624,
+      "decay_exit_pnl_sum": 181.0381930108649,
+      "coins": [
+        {
+          "coin": "DASH",
+          "pnl": 41.541192860974775,
+          "trades": 659,
+          "wins": 206,
+          "losses": 452,
+          "wr": 31.25948406676783,
+          "decay_exits": 154,
+          "decay_pnl": 23.46086066578624
+        },
+        {
+          "coin": "UNI",
+          "pnl": 20.864596351451894,
+          "trades": 622,
+          "wins": 227,
+          "losses": 394,
+          "wr": 36.4951768488746,
+          "decay_exits": 185,
+          "decay_pnl": 12.888356492825842
+        },
+        {
+          "coin": "NEAR",
+          "pnl": 21.49575158823147,
+          "trades": 630,
+          "wins": 215,
+          "losses": 403,
+          "wr": 34.12698412698413,
+          "decay_exits": 180,
+          "decay_pnl": 11.152350433945722
+        },
+        {
+          "coin": "ADA",
+          "pnl": 18.736787680331233,
+          "trades": 622,
+          "wins": 233,
+          "losses": 386,
+          "wr": 37.459807073954984,
+          "decay_exits": 189,
+          "decay_pnl": 9.97030867634638
+        },
+        {
+          "coin": "LTC",
+          "pnl": 12.159946115982493,
+          "trades": 600,
+          "wins": 219,
+          "losses": 379,
+          "wr": 36.5,
+          "decay_exits": 192,
+          "decay_pnl": 8.581110566967427
+        },
+        {
+          "coin": "SHIB",
+          "pnl": 13.707122551098024,
+          "trades": 642,
+          "wins": 220,
+          "losses": 401,
+          "wr": 34.26791277258567,
+          "decay_exits": 203,
+          "decay_pnl": 9.333416362066465
+        },
+        {
+          "coin": "LINK",
+          "pnl": 14.001196821529561,
+          "trades": 609,
+          "wins": 216,
+          "losses": 377,
+          "wr": 35.467980295566505,
+          "decay_exits": 188,
+          "decay_pnl": 9.9247173368397
+        },
+        {
+          "coin": "ETH",
+          "pnl": 12.959572767721212,
+          "trades": 614,
+          "wins": 241,
+          "losses": 373,
+          "wr": 39.25081433224756,
+          "decay_exits": 198,
+          "decay_pnl": 8.02835753285581
+        },
+        {
+          "coin": "DOT",
+          "pnl": 20.43323209472564,
+          "trades": 628,
+          "wins": 217,
+          "losses": 405,
+          "wr": 34.554140127388536,
+          "decay_exits": 169,
+          "decay_pnl": 12.290703452854025
+        },
+        {
+          "coin": "XRP",
+          "pnl": 15.583354774170928,
+          "trades": 637,
+          "wins": 238,
+          "losses": 395,
+          "wr": 37.362637362637365,
+          "decay_exits": 199,
+          "decay_pnl": 8.561291102935742
+        },
+        {
+          "coin": "ATOM",
+          "pnl": 14.765106185579015,
+          "trades": 626,
+          "wins": 220,
+          "losses": 398,
+          "wr": 35.14376996805112,
+          "decay_exits": 194,
+          "decay_pnl": 10.336120881476436
+        },
+        {
+          "coin": "SOL",
+          "pnl": 11.435632723968553,
+          "trades": 632,
+          "wins": 232,
+          "losses": 397,
+          "wr": 36.708860759493675,
+          "decay_exits": 185,
+          "decay_pnl": 7.804146000102895
+        },
+        {
+          "coin": "DOGE",
+          "pnl": 14.193056949313487,
+          "trades": 629,
+          "wins": 235,
+          "losses": 393,
+          "wr": 37.36089030206677,
+          "decay_exits": 193,
+          "decay_pnl": 8.48110053353667
+        },
+        {
+          "coin": "XLM",
+          "pnl": 14.513334055344728,
+          "trades": 616,
+          "wins": 216,
+          "losses": 398,
+          "wr": 35.064935064935064,
+          "decay_exits": 159,
+          "decay_pnl": 7.905541164544579
+        },
+        {
+          "coin": "AVAX",
+          "pnl": 15.911100167208602,
+          "trades": 623,
+          "wins": 227,
+          "losses": 385,
+          "wr": 36.43659711075441,
+          "decay_exits": 177,
+          "decay_pnl": 7.440644724704773
+        },
+        {
+          "coin": "ALGO",
+          "pnl": 20.610596915494426,
+          "trades": 610,
+          "wins": 231,
+          "losses": 373,
+          "wr": 37.868852459016395,
+          "decay_exits": 186,
+          "decay_pnl": 13.129298070868982
+        },
+        {
+          "coin": "BNB",
+          "pnl": 7.826705417576491,
+          "trades": 623,
+          "wins": 251,
+          "losses": 372,
+          "wr": 40.28892455858748,
+          "decay_exits": 234,
+          "decay_pnl": 6.859716723781018
+        },
+        {
+          "coin": "BTC",
+          "pnl": 11.204856637791778,
+          "trades": 601,
+          "wins": 266,
+          "losses": 335,
+          "wr": 44.259567387687184,
+          "decay_exits": 235,
+          "decay_pnl": 4.890152288426167
+        }
+      ]
+    },
+    {
+      "label": "AR10_RSF_G10",
+      "total_pnl": 310.7177640225656,
+      "portfolio_wr": 31.051832162521357,
+      "total_trades": 10534,
+      "pf": 0.45260827452608277,
+      "is_baseline": false,
+      "decay_exit_rate": 16.223656730586672,
+      "decay_exit_pnl_sum": 115.62634966085784,
+      "coins": [
+        {
+          "coin": "DASH",
+          "pnl": 36.2532142234671,
+          "trades": 623,
+          "wins": 153,
+          "losses": 470,
+          "wr": 24.558587479935795,
+          "decay_exits": 71,
+          "decay_pnl": 12.234290747346156
+        },
+        {
+          "coin": "UNI",
+          "pnl": 23.048272208447884,
+          "trades": 590,
+          "wins": 182,
+          "losses": 407,
+          "wr": 30.847457627118647,
+          "decay_exits": 94,
+          "decay_pnl": 9.411352519913493
+        },
+        {
+          "coin": "NEAR",
+          "pnl": 19.203006153870902,
+          "trades": 595,
+          "wins": 160,
+          "losses": 433,
+          "wr": 26.89075630252101,
+          "decay_exits": 73,
+          "decay_pnl": 6.1828709395688355
+        },
+        {
+          "coin": "ADA",
+          "pnl": 16.996585777100123,
+          "trades": 587,
+          "wins": 175,
+          "losses": 412,
+          "wr": 29.81260647359455,
+          "decay_exits": 87,
+          "decay_pnl": 4.591681086868019
+        },
+        {
+          "coin": "LTC",
+          "pnl": 14.522640683367442,
+          "trades": 567,
+          "wins": 179,
+          "losses": 387,
+          "wr": 31.569664902998234,
+          "decay_exits": 100,
+          "decay_pnl": 5.392273399267601
+        },
+        {
+          "coin": "SHIB",
+          "pnl": 12.055623015294614,
+          "trades": 595,
+          "wins": 168,
+          "losses": 420,
+          "wr": 28.235294117647058,
+          "decay_exits": 94,
+          "decay_pnl": 5.151482487305388
+        },
+        {
+          "coin": "LINK",
+          "pnl": 16.280010103394574,
+          "trades": 574,
+          "wins": 171,
+          "losses": 397,
+          "wr": 29.790940766550523,
+          "decay_exits": 92,
+          "decay_pnl": 7.850436728046238
+        },
+        {
+          "coin": "ETH",
+          "pnl": 12.880704929107182,
+          "trades": 577,
+          "wins": 199,
+          "losses": 378,
+          "wr": 34.48873483535528,
+          "decay_exits": 108,
+          "decay_pnl": 5.405605670152277
+        },
+        {
+          "coin": "DOT",
+          "pnl": 20.341246248703257,
+          "trades": 595,
+          "wins": 182,
+          "losses": 409,
+          "wr": 30.58823529411765,
+          "decay_exits": 93,
+          "decay_pnl": 8.305594587240357
+        },
+        {
+          "coin": "XRP",
+          "pnl": 16.54105564094027,
+          "trades": 596,
+          "wins": 200,
+          "losses": 396,
+          "wr": 33.557046979865774,
+          "decay_exits": 100,
+          "decay_pnl": 6.0211663505885
+        },
+        {
+          "coin": "ATOM",
+          "pnl": 15.815717811155281,
+          "trades": 589,
+          "wins": 173,
+          "losses": 411,
+          "wr": 29.37181663837012,
+          "decay_exits": 93,
+          "decay_pnl": 5.698780486658263
+        },
+        {
+          "coin": "SOL",
+          "pnl": 14.68513483759682,
+          "trades": 595,
+          "wins": 193,
+          "losses": 400,
+          "wr": 32.436974789915965,
+          "decay_exits": 107,
+          "decay_pnl": 6.748539126134934
+        },
+        {
+          "coin": "DOGE",
+          "pnl": 14.41063509631445,
+          "trades": 586,
+          "wins": 179,
+          "losses": 407,
+          "wr": 30.546075085324233,
+          "decay_exits": 97,
+          "decay_pnl": 4.355205064796569
+        },
+        {
+          "coin": "XLM",
+          "pnl": 15.625574580874556,
+          "trades": 584,
+          "wins": 170,
+          "losses": 412,
+          "wr": 29.10958904109589,
+          "decay_exits": 76,
+          "decay_pnl": 6.264460180054287
+        },
+        {
+          "coin": "AVAX",
+          "pnl": 18.874841068340103,
+          "trades": 584,
+          "wins": 187,
+          "losses": 394,
+          "wr": 32.02054794520548,
+          "decay_exits": 88,
+          "decay_pnl": 5.036637526515948
+        },
+        {
+          "coin": "ALGO",
+          "pnl": 20.36133050161456,
+          "trades": 574,
+          "wins": 179,
+          "losses": 392,
+          "wr": 31.18466898954704,
+          "decay_exits": 87,
+          "decay_pnl": 7.37982015253074
+        },
+        {
+          "coin": "BNB",
+          "pnl": 9.995733691270317,
+          "trades": 570,
+          "wins": 192,
+          "losses": 378,
+          "wr": 33.68421052631579,
+          "decay_exits": 117,
+          "decay_pnl": 4.638339095192807
+        },
+        {
+          "coin": "BTC",
+          "pnl": 12.826437451706155,
+          "trades": 553,
+          "wins": 229,
+          "losses": 324,
+          "wr": 41.41048824593128,
+          "decay_exits": 132,
+          "decay_pnl": 4.957813512677431
+        }
+      ]
+    },
+    {
+      "label": "AR15_RST_G3",
+      "total_pnl": 280.4256056304115,
+      "portfolio_wr": 39.6283231523703,
+      "total_trades": 11623,
+      "pf": 0.6723106115895489,
+      "is_baseline": false,
+      "decay_exit_rate": 38.91422180160028,
+      "decay_exit_pnl_sum": 178.29711344750814,
+      "coins": [
+        {
+          "coin": "DASH",
+          "pnl": 37.259582986729214,
+          "trades": 679,
+          "wins": 246,
+          "losses": 430,
+          "wr": 36.22974963181149,
+          "decay_exits": 208,
+          "decay_pnl": 20.994577196725174
+        },
+        {
+          "coin": "UNI",
+          "pnl": 17.666920497784773,
+          "trades": 639,
+          "wins": 244,
+          "losses": 391,
+          "wr": 38.18466353677621,
+          "decay_exits": 242,
+          "decay_pnl": 10.338251978978963
+        },
+        {
+          "coin": "NEAR",
+          "pnl": 19.859591921371063,
+          "trades": 653,
+          "wins": 248,
+          "losses": 388,
+          "wr": 37.97856049004594,
+          "decay_exits": 242,
+          "decay_pnl": 12.220416918177516
+        },
+        {
+          "coin": "ADA",
+          "pnl": 19.696312681105212,
+          "trades": 645,
+          "wins": 276,
+          "losses": 365,
+          "wr": 42.7906976744186,
+          "decay_exits": 251,
+          "decay_pnl": 12.093118169850491
+        },
+        {
+          "coin": "LTC",
+          "pnl": 11.47903144041598,
+          "trades": 622,
+          "wins": 238,
+          "losses": 379,
+          "wr": 38.263665594855304,
+          "decay_exits": 251,
+          "decay_pnl": 9.758767174875079
+        },
+        {
+          "coin": "SHIB",
+          "pnl": 11.67941219981013,
+          "trades": 669,
+          "wins": 242,
+          "losses": 402,
+          "wr": 36.173393124065775,
+          "decay_exits": 263,
+          "decay_pnl": 8.387598543133068
+        },
+        {
+          "coin": "LINK",
+          "pnl": 14.16959208254157,
+          "trades": 627,
+          "wins": 244,
+          "losses": 362,
+          "wr": 38.91547049441787,
+          "decay_exits": 252,
+          "decay_pnl": 9.478810830509609
+        },
+        {
+          "coin": "ETH",
+          "pnl": 9.616882619703418,
+          "trades": 635,
+          "wins": 254,
+          "losses": 381,
+          "wr": 40.0,
+          "decay_exits": 252,
+          "decay_pnl": 6.403545654070607
+        },
+        {
+          "coin": "DOT",
+          "pnl": 19.974589033259875,
+          "trades": 647,
+          "wins": 253,
+          "losses": 382,
+          "wr": 39.10355486862442,
+          "decay_exits": 234,
+          "decay_pnl": 13.044307471472122
+        },
+        {
+          "coin": "XRP",
+          "pnl": 10.955440103937036,
+          "trades": 669,
+          "wins": 282,
+          "losses": 385,
+          "wr": 42.152466367713004,
+          "decay_exits": 279,
+          "decay_pnl": 7.925739596678344
+        },
+        {
+          "coin": "ATOM",
+          "pnl": 15.23329299660277,
+          "trades": 646,
+          "wins": 245,
+          "losses": 384,
+          "wr": 37.925696594427244,
+          "decay_exits": 250,
+          "decay_pnl": 10.108274887283443
+        },
+        {
+          "coin": "SOL",
+          "pnl": 10.454879248923334,
+          "trades": 653,
+          "wins": 254,
+          "losses": 398,
+          "wr": 38.89739663093415,
+          "decay_exits": 246,
+          "decay_pnl": 9.594201602489678
+        },
+        {
+          "coin": "DOGE",
+          "pnl": 15.037779653078232,
+          "trades": 645,
+          "wins": 265,
+          "losses": 378,
+          "wr": 41.08527131782946,
+          "decay_exits": 251,
+          "decay_pnl": 9.332526687644227
+        },
+        {
+          "coin": "XLM",
+          "pnl": 14.258857666640324,
+          "trades": 645,
+          "wins": 242,
+          "losses": 391,
+          "wr": 37.51937984496124,
+          "decay_exits": 239,
+          "decay_pnl": 9.50640810192902
+        },
+        {
+          "coin": "AVAX",
+          "pnl": 16.12422434670266,
+          "trades": 641,
+          "wins": 243,
+          "losses": 379,
+          "wr": 37.909516380655226,
+          "decay_exits": 243,
+          "decay_pnl": 7.526698798572363
+        },
+        {
+          "coin": "ALGO",
+          "pnl": 18.814544756750678,
+          "trades": 637,
+          "wins": 251,
+          "losses": 364,
+          "wr": 39.403453689167975,
+          "decay_exits": 247,
+          "decay_pnl": 10.485435257941463
+        },
+        {
+          "coin": "BNB",
+          "pnl": 6.956091656257968,
+          "trades": 644,
+          "wins": 277,
+          "losses": 367,
+          "wr": 43.01242236024845,
+          "decay_exits": 286,
+          "decay_pnl": 6.2544102047839205
+        },
+        {
+          "coin": "BTC",
+          "pnl": 11.188579738797358,
+          "trades": 627,
+          "wins": 302,
+          "losses": 325,
+          "wr": 48.165869218500795,
+          "decay_exits": 287,
+          "decay_pnl": 4.844024372393053
+        }
+      ]
+    },
+    {
+      "label": "AR15_RST_G5",
+      "total_pnl": 309.99667600716805,
+      "portfolio_wr": 36.20178041543027,
+      "total_trades": 11121,
+      "pf": 0.5750607056134839,
+      "is_baseline": false,
+      "decay_exit_rate": 28.98120672601385,
+      "decay_exit_pnl_sum": 169.98124756281845,
+      "coins": [
+        {
+          "coin": "DASH",
+          "pnl": 42.34683048390235,
+          "trades": 656,
+          "wins": 204,
+          "losses": 451,
+          "wr": 31.097560975609756,
+          "decay_exits": 150,
+          "decay_pnl": 23.798936282314592
+        },
+        {
+          "coin": "UNI",
+          "pnl": 21.26043622456966,
+          "trades": 617,
+          "wins": 222,
+          "losses": 394,
+          "wr": 35.980551053484604,
+          "decay_exits": 174,
+          "decay_pnl": 11.744178338136932
+        },
+        {
+          "coin": "NEAR",
+          "pnl": 21.80895807757247,
+          "trades": 622,
+          "wins": 214,
+          "losses": 397,
+          "wr": 34.40514469453376,
+          "decay_exits": 168,
+          "decay_pnl": 10.08024271467248
+        },
+        {
+          "coin": "ADA",
+          "pnl": 19.310990244071732,
+          "trades": 617,
+          "wins": 230,
+          "losses": 384,
+          "wr": 37.27714748784441,
+          "decay_exits": 181,
+          "decay_pnl": 9.405418233374425
+        },
+        {
+          "coin": "LTC",
+          "pnl": 13.035960777442881,
+          "trades": 596,
+          "wins": 217,
+          "losses": 377,
+          "wr": 36.40939597315436,
+          "decay_exits": 182,
+          "decay_pnl": 8.01636450341726
+        },
+        {
+          "coin": "SHIB",
+          "pnl": 13.33693829223202,
+          "trades": 637,
+          "wins": 215,
+          "losses": 402,
+          "wr": 33.75196232339089,
+          "decay_exits": 194,
+          "decay_pnl": 8.694403182307664
+        },
+        {
+          "coin": "LINK",
+          "pnl": 15.274743940476313,
+          "trades": 601,
+          "wins": 210,
+          "losses": 375,
+          "wr": 34.94176372712147,
+          "decay_exits": 179,
+          "decay_pnl": 10.182689698494306
+        },
+        {
+          "coin": "ETH",
+          "pnl": 12.451736778670721,
+          "trades": 611,
+          "wins": 237,
+          "losses": 374,
+          "wr": 38.788870703764324,
+          "decay_exits": 193,
+          "decay_pnl": 7.312404244045648
+        },
+        {
+          "coin": "DOT",
+          "pnl": 20.522861569421465,
+          "trades": 624,
+          "wins": 215,
+          "losses": 402,
+          "wr": 34.455128205128204,
+          "decay_exits": 162,
+          "decay_pnl": 11.68612297352443
+        },
+        {
+          "coin": "XRP",
+          "pnl": 15.555649662611117,
+          "trades": 629,
+          "wins": 230,
+          "losses": 396,
+          "wr": 36.56597774244833,
+          "decay_exits": 186,
+          "decay_pnl": 7.485554591694733
+        },
+        {
+          "coin": "ATOM",
+          "pnl": 16.02153496869603,
+          "trades": 618,
+          "wins": 216,
+          "losses": 396,
+          "wr": 34.95145631067961,
+          "decay_exits": 177,
+          "decay_pnl": 9.3293835378736
+        },
+        {
+          "coin": "SOL",
+          "pnl": 13.232856413833815,
+          "trades": 626,
+          "wins": 226,
+          "losses": 398,
+          "wr": 36.102236421725244,
+          "decay_exits": 173,
+          "decay_pnl": 8.053066490795304
+        },
+        {
+          "coin": "DOGE",
+          "pnl": 14.673718111203442,
+          "trades": 624,
+          "wins": 232,
+          "losses": 391,
+          "wr": 37.17948717948718,
+          "decay_exits": 183,
+          "decay_pnl": 8.209110898810462
+        },
+        {
+          "coin": "XLM",
+          "pnl": 14.560085946161337,
+          "trades": 614,
+          "wins": 213,
+          "losses": 400,
+          "wr": 34.69055374592834,
+          "decay_exits": 154,
+          "decay_pnl": 7.726754104588268
+        },
+        {
+          "coin": "AVAX",
+          "pnl": 16.972033351681105,
+          "trades": 618,
+          "wins": 224,
+          "losses": 381,
+          "wr": 36.24595469255664,
+          "decay_exits": 165,
+          "decay_pnl": 7.385740404897991
+        },
+        {
+          "coin": "ALGO",
+          "pnl": 20.29915415318584,
+          "trades": 601,
+          "wins": 217,
+          "losses": 377,
+          "wr": 36.10648918469218,
+          "decay_exits": 165,
+          "decay_pnl": 10.024157881452295
+        },
+        {
+          "coin": "BNB",
+          "pnl": 7.541027982053052,
+          "trades": 614,
+          "wins": 242,
+          "losses": 372,
+          "wr": 39.413680781758956,
+          "decay_exits": 214,
+          "decay_pnl": 6.313364649896476
+        },
+        {
+          "coin": "BTC",
+          "pnl": 11.791159029382726,
+          "trades": 596,
+          "wins": 262,
+          "losses": 334,
+          "wr": 43.95973154362416,
+          "decay_exits": 223,
+          "decay_pnl": 4.5333548325215824
+        }
+      ]
+    },
+    {
+      "label": "AR15_RST_G10",
+      "total_pnl": 309.71269853847485,
+      "portfolio_wr": 30.647468294078383,
+      "total_trades": 10487,
+      "pf": 0.4441680486456605,
+      "is_baseline": false,
+      "decay_exit_rate": 15.342805378087155,
+      "decay_exit_pnl_sum": 108.08673422270064,
+      "coins": [
+        {
+          "coin": "DASH",
+          "pnl": 35.94299234813522,
+          "trades": 623,
+          "wins": 152,
+          "losses": 471,
+          "wr": 24.398073836276083,
+          "decay_exits": 70,
+          "decay_pnl": 12.51533660300625
+        },
+        {
+          "coin": "UNI",
+          "pnl": 23.122191982795727,
+          "trades": 588,
+          "wins": 181,
+          "losses": 406,
+          "wr": 30.782312925170068,
+          "decay_exits": 92,
+          "decay_pnl": 9.055563929662823
+        },
+        {
+          "coin": "NEAR",
+          "pnl": 19.232025965583446,
+          "trades": 592,
+          "wins": 158,
+          "losses": 432,
+          "wr": 26.68918918918919,
+          "decay_exits": 67,
+          "decay_pnl": 5.552821607673427
+        },
+        {
+          "coin": "ADA",
+          "pnl": 17.330773048008155,
+          "trades": 582,
+          "wins": 172,
+          "losses": 410,
+          "wr": 29.553264604810998,
+          "decay_exits": 78,
+          "decay_pnl": 3.7613008121279483
+        },
+        {
+          "coin": "LTC",
+          "pnl": 14.972909083192349,
+          "trades": 564,
+          "wins": 178,
+          "losses": 385,
+          "wr": 31.560283687943265,
+          "decay_exits": 95,
+          "decay_pnl": 5.048826732587002
+        },
+        {
+          "coin": "SHIB",
+          "pnl": 12.189524873631612,
+          "trades": 592,
+          "wins": 166,
+          "losses": 420,
+          "wr": 28.040540540540544,
+          "decay_exits": 88,
+          "decay_pnl": 4.87666269940431
+        },
+        {
+          "coin": "LINK",
+          "pnl": 16.13152707831759,
+          "trades": 570,
+          "wins": 167,
+          "losses": 396,
+          "wr": 29.29824561403509,
+          "decay_exits": 87,
+          "decay_pnl": 7.190747574283092
+        },
+        {
+          "coin": "ETH",
+          "pnl": 12.2696034691064,
+          "trades": 576,
+          "wins": 195,
+          "losses": 381,
+          "wr": 33.85416666666667,
+          "decay_exits": 105,
+          "decay_pnl": 4.888867700965665
+        },
+        {
+          "coin": "DOT",
+          "pnl": 20.227770153607167,
+          "trades": 594,
+          "wins": 180,
+          "losses": 410,
+          "wr": 30.303030303030305,
+          "decay_exits": 89,
+          "decay_pnl": 7.98609639781539
+        },
+        {
+          "coin": "XRP",
+          "pnl": 15.503916389907616,
+          "trades": 596,
+          "wins": 197,
+          "losses": 399,
+          "wr": 33.053691275167786,
+          "decay_exits": 98,
+          "decay_pnl": 5.472514662011299
+        },
+        {
+          "coin": "ATOM",
+          "pnl": 15.967510445892074,
+          "trades": 586,
+          "wins": 168,
+          "losses": 413,
+          "wr": 28.668941979522184,
+          "decay_exits": 85,
+          "decay_pnl": 5.180653099043008
+        },
+        {
+          "coin": "SOL",
+          "pnl": 15.668970579486498,
+          "trades": 591,
+          "wins": 188,
+          "losses": 401,
+          "wr": 31.810490693739425,
+          "decay_exits": 98,
+          "decay_pnl": 6.104960001399109
+        },
+        {
+          "coin": "DOGE",
+          "pnl": 14.483932318817736,
+          "trades": 585,
+          "wins": 179,
+          "losses": 406,
+          "wr": 30.5982905982906,
+          "decay_exits": 96,
+          "decay_pnl": 4.419759815187531
+        },
+        {
+          "coin": "XLM",
+          "pnl": 16.048499353465743,
+          "trades": 582,
+          "wins": 168,
+          "losses": 412,
+          "wr": 28.865979381443296,
+          "decay_exits": 71,
+          "decay_pnl": 6.092842268973126
+        },
+        {
+          "coin": "AVAX",
+          "pnl": 18.395434142264534,
+          "trades": 582,
+          "wins": 184,
+          "losses": 395,
+          "wr": 31.615120274914087,
+          "decay_exits": 83,
+          "decay_pnl": 5.091868347978502
+        },
+        {
+          "coin": "ALGO",
+          "pnl": 19.906679808425437,
+          "trades": 570,
+          "wins": 171,
+          "losses": 395,
+          "wr": 30.0,
+          "decay_exits": 79,
+          "decay_pnl": 6.147670626064406
+        },
+        {
+          "coin": "BNB",
+          "pnl": 9.693794446595973,
+          "trades": 565,
+          "wins": 187,
+          "losses": 378,
+          "wr": 33.097345132743364,
+          "decay_exits": 105,
+          "decay_pnl": 4.126588161361111
+        },
+        {
+          "coin": "BTC",
+          "pnl": 12.624643051241605,
+          "trades": 549,
+          "wins": 223,
+          "losses": 326,
+          "wr": 40.619307832422585,
+          "decay_exits": 123,
+          "decay_pnl": 4.573653183156629
+        }
+      ]
+    },
+    {
+      "label": "AR15_RSF_G3",
+      "total_pnl": 280.4256056304115,
+      "portfolio_wr": 39.6283231523703,
+      "total_trades": 11623,
+      "pf": 0.6723106115895489,
+      "is_baseline": false,
+      "decay_exit_rate": 38.91422180160028,
+      "decay_exit_pnl_sum": 178.29711344750814,
+      "coins": [
+        {
+          "coin": "DASH",
+          "pnl": 37.259582986729214,
+          "trades": 679,
+          "wins": 246,
+          "losses": 430,
+          "wr": 36.22974963181149,
+          "decay_exits": 208,
+          "decay_pnl": 20.994577196725174
+        },
+        {
+          "coin": "UNI",
+          "pnl": 17.666920497784773,
+          "trades": 639,
+          "wins": 244,
+          "losses": 391,
+          "wr": 38.18466353677621,
+          "decay_exits": 242,
+          "decay_pnl": 10.338251978978963
+        },
+        {
+          "coin": "NEAR",
+          "pnl": 19.859591921371063,
+          "trades": 653,
+          "wins": 248,
+          "losses": 388,
+          "wr": 37.97856049004594,
+          "decay_exits": 242,
+          "decay_pnl": 12.220416918177516
+        },
+        {
+          "coin": "ADA",
+          "pnl": 19.696312681105212,
+          "trades": 645,
+          "wins": 276,
+          "losses": 365,
+          "wr": 42.7906976744186,
+          "decay_exits": 251,
+          "decay_pnl": 12.093118169850491
+        },
+        {
+          "coin": "LTC",
+          "pnl": 11.47903144041598,
+          "trades": 622,
+          "wins": 238,
+          "losses": 379,
+          "wr": 38.263665594855304,
+          "decay_exits": 251,
+          "decay_pnl": 9.758767174875079
+        },
+        {
+          "coin": "SHIB",
+          "pnl": 11.67941219981013,
+          "trades": 669,
+          "wins": 242,
+          "losses": 402,
+          "wr": 36.173393124065775,
+          "decay_exits": 263,
+          "decay_pnl": 8.387598543133068
+        },
+        {
+          "coin": "LINK",
+          "pnl": 14.16959208254157,
+          "trades": 627,
+          "wins": 244,
+          "losses": 362,
+          "wr": 38.91547049441787,
+          "decay_exits": 252,
+          "decay_pnl": 9.478810830509609
+        },
+        {
+          "coin": "ETH",
+          "pnl": 9.616882619703418,
+          "trades": 635,
+          "wins": 254,
+          "losses": 381,
+          "wr": 40.0,
+          "decay_exits": 252,
+          "decay_pnl": 6.403545654070607
+        },
+        {
+          "coin": "DOT",
+          "pnl": 19.974589033259875,
+          "trades": 647,
+          "wins": 253,
+          "losses": 382,
+          "wr": 39.10355486862442,
+          "decay_exits": 234,
+          "decay_pnl": 13.044307471472122
+        },
+        {
+          "coin": "XRP",
+          "pnl": 10.955440103937036,
+          "trades": 669,
+          "wins": 282,
+          "losses": 385,
+          "wr": 42.152466367713004,
+          "decay_exits": 279,
+          "decay_pnl": 7.925739596678344
+        },
+        {
+          "coin": "ATOM",
+          "pnl": 15.23329299660277,
+          "trades": 646,
+          "wins": 245,
+          "losses": 384,
+          "wr": 37.925696594427244,
+          "decay_exits": 250,
+          "decay_pnl": 10.108274887283443
+        },
+        {
+          "coin": "SOL",
+          "pnl": 10.454879248923334,
+          "trades": 653,
+          "wins": 254,
+          "losses": 398,
+          "wr": 38.89739663093415,
+          "decay_exits": 246,
+          "decay_pnl": 9.594201602489678
+        },
+        {
+          "coin": "DOGE",
+          "pnl": 15.037779653078232,
+          "trades": 645,
+          "wins": 265,
+          "losses": 378,
+          "wr": 41.08527131782946,
+          "decay_exits": 251,
+          "decay_pnl": 9.332526687644227
+        },
+        {
+          "coin": "XLM",
+          "pnl": 14.258857666640324,
+          "trades": 645,
+          "wins": 242,
+          "losses": 391,
+          "wr": 37.51937984496124,
+          "decay_exits": 239,
+          "decay_pnl": 9.50640810192902
+        },
+        {
+          "coin": "AVAX",
+          "pnl": 16.12422434670266,
+          "trades": 641,
+          "wins": 243,
+          "losses": 379,
+          "wr": 37.909516380655226,
+          "decay_exits": 243,
+          "decay_pnl": 7.526698798572363
+        },
+        {
+          "coin": "ALGO",
+          "pnl": 18.814544756750678,
+          "trades": 637,
+          "wins": 251,
+          "losses": 364,
+          "wr": 39.403453689167975,
+          "decay_exits": 247,
+          "decay_pnl": 10.485435257941463
+        },
+        {
+          "coin": "BNB",
+          "pnl": 6.956091656257968,
+          "trades": 644,
+          "wins": 277,
+          "losses": 367,
+          "wr": 43.01242236024845,
+          "decay_exits": 286,
+          "decay_pnl": 6.2544102047839205
+        },
+        {
+          "coin": "BTC",
+          "pnl": 11.188579738797358,
+          "trades": 627,
+          "wins": 302,
+          "losses": 325,
+          "wr": 48.165869218500795,
+          "decay_exits": 287,
+          "decay_pnl": 4.844024372393053
+        }
+      ]
+    },
+    {
+      "label": "AR15_RSF_G5",
+      "total_pnl": 309.99667600716805,
+      "portfolio_wr": 36.20178041543027,
+      "total_trades": 11121,
+      "pf": 0.5750607056134839,
+      "is_baseline": false,
+      "decay_exit_rate": 28.98120672601385,
+      "decay_exit_pnl_sum": 169.98124756281845,
+      "coins": [
+        {
+          "coin": "DASH",
+          "pnl": 42.34683048390235,
+          "trades": 656,
+          "wins": 204,
+          "losses": 451,
+          "wr": 31.097560975609756,
+          "decay_exits": 150,
+          "decay_pnl": 23.798936282314592
+        },
+        {
+          "coin": "UNI",
+          "pnl": 21.26043622456966,
+          "trades": 617,
+          "wins": 222,
+          "losses": 394,
+          "wr": 35.980551053484604,
+          "decay_exits": 174,
+          "decay_pnl": 11.744178338136932
+        },
+        {
+          "coin": "NEAR",
+          "pnl": 21.80895807757247,
+          "trades": 622,
+          "wins": 214,
+          "losses": 397,
+          "wr": 34.40514469453376,
+          "decay_exits": 168,
+          "decay_pnl": 10.08024271467248
+        },
+        {
+          "coin": "ADA",
+          "pnl": 19.310990244071732,
+          "trades": 617,
+          "wins": 230,
+          "losses": 384,
+          "wr": 37.27714748784441,
+          "decay_exits": 181,
+          "decay_pnl": 9.405418233374425
+        },
+        {
+          "coin": "LTC",
+          "pnl": 13.035960777442881,
+          "trades": 596,
+          "wins": 217,
+          "losses": 377,
+          "wr": 36.40939597315436,
+          "decay_exits": 182,
+          "decay_pnl": 8.01636450341726
+        },
+        {
+          "coin": "SHIB",
+          "pnl": 13.33693829223202,
+          "trades": 637,
+          "wins": 215,
+          "losses": 402,
+          "wr": 33.75196232339089,
+          "decay_exits": 194,
+          "decay_pnl": 8.694403182307664
+        },
+        {
+          "coin": "LINK",
+          "pnl": 15.274743940476313,
+          "trades": 601,
+          "wins": 210,
+          "losses": 375,
+          "wr": 34.94176372712147,
+          "decay_exits": 179,
+          "decay_pnl": 10.182689698494306
+        },
+        {
+          "coin": "ETH",
+          "pnl": 12.451736778670721,
+          "trades": 611,
+          "wins": 237,
+          "losses": 374,
+          "wr": 38.788870703764324,
+          "decay_exits": 193,
+          "decay_pnl": 7.312404244045648
+        },
+        {
+          "coin": "DOT",
+          "pnl": 20.522861569421465,
+          "trades": 624,
+          "wins": 215,
+          "losses": 402,
+          "wr": 34.455128205128204,
+          "decay_exits": 162,
+          "decay_pnl": 11.68612297352443
+        },
+        {
+          "coin": "XRP",
+          "pnl": 15.555649662611117,
+          "trades": 629,
+          "wins": 230,
+          "losses": 396,
+          "wr": 36.56597774244833,
+          "decay_exits": 186,
+          "decay_pnl": 7.485554591694733
+        },
+        {
+          "coin": "ATOM",
+          "pnl": 16.02153496869603,
+          "trades": 618,
+          "wins": 216,
+          "losses": 396,
+          "wr": 34.95145631067961,
+          "decay_exits": 177,
+          "decay_pnl": 9.3293835378736
+        },
+        {
+          "coin": "SOL",
+          "pnl": 13.232856413833815,
+          "trades": 626,
+          "wins": 226,
+          "losses": 398,
+          "wr": 36.102236421725244,
+          "decay_exits": 173,
+          "decay_pnl": 8.053066490795304
+        },
+        {
+          "coin": "DOGE",
+          "pnl": 14.673718111203442,
+          "trades": 624,
+          "wins": 232,
+          "losses": 391,
+          "wr": 37.17948717948718,
+          "decay_exits": 183,
+          "decay_pnl": 8.209110898810462
+        },
+        {
+          "coin": "XLM",
+          "pnl": 14.560085946161337,
+          "trades": 614,
+          "wins": 213,
+          "losses": 400,
+          "wr": 34.69055374592834,
+          "decay_exits": 154,
+          "decay_pnl": 7.726754104588268
+        },
+        {
+          "coin": "AVAX",
+          "pnl": 16.972033351681105,
+          "trades": 618,
+          "wins": 224,
+          "losses": 381,
+          "wr": 36.24595469255664,
+          "decay_exits": 165,
+          "decay_pnl": 7.385740404897991
+        },
+        {
+          "coin": "ALGO",
+          "pnl": 20.29915415318584,
+          "trades": 601,
+          "wins": 217,
+          "losses": 377,
+          "wr": 36.10648918469218,
+          "decay_exits": 165,
+          "decay_pnl": 10.024157881452295
+        },
+        {
+          "coin": "BNB",
+          "pnl": 7.541027982053052,
+          "trades": 614,
+          "wins": 242,
+          "losses": 372,
+          "wr": 39.413680781758956,
+          "decay_exits": 214,
+          "decay_pnl": 6.313364649896476
+        },
+        {
+          "coin": "BTC",
+          "pnl": 11.791159029382726,
+          "trades": 596,
+          "wins": 262,
+          "losses": 334,
+          "wr": 43.95973154362416,
+          "decay_exits": 223,
+          "decay_pnl": 4.5333548325215824
+        }
+      ]
+    },
+    {
+      "label": "AR15_RSF_G10",
+      "total_pnl": 309.71269853847485,
+      "portfolio_wr": 30.647468294078383,
+      "total_trades": 10487,
+      "pf": 0.4441680486456605,
+      "is_baseline": false,
+      "decay_exit_rate": 15.342805378087155,
+      "decay_exit_pnl_sum": 108.08673422270064,
+      "coins": [
+        {
+          "coin": "DASH",
+          "pnl": 35.94299234813522,
+          "trades": 623,
+          "wins": 152,
+          "losses": 471,
+          "wr": 24.398073836276083,
+          "decay_exits": 70,
+          "decay_pnl": 12.51533660300625
+        },
+        {
+          "coin": "UNI",
+          "pnl": 23.122191982795727,
+          "trades": 588,
+          "wins": 181,
+          "losses": 406,
+          "wr": 30.782312925170068,
+          "decay_exits": 92,
+          "decay_pnl": 9.055563929662823
+        },
+        {
+          "coin": "NEAR",
+          "pnl": 19.232025965583446,
+          "trades": 592,
+          "wins": 158,
+          "losses": 432,
+          "wr": 26.68918918918919,
+          "decay_exits": 67,
+          "decay_pnl": 5.552821607673427
+        },
+        {
+          "coin": "ADA",
+          "pnl": 17.330773048008155,
+          "trades": 582,
+          "wins": 172,
+          "losses": 410,
+          "wr": 29.553264604810998,
+          "decay_exits": 78,
+          "decay_pnl": 3.7613008121279483
+        },
+        {
+          "coin": "LTC",
+          "pnl": 14.972909083192349,
+          "trades": 564,
+          "wins": 178,
+          "losses": 385,
+          "wr": 31.560283687943265,
+          "decay_exits": 95,
+          "decay_pnl": 5.048826732587002
+        },
+        {
+          "coin": "SHIB",
+          "pnl": 12.189524873631612,
+          "trades": 592,
+          "wins": 166,
+          "losses": 420,
+          "wr": 28.040540540540544,
+          "decay_exits": 88,
+          "decay_pnl": 4.87666269940431
+        },
+        {
+          "coin": "LINK",
+          "pnl": 16.13152707831759,
+          "trades": 570,
+          "wins": 167,
+          "losses": 396,
+          "wr": 29.29824561403509,
+          "decay_exits": 87,
+          "decay_pnl": 7.190747574283092
+        },
+        {
+          "coin": "ETH",
+          "pnl": 12.2696034691064,
+          "trades": 576,
+          "wins": 195,
+          "losses": 381,
+          "wr": 33.85416666666667,
+          "decay_exits": 105,
+          "decay_pnl": 4.888867700965665
+        },
+        {
+          "coin": "DOT",
+          "pnl": 20.227770153607167,
+          "trades": 594,
+          "wins": 180,
+          "losses": 410,
+          "wr": 30.303030303030305,
+          "decay_exits": 89,
+          "decay_pnl": 7.98609639781539
+        },
+        {
+          "coin": "XRP",
+          "pnl": 15.503916389907616,
+          "trades": 596,
+          "wins": 197,
+          "losses": 399,
+          "wr": 33.053691275167786,
+          "decay_exits": 98,
+          "decay_pnl": 5.472514662011299
+        },
+        {
+          "coin": "ATOM",
+          "pnl": 15.967510445892074,
+          "trades": 586,
+          "wins": 168,
+          "losses": 413,
+          "wr": 28.668941979522184,
+          "decay_exits": 85,
+          "decay_pnl": 5.180653099043008
+        },
+        {
+          "coin": "SOL",
+          "pnl": 15.668970579486498,
+          "trades": 591,
+          "wins": 188,
+          "losses": 401,
+          "wr": 31.810490693739425,
+          "decay_exits": 98,
+          "decay_pnl": 6.104960001399109
+        },
+        {
+          "coin": "DOGE",
+          "pnl": 14.483932318817736,
+          "trades": 585,
+          "wins": 179,
+          "losses": 406,
+          "wr": 30.5982905982906,
+          "decay_exits": 96,
+          "decay_pnl": 4.419759815187531
+        },
+        {
+          "coin": "XLM",
+          "pnl": 16.048499353465743,
+          "trades": 582,
+          "wins": 168,
+          "losses": 412,
+          "wr": 28.865979381443296,
+          "decay_exits": 71,
+          "decay_pnl": 6.092842268973126
+        },
+        {
+          "coin": "AVAX",
+          "pnl": 18.395434142264534,
+          "trades": 582,
+          "wins": 184,
+          "losses": 395,
+          "wr": 31.615120274914087,
+          "decay_exits": 83,
+          "decay_pnl": 5.091868347978502
+        },
+        {
+          "coin": "ALGO",
+          "pnl": 19.906679808425437,
+          "trades": 570,
+          "wins": 171,
+          "losses": 395,
+          "wr": 30.0,
+          "decay_exits": 79,
+          "decay_pnl": 6.147670626064406
+        },
+        {
+          "coin": "BNB",
+          "pnl": 9.693794446595973,
+          "trades": 565,
+          "wins": 187,
+          "losses": 378,
+          "wr": 33.097345132743364,
+          "decay_exits": 105,
+          "decay_pnl": 4.126588161361111
+        },
+        {
+          "coin": "BTC",
+          "pnl": 12.624643051241605,
+          "trades": 549,
+          "wins": 223,
+          "losses": 326,
+          "wr": 40.619307832422585,
+          "decay_exits": 123,
+          "decay_pnl": 4.573653183156629
+        }
+      ]
+    },
+    {
+      "label": "AR20_RST_G3",
+      "total_pnl": 285.29847452123437,
+      "portfolio_wr": 38.77889228085478,
+      "total_trades": 11465,
+      "pf": 0.6472557868685399,
+      "is_baseline": false,
+      "decay_exit_rate": 36.58962058438727,
+      "decay_exit_pnl_sum": 164.73354112894293,
+      "coins": [
+        {
+          "coin": "DASH",
+          "pnl": 36.00979513054952,
+          "trades": 677,
+          "wins": 243,
+          "losses": 431,
+          "wr": 35.89364844903989,
+          "decay_exits": 201,
+          "decay_pnl": 19.071237934254835
+        },
+        {
+          "coin": "UNI",
+          "pnl": 17.755987778697772,
+          "trades": 631,
+          "wins": 236,
+          "losses": 392,
+          "wr": 37.400950871632325,
+          "decay_exits": 226,
+          "decay_pnl": 9.245838323491881
+        },
+        {
+          "coin": "NEAR",
+          "pnl": 20.73622597098941,
+          "trades": 642,
+          "wins": 241,
+          "losses": 386,
+          "wr": 37.53894080996885,
+          "decay_exits": 218,
+          "decay_pnl": 11.237058859823282
+        },
+        {
+          "coin": "ADA",
+          "pnl": 20.318041692324158,
+          "trades": 633,
+          "wins": 265,
+          "losses": 364,
+          "wr": 41.864139020537124,
+          "decay_exits": 228,
+          "decay_pnl": 10.555523525572989
+        },
+        {
+          "coin": "LTC",
+          "pnl": 11.740769985919542,
+          "trades": 613,
+          "wins": 227,
+          "losses": 382,
+          "wr": 37.03099510603589,
+          "decay_exits": 236,
+          "decay_pnl": 8.85021150694467
+        },
+        {
+          "coin": "SHIB",
+          "pnl": 11.926985827141053,
+          "trades": 658,
+          "wins": 230,
+          "losses": 402,
+          "wr": 34.954407294832826,
+          "decay_exits": 242,
+          "decay_pnl": 8.123012987072945
+        },
+        {
+          "coin": "LINK",
+          "pnl": 13.902575137972732,
+          "trades": 614,
+          "wins": 231,
+          "losses": 366,
+          "wr": 37.62214983713355,
+          "decay_exits": 228,
+          "decay_pnl": 8.57322066138482
+        },
+        {
+          "coin": "ETH",
+          "pnl": 9.43643346264632,
+          "trades": 627,
+          "wins": 242,
+          "losses": 385,
+          "wr": 38.59649122807017,
+          "decay_exits": 240,
+          "decay_pnl": 5.611083838132282
+        },
+        {
+          "coin": "DOT",
+          "pnl": 20.769867796940062,
+          "trades": 640,
+          "wins": 245,
+          "losses": 386,
+          "wr": 38.28125,
+          "decay_exits": 219,
+          "decay_pnl": 12.505320820731109
+        },
+        {
+          "coin": "XRP",
+          "pnl": 12.523128871691156,
+          "trades": 654,
+          "wins": 269,
+          "losses": 382,
+          "wr": 41.13149847094802,
+          "decay_exits": 247,
+          "decay_pnl": 8.067979541642384
+        },
+        {
+          "coin": "ATOM",
+          "pnl": 16.029423591539256,
+          "trades": 639,
+          "wins": 241,
+          "losses": 380,
+          "wr": 37.715179968701094,
+          "decay_exits": 232,
+          "decay_pnl": 9.674739611367233
+        },
+        {
+          "coin": "SOL",
+          "pnl": 11.549020647251396,
+          "trades": 643,
+          "wins": 241,
+          "losses": 401,
+          "wr": 37.480559875583204,
+          "decay_exits": 223,
+          "decay_pnl": 8.692511965284613
+        },
+        {
+          "coin": "DOGE",
+          "pnl": 15.108934910745731,
+          "trades": 640,
+          "wins": 261,
+          "losses": 377,
+          "wr": 40.78125,
+          "decay_exits": 241,
+          "decay_pnl": 8.66368278922176
+        },
+        {
+          "coin": "XLM",
+          "pnl": 13.807413294998383,
+          "trades": 639,
+          "wins": 233,
+          "losses": 396,
+          "wr": 36.46322378716745,
+          "decay_exits": 222,
+          "decay_pnl": 8.765533748866256
+        },
+        {
+          "coin": "AVAX",
+          "pnl": 16.197114900052938,
+          "trades": 632,
+          "wins": 236,
+          "losses": 381,
+          "wr": 37.34177215189873,
+          "decay_exits": 221,
+          "decay_pnl": 6.740680868009068
+        },
+        {
+          "coin": "ALGO",
+          "pnl": 19.34892141350457,
+          "trades": 631,
+          "wins": 244,
+          "losses": 367,
+          "wr": 38.66877971473851,
+          "decay_exits": 233,
+          "decay_pnl": 10.031857880351916
+        },
+        {
+          "coin": "BNB",
+          "pnl": 6.88067036914066,
+          "trades": 632,
+          "wins": 266,
+          "losses": 366,
+          "wr": 42.08860759493671,
+          "decay_exits": 261,
+          "decay_pnl": 5.886523904265318
+        },
+        {
+          "coin": "BTC",
+          "pnl": 11.257163739129723,
+          "trades": 620,
+          "wins": 295,
+          "losses": 325,
+          "wr": 47.58064516129033,
+          "decay_exits": 277,
+          "decay_pnl": 4.437522362525573
+        }
+      ]
+    },
+    {
+      "label": "AR20_RST_G5",
+      "total_pnl": 310.4430272271189,
+      "portfolio_wr": 35.63530904477071,
+      "total_trades": 11034,
+      "pf": 0.5604332953249713,
+      "is_baseline": false,
+      "decay_exit_rate": 27.469639296719233,
+      "decay_exit_pnl_sum": 155.72754576141918,
+      "coins": [
+        {
+          "coin": "DASH",
+          "pnl": 42.2627118793167,
+          "trades": 653,
+          "wins": 199,
+          "losses": 453,
+          "wr": 30.474732006125578,
+          "decay_exits": 141,
+          "decay_pnl": 21.989184544392693
+        },
+        {
+          "coin": "UNI",
+          "pnl": 21.274539155952667,
+          "trades": 611,
+          "wins": 216,
+          "losses": 394,
+          "wr": 35.3518821603928,
+          "decay_exits": 164,
+          "decay_pnl": 10.291839770953482
+        },
+        {
+          "coin": "NEAR",
+          "pnl": 21.796081887965002,
+          "trades": 618,
+          "wins": 208,
+          "losses": 398,
+          "wr": 33.65695792880259,
+          "decay_exits": 156,
+          "decay_pnl": 9.018430330958196
+        },
+        {
+          "coin": "ADA",
+          "pnl": 18.74472426658005,
+          "trades": 611,
+          "wins": 221,
+          "losses": 387,
+          "wr": 36.17021276595745,
+          "decay_exits": 163,
+          "decay_pnl": 7.852920854063364
+        },
+        {
+          "coin": "LTC",
+          "pnl": 13.6662016252576,
+          "trades": 589,
+          "wins": 209,
+          "losses": 379,
+          "wr": 35.483870967741936,
+          "decay_exits": 169,
+          "decay_pnl": 7.015255846063561
+        },
+        {
+          "coin": "SHIB",
+          "pnl": 13.75081500368772,
+          "trades": 627,
+          "wins": 212,
+          "losses": 398,
+          "wr": 33.811802232854866,
+          "decay_exits": 179,
+          "decay_pnl": 8.305613472031329
+        },
+        {
+          "coin": "LINK",
+          "pnl": 15.549408700421395,
+          "trades": 596,
+          "wins": 205,
+          "losses": 378,
+          "wr": 34.395973154362416,
+          "decay_exits": 169,
+          "decay_pnl": 9.989991515867999
+        },
+        {
+          "coin": "ETH",
+          "pnl": 11.713732707689005,
+          "trades": 607,
+          "wins": 230,
+          "losses": 377,
+          "wr": 37.89126853377265,
+          "decay_exits": 186,
+          "decay_pnl": 6.867233778456228
+        },
+        {
+          "coin": "DOT",
+          "pnl": 21.369800200217497,
+          "trades": 619,
+          "wins": 212,
+          "losses": 401,
+          "wr": 34.24878836833602,
+          "decay_exits": 153,
+          "decay_pnl": 10.114025446346723
+        },
+        {
+          "coin": "XRP",
+          "pnl": 14.923009100746398,
+          "trades": 624,
+          "wins": 227,
+          "losses": 394,
+          "wr": 36.378205128205124,
+          "decay_exits": 176,
+          "decay_pnl": 7.446110203362565
+        },
+        {
+          "coin": "ATOM",
+          "pnl": 15.363808828949999,
+          "trades": 616,
+          "wins": 211,
+          "losses": 398,
+          "wr": 34.25324675324675,
+          "decay_exits": 170,
+          "decay_pnl": 8.6783445722693
+        },
+        {
+          "coin": "SOL",
+          "pnl": 14.499284107516289,
+          "trades": 616,
+          "wins": 222,
+          "losses": 392,
+          "wr": 36.038961038961034,
+          "decay_exits": 160,
+          "decay_pnl": 7.400686215657904
+        },
+        {
+          "coin": "DOGE",
+          "pnl": 14.687766447611907,
+          "trades": 622,
+          "wins": 231,
+          "losses": 390,
+          "wr": 37.138263665594856,
+          "decay_exits": 180,
+          "decay_pnl": 8.200274619836826
+        },
+        {
+          "coin": "XLM",
+          "pnl": 14.338688112026105,
+          "trades": 611,
+          "wins": 206,
+          "losses": 403,
+          "wr": 33.715220949263504,
+          "decay_exits": 145,
+          "decay_pnl": 7.175223259115205
+        },
+        {
+          "coin": "AVAX",
+          "pnl": 17.49341847656332,
+          "trades": 614,
+          "wins": 220,
+          "losses": 383,
+          "wr": 35.83061889250814,
+          "decay_exits": 152,
+          "decay_pnl": 6.673799395794177
+        },
+        {
+          "coin": "ALGO",
+          "pnl": 20.173230438425378,
+          "trades": 598,
+          "wins": 212,
+          "losses": 380,
+          "wr": 35.45150501672241,
+          "decay_exits": 155,
+          "decay_pnl": 9.044874993869145
+        },
+        {
+          "coin": "BNB",
+          "pnl": 7.69621322096846,
+          "trades": 610,
+          "wins": 239,
+          "losses": 371,
+          "wr": 39.18032786885246,
+          "decay_exits": 203,
+          "decay_pnl": 5.727959604871543
+        },
+        {
+          "coin": "BTC",
+          "pnl": 11.139593067223402,
+          "trades": 592,
+          "wins": 252,
+          "losses": 340,
+          "wr": 42.567567567567565,
+          "decay_exits": 210,
+          "decay_pnl": 3.9357773375089433
+        }
+      ]
+    },
+    {
+      "label": "AR20_RST_G10",
+      "total_pnl": 311.0174397281072,
+      "portfolio_wr": 30.45267489711934,
+      "total_trades": 10449,
+      "pf": 0.4399889380530973,
+      "is_baseline": false,
+      "decay_exit_rate": 14.699971289118578,
+      "decay_exit_pnl_sum": 103.07936123509799,
+      "coins": [
+        {
+          "coin": "DASH",
+          "pnl": 35.67776024485761,
+          "trades": 619,
+          "wins": 146,
+          "losses": 473,
+          "wr": 23.586429725363487,
+          "decay_exits": 62,
+          "decay_pnl": 11.655790253266497
+        },
+        {
+          "coin": "UNI",
+          "pnl": 23.709207879761664,
+          "trades": 585,
+          "wins": 179,
+          "losses": 405,
+          "wr": 30.5982905982906,
+          "decay_exits": 87,
+          "decay_pnl": 7.676210646462386
+        },
+        {
+          "coin": "NEAR",
+          "pnl": 19.244503763893036,
+          "trades": 590,
+          "wins": 157,
+          "losses": 432,
+          "wr": 26.610169491525426,
+          "decay_exits": 65,
+          "decay_pnl": 5.562541706850266
+        },
+        {
+          "coin": "ADA",
+          "pnl": 17.306159361323964,
+          "trades": 581,
+          "wins": 173,
+          "losses": 408,
+          "wr": 29.776247848537007,
+          "decay_exits": 72,
+          "decay_pnl": 3.5243276000970987
+        },
+        {
+          "coin": "LTC",
+          "pnl": 15.105537063478934,
+          "trades": 563,
+          "wins": 176,
+          "losses": 386,
+          "wr": 31.261101243339258,
+          "decay_exits": 94,
+          "decay_pnl": 4.900611024231962
+        },
+        {
+          "coin": "SHIB",
+          "pnl": 12.044364211474658,
+          "trades": 591,
+          "wins": 166,
+          "losses": 420,
+          "wr": 28.08798646362098,
+          "decay_exits": 85,
+          "decay_pnl": 4.708401569982356
+        },
+        {
+          "coin": "LINK",
+          "pnl": 16.613214911252726,
+          "trades": 566,
+          "wins": 165,
+          "losses": 395,
+          "wr": 29.151943462897528,
+          "decay_exits": 82,
+          "decay_pnl": 7.116654019655414
+        },
+        {
+          "coin": "ETH",
+          "pnl": 11.987079073289166,
+          "trades": 573,
+          "wins": 189,
+          "losses": 384,
+          "wr": 32.98429319371728,
+          "decay_exits": 101,
+          "decay_pnl": 4.645043320734122
+        },
+        {
+          "coin": "DOT",
+          "pnl": 20.42063356181785,
+          "trades": 592,
+          "wins": 179,
+          "losses": 409,
+          "wr": 30.236486486486484,
+          "decay_exits": 87,
+          "decay_pnl": 8.146887366886254
+        },
+        {
+          "coin": "XRP",
+          "pnl": 15.425109878017466,
+          "trades": 591,
+          "wins": 193,
+          "losses": 398,
+          "wr": 32.656514382402705,
+          "decay_exits": 93,
+          "decay_pnl": 5.124159218197354
+        },
+        {
+          "coin": "ATOM",
+          "pnl": 15.923418118982312,
+          "trades": 586,
+          "wins": 167,
+          "losses": 414,
+          "wr": 28.498293515358363,
+          "decay_exits": 83,
+          "decay_pnl": 4.847080992062413
+        },
+        {
+          "coin": "SOL",
+          "pnl": 15.970458589276745,
+          "trades": 589,
+          "wins": 187,
+          "losses": 400,
+          "wr": 31.748726655348047,
+          "decay_exits": 93,
+          "decay_pnl": 6.057856128501815
+        },
+        {
+          "coin": "DOGE",
+          "pnl": 14.464923290020366,
+          "trades": 582,
+          "wins": 176,
+          "losses": 406,
+          "wr": 30.240549828178693,
+          "decay_exits": 92,
+          "decay_pnl": 4.131060250418186
+        },
+        {
+          "coin": "XLM",
+          "pnl": 15.560248419130332,
+          "trades": 580,
+          "wins": 164,
+          "losses": 414,
+          "wr": 28.27586206896552,
+          "decay_exits": 66,
+          "decay_pnl": 5.879020668854745
+        },
+        {
+          "coin": "AVAX",
+          "pnl": 18.794351129381567,
+          "trades": 581,
+          "wins": 185,
+          "losses": 393,
+          "wr": 31.841652323580032,
+          "decay_exits": 79,
+          "decay_pnl": 4.9041442525700845
+        },
+        {
+          "coin": "ALGO",
+          "pnl": 19.32450123397568,
+          "trades": 569,
+          "wins": 167,
+          "losses": 397,
+          "wr": 29.349736379613354,
+          "decay_exits": 72,
+          "decay_pnl": 5.494206099479034
+        },
+        {
+          "coin": "BNB",
+          "pnl": 10.43724158302598,
+          "trades": 563,
+          "wins": 190,
+          "losses": 373,
+          "wr": 33.747779751332146,
+          "decay_exits": 103,
+          "decay_pnl": 4.322632360261785
+        },
+        {
+          "coin": "BTC",
+          "pnl": 13.008727415147092,
+          "trades": 548,
+          "wins": 223,
+          "losses": 325,
+          "wr": 40.693430656934304,
+          "decay_exits": 120,
+          "decay_pnl": 4.382733756586223
+        }
+      ]
+    },
+    {
+      "label": "AR20_RSF_G3",
+      "total_pnl": 285.29847452123437,
+      "portfolio_wr": 38.77889228085478,
+      "total_trades": 11465,
+      "pf": 0.6472557868685399,
+      "is_baseline": false,
+      "decay_exit_rate": 36.58962058438727,
+      "decay_exit_pnl_sum": 164.73354112894293,
+      "coins": [
+        {
+          "coin": "DASH",
+          "pnl": 36.00979513054952,
+          "trades": 677,
+          "wins": 243,
+          "losses": 431,
+          "wr": 35.89364844903989,
+          "decay_exits": 201,
+          "decay_pnl": 19.071237934254835
+        },
+        {
+          "coin": "UNI",
+          "pnl": 17.755987778697772,
+          "trades": 631,
+          "wins": 236,
+          "losses": 392,
+          "wr": 37.400950871632325,
+          "decay_exits": 226,
+          "decay_pnl": 9.245838323491881
+        },
+        {
+          "coin": "NEAR",
+          "pnl": 20.73622597098941,
+          "trades": 642,
+          "wins": 241,
+          "losses": 386,
+          "wr": 37.53894080996885,
+          "decay_exits": 218,
+          "decay_pnl": 11.237058859823282
+        },
+        {
+          "coin": "ADA",
+          "pnl": 20.318041692324158,
+          "trades": 633,
+          "wins": 265,
+          "losses": 364,
+          "wr": 41.864139020537124,
+          "decay_exits": 228,
+          "decay_pnl": 10.555523525572989
+        },
+        {
+          "coin": "LTC",
+          "pnl": 11.740769985919542,
+          "trades": 613,
+          "wins": 227,
+          "losses": 382,
+          "wr": 37.03099510603589,
+          "decay_exits": 236,
+          "decay_pnl": 8.85021150694467
+        },
+        {
+          "coin": "SHIB",
+          "pnl": 11.926985827141053,
+          "trades": 658,
+          "wins": 230,
+          "losses": 402,
+          "wr": 34.954407294832826,
+          "decay_exits": 242,
+          "decay_pnl": 8.123012987072945
+        },
+        {
+          "coin": "LINK",
+          "pnl": 13.902575137972732,
+          "trades": 614,
+          "wins": 231,
+          "losses": 366,
+          "wr": 37.62214983713355,
+          "decay_exits": 228,
+          "decay_pnl": 8.57322066138482
+        },
+        {
+          "coin": "ETH",
+          "pnl": 9.43643346264632,
+          "trades": 627,
+          "wins": 242,
+          "losses": 385,
+          "wr": 38.59649122807017,
+          "decay_exits": 240,
+          "decay_pnl": 5.611083838132282
+        },
+        {
+          "coin": "DOT",
+          "pnl": 20.769867796940062,
+          "trades": 640,
+          "wins": 245,
+          "losses": 386,
+          "wr": 38.28125,
+          "decay_exits": 219,
+          "decay_pnl": 12.505320820731109
+        },
+        {
+          "coin": "XRP",
+          "pnl": 12.523128871691156,
+          "trades": 654,
+          "wins": 269,
+          "losses": 382,
+          "wr": 41.13149847094802,
+          "decay_exits": 247,
+          "decay_pnl": 8.067979541642384
+        },
+        {
+          "coin": "ATOM",
+          "pnl": 16.029423591539256,
+          "trades": 639,
+          "wins": 241,
+          "losses": 380,
+          "wr": 37.715179968701094,
+          "decay_exits": 232,
+          "decay_pnl": 9.674739611367233
+        },
+        {
+          "coin": "SOL",
+          "pnl": 11.549020647251396,
+          "trades": 643,
+          "wins": 241,
+          "losses": 401,
+          "wr": 37.480559875583204,
+          "decay_exits": 223,
+          "decay_pnl": 8.692511965284613
+        },
+        {
+          "coin": "DOGE",
+          "pnl": 15.108934910745731,
+          "trades": 640,
+          "wins": 261,
+          "losses": 377,
+          "wr": 40.78125,
+          "decay_exits": 241,
+          "decay_pnl": 8.66368278922176
+        },
+        {
+          "coin": "XLM",
+          "pnl": 13.807413294998383,
+          "trades": 639,
+          "wins": 233,
+          "losses": 396,
+          "wr": 36.46322378716745,
+          "decay_exits": 222,
+          "decay_pnl": 8.765533748866256
+        },
+        {
+          "coin": "AVAX",
+          "pnl": 16.197114900052938,
+          "trades": 632,
+          "wins": 236,
+          "losses": 381,
+          "wr": 37.34177215189873,
+          "decay_exits": 221,
+          "decay_pnl": 6.740680868009068
+        },
+        {
+          "coin": "ALGO",
+          "pnl": 19.34892141350457,
+          "trades": 631,
+          "wins": 244,
+          "losses": 367,
+          "wr": 38.66877971473851,
+          "decay_exits": 233,
+          "decay_pnl": 10.031857880351916
+        },
+        {
+          "coin": "BNB",
+          "pnl": 6.88067036914066,
+          "trades": 632,
+          "wins": 266,
+          "losses": 366,
+          "wr": 42.08860759493671,
+          "decay_exits": 261,
+          "decay_pnl": 5.886523904265318
+        },
+        {
+          "coin": "BTC",
+          "pnl": 11.257163739129723,
+          "trades": 620,
+          "wins": 295,
+          "losses": 325,
+          "wr": 47.58064516129033,
+          "decay_exits": 277,
+          "decay_pnl": 4.437522362525573
+        }
+      ]
+    },
+    {
+      "label": "AR20_RSF_G5",
+      "total_pnl": 310.4430272271189,
+      "portfolio_wr": 35.63530904477071,
+      "total_trades": 11034,
+      "pf": 0.5604332953249713,
+      "is_baseline": false,
+      "decay_exit_rate": 27.469639296719233,
+      "decay_exit_pnl_sum": 155.72754576141918,
+      "coins": [
+        {
+          "coin": "DASH",
+          "pnl": 42.2627118793167,
+          "trades": 653,
+          "wins": 199,
+          "losses": 453,
+          "wr": 30.474732006125578,
+          "decay_exits": 141,
+          "decay_pnl": 21.989184544392693
+        },
+        {
+          "coin": "UNI",
+          "pnl": 21.274539155952667,
+          "trades": 611,
+          "wins": 216,
+          "losses": 394,
+          "wr": 35.3518821603928,
+          "decay_exits": 164,
+          "decay_pnl": 10.291839770953482
+        },
+        {
+          "coin": "NEAR",
+          "pnl": 21.796081887965002,
+          "trades": 618,
+          "wins": 208,
+          "losses": 398,
+          "wr": 33.65695792880259,
+          "decay_exits": 156,
+          "decay_pnl": 9.018430330958196
+        },
+        {
+          "coin": "ADA",
+          "pnl": 18.74472426658005,
+          "trades": 611,
+          "wins": 221,
+          "losses": 387,
+          "wr": 36.17021276595745,
+          "decay_exits": 163,
+          "decay_pnl": 7.852920854063364
+        },
+        {
+          "coin": "LTC",
+          "pnl": 13.6662016252576,
+          "trades": 589,
+          "wins": 209,
+          "losses": 379,
+          "wr": 35.483870967741936,
+          "decay_exits": 169,
+          "decay_pnl": 7.015255846063561
+        },
+        {
+          "coin": "SHIB",
+          "pnl": 13.75081500368772,
+          "trades": 627,
+          "wins": 212,
+          "losses": 398,
+          "wr": 33.811802232854866,
+          "decay_exits": 179,
+          "decay_pnl": 8.305613472031329
+        },
+        {
+          "coin": "LINK",
+          "pnl": 15.549408700421395,
+          "trades": 596,
+          "wins": 205,
+          "losses": 378,
+          "wr": 34.395973154362416,
+          "decay_exits": 169,
+          "decay_pnl": 9.989991515867999
+        },
+        {
+          "coin": "ETH",
+          "pnl": 11.713732707689005,
+          "trades": 607,
+          "wins": 230,
+          "losses": 377,
+          "wr": 37.89126853377265,
+          "decay_exits": 186,
+          "decay_pnl": 6.867233778456228
+        },
+        {
+          "coin": "DOT",
+          "pnl": 21.369800200217497,
+          "trades": 619,
+          "wins": 212,
+          "losses": 401,
+          "wr": 34.24878836833602,
+          "decay_exits": 153,
+          "decay_pnl": 10.114025446346723
+        },
+        {
+          "coin": "XRP",
+          "pnl": 14.923009100746398,
+          "trades": 624,
+          "wins": 227,
+          "losses": 394,
+          "wr": 36.378205128205124,
+          "decay_exits": 176,
+          "decay_pnl": 7.446110203362565
+        },
+        {
+          "coin": "ATOM",
+          "pnl": 15.363808828949999,
+          "trades": 616,
+          "wins": 211,
+          "losses": 398,
+          "wr": 34.25324675324675,
+          "decay_exits": 170,
+          "decay_pnl": 8.6783445722693
+        },
+        {
+          "coin": "SOL",
+          "pnl": 14.499284107516289,
+          "trades": 616,
+          "wins": 222,
+          "losses": 392,
+          "wr": 36.038961038961034,
+          "decay_exits": 160,
+          "decay_pnl": 7.400686215657904
+        },
+        {
+          "coin": "DOGE",
+          "pnl": 14.687766447611907,
+          "trades": 622,
+          "wins": 231,
+          "losses": 390,
+          "wr": 37.138263665594856,
+          "decay_exits": 180,
+          "decay_pnl": 8.200274619836826
+        },
+        {
+          "coin": "XLM",
+          "pnl": 14.338688112026105,
+          "trades": 611,
+          "wins": 206,
+          "losses": 403,
+          "wr": 33.715220949263504,
+          "decay_exits": 145,
+          "decay_pnl": 7.175223259115205
+        },
+        {
+          "coin": "AVAX",
+          "pnl": 17.49341847656332,
+          "trades": 614,
+          "wins": 220,
+          "losses": 383,
+          "wr": 35.83061889250814,
+          "decay_exits": 152,
+          "decay_pnl": 6.673799395794177
+        },
+        {
+          "coin": "ALGO",
+          "pnl": 20.173230438425378,
+          "trades": 598,
+          "wins": 212,
+          "losses": 380,
+          "wr": 35.45150501672241,
+          "decay_exits": 155,
+          "decay_pnl": 9.044874993869145
+        },
+        {
+          "coin": "BNB",
+          "pnl": 7.69621322096846,
+          "trades": 610,
+          "wins": 239,
+          "losses": 371,
+          "wr": 39.18032786885246,
+          "decay_exits": 203,
+          "decay_pnl": 5.727959604871543
+        },
+        {
+          "coin": "BTC",
+          "pnl": 11.139593067223402,
+          "trades": 592,
+          "wins": 252,
+          "losses": 340,
+          "wr": 42.567567567567565,
+          "decay_exits": 210,
+          "decay_pnl": 3.9357773375089433
+        }
+      ]
+    },
+    {
+      "label": "AR20_RSF_G10",
+      "total_pnl": 311.0174397281072,
+      "portfolio_wr": 30.45267489711934,
+      "total_trades": 10449,
+      "pf": 0.4399889380530973,
+      "is_baseline": false,
+      "decay_exit_rate": 14.699971289118578,
+      "decay_exit_pnl_sum": 103.07936123509799,
+      "coins": [
+        {
+          "coin": "DASH",
+          "pnl": 35.67776024485761,
+          "trades": 619,
+          "wins": 146,
+          "losses": 473,
+          "wr": 23.586429725363487,
+          "decay_exits": 62,
+          "decay_pnl": 11.655790253266497
+        },
+        {
+          "coin": "UNI",
+          "pnl": 23.709207879761664,
+          "trades": 585,
+          "wins": 179,
+          "losses": 405,
+          "wr": 30.5982905982906,
+          "decay_exits": 87,
+          "decay_pnl": 7.676210646462386
+        },
+        {
+          "coin": "NEAR",
+          "pnl": 19.244503763893036,
+          "trades": 590,
+          "wins": 157,
+          "losses": 432,
+          "wr": 26.610169491525426,
+          "decay_exits": 65,
+          "decay_pnl": 5.562541706850266
+        },
+        {
+          "coin": "ADA",
+          "pnl": 17.306159361323964,
+          "trades": 581,
+          "wins": 173,
+          "losses": 408,
+          "wr": 29.776247848537007,
+          "decay_exits": 72,
+          "decay_pnl": 3.5243276000970987
+        },
+        {
+          "coin": "LTC",
+          "pnl": 15.105537063478934,
+          "trades": 563,
+          "wins": 176,
+          "losses": 386,
+          "wr": 31.261101243339258,
+          "decay_exits": 94,
+          "decay_pnl": 4.900611024231962
+        },
+        {
+          "coin": "SHIB",
+          "pnl": 12.044364211474658,
+          "trades": 591,
+          "wins": 166,
+          "losses": 420,
+          "wr": 28.08798646362098,
+          "decay_exits": 85,
+          "decay_pnl": 4.708401569982356
+        },
+        {
+          "coin": "LINK",
+          "pnl": 16.613214911252726,
+          "trades": 566,
+          "wins": 165,
+          "losses": 395,
+          "wr": 29.151943462897528,
+          "decay_exits": 82,
+          "decay_pnl": 7.116654019655414
+        },
+        {
+          "coin": "ETH",
+          "pnl": 11.987079073289166,
+          "trades": 573,
+          "wins": 189,
+          "losses": 384,
+          "wr": 32.98429319371728,
+          "decay_exits": 101,
+          "decay_pnl": 4.645043320734122
+        },
+        {
+          "coin": "DOT",
+          "pnl": 20.42063356181785,
+          "trades": 592,
+          "wins": 179,
+          "losses": 409,
+          "wr": 30.236486486486484,
+          "decay_exits": 87,
+          "decay_pnl": 8.146887366886254
+        },
+        {
+          "coin": "XRP",
+          "pnl": 15.425109878017466,
+          "trades": 591,
+          "wins": 193,
+          "losses": 398,
+          "wr": 32.656514382402705,
+          "decay_exits": 93,
+          "decay_pnl": 5.124159218197354
+        },
+        {
+          "coin": "ATOM",
+          "pnl": 15.923418118982312,
+          "trades": 586,
+          "wins": 167,
+          "losses": 414,
+          "wr": 28.498293515358363,
+          "decay_exits": 83,
+          "decay_pnl": 4.847080992062413
+        },
+        {
+          "coin": "SOL",
+          "pnl": 15.970458589276745,
+          "trades": 589,
+          "wins": 187,
+          "losses": 400,
+          "wr": 31.748726655348047,
+          "decay_exits": 93,
+          "decay_pnl": 6.057856128501815
+        },
+        {
+          "coin": "DOGE",
+          "pnl": 14.464923290020366,
+          "trades": 582,
+          "wins": 176,
+          "losses": 406,
+          "wr": 30.240549828178693,
+          "decay_exits": 92,
+          "decay_pnl": 4.131060250418186
+        },
+        {
+          "coin": "XLM",
+          "pnl": 15.560248419130332,
+          "trades": 580,
+          "wins": 164,
+          "losses": 414,
+          "wr": 28.27586206896552,
+          "decay_exits": 66,
+          "decay_pnl": 5.879020668854745
+        },
+        {
+          "coin": "AVAX",
+          "pnl": 18.794351129381567,
+          "trades": 581,
+          "wins": 185,
+          "losses": 393,
+          "wr": 31.841652323580032,
+          "decay_exits": 79,
+          "decay_pnl": 4.9041442525700845
+        },
+        {
+          "coin": "ALGO",
+          "pnl": 19.32450123397568,
+          "trades": 569,
+          "wins": 167,
+          "losses": 397,
+          "wr": 29.349736379613354,
+          "decay_exits": 72,
+          "decay_pnl": 5.494206099479034
+        },
+        {
+          "coin": "BNB",
+          "pnl": 10.43724158302598,
+          "trades": 563,
+          "wins": 190,
+          "losses": 373,
+          "wr": 33.747779751332146,
+          "decay_exits": 103,
+          "decay_pnl": 4.322632360261785
+        },
+        {
+          "coin": "BTC",
+          "pnl": 13.008727415147092,
+          "trades": 548,
+          "wins": 223,
+          "losses": 325,
+          "wr": 40.693430656934304,
+          "decay_exits": 120,
+          "decay_pnl": 4.382733756586223
+        }
+      ]
+    },
+    {
+      "label": "AR25_RST_G3",
+      "total_pnl": 282.85573477071944,
+      "portfolio_wr": 37.8142365705213,
+      "total_trades": 11337,
+      "pf": 0.6211243117936831,
+      "is_baseline": false,
+      "decay_exit_rate": 34.51530387227662,
+      "decay_exit_pnl_sum": 144.65776675301987,
+      "coins": [
+        {
+          "coin": "DASH",
+          "pnl": 33.9030779819208,
+          "trades": 667,
+          "wins": 227,
+          "losses": 438,
+          "wr": 34.03298350824588,
+          "decay_exits": 184,
+          "decay_pnl": 16.025544337837193
+        },
+        {
+          "coin": "UNI",
+          "pnl": 17.605603349099397,
+          "trades": 626,
+          "wins": 228,
+          "losses": 395,
+          "wr": 36.42172523961661,
+          "decay_exits": 218,
+          "decay_pnl": 8.772894229871968
+        },
+        {
+          "coin": "NEAR",
+          "pnl": 21.341796241381502,
+          "trades": 635,
+          "wins": 235,
+          "losses": 386,
+          "wr": 37.00787401574803,
+          "decay_exits": 206,
+          "decay_pnl": 10.12487995949903
+        },
+        {
+          "coin": "ADA",
+          "pnl": 17.85623401821914,
+          "trades": 623,
+          "wins": 249,
+          "losses": 371,
+          "wr": 39.96789727126806,
+          "decay_exits": 207,
+          "decay_pnl": 7.711907198323783
+        },
+        {
+          "coin": "LTC",
+          "pnl": 12.402659847255052,
+          "trades": 605,
+          "wins": 222,
+          "losses": 379,
+          "wr": 36.69421487603306,
+          "decay_exits": 224,
+          "decay_pnl": 7.414754243815064
+        },
+        {
+          "coin": "SHIB",
+          "pnl": 11.269648925973897,
+          "trades": 653,
+          "wins": 222,
+          "losses": 405,
+          "wr": 33.996937212863706,
+          "decay_exits": 229,
+          "decay_pnl": 7.252867461782093
+        },
+        {
+          "coin": "LINK",
+          "pnl": 14.173776505820726,
+          "trades": 607,
+          "wins": 220,
+          "losses": 368,
+          "wr": 36.24382207578254,
+          "decay_exits": 210,
+          "decay_pnl": 8.05134323576398
+        },
+        {
+          "coin": "ETH",
+          "pnl": 8.977337513485338,
+          "trades": 622,
+          "wins": 237,
+          "losses": 385,
+          "wr": 38.10289389067524,
+          "decay_exits": 227,
+          "decay_pnl": 5.364848099024345
+        },
+        {
+          "coin": "DOT",
+          "pnl": 20.229650907263874,
+          "trades": 636,
+          "wins": 237,
+          "losses": 390,
+          "wr": 37.264150943396224,
+          "decay_exits": 209,
+          "decay_pnl": 11.655433914165625
+        },
+        {
+          "coin": "XRP",
+          "pnl": 12.102307004003904,
+          "trades": 645,
+          "wins": 255,
+          "losses": 386,
+          "wr": 39.53488372093023,
+          "decay_exits": 227,
+          "decay_pnl": 7.176218466185858
+        },
+        {
+          "coin": "ATOM",
+          "pnl": 16.23634000086635,
+          "trades": 637,
+          "wins": 239,
+          "losses": 383,
+          "wr": 37.51962323390895,
+          "decay_exits": 225,
+          "decay_pnl": 8.889507666872552
+        },
+        {
+          "coin": "SOL",
+          "pnl": 13.155636210591695,
+          "trades": 633,
+          "wins": 233,
+          "losses": 399,
+          "wr": 36.808846761453395,
+          "decay_exits": 203,
+          "decay_pnl": 6.730572952741067
+        },
+        {
+          "coin": "DOGE",
+          "pnl": 15.423258839815759,
+          "trades": 635,
+          "wins": 252,
+          "losses": 381,
+          "wr": 39.68503937007874,
+          "decay_exits": 227,
+          "decay_pnl": 7.937911987954626
+        },
+        {
+          "coin": "XLM",
+          "pnl": 14.001260830592841,
+          "trades": 633,
+          "wins": 228,
+          "losses": 394,
+          "wr": 36.018957345971565,
+          "decay_exits": 205,
+          "decay_pnl": 7.754602274057636
+        },
+        {
+          "coin": "AVAX",
+          "pnl": 16.174187602898968,
+          "trades": 624,
+          "wins": 228,
+          "losses": 382,
+          "wr": 36.53846153846153,
+          "decay_exits": 202,
+          "decay_pnl": 6.233211308533697
+        },
+        {
+          "coin": "ALGO",
+          "pnl": 19.46773888976223,
+          "trades": 625,
+          "wins": 239,
+          "losses": 365,
+          "wr": 38.24,
+          "decay_exits": 218,
+          "decay_pnl": 8.62686107039791
+        },
+        {
+          "coin": "BNB",
+          "pnl": 6.291897576644274,
+          "trades": 624,
+          "wins": 253,
+          "losses": 371,
+          "wr": 40.544871794871796,
+          "decay_exits": 242,
+          "decay_pnl": 4.795886194519046
+        },
+        {
+          "coin": "BTC",
+          "pnl": 12.24332252512373,
+          "trades": 607,
+          "wins": 283,
+          "losses": 324,
+          "wr": 46.62273476112026,
+          "decay_exits": 250,
+          "decay_pnl": 4.138522151674367
+        }
+      ]
+    },
+    {
+      "label": "AR25_RST_G5",
+      "total_pnl": 316.31425074873175,
+      "portfolio_wr": 35.2007299270073,
+      "total_trades": 10960,
+      "pf": 0.5491814946619217,
+      "is_baseline": false,
+      "decay_exit_rate": 26.094890510948904,
+      "decay_exit_pnl_sum": 145.91364981282825,
+      "coins": [
+        {
+          "coin": "DASH",
+          "pnl": 44.34548573701929,
+          "trades": 649,
+          "wins": 193,
+          "losses": 455,
+          "wr": 29.738058551617875,
+          "decay_exits": 135,
+          "decay_pnl": 22.273879570619396
+        },
+        {
+          "coin": "UNI",
+          "pnl": 21.223975511782513,
+          "trades": 606,
+          "wins": 210,
+          "losses": 395,
+          "wr": 34.65346534653465,
+          "decay_exits": 158,
+          "decay_pnl": 9.561648315004224
+        },
+        {
+          "coin": "NEAR",
+          "pnl": 22.45703052497035,
+          "trades": 614,
+          "wins": 206,
+          "losses": 396,
+          "wr": 33.55048859934853,
+          "decay_exits": 149,
+          "decay_pnl": 8.593202707538591
+        },
+        {
+          "coin": "ADA",
+          "pnl": 18.257561163137353,
+          "trades": 607,
+          "wins": 218,
+          "losses": 387,
+          "wr": 35.914332784184516,
+          "decay_exits": 152,
+          "decay_pnl": 6.962796309640934
+        },
+        {
+          "coin": "LTC",
+          "pnl": 14.246135686467838,
+          "trades": 585,
+          "wins": 207,
+          "losses": 376,
+          "wr": 35.38461538461539,
+          "decay_exits": 161,
+          "decay_pnl": 6.759709193830179
+        },
+        {
+          "coin": "SHIB",
+          "pnl": 14.048824949388518,
+          "trades": 623,
+          "wins": 209,
+          "losses": 399,
+          "wr": 33.547351524879616,
+          "decay_exits": 169,
+          "decay_pnl": 7.825706355923296
+        },
+        {
+          "coin": "LINK",
+          "pnl": 16.017874646824026,
+          "trades": 593,
+          "wins": 200,
+          "losses": 380,
+          "wr": 33.726812816188875,
+          "decay_exits": 160,
+          "decay_pnl": 9.950790461166438
+        },
+        {
+          "coin": "ETH",
+          "pnl": 11.482188412766973,
+          "trades": 606,
+          "wins": 229,
+          "losses": 377,
+          "wr": 37.78877887788779,
+          "decay_exits": 178,
+          "decay_pnl": 6.78825986933054
+        },
+        {
+          "coin": "DOT",
+          "pnl": 21.607143674386876,
+          "trades": 615,
+          "wins": 213,
+          "losses": 399,
+          "wr": 34.63414634146341,
+          "decay_exits": 145,
+          "decay_pnl": 9.876580976635418
+        },
+        {
+          "coin": "XRP",
+          "pnl": 14.715518897873721,
+          "trades": 621,
+          "wins": 219,
+          "losses": 399,
+          "wr": 35.26570048309179,
+          "decay_exits": 166,
+          "decay_pnl": 6.6133459318782455
+        },
+        {
+          "coin": "ATOM",
+          "pnl": 15.940962662297537,
+          "trades": 613,
+          "wins": 208,
+          "losses": 400,
+          "wr": 33.931484502446985,
+          "decay_exits": 160,
+          "decay_pnl": 7.523554995452926
+        },
+        {
+          "coin": "SOL",
+          "pnl": 14.176045567166469,
+          "trades": 610,
+          "wins": 214,
+          "losses": 395,
+          "wr": 35.08196721311476,
+          "decay_exits": 149,
+          "decay_pnl": 6.661009005024177
+        },
+        {
+          "coin": "DOGE",
+          "pnl": 15.629036822084146,
+          "trades": 616,
+          "wins": 225,
+          "losses": 390,
+          "wr": 36.52597402597403,
+          "decay_exits": 164,
+          "decay_pnl": 6.682628449933396
+        },
+        {
+          "coin": "XLM",
+          "pnl": 14.639475146411982,
+          "trades": 609,
+          "wins": 204,
+          "losses": 404,
+          "wr": 33.497536945812804,
+          "decay_exits": 140,
+          "decay_pnl": 7.048871148892623
+        },
+        {
+          "coin": "AVAX",
+          "pnl": 17.863069225171074,
+          "trades": 608,
+          "wins": 214,
+          "losses": 384,
+          "wr": 35.19736842105263,
+          "decay_exits": 140,
+          "decay_pnl": 6.451918777187961
+        },
+        {
+          "coin": "ALGO",
+          "pnl": 20.11211120086665,
+          "trades": 597,
+          "wins": 211,
+          "losses": 379,
+          "wr": 35.34338358458962,
+          "decay_exits": 149,
+          "decay_pnl": 8.020115919701487
+        },
+        {
+          "coin": "BNB",
+          "pnl": 7.5190329535153495,
+          "trades": 605,
+          "wins": 231,
+          "losses": 374,
+          "wr": 38.18181818181819,
+          "decay_exits": 191,
+          "decay_pnl": 4.719617707845266
+        },
+        {
+          "coin": "BTC",
+          "pnl": 12.032777966601074,
+          "trades": 583,
+          "wins": 247,
+          "losses": 336,
+          "wr": 42.36706689536878,
+          "decay_exits": 194,
+          "decay_pnl": 3.600014117223173
+        }
+      ]
+    },
+    {
+      "label": "AR25_RST_G10",
+      "total_pnl": 308.45254055608984,
+      "portfolio_wr": 30.105667627281463,
+      "total_trades": 10410,
+      "pf": 0.4328131473553377,
+      "is_baseline": false,
+      "decay_exit_rate": 13.928914505283382,
+      "decay_exit_pnl_sum": 95.628528361807,
+      "coins": [
+        {
+          "coin": "DASH",
+          "pnl": 34.85396904852573,
+          "trades": 614,
+          "wins": 142,
+          "losses": 472,
+          "wr": 23.12703583061889,
+          "decay_exits": 56,
+          "decay_pnl": 10.522266459785692
+        },
+        {
+          "coin": "UNI",
+          "pnl": 22.35375668812216,
+          "trades": 582,
+          "wins": 171,
+          "losses": 410,
+          "wr": 29.381443298969074,
+          "decay_exits": 76,
+          "decay_pnl": 6.213233251293729
+        },
+        {
+          "coin": "NEAR",
+          "pnl": 19.058680206715323,
+          "trades": 588,
+          "wins": 154,
+          "losses": 433,
+          "wr": 26.190476190476193,
+          "decay_exits": 62,
+          "decay_pnl": 5.41642350276641
+        },
+        {
+          "coin": "ADA",
+          "pnl": 17.429022329714414,
+          "trades": 580,
+          "wins": 174,
+          "losses": 406,
+          "wr": 30.0,
+          "decay_exits": 69,
+          "decay_pnl": 3.3287972795246348
+        },
+        {
+          "coin": "LTC",
+          "pnl": 15.286676985783927,
+          "trades": 557,
+          "wins": 173,
+          "losses": 383,
+          "wr": 31.05924596050269,
+          "decay_exits": 88,
+          "decay_pnl": 4.874178225261988
+        },
+        {
+          "coin": "SHIB",
+          "pnl": 11.993649366583753,
+          "trades": 588,
+          "wins": 162,
+          "losses": 420,
+          "wr": 27.55102040816326,
+          "decay_exits": 80,
+          "decay_pnl": 4.167982692709353
+        },
+        {
+          "coin": "LINK",
+          "pnl": 17.07846629272929,
+          "trades": 564,
+          "wins": 162,
+          "losses": 395,
+          "wr": 28.723404255319153,
+          "decay_exits": 76,
+          "decay_pnl": 7.118673580828786
+        },
+        {
+          "coin": "ETH",
+          "pnl": 12.674339904589559,
+          "trades": 571,
+          "wins": 190,
+          "losses": 381,
+          "wr": 33.274956217162874,
+          "decay_exits": 97,
+          "decay_pnl": 4.602056277494995
+        },
+        {
+          "coin": "DOT",
+          "pnl": 19.749668397633187,
+          "trades": 587,
+          "wins": 172,
+          "losses": 411,
+          "wr": 29.3015332197615,
+          "decay_exits": 79,
+          "decay_pnl": 6.836417303612186
+        },
+        {
+          "coin": "XRP",
+          "pnl": 15.345692600663497,
+          "trades": 587,
+          "wins": 190,
+          "losses": 397,
+          "wr": 32.36797274275979,
+          "decay_exits": 90,
+          "decay_pnl": 4.9860411894434735
+        },
+        {
+          "coin": "ATOM",
+          "pnl": 15.633578168537298,
+          "trades": 586,
+          "wins": 165,
+          "losses": 417,
+          "wr": 28.15699658703072,
+          "decay_exits": 80,
+          "decay_pnl": 4.4200179829050885
+        },
+        {
+          "coin": "SOL",
+          "pnl": 15.604204783401997,
+          "trades": 588,
+          "wins": 185,
+          "losses": 402,
+          "wr": 31.462585034013607,
+          "decay_exits": 90,
+          "decay_pnl": 5.71938573935977
+        },
+        {
+          "coin": "DOGE",
+          "pnl": 14.712263839269596,
+          "trades": 582,
+          "wins": 175,
+          "losses": 407,
+          "wr": 30.06872852233677,
+          "decay_exits": 88,
+          "decay_pnl": 3.81845048126911
+        },
+        {
+          "coin": "XLM",
+          "pnl": 15.551891607760027,
+          "trades": 578,
+          "wins": 163,
+          "losses": 413,
+          "wr": 28.20069204152249,
+          "decay_exits": 63,
+          "decay_pnl": 5.608491626299655
+        },
+        {
+          "coin": "AVAX",
+          "pnl": 18.84564603141139,
+          "trades": 580,
+          "wins": 184,
+          "losses": 393,
+          "wr": 31.724137931034484,
+          "decay_exits": 77,
+          "decay_pnl": 5.033440551118689
+        },
+        {
+          "coin": "ALGO",
+          "pnl": 18.929067350854908,
+          "trades": 569,
+          "wins": 166,
+          "losses": 398,
+          "wr": 29.173989455184536,
+          "decay_exits": 69,
+          "decay_pnl": 4.942234254696563
+        },
+        {
+          "coin": "BNB",
+          "pnl": 10.357287880877848,
+          "trades": 561,
+          "wins": 185,
+          "losses": 376,
+          "wr": 32.97682709447415,
+          "decay_exits": 94,
+          "decay_pnl": 3.8652661101996872
+        },
+        {
+          "coin": "BTC",
+          "pnl": 12.994679072916028,
+          "trades": 548,
+          "wins": 221,
+          "losses": 327,
+          "wr": 40.32846715328467,
+          "decay_exits": 116,
+          "decay_pnl": 4.155171853237202
+        }
+      ]
+    },
+    {
+      "label": "AR25_RSF_G3",
+      "total_pnl": 282.85573477071944,
+      "portfolio_wr": 37.8142365705213,
+      "total_trades": 11337,
+      "pf": 0.6211243117936831,
+      "is_baseline": false,
+      "decay_exit_rate": 34.51530387227662,
+      "decay_exit_pnl_sum": 144.65776675301987,
+      "coins": [
+        {
+          "coin": "DASH",
+          "pnl": 33.9030779819208,
+          "trades": 667,
+          "wins": 227,
+          "losses": 438,
+          "wr": 34.03298350824588,
+          "decay_exits": 184,
+          "decay_pnl": 16.025544337837193
+        },
+        {
+          "coin": "UNI",
+          "pnl": 17.605603349099397,
+          "trades": 626,
+          "wins": 228,
+          "losses": 395,
+          "wr": 36.42172523961661,
+          "decay_exits": 218,
+          "decay_pnl": 8.772894229871968
+        },
+        {
+          "coin": "NEAR",
+          "pnl": 21.341796241381502,
+          "trades": 635,
+          "wins": 235,
+          "losses": 386,
+          "wr": 37.00787401574803,
+          "decay_exits": 206,
+          "decay_pnl": 10.12487995949903
+        },
+        {
+          "coin": "ADA",
+          "pnl": 17.85623401821914,
+          "trades": 623,
+          "wins": 249,
+          "losses": 371,
+          "wr": 39.96789727126806,
+          "decay_exits": 207,
+          "decay_pnl": 7.711907198323783
+        },
+        {
+          "coin": "LTC",
+          "pnl": 12.402659847255052,
+          "trades": 605,
+          "wins": 222,
+          "losses": 379,
+          "wr": 36.69421487603306,
+          "decay_exits": 224,
+          "decay_pnl": 7.414754243815064
+        },
+        {
+          "coin": "SHIB",
+          "pnl": 11.269648925973897,
+          "trades": 653,
+          "wins": 222,
+          "losses": 405,
+          "wr": 33.996937212863706,
+          "decay_exits": 229,
+          "decay_pnl": 7.252867461782093
+        },
+        {
+          "coin": "LINK",
+          "pnl": 14.173776505820726,
+          "trades": 607,
+          "wins": 220,
+          "losses": 368,
+          "wr": 36.24382207578254,
+          "decay_exits": 210,
+          "decay_pnl": 8.05134323576398
+        },
+        {
+          "coin": "ETH",
+          "pnl": 8.977337513485338,
+          "trades": 622,
+          "wins": 237,
+          "losses": 385,
+          "wr": 38.10289389067524,
+          "decay_exits": 227,
+          "decay_pnl": 5.364848099024345
+        },
+        {
+          "coin": "DOT",
+          "pnl": 20.229650907263874,
+          "trades": 636,
+          "wins": 237,
+          "losses": 390,
+          "wr": 37.264150943396224,
+          "decay_exits": 209,
+          "decay_pnl": 11.655433914165625
+        },
+        {
+          "coin": "XRP",
+          "pnl": 12.102307004003904,
+          "trades": 645,
+          "wins": 255,
+          "losses": 386,
+          "wr": 39.53488372093023,
+          "decay_exits": 227,
+          "decay_pnl": 7.176218466185858
+        },
+        {
+          "coin": "ATOM",
+          "pnl": 16.23634000086635,
+          "trades": 637,
+          "wins": 239,
+          "losses": 383,
+          "wr": 37.51962323390895,
+          "decay_exits": 225,
+          "decay_pnl": 8.889507666872552
+        },
+        {
+          "coin": "SOL",
+          "pnl": 13.155636210591695,
+          "trades": 633,
+          "wins": 233,
+          "losses": 399,
+          "wr": 36.808846761453395,
+          "decay_exits": 203,
+          "decay_pnl": 6.730572952741067
+        },
+        {
+          "coin": "DOGE",
+          "pnl": 15.423258839815759,
+          "trades": 635,
+          "wins": 252,
+          "losses": 381,
+          "wr": 39.68503937007874,
+          "decay_exits": 227,
+          "decay_pnl": 7.937911987954626
+        },
+        {
+          "coin": "XLM",
+          "pnl": 14.001260830592841,
+          "trades": 633,
+          "wins": 228,
+          "losses": 394,
+          "wr": 36.018957345971565,
+          "decay_exits": 205,
+          "decay_pnl": 7.754602274057636
+        },
+        {
+          "coin": "AVAX",
+          "pnl": 16.174187602898968,
+          "trades": 624,
+          "wins": 228,
+          "losses": 382,
+          "wr": 36.53846153846153,
+          "decay_exits": 202,
+          "decay_pnl": 6.233211308533697
+        },
+        {
+          "coin": "ALGO",
+          "pnl": 19.46773888976223,
+          "trades": 625,
+          "wins": 239,
+          "losses": 365,
+          "wr": 38.24,
+          "decay_exits": 218,
+          "decay_pnl": 8.62686107039791
+        },
+        {
+          "coin": "BNB",
+          "pnl": 6.291897576644274,
+          "trades": 624,
+          "wins": 253,
+          "losses": 371,
+          "wr": 40.544871794871796,
+          "decay_exits": 242,
+          "decay_pnl": 4.795886194519046
+        },
+        {
+          "coin": "BTC",
+          "pnl": 12.24332252512373,
+          "trades": 607,
+          "wins": 283,
+          "losses": 324,
+          "wr": 46.62273476112026,
+          "decay_exits": 250,
+          "decay_pnl": 4.138522151674367
+        }
+      ]
+    },
+    {
+      "label": "AR25_RSF_G5",
+      "total_pnl": 316.31425074873175,
+      "portfolio_wr": 35.2007299270073,
+      "total_trades": 10960,
+      "pf": 0.5491814946619217,
+      "is_baseline": false,
+      "decay_exit_rate": 26.094890510948904,
+      "decay_exit_pnl_sum": 145.91364981282825,
+      "coins": [
+        {
+          "coin": "DASH",
+          "pnl": 44.34548573701929,
+          "trades": 649,
+          "wins": 193,
+          "losses": 455,
+          "wr": 29.738058551617875,
+          "decay_exits": 135,
+          "decay_pnl": 22.273879570619396
+        },
+        {
+          "coin": "UNI",
+          "pnl": 21.223975511782513,
+          "trades": 606,
+          "wins": 210,
+          "losses": 395,
+          "wr": 34.65346534653465,
+          "decay_exits": 158,
+          "decay_pnl": 9.561648315004224
+        },
+        {
+          "coin": "NEAR",
+          "pnl": 22.45703052497035,
+          "trades": 614,
+          "wins": 206,
+          "losses": 396,
+          "wr": 33.55048859934853,
+          "decay_exits": 149,
+          "decay_pnl": 8.593202707538591
+        },
+        {
+          "coin": "ADA",
+          "pnl": 18.257561163137353,
+          "trades": 607,
+          "wins": 218,
+          "losses": 387,
+          "wr": 35.914332784184516,
+          "decay_exits": 152,
+          "decay_pnl": 6.962796309640934
+        },
+        {
+          "coin": "LTC",
+          "pnl": 14.246135686467838,
+          "trades": 585,
+          "wins": 207,
+          "losses": 376,
+          "wr": 35.38461538461539,
+          "decay_exits": 161,
+          "decay_pnl": 6.759709193830179
+        },
+        {
+          "coin": "SHIB",
+          "pnl": 14.048824949388518,
+          "trades": 623,
+          "wins": 209,
+          "losses": 399,
+          "wr": 33.547351524879616,
+          "decay_exits": 169,
+          "decay_pnl": 7.825706355923296
+        },
+        {
+          "coin": "LINK",
+          "pnl": 16.017874646824026,
+          "trades": 593,
+          "wins": 200,
+          "losses": 380,
+          "wr": 33.726812816188875,
+          "decay_exits": 160,
+          "decay_pnl": 9.950790461166438
+        },
+        {
+          "coin": "ETH",
+          "pnl": 11.482188412766973,
+          "trades": 606,
+          "wins": 229,
+          "losses": 377,
+          "wr": 37.78877887788779,
+          "decay_exits": 178,
+          "decay_pnl": 6.78825986933054
+        },
+        {
+          "coin": "DOT",
+          "pnl": 21.607143674386876,
+          "trades": 615,
+          "wins": 213,
+          "losses": 399,
+          "wr": 34.63414634146341,
+          "decay_exits": 145,
+          "decay_pnl": 9.876580976635418
+        },
+        {
+          "coin": "XRP",
+          "pnl": 14.715518897873721,
+          "trades": 621,
+          "wins": 219,
+          "losses": 399,
+          "wr": 35.26570048309179,
+          "decay_exits": 166,
+          "decay_pnl": 6.6133459318782455
+        },
+        {
+          "coin": "ATOM",
+          "pnl": 15.940962662297537,
+          "trades": 613,
+          "wins": 208,
+          "losses": 400,
+          "wr": 33.931484502446985,
+          "decay_exits": 160,
+          "decay_pnl": 7.523554995452926
+        },
+        {
+          "coin": "SOL",
+          "pnl": 14.176045567166469,
+          "trades": 610,
+          "wins": 214,
+          "losses": 395,
+          "wr": 35.08196721311476,
+          "decay_exits": 149,
+          "decay_pnl": 6.661009005024177
+        },
+        {
+          "coin": "DOGE",
+          "pnl": 15.629036822084146,
+          "trades": 616,
+          "wins": 225,
+          "losses": 390,
+          "wr": 36.52597402597403,
+          "decay_exits": 164,
+          "decay_pnl": 6.682628449933396
+        },
+        {
+          "coin": "XLM",
+          "pnl": 14.639475146411982,
+          "trades": 609,
+          "wins": 204,
+          "losses": 404,
+          "wr": 33.497536945812804,
+          "decay_exits": 140,
+          "decay_pnl": 7.048871148892623
+        },
+        {
+          "coin": "AVAX",
+          "pnl": 17.863069225171074,
+          "trades": 608,
+          "wins": 214,
+          "losses": 384,
+          "wr": 35.19736842105263,
+          "decay_exits": 140,
+          "decay_pnl": 6.451918777187961
+        },
+        {
+          "coin": "ALGO",
+          "pnl": 20.11211120086665,
+          "trades": 597,
+          "wins": 211,
+          "losses": 379,
+          "wr": 35.34338358458962,
+          "decay_exits": 149,
+          "decay_pnl": 8.020115919701487
+        },
+        {
+          "coin": "BNB",
+          "pnl": 7.5190329535153495,
+          "trades": 605,
+          "wins": 231,
+          "losses": 374,
+          "wr": 38.18181818181819,
+          "decay_exits": 191,
+          "decay_pnl": 4.719617707845266
+        },
+        {
+          "coin": "BTC",
+          "pnl": 12.032777966601074,
+          "trades": 583,
+          "wins": 247,
+          "losses": 336,
+          "wr": 42.36706689536878,
+          "decay_exits": 194,
+          "decay_pnl": 3.600014117223173
+        }
+      ]
+    },
+    {
+      "label": "AR25_RSF_G10",
+      "total_pnl": 308.45254055608984,
+      "portfolio_wr": 30.105667627281463,
+      "total_trades": 10410,
+      "pf": 0.4328131473553377,
+      "is_baseline": false,
+      "decay_exit_rate": 13.928914505283382,
+      "decay_exit_pnl_sum": 95.628528361807,
+      "coins": [
+        {
+          "coin": "DASH",
+          "pnl": 34.85396904852573,
+          "trades": 614,
+          "wins": 142,
+          "losses": 472,
+          "wr": 23.12703583061889,
+          "decay_exits": 56,
+          "decay_pnl": 10.522266459785692
+        },
+        {
+          "coin": "UNI",
+          "pnl": 22.35375668812216,
+          "trades": 582,
+          "wins": 171,
+          "losses": 410,
+          "wr": 29.381443298969074,
+          "decay_exits": 76,
+          "decay_pnl": 6.213233251293729
+        },
+        {
+          "coin": "NEAR",
+          "pnl": 19.058680206715323,
+          "trades": 588,
+          "wins": 154,
+          "losses": 433,
+          "wr": 26.190476190476193,
+          "decay_exits": 62,
+          "decay_pnl": 5.41642350276641
+        },
+        {
+          "coin": "ADA",
+          "pnl": 17.429022329714414,
+          "trades": 580,
+          "wins": 174,
+          "losses": 406,
+          "wr": 30.0,
+          "decay_exits": 69,
+          "decay_pnl": 3.3287972795246348
+        },
+        {
+          "coin": "LTC",
+          "pnl": 15.286676985783927,
+          "trades": 557,
+          "wins": 173,
+          "losses": 383,
+          "wr": 31.05924596050269,
+          "decay_exits": 88,
+          "decay_pnl": 4.874178225261988
+        },
+        {
+          "coin": "SHIB",
+          "pnl": 11.993649366583753,
+          "trades": 588,
+          "wins": 162,
+          "losses": 420,
+          "wr": 27.55102040816326,
+          "decay_exits": 80,
+          "decay_pnl": 4.167982692709353
+        },
+        {
+          "coin": "LINK",
+          "pnl": 17.07846629272929,
+          "trades": 564,
+          "wins": 162,
+          "losses": 395,
+          "wr": 28.723404255319153,
+          "decay_exits": 76,
+          "decay_pnl": 7.118673580828786
+        },
+        {
+          "coin": "ETH",
+          "pnl": 12.674339904589559,
+          "trades": 571,
+          "wins": 190,
+          "losses": 381,
+          "wr": 33.274956217162874,
+          "decay_exits": 97,
+          "decay_pnl": 4.602056277494995
+        },
+        {
+          "coin": "DOT",
+          "pnl": 19.749668397633187,
+          "trades": 587,
+          "wins": 172,
+          "losses": 411,
+          "wr": 29.3015332197615,
+          "decay_exits": 79,
+          "decay_pnl": 6.836417303612186
+        },
+        {
+          "coin": "XRP",
+          "pnl": 15.345692600663497,
+          "trades": 587,
+          "wins": 190,
+          "losses": 397,
+          "wr": 32.36797274275979,
+          "decay_exits": 90,
+          "decay_pnl": 4.9860411894434735
+        },
+        {
+          "coin": "ATOM",
+          "pnl": 15.633578168537298,
+          "trades": 586,
+          "wins": 165,
+          "losses": 417,
+          "wr": 28.15699658703072,
+          "decay_exits": 80,
+          "decay_pnl": 4.4200179829050885
+        },
+        {
+          "coin": "SOL",
+          "pnl": 15.604204783401997,
+          "trades": 588,
+          "wins": 185,
+          "losses": 402,
+          "wr": 31.462585034013607,
+          "decay_exits": 90,
+          "decay_pnl": 5.71938573935977
+        },
+        {
+          "coin": "DOGE",
+          "pnl": 14.712263839269596,
+          "trades": 582,
+          "wins": 175,
+          "losses": 407,
+          "wr": 30.06872852233677,
+          "decay_exits": 88,
+          "decay_pnl": 3.81845048126911
+        },
+        {
+          "coin": "XLM",
+          "pnl": 15.551891607760027,
+          "trades": 578,
+          "wins": 163,
+          "losses": 413,
+          "wr": 28.20069204152249,
+          "decay_exits": 63,
+          "decay_pnl": 5.608491626299655
+        },
+        {
+          "coin": "AVAX",
+          "pnl": 18.84564603141139,
+          "trades": 580,
+          "wins": 184,
+          "losses": 393,
+          "wr": 31.724137931034484,
+          "decay_exits": 77,
+          "decay_pnl": 5.033440551118689
+        },
+        {
+          "coin": "ALGO",
+          "pnl": 18.929067350854908,
+          "trades": 569,
+          "wins": 166,
+          "losses": 398,
+          "wr": 29.173989455184536,
+          "decay_exits": 69,
+          "decay_pnl": 4.942234254696563
+        },
+        {
+          "coin": "BNB",
+          "pnl": 10.357287880877848,
+          "trades": 561,
+          "wins": 185,
+          "losses": 376,
+          "wr": 32.97682709447415,
+          "decay_exits": 94,
+          "decay_pnl": 3.8652661101996872
+        },
+        {
+          "coin": "BTC",
+          "pnl": 12.994679072916028,
+          "trades": 548,
+          "wins": 221,
+          "losses": 327,
+          "wr": 40.32846715328467,
+          "decay_exits": 116,
+          "decay_pnl": 4.155171853237202
+        }
+      ]
+    }
+  ]
+}

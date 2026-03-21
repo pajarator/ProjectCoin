@@ -1,17 +1,9 @@
 [package]
 name = "coinclaw"
-version = "0.16.0"
+version = "1.1.0"
 edition = "2021"
 
-[features]
-default = []
-backtest = []
-run30 = ["rayon"]
-run32 = ["rayon"]
-run33 = ["rayon"]
-
 [dependencies]
-rayon = { version = "1", optional = true }
 tokio = { version = "1", features = ["full"] }
 reqwest = { version = "0.12", default-features = false, features = ["json", "rustls-tls"] }
 serde = { version = "1", features = ["derive"] }

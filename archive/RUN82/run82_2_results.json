@@ -1,0 +1,38 @@
+{
+  "best_config": "AR25_RST_G5",
+  "adx_rise": 25.0,
+  "regime_shift": true,
+  "grace": 5,
+  "windows": [
+    {
+      "window": 1,
+      "train_pnl_baseline": 167.60599461567043,
+      "train_pnl_best": 167.60599461567043,
+      "train_delta": 0.0,
+      "test_pnl_baseline": 167.60599461567043,
+      "test_pnl_best": 171.29771328935175,
+      "test_delta": 3.691718673681322,
+      "pass": true
+    },
+    {
+      "window": 2,
+      "train_pnl_baseline": 144.86320084596514,
+      "train_pnl_best": 144.86320084596514,
+      "train_delta": 0.0,
+      "test_pnl_baseline": 144.86320084596514,
+      "test_pnl_best": 157.41019676984538,
+      "test_delta": 12.546995923880246,
+      "pass": true
+    },
+    {
+      "window": 3,
+      "train_pnl_baseline": 153.4746156963559,
+      "train_pnl_best": 153.4746156963559,
+      "train_delta": 0.0,
+      "test_pnl_baseline": 153.4746156963559,
+      "test_pnl_best": 171.74320911380119,
+      "test_delta": 18.268593417445288,
+      "pass": true
+    }
+  ]
+}

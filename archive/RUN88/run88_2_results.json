@@ -1,0 +1,37 @@
+{
+  "best_config": "RP0.75_MH8",
+  "recovery_pct": 0.75,
+  "min_hold": 8,
+  "windows": [
+    {
+      "window": 1,
+      "train_pnl_baseline": 124.71597427397707,
+      "train_pnl_best": 133.9743597109222,
+      "train_delta": 9.258385436945119,
+      "test_pnl_baseline": 42.89002034169336,
+      "test_pnl_best": 45.35599807028605,
+      "test_delta": 2.4659777285926907,
+      "pass": true
+    },
+    {
+      "window": 2,
+      "train_pnl_baseline": 92.39659800104718,
+      "train_pnl_best": 101.30547855265462,
+      "train_delta": 8.908880551607439,
+      "test_pnl_baseline": 52.46660284491797,
+      "test_pnl_best": 72.59616940803551,
+      "test_delta": 20.129566563117535,
+      "pass": true
+    },
+    {
+      "window": 3,
+      "train_pnl_baseline": 96.37283240574584,
+      "train_pnl_best": 119.58727706470148,
+      "train_delta": 23.214444658955642,
+      "test_pnl_baseline": 57.10178329061007,
+      "test_pnl_best": 55.52879489272459,
+      "test_delta": -1.5729883978854815,
+      "pass": false
+    }
+  ]
+}

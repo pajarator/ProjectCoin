@@ -1,0 +1,61 @@
+{
+  "notes": "RUN65 BB squeeze duration filter. 7 configs. Baseline PnL=176.97. Best: DISABLED (PnL=176.97, Δ=+0.00)",
+  "configs": [
+    {
+      "label": "DISABLED",
+      "total_pnl": 176.96836249314734,
+      "portfolio_wr": 54.71160850274816,
+      "total_trades": 15101,
+      "pf": 0.0,
+      "is_baseline": true
+    },
+    {
+      "label": "MS4_EM1",
+      "total_pnl": 118.45471750152801,
+      "portfolio_wr": 54.798815537362835,
+      "total_trades": 11482,
+      "pf": 0.0,
+      "is_baseline": false
+    },
+    {
+      "label": "MS4_EM2",
+      "total_pnl": 118.45471750152801,
+      "portfolio_wr": 54.798815537362835,
+      "total_trades": 11482,
+      "pf": 0.0,
+      "is_baseline": false
+    },
+    {
+      "label": "MS6_EM1",
+      "total_pnl": 112.58725741829191,
+      "portfolio_wr": 54.95939410530157,
+      "total_trades": 10959,
+      "pf": 0.0,
+      "is_baseline": false
+    },
+    {
+      "label": "MS6_EM2",
+      "total_pnl": 112.58725741829191,
+      "portfolio_wr": 54.95939410530157,
+      "total_trades": 10959,
+      "pf": 0.0,
+      "is_baseline": false
+    },
+    {
+      "label": "MS8_EM1",
+      "total_pnl": 105.26806399211799,
+      "portfolio_wr": 54.57267020762916,
+      "total_trades": 10355,
+      "pf": 0.0,
+      "is_baseline": false
+    },
+    {
+      "label": "MS8_EM2",
+      "total_pnl": 105.26806399211799,
+      "portfolio_wr": 54.57267020762916,
+      "total_trades": 10355,
+      "pf": 0.0,
+      "is_baseline": false
+    }
+  ]
+}

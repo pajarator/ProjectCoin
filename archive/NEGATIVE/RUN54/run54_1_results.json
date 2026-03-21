@@ -1,0 +1,205 @@
+{
+  "notes": "RUN54 volatility regime filter. 25 configs. Baseline PnL=176.97. Best: DISABLED (PnL=176.97, Δ=+0.00)",
+  "configs": [
+    {
+      "label": "DISABLED",
+      "total_pnl": 176.96836249314734,
+      "portfolio_wr": 54.71160850274816,
+      "total_trades": 15101,
+      "pf": 0.0,
+      "is_baseline": true
+    },
+    {
+      "label": "VW15_VT0.50_M1",
+      "total_pnl": 58.2393905396256,
+      "portfolio_wr": 55.46809579634902,
+      "total_trades": 5971,
+      "pf": 0.0,
+      "is_baseline": false
+    },
+    {
+      "label": "VW15_VT0.50_M2",
+      "total_pnl": 77.53600387501542,
+      "portfolio_wr": 55.2851711026616,
+      "total_trades": 7890,
+      "pf": 0.0,
+      "is_baseline": false
+    },
+    {
+      "label": "VW15_VT0.60_M1",
+      "total_pnl": 68.05223983583042,
+      "portfolio_wr": 55.53087516659263,
+      "total_trades": 6753,
+      "pf": 0.0,
+      "is_baseline": false
+    },
+    {
+      "label": "VW15_VT0.60_M2",
+      "total_pnl": 77.53600387501542,
+      "portfolio_wr": 55.2851711026616,
+      "total_trades": 7890,
+      "pf": 0.0,
+      "is_baseline": false
+    },
+    {
+      "label": "VW15_VT0.70_M1",
+      "total_pnl": 74.75368252859683,
+      "portfolio_wr": 55.32197977647685,
+      "total_trades": 7516,
+      "pf": 0.0,
+      "is_baseline": false
+    },
+    {
+      "label": "VW15_VT0.70_M2",
+      "total_pnl": 77.53600387501542,
+      "portfolio_wr": 55.2851711026616,
+      "total_trades": 7890,
+      "pf": 0.0,
+      "is_baseline": false
+    },
+    {
+      "label": "VW15_VT0.80_M1",
+      "total_pnl": 82.66110670073616,
+      "portfolio_wr": 55.226227921606586,
+      "total_trades": 8266,
+      "pf": 0.0,
+      "is_baseline": false
+    },
+    {
+      "label": "VW15_VT0.80_M2",
+      "total_pnl": 77.53600387501542,
+      "portfolio_wr": 55.2851711026616,
+      "total_trades": 7890,
+      "pf": 0.0,
+      "is_baseline": false
+    },
+    {
+      "label": "VW20_VT0.50_M1",
+      "total_pnl": 58.2393905396256,
+      "portfolio_wr": 55.46809579634902,
+      "total_trades": 5971,
+      "pf": 0.0,
+      "is_baseline": false
+    },
+    {
+      "label": "VW20_VT0.50_M2",
+      "total_pnl": 77.53600387501542,
+      "portfolio_wr": 55.2851711026616,
+      "total_trades": 7890,
+      "pf": 0.0,
+      "is_baseline": false
+    },
+    {
+      "label": "VW20_VT0.60_M1",
+      "total_pnl": 68.05223983583042,
+      "portfolio_wr": 55.53087516659263,
+      "total_trades": 6753,
+      "pf": 0.0,
+      "is_baseline": false
+    },
+    {
+      "label": "VW20_VT0.60_M2",
+      "total_pnl": 77.53600387501542,
+      "portfolio_wr": 55.2851711026616,
+      "total_trades": 7890,
+      "pf": 0.0,
+      "is_baseline": false
+    },
+    {
+      "label": "VW20_VT0.70_M1",
+      "total_pnl": 74.75368252859683,
+      "portfolio_wr": 55.32197977647685,
+      "total_trades": 7516,
+      "pf": 0.0,
+      "is_baseline": false
+    },
+    {
+      "label": "VW20_VT0.70_M2",
+      "total_pnl": 77.53600387501542,
+      "portfolio_wr": 55.2851711026616,
+      "total_trades": 7890,
+      "pf": 0.0,
+      "is_baseline": false
+    },
+    {
+      "label": "VW20_VT0.80_M1",
+      "total_pnl": 82.66110670073616,
+      "portfolio_wr": 55.226227921606586,
+      "total_trades": 8266,
+      "pf": 0.0,
+      "is_baseline": false
+    },
+    {
+      "label": "VW20_VT0.80_M2",
+      "total_pnl": 77.53600387501542,
+      "portfolio_wr": 55.2851711026616,
+      "total_trades": 7890,
+      "pf": 0.0,
+      "is_baseline": false
+    },
+    {
+      "label": "VW30_VT0.50_M1",
+      "total_pnl": 58.2393905396256,
+      "portfolio_wr": 55.46809579634902,
+      "total_trades": 5971,
+      "pf": 0.0,
+      "is_baseline": false
+    },
+    {
+      "label": "VW30_VT0.50_M2",
+      "total_pnl": 77.53600387501542,
+      "portfolio_wr": 55.2851711026616,
+      "total_trades": 7890,
+      "pf": 0.0,
+      "is_baseline": false
+    },
+    {
+      "label": "VW30_VT0.60_M1",
+      "total_pnl": 68.05223983583042,
+      "portfolio_wr": 55.53087516659263,
+      "total_trades": 6753,
+      "pf": 0.0,
+      "is_baseline": false
+    },
+    {
+      "label": "VW30_VT0.60_M2",
+      "total_pnl": 77.53600387501542,
+      "portfolio_wr": 55.2851711026616,
+      "total_trades": 7890,
+      "pf": 0.0,
+      "is_baseline": false
+    },
+    {
+      "label": "VW30_VT0.70_M1",
+      "total_pnl": 74.75368252859683,
+      "portfolio_wr": 55.32197977647685,
+      "total_trades": 7516,
+      "pf": 0.0,
+      "is_baseline": false
+    },
+    {
+      "label": "VW30_VT0.70_M2",
+      "total_pnl": 77.53600387501542,
+      "portfolio_wr": 55.2851711026616,
+      "total_trades": 7890,
+      "pf": 0.0,
+      "is_baseline": false
+    },
+    {
+      "label": "VW30_VT0.80_M1",
+      "total_pnl": 82.66110670073616,
+      "portfolio_wr": 55.226227921606586,
+      "total_trades": 8266,
+      "pf": 0.0,
+      "is_baseline": false
+    },
+    {
+      "label": "VW30_VT0.80_M2",
+      "total_pnl": 77.53600387501542,
+      "portfolio_wr": 55.2851711026616,
+      "total_trades": 7890,
+      "pf": 0.0,
+      "is_baseline": false
+    }
+  ]
+}

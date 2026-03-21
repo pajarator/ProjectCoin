@@ -1,0 +1,29 @@
+{
+  "notes": "RUN75.2 walk-forward. Best: F336_W10_MIN0.50_MAX3.0 avg_delta=852.52 pos=3/3",
+  "windows": [
+    {
+      "window": 1,
+      "train_pnl": 1814.8805000078216,
+      "test_pnl": 781.6494869830051,
+      "test_delta": 734.6636823691363,
+      "test_wr": 28.65221489161169,
+      "test_trades": 2122
+    },
+    {
+      "window": 2,
+      "train_pnl": 1431.231770130608,
+      "test_pnl": 703.6768527508794,
+      "test_delta": 634.204461257774,
+      "test_wr": 25.496535796766747,
+      "test_trades": 2165
+    },
+    {
+      "window": 3,
+      "train_pnl": 1983.680575781055,
+      "test_pnl": 1249.0873658958474,
+      "test_delta": 1188.6959117341473,
+      "test_wr": 26.270022883295198,
+      "test_trades": 2185
+    }
+  ]
+}

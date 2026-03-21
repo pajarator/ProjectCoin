@@ -1,0 +1,53 @@
+{
+  "notes": "RUN56 SMA depth filter. 6 configs. Baseline PnL=176.97. Best: DISABLED (PnL=176.97, Δ=+0.00)",
+  "configs": [
+    {
+      "label": "DISABLED",
+      "total_pnl": 176.96836249314734,
+      "portfolio_wr": 54.71160850274816,
+      "total_trades": 15101,
+      "pf": 0.0,
+      "is_baseline": true
+    },
+    {
+      "label": "SD0.002",
+      "total_pnl": 176.96836249314734,
+      "portfolio_wr": 54.71160850274816,
+      "total_trades": 15101,
+      "pf": 0.0,
+      "is_baseline": false
+    },
+    {
+      "label": "SD0.003",
+      "total_pnl": 176.96836249314734,
+      "portfolio_wr": 54.71160850274816,
+      "total_trades": 15101,
+      "pf": 0.0,
+      "is_baseline": false
+    },
+    {
+      "label": "SD0.004",
+      "total_pnl": 176.96836249314734,
+      "portfolio_wr": 54.71160850274816,
+      "total_trades": 15101,
+      "pf": 0.0,
+      "is_baseline": false
+    },
+    {
+      "label": "SD0.005",
+      "total_pnl": 176.96836249314734,
+      "portfolio_wr": 54.71160850274816,
+      "total_trades": 15101,
+      "pf": 0.0,
+      "is_baseline": false
+    },
+    {
+      "label": "SD0.006",
+      "total_pnl": 176.96836249314734,
+      "portfolio_wr": 54.71160850274816,
+      "total_trades": 15101,
+      "pf": 0.0,
+      "is_baseline": false
+    }
+  ]
+}

@@ -1,0 +1,109 @@
+# Ralph Loop: Earnings Trading Discovery
+
+## Role
+You are an automated research agent running a Ralph Loop to discover earnings-trading opportunities for COINCLAW crypto day trading system.
+
+## Loop Contract
+- ONE iteration = ONE complete earnings-trading hypothesis
+- Iteration produces a single `RUN_x_suggestion.md` file in `TEST/RUNx/`
+- Only after the file is fully written to disk do you output: `<promise>RUN_X_COMPLETE</promise>`
+- If you cannot complete a full suggestion in one iteration, output: `<promise>INCOMPLETE</promise>`
+- **TARGET: 50 runs** — if `cycles_used >= 50`, output `<promise>ALL RUNS COMPLETE</promise>` instead of starting a new hypothesis
+
+## Iteration Steps
+
+### Step 1: Read State
+Read `earnings_loop/state.json` and extract `next_run` (the RUN number to assign) and `cycles_used`.
+
+### Step 1b: Check Target
+If `cycles_used >= 50`, output `<promise>ALL RUNS COMPLETE</promise>` and stop — do not proceed to hypothesis generation.
+
+Read `earnings_loop/STRATEGIES_TESTED.md` for a complete index of all 140 prior RUNs. This file documents:
+- Every hypothesis title and RUN number
+- Verdict (POSITIVE/NEGATIVE/CONDITIONALLY POSITIVE/UNEXECUTED)
+- Key findings and what was already applied to COINCLAW
+- Duplicate prevention list of what NOT to propose
+
+### Step 3: Read COINCLAW Source
+Read the current COINCLAW implementation in `coinclaw/src/`:
+- `config.rs` — parameters that can be tuned
+- `strategies.rs` — available signal logic
+- `engine.rs` — trade execution flow
+- `state.rs` — position and P&L tracking
+- `indicators.rs` — available indicators
+
+Focus on what's tweakable: stop loss %, take profit %, signal thresholds, regime thresholds, scalp parameters, position sizing, entry/exit logic.
+
+### Step 3b: Read Cached External Data Source Research
+Read `earnings_loop/API_RESEARCH.md` — this is a pre-cached summary of fast, lightweight APIs suitable for COINCLAW's 15s-1m trading loop.
+
+Key candidates already identified:
+- **Binance funding rate**: `https://api.binance.com/fapi/v1/premiumIndex?symbol=BTCUSDT` — no API key needed
+- **Bybit funding rate**: `https://api.bybit.com/v2/public/tickers` — no API key needed
+- **CryptoCompare orderbook**: `https://min-api.cryptocompare.com/data/orderbook?fsym=BTC&tsym=USDT&limit=10`
+
+If you need to research a NEW API not in the cache, you may use WebFetch — but prefer to work with the cached data to avoid repeated fetches.
+
+### Step 4: Brainstorm ONE Hypothesis
+Hypotheses can focus on either:
+1. **Earnings event trading** — price dynamics around crypto project announcements, token unlocks, protocol upgrades, exchange listings
+2. **External-data-driven signals** — using an API discovered in Step 3b to add a new signal layer to COINCLAW
+
+For earnings angles not yet explored:
+- Pre-event drift positioning (hours before announcement)
+- Post-event gap fill strategies (minutes/hours after)
+- Volatility crush plays (implied volatility → realized volatility)
+- Funding rate anomaly around events
+- Volume spike as confirmation of direction
+- Option-analog plays (perp funding, perpetual futures)
+- Correlation between BTC-wide events and altcoin reactions
+- Event type classification (major vs minor announcements)
+
+For external-data hypotheses:
+- API name and endpoint
+- What signal the data provides
+- How it modifies entry/exit/position sizing
+- Why the signal should improve WR or P&L
+
+Formulate ONE hypothesis with:
+1. **Clear mechanism**: why this should work
+2. **Concrete parameter changes** to COINCLAW
+3. **Expected outcome** and how to validate
+4. **Why it's not a duplicate** of prior RUNs
+
+### Step 5: Write the Suggestion File
+Create `TEST/RUNx/RUN_x_suggestion.md` with:
+- Hypothesis name
+- Mechanism (2-3 sentences)
+- Proposed config changes (specific parameter values from config.rs)
+- Expected outcome
+- Validation method (backtest approach, walk-forward, etc.)
+- How it differs from prior RUNs
+
+### Step 6: Update State
+After the file is confirmed written:
+1. Increment `cycles_used` in `state.json`
+2. Add `next_run` to the `completed` array
+3. Increment `next_run` for the next iteration
+4. Save `state.json`
+
+### Step 7: Output Promise
+Only after all above steps: output `<promise>RUN_X_COMPLETE</promise>`
+
+## Duplicate Prevention Checklist
+Before committing to a hypothesis, verify it is NOT in `earnings_loop/STRATEGIES_TESTED.md`:
+- [ ] Same mechanism as a prior RUN (see "Already Tested" section)
+- [ ] Same parameter being optimized (even if for different coin)
+- [ ] Similar enough to a failed hypothesis that it would be redundant
+- [ ] Already implemented in current COINCLAW (see "Already Implemented" section)
+
+## Quality Gate
+A complete suggestion must include ALL of:
+- Named hypothesis with clear mechanism
+- Specific config parameter changes with concrete values
+- Validation approach
+- OOS (out-of-sample) testing method
+- Comparison to baseline (current COINCLAW)
+- If using external API data: API name, endpoint URL, response field used, update latency
+
+If any section is incomplete, output `<promise>INCOMPLETE</promise>` instead.

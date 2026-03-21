@@ -1,0 +1,46 @@
+{
+  "best_config": "ZT1.3_ZB2",
+  "z_thresh": 1.3,
+  "z_bars": 2,
+  "windows": [
+    {
+      "window": 1,
+      "train_pnl_baseline": 137.11939695435473,
+      "train_pnl_best": 153.8751984304383,
+      "train_delta": 16.755801476083576,
+      "test_pnl_baseline": 48.00191034023942,
+      "test_pnl_best": 59.18337316891939,
+      "test_delta": 11.181462828679969,
+      "test_wr_baseline": 44.30533117932149,
+      "test_wr_best": 45.820622330689446,
+      "test_trades": 3278,
+      "pass": true
+    },
+    {
+      "window": 2,
+      "train_pnl_baseline": 106.82831903675593,
+      "train_pnl_best": 128.28333291445915,
+      "train_delta": 21.455013877703223,
+      "test_pnl_baseline": 75.20889156920488,
+      "test_pnl_best": 88.40149984788923,
+      "test_delta": 13.192608278684347,
+      "test_wr_baseline": 40.50121261115602,
+      "test_wr_best": 40.694195092758825,
+      "test_trades": 3342,
+      "pass": true
+    },
+    {
+      "window": 3,
+      "train_pnl_baseline": 125.07678230556004,
+      "train_pnl_best": 150.53135624195556,
+      "train_delta": 25.45457393639552,
+      "test_pnl_baseline": 51.133057244274966,
+      "test_pnl_best": 55.957422887915584,
+      "test_delta": 4.824365643640618,
+      "test_wr_baseline": 38.68378812199037,
+      "test_wr_best": 38.403918179199074,
+      "test_trades": 3471,
+      "pass": true
+    }
+  ]
+}

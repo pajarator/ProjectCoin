@@ -135,10 +135,11 @@ pub fn render(frame: &mut Frame, state: &SharedState) {
                 (pos.e - price) / pos.e * config::LEVERAGE * 100.0
             };
             let is_scalp = pos.trade_type == Some(TradeType::Scalp);
+            let is_momentum = pos.trade_type == Some(TradeType::Momentum);
             let label = if pos.dir == "long" {
-                if is_scalp { "SCALP+" } else { "LONG" }
+                if is_scalp { "SCALP+" } else if is_momentum { "MOM+" } else { "LONG" }
             } else {
-                if is_scalp { "SCALP-" } else { "SHORT" }
+                if is_scalp { "SCALP-" } else if is_momentum { "MOM-" } else { "SHORT" }
             };
             let color = if pos.dir == "long" {
                 if pnl >= 0.0 { Color::Green } else { Color::Red }
@@ -186,13 +187,13 @@ pub fn render(frame: &mut Frame, state: &SharedState) {
     // === SUMMARY ===
     let total = state.total_balance();
     let total_pnl = total - (COINS.len() as f64 * INITIAL_CAPITAL);
-    let (regime_pnl, scalp_pnl) = state.pnl_by_type();
     let trades = state.total_trades();
     let wins = state.total_wins();
     let wr_str = if trades > 0 {
         format!("{}/{} ({:.0}%)", wins, trades, 100.0 * wins as f64 / trades as f64)
     } else { "-".to_string() };
 
+    let (regime_pnl, scalp_pnl) = state.pnl_by_type();
     let r_color = if regime_pnl >= 0.0 { Color::Green } else { Color::Red };
     let s_color = if scalp_pnl >= 0.0 { Color::Green } else { Color::Red };
     let t_color = if total_pnl >= 0.0 { Color::Green } else { Color::Red };
@@ -202,10 +203,7 @@ pub fn render(frame: &mut Frame, state: &SharedState) {
         Span::styled(format!("{:+.2} ", scalp_pnl), Style::default().fg(s_color).add_modifier(Modifier::BOLD)),
         Span::styled("= ", Style::default()),
         Span::styled(format!("{:+.2}", total_pnl), Style::default().fg(t_color).add_modifier(Modifier::BOLD)),
-        Span::styled(
-            format!(" | {} trades | W: {} | 'q' quit", trades, wr_str),
-            Style::default(),
-        ),
+        Span::styled(format!(" | {} trades | W: {} | 'q' quit", trades, wr_str), Style::default()),
     ]);
     frame.render_widget(Paragraph::new(summary), chunks[5]);
 

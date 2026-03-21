@@ -3,158 +3,6 @@ use crate::coordinator::{self, MarketMode, Regime};
 use crate::state::{fmt_price, Position, SharedState, TradeRecord, TradeType};
 use crate::strategies::{self, Direction};
 
-// ── Momentum breakout helpers (RUN27/28) ──────────────────────────────────────
-
-/// Returns true if the 15m indicators satisfy LONG breakout entry conditions.
-fn momentum_long_signal(ind: &crate::indicators::Ind15m, mb: &config::MomentumBreakout) -> bool {
-    if ind.atr14_price <= 0.0 || ind.sma50 <= 0.0 { return false; }
-    ind.ret16 >= mb.move_thresh
-        && ind.vol_ma > 0.0 && ind.vol >= ind.vol_ma * mb.vol_mult
-        && ind.adx >= mb.adx_thresh && ind.adx > ind.adx_prev3
-        && ind.p > ind.sma50
-        && ind.rsi >= 50.0 && ind.rsi <= 75.0
-}
-
-pub fn check_momentum_entry(state: &mut SharedState, ci: usize) {
-    if state.coins[ci].pos.is_some() { return; }
-    if state.coins[ci].cooldown > 0 { return; }
-
-    let cfg = &COINS[state.coins[ci].config_idx];
-    let mb = match &cfg.momentum {
-        Some(m) => m.clone(),
-        None => return,
-    };
-
-    let ind = match &state.coins[ci].ind_15m {
-        Some(i) => i.clone(),
-        None => return,
-    };
-    if !ind.valid { return; }
-
-    if momentum_long_signal(&ind, &mb) {
-        let atr_stop      = ind.p - ind.atr14_price * mb.atr_mult;
-        let trail_distance = ind.atr14_price * mb.trail_atr;
-        let trail_act_price = ind.p * (1.0 + mb.trail_act);
-        open_momentum_position(state, ci, ind.p, atr_stop, trail_distance, trail_act_price);
-    }
-}
-
-fn open_momentum_position(
-    state: &mut SharedState,
-    ci: usize,
-    price: f64,
-    atr_stop: f64,
-    trail_distance: f64,
-    trail_act_price: f64,
-) {
-    let cs = &mut state.coins[ci];
-    if cs.pos.is_some() { return; }
-
-    let trade_amt = cs.bal * config::RISK;
-    let sz = (trade_amt * config::LEVERAGE) / price;
-
-    cs.pos = Some(Position {
-        e: price,
-        s: sz,
-        high: price,
-        low: price,
-        margin: trade_amt,
-        dir: "long".to_string(),
-        last_price: None,
-        trade_type: Some(TradeType::Momentum),
-        atr_stop: Some(atr_stop),
-        trail_distance: Some(trail_distance),
-        trail_act_price: Some(trail_act_price),
-        scalp_bars_held: None,
-    });
-    cs.candles_held = 0;
-    cs.active_strat = Some("momentum".to_string());
-
-    let vol_r = if cs.ind_15m.as_ref().map(|i| i.vol_ma).unwrap_or(0.0) > 0.0 {
-        cs.ind_15m.as_ref().map(|i| i.vol / i.vol_ma).unwrap_or(0.0)
-    } else { 0.0 };
-
-    let ind_info = cs.ind_15m.as_ref().map(|i| {
-        format!("Ret16:{:+.1}% RSI:{:.0} ADX:{:.0} Vol:{:.1}x ATR_SL:{:.4}",
-            i.ret16 * 100.0, i.rsi, i.adx, vol_r, atr_stop)
-    }).unwrap_or_default();
-
-    let name = cs.name;
-    let msg = format!(
-        "BUY {} [MOMENTUM] @ {} | {} | Cost:${:.2} Bal:${:.2}",
-        name, fmt_price(price), ind_info, trade_amt, cs.bal
-    );
-    state.log(msg);
-}
-
-/// Check exit for an open momentum position. Returns true if closed.
-fn check_momentum_exit(state: &mut SharedState, ci: usize) -> bool {
-    let ind = match &state.coins[ci].ind_15m {
-        Some(i) => i.clone(),
-        None => return false,
-    };
-    let pos = match &state.coins[ci].pos {
-        Some(p) if p.trade_type == Some(TradeType::Momentum) => p.clone(),
-        _ => return false,
-    };
-
-    let price = ind.p;
-    let atr_stop     = pos.atr_stop.unwrap_or(pos.e * (1.0 - 0.003));
-    let trail_dist   = pos.trail_distance.unwrap_or(0.0);
-    let trail_act    = pos.trail_act_price.unwrap_or(f64::MAX);
-    let peak         = pos.high;
-
-    // Update peak
-    if price > peak {
-        if let Some(ref mut p) = state.coins[ci].pos { p.high = price; }
-    }
-    let peak = state.coins[ci].pos.as_ref().map(|p| p.high).unwrap_or(price);
-
-    // Count candles held
-    if let Some(ref mut p) = state.coins[ci].pos {
-        if p.last_price != Some(price) {
-            state.coins[ci].candles_held += 1;
-            if let Some(ref mut p2) = state.coins[ci].pos { p2.last_price = Some(price); }
-        }
-    }
-    let held = state.coins[ci].candles_held;
-
-    let cfg = &COINS[state.coins[ci].config_idx];
-    let rsi_exit = cfg.momentum.as_ref().map(|m| m.rsi_exit).unwrap_or(78.0);
-
-    // 1. ATR hard stop
-    if price <= atr_stop {
-        close_position(state, ci, price, "ATR_SL", TradeType::Momentum);
-        return true;
-    }
-
-    // 2. Trailing stop (once peak ≥ trail_act_price)
-    if trail_dist > 0.0 && peak >= trail_act {
-        let trail_stop = peak - trail_dist;
-        if price <= trail_stop {
-            close_position(state, ci, price, "TRAIL", TradeType::Momentum);
-            return true;
-        }
-    }
-
-    // 3. RSI overbought exhaustion
-    if ind.rsi > rsi_exit {
-        close_position(state, ci, price, "RSI_OB", TradeType::Momentum);
-        return true;
-    }
-
-    // 4. Signal exit: price falls back below SMA20 while profitable (after warmup)
-    if held >= config::MIN_HOLD_CANDLES {
-        let pnl = (price - pos.e) / pos.e;
-        if pnl > 0.0 && price < ind.sma20 {
-            close_position(state, ci, price, "SMA20", TradeType::Momentum);
-            return true;
-        }
-    }
-
-    false
-}
-
 /// Check exit conditions for coin at index `ci`. Returns true if position was closed.
 pub fn check_exit(state: &mut SharedState, ci: usize) -> bool {
     let cs = &state.coins[ci];
@@ -167,15 +15,9 @@ pub fn check_exit(state: &mut SharedState, ci: usize) -> bool {
         None => return false,
     };
 
-    let trade_type = pos.trade_type;
+    let is_scalp = pos.trade_type == Some(TradeType::Scalp);
+    let is_momentum = pos.trade_type == Some(TradeType::Momentum);
     let price = ind.p;
-
-    // Momentum exit runs independently with its own ATR stop + trail logic
-    if trade_type == Some(TradeType::Momentum) {
-        return check_momentum_exit(state, ci);
-    }
-
-    let is_scalp = trade_type == Some(TradeType::Scalp);
 
     if is_scalp {
         // Scalp exit: use latest 1m price if available, else 15m
@@ -199,18 +41,69 @@ pub fn check_exit(state: &mut SharedState, ci: usize) -> bool {
             close_position(state, ci, check_price, "SL", TradeType::Scalp);
             return true;
         }
+        return false;
+    }
 
-        // RUN31: Increment MAX_HOLD counter (scoped borrow ends before close_position)
-        let max_hold_reached = {
-            let p = state.coins[ci].pos.as_mut().unwrap();
-            let held = p.scalp_bars_held.get_or_insert(0);
-            *held += 1;
-            *held >= config::SCALP_MAX_HOLD
+    if is_momentum {
+        // Momentum exit: ATR-based trailing stop + TP (RUN27)
+        let cs = &mut state.coins[ci];
+
+        // Track high/low and count candles
+        if let Some(ref mut p) = cs.pos {
+            if price > p.high { p.high = price; }
+            if price < p.low { p.low = price; }
+            if Some(price) != p.last_price || p.last_price.is_none() {
+                cs.candles_held += 1;
+                p.last_price = Some(price);
+            }
+        }
+        let held = cs.candles_held;
+        let atr = ind.atr14;
+
+        if held < config::MOMENTUM_MIN_HOLD {
+            return false;
+        }
+
+        let stop_px = if pos.dir == "long" {
+            pos.high - config::MOMENTUM_ATR_STOP_MULT * atr
+        } else {
+            pos.low + config::MOMENTUM_ATR_STOP_MULT * atr
         };
-        if max_hold_reached {
-            close_position(state, ci, check_price, "MAX_HOLD", TradeType::Scalp);
+
+        let pnl = if pos.dir == "long" {
+            (price - pos.e) / pos.e
+        } else {
+            (pos.e - price) / pos.e
+        };
+
+        // ATR trailing stop
+        let hit_stop = if pos.dir == "long" { price <= stop_px } else { price >= stop_px };
+        if hit_stop {
+            let reason = if pnl > 0.0 { "ATR" } else { "SL" };
+            close_position(state, ci, price, reason, TradeType::Momentum);
             return true;
         }
+
+        // TP: R:R target
+        let risk_amt = config::MOMENTUM_ATR_STOP_MULT * atr;
+        let tp_distance = config::MOMENTUM_RR_TARGET * risk_amt;
+        let tp_px = if pos.dir == "long" { pos.e + tp_distance } else { pos.e - tp_distance };
+        let hit_tp = if pos.dir == "long" { price >= tp_px } else { price <= tp_px };
+        if hit_tp {
+            close_position(state, ci, price, "TP", TradeType::Momentum);
+            return true;
+        }
+
+        // SMA crossback exit (if price crosses SMA20 while profitable)
+        if pnl > 0.0 {
+            let exit_signal = if pos.dir == "long" && price < ind.sma20 {
+                close_position(state, ci, price, "SMA", TradeType::Momentum); true
+            } else if pos.dir == "short" && price > ind.sma20 {
+                close_position(state, ci, price, "SMA", TradeType::Momentum); true
+            } else { false };
+            if exit_signal { return true; }
+        }
+
         return false;
     }
 
@@ -308,11 +201,6 @@ pub fn check_entry(
             if strategies::long_entry(&ind, cfg.long_strat) {
                 open_position(state, ci, ind.p, &regime.to_string(),
                     &cfg.long_strat.to_string(), Direction::Long, TradeType::Regime);
-            } else if strategies::complement_entry(&ind, cfg.complement_strat, cfg.complement_z_filter) {
-                // RUN13: complementary long entry — fires at different times than primary
-                state.coins[ci].active_strat = Some(cfg.complement_strat.to_string());
-                open_position(state, ci, ind.p, &regime.to_string(),
-                    &cfg.complement_strat.to_string(), Direction::Long, TradeType::Regime);
             } else {
                 // Try ISO short
                 if strategies::iso_short_entry(&ind, cfg.iso_short_strat, ctx) {
@@ -337,33 +225,66 @@ pub fn check_entry(
             }
         }
     }
-
-    // RUN27/28: Momentum breakout layer — fires independently of regime mode.
-    // Only activates if the coin has a MomentumBreakout config and no position was
-    // just opened by the regime logic above.
-    if state.coins[ci].pos.is_none() {
-        check_momentum_entry(state, ci);
-    }
 }
 
 /// Check scalp entry for coin at index `ci` (uses 1m indicators).
-/// v16: market entry, TP=2.5%, MAX_HOLD=480 bars. Designed for zero-fee exchange.
-/// Signal edge confirmed +$149/year at 0% RT fee (RUN31 opt1). Any non-zero RT fee kills edge.
 pub fn check_scalp_entry(state: &mut SharedState, ci: usize) {
-    if state.coins[ci].pos.is_some() { return; }
+    let cs = &state.coins[ci];
+    if cs.pos.is_some() { return; }
 
-    let ind_1m = match &state.coins[ci].ind_1m {
+    let ind_1m = match &cs.ind_1m {
         Some(i) => i.clone(),
         None => return,
     };
 
-    let price = state.coins[ci].candles_1m.last().map(|c| c.c).unwrap_or(0.0);
+    let price = cs.candles_1m.last().map(|c| c.c).unwrap_or(0.0);
     if price == 0.0 { return; }
 
     if let Some((dir, strat_name)) = strategies::scalp_entry_with_price(&ind_1m, price) {
-        let regime = state.coins[ci].regime;
+        let regime = cs.regime;
         open_position(state, ci, price, &regime.to_string(), strat_name, dir, TradeType::Scalp);
     }
+}
+
+/// Check momentum breakout entry for coin at index `ci` (RUN27).
+/// Independent layer: only for persistence coins (NEAR, XLM, XRP).
+/// Uses 15m indicators. Entry: 20-bar high/low breakout + vol spike + ADX filter.
+pub fn check_momentum_entry(state: &mut SharedState, ci: usize) {
+    let cs = &state.coins[ci];
+    if cs.pos.is_some() { return; }
+
+    let cfg = &COINS[cs.config_idx];
+    let mom_dir = match cfg.momentum_dir {
+        Some(d) => d,
+        None => return,
+    };
+
+    let ind = match &cs.ind_15m {
+        Some(i) => i.clone(),
+        None => return,
+    };
+
+    if !ind.valid || ind.atr14 <= 0.0 { return; }
+
+    let vol_r = if ind.vol_ma > 0.0 { ind.vol / ind.vol_ma } else { 0.0 };
+    if vol_r < config::MOMENTUM_VOL_MULT { return; }
+    if ind.adx < config::MOMENTUM_ADX_MIN { return; }
+
+    let price = ind.p;
+    let breakout_signal = match mom_dir {
+        Direction::Long => price > ind.high_20,
+        Direction::Short => price < ind.low_20,
+    };
+
+    if !breakout_signal { return; }
+
+    // Use high_20 as entry reference for longs, low_20 for shorts
+    let entry_px = match mom_dir {
+        Direction::Long => ind.high_20,
+        Direction::Short => ind.low_20,
+    };
+
+    open_position(state, ci, entry_px, "MOM", "breakout", mom_dir, TradeType::Momentum);
 }
 
 fn open_position(
@@ -379,8 +300,9 @@ fn open_position(
     if cs.pos.is_some() { return; }
 
     let risk = match trade_type {
-        TradeType::Regime | TradeType::Momentum => config::RISK,
+        TradeType::Regime => config::RISK,
         TradeType::Scalp => config::SCALP_RISK,
+        TradeType::Momentum => config::MOMENTUM_RISK,
     };
     let trade_amt = cs.bal * risk;
     let sz = (trade_amt * config::LEVERAGE) / price;
@@ -395,10 +317,6 @@ fn open_position(
         dir: dir_str.clone(),
         last_price: None,
         trade_type: Some(trade_type),
-        atr_stop: None,
-        trail_distance: None,
-        trail_act_price: None,
-        scalp_bars_held: if trade_type == TradeType::Scalp { Some(0) } else { None },
     });
     cs.candles_held = 0;
     cs.active_strat = Some(strat.to_string());
@@ -415,7 +333,7 @@ fn open_position(
     let action = if dir == Direction::Long { "BUY" } else { "SHORT" };
     let tt = match trade_type {
         TradeType::Scalp => " [SCALP]",
-        TradeType::Momentum => " [MOMENTUM]",
+        TradeType::Momentum => " [MOM]",
         TradeType::Regime => "",
     };
     let name = cs.name;
@@ -456,25 +374,13 @@ fn close_position(
         dir: pos.dir.clone(),
         trade_type: Some(trade_type),
     });
+    cs.cooldown = 2;
     cs.candles_held = 0;
-
-    // v15: scalps get minimal cooldown (v9 behavior). Regime keeps escalating cooldown.
-    if reason == "SL" {
-        cs.consecutive_sl += 1;
-        if trade_type == TradeType::Regime && cs.consecutive_sl >= 2 {
-            cs.cooldown = config::ISO_SL_ESCALATE_COOLDOWN;
-        } else {
-            cs.cooldown = 2;
-        }
-    } else {
-        cs.consecutive_sl = 0;
-        cs.cooldown = 2;
-    }
 
     let action = if pos.dir == "long" { "SELL" } else { "COVER" };
     let tt = match trade_type {
         TradeType::Scalp => " [SCALP]",
-        TradeType::Momentum => " [MOMENTUM]",
+        TradeType::Momentum => " [MOM]",
         TradeType::Regime => "",
     };
     let name = cs.name;

@@ -29,28 +29,9 @@ pub struct Ind15m {
     pub macd: f64,
     pub macd_signal: f64,
     pub macd_hist: f64,
-    pub ou_halflife: f64,
-    pub ou_deviation: f64,
-    // RUN13 complement indicators
-    pub laguerre_rsi_05: f64,
-    pub laguerre_rsi_06: f64,
-    pub laguerre_rsi_07: f64,
-    pub laguerre_rsi_08: f64,
-    pub laguerre_rsi_05_prev: f64,
-    pub laguerre_rsi_06_prev: f64,
-    pub laguerre_rsi_07_prev: f64,
-    pub laguerre_rsi_08_prev: f64,
-    pub kalman_est: f64,
-    pub kalman_var: f64,
-    pub kst: f64,
-    pub kst_signal: f64,
-    pub kst_prev: f64,
-    pub kst_signal_prev: f64,
-    // RUN27/28 momentum breakout indicators
-    pub ret16: f64,        // 16-bar compounded return (close[n-1]/close[n-17] - 1)
-    pub sma50: f64,        // 50-bar SMA (trend context filter)
-    pub atr14_price: f64,  // ATR(14) in price units (for stop/trail calculation)
-    pub adx_prev3: f64,    // ADX 3 bars ago (for "ADX rising" check)
+    pub atr14: f64,
+    pub high_20: f64,
+    pub low_20: f64,
     pub valid: bool,
 }
 
@@ -67,8 +48,6 @@ pub struct Ind1m {
     pub bb_lower: f64,
     pub bb_width: f64,
     pub bb_width_avg: f64,
-    pub roc_3: f64,       // ROC over 3 bars (%)
-    pub avg_body_3: f64,  // avg |close-open|/close over 3 bars (%)
     pub valid: bool,
 }
 
@@ -199,108 +178,6 @@ fn compute_ema(data: &[f64], span: usize) -> Vec<f64> {
     out
 }
 
-/// Compute Laguerre RSI for all bars. Returns (current, prev) for the last bar.
-fn compute_laguerre_rsi(close: &[f64], gamma: f64) -> (f64, f64) {
-    let n = close.len();
-    if n < 4 { return (f64::NAN, f64::NAN); }
-
-    let mut l0 = 0.0_f64;
-    let mut l1 = 0.0_f64;
-    let mut l2 = 0.0_f64;
-    let mut l3 = 0.0_f64;
-    let mut prev_lrsi = f64::NAN;
-    let mut cur_lrsi = f64::NAN;
-
-    for i in 0..n {
-        let prev_l0 = l0;
-        let prev_l1 = l1;
-        let prev_l2 = l2;
-
-        l0 = (1.0 - gamma) * close[i] + gamma * l0;
-        l1 = -gamma * l0 + prev_l0 + gamma * l1;
-        l2 = -gamma * l1 + prev_l1 + gamma * l2;
-        l3 = -gamma * l2 + prev_l2 + gamma * l3;
-
-        let mut cu = 0.0;
-        let mut cd = 0.0;
-        let d0 = l0 - l1;
-        let d1 = l1 - l2;
-        let d2 = l2 - l3;
-        if d0 > 0.0 { cu += d0; } else { cd -= d0; }
-        if d1 > 0.0 { cu += d1; } else { cd -= d1; }
-        if d2 > 0.0 { cu += d2; } else { cd -= d2; }
-
-        if i >= 3 {
-            prev_lrsi = cur_lrsi;
-            cur_lrsi = if cu + cd > 0.0 { cu / (cu + cd) * 100.0 } else { 50.0 };
-        }
-    }
-
-    (cur_lrsi, prev_lrsi)
-}
-
-/// Compute Kalman filter estimate and variance. Returns (estimate, variance) for last bar.
-fn compute_kalman(close: &[f64], q: f64, r: f64) -> (f64, f64) {
-    let n = close.len();
-    if n == 0 { return (f64::NAN, f64::NAN); }
-
-    let mut x_est = close[0];
-    let mut p_est = 1.0;
-
-    for i in 1..n {
-        // predict
-        let x_pred = x_est;
-        let p_pred = p_est + q;
-        // update
-        let k = p_pred / (p_pred + r);
-        x_est = x_pred + k * (close[i] - x_pred);
-        p_est = (1.0 - k) * p_pred;
-    }
-
-    (x_est, p_est)
-}
-
-/// Compute KST and signal. Returns (kst, signal, kst_prev, signal_prev).
-fn compute_kst(close: &[f64]) -> (f64, f64, f64, f64) {
-    let n = close.len();
-    if n < 60 { return (f64::NAN, f64::NAN, f64::NAN, f64::NAN); }
-
-    // ROC values
-    let mut roc10 = vec![f64::NAN; n];
-    let mut roc15 = vec![f64::NAN; n];
-    let mut roc20 = vec![f64::NAN; n];
-    let mut roc30 = vec![f64::NAN; n];
-    for i in 10..n { if close[i - 10] > 0.0 { roc10[i] = (close[i] - close[i - 10]) / close[i - 10] * 100.0; } }
-    for i in 15..n { if close[i - 15] > 0.0 { roc15[i] = (close[i] - close[i - 15]) / close[i - 15] * 100.0; } }
-    for i in 20..n { if close[i - 20] > 0.0 { roc20[i] = (close[i] - close[i - 20]) / close[i - 20] * 100.0; } }
-    for i in 30..n { if close[i - 30] > 0.0 { roc30[i] = (close[i] - close[i - 30]) / close[i - 30] * 100.0; } }
-
-    let sma_roc10 = rolling_mean(&roc10, 10);
-    let sma_roc15 = rolling_mean(&roc15, 10);
-    let sma_roc20 = rolling_mean(&roc20, 10);
-    let sma_roc30 = rolling_mean(&roc30, 15);
-
-    let mut kst = vec![f64::NAN; n];
-    for i in 0..n {
-        if !sma_roc10[i].is_nan() && !sma_roc15[i].is_nan()
-            && !sma_roc20[i].is_nan() && !sma_roc30[i].is_nan()
-        {
-            kst[i] = sma_roc10[i] * 1.0 + sma_roc15[i] * 2.0
-                + sma_roc20[i] * 3.0 + sma_roc30[i] * 4.0;
-        }
-    }
-    let signal = rolling_mean(&kst, 9);
-
-    let i = n - 1;
-    let prev = if i > 0 { i - 1 } else { 0 };
-    (
-        if kst[i].is_nan() { f64::NAN } else { kst[i] },
-        if signal[i].is_nan() { f64::NAN } else { signal[i] },
-        if kst[prev].is_nan() { f64::NAN } else { kst[prev] },
-        if signal[prev].is_nan() { f64::NAN } else { signal[prev] },
-    )
-}
-
 /// Compute 15m indicators from candle array. Returns the latest Ind15m.
 pub fn compute_15m_indicators(candles: &[Candle]) -> Option<Ind15m> {
     let n = candles.len();
@@ -313,7 +190,6 @@ pub fn compute_15m_indicators(candles: &[Candle]) -> Option<Ind15m> {
 
     let sma20 = rolling_mean(&c, 20);
     let sma9 = rolling_mean(&c, 9);
-    let sma50 = rolling_mean(&c, 50);
     let std20 = rolling_std(&c, 20);
     let vol_ma = rolling_mean(&v, 20);
     let adr_lo = rolling_min(&l, 24);
@@ -359,6 +235,8 @@ pub fn compute_15m_indicators(candles: &[Candle]) -> Option<Ind15m> {
         true_range[i] = hl.max(hc).max(lc);
     }
     let atr = rolling_mean(&true_range, 14);
+    let high_20 = rolling_max(&h, 20);
+    let low_20 = rolling_min(&l, 20);
     let pdm_avg = rolling_mean(&plus_dm, 14);
     let mdm_avg = rolling_mean(&minus_dm, 14);
     let mut dx = vec![f64::NAN; n];
@@ -372,61 +250,7 @@ pub fn compute_15m_indicators(candles: &[Candle]) -> Option<Ind15m> {
     }
     let adx = rolling_mean(&dx, 14);
 
-    // Ornstein-Uhlenbeck half-life (rolling 100-bar regression of spread)
-    let ou_window = crate::config::OU_WINDOW;
-    let mut ou_halflife_val = f64::NAN;
-    let mut ou_deviation_val = f64::NAN;
-    if n > ou_window + 1 {
-        let i = n - 1;
-        if !sma20[i].is_nan() {
-            let mut sum_x = 0.0;
-            let mut sum_y = 0.0;
-            let mut sum_xy = 0.0;
-            let mut sum_x2 = 0.0;
-            let mut cnt = 0u32;
-            for j in (i - ou_window + 1)..=i {
-                if sma20[j].is_nan() || sma20[j - 1].is_nan() { continue; }
-                let spread = c[j - 1] - sma20[j - 1];
-                let delta = (c[j] - sma20[j]) - spread;
-                sum_x += spread;
-                sum_y += delta;
-                sum_xy += spread * delta;
-                sum_x2 += spread * spread;
-                cnt += 1;
-            }
-            if cnt >= 50 {
-                let n_f = cnt as f64;
-                let denom = n_f * sum_x2 - sum_x * sum_x;
-                if denom.abs() > 1e-15 {
-                    let b = (n_f * sum_xy - sum_x * sum_y) / denom;
-                    if b < 0.0 {
-                        ou_halflife_val = -(2.0_f64.ln()) / b;
-                        ou_deviation_val = c[i] - sma20[i];
-                    }
-                }
-            }
-        }
-    }
-
-    // RUN13 complement indicators
-    let (lrsi_05, lrsi_05_prev) = compute_laguerre_rsi(&c, 0.5);
-    let (lrsi_06, lrsi_06_prev) = compute_laguerre_rsi(&c, 0.6);
-    let (lrsi_07, lrsi_07_prev) = compute_laguerre_rsi(&c, 0.7);
-    let (lrsi_08, lrsi_08_prev) = compute_laguerre_rsi(&c, 0.8);
-    let (kalman_est, kalman_var) = compute_kalman(&c, 0.0001, 1.0);
-    let (kst_val, kst_sig, kst_prev, kst_sig_prev) = compute_kst(&c);
-
-    // Momentum breakout indicators
     let i = n - 1;
-    // 16-bar compounded return
-    let ret16 = if i >= 16 && c[i - 16] > 0.0 {
-        c[i] / c[i - 16] - 1.0
-    } else { 0.0 };
-    // ATR(14) in price units (Wilder's method: rolling mean of true range)
-    let atr14_price = if !atr[i].is_nan() { atr[i] } else { 0.0 };
-    // ADX 3 bars ago
-    let adx_prev3 = if i >= 3 && !adx[i - 3].is_nan() { adx[i - 3] } else { 0.0 };
-
     if sma20[i].is_nan() || std20[i].is_nan() || std20[i] == 0.0 {
         return None;
     }
@@ -461,26 +285,9 @@ pub fn compute_15m_indicators(candles: &[Candle]) -> Option<Ind15m> {
         macd: if macd_line[i].is_nan() { 0.0 } else { macd_line[i] },
         macd_signal: if macd_signal[i].is_nan() { 0.0 } else { macd_signal[i] },
         macd_hist: macd_h,
-        ou_halflife: ou_halflife_val,
-        ou_deviation: ou_deviation_val,
-        laguerre_rsi_05: lrsi_05,
-        laguerre_rsi_06: lrsi_06,
-        laguerre_rsi_07: lrsi_07,
-        laguerre_rsi_08: lrsi_08,
-        laguerre_rsi_05_prev: lrsi_05_prev,
-        laguerre_rsi_06_prev: lrsi_06_prev,
-        laguerre_rsi_07_prev: lrsi_07_prev,
-        laguerre_rsi_08_prev: lrsi_08_prev,
-        kalman_est,
-        kalman_var,
-        kst: kst_val,
-        kst_signal: kst_sig,
-        kst_prev,
-        kst_signal_prev: kst_sig_prev,
-        ret16,
-        sma50: if sma50[i].is_nan() { 0.0 } else { sma50[i] },
-        atr14_price,
-        adx_prev3,
+        atr14: if atr[i].is_nan() { 0.0 } else { atr[i] },
+        high_20: high_20[i],
+        low_20: low_20[i],
         valid: !rsi14[i].is_nan() && !adx[i].is_nan(),
     })
 }
@@ -525,25 +332,7 @@ pub fn compute_1m_indicators(candles: &[Candle]) -> Option<Ind1m> {
     }
     let bb_width_avg = rolling_mean(&bb_width_raw, 20);
 
-    // ROC over 3 bars
     let i = n - 1;
-    let roc_3 = if i >= 3 && c[i - 3] > 0.0 {
-        (c[i] - c[i - 3]) / c[i - 3] * 100.0
-    } else {
-        f64::NAN
-    };
-
-    // Average absolute body size over 3 bars (as % of close)
-    let avg_body_3 = if i >= 2 {
-        let o: Vec<f64> = candles.iter().map(|x| x.o).collect();
-        let b0 = (c[i] - o[i]).abs() / c[i] * 100.0;
-        let b1 = (c[i - 1] - o[i - 1]).abs() / c[i - 1] * 100.0;
-        let b2 = (c[i - 2] - o[i - 2]).abs() / c[i - 2] * 100.0;
-        (b0 + b1 + b2) / 3.0
-    } else {
-        f64::NAN
-    };
-
     Some(Ind1m {
         rsi: rsi[i],
         vol: v[i],
@@ -556,8 +345,6 @@ pub fn compute_1m_indicators(candles: &[Candle]) -> Option<Ind1m> {
         bb_lower: bb_lower[i],
         bb_width: bb_width_raw[i],
         bb_width_avg: bb_width_avg[i],
-        roc_3,
-        avg_body_3,
         valid: !rsi[i].is_nan() && !vol_ma[i].is_nan(),
     })
 }

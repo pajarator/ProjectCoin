@@ -1,0 +1,3292 @@
+{
+  "notes": "RUN92 exit-weighted. 19 configs. Baseline PnL=292.85. Best: BASELINE (PnL=292.85, Δ=+0.00)",
+  "configs": [
+    {
+      "label": "BASELINE",
+      "total_pnl": 292.84838529531635,
+      "portfolio_wr": 25.89543021819679,
+      "total_trades": 9716,
+      "pf": 0.34949298513682453,
+      "is_baseline": true,
+      "suppressed_entries": 0,
+      "coins": [
+        {
+          "coin": "DASH",
+          "pnl": 38.81785941152924,
+          "trades": 583,
+          "wins": 116,
+          "losses": 467,
+          "wr": 19.897084048027445,
+          "suppressed": 0
+        },
+        {
+          "coin": "UNI",
+          "pnl": 19.609860119280455,
+          "trades": 548,
+          "wins": 130,
+          "losses": 418,
+          "wr": 23.722627737226276,
+          "suppressed": 0
+        },
+        {
+          "coin": "NEAR",
+          "pnl": 17.361808926955703,
+          "trades": 557,
+          "wins": 125,
+          "losses": 432,
+          "wr": 22.44165170556553,
+          "suppressed": 0
+        },
+        {
+          "coin": "ADA",
+          "pnl": 14.962745985739218,
+          "trades": 539,
+          "wins": 137,
+          "losses": 402,
+          "wr": 25.41743970315399,
+          "suppressed": 0
+        },
+        {
+          "coin": "LTC",
+          "pnl": 13.034188975838987,
+          "trades": 522,
+          "wins": 136,
+          "losses": 386,
+          "wr": 26.053639846743295,
+          "suppressed": 0
+        },
+        {
+          "coin": "SHIB",
+          "pnl": 10.423106715599005,
+          "trades": 545,
+          "wins": 126,
+          "losses": 419,
+          "wr": 23.119266055045873,
+          "suppressed": 0
+        },
+        {
+          "coin": "LINK",
+          "pnl": 16.351761385965546,
+          "trades": 528,
+          "wins": 129,
+          "losses": 399,
+          "wr": 24.431818181818183,
+          "suppressed": 0
+        },
+        {
+          "coin": "ETH",
+          "pnl": 12.514440010168386,
+          "trades": 518,
+          "wins": 154,
+          "losses": 364,
+          "wr": 29.72972972972973,
+          "suppressed": 0
+        },
+        {
+          "coin": "DOT",
+          "pnl": 20.124394050708688,
+          "trades": 551,
+          "wins": 140,
+          "losses": 410,
+          "wr": 25.40834845735027,
+          "suppressed": 0
+        },
+        {
+          "coin": "XRP",
+          "pnl": 15.43673655207445,
+          "trades": 550,
+          "wins": 154,
+          "losses": 396,
+          "wr": 28.000000000000004,
+          "suppressed": 0
+        },
+        {
+          "coin": "ATOM",
+          "pnl": 13.98267756015511,
+          "trades": 549,
+          "wins": 128,
+          "losses": 421,
+          "wr": 23.31511839708561,
+          "suppressed": 0
+        },
+        {
+          "coin": "SOL",
+          "pnl": 15.628923369670872,
+          "trades": 547,
+          "wins": 156,
+          "losses": 391,
+          "wr": 28.519195612431442,
+          "suppressed": 0
+        },
+        {
+          "coin": "DOGE",
+          "pnl": 14.94337912716773,
+          "trades": 544,
+          "wins": 144,
+          "losses": 400,
+          "wr": 26.47058823529412,
+          "suppressed": 0
+        },
+        {
+          "coin": "XLM",
+          "pnl": 14.363778159767861,
+          "trades": 540,
+          "wins": 133,
+          "losses": 407,
+          "wr": 24.62962962962963,
+          "suppressed": 0
+        },
+        {
+          "coin": "AVAX",
+          "pnl": 16.81098024652904,
+          "trades": 542,
+          "wins": 147,
+          "losses": 395,
+          "wr": 27.121771217712176,
+          "suppressed": 0
+        },
+        {
+          "coin": "ALGO",
+          "pnl": 17.743517646386678,
+          "trades": 538,
+          "wins": 133,
+          "losses": 405,
+          "wr": 24.721189591078065,
+          "suppressed": 0
+        },
+        {
+          "coin": "BNB",
+          "pnl": 10.33965238800559,
+          "trades": 518,
+          "wins": 152,
+          "losses": 366,
+          "wr": 29.343629343629345,
+          "suppressed": 0
+        },
+        {
+          "coin": "BTC",
+          "pnl": 10.398574663773829,
+          "trades": 497,
+          "wins": 176,
+          "losses": 321,
+          "wr": 35.412474849094565,
+          "suppressed": 0
+        }
+      ]
+    },
+    {
+      "label": "W30_MS15_SC0.50",
+      "total_pnl": 4.618277629565242,
+      "portfolio_wr": 22.962962962962962,
+      "total_trades": 270,
+      "pf": 0.29807692307692313,
+      "is_baseline": false,
+      "suppressed_entries": 251853,
+      "coins": [
+        {
+          "coin": "DASH",
+          "pnl": 1.0792389213718252,
+          "trades": 15,
+          "wins": 3,
+          "losses": 12,
+          "wr": 20.0,
+          "suppressed": 14068
+        },
+        {
+          "coin": "UNI",
+          "pnl": -0.024367968877854196,
+          "trades": 15,
+          "wins": 2,
+          "losses": 13,
+          "wr": 13.333333333333334,
+          "suppressed": 14015
+        },
+        {
+          "coin": "NEAR",
+          "pnl": 0.23693857138935925,
+          "trades": 15,
+          "wins": 3,
+          "losses": 12,
+          "wr": 20.0,
+          "suppressed": 13932
+        },
+        {
+          "coin": "ADA",
+          "pnl": -0.3081369359824606,
+          "trades": 15,
+          "wins": 1,
+          "losses": 14,
+          "wr": 6.666666666666667,
+          "suppressed": 13989
+        },
+        {
+          "coin": "LTC",
+          "pnl": 0.31146183811986816,
+          "trades": 15,
+          "wins": 4,
+          "losses": 11,
+          "wr": 26.666666666666668,
+          "suppressed": 14028
+        },
+        {
+          "coin": "SHIB",
+          "pnl": 0.295861915375184,
+          "trades": 15,
+          "wins": 5,
+          "losses": 10,
+          "wr": 33.33333333333333,
+          "suppressed": 14042
+        },
+        {
+          "coin": "LINK",
+          "pnl": 0.030944188257691962,
+          "trades": 15,
+          "wins": 3,
+          "losses": 12,
+          "wr": 20.0,
+          "suppressed": 14039
+        },
+        {
+          "coin": "ETH",
+          "pnl": 0.33962893950227624,
+          "trades": 15,
+          "wins": 5,
+          "losses": 10,
+          "wr": 33.33333333333333,
+          "suppressed": 13969
+        },
+        {
+          "coin": "DOT",
+          "pnl": 0.566201776319545,
+          "trades": 15,
+          "wins": 5,
+          "losses": 10,
+          "wr": 33.33333333333333,
+          "suppressed": 13883
+        },
+        {
+          "coin": "XRP",
+          "pnl": 0.5547119024636231,
+          "trades": 15,
+          "wins": 4,
+          "losses": 11,
+          "wr": 26.666666666666668,
+          "suppressed": 13972
+        },
+        {
+          "coin": "ATOM",
+          "pnl": -0.014387946867799428,
+          "trades": 15,
+          "wins": 2,
+          "losses": 13,
+          "wr": 13.333333333333334,
+          "suppressed": 13972
+        },
+        {
+          "coin": "SOL",
+          "pnl": 0.46722204277017454,
+          "trades": 15,
+          "wins": 4,
+          "losses": 11,
+          "wr": 26.666666666666668,
+          "suppressed": 13972
+        },
+        {
+          "coin": "DOGE",
+          "pnl": -0.17073828852900874,
+          "trades": 15,
+          "wins": 2,
+          "losses": 13,
+          "wr": 13.333333333333334,
+          "suppressed": 13989
+        },
+        {
+          "coin": "XLM",
+          "pnl": 0.5657024842914211,
+          "trades": 15,
+          "wins": 5,
+          "losses": 10,
+          "wr": 33.33333333333333,
+          "suppressed": 13986
+        },
+        {
+          "coin": "AVAX",
+          "pnl": -0.15839043710450085,
+          "trades": 15,
+          "wins": 2,
+          "losses": 13,
+          "wr": 13.333333333333334,
+          "suppressed": 14039
+        },
+        {
+          "coin": "ALGO",
+          "pnl": 0.23441218211526405,
+          "trades": 15,
+          "wins": 4,
+          "losses": 11,
+          "wr": 26.666666666666668,
+          "suppressed": 13963
+        },
+        {
+          "coin": "BNB",
+          "pnl": 0.649732831964684,
+          "trades": 15,
+          "wins": 4,
+          "losses": 11,
+          "wr": 26.666666666666668,
+          "suppressed": 14028
+        },
+        {
+          "coin": "BTC",
+          "pnl": -0.03775838701405121,
+          "trades": 15,
+          "wins": 4,
+          "losses": 11,
+          "wr": 26.666666666666668,
+          "suppressed": 13967
+        }
+      ]
+    },
+    {
+      "label": "W30_MS15_SC0.60",
+      "total_pnl": 4.618277629565242,
+      "portfolio_wr": 22.962962962962962,
+      "total_trades": 270,
+      "pf": 0.29807692307692313,
+      "is_baseline": false,
+      "suppressed_entries": 251853,
+      "coins": [
+        {
+          "coin": "DASH",
+          "pnl": 1.0792389213718252,
+          "trades": 15,
+          "wins": 3,
+          "losses": 12,
+          "wr": 20.0,
+          "suppressed": 14068
+        },
+        {
+          "coin": "UNI",
+          "pnl": -0.024367968877854196,
+          "trades": 15,
+          "wins": 2,
+          "losses": 13,
+          "wr": 13.333333333333334,
+          "suppressed": 14015
+        },
+        {
+          "coin": "NEAR",
+          "pnl": 0.23693857138935925,
+          "trades": 15,
+          "wins": 3,
+          "losses": 12,
+          "wr": 20.0,
+          "suppressed": 13932
+        },
+        {
+          "coin": "ADA",
+          "pnl": -0.3081369359824606,
+          "trades": 15,
+          "wins": 1,
+          "losses": 14,
+          "wr": 6.666666666666667,
+          "suppressed": 13989
+        },
+        {
+          "coin": "LTC",
+          "pnl": 0.31146183811986816,
+          "trades": 15,
+          "wins": 4,
+          "losses": 11,
+          "wr": 26.666666666666668,
+          "suppressed": 14028
+        },
+        {
+          "coin": "SHIB",
+          "pnl": 0.295861915375184,
+          "trades": 15,
+          "wins": 5,
+          "losses": 10,
+          "wr": 33.33333333333333,
+          "suppressed": 14042
+        },
+        {
+          "coin": "LINK",
+          "pnl": 0.030944188257691962,
+          "trades": 15,
+          "wins": 3,
+          "losses": 12,
+          "wr": 20.0,
+          "suppressed": 14039
+        },
+        {
+          "coin": "ETH",
+          "pnl": 0.33962893950227624,
+          "trades": 15,
+          "wins": 5,
+          "losses": 10,
+          "wr": 33.33333333333333,
+          "suppressed": 13969
+        },
+        {
+          "coin": "DOT",
+          "pnl": 0.566201776319545,
+          "trades": 15,
+          "wins": 5,
+          "losses": 10,
+          "wr": 33.33333333333333,
+          "suppressed": 13883
+        },
+        {
+          "coin": "XRP",
+          "pnl": 0.5547119024636231,
+          "trades": 15,
+          "wins": 4,
+          "losses": 11,
+          "wr": 26.666666666666668,
+          "suppressed": 13972
+        },
+        {
+          "coin": "ATOM",
+          "pnl": -0.014387946867799428,
+          "trades": 15,
+          "wins": 2,
+          "losses": 13,
+          "wr": 13.333333333333334,
+          "suppressed": 13972
+        },
+        {
+          "coin": "SOL",
+          "pnl": 0.46722204277017454,
+          "trades": 15,
+          "wins": 4,
+          "losses": 11,
+          "wr": 26.666666666666668,
+          "suppressed": 13972
+        },
+        {
+          "coin": "DOGE",
+          "pnl": -0.17073828852900874,
+          "trades": 15,
+          "wins": 2,
+          "losses": 13,
+          "wr": 13.333333333333334,
+          "suppressed": 13989
+        },
+        {
+          "coin": "XLM",
+          "pnl": 0.5657024842914211,
+          "trades": 15,
+          "wins": 5,
+          "losses": 10,
+          "wr": 33.33333333333333,
+          "suppressed": 13986
+        },
+        {
+          "coin": "AVAX",
+          "pnl": -0.15839043710450085,
+          "trades": 15,
+          "wins": 2,
+          "losses": 13,
+          "wr": 13.333333333333334,
+          "suppressed": 14039
+        },
+        {
+          "coin": "ALGO",
+          "pnl": 0.23441218211526405,
+          "trades": 15,
+          "wins": 4,
+          "losses": 11,
+          "wr": 26.666666666666668,
+          "suppressed": 13963
+        },
+        {
+          "coin": "BNB",
+          "pnl": 0.649732831964684,
+          "trades": 15,
+          "wins": 4,
+          "losses": 11,
+          "wr": 26.666666666666668,
+          "suppressed": 14028
+        },
+        {
+          "coin": "BTC",
+          "pnl": -0.03775838701405121,
+          "trades": 15,
+          "wins": 4,
+          "losses": 11,
+          "wr": 26.666666666666668,
+          "suppressed": 13967
+        }
+      ]
+    },
+    {
+      "label": "W30_MS15_SC0.70",
+      "total_pnl": 4.618277629565242,
+      "portfolio_wr": 22.962962962962962,
+      "total_trades": 270,
+      "pf": 0.29807692307692313,
+      "is_baseline": false,
+      "suppressed_entries": 251853,
+      "coins": [
+        {
+          "coin": "DASH",
+          "pnl": 1.0792389213718252,
+          "trades": 15,
+          "wins": 3,
+          "losses": 12,
+          "wr": 20.0,
+          "suppressed": 14068
+        },
+        {
+          "coin": "UNI",
+          "pnl": -0.024367968877854196,
+          "trades": 15,
+          "wins": 2,
+          "losses": 13,
+          "wr": 13.333333333333334,
+          "suppressed": 14015
+        },
+        {
+          "coin": "NEAR",
+          "pnl": 0.23693857138935925,
+          "trades": 15,
+          "wins": 3,
+          "losses": 12,
+          "wr": 20.0,
+          "suppressed": 13932
+        },
+        {
+          "coin": "ADA",
+          "pnl": -0.3081369359824606,
+          "trades": 15,
+          "wins": 1,
+          "losses": 14,
+          "wr": 6.666666666666667,
+          "suppressed": 13989
+        },
+        {
+          "coin": "LTC",
+          "pnl": 0.31146183811986816,
+          "trades": 15,
+          "wins": 4,
+          "losses": 11,
+          "wr": 26.666666666666668,
+          "suppressed": 14028
+        },
+        {
+          "coin": "SHIB",
+          "pnl": 0.295861915375184,
+          "trades": 15,
+          "wins": 5,
+          "losses": 10,
+          "wr": 33.33333333333333,
+          "suppressed": 14042
+        },
+        {
+          "coin": "LINK",
+          "pnl": 0.030944188257691962,
+          "trades": 15,
+          "wins": 3,
+          "losses": 12,
+          "wr": 20.0,
+          "suppressed": 14039
+        },
+        {
+          "coin": "ETH",
+          "pnl": 0.33962893950227624,
+          "trades": 15,
+          "wins": 5,
+          "losses": 10,
+          "wr": 33.33333333333333,
+          "suppressed": 13969
+        },
+        {
+          "coin": "DOT",
+          "pnl": 0.566201776319545,
+          "trades": 15,
+          "wins": 5,
+          "losses": 10,
+          "wr": 33.33333333333333,
+          "suppressed": 13883
+        },
+        {
+          "coin": "XRP",
+          "pnl": 0.5547119024636231,
+          "trades": 15,
+          "wins": 4,
+          "losses": 11,
+          "wr": 26.666666666666668,
+          "suppressed": 13972
+        },
+        {
+          "coin": "ATOM",
+          "pnl": -0.014387946867799428,
+          "trades": 15,
+          "wins": 2,
+          "losses": 13,
+          "wr": 13.333333333333334,
+          "suppressed": 13972
+        },
+        {
+          "coin": "SOL",
+          "pnl": 0.46722204277017454,
+          "trades": 15,
+          "wins": 4,
+          "losses": 11,
+          "wr": 26.666666666666668,
+          "suppressed": 13972
+        },
+        {
+          "coin": "DOGE",
+          "pnl": -0.17073828852900874,
+          "trades": 15,
+          "wins": 2,
+          "losses": 13,
+          "wr": 13.333333333333334,
+          "suppressed": 13989
+        },
+        {
+          "coin": "XLM",
+          "pnl": 0.5657024842914211,
+          "trades": 15,
+          "wins": 5,
+          "losses": 10,
+          "wr": 33.33333333333333,
+          "suppressed": 13986
+        },
+        {
+          "coin": "AVAX",
+          "pnl": -0.15839043710450085,
+          "trades": 15,
+          "wins": 2,
+          "losses": 13,
+          "wr": 13.333333333333334,
+          "suppressed": 14039
+        },
+        {
+          "coin": "ALGO",
+          "pnl": 0.23441218211526405,
+          "trades": 15,
+          "wins": 4,
+          "losses": 11,
+          "wr": 26.666666666666668,
+          "suppressed": 13963
+        },
+        {
+          "coin": "BNB",
+          "pnl": 0.649732831964684,
+          "trades": 15,
+          "wins": 4,
+          "losses": 11,
+          "wr": 26.666666666666668,
+          "suppressed": 14028
+        },
+        {
+          "coin": "BTC",
+          "pnl": -0.03775838701405121,
+          "trades": 15,
+          "wins": 4,
+          "losses": 11,
+          "wr": 26.666666666666668,
+          "suppressed": 13967
+        }
+      ]
+    },
+    {
+      "label": "W30_MS20_SC0.50",
+      "total_pnl": 4.538231746066103,
+      "portfolio_wr": 20.833333333333336,
+      "total_trades": 360,
+      "pf": 0.2631578947368421,
+      "is_baseline": false,
+      "suppressed_entries": 249711,
+      "coins": [
+        {
+          "coin": "DASH",
+          "pnl": 0.9277110070174928,
+          "trades": 20,
+          "wins": 3,
+          "losses": 17,
+          "wr": 15.0,
+          "suppressed": 13969
+        },
+        {
+          "coin": "UNI",
+          "pnl": -0.17424146584507127,
+          "trades": 20,
+          "wins": 2,
+          "losses": 18,
+          "wr": 10.0,
+          "suppressed": 13873
+        },
+        {
+          "coin": "NEAR",
+          "pnl": 0.08667334971707419,
+          "trades": 20,
+          "wins": 3,
+          "losses": 17,
+          "wr": 15.0,
+          "suppressed": 13832
+        },
+        {
+          "coin": "ADA",
+          "pnl": -0.11625941765065306,
+          "trades": 20,
+          "wins": 2,
+          "losses": 18,
+          "wr": 10.0,
+          "suppressed": 13857
+        },
+        {
+          "coin": "LTC",
+          "pnl": 0.5990148674220563,
+          "trades": 20,
+          "wins": 6,
+          "losses": 14,
+          "wr": 30.0,
+          "suppressed": 13873
+        },
+        {
+          "coin": "SHIB",
+          "pnl": 0.872770986168419,
+          "trades": 20,
+          "wins": 9,
+          "losses": 11,
+          "wr": 45.0,
+          "suppressed": 13903
+        },
+        {
+          "coin": "LINK",
+          "pnl": -0.11901222717924043,
+          "trades": 20,
+          "wins": 3,
+          "losses": 17,
+          "wr": 15.0,
+          "suppressed": 13940
+        },
+        {
+          "coin": "ETH",
+          "pnl": 0.18920977467142563,
+          "trades": 20,
+          "wins": 5,
+          "losses": 15,
+          "wr": 25.0,
+          "suppressed": 13835
+        },
+        {
+          "coin": "DOT",
+          "pnl": 0.557258031662812,
+          "trades": 20,
+          "wins": 6,
+          "losses": 14,
+          "wr": 30.0,
+          "suppressed": 13827
+        },
+        {
+          "coin": "XRP",
+          "pnl": 0.5464223804797541,
+          "trades": 20,
+          "wins": 5,
+          "losses": 15,
+          "wr": 25.0,
+          "suppressed": 13844
+        },
+        {
+          "coin": "ATOM",
+          "pnl": -0.1642764048887102,
+          "trades": 20,
+          "wins": 2,
+          "losses": 18,
+          "wr": 10.0,
+          "suppressed": 13832
+        },
+        {
+          "coin": "SOL",
+          "pnl": 0.4826111226212788,
+          "trades": 20,
+          "wins": 5,
+          "losses": 15,
+          "wr": 25.0,
+          "suppressed": 13887
+        },
+        {
+          "coin": "DOGE",
+          "pnl": 0.030914087988833217,
+          "trades": 20,
+          "wins": 3,
+          "losses": 17,
+          "wr": 15.0,
+          "suppressed": 13875
+        },
+        {
+          "coin": "XLM",
+          "pnl": 0.6531737993092861,
+          "trades": 20,
+          "wins": 6,
+          "losses": 14,
+          "wr": 30.0,
+          "suppressed": 13873
+        },
+        {
+          "coin": "AVAX",
+          "pnl": -0.3080630209534121,
+          "trades": 20,
+          "wins": 2,
+          "losses": 18,
+          "wr": 10.0,
+          "suppressed": 13887
+        },
+        {
+          "coin": "ALGO",
+          "pnl": 0.08415074775381015,
+          "trades": 20,
+          "wins": 4,
+          "losses": 16,
+          "wr": 20.0,
+          "suppressed": 13841
+        },
+        {
+          "coin": "BNB",
+          "pnl": 0.49884879030493323,
+          "trades": 20,
+          "wins": 4,
+          "losses": 16,
+          "wr": 20.0,
+          "suppressed": 13921
+        },
+        {
+          "coin": "BTC",
+          "pnl": -0.10867466253398561,
+          "trades": 20,
+          "wins": 5,
+          "losses": 15,
+          "wr": 25.0,
+          "suppressed": 13842
+        }
+      ]
+    },
+    {
+      "label": "W30_MS20_SC0.60",
+      "total_pnl": 4.538231746066103,
+      "portfolio_wr": 20.833333333333336,
+      "total_trades": 360,
+      "pf": 0.2631578947368421,
+      "is_baseline": false,
+      "suppressed_entries": 249711,
+      "coins": [
+        {
+          "coin": "DASH",
+          "pnl": 0.9277110070174928,
+          "trades": 20,
+          "wins": 3,
+          "losses": 17,
+          "wr": 15.0,
+          "suppressed": 13969
+        },
+        {
+          "coin": "UNI",
+          "pnl": -0.17424146584507127,
+          "trades": 20,
+          "wins": 2,
+          "losses": 18,
+          "wr": 10.0,
+          "suppressed": 13873
+        },
+        {
+          "coin": "NEAR",
+          "pnl": 0.08667334971707419,
+          "trades": 20,
+          "wins": 3,
+          "losses": 17,
+          "wr": 15.0,
+          "suppressed": 13832
+        },
+        {
+          "coin": "ADA",
+          "pnl": -0.11625941765065306,
+          "trades": 20,
+          "wins": 2,
+          "losses": 18,
+          "wr": 10.0,
+          "suppressed": 13857
+        },
+        {
+          "coin": "LTC",
+          "pnl": 0.5990148674220563,
+          "trades": 20,
+          "wins": 6,
+          "losses": 14,
+          "wr": 30.0,
+          "suppressed": 13873
+        },
+        {
+          "coin": "SHIB",
+          "pnl": 0.872770986168419,
+          "trades": 20,
+          "wins": 9,
+          "losses": 11,
+          "wr": 45.0,
+          "suppressed": 13903
+        },
+        {
+          "coin": "LINK",
+          "pnl": -0.11901222717924043,
+          "trades": 20,
+          "wins": 3,
+          "losses": 17,
+          "wr": 15.0,
+          "suppressed": 13940
+        },
+        {
+          "coin": "ETH",
+          "pnl": 0.18920977467142563,
+          "trades": 20,
+          "wins": 5,
+          "losses": 15,
+          "wr": 25.0,
+          "suppressed": 13835
+        },
+        {
+          "coin": "DOT",
+          "pnl": 0.557258031662812,
+          "trades": 20,
+          "wins": 6,
+          "losses": 14,
+          "wr": 30.0,
+          "suppressed": 13827
+        },
+        {
+          "coin": "XRP",
+          "pnl": 0.5464223804797541,
+          "trades": 20,
+          "wins": 5,
+          "losses": 15,
+          "wr": 25.0,
+          "suppressed": 13844
+        },
+        {
+          "coin": "ATOM",
+          "pnl": -0.1642764048887102,
+          "trades": 20,
+          "wins": 2,
+          "losses": 18,
+          "wr": 10.0,
+          "suppressed": 13832
+        },
+        {
+          "coin": "SOL",
+          "pnl": 0.4826111226212788,
+          "trades": 20,
+          "wins": 5,
+          "losses": 15,
+          "wr": 25.0,
+          "suppressed": 13887
+        },
+        {
+          "coin": "DOGE",
+          "pnl": 0.030914087988833217,
+          "trades": 20,
+          "wins": 3,
+          "losses": 17,
+          "wr": 15.0,
+          "suppressed": 13875
+        },
+        {
+          "coin": "XLM",
+          "pnl": 0.6531737993092861,
+          "trades": 20,
+          "wins": 6,
+          "losses": 14,
+          "wr": 30.0,
+          "suppressed": 13873
+        },
+        {
+          "coin": "AVAX",
+          "pnl": -0.3080630209534121,
+          "trades": 20,
+          "wins": 2,
+          "losses": 18,
+          "wr": 10.0,
+          "suppressed": 13887
+        },
+        {
+          "coin": "ALGO",
+          "pnl": 0.08415074775381015,
+          "trades": 20,
+          "wins": 4,
+          "losses": 16,
+          "wr": 20.0,
+          "suppressed": 13841
+        },
+        {
+          "coin": "BNB",
+          "pnl": 0.49884879030493323,
+          "trades": 20,
+          "wins": 4,
+          "losses": 16,
+          "wr": 20.0,
+          "suppressed": 13921
+        },
+        {
+          "coin": "BTC",
+          "pnl": -0.10867466253398561,
+          "trades": 20,
+          "wins": 5,
+          "losses": 15,
+          "wr": 25.0,
+          "suppressed": 13842
+        }
+      ]
+    },
+    {
+      "label": "W30_MS20_SC0.70",
+      "total_pnl": 4.538231746066103,
+      "portfolio_wr": 20.833333333333336,
+      "total_trades": 360,
+      "pf": 0.2631578947368421,
+      "is_baseline": false,
+      "suppressed_entries": 249711,
+      "coins": [
+        {
+          "coin": "DASH",
+          "pnl": 0.9277110070174928,
+          "trades": 20,
+          "wins": 3,
+          "losses": 17,
+          "wr": 15.0,
+          "suppressed": 13969
+        },
+        {
+          "coin": "UNI",
+          "pnl": -0.17424146584507127,
+          "trades": 20,
+          "wins": 2,
+          "losses": 18,
+          "wr": 10.0,
+          "suppressed": 13873
+        },
+        {
+          "coin": "NEAR",
+          "pnl": 0.08667334971707419,
+          "trades": 20,
+          "wins": 3,
+          "losses": 17,
+          "wr": 15.0,
+          "suppressed": 13832
+        },
+        {
+          "coin": "ADA",
+          "pnl": -0.11625941765065306,
+          "trades": 20,
+          "wins": 2,
+          "losses": 18,
+          "wr": 10.0,
+          "suppressed": 13857
+        },
+        {
+          "coin": "LTC",
+          "pnl": 0.5990148674220563,
+          "trades": 20,
+          "wins": 6,
+          "losses": 14,
+          "wr": 30.0,
+          "suppressed": 13873
+        },
+        {
+          "coin": "SHIB",
+          "pnl": 0.872770986168419,
+          "trades": 20,
+          "wins": 9,
+          "losses": 11,
+          "wr": 45.0,
+          "suppressed": 13903
+        },
+        {
+          "coin": "LINK",
+          "pnl": -0.11901222717924043,
+          "trades": 20,
+          "wins": 3,
+          "losses": 17,
+          "wr": 15.0,
+          "suppressed": 13940
+        },
+        {
+          "coin": "ETH",
+          "pnl": 0.18920977467142563,
+          "trades": 20,
+          "wins": 5,
+          "losses": 15,
+          "wr": 25.0,
+          "suppressed": 13835
+        },
+        {
+          "coin": "DOT",
+          "pnl": 0.557258031662812,
+          "trades": 20,
+          "wins": 6,
+          "losses": 14,
+          "wr": 30.0,
+          "suppressed": 13827
+        },
+        {
+          "coin": "XRP",
+          "pnl": 0.5464223804797541,
+          "trades": 20,
+          "wins": 5,
+          "losses": 15,
+          "wr": 25.0,
+          "suppressed": 13844
+        },
+        {
+          "coin": "ATOM",
+          "pnl": -0.1642764048887102,
+          "trades": 20,
+          "wins": 2,
+          "losses": 18,
+          "wr": 10.0,
+          "suppressed": 13832
+        },
+        {
+          "coin": "SOL",
+          "pnl": 0.4826111226212788,
+          "trades": 20,
+          "wins": 5,
+          "losses": 15,
+          "wr": 25.0,
+          "suppressed": 13887
+        },
+        {
+          "coin": "DOGE",
+          "pnl": 0.030914087988833217,
+          "trades": 20,
+          "wins": 3,
+          "losses": 17,
+          "wr": 15.0,
+          "suppressed": 13875
+        },
+        {
+          "coin": "XLM",
+          "pnl": 0.6531737993092861,
+          "trades": 20,
+          "wins": 6,
+          "losses": 14,
+          "wr": 30.0,
+          "suppressed": 13873
+        },
+        {
+          "coin": "AVAX",
+          "pnl": -0.3080630209534121,
+          "trades": 20,
+          "wins": 2,
+          "losses": 18,
+          "wr": 10.0,
+          "suppressed": 13887
+        },
+        {
+          "coin": "ALGO",
+          "pnl": 0.08415074775381015,
+          "trades": 20,
+          "wins": 4,
+          "losses": 16,
+          "wr": 20.0,
+          "suppressed": 13841
+        },
+        {
+          "coin": "BNB",
+          "pnl": 0.49884879030493323,
+          "trades": 20,
+          "wins": 4,
+          "losses": 16,
+          "wr": 20.0,
+          "suppressed": 13921
+        },
+        {
+          "coin": "BTC",
+          "pnl": -0.10867466253398561,
+          "trades": 20,
+          "wins": 5,
+          "losses": 15,
+          "wr": 25.0,
+          "suppressed": 13842
+        }
+      ]
+    },
+    {
+      "label": "W50_MS15_SC0.50",
+      "total_pnl": 4.618277629565242,
+      "portfolio_wr": 22.962962962962962,
+      "total_trades": 270,
+      "pf": 0.29807692307692313,
+      "is_baseline": false,
+      "suppressed_entries": 251853,
+      "coins": [
+        {
+          "coin": "DASH",
+          "pnl": 1.0792389213718252,
+          "trades": 15,
+          "wins": 3,
+          "losses": 12,
+          "wr": 20.0,
+          "suppressed": 14068
+        },
+        {
+          "coin": "UNI",
+          "pnl": -0.024367968877854196,
+          "trades": 15,
+          "wins": 2,
+          "losses": 13,
+          "wr": 13.333333333333334,
+          "suppressed": 14015
+        },
+        {
+          "coin": "NEAR",
+          "pnl": 0.23693857138935925,
+          "trades": 15,
+          "wins": 3,
+          "losses": 12,
+          "wr": 20.0,
+          "suppressed": 13932
+        },
+        {
+          "coin": "ADA",
+          "pnl": -0.3081369359824606,
+          "trades": 15,
+          "wins": 1,
+          "losses": 14,
+          "wr": 6.666666666666667,
+          "suppressed": 13989
+        },
+        {
+          "coin": "LTC",
+          "pnl": 0.31146183811986816,
+          "trades": 15,
+          "wins": 4,
+          "losses": 11,
+          "wr": 26.666666666666668,
+          "suppressed": 14028
+        },
+        {
+          "coin": "SHIB",
+          "pnl": 0.295861915375184,
+          "trades": 15,
+          "wins": 5,
+          "losses": 10,
+          "wr": 33.33333333333333,
+          "suppressed": 14042
+        },
+        {
+          "coin": "LINK",
+          "pnl": 0.030944188257691962,
+          "trades": 15,
+          "wins": 3,
+          "losses": 12,
+          "wr": 20.0,
+          "suppressed": 14039
+        },
+        {
+          "coin": "ETH",
+          "pnl": 0.33962893950227624,
+          "trades": 15,
+          "wins": 5,
+          "losses": 10,
+          "wr": 33.33333333333333,
+          "suppressed": 13969
+        },
+        {
+          "coin": "DOT",
+          "pnl": 0.566201776319545,
+          "trades": 15,
+          "wins": 5,
+          "losses": 10,
+          "wr": 33.33333333333333,
+          "suppressed": 13883
+        },
+        {
+          "coin": "XRP",
+          "pnl": 0.5547119024636231,
+          "trades": 15,
+          "wins": 4,
+          "losses": 11,
+          "wr": 26.666666666666668,
+          "suppressed": 13972
+        },
+        {
+          "coin": "ATOM",
+          "pnl": -0.014387946867799428,
+          "trades": 15,
+          "wins": 2,
+          "losses": 13,
+          "wr": 13.333333333333334,
+          "suppressed": 13972
+        },
+        {
+          "coin": "SOL",
+          "pnl": 0.46722204277017454,
+          "trades": 15,
+          "wins": 4,
+          "losses": 11,
+          "wr": 26.666666666666668,
+          "suppressed": 13972
+        },
+        {
+          "coin": "DOGE",
+          "pnl": -0.17073828852900874,
+          "trades": 15,
+          "wins": 2,
+          "losses": 13,
+          "wr": 13.333333333333334,
+          "suppressed": 13989
+        },
+        {
+          "coin": "XLM",
+          "pnl": 0.5657024842914211,
+          "trades": 15,
+          "wins": 5,
+          "losses": 10,
+          "wr": 33.33333333333333,
+          "suppressed": 13986
+        },
+        {
+          "coin": "AVAX",
+          "pnl": -0.15839043710450085,
+          "trades": 15,
+          "wins": 2,
+          "losses": 13,
+          "wr": 13.333333333333334,
+          "suppressed": 14039
+        },
+        {
+          "coin": "ALGO",
+          "pnl": 0.23441218211526405,
+          "trades": 15,
+          "wins": 4,
+          "losses": 11,
+          "wr": 26.666666666666668,
+          "suppressed": 13963
+        },
+        {
+          "coin": "BNB",
+          "pnl": 0.649732831964684,
+          "trades": 15,
+          "wins": 4,
+          "losses": 11,
+          "wr": 26.666666666666668,
+          "suppressed": 14028
+        },
+        {
+          "coin": "BTC",
+          "pnl": -0.03775838701405121,
+          "trades": 15,
+          "wins": 4,
+          "losses": 11,
+          "wr": 26.666666666666668,
+          "suppressed": 13967
+        }
+      ]
+    },
+    {
+      "label": "W50_MS15_SC0.60",
+      "total_pnl": 4.618277629565242,
+      "portfolio_wr": 22.962962962962962,
+      "total_trades": 270,
+      "pf": 0.29807692307692313,
+      "is_baseline": false,
+      "suppressed_entries": 251853,
+      "coins": [
+        {
+          "coin": "DASH",
+          "pnl": 1.0792389213718252,
+          "trades": 15,
+          "wins": 3,
+          "losses": 12,
+          "wr": 20.0,
+          "suppressed": 14068
+        },
+        {
+          "coin": "UNI",
+          "pnl": -0.024367968877854196,
+          "trades": 15,
+          "wins": 2,
+          "losses": 13,
+          "wr": 13.333333333333334,
+          "suppressed": 14015
+        },
+        {
+          "coin": "NEAR",
+          "pnl": 0.23693857138935925,
+          "trades": 15,
+          "wins": 3,
+          "losses": 12,
+          "wr": 20.0,
+          "suppressed": 13932
+        },
+        {
+          "coin": "ADA",
+          "pnl": -0.3081369359824606,
+          "trades": 15,
+          "wins": 1,
+          "losses": 14,
+          "wr": 6.666666666666667,
+          "suppressed": 13989
+        },
+        {
+          "coin": "LTC",
+          "pnl": 0.31146183811986816,
+          "trades": 15,
+          "wins": 4,
+          "losses": 11,
+          "wr": 26.666666666666668,
+          "suppressed": 14028
+        },
+        {
+          "coin": "SHIB",
+          "pnl": 0.295861915375184,
+          "trades": 15,
+          "wins": 5,
+          "losses": 10,
+          "wr": 33.33333333333333,
+          "suppressed": 14042
+        },
+        {
+          "coin": "LINK",
+          "pnl": 0.030944188257691962,
+          "trades": 15,
+          "wins": 3,
+          "losses": 12,
+          "wr": 20.0,
+          "suppressed": 14039
+        },
+        {
+          "coin": "ETH",
+          "pnl": 0.33962893950227624,
+          "trades": 15,
+          "wins": 5,
+          "losses": 10,
+          "wr": 33.33333333333333,
+          "suppressed": 13969
+        },
+        {
+          "coin": "DOT",
+          "pnl": 0.566201776319545,
+          "trades": 15,
+          "wins": 5,
+          "losses": 10,
+          "wr": 33.33333333333333,
+          "suppressed": 13883
+        },
+        {
+          "coin": "XRP",
+          "pnl": 0.5547119024636231,
+          "trades": 15,
+          "wins": 4,
+          "losses": 11,
+          "wr": 26.666666666666668,
+          "suppressed": 13972
+        },
+        {
+          "coin": "ATOM",
+          "pnl": -0.014387946867799428,
+          "trades": 15,
+          "wins": 2,
+          "losses": 13,
+          "wr": 13.333333333333334,
+          "suppressed": 13972
+        },
+        {
+          "coin": "SOL",
+          "pnl": 0.46722204277017454,
+          "trades": 15,
+          "wins": 4,
+          "losses": 11,
+          "wr": 26.666666666666668,
+          "suppressed": 13972
+        },
+        {
+          "coin": "DOGE",
+          "pnl": -0.17073828852900874,
+          "trades": 15,
+          "wins": 2,
+          "losses": 13,
+          "wr": 13.333333333333334,
+          "suppressed": 13989
+        },
+        {
+          "coin": "XLM",
+          "pnl": 0.5657024842914211,
+          "trades": 15,
+          "wins": 5,
+          "losses": 10,
+          "wr": 33.33333333333333,
+          "suppressed": 13986
+        },
+        {
+          "coin": "AVAX",
+          "pnl": -0.15839043710450085,
+          "trades": 15,
+          "wins": 2,
+          "losses": 13,
+          "wr": 13.333333333333334,
+          "suppressed": 14039
+        },
+        {
+          "coin": "ALGO",
+          "pnl": 0.23441218211526405,
+          "trades": 15,
+          "wins": 4,
+          "losses": 11,
+          "wr": 26.666666666666668,
+          "suppressed": 13963
+        },
+        {
+          "coin": "BNB",
+          "pnl": 0.649732831964684,
+          "trades": 15,
+          "wins": 4,
+          "losses": 11,
+          "wr": 26.666666666666668,
+          "suppressed": 14028
+        },
+        {
+          "coin": "BTC",
+          "pnl": -0.03775838701405121,
+          "trades": 15,
+          "wins": 4,
+          "losses": 11,
+          "wr": 26.666666666666668,
+          "suppressed": 13967
+        }
+      ]
+    },
+    {
+      "label": "W50_MS15_SC0.70",
+      "total_pnl": 4.618277629565242,
+      "portfolio_wr": 22.962962962962962,
+      "total_trades": 270,
+      "pf": 0.29807692307692313,
+      "is_baseline": false,
+      "suppressed_entries": 251853,
+      "coins": [
+        {
+          "coin": "DASH",
+          "pnl": 1.0792389213718252,
+          "trades": 15,
+          "wins": 3,
+          "losses": 12,
+          "wr": 20.0,
+          "suppressed": 14068
+        },
+        {
+          "coin": "UNI",
+          "pnl": -0.024367968877854196,
+          "trades": 15,
+          "wins": 2,
+          "losses": 13,
+          "wr": 13.333333333333334,
+          "suppressed": 14015
+        },
+        {
+          "coin": "NEAR",
+          "pnl": 0.23693857138935925,
+          "trades": 15,
+          "wins": 3,
+          "losses": 12,
+          "wr": 20.0,
+          "suppressed": 13932
+        },
+        {
+          "coin": "ADA",
+          "pnl": -0.3081369359824606,
+          "trades": 15,
+          "wins": 1,
+          "losses": 14,
+          "wr": 6.666666666666667,
+          "suppressed": 13989
+        },
+        {
+          "coin": "LTC",
+          "pnl": 0.31146183811986816,
+          "trades": 15,
+          "wins": 4,
+          "losses": 11,
+          "wr": 26.666666666666668,
+          "suppressed": 14028
+        },
+        {
+          "coin": "SHIB",
+          "pnl": 0.295861915375184,
+          "trades": 15,
+          "wins": 5,
+          "losses": 10,
+          "wr": 33.33333333333333,
+          "suppressed": 14042
+        },
+        {
+          "coin": "LINK",
+          "pnl": 0.030944188257691962,
+          "trades": 15,
+          "wins": 3,
+          "losses": 12,
+          "wr": 20.0,
+          "suppressed": 14039
+        },
+        {
+          "coin": "ETH",
+          "pnl": 0.33962893950227624,
+          "trades": 15,
+          "wins": 5,
+          "losses": 10,
+          "wr": 33.33333333333333,
+          "suppressed": 13969
+        },
+        {
+          "coin": "DOT",
+          "pnl": 0.566201776319545,
+          "trades": 15,
+          "wins": 5,
+          "losses": 10,
+          "wr": 33.33333333333333,
+          "suppressed": 13883
+        },
+        {
+          "coin": "XRP",
+          "pnl": 0.5547119024636231,
+          "trades": 15,
+          "wins": 4,
+          "losses": 11,
+          "wr": 26.666666666666668,
+          "suppressed": 13972
+        },
+        {
+          "coin": "ATOM",
+          "pnl": -0.014387946867799428,
+          "trades": 15,
+          "wins": 2,
+          "losses": 13,
+          "wr": 13.333333333333334,
+          "suppressed": 13972
+        },
+        {
+          "coin": "SOL",
+          "pnl": 0.46722204277017454,
+          "trades": 15,
+          "wins": 4,
+          "losses": 11,
+          "wr": 26.666666666666668,
+          "suppressed": 13972
+        },
+        {
+          "coin": "DOGE",
+          "pnl": -0.17073828852900874,
+          "trades": 15,
+          "wins": 2,
+          "losses": 13,
+          "wr": 13.333333333333334,
+          "suppressed": 13989
+        },
+        {
+          "coin": "XLM",
+          "pnl": 0.5657024842914211,
+          "trades": 15,
+          "wins": 5,
+          "losses": 10,
+          "wr": 33.33333333333333,
+          "suppressed": 13986
+        },
+        {
+          "coin": "AVAX",
+          "pnl": -0.15839043710450085,
+          "trades": 15,
+          "wins": 2,
+          "losses": 13,
+          "wr": 13.333333333333334,
+          "suppressed": 14039
+        },
+        {
+          "coin": "ALGO",
+          "pnl": 0.23441218211526405,
+          "trades": 15,
+          "wins": 4,
+          "losses": 11,
+          "wr": 26.666666666666668,
+          "suppressed": 13963
+        },
+        {
+          "coin": "BNB",
+          "pnl": 0.649732831964684,
+          "trades": 15,
+          "wins": 4,
+          "losses": 11,
+          "wr": 26.666666666666668,
+          "suppressed": 14028
+        },
+        {
+          "coin": "BTC",
+          "pnl": -0.03775838701405121,
+          "trades": 15,
+          "wins": 4,
+          "losses": 11,
+          "wr": 26.666666666666668,
+          "suppressed": 13967
+        }
+      ]
+    },
+    {
+      "label": "W50_MS20_SC0.50",
+      "total_pnl": 4.538231746066103,
+      "portfolio_wr": 20.833333333333336,
+      "total_trades": 360,
+      "pf": 0.2631578947368421,
+      "is_baseline": false,
+      "suppressed_entries": 249711,
+      "coins": [
+        {
+          "coin": "DASH",
+          "pnl": 0.9277110070174928,
+          "trades": 20,
+          "wins": 3,
+          "losses": 17,
+          "wr": 15.0,
+          "suppressed": 13969
+        },
+        {
+          "coin": "UNI",
+          "pnl": -0.17424146584507127,
+          "trades": 20,
+          "wins": 2,
+          "losses": 18,
+          "wr": 10.0,
+          "suppressed": 13873
+        },
+        {
+          "coin": "NEAR",
+          "pnl": 0.08667334971707419,
+          "trades": 20,
+          "wins": 3,
+          "losses": 17,
+          "wr": 15.0,
+          "suppressed": 13832
+        },
+        {
+          "coin": "ADA",
+          "pnl": -0.11625941765065306,
+          "trades": 20,
+          "wins": 2,
+          "losses": 18,
+          "wr": 10.0,
+          "suppressed": 13857
+        },
+        {
+          "coin": "LTC",
+          "pnl": 0.5990148674220563,
+          "trades": 20,
+          "wins": 6,
+          "losses": 14,
+          "wr": 30.0,
+          "suppressed": 13873
+        },
+        {
+          "coin": "SHIB",
+          "pnl": 0.872770986168419,
+          "trades": 20,
+          "wins": 9,
+          "losses": 11,
+          "wr": 45.0,
+          "suppressed": 13903
+        },
+        {
+          "coin": "LINK",
+          "pnl": -0.11901222717924043,
+          "trades": 20,
+          "wins": 3,
+          "losses": 17,
+          "wr": 15.0,
+          "suppressed": 13940
+        },
+        {
+          "coin": "ETH",
+          "pnl": 0.18920977467142563,
+          "trades": 20,
+          "wins": 5,
+          "losses": 15,
+          "wr": 25.0,
+          "suppressed": 13835
+        },
+        {
+          "coin": "DOT",
+          "pnl": 0.557258031662812,
+          "trades": 20,
+          "wins": 6,
+          "losses": 14,
+          "wr": 30.0,
+          "suppressed": 13827
+        },
+        {
+          "coin": "XRP",
+          "pnl": 0.5464223804797541,
+          "trades": 20,
+          "wins": 5,
+          "losses": 15,
+          "wr": 25.0,
+          "suppressed": 13844
+        },
+        {
+          "coin": "ATOM",
+          "pnl": -0.1642764048887102,
+          "trades": 20,
+          "wins": 2,
+          "losses": 18,
+          "wr": 10.0,
+          "suppressed": 13832
+        },
+        {
+          "coin": "SOL",
+          "pnl": 0.4826111226212788,
+          "trades": 20,
+          "wins": 5,
+          "losses": 15,
+          "wr": 25.0,
+          "suppressed": 13887
+        },
+        {
+          "coin": "DOGE",
+          "pnl": 0.030914087988833217,
+          "trades": 20,
+          "wins": 3,
+          "losses": 17,
+          "wr": 15.0,
+          "suppressed": 13875
+        },
+        {
+          "coin": "XLM",
+          "pnl": 0.6531737993092861,
+          "trades": 20,
+          "wins": 6,
+          "losses": 14,
+          "wr": 30.0,
+          "suppressed": 13873
+        },
+        {
+          "coin": "AVAX",
+          "pnl": -0.3080630209534121,
+          "trades": 20,
+          "wins": 2,
+          "losses": 18,
+          "wr": 10.0,
+          "suppressed": 13887
+        },
+        {
+          "coin": "ALGO",
+          "pnl": 0.08415074775381015,
+          "trades": 20,
+          "wins": 4,
+          "losses": 16,
+          "wr": 20.0,
+          "suppressed": 13841
+        },
+        {
+          "coin": "BNB",
+          "pnl": 0.49884879030493323,
+          "trades": 20,
+          "wins": 4,
+          "losses": 16,
+          "wr": 20.0,
+          "suppressed": 13921
+        },
+        {
+          "coin": "BTC",
+          "pnl": -0.10867466253398561,
+          "trades": 20,
+          "wins": 5,
+          "losses": 15,
+          "wr": 25.0,
+          "suppressed": 13842
+        }
+      ]
+    },
+    {
+      "label": "W50_MS20_SC0.60",
+      "total_pnl": 4.538231746066103,
+      "portfolio_wr": 20.833333333333336,
+      "total_trades": 360,
+      "pf": 0.2631578947368421,
+      "is_baseline": false,
+      "suppressed_entries": 249711,
+      "coins": [
+        {
+          "coin": "DASH",
+          "pnl": 0.9277110070174928,
+          "trades": 20,
+          "wins": 3,
+          "losses": 17,
+          "wr": 15.0,
+          "suppressed": 13969
+        },
+        {
+          "coin": "UNI",
+          "pnl": -0.17424146584507127,
+          "trades": 20,
+          "wins": 2,
+          "losses": 18,
+          "wr": 10.0,
+          "suppressed": 13873
+        },
+        {
+          "coin": "NEAR",
+          "pnl": 0.08667334971707419,
+          "trades": 20,
+          "wins": 3,
+          "losses": 17,
+          "wr": 15.0,
+          "suppressed": 13832
+        },
+        {
+          "coin": "ADA",
+          "pnl": -0.11625941765065306,
+          "trades": 20,
+          "wins": 2,
+          "losses": 18,
+          "wr": 10.0,
+          "suppressed": 13857
+        },
+        {
+          "coin": "LTC",
+          "pnl": 0.5990148674220563,
+          "trades": 20,
+          "wins": 6,
+          "losses": 14,
+          "wr": 30.0,
+          "suppressed": 13873
+        },
+        {
+          "coin": "SHIB",
+          "pnl": 0.872770986168419,
+          "trades": 20,
+          "wins": 9,
+          "losses": 11,
+          "wr": 45.0,
+          "suppressed": 13903
+        },
+        {
+          "coin": "LINK",
+          "pnl": -0.11901222717924043,
+          "trades": 20,
+          "wins": 3,
+          "losses": 17,
+          "wr": 15.0,
+          "suppressed": 13940
+        },
+        {
+          "coin": "ETH",
+          "pnl": 0.18920977467142563,
+          "trades": 20,
+          "wins": 5,
+          "losses": 15,
+          "wr": 25.0,
+          "suppressed": 13835
+        },
+        {
+          "coin": "DOT",
+          "pnl": 0.557258031662812,
+          "trades": 20,
+          "wins": 6,
+          "losses": 14,
+          "wr": 30.0,
+          "suppressed": 13827
+        },
+        {
+          "coin": "XRP",
+          "pnl": 0.5464223804797541,
+          "trades": 20,
+          "wins": 5,
+          "losses": 15,
+          "wr": 25.0,
+          "suppressed": 13844
+        },
+        {
+          "coin": "ATOM",
+          "pnl": -0.1642764048887102,
+          "trades": 20,
+          "wins": 2,
+          "losses": 18,
+          "wr": 10.0,
+          "suppressed": 13832
+        },
+        {
+          "coin": "SOL",
+          "pnl": 0.4826111226212788,
+          "trades": 20,
+          "wins": 5,
+          "losses": 15,
+          "wr": 25.0,
+          "suppressed": 13887
+        },
+        {
+          "coin": "DOGE",
+          "pnl": 0.030914087988833217,
+          "trades": 20,
+          "wins": 3,
+          "losses": 17,
+          "wr": 15.0,
+          "suppressed": 13875
+        },
+        {
+          "coin": "XLM",
+          "pnl": 0.6531737993092861,
+          "trades": 20,
+          "wins": 6,
+          "losses": 14,
+          "wr": 30.0,
+          "suppressed": 13873
+        },
+        {
+          "coin": "AVAX",
+          "pnl": -0.3080630209534121,
+          "trades": 20,
+          "wins": 2,
+          "losses": 18,
+          "wr": 10.0,
+          "suppressed": 13887
+        },
+        {
+          "coin": "ALGO",
+          "pnl": 0.08415074775381015,
+          "trades": 20,
+          "wins": 4,
+          "losses": 16,
+          "wr": 20.0,
+          "suppressed": 13841
+        },
+        {
+          "coin": "BNB",
+          "pnl": 0.49884879030493323,
+          "trades": 20,
+          "wins": 4,
+          "losses": 16,
+          "wr": 20.0,
+          "suppressed": 13921
+        },
+        {
+          "coin": "BTC",
+          "pnl": -0.10867466253398561,
+          "trades": 20,
+          "wins": 5,
+          "losses": 15,
+          "wr": 25.0,
+          "suppressed": 13842
+        }
+      ]
+    },
+    {
+      "label": "W50_MS20_SC0.70",
+      "total_pnl": 4.538231746066103,
+      "portfolio_wr": 20.833333333333336,
+      "total_trades": 360,
+      "pf": 0.2631578947368421,
+      "is_baseline": false,
+      "suppressed_entries": 249711,
+      "coins": [
+        {
+          "coin": "DASH",
+          "pnl": 0.9277110070174928,
+          "trades": 20,
+          "wins": 3,
+          "losses": 17,
+          "wr": 15.0,
+          "suppressed": 13969
+        },
+        {
+          "coin": "UNI",
+          "pnl": -0.17424146584507127,
+          "trades": 20,
+          "wins": 2,
+          "losses": 18,
+          "wr": 10.0,
+          "suppressed": 13873
+        },
+        {
+          "coin": "NEAR",
+          "pnl": 0.08667334971707419,
+          "trades": 20,
+          "wins": 3,
+          "losses": 17,
+          "wr": 15.0,
+          "suppressed": 13832
+        },
+        {
+          "coin": "ADA",
+          "pnl": -0.11625941765065306,
+          "trades": 20,
+          "wins": 2,
+          "losses": 18,
+          "wr": 10.0,
+          "suppressed": 13857
+        },
+        {
+          "coin": "LTC",
+          "pnl": 0.5990148674220563,
+          "trades": 20,
+          "wins": 6,
+          "losses": 14,
+          "wr": 30.0,
+          "suppressed": 13873
+        },
+        {
+          "coin": "SHIB",
+          "pnl": 0.872770986168419,
+          "trades": 20,
+          "wins": 9,
+          "losses": 11,
+          "wr": 45.0,
+          "suppressed": 13903
+        },
+        {
+          "coin": "LINK",
+          "pnl": -0.11901222717924043,
+          "trades": 20,
+          "wins": 3,
+          "losses": 17,
+          "wr": 15.0,
+          "suppressed": 13940
+        },
+        {
+          "coin": "ETH",
+          "pnl": 0.18920977467142563,
+          "trades": 20,
+          "wins": 5,
+          "losses": 15,
+          "wr": 25.0,
+          "suppressed": 13835
+        },
+        {
+          "coin": "DOT",
+          "pnl": 0.557258031662812,
+          "trades": 20,
+          "wins": 6,
+          "losses": 14,
+          "wr": 30.0,
+          "suppressed": 13827
+        },
+        {
+          "coin": "XRP",
+          "pnl": 0.5464223804797541,
+          "trades": 20,
+          "wins": 5,
+          "losses": 15,
+          "wr": 25.0,
+          "suppressed": 13844
+        },
+        {
+          "coin": "ATOM",
+          "pnl": -0.1642764048887102,
+          "trades": 20,
+          "wins": 2,
+          "losses": 18,
+          "wr": 10.0,
+          "suppressed": 13832
+        },
+        {
+          "coin": "SOL",
+          "pnl": 0.4826111226212788,
+          "trades": 20,
+          "wins": 5,
+          "losses": 15,
+          "wr": 25.0,
+          "suppressed": 13887
+        },
+        {
+          "coin": "DOGE",
+          "pnl": 0.030914087988833217,
+          "trades": 20,
+          "wins": 3,
+          "losses": 17,
+          "wr": 15.0,
+          "suppressed": 13875
+        },
+        {
+          "coin": "XLM",
+          "pnl": 0.6531737993092861,
+          "trades": 20,
+          "wins": 6,
+          "losses": 14,
+          "wr": 30.0,
+          "suppressed": 13873
+        },
+        {
+          "coin": "AVAX",
+          "pnl": -0.3080630209534121,
+          "trades": 20,
+          "wins": 2,
+          "losses": 18,
+          "wr": 10.0,
+          "suppressed": 13887
+        },
+        {
+          "coin": "ALGO",
+          "pnl": 0.08415074775381015,
+          "trades": 20,
+          "wins": 4,
+          "losses": 16,
+          "wr": 20.0,
+          "suppressed": 13841
+        },
+        {
+          "coin": "BNB",
+          "pnl": 0.49884879030493323,
+          "trades": 20,
+          "wins": 4,
+          "losses": 16,
+          "wr": 20.0,
+          "suppressed": 13921
+        },
+        {
+          "coin": "BTC",
+          "pnl": -0.10867466253398561,
+          "trades": 20,
+          "wins": 5,
+          "losses": 15,
+          "wr": 25.0,
+          "suppressed": 13842
+        }
+      ]
+    },
+    {
+      "label": "W100_MS15_SC0.50",
+      "total_pnl": 4.618277629565242,
+      "portfolio_wr": 22.962962962962962,
+      "total_trades": 270,
+      "pf": 0.29807692307692313,
+      "is_baseline": false,
+      "suppressed_entries": 251853,
+      "coins": [
+        {
+          "coin": "DASH",
+          "pnl": 1.0792389213718252,
+          "trades": 15,
+          "wins": 3,
+          "losses": 12,
+          "wr": 20.0,
+          "suppressed": 14068
+        },
+        {
+          "coin": "UNI",
+          "pnl": -0.024367968877854196,
+          "trades": 15,
+          "wins": 2,
+          "losses": 13,
+          "wr": 13.333333333333334,
+          "suppressed": 14015
+        },
+        {
+          "coin": "NEAR",
+          "pnl": 0.23693857138935925,
+          "trades": 15,
+          "wins": 3,
+          "losses": 12,
+          "wr": 20.0,
+          "suppressed": 13932
+        },
+        {
+          "coin": "ADA",
+          "pnl": -0.3081369359824606,
+          "trades": 15,
+          "wins": 1,
+          "losses": 14,
+          "wr": 6.666666666666667,
+          "suppressed": 13989
+        },
+        {
+          "coin": "LTC",
+          "pnl": 0.31146183811986816,
+          "trades": 15,
+          "wins": 4,
+          "losses": 11,
+          "wr": 26.666666666666668,
+          "suppressed": 14028
+        },
+        {
+          "coin": "SHIB",
+          "pnl": 0.295861915375184,
+          "trades": 15,
+          "wins": 5,
+          "losses": 10,
+          "wr": 33.33333333333333,
+          "suppressed": 14042
+        },
+        {
+          "coin": "LINK",
+          "pnl": 0.030944188257691962,
+          "trades": 15,
+          "wins": 3,
+          "losses": 12,
+          "wr": 20.0,
+          "suppressed": 14039
+        },
+        {
+          "coin": "ETH",
+          "pnl": 0.33962893950227624,
+          "trades": 15,
+          "wins": 5,
+          "losses": 10,
+          "wr": 33.33333333333333,
+          "suppressed": 13969
+        },
+        {
+          "coin": "DOT",
+          "pnl": 0.566201776319545,
+          "trades": 15,
+          "wins": 5,
+          "losses": 10,
+          "wr": 33.33333333333333,
+          "suppressed": 13883
+        },
+        {
+          "coin": "XRP",
+          "pnl": 0.5547119024636231,
+          "trades": 15,
+          "wins": 4,
+          "losses": 11,
+          "wr": 26.666666666666668,
+          "suppressed": 13972
+        },
+        {
+          "coin": "ATOM",
+          "pnl": -0.014387946867799428,
+          "trades": 15,
+          "wins": 2,
+          "losses": 13,
+          "wr": 13.333333333333334,
+          "suppressed": 13972
+        },
+        {
+          "coin": "SOL",
+          "pnl": 0.46722204277017454,
+          "trades": 15,
+          "wins": 4,
+          "losses": 11,
+          "wr": 26.666666666666668,
+          "suppressed": 13972
+        },
+        {
+          "coin": "DOGE",
+          "pnl": -0.17073828852900874,
+          "trades": 15,
+          "wins": 2,
+          "losses": 13,
+          "wr": 13.333333333333334,
+          "suppressed": 13989
+        },
+        {
+          "coin": "XLM",
+          "pnl": 0.5657024842914211,
+          "trades": 15,
+          "wins": 5,
+          "losses": 10,
+          "wr": 33.33333333333333,
+          "suppressed": 13986
+        },
+        {
+          "coin": "AVAX",
+          "pnl": -0.15839043710450085,
+          "trades": 15,
+          "wins": 2,
+          "losses": 13,
+          "wr": 13.333333333333334,
+          "suppressed": 14039
+        },
+        {
+          "coin": "ALGO",
+          "pnl": 0.23441218211526405,
+          "trades": 15,
+          "wins": 4,
+          "losses": 11,
+          "wr": 26.666666666666668,
+          "suppressed": 13963
+        },
+        {
+          "coin": "BNB",
+          "pnl": 0.649732831964684,
+          "trades": 15,
+          "wins": 4,
+          "losses": 11,
+          "wr": 26.666666666666668,
+          "suppressed": 14028
+        },
+        {
+          "coin": "BTC",
+          "pnl": -0.03775838701405121,
+          "trades": 15,
+          "wins": 4,
+          "losses": 11,
+          "wr": 26.666666666666668,
+          "suppressed": 13967
+        }
+      ]
+    },
+    {
+      "label": "W100_MS15_SC0.60",
+      "total_pnl": 4.618277629565242,
+      "portfolio_wr": 22.962962962962962,
+      "total_trades": 270,
+      "pf": 0.29807692307692313,
+      "is_baseline": false,
+      "suppressed_entries": 251853,
+      "coins": [
+        {
+          "coin": "DASH",
+          "pnl": 1.0792389213718252,
+          "trades": 15,
+          "wins": 3,
+          "losses": 12,
+          "wr": 20.0,
+          "suppressed": 14068
+        },
+        {
+          "coin": "UNI",
+          "pnl": -0.024367968877854196,
+          "trades": 15,
+          "wins": 2,
+          "losses": 13,
+          "wr": 13.333333333333334,
+          "suppressed": 14015
+        },
+        {
+          "coin": "NEAR",
+          "pnl": 0.23693857138935925,
+          "trades": 15,
+          "wins": 3,
+          "losses": 12,
+          "wr": 20.0,
+          "suppressed": 13932
+        },
+        {
+          "coin": "ADA",
+          "pnl": -0.3081369359824606,
+          "trades": 15,
+          "wins": 1,
+          "losses": 14,
+          "wr": 6.666666666666667,
+          "suppressed": 13989
+        },
+        {
+          "coin": "LTC",
+          "pnl": 0.31146183811986816,
+          "trades": 15,
+          "wins": 4,
+          "losses": 11,
+          "wr": 26.666666666666668,
+          "suppressed": 14028
+        },
+        {
+          "coin": "SHIB",
+          "pnl": 0.295861915375184,
+          "trades": 15,
+          "wins": 5,
+          "losses": 10,
+          "wr": 33.33333333333333,
+          "suppressed": 14042
+        },
+        {
+          "coin": "LINK",
+          "pnl": 0.030944188257691962,
+          "trades": 15,
+          "wins": 3,
+          "losses": 12,
+          "wr": 20.0,
+          "suppressed": 14039
+        },
+        {
+          "coin": "ETH",
+          "pnl": 0.33962893950227624,
+          "trades": 15,
+          "wins": 5,
+          "losses": 10,
+          "wr": 33.33333333333333,
+          "suppressed": 13969
+        },
+        {
+          "coin": "DOT",
+          "pnl": 0.566201776319545,
+          "trades": 15,
+          "wins": 5,
+          "losses": 10,
+          "wr": 33.33333333333333,
+          "suppressed": 13883
+        },
+        {
+          "coin": "XRP",
+          "pnl": 0.5547119024636231,
+          "trades": 15,
+          "wins": 4,
+          "losses": 11,
+          "wr": 26.666666666666668,
+          "suppressed": 13972
+        },
+        {
+          "coin": "ATOM",
+          "pnl": -0.014387946867799428,
+          "trades": 15,
+          "wins": 2,
+          "losses": 13,
+          "wr": 13.333333333333334,
+          "suppressed": 13972
+        },
+        {
+          "coin": "SOL",
+          "pnl": 0.46722204277017454,
+          "trades": 15,
+          "wins": 4,
+          "losses": 11,
+          "wr": 26.666666666666668,
+          "suppressed": 13972
+        },
+        {
+          "coin": "DOGE",
+          "pnl": -0.17073828852900874,
+          "trades": 15,
+          "wins": 2,
+          "losses": 13,
+          "wr": 13.333333333333334,
+          "suppressed": 13989
+        },
+        {
+          "coin": "XLM",
+          "pnl": 0.5657024842914211,
+          "trades": 15,
+          "wins": 5,
+          "losses": 10,
+          "wr": 33.33333333333333,
+          "suppressed": 13986
+        },
+        {
+          "coin": "AVAX",
+          "pnl": -0.15839043710450085,
+          "trades": 15,
+          "wins": 2,
+          "losses": 13,
+          "wr": 13.333333333333334,
+          "suppressed": 14039
+        },
+        {
+          "coin": "ALGO",
+          "pnl": 0.23441218211526405,
+          "trades": 15,
+          "wins": 4,
+          "losses": 11,
+          "wr": 26.666666666666668,
+          "suppressed": 13963
+        },
+        {
+          "coin": "BNB",
+          "pnl": 0.649732831964684,
+          "trades": 15,
+          "wins": 4,
+          "losses": 11,
+          "wr": 26.666666666666668,
+          "suppressed": 14028
+        },
+        {
+          "coin": "BTC",
+          "pnl": -0.03775838701405121,
+          "trades": 15,
+          "wins": 4,
+          "losses": 11,
+          "wr": 26.666666666666668,
+          "suppressed": 13967
+        }
+      ]
+    },
+    {
+      "label": "W100_MS15_SC0.70",
+      "total_pnl": 4.618277629565242,
+      "portfolio_wr": 22.962962962962962,
+      "total_trades": 270,
+      "pf": 0.29807692307692313,
+      "is_baseline": false,
+      "suppressed_entries": 251853,
+      "coins": [
+        {
+          "coin": "DASH",
+          "pnl": 1.0792389213718252,
+          "trades": 15,
+          "wins": 3,
+          "losses": 12,
+          "wr": 20.0,
+          "suppressed": 14068
+        },
+        {
+          "coin": "UNI",
+          "pnl": -0.024367968877854196,
+          "trades": 15,
+          "wins": 2,
+          "losses": 13,
+          "wr": 13.333333333333334,
+          "suppressed": 14015
+        },
+        {
+          "coin": "NEAR",
+          "pnl": 0.23693857138935925,
+          "trades": 15,
+          "wins": 3,
+          "losses": 12,
+          "wr": 20.0,
+          "suppressed": 13932
+        },
+        {
+          "coin": "ADA",
+          "pnl": -0.3081369359824606,
+          "trades": 15,
+          "wins": 1,
+          "losses": 14,
+          "wr": 6.666666666666667,
+          "suppressed": 13989
+        },
+        {
+          "coin": "LTC",
+          "pnl": 0.31146183811986816,
+          "trades": 15,
+          "wins": 4,
+          "losses": 11,
+          "wr": 26.666666666666668,
+          "suppressed": 14028
+        },
+        {
+          "coin": "SHIB",
+          "pnl": 0.295861915375184,
+          "trades": 15,
+          "wins": 5,
+          "losses": 10,
+          "wr": 33.33333333333333,
+          "suppressed": 14042
+        },
+        {
+          "coin": "LINK",
+          "pnl": 0.030944188257691962,
+          "trades": 15,
+          "wins": 3,
+          "losses": 12,
+          "wr": 20.0,
+          "suppressed": 14039
+        },
+        {
+          "coin": "ETH",
+          "pnl": 0.33962893950227624,
+          "trades": 15,
+          "wins": 5,
+          "losses": 10,
+          "wr": 33.33333333333333,
+          "suppressed": 13969
+        },
+        {
+          "coin": "DOT",
+          "pnl": 0.566201776319545,
+          "trades": 15,
+          "wins": 5,
+          "losses": 10,
+          "wr": 33.33333333333333,
+          "suppressed": 13883
+        },
+        {
+          "coin": "XRP",
+          "pnl": 0.5547119024636231,
+          "trades": 15,
+          "wins": 4,
+          "losses": 11,
+          "wr": 26.666666666666668,
+          "suppressed": 13972
+        },
+        {
+          "coin": "ATOM",
+          "pnl": -0.014387946867799428,
+          "trades": 15,
+          "wins": 2,
+          "losses": 13,
+          "wr": 13.333333333333334,
+          "suppressed": 13972
+        },
+        {
+          "coin": "SOL",
+          "pnl": 0.46722204277017454,
+          "trades": 15,
+          "wins": 4,
+          "losses": 11,
+          "wr": 26.666666666666668,
+          "suppressed": 13972
+        },
+        {
+          "coin": "DOGE",
+          "pnl": -0.17073828852900874,
+          "trades": 15,
+          "wins": 2,
+          "losses": 13,
+          "wr": 13.333333333333334,
+          "suppressed": 13989
+        },
+        {
+          "coin": "XLM",
+          "pnl": 0.5657024842914211,
+          "trades": 15,
+          "wins": 5,
+          "losses": 10,
+          "wr": 33.33333333333333,
+          "suppressed": 13986
+        },
+        {
+          "coin": "AVAX",
+          "pnl": -0.15839043710450085,
+          "trades": 15,
+          "wins": 2,
+          "losses": 13,
+          "wr": 13.333333333333334,
+          "suppressed": 14039
+        },
+        {
+          "coin": "ALGO",
+          "pnl": 0.23441218211526405,
+          "trades": 15,
+          "wins": 4,
+          "losses": 11,
+          "wr": 26.666666666666668,
+          "suppressed": 13963
+        },
+        {
+          "coin": "BNB",
+          "pnl": 0.649732831964684,
+          "trades": 15,
+          "wins": 4,
+          "losses": 11,
+          "wr": 26.666666666666668,
+          "suppressed": 14028
+        },
+        {
+          "coin": "BTC",
+          "pnl": -0.03775838701405121,
+          "trades": 15,
+          "wins": 4,
+          "losses": 11,
+          "wr": 26.666666666666668,
+          "suppressed": 13967
+        }
+      ]
+    },
+    {
+      "label": "W100_MS20_SC0.50",
+      "total_pnl": 4.538231746066103,
+      "portfolio_wr": 20.833333333333336,
+      "total_trades": 360,
+      "pf": 0.2631578947368421,
+      "is_baseline": false,
+      "suppressed_entries": 249711,
+      "coins": [
+        {
+          "coin": "DASH",
+          "pnl": 0.9277110070174928,
+          "trades": 20,
+          "wins": 3,
+          "losses": 17,
+          "wr": 15.0,
+          "suppressed": 13969
+        },
+        {
+          "coin": "UNI",
+          "pnl": -0.17424146584507127,
+          "trades": 20,
+          "wins": 2,
+          "losses": 18,
+          "wr": 10.0,
+          "suppressed": 13873
+        },
+        {
+          "coin": "NEAR",
+          "pnl": 0.08667334971707419,
+          "trades": 20,
+          "wins": 3,
+          "losses": 17,
+          "wr": 15.0,
+          "suppressed": 13832
+        },
+        {
+          "coin": "ADA",
+          "pnl": -0.11625941765065306,
+          "trades": 20,
+          "wins": 2,
+          "losses": 18,
+          "wr": 10.0,
+          "suppressed": 13857
+        },
+        {
+          "coin": "LTC",
+          "pnl": 0.5990148674220563,
+          "trades": 20,
+          "wins": 6,
+          "losses": 14,
+          "wr": 30.0,
+          "suppressed": 13873
+        },
+        {
+          "coin": "SHIB",
+          "pnl": 0.872770986168419,
+          "trades": 20,
+          "wins": 9,
+          "losses": 11,
+          "wr": 45.0,
+          "suppressed": 13903
+        },
+        {
+          "coin": "LINK",
+          "pnl": -0.11901222717924043,
+          "trades": 20,
+          "wins": 3,
+          "losses": 17,
+          "wr": 15.0,
+          "suppressed": 13940
+        },
+        {
+          "coin": "ETH",
+          "pnl": 0.18920977467142563,
+          "trades": 20,
+          "wins": 5,
+          "losses": 15,
+          "wr": 25.0,
+          "suppressed": 13835
+        },
+        {
+          "coin": "DOT",
+          "pnl": 0.557258031662812,
+          "trades": 20,
+          "wins": 6,
+          "losses": 14,
+          "wr": 30.0,
+          "suppressed": 13827
+        },
+        {
+          "coin": "XRP",
+          "pnl": 0.5464223804797541,
+          "trades": 20,
+          "wins": 5,
+          "losses": 15,
+          "wr": 25.0,
+          "suppressed": 13844
+        },
+        {
+          "coin": "ATOM",
+          "pnl": -0.1642764048887102,
+          "trades": 20,
+          "wins": 2,
+          "losses": 18,
+          "wr": 10.0,
+          "suppressed": 13832
+        },
+        {
+          "coin": "SOL",
+          "pnl": 0.4826111226212788,
+          "trades": 20,
+          "wins": 5,
+          "losses": 15,
+          "wr": 25.0,
+          "suppressed": 13887
+        },
+        {
+          "coin": "DOGE",
+          "pnl": 0.030914087988833217,
+          "trades": 20,
+          "wins": 3,
+          "losses": 17,
+          "wr": 15.0,
+          "suppressed": 13875
+        },
+        {
+          "coin": "XLM",
+          "pnl": 0.6531737993092861,
+          "trades": 20,
+          "wins": 6,
+          "losses": 14,
+          "wr": 30.0,
+          "suppressed": 13873
+        },
+        {
+          "coin": "AVAX",
+          "pnl": -0.3080630209534121,
+          "trades": 20,
+          "wins": 2,
+          "losses": 18,
+          "wr": 10.0,
+          "suppressed": 13887
+        },
+        {
+          "coin": "ALGO",
+          "pnl": 0.08415074775381015,
+          "trades": 20,
+          "wins": 4,
+          "losses": 16,
+          "wr": 20.0,
+          "suppressed": 13841
+        },
+        {
+          "coin": "BNB",
+          "pnl": 0.49884879030493323,
+          "trades": 20,
+          "wins": 4,
+          "losses": 16,
+          "wr": 20.0,
+          "suppressed": 13921
+        },
+        {
+          "coin": "BTC",
+          "pnl": -0.10867466253398561,
+          "trades": 20,
+          "wins": 5,
+          "losses": 15,
+          "wr": 25.0,
+          "suppressed": 13842
+        }
+      ]
+    },
+    {
+      "label": "W100_MS20_SC0.60",
+      "total_pnl": 4.538231746066103,
+      "portfolio_wr": 20.833333333333336,
+      "total_trades": 360,
+      "pf": 0.2631578947368421,
+      "is_baseline": false,
+      "suppressed_entries": 249711,
+      "coins": [
+        {
+          "coin": "DASH",
+          "pnl": 0.9277110070174928,
+          "trades": 20,
+          "wins": 3,
+          "losses": 17,
+          "wr": 15.0,
+          "suppressed": 13969
+        },
+        {
+          "coin": "UNI",
+          "pnl": -0.17424146584507127,
+          "trades": 20,
+          "wins": 2,
+          "losses": 18,
+          "wr": 10.0,
+          "suppressed": 13873
+        },
+        {
+          "coin": "NEAR",
+          "pnl": 0.08667334971707419,
+          "trades": 20,
+          "wins": 3,
+          "losses": 17,
+          "wr": 15.0,
+          "suppressed": 13832
+        },
+        {
+          "coin": "ADA",
+          "pnl": -0.11625941765065306,
+          "trades": 20,
+          "wins": 2,
+          "losses": 18,
+          "wr": 10.0,
+          "suppressed": 13857
+        },
+        {
+          "coin": "LTC",
+          "pnl": 0.5990148674220563,
+          "trades": 20,
+          "wins": 6,
+          "losses": 14,
+          "wr": 30.0,
+          "suppressed": 13873
+        },
+        {
+          "coin": "SHIB",
+          "pnl": 0.872770986168419,
+          "trades": 20,
+          "wins": 9,
+          "losses": 11,
+          "wr": 45.0,
+          "suppressed": 13903
+        },
+        {
+          "coin": "LINK",
+          "pnl": -0.11901222717924043,
+          "trades": 20,
+          "wins": 3,
+          "losses": 17,
+          "wr": 15.0,
+          "suppressed": 13940
+        },
+        {
+          "coin": "ETH",
+          "pnl": 0.18920977467142563,
+          "trades": 20,
+          "wins": 5,
+          "losses": 15,
+          "wr": 25.0,
+          "suppressed": 13835
+        },
+        {
+          "coin": "DOT",
+          "pnl": 0.557258031662812,
+          "trades": 20,
+          "wins": 6,
+          "losses": 14,
+          "wr": 30.0,
+          "suppressed": 13827
+        },
+        {
+          "coin": "XRP",
+          "pnl": 0.5464223804797541,
+          "trades": 20,
+          "wins": 5,
+          "losses": 15,
+          "wr": 25.0,
+          "suppressed": 13844
+        },
+        {
+          "coin": "ATOM",
+          "pnl": -0.1642764048887102,
+          "trades": 20,
+          "wins": 2,
+          "losses": 18,
+          "wr": 10.0,
+          "suppressed": 13832
+        },
+        {
+          "coin": "SOL",
+          "pnl": 0.4826111226212788,
+          "trades": 20,
+          "wins": 5,
+          "losses": 15,
+          "wr": 25.0,
+          "suppressed": 13887
+        },
+        {
+          "coin": "DOGE",
+          "pnl": 0.030914087988833217,
+          "trades": 20,
+          "wins": 3,
+          "losses": 17,
+          "wr": 15.0,
+          "suppressed": 13875
+        },
+        {
+          "coin": "XLM",
+          "pnl": 0.6531737993092861,
+          "trades": 20,
+          "wins": 6,
+          "losses": 14,
+          "wr": 30.0,
+          "suppressed": 13873
+        },
+        {
+          "coin": "AVAX",
+          "pnl": -0.3080630209534121,
+          "trades": 20,
+          "wins": 2,
+          "losses": 18,
+          "wr": 10.0,
+          "suppressed": 13887
+        },
+        {
+          "coin": "ALGO",
+          "pnl": 0.08415074775381015,
+          "trades": 20,
+          "wins": 4,
+          "losses": 16,
+          "wr": 20.0,
+          "suppressed": 13841
+        },
+        {
+          "coin": "BNB",
+          "pnl": 0.49884879030493323,
+          "trades": 20,
+          "wins": 4,
+          "losses": 16,
+          "wr": 20.0,
+          "suppressed": 13921
+        },
+        {
+          "coin": "BTC",
+          "pnl": -0.10867466253398561,
+          "trades": 20,
+          "wins": 5,
+          "losses": 15,
+          "wr": 25.0,
+          "suppressed": 13842
+        }
+      ]
+    },
+    {
+      "label": "W100_MS20_SC0.70",
+      "total_pnl": 4.538231746066103,
+      "portfolio_wr": 20.833333333333336,
+      "total_trades": 360,
+      "pf": 0.2631578947368421,
+      "is_baseline": false,
+      "suppressed_entries": 249711,
+      "coins": [
+        {
+          "coin": "DASH",
+          "pnl": 0.9277110070174928,
+          "trades": 20,
+          "wins": 3,
+          "losses": 17,
+          "wr": 15.0,
+          "suppressed": 13969
+        },
+        {
+          "coin": "UNI",
+          "pnl": -0.17424146584507127,
+          "trades": 20,
+          "wins": 2,
+          "losses": 18,
+          "wr": 10.0,
+          "suppressed": 13873
+        },
+        {
+          "coin": "NEAR",
+          "pnl": 0.08667334971707419,
+          "trades": 20,
+          "wins": 3,
+          "losses": 17,
+          "wr": 15.0,
+          "suppressed": 13832
+        },
+        {
+          "coin": "ADA",
+          "pnl": -0.11625941765065306,
+          "trades": 20,
+          "wins": 2,
+          "losses": 18,
+          "wr": 10.0,
+          "suppressed": 13857
+        },
+        {
+          "coin": "LTC",
+          "pnl": 0.5990148674220563,
+          "trades": 20,
+          "wins": 6,
+          "losses": 14,
+          "wr": 30.0,
+          "suppressed": 13873
+        },
+        {
+          "coin": "SHIB",
+          "pnl": 0.872770986168419,
+          "trades": 20,
+          "wins": 9,
+          "losses": 11,
+          "wr": 45.0,
+          "suppressed": 13903
+        },
+        {
+          "coin": "LINK",
+          "pnl": -0.11901222717924043,
+          "trades": 20,
+          "wins": 3,
+          "losses": 17,
+          "wr": 15.0,
+          "suppressed": 13940
+        },
+        {
+          "coin": "ETH",
+          "pnl": 0.18920977467142563,
+          "trades": 20,
+          "wins": 5,
+          "losses": 15,
+          "wr": 25.0,
+          "suppressed": 13835
+        },
+        {
+          "coin": "DOT",
+          "pnl": 0.557258031662812,
+          "trades": 20,
+          "wins": 6,
+          "losses": 14,
+          "wr": 30.0,
+          "suppressed": 13827
+        },
+        {
+          "coin": "XRP",
+          "pnl": 0.5464223804797541,
+          "trades": 20,
+          "wins": 5,
+          "losses": 15,
+          "wr": 25.0,
+          "suppressed": 13844
+        },
+        {
+          "coin": "ATOM",
+          "pnl": -0.1642764048887102,
+          "trades": 20,
+          "wins": 2,
+          "losses": 18,
+          "wr": 10.0,
+          "suppressed": 13832
+        },
+        {
+          "coin": "SOL",
+          "pnl": 0.4826111226212788,
+          "trades": 20,
+          "wins": 5,
+          "losses": 15,
+          "wr": 25.0,
+          "suppressed": 13887
+        },
+        {
+          "coin": "DOGE",
+          "pnl": 0.030914087988833217,
+          "trades": 20,
+          "wins": 3,
+          "losses": 17,
+          "wr": 15.0,
+          "suppressed": 13875
+        },
+        {
+          "coin": "XLM",
+          "pnl": 0.6531737993092861,
+          "trades": 20,
+          "wins": 6,
+          "losses": 14,
+          "wr": 30.0,
+          "suppressed": 13873
+        },
+        {
+          "coin": "AVAX",
+          "pnl": -0.3080630209534121,
+          "trades": 20,
+          "wins": 2,
+          "losses": 18,
+          "wr": 10.0,
+          "suppressed": 13887
+        },
+        {
+          "coin": "ALGO",
+          "pnl": 0.08415074775381015,
+          "trades": 20,
+          "wins": 4,
+          "losses": 16,
+          "wr": 20.0,
+          "suppressed": 13841
+        },
+        {
+          "coin": "BNB",
+          "pnl": 0.49884879030493323,
+          "trades": 20,
+          "wins": 4,
+          "losses": 16,
+          "wr": 20.0,
+          "suppressed": 13921
+        },
+        {
+          "coin": "BTC",
+          "pnl": -0.10867466253398561,
+          "trades": 20,
+          "wins": 5,
+          "losses": 15,
+          "wr": 25.0,
+          "suppressed": 13842
+        }
+      ]
+    }
+  ]
+}

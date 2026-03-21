@@ -1,0 +1,77 @@
+{
+  "notes": "RUN59 same-direction suppression. 9 configs. Baseline PnL=176.97. Best: DISABLED (PnL=176.97, Δ=+0.00)",
+  "configs": [
+    {
+      "label": "DISABLED",
+      "total_pnl": 176.96836249314734,
+      "portfolio_wr": 54.71160850274816,
+      "total_trades": 15101,
+      "pf": 0.0,
+      "is_baseline": true
+    },
+    {
+      "label": "SB4_M1",
+      "total_pnl": 171.10616077276882,
+      "portfolio_wr": 54.71992404719924,
+      "total_trades": 14746,
+      "pf": 0.0,
+      "is_baseline": false
+    },
+    {
+      "label": "SB4_M2",
+      "total_pnl": 167.14249970100332,
+      "portfolio_wr": 54.65842821438489,
+      "total_trades": 14404,
+      "pf": 0.0,
+      "is_baseline": false
+    },
+    {
+      "label": "SB6_M1",
+      "total_pnl": 166.58734728031925,
+      "portfolio_wr": 54.9676251479496,
+      "total_trades": 14363,
+      "pf": 0.0,
+      "is_baseline": false
+    },
+    {
+      "label": "SB6_M2",
+      "total_pnl": 160.44025041786284,
+      "portfolio_wr": 54.97003362081567,
+      "total_trades": 13682,
+      "pf": 0.0,
+      "is_baseline": false
+    },
+    {
+      "label": "SB8_M1",
+      "total_pnl": 162.1623275418058,
+      "portfolio_wr": 54.976704786107575,
+      "total_trades": 14166,
+      "pf": 0.0,
+      "is_baseline": false
+    },
+    {
+      "label": "SB8_M2",
+      "total_pnl": 153.55367437231786,
+      "portfolio_wr": 54.89310448660042,
+      "total_trades": 13284,
+      "pf": 0.0,
+      "is_baseline": false
+    },
+    {
+      "label": "SB12_M1",
+      "total_pnl": 158.5773784083235,
+      "portfolio_wr": 54.93219129193433,
+      "total_trades": 14010,
+      "pf": 0.0,
+      "is_baseline": false
+    },
+    {
+      "label": "SB12_M2",
+      "total_pnl": 146.46337237093582,
+      "portfolio_wr": 54.775631037706454,
+      "total_trades": 12836,
+      "pf": 0.0,
+      "is_baseline": false
+    }
+  ]
+}

@@ -1,0 +1,1363 @@
+{
+  "notes": "RUN130 Negative Day Revenue filter. 7 configs. Baseline PnL=2384.20. Best: BASELINE (PnL=2384.20, Δ=+0.00)",
+  "configs": [
+    {
+      "label": "BASELINE",
+      "total_pnl": 2384.1963223954467,
+      "portfolio_wr": 38.982427762664514,
+      "total_trades": 13601,
+      "wins": 5302,
+      "losses": 8296,
+      "flats": 3,
+      "pf": 0.6391031822565092,
+      "is_baseline": true,
+      "suppress_rate": 0.0,
+      "coins": [
+        {
+          "coin": "DASH",
+          "pnl": 0.0,
+          "trades": 0,
+          "wins": 0,
+          "losses": 0,
+          "flats": 0,
+          "wr": 0.0,
+          "pf": 0.0
+        },
+        {
+          "coin": "UNI",
+          "pnl": 0.0,
+          "trades": 0,
+          "wins": 0,
+          "losses": 0,
+          "flats": 0,
+          "wr": 0.0,
+          "pf": 0.0
+        },
+        {
+          "coin": "NEAR",
+          "pnl": 0.0,
+          "trades": 0,
+          "wins": 0,
+          "losses": 0,
+          "flats": 0,
+          "wr": 0.0,
+          "pf": 0.0
+        },
+        {
+          "coin": "ADA",
+          "pnl": 0.0,
+          "trades": 0,
+          "wins": 0,
+          "losses": 0,
+          "flats": 0,
+          "wr": 0.0,
+          "pf": 0.0
+        },
+        {
+          "coin": "LTC",
+          "pnl": 0.0,
+          "trades": 0,
+          "wins": 0,
+          "losses": 0,
+          "flats": 0,
+          "wr": 0.0,
+          "pf": 0.0
+        },
+        {
+          "coin": "SHIB",
+          "pnl": 0.0,
+          "trades": 0,
+          "wins": 0,
+          "losses": 0,
+          "flats": 0,
+          "wr": 0.0,
+          "pf": 0.0
+        },
+        {
+          "coin": "LINK",
+          "pnl": 0.0,
+          "trades": 0,
+          "wins": 0,
+          "losses": 0,
+          "flats": 0,
+          "wr": 0.0,
+          "pf": 0.0
+        },
+        {
+          "coin": "ETH",
+          "pnl": 0.0,
+          "trades": 0,
+          "wins": 0,
+          "losses": 0,
+          "flats": 0,
+          "wr": 0.0,
+          "pf": 0.0
+        },
+        {
+          "coin": "DOT",
+          "pnl": 0.0,
+          "trades": 0,
+          "wins": 0,
+          "losses": 0,
+          "flats": 0,
+          "wr": 0.0,
+          "pf": 0.0
+        },
+        {
+          "coin": "XRP",
+          "pnl": 0.0,
+          "trades": 0,
+          "wins": 0,
+          "losses": 0,
+          "flats": 0,
+          "wr": 0.0,
+          "pf": 0.0
+        },
+        {
+          "coin": "ATOM",
+          "pnl": 0.0,
+          "trades": 0,
+          "wins": 0,
+          "losses": 0,
+          "flats": 0,
+          "wr": 0.0,
+          "pf": 0.0
+        },
+        {
+          "coin": "SOL",
+          "pnl": 0.0,
+          "trades": 0,
+          "wins": 0,
+          "losses": 0,
+          "flats": 0,
+          "wr": 0.0,
+          "pf": 0.0
+        },
+        {
+          "coin": "DOGE",
+          "pnl": 0.0,
+          "trades": 0,
+          "wins": 0,
+          "losses": 0,
+          "flats": 0,
+          "wr": 0.0,
+          "pf": 0.0
+        },
+        {
+          "coin": "XLM",
+          "pnl": 0.0,
+          "trades": 0,
+          "wins": 0,
+          "losses": 0,
+          "flats": 0,
+          "wr": 0.0,
+          "pf": 0.0
+        },
+        {
+          "coin": "AVAX",
+          "pnl": 0.0,
+          "trades": 0,
+          "wins": 0,
+          "losses": 0,
+          "flats": 0,
+          "wr": 0.0,
+          "pf": 0.0
+        },
+        {
+          "coin": "ALGO",
+          "pnl": 0.0,
+          "trades": 0,
+          "wins": 0,
+          "losses": 0,
+          "flats": 0,
+          "wr": 0.0,
+          "pf": 0.0
+        },
+        {
+          "coin": "BNB",
+          "pnl": 0.0,
+          "trades": 0,
+          "wins": 0,
+          "losses": 0,
+          "flats": 0,
+          "wr": 0.0,
+          "pf": 0.0
+        },
+        {
+          "coin": "BTC",
+          "pnl": 0.0,
+          "trades": 0,
+          "wins": 0,
+          "losses": 0,
+          "flats": 0,
+          "wr": 0.0,
+          "pf": 0.0
+        }
+      ]
+    },
+    {
+      "label": "NW3_NS0.8",
+      "total_pnl": 2384.1963223954467,
+      "portfolio_wr": 38.982427762664514,
+      "total_trades": 13601,
+      "wins": 5302,
+      "losses": 8296,
+      "flats": 3,
+      "pf": 0.6391031822565092,
+      "is_baseline": false,
+      "suppress_rate": 0.0,
+      "coins": [
+        {
+          "coin": "DASH",
+          "pnl": 0.0,
+          "trades": 0,
+          "wins": 0,
+          "losses": 0,
+          "flats": 0,
+          "wr": 0.0,
+          "pf": 0.0
+        },
+        {
+          "coin": "UNI",
+          "pnl": 0.0,
+          "trades": 0,
+          "wins": 0,
+          "losses": 0,
+          "flats": 0,
+          "wr": 0.0,
+          "pf": 0.0
+        },
+        {
+          "coin": "NEAR",
+          "pnl": 0.0,
+          "trades": 0,
+          "wins": 0,
+          "losses": 0,
+          "flats": 0,
+          "wr": 0.0,
+          "pf": 0.0
+        },
+        {
+          "coin": "ADA",
+          "pnl": 0.0,
+          "trades": 0,
+          "wins": 0,
+          "losses": 0,
+          "flats": 0,
+          "wr": 0.0,
+          "pf": 0.0
+        },
+        {
+          "coin": "LTC",
+          "pnl": 0.0,
+          "trades": 0,
+          "wins": 0,
+          "losses": 0,
+          "flats": 0,
+          "wr": 0.0,
+          "pf": 0.0
+        },
+        {
+          "coin": "SHIB",
+          "pnl": 0.0,
+          "trades": 0,
+          "wins": 0,
+          "losses": 0,
+          "flats": 0,
+          "wr": 0.0,
+          "pf": 0.0
+        },
+        {
+          "coin": "LINK",
+          "pnl": 0.0,
+          "trades": 0,
+          "wins": 0,
+          "losses": 0,
+          "flats": 0,
+          "wr": 0.0,
+          "pf": 0.0
+        },
+        {
+          "coin": "ETH",
+          "pnl": 0.0,
+          "trades": 0,
+          "wins": 0,
+          "losses": 0,
+          "flats": 0,
+          "wr": 0.0,
+          "pf": 0.0
+        },
+        {
+          "coin": "DOT",
+          "pnl": 0.0,
+          "trades": 0,
+          "wins": 0,
+          "losses": 0,
+          "flats": 0,
+          "wr": 0.0,
+          "pf": 0.0
+        },
+        {
+          "coin": "XRP",
+          "pnl": 0.0,
+          "trades": 0,
+          "wins": 0,
+          "losses": 0,
+          "flats": 0,
+          "wr": 0.0,
+          "pf": 0.0
+        },
+        {
+          "coin": "ATOM",
+          "pnl": 0.0,
+          "trades": 0,
+          "wins": 0,
+          "losses": 0,
+          "flats": 0,
+          "wr": 0.0,
+          "pf": 0.0
+        },
+        {
+          "coin": "SOL",
+          "pnl": 0.0,
+          "trades": 0,
+          "wins": 0,
+          "losses": 0,
+          "flats": 0,
+          "wr": 0.0,
+          "pf": 0.0
+        },
+        {
+          "coin": "DOGE",
+          "pnl": 0.0,
+          "trades": 0,
+          "wins": 0,
+          "losses": 0,
+          "flats": 0,
+          "wr": 0.0,
+          "pf": 0.0
+        },
+        {
+          "coin": "XLM",
+          "pnl": 0.0,
+          "trades": 0,
+          "wins": 0,
+          "losses": 0,
+          "flats": 0,
+          "wr": 0.0,
+          "pf": 0.0
+        },
+        {
+          "coin": "AVAX",
+          "pnl": 0.0,
+          "trades": 0,
+          "wins": 0,
+          "losses": 0,
+          "flats": 0,
+          "wr": 0.0,
+          "pf": 0.0
+        },
+        {
+          "coin": "ALGO",
+          "pnl": 0.0,
+          "trades": 0,
+          "wins": 0,
+          "losses": 0,
+          "flats": 0,
+          "wr": 0.0,
+          "pf": 0.0
+        },
+        {
+          "coin": "BNB",
+          "pnl": 0.0,
+          "trades": 0,
+          "wins": 0,
+          "losses": 0,
+          "flats": 0,
+          "wr": 0.0,
+          "pf": 0.0
+        },
+        {
+          "coin": "BTC",
+          "pnl": 0.0,
+          "trades": 0,
+          "wins": 0,
+          "losses": 0,
+          "flats": 0,
+          "wr": 0.0,
+          "pf": 0.0
+        }
+      ]
+    },
+    {
+      "label": "NW3_NS1",
+      "total_pnl": 2384.1963223954467,
+      "portfolio_wr": 38.982427762664514,
+      "total_trades": 13601,
+      "wins": 5302,
+      "losses": 8296,
+      "flats": 3,
+      "pf": 0.6391031822565092,
+      "is_baseline": false,
+      "suppress_rate": 0.0,
+      "coins": [
+        {
+          "coin": "DASH",
+          "pnl": 0.0,
+          "trades": 0,
+          "wins": 0,
+          "losses": 0,
+          "flats": 0,
+          "wr": 0.0,
+          "pf": 0.0
+        },
+        {
+          "coin": "UNI",
+          "pnl": 0.0,
+          "trades": 0,
+          "wins": 0,
+          "losses": 0,
+          "flats": 0,
+          "wr": 0.0,
+          "pf": 0.0
+        },
+        {
+          "coin": "NEAR",
+          "pnl": 0.0,
+          "trades": 0,
+          "wins": 0,
+          "losses": 0,
+          "flats": 0,
+          "wr": 0.0,
+          "pf": 0.0
+        },
+        {
+          "coin": "ADA",
+          "pnl": 0.0,
+          "trades": 0,
+          "wins": 0,
+          "losses": 0,
+          "flats": 0,
+          "wr": 0.0,
+          "pf": 0.0
+        },
+        {
+          "coin": "LTC",
+          "pnl": 0.0,
+          "trades": 0,
+          "wins": 0,
+          "losses": 0,
+          "flats": 0,
+          "wr": 0.0,
+          "pf": 0.0
+        },
+        {
+          "coin": "SHIB",
+          "pnl": 0.0,
+          "trades": 0,
+          "wins": 0,
+          "losses": 0,
+          "flats": 0,
+          "wr": 0.0,
+          "pf": 0.0
+        },
+        {
+          "coin": "LINK",
+          "pnl": 0.0,
+          "trades": 0,
+          "wins": 0,
+          "losses": 0,
+          "flats": 0,
+          "wr": 0.0,
+          "pf": 0.0
+        },
+        {
+          "coin": "ETH",
+          "pnl": 0.0,
+          "trades": 0,
+          "wins": 0,
+          "losses": 0,
+          "flats": 0,
+          "wr": 0.0,
+          "pf": 0.0
+        },
+        {
+          "coin": "DOT",
+          "pnl": 0.0,
+          "trades": 0,
+          "wins": 0,
+          "losses": 0,
+          "flats": 0,
+          "wr": 0.0,
+          "pf": 0.0
+        },
+        {
+          "coin": "XRP",
+          "pnl": 0.0,
+          "trades": 0,
+          "wins": 0,
+          "losses": 0,
+          "flats": 0,
+          "wr": 0.0,
+          "pf": 0.0
+        },
+        {
+          "coin": "ATOM",
+          "pnl": 0.0,
+          "trades": 0,
+          "wins": 0,
+          "losses": 0,
+          "flats": 0,
+          "wr": 0.0,
+          "pf": 0.0
+        },
+        {
+          "coin": "SOL",
+          "pnl": 0.0,
+          "trades": 0,
+          "wins": 0,
+          "losses": 0,
+          "flats": 0,
+          "wr": 0.0,
+          "pf": 0.0
+        },
+        {
+          "coin": "DOGE",
+          "pnl": 0.0,
+          "trades": 0,
+          "wins": 0,
+          "losses": 0,
+          "flats": 0,
+          "wr": 0.0,
+          "pf": 0.0
+        },
+        {
+          "coin": "XLM",
+          "pnl": 0.0,
+          "trades": 0,
+          "wins": 0,
+          "losses": 0,
+          "flats": 0,
+          "wr": 0.0,
+          "pf": 0.0
+        },
+        {
+          "coin": "AVAX",
+          "pnl": 0.0,
+          "trades": 0,
+          "wins": 0,
+          "losses": 0,
+          "flats": 0,
+          "wr": 0.0,
+          "pf": 0.0
+        },
+        {
+          "coin": "ALGO",
+          "pnl": 0.0,
+          "trades": 0,
+          "wins": 0,
+          "losses": 0,
+          "flats": 0,
+          "wr": 0.0,
+          "pf": 0.0
+        },
+        {
+          "coin": "BNB",
+          "pnl": 0.0,
+          "trades": 0,
+          "wins": 0,
+          "losses": 0,
+          "flats": 0,
+          "wr": 0.0,
+          "pf": 0.0
+        },
+        {
+          "coin": "BTC",
+          "pnl": 0.0,
+          "trades": 0,
+          "wins": 0,
+          "losses": 0,
+          "flats": 0,
+          "wr": 0.0,
+          "pf": 0.0
+        }
+      ]
+    },
+    {
+      "label": "NW5_NS0.8",
+      "total_pnl": 2384.1963223954467,
+      "portfolio_wr": 38.982427762664514,
+      "total_trades": 13601,
+      "wins": 5302,
+      "losses": 8296,
+      "flats": 3,
+      "pf": 0.6391031822565092,
+      "is_baseline": false,
+      "suppress_rate": 0.0,
+      "coins": [
+        {
+          "coin": "DASH",
+          "pnl": 0.0,
+          "trades": 0,
+          "wins": 0,
+          "losses": 0,
+          "flats": 0,
+          "wr": 0.0,
+          "pf": 0.0
+        },
+        {
+          "coin": "UNI",
+          "pnl": 0.0,
+          "trades": 0,
+          "wins": 0,
+          "losses": 0,
+          "flats": 0,
+          "wr": 0.0,
+          "pf": 0.0
+        },
+        {
+          "coin": "NEAR",
+          "pnl": 0.0,
+          "trades": 0,
+          "wins": 0,
+          "losses": 0,
+          "flats": 0,
+          "wr": 0.0,
+          "pf": 0.0
+        },
+        {
+          "coin": "ADA",
+          "pnl": 0.0,
+          "trades": 0,
+          "wins": 0,
+          "losses": 0,
+          "flats": 0,
+          "wr": 0.0,
+          "pf": 0.0
+        },
+        {
+          "coin": "LTC",
+          "pnl": 0.0,
+          "trades": 0,
+          "wins": 0,
+          "losses": 0,
+          "flats": 0,
+          "wr": 0.0,
+          "pf": 0.0
+        },
+        {
+          "coin": "SHIB",
+          "pnl": 0.0,
+          "trades": 0,
+          "wins": 0,
+          "losses": 0,
+          "flats": 0,
+          "wr": 0.0,
+          "pf": 0.0
+        },
+        {
+          "coin": "LINK",
+          "pnl": 0.0,
+          "trades": 0,
+          "wins": 0,
+          "losses": 0,
+          "flats": 0,
+          "wr": 0.0,
+          "pf": 0.0
+        },
+        {
+          "coin": "ETH",
+          "pnl": 0.0,
+          "trades": 0,
+          "wins": 0,
+          "losses": 0,
+          "flats": 0,
+          "wr": 0.0,
+          "pf": 0.0
+        },
+        {
+          "coin": "DOT",
+          "pnl": 0.0,
+          "trades": 0,
+          "wins": 0,
+          "losses": 0,
+          "flats": 0,
+          "wr": 0.0,
+          "pf": 0.0
+        },
+        {
+          "coin": "XRP",
+          "pnl": 0.0,
+          "trades": 0,
+          "wins": 0,
+          "losses": 0,
+          "flats": 0,
+          "wr": 0.0,
+          "pf": 0.0
+        },
+        {
+          "coin": "ATOM",
+          "pnl": 0.0,
+          "trades": 0,
+          "wins": 0,
+          "losses": 0,
+          "flats": 0,
+          "wr": 0.0,
+          "pf": 0.0
+        },
+        {
+          "coin": "SOL",
+          "pnl": 0.0,
+          "trades": 0,
+          "wins": 0,
+          "losses": 0,
+          "flats": 0,
+          "wr": 0.0,
+          "pf": 0.0
+        },
+        {
+          "coin": "DOGE",
+          "pnl": 0.0,
+          "trades": 0,
+          "wins": 0,
+          "losses": 0,
+          "flats": 0,
+          "wr": 0.0,
+          "pf": 0.0
+        },
+        {
+          "coin": "XLM",
+          "pnl": 0.0,
+          "trades": 0,
+          "wins": 0,
+          "losses": 0,
+          "flats": 0,
+          "wr": 0.0,
+          "pf": 0.0
+        },
+        {
+          "coin": "AVAX",
+          "pnl": 0.0,
+          "trades": 0,
+          "wins": 0,
+          "losses": 0,
+          "flats": 0,
+          "wr": 0.0,
+          "pf": 0.0
+        },
+        {
+          "coin": "ALGO",
+          "pnl": 0.0,
+          "trades": 0,
+          "wins": 0,
+          "losses": 0,
+          "flats": 0,
+          "wr": 0.0,
+          "pf": 0.0
+        },
+        {
+          "coin": "BNB",
+          "pnl": 0.0,
+          "trades": 0,
+          "wins": 0,
+          "losses": 0,
+          "flats": 0,
+          "wr": 0.0,
+          "pf": 0.0
+        },
+        {
+          "coin": "BTC",
+          "pnl": 0.0,
+          "trades": 0,
+          "wins": 0,
+          "losses": 0,
+          "flats": 0,
+          "wr": 0.0,
+          "pf": 0.0
+        }
+      ]
+    },
+    {
+      "label": "NW5_NS1",
+      "total_pnl": 2384.1963223954467,
+      "portfolio_wr": 38.982427762664514,
+      "total_trades": 13601,
+      "wins": 5302,
+      "losses": 8296,
+      "flats": 3,
+      "pf": 0.6391031822565092,
+      "is_baseline": false,
+      "suppress_rate": 0.0,
+      "coins": [
+        {
+          "coin": "DASH",
+          "pnl": 0.0,
+          "trades": 0,
+          "wins": 0,
+          "losses": 0,
+          "flats": 0,
+          "wr": 0.0,
+          "pf": 0.0
+        },
+        {
+          "coin": "UNI",
+          "pnl": 0.0,
+          "trades": 0,
+          "wins": 0,
+          "losses": 0,
+          "flats": 0,
+          "wr": 0.0,
+          "pf": 0.0
+        },
+        {
+          "coin": "NEAR",
+          "pnl": 0.0,
+          "trades": 0,
+          "wins": 0,
+          "losses": 0,
+          "flats": 0,
+          "wr": 0.0,
+          "pf": 0.0
+        },
+        {
+          "coin": "ADA",
+          "pnl": 0.0,
+          "trades": 0,
+          "wins": 0,
+          "losses": 0,
+          "flats": 0,
+          "wr": 0.0,
+          "pf": 0.0
+        },
+        {
+          "coin": "LTC",
+          "pnl": 0.0,
+          "trades": 0,
+          "wins": 0,
+          "losses": 0,
+          "flats": 0,
+          "wr": 0.0,
+          "pf": 0.0
+        },
+        {
+          "coin": "SHIB",
+          "pnl": 0.0,
+          "trades": 0,
+          "wins": 0,
+          "losses": 0,
+          "flats": 0,
+          "wr": 0.0,
+          "pf": 0.0
+        },
+        {
+          "coin": "LINK",
+          "pnl": 0.0,
+          "trades": 0,
+          "wins": 0,
+          "losses": 0,
+          "flats": 0,
+          "wr": 0.0,
+          "pf": 0.0
+        },
+        {
+          "coin": "ETH",
+          "pnl": 0.0,
+          "trades": 0,
+          "wins": 0,
+          "losses": 0,
+          "flats": 0,
+          "wr": 0.0,
+          "pf": 0.0
+        },
+        {
+          "coin": "DOT",
+          "pnl": 0.0,
+          "trades": 0,
+          "wins": 0,
+          "losses": 0,
+          "flats": 0,
+          "wr": 0.0,
+          "pf": 0.0
+        },
+        {
+          "coin": "XRP",
+          "pnl": 0.0,
+          "trades": 0,
+          "wins": 0,
+          "losses": 0,
+          "flats": 0,
+          "wr": 0.0,
+          "pf": 0.0
+        },
+        {
+          "coin": "ATOM",
+          "pnl": 0.0,
+          "trades": 0,
+          "wins": 0,
+          "losses": 0,
+          "flats": 0,
+          "wr": 0.0,
+          "pf": 0.0
+        },
+        {
+          "coin": "SOL",
+          "pnl": 0.0,
+          "trades": 0,
+          "wins": 0,
+          "losses": 0,
+          "flats": 0,
+          "wr": 0.0,
+          "pf": 0.0
+        },
+        {
+          "coin": "DOGE",
+          "pnl": 0.0,
+          "trades": 0,
+          "wins": 0,
+          "losses": 0,
+          "flats": 0,
+          "wr": 0.0,
+          "pf": 0.0
+        },
+        {
+          "coin": "XLM",
+          "pnl": 0.0,
+          "trades": 0,
+          "wins": 0,
+          "losses": 0,
+          "flats": 0,
+          "wr": 0.0,
+          "pf": 0.0
+        },
+        {
+          "coin": "AVAX",
+          "pnl": 0.0,
+          "trades": 0,
+          "wins": 0,
+          "losses": 0,
+          "flats": 0,
+          "wr": 0.0,
+          "pf": 0.0
+        },
+        {
+          "coin": "ALGO",
+          "pnl": 0.0,
+          "trades": 0,
+          "wins": 0,
+          "losses": 0,
+          "flats": 0,
+          "wr": 0.0,
+          "pf": 0.0
+        },
+        {
+          "coin": "BNB",
+          "pnl": 0.0,
+          "trades": 0,
+          "wins": 0,
+          "losses": 0,
+          "flats": 0,
+          "wr": 0.0,
+          "pf": 0.0
+        },
+        {
+          "coin": "BTC",
+          "pnl": 0.0,
+          "trades": 0,
+          "wins": 0,
+          "losses": 0,
+          "flats": 0,
+          "wr": 0.0,
+          "pf": 0.0
+        }
+      ]
+    },
+    {
+      "label": "NW7_NS0.8",
+      "total_pnl": 2384.1963223954467,
+      "portfolio_wr": 38.982427762664514,
+      "total_trades": 13601,
+      "wins": 5302,
+      "losses": 8296,
+      "flats": 3,
+      "pf": 0.6391031822565092,
+      "is_baseline": false,
+      "suppress_rate": 0.0,
+      "coins": [
+        {
+          "coin": "DASH",
+          "pnl": 0.0,
+          "trades": 0,
+          "wins": 0,
+          "losses": 0,
+          "flats": 0,
+          "wr": 0.0,
+          "pf": 0.0
+        },
+        {
+          "coin": "UNI",
+          "pnl": 0.0,
+          "trades": 0,
+          "wins": 0,
+          "losses": 0,
+          "flats": 0,
+          "wr": 0.0,
+          "pf": 0.0
+        },
+        {
+          "coin": "NEAR",
+          "pnl": 0.0,
+          "trades": 0,
+          "wins": 0,
+          "losses": 0,
+          "flats": 0,
+          "wr": 0.0,
+          "pf": 0.0
+        },
+        {
+          "coin": "ADA",
+          "pnl": 0.0,
+          "trades": 0,
+          "wins": 0,
+          "losses": 0,
+          "flats": 0,
+          "wr": 0.0,
+          "pf": 0.0
+        },
+        {
+          "coin": "LTC",
+          "pnl": 0.0,
+          "trades": 0,
+          "wins": 0,
+          "losses": 0,
+          "flats": 0,
+          "wr": 0.0,
+          "pf": 0.0
+        },
+        {
+          "coin": "SHIB",
+          "pnl": 0.0,
+          "trades": 0,
+          "wins": 0,
+          "losses": 0,
+          "flats": 0,
+          "wr": 0.0,
+          "pf": 0.0
+        },
+        {
+          "coin": "LINK",
+          "pnl": 0.0,
+          "trades": 0,
+          "wins": 0,
+          "losses": 0,
+          "flats": 0,
+          "wr": 0.0,
+          "pf": 0.0
+        },
+        {
+          "coin": "ETH",
+          "pnl": 0.0,
+          "trades": 0,
+          "wins": 0,
+          "losses": 0,
+          "flats": 0,
+          "wr": 0.0,
+          "pf": 0.0
+        },
+        {
+          "coin": "DOT",
+          "pnl": 0.0,
+          "trades": 0,
+          "wins": 0,
+          "losses": 0,
+          "flats": 0,
+          "wr": 0.0,
+          "pf": 0.0
+        },
+        {
+          "coin": "XRP",
+          "pnl": 0.0,
+          "trades": 0,
+          "wins": 0,
+          "losses": 0,
+          "flats": 0,
+          "wr": 0.0,
+          "pf": 0.0
+        },
+        {
+          "coin": "ATOM",
+          "pnl": 0.0,
+          "trades": 0,
+          "wins": 0,
+          "losses": 0,
+          "flats": 0,
+          "wr": 0.0,
+          "pf": 0.0
+        },
+        {
+          "coin": "SOL",
+          "pnl": 0.0,
+          "trades": 0,
+          "wins": 0,
+          "losses": 0,
+          "flats": 0,
+          "wr": 0.0,
+          "pf": 0.0
+        },
+        {
+          "coin": "DOGE",
+          "pnl": 0.0,
+          "trades": 0,
+          "wins": 0,
+          "losses": 0,
+          "flats": 0,
+          "wr": 0.0,
+          "pf": 0.0
+        },
+        {
+          "coin": "XLM",
+          "pnl": 0.0,
+          "trades": 0,
+          "wins": 0,
+          "losses": 0,
+          "flats": 0,
+          "wr": 0.0,
+          "pf": 0.0
+        },
+        {
+          "coin": "AVAX",
+          "pnl": 0.0,
+          "trades": 0,
+          "wins": 0,
+          "losses": 0,
+          "flats": 0,
+          "wr": 0.0,
+          "pf": 0.0
+        },
+        {
+          "coin": "ALGO",
+          "pnl": 0.0,
+          "trades": 0,
+          "wins": 0,
+          "losses": 0,
+          "flats": 0,
+          "wr": 0.0,
+          "pf": 0.0
+        },
+        {
+          "coin": "BNB",
+          "pnl": 0.0,
+          "trades": 0,
+          "wins": 0,
+          "losses": 0,
+          "flats": 0,
+          "wr": 0.0,
+          "pf": 0.0
+        },
+        {
+          "coin": "BTC",
+          "pnl": 0.0,
+          "trades": 0,
+          "wins": 0,
+          "losses": 0,
+          "flats": 0,
+          "wr": 0.0,
+          "pf": 0.0
+        }
+      ]
+    },
+    {
+      "label": "NW7_NS1",
+      "total_pnl": 2384.1963223954467,
+      "portfolio_wr": 38.982427762664514,
+      "total_trades": 13601,
+      "wins": 5302,
+      "losses": 8296,
+      "flats": 3,
+      "pf": 0.6391031822565092,
+      "is_baseline": false,
+      "suppress_rate": 0.0,
+      "coins": [
+        {
+          "coin": "DASH",
+          "pnl": 0.0,
+          "trades": 0,
+          "wins": 0,
+          "losses": 0,
+          "flats": 0,
+          "wr": 0.0,
+          "pf": 0.0
+        },
+        {
+          "coin": "UNI",
+          "pnl": 0.0,
+          "trades": 0,
+          "wins": 0,
+          "losses": 0,
+          "flats": 0,
+          "wr": 0.0,
+          "pf": 0.0
+        },
+        {
+          "coin": "NEAR",
+          "pnl": 0.0,
+          "trades": 0,
+          "wins": 0,
+          "losses": 0,
+          "flats": 0,
+          "wr": 0.0,
+          "pf": 0.0
+        },
+        {
+          "coin": "ADA",
+          "pnl": 0.0,
+          "trades": 0,
+          "wins": 0,
+          "losses": 0,
+          "flats": 0,
+          "wr": 0.0,
+          "pf": 0.0
+        },
+        {
+          "coin": "LTC",
+          "pnl": 0.0,
+          "trades": 0,
+          "wins": 0,
+          "losses": 0,
+          "flats": 0,
+          "wr": 0.0,
+          "pf": 0.0
+        },
+        {
+          "coin": "SHIB",
+          "pnl": 0.0,
+          "trades": 0,
+          "wins": 0,
+          "losses": 0,
+          "flats": 0,
+          "wr": 0.0,
+          "pf": 0.0
+        },
+        {
+          "coin": "LINK",
+          "pnl": 0.0,
+          "trades": 0,
+          "wins": 0,
+          "losses": 0,
+          "flats": 0,
+          "wr": 0.0,
+          "pf": 0.0
+        },
+        {
+          "coin": "ETH",
+          "pnl": 0.0,
+          "trades": 0,
+          "wins": 0,
+          "losses": 0,
+          "flats": 0,
+          "wr": 0.0,
+          "pf": 0.0
+        },
+        {
+          "coin": "DOT",
+          "pnl": 0.0,
+          "trades": 0,
+          "wins": 0,
+          "losses": 0,
+          "flats": 0,
+          "wr": 0.0,
+          "pf": 0.0
+        },
+        {
+          "coin": "XRP",
+          "pnl": 0.0,
+          "trades": 0,
+          "wins": 0,
+          "losses": 0,
+          "flats": 0,
+          "wr": 0.0,
+          "pf": 0.0
+        },
+        {
+          "coin": "ATOM",
+          "pnl": 0.0,
+          "trades": 0,
+          "wins": 0,
+          "losses": 0,
+          "flats": 0,
+          "wr": 0.0,
+          "pf": 0.0
+        },
+        {
+          "coin": "SOL",
+          "pnl": 0.0,
+          "trades": 0,
+          "wins": 0,
+          "losses": 0,
+          "flats": 0,
+          "wr": 0.0,
+          "pf": 0.0
+        },
+        {
+          "coin": "DOGE",
+          "pnl": 0.0,
+          "trades": 0,
+          "wins": 0,
+          "losses": 0,
+          "flats": 0,
+          "wr": 0.0,
+          "pf": 0.0
+        },
+        {
+          "coin": "XLM",
+          "pnl": 0.0,
+          "trades": 0,
+          "wins": 0,
+          "losses": 0,
+          "flats": 0,
+          "wr": 0.0,
+          "pf": 0.0
+        },
+        {
+          "coin": "AVAX",
+          "pnl": 0.0,
+          "trades": 0,
+          "wins": 0,
+          "losses": 0,
+          "flats": 0,
+          "wr": 0.0,
+          "pf": 0.0
+        },
+        {
+          "coin": "ALGO",
+          "pnl": 0.0,
+          "trades": 0,
+          "wins": 0,
+          "losses": 0,
+          "flats": 0,
+          "wr": 0.0,
+          "pf": 0.0
+        },
+        {
+          "coin": "BNB",
+          "pnl": 0.0,
+          "trades": 0,
+          "wins": 0,
+          "losses": 0,
+          "flats": 0,
+          "wr": 0.0,
+          "pf": 0.0
+        },
+        {
+          "coin": "BTC",
+          "pnl": 0.0,
+          "trades": 0,
+          "wins": 0,
+          "losses": 0,
+          "flats": 0,
+          "wr": 0.0,
+          "pf": 0.0
+        }
+      ]
+    }
+  ]
+}

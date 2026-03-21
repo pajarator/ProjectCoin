@@ -1,0 +1,86 @@
+{
+  "notes": "RUN70 z-convergence. 9 configs. Baseline PnL=516.36. Best: BASELINE (PnL=516.36, Δ=+0.00)",
+  "configs": [
+    {
+      "label": "BASELINE",
+      "total_pnl": 516.3564532753758,
+      "portfolio_wr": 53.89834473884307,
+      "total_trades": 17097,
+      "pf": 1.2877305757406372,
+      "is_baseline": true,
+      "block_rate": 0.0
+    },
+    {
+      "label": "T+40_W1",
+      "total_pnl": 249.9297380335084,
+      "portfolio_wr": 54.11743152880828,
+      "total_trades": 10917,
+      "pf": 1.2978910369068541,
+      "is_baseline": false,
+      "block_rate": 50.66431670281995
+    },
+    {
+      "label": "T+40_W2",
+      "total_pnl": 378.2079636266317,
+      "portfolio_wr": 54.43587631953283,
+      "total_trades": 13357,
+      "pf": 1.3136404697380306,
+      "is_baseline": false,
+      "block_rate": 34.172785964220594
+    },
+    {
+      "label": "T+50_W1",
+      "total_pnl": 249.9297380335084,
+      "portfolio_wr": 54.11743152880828,
+      "total_trades": 10917,
+      "pf": 1.2978910369068541,
+      "is_baseline": false,
+      "block_rate": 50.66431670281995
+    },
+    {
+      "label": "T+50_W2",
+      "total_pnl": 378.2079636266317,
+      "portfolio_wr": 54.43587631953283,
+      "total_trades": 13357,
+      "pf": 1.3136404697380306,
+      "is_baseline": false,
+      "block_rate": 34.172785964220594
+    },
+    {
+      "label": "T+60_W1",
+      "total_pnl": 249.9297380335084,
+      "portfolio_wr": 54.11743152880828,
+      "total_trades": 10917,
+      "pf": 1.2978910369068541,
+      "is_baseline": false,
+      "block_rate": 50.66431670281995
+    },
+    {
+      "label": "T+60_W2",
+      "total_pnl": 101.9871153760817,
+      "portfolio_wr": 55.432020330368495,
+      "total_trades": 6296,
+      "pf": 1.3729346970889065,
+      "is_baseline": false,
+      "block_rate": 75.39567783031772
+    },
+    {
+      "label": "T+70_W1",
+      "total_pnl": 249.9297380335084,
+      "portfolio_wr": 54.11743152880828,
+      "total_trades": 10917,
+      "pf": 1.2978910369068541,
+      "is_baseline": false,
+      "block_rate": 50.66431670281995
+    },
+    {
+      "label": "T+70_W2",
+      "total_pnl": 101.9871153760817,
+      "portfolio_wr": 55.432020330368495,
+      "total_trades": 6296,
+      "pf": 1.3729346970889065,
+      "is_baseline": false,
+      "block_rate": 75.39567783031772
+    }
+  ]
+}

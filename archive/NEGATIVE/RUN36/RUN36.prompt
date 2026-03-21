@@ -1,0 +1,75 @@
+# RUN36 — Scalp Choppiness Detector + Bayesian Pause/Resume
+
+## Hypothesis
+Scalp entries succeed or fail in bursts. The market alternates between "trending" (scalp-friendly) and "choppy" (scalp-hostile) regimes. If we can detect choppiness early using a Bayesian model, we can pause scalp entries during bad regimes and resume when the regime shifts back to favorable — improving overall win rate and P&L.
+
+## Pattern Description
+- Good scalp entries/exits → bad scalp entries/exits → good again
+- Timescale: minutes to hours (1m candles)
+- All coins simultaneously enter choppy state → suggests market-wide regime shift
+
+## Choppiness Detection Methods to Test
+
+### Method 1: Choppiness Index (CI)
+Standard CI = 100 * log10(sum ATR over N) / (log10(N) * ( HighestHigh - LowestLow ) / LowestLow ))
+- CI > 70-80 = choppy (no clear trend)
+- CI < 30-40 = trending (directional movement)
+- Use rolling 20-60 bar windows
+
+### Method 2: Z-Score Stability
+- Rolling std dev of z-score over window
+- High std = unstable/choppy, low std = trending
+
+### Method 3: Win-Rate Regime (Bayesian)
+- Track rolling WR of recent scalp trades (last N = 10/20/30 trades)
+- P(choppy) = P(WR < breakeven_threshold | historical)
+- Bayesian update: P(regime|new_trade) proportional to P(new_trade|regime) * P(regime)
+- Priors: P(choppy) ~ Beta(α=2, β=5) (slight prior toward trending)
+
+### Method 4: Consecutive Loss Detection
+- After N consecutive scalp losses, enter "pause mode"
+- Resume after M consecutive wins OR after X bars
+- Simple but captures the burst pattern
+
+## Bayesian Model Detail
+```
+Prior: P(choppy) = 0.3, P(trending) = 0.7
+Likelihood:
+  - if trade WIN: P(WIN|choppy) = 0.25, P(WIN|trending) = 0.55
+  - if trade LOSS: P(LOSS|choppy) = 0.75, P(LOSS|trending) = 0.45
+Posterior: P(choppy|W) = P(W|choppy)*P(choppy) / (P(W|choppy)*P(choppy) + P(W|trending)*P(trending))
+If P(choppy) > threshold (0.6-0.8) → PAUSE scalp entries
+If P(trending) > threshold (0.6-0.8) → RESUME scalp entries
+```
+
+## Grid Search Parameters (RUN36.1)
+- `chop_method`: CI, Z_STD, BAYESIAN_WR, CONSEC_LOSS
+- `chop_threshold`: 0.6 / 0.7 / 0.8 (for Bayesian)
+- `chop_window`: 20 / 40 / 60 bars (for CI and Z_STD)
+- `pause_bars`: 5 / 10 / 20 bars after chop detected
+- Baseline: no chop filter
+
+## Walk-Forward (RUN36.2)
+3-window walk-forward (train 2mo, test 1mo) to validate:
+- Does the chop filter improve OOS WR and P&L?
+- What % of bars are in "paused" state?
+
+## Combined Comparison (RUN36.3)
+Side-by-side: current scalping vs chop-filtered scalping.
+Per-coin breakdown, portfolio stats.
+
+## Data
+- 1-year 1m data from `data_cache/{COIN}_USDT_1m_1year.csv`
+- 18 coins: DASH, UNI, NEAR, ADA, LTC, SHIB, LINK, ETH, DOT, XRP, ATOM, SOL, DOGE, XLM, AVAX, ALGO, BNB, BTC
+
+## Success Criteria
+- OOS WR improvement: +5pp+ vs baseline
+- P&L improvement: +10%+ vs baseline
+- Pause rate: 20-50% of bars (reasonable; too high = filter too aggressive)
+
+## Run Commands
+```bash
+cargo run --release --features run36_1 -- --run36_1  # Grid search
+cargo run --release --features run36_2 -- --run36_2  # Walk-forward
+cargo run --release --features run36_3 -- --run36_3  # Combined comparison
+```

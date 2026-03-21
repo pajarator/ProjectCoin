@@ -1,0 +1,3252 @@
+{
+  "notes": "RUN43 breadth momentum filter. 17 configs. Baseline PnL=167.45. Best: VW999_VT999.00 (PnL=167.45, Δ=0.00)",
+  "configs": [
+    {
+      "label": "VW999_VT999.00",
+      "total_pnl": 167.45256054667993,
+      "total_delta": 0.0,
+      "portfolio_wr": 54.71160850274816,
+      "total_trades": 15101,
+      "pf": 1.693413069156366,
+      "is_baseline": true,
+      "coins": [
+        {
+          "coin": "DASH",
+          "pnl": 0.0,
+          "trades": 0,
+          "wins": 0,
+          "losses": 0,
+          "wr": 0.0,
+          "pf": 0.0,
+          "delta_pnl": 0.0
+        },
+        {
+          "coin": "UNI",
+          "pnl": 0.0,
+          "trades": 0,
+          "wins": 0,
+          "losses": 0,
+          "wr": 0.0,
+          "pf": 0.0,
+          "delta_pnl": 0.0
+        },
+        {
+          "coin": "NEAR",
+          "pnl": 0.0,
+          "trades": 0,
+          "wins": 0,
+          "losses": 0,
+          "wr": 0.0,
+          "pf": 0.0,
+          "delta_pnl": 0.0
+        },
+        {
+          "coin": "ADA",
+          "pnl": 0.0,
+          "trades": 0,
+          "wins": 0,
+          "losses": 0,
+          "wr": 0.0,
+          "pf": 0.0,
+          "delta_pnl": 0.0
+        },
+        {
+          "coin": "LTC",
+          "pnl": 0.0,
+          "trades": 0,
+          "wins": 0,
+          "losses": 0,
+          "wr": 0.0,
+          "pf": 0.0,
+          "delta_pnl": 0.0
+        },
+        {
+          "coin": "SHIB",
+          "pnl": 0.0,
+          "trades": 0,
+          "wins": 0,
+          "losses": 0,
+          "wr": 0.0,
+          "pf": 0.0,
+          "delta_pnl": 0.0
+        },
+        {
+          "coin": "LINK",
+          "pnl": 0.0,
+          "trades": 0,
+          "wins": 0,
+          "losses": 0,
+          "wr": 0.0,
+          "pf": 0.0,
+          "delta_pnl": 0.0
+        },
+        {
+          "coin": "ETH",
+          "pnl": 0.0,
+          "trades": 0,
+          "wins": 0,
+          "losses": 0,
+          "wr": 0.0,
+          "pf": 0.0,
+          "delta_pnl": 0.0
+        },
+        {
+          "coin": "DOT",
+          "pnl": 0.0,
+          "trades": 0,
+          "wins": 0,
+          "losses": 0,
+          "wr": 0.0,
+          "pf": 0.0,
+          "delta_pnl": 0.0
+        },
+        {
+          "coin": "XRP",
+          "pnl": 0.0,
+          "trades": 0,
+          "wins": 0,
+          "losses": 0,
+          "wr": 0.0,
+          "pf": 0.0,
+          "delta_pnl": 0.0
+        },
+        {
+          "coin": "ATOM",
+          "pnl": 0.0,
+          "trades": 0,
+          "wins": 0,
+          "losses": 0,
+          "wr": 0.0,
+          "pf": 0.0,
+          "delta_pnl": 0.0
+        },
+        {
+          "coin": "SOL",
+          "pnl": 0.0,
+          "trades": 0,
+          "wins": 0,
+          "losses": 0,
+          "wr": 0.0,
+          "pf": 0.0,
+          "delta_pnl": 0.0
+        },
+        {
+          "coin": "DOGE",
+          "pnl": 0.0,
+          "trades": 0,
+          "wins": 0,
+          "losses": 0,
+          "wr": 0.0,
+          "pf": 0.0,
+          "delta_pnl": 0.0
+        },
+        {
+          "coin": "XLM",
+          "pnl": 0.0,
+          "trades": 0,
+          "wins": 0,
+          "losses": 0,
+          "wr": 0.0,
+          "pf": 0.0,
+          "delta_pnl": 0.0
+        },
+        {
+          "coin": "AVAX",
+          "pnl": 0.0,
+          "trades": 0,
+          "wins": 0,
+          "losses": 0,
+          "wr": 0.0,
+          "pf": 0.0,
+          "delta_pnl": 0.0
+        },
+        {
+          "coin": "ALGO",
+          "pnl": 0.0,
+          "trades": 0,
+          "wins": 0,
+          "losses": 0,
+          "wr": 0.0,
+          "pf": 0.0,
+          "delta_pnl": 0.0
+        },
+        {
+          "coin": "BNB",
+          "pnl": 0.0,
+          "trades": 0,
+          "wins": 0,
+          "losses": 0,
+          "wr": 0.0,
+          "pf": 0.0,
+          "delta_pnl": 0.0
+        },
+        {
+          "coin": "BTC",
+          "pnl": 0.0,
+          "trades": 0,
+          "wins": 0,
+          "losses": 0,
+          "wr": 0.0,
+          "pf": 0.0,
+          "delta_pnl": 0.0
+        }
+      ]
+    },
+    {
+      "label": "VW2_VT0.05",
+      "total_pnl": 99.60839838742554,
+      "total_delta": -67.8441621592544,
+      "portfolio_wr": 54.894366197183096,
+      "total_trades": 8520,
+      "pf": 1.733963866184585,
+      "is_baseline": false,
+      "coins": [
+        {
+          "coin": "DASH",
+          "pnl": 0.0,
+          "trades": 0,
+          "wins": 0,
+          "losses": 0,
+          "wr": 0.0,
+          "pf": 0.0,
+          "delta_pnl": 0.0
+        },
+        {
+          "coin": "UNI",
+          "pnl": 0.0,
+          "trades": 0,
+          "wins": 0,
+          "losses": 0,
+          "wr": 0.0,
+          "pf": 0.0,
+          "delta_pnl": 0.0
+        },
+        {
+          "coin": "NEAR",
+          "pnl": 0.0,
+          "trades": 0,
+          "wins": 0,
+          "losses": 0,
+          "wr": 0.0,
+          "pf": 0.0,
+          "delta_pnl": 0.0
+        },
+        {
+          "coin": "ADA",
+          "pnl": 0.0,
+          "trades": 0,
+          "wins": 0,
+          "losses": 0,
+          "wr": 0.0,
+          "pf": 0.0,
+          "delta_pnl": 0.0
+        },
+        {
+          "coin": "LTC",
+          "pnl": 0.0,
+          "trades": 0,
+          "wins": 0,
+          "losses": 0,
+          "wr": 0.0,
+          "pf": 0.0,
+          "delta_pnl": 0.0
+        },
+        {
+          "coin": "SHIB",
+          "pnl": 0.0,
+          "trades": 0,
+          "wins": 0,
+          "losses": 0,
+          "wr": 0.0,
+          "pf": 0.0,
+          "delta_pnl": 0.0
+        },
+        {
+          "coin": "LINK",
+          "pnl": 0.0,
+          "trades": 0,
+          "wins": 0,
+          "losses": 0,
+          "wr": 0.0,
+          "pf": 0.0,
+          "delta_pnl": 0.0
+        },
+        {
+          "coin": "ETH",
+          "pnl": 0.0,
+          "trades": 0,
+          "wins": 0,
+          "losses": 0,
+          "wr": 0.0,
+          "pf": 0.0,
+          "delta_pnl": 0.0
+        },
+        {
+          "coin": "DOT",
+          "pnl": 0.0,
+          "trades": 0,
+          "wins": 0,
+          "losses": 0,
+          "wr": 0.0,
+          "pf": 0.0,
+          "delta_pnl": 0.0
+        },
+        {
+          "coin": "XRP",
+          "pnl": 0.0,
+          "trades": 0,
+          "wins": 0,
+          "losses": 0,
+          "wr": 0.0,
+          "pf": 0.0,
+          "delta_pnl": 0.0
+        },
+        {
+          "coin": "ATOM",
+          "pnl": 0.0,
+          "trades": 0,
+          "wins": 0,
+          "losses": 0,
+          "wr": 0.0,
+          "pf": 0.0,
+          "delta_pnl": 0.0
+        },
+        {
+          "coin": "SOL",
+          "pnl": 0.0,
+          "trades": 0,
+          "wins": 0,
+          "losses": 0,
+          "wr": 0.0,
+          "pf": 0.0,
+          "delta_pnl": 0.0
+        },
+        {
+          "coin": "DOGE",
+          "pnl": 0.0,
+          "trades": 0,
+          "wins": 0,
+          "losses": 0,
+          "wr": 0.0,
+          "pf": 0.0,
+          "delta_pnl": 0.0
+        },
+        {
+          "coin": "XLM",
+          "pnl": 0.0,
+          "trades": 0,
+          "wins": 0,
+          "losses": 0,
+          "wr": 0.0,
+          "pf": 0.0,
+          "delta_pnl": 0.0
+        },
+        {
+          "coin": "AVAX",
+          "pnl": 0.0,
+          "trades": 0,
+          "wins": 0,
+          "losses": 0,
+          "wr": 0.0,
+          "pf": 0.0,
+          "delta_pnl": 0.0
+        },
+        {
+          "coin": "ALGO",
+          "pnl": 0.0,
+          "trades": 0,
+          "wins": 0,
+          "losses": 0,
+          "wr": 0.0,
+          "pf": 0.0,
+          "delta_pnl": 0.0
+        },
+        {
+          "coin": "BNB",
+          "pnl": 0.0,
+          "trades": 0,
+          "wins": 0,
+          "losses": 0,
+          "wr": 0.0,
+          "pf": 0.0,
+          "delta_pnl": 0.0
+        },
+        {
+          "coin": "BTC",
+          "pnl": 0.0,
+          "trades": 0,
+          "wins": 0,
+          "losses": 0,
+          "wr": 0.0,
+          "pf": 0.0,
+          "delta_pnl": 0.0
+        }
+      ]
+    },
+    {
+      "label": "VW2_VT0.10",
+      "total_pnl": 115.4842059448904,
+      "total_delta": -51.96835460178953,
+      "portfolio_wr": 55.52634346408666,
+      "total_trades": 9509,
+      "pf": 1.7345385386838266,
+      "is_baseline": false,
+      "coins": [
+        {
+          "coin": "DASH",
+          "pnl": 0.0,
+          "trades": 0,
+          "wins": 0,
+          "losses": 0,
+          "wr": 0.0,
+          "pf": 0.0,
+          "delta_pnl": 0.0
+        },
+        {
+          "coin": "UNI",
+          "pnl": 0.0,
+          "trades": 0,
+          "wins": 0,
+          "losses": 0,
+          "wr": 0.0,
+          "pf": 0.0,
+          "delta_pnl": 0.0
+        },
+        {
+          "coin": "NEAR",
+          "pnl": 0.0,
+          "trades": 0,
+          "wins": 0,
+          "losses": 0,
+          "wr": 0.0,
+          "pf": 0.0,
+          "delta_pnl": 0.0
+        },
+        {
+          "coin": "ADA",
+          "pnl": 0.0,
+          "trades": 0,
+          "wins": 0,
+          "losses": 0,
+          "wr": 0.0,
+          "pf": 0.0,
+          "delta_pnl": 0.0
+        },
+        {
+          "coin": "LTC",
+          "pnl": 0.0,
+          "trades": 0,
+          "wins": 0,
+          "losses": 0,
+          "wr": 0.0,
+          "pf": 0.0,
+          "delta_pnl": 0.0
+        },
+        {
+          "coin": "SHIB",
+          "pnl": 0.0,
+          "trades": 0,
+          "wins": 0,
+          "losses": 0,
+          "wr": 0.0,
+          "pf": 0.0,
+          "delta_pnl": 0.0
+        },
+        {
+          "coin": "LINK",
+          "pnl": 0.0,
+          "trades": 0,
+          "wins": 0,
+          "losses": 0,
+          "wr": 0.0,
+          "pf": 0.0,
+          "delta_pnl": 0.0
+        },
+        {
+          "coin": "ETH",
+          "pnl": 0.0,
+          "trades": 0,
+          "wins": 0,
+          "losses": 0,
+          "wr": 0.0,
+          "pf": 0.0,
+          "delta_pnl": 0.0
+        },
+        {
+          "coin": "DOT",
+          "pnl": 0.0,
+          "trades": 0,
+          "wins": 0,
+          "losses": 0,
+          "wr": 0.0,
+          "pf": 0.0,
+          "delta_pnl": 0.0
+        },
+        {
+          "coin": "XRP",
+          "pnl": 0.0,
+          "trades": 0,
+          "wins": 0,
+          "losses": 0,
+          "wr": 0.0,
+          "pf": 0.0,
+          "delta_pnl": 0.0
+        },
+        {
+          "coin": "ATOM",
+          "pnl": 0.0,
+          "trades": 0,
+          "wins": 0,
+          "losses": 0,
+          "wr": 0.0,
+          "pf": 0.0,
+          "delta_pnl": 0.0
+        },
+        {
+          "coin": "SOL",
+          "pnl": 0.0,
+          "trades": 0,
+          "wins": 0,
+          "losses": 0,
+          "wr": 0.0,
+          "pf": 0.0,
+          "delta_pnl": 0.0
+        },
+        {
+          "coin": "DOGE",
+          "pnl": 0.0,
+          "trades": 0,
+          "wins": 0,
+          "losses": 0,
+          "wr": 0.0,
+          "pf": 0.0,
+          "delta_pnl": 0.0
+        },
+        {
+          "coin": "XLM",
+          "pnl": 0.0,
+          "trades": 0,
+          "wins": 0,
+          "losses": 0,
+          "wr": 0.0,
+          "pf": 0.0,
+          "delta_pnl": 0.0
+        },
+        {
+          "coin": "AVAX",
+          "pnl": 0.0,
+          "trades": 0,
+          "wins": 0,
+          "losses": 0,
+          "wr": 0.0,
+          "pf": 0.0,
+          "delta_pnl": 0.0
+        },
+        {
+          "coin": "ALGO",
+          "pnl": 0.0,
+          "trades": 0,
+          "wins": 0,
+          "losses": 0,
+          "wr": 0.0,
+          "pf": 0.0,
+          "delta_pnl": 0.0
+        },
+        {
+          "coin": "BNB",
+          "pnl": 0.0,
+          "trades": 0,
+          "wins": 0,
+          "losses": 0,
+          "wr": 0.0,
+          "pf": 0.0,
+          "delta_pnl": 0.0
+        },
+        {
+          "coin": "BTC",
+          "pnl": 0.0,
+          "trades": 0,
+          "wins": 0,
+          "losses": 0,
+          "wr": 0.0,
+          "pf": 0.0,
+          "delta_pnl": 0.0
+        }
+      ]
+    },
+    {
+      "label": "VW2_VT0.15",
+      "total_pnl": 127.253494948938,
+      "total_delta": -40.199065597741935,
+      "portfolio_wr": 56.24635710122401,
+      "total_trades": 10294,
+      "pf": 1.723243750797321,
+      "is_baseline": false,
+      "coins": [
+        {
+          "coin": "DASH",
+          "pnl": 0.0,
+          "trades": 0,
+          "wins": 0,
+          "losses": 0,
+          "wr": 0.0,
+          "pf": 0.0,
+          "delta_pnl": 0.0
+        },
+        {
+          "coin": "UNI",
+          "pnl": 0.0,
+          "trades": 0,
+          "wins": 0,
+          "losses": 0,
+          "wr": 0.0,
+          "pf": 0.0,
+          "delta_pnl": 0.0
+        },
+        {
+          "coin": "NEAR",
+          "pnl": 0.0,
+          "trades": 0,
+          "wins": 0,
+          "losses": 0,
+          "wr": 0.0,
+          "pf": 0.0,
+          "delta_pnl": 0.0
+        },
+        {
+          "coin": "ADA",
+          "pnl": 0.0,
+          "trades": 0,
+          "wins": 0,
+          "losses": 0,
+          "wr": 0.0,
+          "pf": 0.0,
+          "delta_pnl": 0.0
+        },
+        {
+          "coin": "LTC",
+          "pnl": 0.0,
+          "trades": 0,
+          "wins": 0,
+          "losses": 0,
+          "wr": 0.0,
+          "pf": 0.0,
+          "delta_pnl": 0.0
+        },
+        {
+          "coin": "SHIB",
+          "pnl": 0.0,
+          "trades": 0,
+          "wins": 0,
+          "losses": 0,
+          "wr": 0.0,
+          "pf": 0.0,
+          "delta_pnl": 0.0
+        },
+        {
+          "coin": "LINK",
+          "pnl": 0.0,
+          "trades": 0,
+          "wins": 0,
+          "losses": 0,
+          "wr": 0.0,
+          "pf": 0.0,
+          "delta_pnl": 0.0
+        },
+        {
+          "coin": "ETH",
+          "pnl": 0.0,
+          "trades": 0,
+          "wins": 0,
+          "losses": 0,
+          "wr": 0.0,
+          "pf": 0.0,
+          "delta_pnl": 0.0
+        },
+        {
+          "coin": "DOT",
+          "pnl": 0.0,
+          "trades": 0,
+          "wins": 0,
+          "losses": 0,
+          "wr": 0.0,
+          "pf": 0.0,
+          "delta_pnl": 0.0
+        },
+        {
+          "coin": "XRP",
+          "pnl": 0.0,
+          "trades": 0,
+          "wins": 0,
+          "losses": 0,
+          "wr": 0.0,
+          "pf": 0.0,
+          "delta_pnl": 0.0
+        },
+        {
+          "coin": "ATOM",
+          "pnl": 0.0,
+          "trades": 0,
+          "wins": 0,
+          "losses": 0,
+          "wr": 0.0,
+          "pf": 0.0,
+          "delta_pnl": 0.0
+        },
+        {
+          "coin": "SOL",
+          "pnl": 0.0,
+          "trades": 0,
+          "wins": 0,
+          "losses": 0,
+          "wr": 0.0,
+          "pf": 0.0,
+          "delta_pnl": 0.0
+        },
+        {
+          "coin": "DOGE",
+          "pnl": 0.0,
+          "trades": 0,
+          "wins": 0,
+          "losses": 0,
+          "wr": 0.0,
+          "pf": 0.0,
+          "delta_pnl": 0.0
+        },
+        {
+          "coin": "XLM",
+          "pnl": 0.0,
+          "trades": 0,
+          "wins": 0,
+          "losses": 0,
+          "wr": 0.0,
+          "pf": 0.0,
+          "delta_pnl": 0.0
+        },
+        {
+          "coin": "AVAX",
+          "pnl": 0.0,
+          "trades": 0,
+          "wins": 0,
+          "losses": 0,
+          "wr": 0.0,
+          "pf": 0.0,
+          "delta_pnl": 0.0
+        },
+        {
+          "coin": "ALGO",
+          "pnl": 0.0,
+          "trades": 0,
+          "wins": 0,
+          "losses": 0,
+          "wr": 0.0,
+          "pf": 0.0,
+          "delta_pnl": 0.0
+        },
+        {
+          "coin": "BNB",
+          "pnl": 0.0,
+          "trades": 0,
+          "wins": 0,
+          "losses": 0,
+          "wr": 0.0,
+          "pf": 0.0,
+          "delta_pnl": 0.0
+        },
+        {
+          "coin": "BTC",
+          "pnl": 0.0,
+          "trades": 0,
+          "wins": 0,
+          "losses": 0,
+          "wr": 0.0,
+          "pf": 0.0,
+          "delta_pnl": 0.0
+        }
+      ]
+    },
+    {
+      "label": "VW2_VT0.20",
+      "total_pnl": 131.33952129739893,
+      "total_delta": -36.113039249281,
+      "portfolio_wr": 55.9657521635058,
+      "total_trades": 10862,
+      "pf": 1.717335257631409,
+      "is_baseline": false,
+      "coins": [
+        {
+          "coin": "DASH",
+          "pnl": 0.0,
+          "trades": 0,
+          "wins": 0,
+          "losses": 0,
+          "wr": 0.0,
+          "pf": 0.0,
+          "delta_pnl": 0.0
+        },
+        {
+          "coin": "UNI",
+          "pnl": 0.0,
+          "trades": 0,
+          "wins": 0,
+          "losses": 0,
+          "wr": 0.0,
+          "pf": 0.0,
+          "delta_pnl": 0.0
+        },
+        {
+          "coin": "NEAR",
+          "pnl": 0.0,
+          "trades": 0,
+          "wins": 0,
+          "losses": 0,
+          "wr": 0.0,
+          "pf": 0.0,
+          "delta_pnl": 0.0
+        },
+        {
+          "coin": "ADA",
+          "pnl": 0.0,
+          "trades": 0,
+          "wins": 0,
+          "losses": 0,
+          "wr": 0.0,
+          "pf": 0.0,
+          "delta_pnl": 0.0
+        },
+        {
+          "coin": "LTC",
+          "pnl": 0.0,
+          "trades": 0,
+          "wins": 0,
+          "losses": 0,
+          "wr": 0.0,
+          "pf": 0.0,
+          "delta_pnl": 0.0
+        },
+        {
+          "coin": "SHIB",
+          "pnl": 0.0,
+          "trades": 0,
+          "wins": 0,
+          "losses": 0,
+          "wr": 0.0,
+          "pf": 0.0,
+          "delta_pnl": 0.0
+        },
+        {
+          "coin": "LINK",
+          "pnl": 0.0,
+          "trades": 0,
+          "wins": 0,
+          "losses": 0,
+          "wr": 0.0,
+          "pf": 0.0,
+          "delta_pnl": 0.0
+        },
+        {
+          "coin": "ETH",
+          "pnl": 0.0,
+          "trades": 0,
+          "wins": 0,
+          "losses": 0,
+          "wr": 0.0,
+          "pf": 0.0,
+          "delta_pnl": 0.0
+        },
+        {
+          "coin": "DOT",
+          "pnl": 0.0,
+          "trades": 0,
+          "wins": 0,
+          "losses": 0,
+          "wr": 0.0,
+          "pf": 0.0,
+          "delta_pnl": 0.0
+        },
+        {
+          "coin": "XRP",
+          "pnl": 0.0,
+          "trades": 0,
+          "wins": 0,
+          "losses": 0,
+          "wr": 0.0,
+          "pf": 0.0,
+          "delta_pnl": 0.0
+        },
+        {
+          "coin": "ATOM",
+          "pnl": 0.0,
+          "trades": 0,
+          "wins": 0,
+          "losses": 0,
+          "wr": 0.0,
+          "pf": 0.0,
+          "delta_pnl": 0.0
+        },
+        {
+          "coin": "SOL",
+          "pnl": 0.0,
+          "trades": 0,
+          "wins": 0,
+          "losses": 0,
+          "wr": 0.0,
+          "pf": 0.0,
+          "delta_pnl": 0.0
+        },
+        {
+          "coin": "DOGE",
+          "pnl": 0.0,
+          "trades": 0,
+          "wins": 0,
+          "losses": 0,
+          "wr": 0.0,
+          "pf": 0.0,
+          "delta_pnl": 0.0
+        },
+        {
+          "coin": "XLM",
+          "pnl": 0.0,
+          "trades": 0,
+          "wins": 0,
+          "losses": 0,
+          "wr": 0.0,
+          "pf": 0.0,
+          "delta_pnl": 0.0
+        },
+        {
+          "coin": "AVAX",
+          "pnl": 0.0,
+          "trades": 0,
+          "wins": 0,
+          "losses": 0,
+          "wr": 0.0,
+          "pf": 0.0,
+          "delta_pnl": 0.0
+        },
+        {
+          "coin": "ALGO",
+          "pnl": 0.0,
+          "trades": 0,
+          "wins": 0,
+          "losses": 0,
+          "wr": 0.0,
+          "pf": 0.0,
+          "delta_pnl": 0.0
+        },
+        {
+          "coin": "BNB",
+          "pnl": 0.0,
+          "trades": 0,
+          "wins": 0,
+          "losses": 0,
+          "wr": 0.0,
+          "pf": 0.0,
+          "delta_pnl": 0.0
+        },
+        {
+          "coin": "BTC",
+          "pnl": 0.0,
+          "trades": 0,
+          "wins": 0,
+          "losses": 0,
+          "wr": 0.0,
+          "pf": 0.0,
+          "delta_pnl": 0.0
+        }
+      ]
+    },
+    {
+      "label": "VW4_VT0.05",
+      "total_pnl": 83.26686233066606,
+      "total_delta": -84.18569821601388,
+      "portfolio_wr": 56.56929054540222,
+      "total_trades": 6949,
+      "pf": 1.6949030577749153,
+      "is_baseline": false,
+      "coins": [
+        {
+          "coin": "DASH",
+          "pnl": 0.0,
+          "trades": 0,
+          "wins": 0,
+          "losses": 0,
+          "wr": 0.0,
+          "pf": 0.0,
+          "delta_pnl": 0.0
+        },
+        {
+          "coin": "UNI",
+          "pnl": 0.0,
+          "trades": 0,
+          "wins": 0,
+          "losses": 0,
+          "wr": 0.0,
+          "pf": 0.0,
+          "delta_pnl": 0.0
+        },
+        {
+          "coin": "NEAR",
+          "pnl": 0.0,
+          "trades": 0,
+          "wins": 0,
+          "losses": 0,
+          "wr": 0.0,
+          "pf": 0.0,
+          "delta_pnl": 0.0
+        },
+        {
+          "coin": "ADA",
+          "pnl": 0.0,
+          "trades": 0,
+          "wins": 0,
+          "losses": 0,
+          "wr": 0.0,
+          "pf": 0.0,
+          "delta_pnl": 0.0
+        },
+        {
+          "coin": "LTC",
+          "pnl": 0.0,
+          "trades": 0,
+          "wins": 0,
+          "losses": 0,
+          "wr": 0.0,
+          "pf": 0.0,
+          "delta_pnl": 0.0
+        },
+        {
+          "coin": "SHIB",
+          "pnl": 0.0,
+          "trades": 0,
+          "wins": 0,
+          "losses": 0,
+          "wr": 0.0,
+          "pf": 0.0,
+          "delta_pnl": 0.0
+        },
+        {
+          "coin": "LINK",
+          "pnl": 0.0,
+          "trades": 0,
+          "wins": 0,
+          "losses": 0,
+          "wr": 0.0,
+          "pf": 0.0,
+          "delta_pnl": 0.0
+        },
+        {
+          "coin": "ETH",
+          "pnl": 0.0,
+          "trades": 0,
+          "wins": 0,
+          "losses": 0,
+          "wr": 0.0,
+          "pf": 0.0,
+          "delta_pnl": 0.0
+        },
+        {
+          "coin": "DOT",
+          "pnl": 0.0,
+          "trades": 0,
+          "wins": 0,
+          "losses": 0,
+          "wr": 0.0,
+          "pf": 0.0,
+          "delta_pnl": 0.0
+        },
+        {
+          "coin": "XRP",
+          "pnl": 0.0,
+          "trades": 0,
+          "wins": 0,
+          "losses": 0,
+          "wr": 0.0,
+          "pf": 0.0,
+          "delta_pnl": 0.0
+        },
+        {
+          "coin": "ATOM",
+          "pnl": 0.0,
+          "trades": 0,
+          "wins": 0,
+          "losses": 0,
+          "wr": 0.0,
+          "pf": 0.0,
+          "delta_pnl": 0.0
+        },
+        {
+          "coin": "SOL",
+          "pnl": 0.0,
+          "trades": 0,
+          "wins": 0,
+          "losses": 0,
+          "wr": 0.0,
+          "pf": 0.0,
+          "delta_pnl": 0.0
+        },
+        {
+          "coin": "DOGE",
+          "pnl": 0.0,
+          "trades": 0,
+          "wins": 0,
+          "losses": 0,
+          "wr": 0.0,
+          "pf": 0.0,
+          "delta_pnl": 0.0
+        },
+        {
+          "coin": "XLM",
+          "pnl": 0.0,
+          "trades": 0,
+          "wins": 0,
+          "losses": 0,
+          "wr": 0.0,
+          "pf": 0.0,
+          "delta_pnl": 0.0
+        },
+        {
+          "coin": "AVAX",
+          "pnl": 0.0,
+          "trades": 0,
+          "wins": 0,
+          "losses": 0,
+          "wr": 0.0,
+          "pf": 0.0,
+          "delta_pnl": 0.0
+        },
+        {
+          "coin": "ALGO",
+          "pnl": 0.0,
+          "trades": 0,
+          "wins": 0,
+          "losses": 0,
+          "wr": 0.0,
+          "pf": 0.0,
+          "delta_pnl": 0.0
+        },
+        {
+          "coin": "BNB",
+          "pnl": 0.0,
+          "trades": 0,
+          "wins": 0,
+          "losses": 0,
+          "wr": 0.0,
+          "pf": 0.0,
+          "delta_pnl": 0.0
+        },
+        {
+          "coin": "BTC",
+          "pnl": 0.0,
+          "trades": 0,
+          "wins": 0,
+          "losses": 0,
+          "wr": 0.0,
+          "pf": 0.0,
+          "delta_pnl": 0.0
+        }
+      ]
+    },
+    {
+      "label": "VW4_VT0.10",
+      "total_pnl": 99.82483147621258,
+      "total_delta": -67.62772907046735,
+      "portfolio_wr": 56.677765445800965,
+      "total_trades": 8109,
+      "pf": 1.7140420266021512,
+      "is_baseline": false,
+      "coins": [
+        {
+          "coin": "DASH",
+          "pnl": 0.0,
+          "trades": 0,
+          "wins": 0,
+          "losses": 0,
+          "wr": 0.0,
+          "pf": 0.0,
+          "delta_pnl": 0.0
+        },
+        {
+          "coin": "UNI",
+          "pnl": 0.0,
+          "trades": 0,
+          "wins": 0,
+          "losses": 0,
+          "wr": 0.0,
+          "pf": 0.0,
+          "delta_pnl": 0.0
+        },
+        {
+          "coin": "NEAR",
+          "pnl": 0.0,
+          "trades": 0,
+          "wins": 0,
+          "losses": 0,
+          "wr": 0.0,
+          "pf": 0.0,
+          "delta_pnl": 0.0
+        },
+        {
+          "coin": "ADA",
+          "pnl": 0.0,
+          "trades": 0,
+          "wins": 0,
+          "losses": 0,
+          "wr": 0.0,
+          "pf": 0.0,
+          "delta_pnl": 0.0
+        },
+        {
+          "coin": "LTC",
+          "pnl": 0.0,
+          "trades": 0,
+          "wins": 0,
+          "losses": 0,
+          "wr": 0.0,
+          "pf": 0.0,
+          "delta_pnl": 0.0
+        },
+        {
+          "coin": "SHIB",
+          "pnl": 0.0,
+          "trades": 0,
+          "wins": 0,
+          "losses": 0,
+          "wr": 0.0,
+          "pf": 0.0,
+          "delta_pnl": 0.0
+        },
+        {
+          "coin": "LINK",
+          "pnl": 0.0,
+          "trades": 0,
+          "wins": 0,
+          "losses": 0,
+          "wr": 0.0,
+          "pf": 0.0,
+          "delta_pnl": 0.0
+        },
+        {
+          "coin": "ETH",
+          "pnl": 0.0,
+          "trades": 0,
+          "wins": 0,
+          "losses": 0,
+          "wr": 0.0,
+          "pf": 0.0,
+          "delta_pnl": 0.0
+        },
+        {
+          "coin": "DOT",
+          "pnl": 0.0,
+          "trades": 0,
+          "wins": 0,
+          "losses": 0,
+          "wr": 0.0,
+          "pf": 0.0,
+          "delta_pnl": 0.0
+        },
+        {
+          "coin": "XRP",
+          "pnl": 0.0,
+          "trades": 0,
+          "wins": 0,
+          "losses": 0,
+          "wr": 0.0,
+          "pf": 0.0,
+          "delta_pnl": 0.0
+        },
+        {
+          "coin": "ATOM",
+          "pnl": 0.0,
+          "trades": 0,
+          "wins": 0,
+          "losses": 0,
+          "wr": 0.0,
+          "pf": 0.0,
+          "delta_pnl": 0.0
+        },
+        {
+          "coin": "SOL",
+          "pnl": 0.0,
+          "trades": 0,
+          "wins": 0,
+          "losses": 0,
+          "wr": 0.0,
+          "pf": 0.0,
+          "delta_pnl": 0.0
+        },
+        {
+          "coin": "DOGE",
+          "pnl": 0.0,
+          "trades": 0,
+          "wins": 0,
+          "losses": 0,
+          "wr": 0.0,
+          "pf": 0.0,
+          "delta_pnl": 0.0
+        },
+        {
+          "coin": "XLM",
+          "pnl": 0.0,
+          "trades": 0,
+          "wins": 0,
+          "losses": 0,
+          "wr": 0.0,
+          "pf": 0.0,
+          "delta_pnl": 0.0
+        },
+        {
+          "coin": "AVAX",
+          "pnl": 0.0,
+          "trades": 0,
+          "wins": 0,
+          "losses": 0,
+          "wr": 0.0,
+          "pf": 0.0,
+          "delta_pnl": 0.0
+        },
+        {
+          "coin": "ALGO",
+          "pnl": 0.0,
+          "trades": 0,
+          "wins": 0,
+          "losses": 0,
+          "wr": 0.0,
+          "pf": 0.0,
+          "delta_pnl": 0.0
+        },
+        {
+          "coin": "BNB",
+          "pnl": 0.0,
+          "trades": 0,
+          "wins": 0,
+          "losses": 0,
+          "wr": 0.0,
+          "pf": 0.0,
+          "delta_pnl": 0.0
+        },
+        {
+          "coin": "BTC",
+          "pnl": 0.0,
+          "trades": 0,
+          "wins": 0,
+          "losses": 0,
+          "wr": 0.0,
+          "pf": 0.0,
+          "delta_pnl": 0.0
+        }
+      ]
+    },
+    {
+      "label": "VW4_VT0.15",
+      "total_pnl": 107.50354187250639,
+      "total_delta": -59.949018674173544,
+      "portfolio_wr": 56.49864376130199,
+      "total_trades": 8848,
+      "pf": 1.7037778101385601,
+      "is_baseline": false,
+      "coins": [
+        {
+          "coin": "DASH",
+          "pnl": 0.0,
+          "trades": 0,
+          "wins": 0,
+          "losses": 0,
+          "wr": 0.0,
+          "pf": 0.0,
+          "delta_pnl": 0.0
+        },
+        {
+          "coin": "UNI",
+          "pnl": 0.0,
+          "trades": 0,
+          "wins": 0,
+          "losses": 0,
+          "wr": 0.0,
+          "pf": 0.0,
+          "delta_pnl": 0.0
+        },
+        {
+          "coin": "NEAR",
+          "pnl": 0.0,
+          "trades": 0,
+          "wins": 0,
+          "losses": 0,
+          "wr": 0.0,
+          "pf": 0.0,
+          "delta_pnl": 0.0
+        },
+        {
+          "coin": "ADA",
+          "pnl": 0.0,
+          "trades": 0,
+          "wins": 0,
+          "losses": 0,
+          "wr": 0.0,
+          "pf": 0.0,
+          "delta_pnl": 0.0
+        },
+        {
+          "coin": "LTC",
+          "pnl": 0.0,
+          "trades": 0,
+          "wins": 0,
+          "losses": 0,
+          "wr": 0.0,
+          "pf": 0.0,
+          "delta_pnl": 0.0
+        },
+        {
+          "coin": "SHIB",
+          "pnl": 0.0,
+          "trades": 0,
+          "wins": 0,
+          "losses": 0,
+          "wr": 0.0,
+          "pf": 0.0,
+          "delta_pnl": 0.0
+        },
+        {
+          "coin": "LINK",
+          "pnl": 0.0,
+          "trades": 0,
+          "wins": 0,
+          "losses": 0,
+          "wr": 0.0,
+          "pf": 0.0,
+          "delta_pnl": 0.0
+        },
+        {
+          "coin": "ETH",
+          "pnl": 0.0,
+          "trades": 0,
+          "wins": 0,
+          "losses": 0,
+          "wr": 0.0,
+          "pf": 0.0,
+          "delta_pnl": 0.0
+        },
+        {
+          "coin": "DOT",
+          "pnl": 0.0,
+          "trades": 0,
+          "wins": 0,
+          "losses": 0,
+          "wr": 0.0,
+          "pf": 0.0,
+          "delta_pnl": 0.0
+        },
+        {
+          "coin": "XRP",
+          "pnl": 0.0,
+          "trades": 0,
+          "wins": 0,
+          "losses": 0,
+          "wr": 0.0,
+          "pf": 0.0,
+          "delta_pnl": 0.0
+        },
+        {
+          "coin": "ATOM",
+          "pnl": 0.0,
+          "trades": 0,
+          "wins": 0,
+          "losses": 0,
+          "wr": 0.0,
+          "pf": 0.0,
+          "delta_pnl": 0.0
+        },
+        {
+          "coin": "SOL",
+          "pnl": 0.0,
+          "trades": 0,
+          "wins": 0,
+          "losses": 0,
+          "wr": 0.0,
+          "pf": 0.0,
+          "delta_pnl": 0.0
+        },
+        {
+          "coin": "DOGE",
+          "pnl": 0.0,
+          "trades": 0,
+          "wins": 0,
+          "losses": 0,
+          "wr": 0.0,
+          "pf": 0.0,
+          "delta_pnl": 0.0
+        },
+        {
+          "coin": "XLM",
+          "pnl": 0.0,
+          "trades": 0,
+          "wins": 0,
+          "losses": 0,
+          "wr": 0.0,
+          "pf": 0.0,
+          "delta_pnl": 0.0
+        },
+        {
+          "coin": "AVAX",
+          "pnl": 0.0,
+          "trades": 0,
+          "wins": 0,
+          "losses": 0,
+          "wr": 0.0,
+          "pf": 0.0,
+          "delta_pnl": 0.0
+        },
+        {
+          "coin": "ALGO",
+          "pnl": 0.0,
+          "trades": 0,
+          "wins": 0,
+          "losses": 0,
+          "wr": 0.0,
+          "pf": 0.0,
+          "delta_pnl": 0.0
+        },
+        {
+          "coin": "BNB",
+          "pnl": 0.0,
+          "trades": 0,
+          "wins": 0,
+          "losses": 0,
+          "wr": 0.0,
+          "pf": 0.0,
+          "delta_pnl": 0.0
+        },
+        {
+          "coin": "BTC",
+          "pnl": 0.0,
+          "trades": 0,
+          "wins": 0,
+          "losses": 0,
+          "wr": 0.0,
+          "pf": 0.0,
+          "delta_pnl": 0.0
+        }
+      ]
+    },
+    {
+      "label": "VW4_VT0.20",
+      "total_pnl": 112.02496488429892,
+      "total_delta": -55.42759566238101,
+      "portfolio_wr": 56.01107443296773,
+      "total_trades": 9391,
+      "pf": 1.7151407536700052,
+      "is_baseline": false,
+      "coins": [
+        {
+          "coin": "DASH",
+          "pnl": 0.0,
+          "trades": 0,
+          "wins": 0,
+          "losses": 0,
+          "wr": 0.0,
+          "pf": 0.0,
+          "delta_pnl": 0.0
+        },
+        {
+          "coin": "UNI",
+          "pnl": 0.0,
+          "trades": 0,
+          "wins": 0,
+          "losses": 0,
+          "wr": 0.0,
+          "pf": 0.0,
+          "delta_pnl": 0.0
+        },
+        {
+          "coin": "NEAR",
+          "pnl": 0.0,
+          "trades": 0,
+          "wins": 0,
+          "losses": 0,
+          "wr": 0.0,
+          "pf": 0.0,
+          "delta_pnl": 0.0
+        },
+        {
+          "coin": "ADA",
+          "pnl": 0.0,
+          "trades": 0,
+          "wins": 0,
+          "losses": 0,
+          "wr": 0.0,
+          "pf": 0.0,
+          "delta_pnl": 0.0
+        },
+        {
+          "coin": "LTC",
+          "pnl": 0.0,
+          "trades": 0,
+          "wins": 0,
+          "losses": 0,
+          "wr": 0.0,
+          "pf": 0.0,
+          "delta_pnl": 0.0
+        },
+        {
+          "coin": "SHIB",
+          "pnl": 0.0,
+          "trades": 0,
+          "wins": 0,
+          "losses": 0,
+          "wr": 0.0,
+          "pf": 0.0,
+          "delta_pnl": 0.0
+        },
+        {
+          "coin": "LINK",
+          "pnl": 0.0,
+          "trades": 0,
+          "wins": 0,
+          "losses": 0,
+          "wr": 0.0,
+          "pf": 0.0,
+          "delta_pnl": 0.0
+        },
+        {
+          "coin": "ETH",
+          "pnl": 0.0,
+          "trades": 0,
+          "wins": 0,
+          "losses": 0,
+          "wr": 0.0,
+          "pf": 0.0,
+          "delta_pnl": 0.0
+        },
+        {
+          "coin": "DOT",
+          "pnl": 0.0,
+          "trades": 0,
+          "wins": 0,
+          "losses": 0,
+          "wr": 0.0,
+          "pf": 0.0,
+          "delta_pnl": 0.0
+        },
+        {
+          "coin": "XRP",
+          "pnl": 0.0,
+          "trades": 0,
+          "wins": 0,
+          "losses": 0,
+          "wr": 0.0,
+          "pf": 0.0,
+          "delta_pnl": 0.0
+        },
+        {
+          "coin": "ATOM",
+          "pnl": 0.0,
+          "trades": 0,
+          "wins": 0,
+          "losses": 0,
+          "wr": 0.0,
+          "pf": 0.0,
+          "delta_pnl": 0.0
+        },
+        {
+          "coin": "SOL",
+          "pnl": 0.0,
+          "trades": 0,
+          "wins": 0,
+          "losses": 0,
+          "wr": 0.0,
+          "pf": 0.0,
+          "delta_pnl": 0.0
+        },
+        {
+          "coin": "DOGE",
+          "pnl": 0.0,
+          "trades": 0,
+          "wins": 0,
+          "losses": 0,
+          "wr": 0.0,
+          "pf": 0.0,
+          "delta_pnl": 0.0
+        },
+        {
+          "coin": "XLM",
+          "pnl": 0.0,
+          "trades": 0,
+          "wins": 0,
+          "losses": 0,
+          "wr": 0.0,
+          "pf": 0.0,
+          "delta_pnl": 0.0
+        },
+        {
+          "coin": "AVAX",
+          "pnl": 0.0,
+          "trades": 0,
+          "wins": 0,
+          "losses": 0,
+          "wr": 0.0,
+          "pf": 0.0,
+          "delta_pnl": 0.0
+        },
+        {
+          "coin": "ALGO",
+          "pnl": 0.0,
+          "trades": 0,
+          "wins": 0,
+          "losses": 0,
+          "wr": 0.0,
+          "pf": 0.0,
+          "delta_pnl": 0.0
+        },
+        {
+          "coin": "BNB",
+          "pnl": 0.0,
+          "trades": 0,
+          "wins": 0,
+          "losses": 0,
+          "wr": 0.0,
+          "pf": 0.0,
+          "delta_pnl": 0.0
+        },
+        {
+          "coin": "BTC",
+          "pnl": 0.0,
+          "trades": 0,
+          "wins": 0,
+          "losses": 0,
+          "wr": 0.0,
+          "pf": 0.0,
+          "delta_pnl": 0.0
+        }
+      ]
+    },
+    {
+      "label": "VW6_VT0.05",
+      "total_pnl": 69.18356536954713,
+      "total_delta": -98.26899517713281,
+      "portfolio_wr": 55.058016015688835,
+      "total_trades": 6119,
+      "pf": 1.6976587666314533,
+      "is_baseline": false,
+      "coins": [
+        {
+          "coin": "DASH",
+          "pnl": 0.0,
+          "trades": 0,
+          "wins": 0,
+          "losses": 0,
+          "wr": 0.0,
+          "pf": 0.0,
+          "delta_pnl": 0.0
+        },
+        {
+          "coin": "UNI",
+          "pnl": 0.0,
+          "trades": 0,
+          "wins": 0,
+          "losses": 0,
+          "wr": 0.0,
+          "pf": 0.0,
+          "delta_pnl": 0.0
+        },
+        {
+          "coin": "NEAR",
+          "pnl": 0.0,
+          "trades": 0,
+          "wins": 0,
+          "losses": 0,
+          "wr": 0.0,
+          "pf": 0.0,
+          "delta_pnl": 0.0
+        },
+        {
+          "coin": "ADA",
+          "pnl": 0.0,
+          "trades": 0,
+          "wins": 0,
+          "losses": 0,
+          "wr": 0.0,
+          "pf": 0.0,
+          "delta_pnl": 0.0
+        },
+        {
+          "coin": "LTC",
+          "pnl": 0.0,
+          "trades": 0,
+          "wins": 0,
+          "losses": 0,
+          "wr": 0.0,
+          "pf": 0.0,
+          "delta_pnl": 0.0
+        },
+        {
+          "coin": "SHIB",
+          "pnl": 0.0,
+          "trades": 0,
+          "wins": 0,
+          "losses": 0,
+          "wr": 0.0,
+          "pf": 0.0,
+          "delta_pnl": 0.0
+        },
+        {
+          "coin": "LINK",
+          "pnl": 0.0,
+          "trades": 0,
+          "wins": 0,
+          "losses": 0,
+          "wr": 0.0,
+          "pf": 0.0,
+          "delta_pnl": 0.0
+        },
+        {
+          "coin": "ETH",
+          "pnl": 0.0,
+          "trades": 0,
+          "wins": 0,
+          "losses": 0,
+          "wr": 0.0,
+          "pf": 0.0,
+          "delta_pnl": 0.0
+        },
+        {
+          "coin": "DOT",
+          "pnl": 0.0,
+          "trades": 0,
+          "wins": 0,
+          "losses": 0,
+          "wr": 0.0,
+          "pf": 0.0,
+          "delta_pnl": 0.0
+        },
+        {
+          "coin": "XRP",
+          "pnl": 0.0,
+          "trades": 0,
+          "wins": 0,
+          "losses": 0,
+          "wr": 0.0,
+          "pf": 0.0,
+          "delta_pnl": 0.0
+        },
+        {
+          "coin": "ATOM",
+          "pnl": 0.0,
+          "trades": 0,
+          "wins": 0,
+          "losses": 0,
+          "wr": 0.0,
+          "pf": 0.0,
+          "delta_pnl": 0.0
+        },
+        {
+          "coin": "SOL",
+          "pnl": 0.0,
+          "trades": 0,
+          "wins": 0,
+          "losses": 0,
+          "wr": 0.0,
+          "pf": 0.0,
+          "delta_pnl": 0.0
+        },
+        {
+          "coin": "DOGE",
+          "pnl": 0.0,
+          "trades": 0,
+          "wins": 0,
+          "losses": 0,
+          "wr": 0.0,
+          "pf": 0.0,
+          "delta_pnl": 0.0
+        },
+        {
+          "coin": "XLM",
+          "pnl": 0.0,
+          "trades": 0,
+          "wins": 0,
+          "losses": 0,
+          "wr": 0.0,
+          "pf": 0.0,
+          "delta_pnl": 0.0
+        },
+        {
+          "coin": "AVAX",
+          "pnl": 0.0,
+          "trades": 0,
+          "wins": 0,
+          "losses": 0,
+          "wr": 0.0,
+          "pf": 0.0,
+          "delta_pnl": 0.0
+        },
+        {
+          "coin": "ALGO",
+          "pnl": 0.0,
+          "trades": 0,
+          "wins": 0,
+          "losses": 0,
+          "wr": 0.0,
+          "pf": 0.0,
+          "delta_pnl": 0.0
+        },
+        {
+          "coin": "BNB",
+          "pnl": 0.0,
+          "trades": 0,
+          "wins": 0,
+          "losses": 0,
+          "wr": 0.0,
+          "pf": 0.0,
+          "delta_pnl": 0.0
+        },
+        {
+          "coin": "BTC",
+          "pnl": 0.0,
+          "trades": 0,
+          "wins": 0,
+          "losses": 0,
+          "wr": 0.0,
+          "pf": 0.0,
+          "delta_pnl": 0.0
+        }
+      ]
+    },
+    {
+      "label": "VW6_VT0.10",
+      "total_pnl": 82.13771373449653,
+      "total_delta": -85.3148468121834,
+      "portfolio_wr": 55.70515435876513,
+      "total_trades": 7353,
+      "pf": 1.6599441963522061,
+      "is_baseline": false,
+      "coins": [
+        {
+          "coin": "DASH",
+          "pnl": 0.0,
+          "trades": 0,
+          "wins": 0,
+          "losses": 0,
+          "wr": 0.0,
+          "pf": 0.0,
+          "delta_pnl": 0.0
+        },
+        {
+          "coin": "UNI",
+          "pnl": 0.0,
+          "trades": 0,
+          "wins": 0,
+          "losses": 0,
+          "wr": 0.0,
+          "pf": 0.0,
+          "delta_pnl": 0.0
+        },
+        {
+          "coin": "NEAR",
+          "pnl": 0.0,
+          "trades": 0,
+          "wins": 0,
+          "losses": 0,
+          "wr": 0.0,
+          "pf": 0.0,
+          "delta_pnl": 0.0
+        },
+        {
+          "coin": "ADA",
+          "pnl": 0.0,
+          "trades": 0,
+          "wins": 0,
+          "losses": 0,
+          "wr": 0.0,
+          "pf": 0.0,
+          "delta_pnl": 0.0
+        },
+        {
+          "coin": "LTC",
+          "pnl": 0.0,
+          "trades": 0,
+          "wins": 0,
+          "losses": 0,
+          "wr": 0.0,
+          "pf": 0.0,
+          "delta_pnl": 0.0
+        },
+        {
+          "coin": "SHIB",
+          "pnl": 0.0,
+          "trades": 0,
+          "wins": 0,
+          "losses": 0,
+          "wr": 0.0,
+          "pf": 0.0,
+          "delta_pnl": 0.0
+        },
+        {
+          "coin": "LINK",
+          "pnl": 0.0,
+          "trades": 0,
+          "wins": 0,
+          "losses": 0,
+          "wr": 0.0,
+          "pf": 0.0,
+          "delta_pnl": 0.0
+        },
+        {
+          "coin": "ETH",
+          "pnl": 0.0,
+          "trades": 0,
+          "wins": 0,
+          "losses": 0,
+          "wr": 0.0,
+          "pf": 0.0,
+          "delta_pnl": 0.0
+        },
+        {
+          "coin": "DOT",
+          "pnl": 0.0,
+          "trades": 0,
+          "wins": 0,
+          "losses": 0,
+          "wr": 0.0,
+          "pf": 0.0,
+          "delta_pnl": 0.0
+        },
+        {
+          "coin": "XRP",
+          "pnl": 0.0,
+          "trades": 0,
+          "wins": 0,
+          "losses": 0,
+          "wr": 0.0,
+          "pf": 0.0,
+          "delta_pnl": 0.0
+        },
+        {
+          "coin": "ATOM",
+          "pnl": 0.0,
+          "trades": 0,
+          "wins": 0,
+          "losses": 0,
+          "wr": 0.0,
+          "pf": 0.0,
+          "delta_pnl": 0.0
+        },
+        {
+          "coin": "SOL",
+          "pnl": 0.0,
+          "trades": 0,
+          "wins": 0,
+          "losses": 0,
+          "wr": 0.0,
+          "pf": 0.0,
+          "delta_pnl": 0.0
+        },
+        {
+          "coin": "DOGE",
+          "pnl": 0.0,
+          "trades": 0,
+          "wins": 0,
+          "losses": 0,
+          "wr": 0.0,
+          "pf": 0.0,
+          "delta_pnl": 0.0
+        },
+        {
+          "coin": "XLM",
+          "pnl": 0.0,
+          "trades": 0,
+          "wins": 0,
+          "losses": 0,
+          "wr": 0.0,
+          "pf": 0.0,
+          "delta_pnl": 0.0
+        },
+        {
+          "coin": "AVAX",
+          "pnl": 0.0,
+          "trades": 0,
+          "wins": 0,
+          "losses": 0,
+          "wr": 0.0,
+          "pf": 0.0,
+          "delta_pnl": 0.0
+        },
+        {
+          "coin": "ALGO",
+          "pnl": 0.0,
+          "trades": 0,
+          "wins": 0,
+          "losses": 0,
+          "wr": 0.0,
+          "pf": 0.0,
+          "delta_pnl": 0.0
+        },
+        {
+          "coin": "BNB",
+          "pnl": 0.0,
+          "trades": 0,
+          "wins": 0,
+          "losses": 0,
+          "wr": 0.0,
+          "pf": 0.0,
+          "delta_pnl": 0.0
+        },
+        {
+          "coin": "BTC",
+          "pnl": 0.0,
+          "trades": 0,
+          "wins": 0,
+          "losses": 0,
+          "wr": 0.0,
+          "pf": 0.0,
+          "delta_pnl": 0.0
+        }
+      ]
+    },
+    {
+      "label": "VW6_VT0.15",
+      "total_pnl": 88.59580009218146,
+      "total_delta": -78.85676045449847,
+      "portfolio_wr": 55.5971079531289,
+      "total_trades": 8022,
+      "pf": 1.654528398932823,
+      "is_baseline": false,
+      "coins": [
+        {
+          "coin": "DASH",
+          "pnl": 0.0,
+          "trades": 0,
+          "wins": 0,
+          "losses": 0,
+          "wr": 0.0,
+          "pf": 0.0,
+          "delta_pnl": 0.0
+        },
+        {
+          "coin": "UNI",
+          "pnl": 0.0,
+          "trades": 0,
+          "wins": 0,
+          "losses": 0,
+          "wr": 0.0,
+          "pf": 0.0,
+          "delta_pnl": 0.0
+        },
+        {
+          "coin": "NEAR",
+          "pnl": 0.0,
+          "trades": 0,
+          "wins": 0,
+          "losses": 0,
+          "wr": 0.0,
+          "pf": 0.0,
+          "delta_pnl": 0.0
+        },
+        {
+          "coin": "ADA",
+          "pnl": 0.0,
+          "trades": 0,
+          "wins": 0,
+          "losses": 0,
+          "wr": 0.0,
+          "pf": 0.0,
+          "delta_pnl": 0.0
+        },
+        {
+          "coin": "LTC",
+          "pnl": 0.0,
+          "trades": 0,
+          "wins": 0,
+          "losses": 0,
+          "wr": 0.0,
+          "pf": 0.0,
+          "delta_pnl": 0.0
+        },
+        {
+          "coin": "SHIB",
+          "pnl": 0.0,
+          "trades": 0,
+          "wins": 0,
+          "losses": 0,
+          "wr": 0.0,
+          "pf": 0.0,
+          "delta_pnl": 0.0
+        },
+        {
+          "coin": "LINK",
+          "pnl": 0.0,
+          "trades": 0,
+          "wins": 0,
+          "losses": 0,
+          "wr": 0.0,
+          "pf": 0.0,
+          "delta_pnl": 0.0
+        },
+        {
+          "coin": "ETH",
+          "pnl": 0.0,
+          "trades": 0,
+          "wins": 0,
+          "losses": 0,
+          "wr": 0.0,
+          "pf": 0.0,
+          "delta_pnl": 0.0
+        },
+        {
+          "coin": "DOT",
+          "pnl": 0.0,
+          "trades": 0,
+          "wins": 0,
+          "losses": 0,
+          "wr": 0.0,
+          "pf": 0.0,
+          "delta_pnl": 0.0
+        },
+        {
+          "coin": "XRP",
+          "pnl": 0.0,
+          "trades": 0,
+          "wins": 0,
+          "losses": 0,
+          "wr": 0.0,
+          "pf": 0.0,
+          "delta_pnl": 0.0
+        },
+        {
+          "coin": "ATOM",
+          "pnl": 0.0,
+          "trades": 0,
+          "wins": 0,
+          "losses": 0,
+          "wr": 0.0,
+          "pf": 0.0,
+          "delta_pnl": 0.0
+        },
+        {
+          "coin": "SOL",
+          "pnl": 0.0,
+          "trades": 0,
+          "wins": 0,
+          "losses": 0,
+          "wr": 0.0,
+          "pf": 0.0,
+          "delta_pnl": 0.0
+        },
+        {
+          "coin": "DOGE",
+          "pnl": 0.0,
+          "trades": 0,
+          "wins": 0,
+          "losses": 0,
+          "wr": 0.0,
+          "pf": 0.0,
+          "delta_pnl": 0.0
+        },
+        {
+          "coin": "XLM",
+          "pnl": 0.0,
+          "trades": 0,
+          "wins": 0,
+          "losses": 0,
+          "wr": 0.0,
+          "pf": 0.0,
+          "delta_pnl": 0.0
+        },
+        {
+          "coin": "AVAX",
+          "pnl": 0.0,
+          "trades": 0,
+          "wins": 0,
+          "losses": 0,
+          "wr": 0.0,
+          "pf": 0.0,
+          "delta_pnl": 0.0
+        },
+        {
+          "coin": "ALGO",
+          "pnl": 0.0,
+          "trades": 0,
+          "wins": 0,
+          "losses": 0,
+          "wr": 0.0,
+          "pf": 0.0,
+          "delta_pnl": 0.0
+        },
+        {
+          "coin": "BNB",
+          "pnl": 0.0,
+          "trades": 0,
+          "wins": 0,
+          "losses": 0,
+          "wr": 0.0,
+          "pf": 0.0,
+          "delta_pnl": 0.0
+        },
+        {
+          "coin": "BTC",
+          "pnl": 0.0,
+          "trades": 0,
+          "wins": 0,
+          "losses": 0,
+          "wr": 0.0,
+          "pf": 0.0,
+          "delta_pnl": 0.0
+        }
+      ]
+    },
+    {
+      "label": "VW6_VT0.20",
+      "total_pnl": 95.61834844682606,
+      "total_delta": -71.83421209985387,
+      "portfolio_wr": 55.434782608695656,
+      "total_trades": 8648,
+      "pf": 1.6639169998440226,
+      "is_baseline": false,
+      "coins": [
+        {
+          "coin": "DASH",
+          "pnl": 0.0,
+          "trades": 0,
+          "wins": 0,
+          "losses": 0,
+          "wr": 0.0,
+          "pf": 0.0,
+          "delta_pnl": 0.0
+        },
+        {
+          "coin": "UNI",
+          "pnl": 0.0,
+          "trades": 0,
+          "wins": 0,
+          "losses": 0,
+          "wr": 0.0,
+          "pf": 0.0,
+          "delta_pnl": 0.0
+        },
+        {
+          "coin": "NEAR",
+          "pnl": 0.0,
+          "trades": 0,
+          "wins": 0,
+          "losses": 0,
+          "wr": 0.0,
+          "pf": 0.0,
+          "delta_pnl": 0.0
+        },
+        {
+          "coin": "ADA",
+          "pnl": 0.0,
+          "trades": 0,
+          "wins": 0,
+          "losses": 0,
+          "wr": 0.0,
+          "pf": 0.0,
+          "delta_pnl": 0.0
+        },
+        {
+          "coin": "LTC",
+          "pnl": 0.0,
+          "trades": 0,
+          "wins": 0,
+          "losses": 0,
+          "wr": 0.0,
+          "pf": 0.0,
+          "delta_pnl": 0.0
+        },
+        {
+          "coin": "SHIB",
+          "pnl": 0.0,
+          "trades": 0,
+          "wins": 0,
+          "losses": 0,
+          "wr": 0.0,
+          "pf": 0.0,
+          "delta_pnl": 0.0
+        },
+        {
+          "coin": "LINK",
+          "pnl": 0.0,
+          "trades": 0,
+          "wins": 0,
+          "losses": 0,
+          "wr": 0.0,
+          "pf": 0.0,
+          "delta_pnl": 0.0
+        },
+        {
+          "coin": "ETH",
+          "pnl": 0.0,
+          "trades": 0,
+          "wins": 0,
+          "losses": 0,
+          "wr": 0.0,
+          "pf": 0.0,
+          "delta_pnl": 0.0
+        },
+        {
+          "coin": "DOT",
+          "pnl": 0.0,
+          "trades": 0,
+          "wins": 0,
+          "losses": 0,
+          "wr": 0.0,
+          "pf": 0.0,
+          "delta_pnl": 0.0
+        },
+        {
+          "coin": "XRP",
+          "pnl": 0.0,
+          "trades": 0,
+          "wins": 0,
+          "losses": 0,
+          "wr": 0.0,
+          "pf": 0.0,
+          "delta_pnl": 0.0
+        },
+        {
+          "coin": "ATOM",
+          "pnl": 0.0,
+          "trades": 0,
+          "wins": 0,
+          "losses": 0,
+          "wr": 0.0,
+          "pf": 0.0,
+          "delta_pnl": 0.0
+        },
+        {
+          "coin": "SOL",
+          "pnl": 0.0,
+          "trades": 0,
+          "wins": 0,
+          "losses": 0,
+          "wr": 0.0,
+          "pf": 0.0,
+          "delta_pnl": 0.0
+        },
+        {
+          "coin": "DOGE",
+          "pnl": 0.0,
+          "trades": 0,
+          "wins": 0,
+          "losses": 0,
+          "wr": 0.0,
+          "pf": 0.0,
+          "delta_pnl": 0.0
+        },
+        {
+          "coin": "XLM",
+          "pnl": 0.0,
+          "trades": 0,
+          "wins": 0,
+          "losses": 0,
+          "wr": 0.0,
+          "pf": 0.0,
+          "delta_pnl": 0.0
+        },
+        {
+          "coin": "AVAX",
+          "pnl": 0.0,
+          "trades": 0,
+          "wins": 0,
+          "losses": 0,
+          "wr": 0.0,
+          "pf": 0.0,
+          "delta_pnl": 0.0
+        },
+        {
+          "coin": "ALGO",
+          "pnl": 0.0,
+          "trades": 0,
+          "wins": 0,
+          "losses": 0,
+          "wr": 0.0,
+          "pf": 0.0,
+          "delta_pnl": 0.0
+        },
+        {
+          "coin": "BNB",
+          "pnl": 0.0,
+          "trades": 0,
+          "wins": 0,
+          "losses": 0,
+          "wr": 0.0,
+          "pf": 0.0,
+          "delta_pnl": 0.0
+        },
+        {
+          "coin": "BTC",
+          "pnl": 0.0,
+          "trades": 0,
+          "wins": 0,
+          "losses": 0,
+          "wr": 0.0,
+          "pf": 0.0,
+          "delta_pnl": 0.0
+        }
+      ]
+    },
+    {
+      "label": "VW8_VT0.05",
+      "total_pnl": 69.78952922214928,
+      "total_delta": -97.66303132453065,
+      "portfolio_wr": 57.48206354629314,
+      "total_trades": 5854,
+      "pf": 1.628835338957174,
+      "is_baseline": false,
+      "coins": [
+        {
+          "coin": "DASH",
+          "pnl": 0.0,
+          "trades": 0,
+          "wins": 0,
+          "losses": 0,
+          "wr": 0.0,
+          "pf": 0.0,
+          "delta_pnl": 0.0
+        },
+        {
+          "coin": "UNI",
+          "pnl": 0.0,
+          "trades": 0,
+          "wins": 0,
+          "losses": 0,
+          "wr": 0.0,
+          "pf": 0.0,
+          "delta_pnl": 0.0
+        },
+        {
+          "coin": "NEAR",
+          "pnl": 0.0,
+          "trades": 0,
+          "wins": 0,
+          "losses": 0,
+          "wr": 0.0,
+          "pf": 0.0,
+          "delta_pnl": 0.0
+        },
+        {
+          "coin": "ADA",
+          "pnl": 0.0,
+          "trades": 0,
+          "wins": 0,
+          "losses": 0,
+          "wr": 0.0,
+          "pf": 0.0,
+          "delta_pnl": 0.0
+        },
+        {
+          "coin": "LTC",
+          "pnl": 0.0,
+          "trades": 0,
+          "wins": 0,
+          "losses": 0,
+          "wr": 0.0,
+          "pf": 0.0,
+          "delta_pnl": 0.0
+        },
+        {
+          "coin": "SHIB",
+          "pnl": 0.0,
+          "trades": 0,
+          "wins": 0,
+          "losses": 0,
+          "wr": 0.0,
+          "pf": 0.0,
+          "delta_pnl": 0.0
+        },
+        {
+          "coin": "LINK",
+          "pnl": 0.0,
+          "trades": 0,
+          "wins": 0,
+          "losses": 0,
+          "wr": 0.0,
+          "pf": 0.0,
+          "delta_pnl": 0.0
+        },
+        {
+          "coin": "ETH",
+          "pnl": 0.0,
+          "trades": 0,
+          "wins": 0,
+          "losses": 0,
+          "wr": 0.0,
+          "pf": 0.0,
+          "delta_pnl": 0.0
+        },
+        {
+          "coin": "DOT",
+          "pnl": 0.0,
+          "trades": 0,
+          "wins": 0,
+          "losses": 0,
+          "wr": 0.0,
+          "pf": 0.0,
+          "delta_pnl": 0.0
+        },
+        {
+          "coin": "XRP",
+          "pnl": 0.0,
+          "trades": 0,
+          "wins": 0,
+          "losses": 0,
+          "wr": 0.0,
+          "pf": 0.0,
+          "delta_pnl": 0.0
+        },
+        {
+          "coin": "ATOM",
+          "pnl": 0.0,
+          "trades": 0,
+          "wins": 0,
+          "losses": 0,
+          "wr": 0.0,
+          "pf": 0.0,
+          "delta_pnl": 0.0
+        },
+        {
+          "coin": "SOL",
+          "pnl": 0.0,
+          "trades": 0,
+          "wins": 0,
+          "losses": 0,
+          "wr": 0.0,
+          "pf": 0.0,
+          "delta_pnl": 0.0
+        },
+        {
+          "coin": "DOGE",
+          "pnl": 0.0,
+          "trades": 0,
+          "wins": 0,
+          "losses": 0,
+          "wr": 0.0,
+          "pf": 0.0,
+          "delta_pnl": 0.0
+        },
+        {
+          "coin": "XLM",
+          "pnl": 0.0,
+          "trades": 0,
+          "wins": 0,
+          "losses": 0,
+          "wr": 0.0,
+          "pf": 0.0,
+          "delta_pnl": 0.0
+        },
+        {
+          "coin": "AVAX",
+          "pnl": 0.0,
+          "trades": 0,
+          "wins": 0,
+          "losses": 0,
+          "wr": 0.0,
+          "pf": 0.0,
+          "delta_pnl": 0.0
+        },
+        {
+          "coin": "ALGO",
+          "pnl": 0.0,
+          "trades": 0,
+          "wins": 0,
+          "losses": 0,
+          "wr": 0.0,
+          "pf": 0.0,
+          "delta_pnl": 0.0
+        },
+        {
+          "coin": "BNB",
+          "pnl": 0.0,
+          "trades": 0,
+          "wins": 0,
+          "losses": 0,
+          "wr": 0.0,
+          "pf": 0.0,
+          "delta_pnl": 0.0
+        },
+        {
+          "coin": "BTC",
+          "pnl": 0.0,
+          "trades": 0,
+          "wins": 0,
+          "losses": 0,
+          "wr": 0.0,
+          "pf": 0.0,
+          "delta_pnl": 0.0
+        }
+      ]
+    },
+    {
+      "label": "VW8_VT0.10",
+      "total_pnl": 81.52103433906781,
+      "total_delta": -85.93152620761212,
+      "portfolio_wr": 56.40989198408186,
+      "total_trades": 7036,
+      "pf": 1.6531481877316878,
+      "is_baseline": false,
+      "coins": [
+        {
+          "coin": "DASH",
+          "pnl": 0.0,
+          "trades": 0,
+          "wins": 0,
+          "losses": 0,
+          "wr": 0.0,
+          "pf": 0.0,
+          "delta_pnl": 0.0
+        },
+        {
+          "coin": "UNI",
+          "pnl": 0.0,
+          "trades": 0,
+          "wins": 0,
+          "losses": 0,
+          "wr": 0.0,
+          "pf": 0.0,
+          "delta_pnl": 0.0
+        },
+        {
+          "coin": "NEAR",
+          "pnl": 0.0,
+          "trades": 0,
+          "wins": 0,
+          "losses": 0,
+          "wr": 0.0,
+          "pf": 0.0,
+          "delta_pnl": 0.0
+        },
+        {
+          "coin": "ADA",
+          "pnl": 0.0,
+          "trades": 0,
+          "wins": 0,
+          "losses": 0,
+          "wr": 0.0,
+          "pf": 0.0,
+          "delta_pnl": 0.0
+        },
+        {
+          "coin": "LTC",
+          "pnl": 0.0,
+          "trades": 0,
+          "wins": 0,
+          "losses": 0,
+          "wr": 0.0,
+          "pf": 0.0,
+          "delta_pnl": 0.0
+        },
+        {
+          "coin": "SHIB",
+          "pnl": 0.0,
+          "trades": 0,
+          "wins": 0,
+          "losses": 0,
+          "wr": 0.0,
+          "pf": 0.0,
+          "delta_pnl": 0.0
+        },
+        {
+          "coin": "LINK",
+          "pnl": 0.0,
+          "trades": 0,
+          "wins": 0,
+          "losses": 0,
+          "wr": 0.0,
+          "pf": 0.0,
+          "delta_pnl": 0.0
+        },
+        {
+          "coin": "ETH",
+          "pnl": 0.0,
+          "trades": 0,
+          "wins": 0,
+          "losses": 0,
+          "wr": 0.0,
+          "pf": 0.0,
+          "delta_pnl": 0.0
+        },
+        {
+          "coin": "DOT",
+          "pnl": 0.0,
+          "trades": 0,
+          "wins": 0,
+          "losses": 0,
+          "wr": 0.0,
+          "pf": 0.0,
+          "delta_pnl": 0.0
+        },
+        {
+          "coin": "XRP",
+          "pnl": 0.0,
+          "trades": 0,
+          "wins": 0,
+          "losses": 0,
+          "wr": 0.0,
+          "pf": 0.0,
+          "delta_pnl": 0.0
+        },
+        {
+          "coin": "ATOM",
+          "pnl": 0.0,
+          "trades": 0,
+          "wins": 0,
+          "losses": 0,
+          "wr": 0.0,
+          "pf": 0.0,
+          "delta_pnl": 0.0
+        },
+        {
+          "coin": "SOL",
+          "pnl": 0.0,
+          "trades": 0,
+          "wins": 0,
+          "losses": 0,
+          "wr": 0.0,
+          "pf": 0.0,
+          "delta_pnl": 0.0
+        },
+        {
+          "coin": "DOGE",
+          "pnl": 0.0,
+          "trades": 0,
+          "wins": 0,
+          "losses": 0,
+          "wr": 0.0,
+          "pf": 0.0,
+          "delta_pnl": 0.0
+        },
+        {
+          "coin": "XLM",
+          "pnl": 0.0,
+          "trades": 0,
+          "wins": 0,
+          "losses": 0,
+          "wr": 0.0,
+          "pf": 0.0,
+          "delta_pnl": 0.0
+        },
+        {
+          "coin": "AVAX",
+          "pnl": 0.0,
+          "trades": 0,
+          "wins": 0,
+          "losses": 0,
+          "wr": 0.0,
+          "pf": 0.0,
+          "delta_pnl": 0.0
+        },
+        {
+          "coin": "ALGO",
+          "pnl": 0.0,
+          "trades": 0,
+          "wins": 0,
+          "losses": 0,
+          "wr": 0.0,
+          "pf": 0.0,
+          "delta_pnl": 0.0
+        },
+        {
+          "coin": "BNB",
+          "pnl": 0.0,
+          "trades": 0,
+          "wins": 0,
+          "losses": 0,
+          "wr": 0.0,
+          "pf": 0.0,
+          "delta_pnl": 0.0
+        },
+        {
+          "coin": "BTC",
+          "pnl": 0.0,
+          "trades": 0,
+          "wins": 0,
+          "losses": 0,
+          "wr": 0.0,
+          "pf": 0.0,
+          "delta_pnl": 0.0
+        }
+      ]
+    },
+    {
+      "label": "VW8_VT0.15",
+      "total_pnl": 84.73891847025698,
+      "total_delta": -82.71364207642296,
+      "portfolio_wr": 55.880822274264894,
+      "total_trades": 7686,
+      "pf": 1.6332663157862897,
+      "is_baseline": false,
+      "coins": [
+        {
+          "coin": "DASH",
+          "pnl": 0.0,
+          "trades": 0,
+          "wins": 0,
+          "losses": 0,
+          "wr": 0.0,
+          "pf": 0.0,
+          "delta_pnl": 0.0
+        },
+        {
+          "coin": "UNI",
+          "pnl": 0.0,
+          "trades": 0,
+          "wins": 0,
+          "losses": 0,
+          "wr": 0.0,
+          "pf": 0.0,
+          "delta_pnl": 0.0
+        },
+        {
+          "coin": "NEAR",
+          "pnl": 0.0,
+          "trades": 0,
+          "wins": 0,
+          "losses": 0,
+          "wr": 0.0,
+          "pf": 0.0,
+          "delta_pnl": 0.0
+        },
+        {
+          "coin": "ADA",
+          "pnl": 0.0,
+          "trades": 0,
+          "wins": 0,
+          "losses": 0,
+          "wr": 0.0,
+          "pf": 0.0,
+          "delta_pnl": 0.0
+        },
+        {
+          "coin": "LTC",
+          "pnl": 0.0,
+          "trades": 0,
+          "wins": 0,
+          "losses": 0,
+          "wr": 0.0,
+          "pf": 0.0,
+          "delta_pnl": 0.0
+        },
+        {
+          "coin": "SHIB",
+          "pnl": 0.0,
+          "trades": 0,
+          "wins": 0,
+          "losses": 0,
+          "wr": 0.0,
+          "pf": 0.0,
+          "delta_pnl": 0.0
+        },
+        {
+          "coin": "LINK",
+          "pnl": 0.0,
+          "trades": 0,
+          "wins": 0,
+          "losses": 0,
+          "wr": 0.0,
+          "pf": 0.0,
+          "delta_pnl": 0.0
+        },
+        {
+          "coin": "ETH",
+          "pnl": 0.0,
+          "trades": 0,
+          "wins": 0,
+          "losses": 0,
+          "wr": 0.0,
+          "pf": 0.0,
+          "delta_pnl": 0.0
+        },
+        {
+          "coin": "DOT",
+          "pnl": 0.0,
+          "trades": 0,
+          "wins": 0,
+          "losses": 0,
+          "wr": 0.0,
+          "pf": 0.0,
+          "delta_pnl": 0.0
+        },
+        {
+          "coin": "XRP",
+          "pnl": 0.0,
+          "trades": 0,
+          "wins": 0,
+          "losses": 0,
+          "wr": 0.0,
+          "pf": 0.0,
+          "delta_pnl": 0.0
+        },
+        {
+          "coin": "ATOM",
+          "pnl": 0.0,
+          "trades": 0,
+          "wins": 0,
+          "losses": 0,
+          "wr": 0.0,
+          "pf": 0.0,
+          "delta_pnl": 0.0
+        },
+        {
+          "coin": "SOL",
+          "pnl": 0.0,
+          "trades": 0,
+          "wins": 0,
+          "losses": 0,
+          "wr": 0.0,
+          "pf": 0.0,
+          "delta_pnl": 0.0
+        },
+        {
+          "coin": "DOGE",
+          "pnl": 0.0,
+          "trades": 0,
+          "wins": 0,
+          "losses": 0,
+          "wr": 0.0,
+          "pf": 0.0,
+          "delta_pnl": 0.0
+        },
+        {
+          "coin": "XLM",
+          "pnl": 0.0,
+          "trades": 0,
+          "wins": 0,
+          "losses": 0,
+          "wr": 0.0,
+          "pf": 0.0,
+          "delta_pnl": 0.0
+        },
+        {
+          "coin": "AVAX",
+          "pnl": 0.0,
+          "trades": 0,
+          "wins": 0,
+          "losses": 0,
+          "wr": 0.0,
+          "pf": 0.0,
+          "delta_pnl": 0.0
+        },
+        {
+          "coin": "ALGO",
+          "pnl": 0.0,
+          "trades": 0,
+          "wins": 0,
+          "losses": 0,
+          "wr": 0.0,
+          "pf": 0.0,
+          "delta_pnl": 0.0
+        },
+        {
+          "coin": "BNB",
+          "pnl": 0.0,
+          "trades": 0,
+          "wins": 0,
+          "losses": 0,
+          "wr": 0.0,
+          "pf": 0.0,
+          "delta_pnl": 0.0
+        },
+        {
+          "coin": "BTC",
+          "pnl": 0.0,
+          "trades": 0,
+          "wins": 0,
+          "losses": 0,
+          "wr": 0.0,
+          "pf": 0.0,
+          "delta_pnl": 0.0
+        }
+      ]
+    },
+    {
+      "label": "VW8_VT0.20",
+      "total_pnl": 89.4693790707812,
+      "total_delta": -77.98318147589873,
+      "portfolio_wr": 55.4026318966558,
+      "total_trades": 8283,
+      "pf": 1.6399724036069352,
+      "is_baseline": false,
+      "coins": [
+        {
+          "coin": "DASH",
+          "pnl": 0.0,
+          "trades": 0,
+          "wins": 0,
+          "losses": 0,
+          "wr": 0.0,
+          "pf": 0.0,
+          "delta_pnl": 0.0
+        },
+        {
+          "coin": "UNI",
+          "pnl": 0.0,
+          "trades": 0,
+          "wins": 0,
+          "losses": 0,
+          "wr": 0.0,
+          "pf": 0.0,
+          "delta_pnl": 0.0
+        },
+        {
+          "coin": "NEAR",
+          "pnl": 0.0,
+          "trades": 0,
+          "wins": 0,
+          "losses": 0,
+          "wr": 0.0,
+          "pf": 0.0,
+          "delta_pnl": 0.0
+        },
+        {
+          "coin": "ADA",
+          "pnl": 0.0,
+          "trades": 0,
+          "wins": 0,
+          "losses": 0,
+          "wr": 0.0,
+          "pf": 0.0,
+          "delta_pnl": 0.0
+        },
+        {
+          "coin": "LTC",
+          "pnl": 0.0,
+          "trades": 0,
+          "wins": 0,
+          "losses": 0,
+          "wr": 0.0,
+          "pf": 0.0,
+          "delta_pnl": 0.0
+        },
+        {
+          "coin": "SHIB",
+          "pnl": 0.0,
+          "trades": 0,
+          "wins": 0,
+          "losses": 0,
+          "wr": 0.0,
+          "pf": 0.0,
+          "delta_pnl": 0.0
+        },
+        {
+          "coin": "LINK",
+          "pnl": 0.0,
+          "trades": 0,
+          "wins": 0,
+          "losses": 0,
+          "wr": 0.0,
+          "pf": 0.0,
+          "delta_pnl": 0.0
+        },
+        {
+          "coin": "ETH",
+          "pnl": 0.0,
+          "trades": 0,
+          "wins": 0,
+          "losses": 0,
+          "wr": 0.0,
+          "pf": 0.0,
+          "delta_pnl": 0.0
+        },
+        {
+          "coin": "DOT",
+          "pnl": 0.0,
+          "trades": 0,
+          "wins": 0,
+          "losses": 0,
+          "wr": 0.0,
+          "pf": 0.0,
+          "delta_pnl": 0.0
+        },
+        {
+          "coin": "XRP",
+          "pnl": 0.0,
+          "trades": 0,
+          "wins": 0,
+          "losses": 0,
+          "wr": 0.0,
+          "pf": 0.0,
+          "delta_pnl": 0.0
+        },
+        {
+          "coin": "ATOM",
+          "pnl": 0.0,
+          "trades": 0,
+          "wins": 0,
+          "losses": 0,
+          "wr": 0.0,
+          "pf": 0.0,
+          "delta_pnl": 0.0
+        },
+        {
+          "coin": "SOL",
+          "pnl": 0.0,
+          "trades": 0,
+          "wins": 0,
+          "losses": 0,
+          "wr": 0.0,
+          "pf": 0.0,
+          "delta_pnl": 0.0
+        },
+        {
+          "coin": "DOGE",
+          "pnl": 0.0,
+          "trades": 0,
+          "wins": 0,
+          "losses": 0,
+          "wr": 0.0,
+          "pf": 0.0,
+          "delta_pnl": 0.0
+        },
+        {
+          "coin": "XLM",
+          "pnl": 0.0,
+          "trades": 0,
+          "wins": 0,
+          "losses": 0,
+          "wr": 0.0,
+          "pf": 0.0,
+          "delta_pnl": 0.0
+        },
+        {
+          "coin": "AVAX",
+          "pnl": 0.0,
+          "trades": 0,
+          "wins": 0,
+          "losses": 0,
+          "wr": 0.0,
+          "pf": 0.0,
+          "delta_pnl": 0.0
+        },
+        {
+          "coin": "ALGO",
+          "pnl": 0.0,
+          "trades": 0,
+          "wins": 0,
+          "losses": 0,
+          "wr": 0.0,
+          "pf": 0.0,
+          "delta_pnl": 0.0
+        },
+        {
+          "coin": "BNB",
+          "pnl": 0.0,
+          "trades": 0,
+          "wins": 0,
+          "losses": 0,
+          "wr": 0.0,
+          "pf": 0.0,
+          "delta_pnl": 0.0
+        },
+        {
+          "coin": "BTC",
+          "pnl": 0.0,
+          "trades": 0,
+          "wins": 0,
+          "losses": 0,
+          "wr": 0.0,
+          "pf": 0.0,
+          "delta_pnl": 0.0
+        }
+      ]
+    }
+  ]
+}

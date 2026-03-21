@@ -1,0 +1,109 @@
+{
+  "notes": "RUN64 portfolio density filter. 13 configs. Baseline PnL=961.21. Best: DISABLED (PnL=961.21, Δ=+0.00)",
+  "configs": [
+    {
+      "label": "DISABLED",
+      "total_pnl": 961.2102288642486,
+      "portfolio_wr": 54.02962108097711,
+      "total_trades": 20796,
+      "pf": 0.0,
+      "is_baseline": true
+    },
+    {
+      "label": "MD0.50_DC4",
+      "total_pnl": 961.2102288642486,
+      "portfolio_wr": 54.02962108097711,
+      "total_trades": 20796,
+      "pf": 0.0,
+      "is_baseline": false
+    },
+    {
+      "label": "MD0.50_DC8",
+      "total_pnl": 961.2102288642486,
+      "portfolio_wr": 54.02962108097711,
+      "total_trades": 20796,
+      "pf": 0.0,
+      "is_baseline": false
+    },
+    {
+      "label": "MD0.50_DC12",
+      "total_pnl": 961.2102288642486,
+      "portfolio_wr": 54.02962108097711,
+      "total_trades": 20796,
+      "pf": 0.0,
+      "is_baseline": false
+    },
+    {
+      "label": "MD0.60_DC4",
+      "total_pnl": 961.2102288642486,
+      "portfolio_wr": 54.02962108097711,
+      "total_trades": 20796,
+      "pf": 0.0,
+      "is_baseline": false
+    },
+    {
+      "label": "MD0.60_DC8",
+      "total_pnl": 961.2102288642486,
+      "portfolio_wr": 54.02962108097711,
+      "total_trades": 20796,
+      "pf": 0.0,
+      "is_baseline": false
+    },
+    {
+      "label": "MD0.60_DC12",
+      "total_pnl": 961.2102288642486,
+      "portfolio_wr": 54.02962108097711,
+      "total_trades": 20796,
+      "pf": 0.0,
+      "is_baseline": false
+    },
+    {
+      "label": "MD0.70_DC4",
+      "total_pnl": 961.2102288642486,
+      "portfolio_wr": 54.02962108097711,
+      "total_trades": 20796,
+      "pf": 0.0,
+      "is_baseline": false
+    },
+    {
+      "label": "MD0.70_DC8",
+      "total_pnl": 961.2102288642486,
+      "portfolio_wr": 54.02962108097711,
+      "total_trades": 20796,
+      "pf": 0.0,
+      "is_baseline": false
+    },
+    {
+      "label": "MD0.70_DC12",
+      "total_pnl": 961.2102288642486,
+      "portfolio_wr": 54.02962108097711,
+      "total_trades": 20796,
+      "pf": 0.0,
+      "is_baseline": false
+    },
+    {
+      "label": "MD0.80_DC4",
+      "total_pnl": 961.2102288642486,
+      "portfolio_wr": 54.02962108097711,
+      "total_trades": 20796,
+      "pf": 0.0,
+      "is_baseline": false
+    },
+    {
+      "label": "MD0.80_DC8",
+      "total_pnl": 961.2102288642486,
+      "portfolio_wr": 54.02962108097711,
+      "total_trades": 20796,
+      "pf": 0.0,
+      "is_baseline": false
+    },
+    {
+      "label": "MD0.80_DC12",
+      "total_pnl": 961.2102288642486,
+      "portfolio_wr": 54.02962108097711,
+      "total_trades": 20796,
+      "pf": 0.0,
+      "is_baseline": false
+    }
+  ]
+}

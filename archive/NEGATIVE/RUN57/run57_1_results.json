@@ -1,0 +1,141 @@
+{
+  "notes": "RUN57 day-of-week filter. 17 configs. Baseline PnL=176.97. Best: SM0_M1_F1_W1 (PnL=176.97, Δ=+0.00)",
+  "configs": [
+    {
+      "label": "SM0_M1_F1_W1",
+      "total_pnl": 176.96836249314734,
+      "portfolio_wr": 54.71160850274816,
+      "total_trades": 15101,
+      "pf": 0.0,
+      "is_baseline": true
+    },
+    {
+      "label": "SM1_M1_F1_W1",
+      "total_pnl": 176.96836249314734,
+      "portfolio_wr": 54.71160850274816,
+      "total_trades": 15101,
+      "pf": 0.0,
+      "is_baseline": false
+    },
+    {
+      "label": "SM1_M1_F1_W0",
+      "total_pnl": 134.02340536083818,
+      "portfolio_wr": 53.930817610062896,
+      "total_trades": 10812,
+      "pf": 0.0,
+      "is_baseline": false
+    },
+    {
+      "label": "SM1_M1_F0_W1",
+      "total_pnl": 147.35006686491545,
+      "portfolio_wr": 54.77088948787062,
+      "total_trades": 12985,
+      "pf": 0.0,
+      "is_baseline": false
+    },
+    {
+      "label": "SM1_M1_F0_W0",
+      "total_pnl": 105.05480020052823,
+      "portfolio_wr": 53.8089758342923,
+      "total_trades": 8690,
+      "pf": 0.0,
+      "is_baseline": false
+    },
+    {
+      "label": "SM1_M0_F1_W1",
+      "total_pnl": 150.52402346695408,
+      "portfolio_wr": 54.785020804438275,
+      "total_trades": 12978,
+      "pf": 0.0,
+      "is_baseline": false
+    },
+    {
+      "label": "SM1_M0_F1_W0",
+      "total_pnl": 109.2465981155146,
+      "portfolio_wr": 54.03439916887914,
+      "total_trades": 8663,
+      "pf": 0.0,
+      "is_baseline": false
+    },
+    {
+      "label": "SM1_M0_F0_W1",
+      "total_pnl": 121.36016810385321,
+      "portfolio_wr": 54.87018965199779,
+      "total_trades": 10862,
+      "pf": 0.0,
+      "is_baseline": false
+    },
+    {
+      "label": "SM1_M0_F0_W0",
+      "total_pnl": 80.69776758267507,
+      "portfolio_wr": 53.906130561076296,
+      "total_trades": 6541,
+      "pf": 0.0,
+      "is_baseline": false
+    },
+    {
+      "label": "SM2_M1_F1_W1",
+      "total_pnl": 0.0,
+      "portfolio_wr": 0.0,
+      "total_trades": 0,
+      "pf": 0.0,
+      "is_baseline": false
+    },
+    {
+      "label": "SM2_M1_F1_W0",
+      "total_pnl": 38.564791822569774,
+      "portfolio_wr": 56.3295533441333,
+      "total_trades": 4321,
+      "pf": 0.0,
+      "is_baseline": false
+    },
+    {
+      "label": "SM2_M1_F0_W1",
+      "total_pnl": 27.0571715779336,
+      "portfolio_wr": 54.268292682926834,
+      "total_trades": 2132,
+      "pf": 0.0,
+      "is_baseline": false
+    },
+    {
+      "label": "SM2_M1_F0_W0",
+      "total_pnl": 66.20056722893452,
+      "portfolio_wr": 55.622770280750736,
+      "total_trades": 6447,
+      "pf": 0.0,
+      "is_baseline": false
+    },
+    {
+      "label": "SM2_M0_F1_W1",
+      "total_pnl": 23.057097547232672,
+      "portfolio_wr": 53.43546889507892,
+      "total_trades": 2154,
+      "pf": 0.0,
+      "is_baseline": false
+    },
+    {
+      "label": "SM2_M0_F1_W0",
+      "total_pnl": 63.1545040341565,
+      "portfolio_wr": 55.62102651573887,
+      "total_trades": 6449,
+      "pf": 0.0,
+      "is_baseline": false
+    },
+    {
+      "label": "SM2_M0_F0_W1",
+      "total_pnl": 50.50898589068986,
+      "portfolio_wr": 53.849743350443305,
+      "total_trades": 4286,
+      "pf": 0.0,
+      "is_baseline": false
+    },
+    {
+      "label": "SM2_M0_F0_W0",
+      "total_pnl": 91.21740204309283,
+      "portfolio_wr": 55.265306122448976,
+      "total_trades": 8575,
+      "pf": 0.0,
+      "is_baseline": false
+    }
+  ]
+}

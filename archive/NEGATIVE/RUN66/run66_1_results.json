@@ -1,0 +1,53 @@
+{
+  "notes": "RUN66 exit priority reordering. 4 configs. Baseline PnL=256.20. Best: A_Z0_SMA (PnL=256.20, Δ=+0.00)",
+  "configs": [
+    {
+      "label": "A_Z0_SMA",
+      "total_pnl": 256.2048758156675,
+      "portfolio_wr": 48.98486526393503,
+      "total_trades": 13545,
+      "pf": 1.0046941247728647,
+      "is_baseline": true,
+      "z0_exits": 674,
+      "sma_exits": 163,
+      "sl_exits": 5010,
+      "timeout_exits": 7698
+    },
+    {
+      "label": "B_SMA_Z0",
+      "total_pnl": 256.2048758156675,
+      "portfolio_wr": 48.98486526393503,
+      "total_trades": 13545,
+      "pf": 1.0046941247728647,
+      "is_baseline": false,
+      "z0_exits": 674,
+      "sma_exits": 163,
+      "sl_exits": 5010,
+      "timeout_exits": 7698
+    },
+    {
+      "label": "C_Z0_TMO",
+      "total_pnl": 256.2048758156675,
+      "portfolio_wr": 48.98486526393503,
+      "total_trades": 13545,
+      "pf": 1.0046941247728647,
+      "is_baseline": false,
+      "z0_exits": 674,
+      "sma_exits": 0,
+      "sl_exits": 5010,
+      "timeout_exits": 7861
+    },
+    {
+      "label": "D_SMA_TMO",
+      "total_pnl": 256.2048758156675,
+      "portfolio_wr": 48.98486526393503,
+      "total_trades": 13545,
+      "pf": 1.0046941247728647,
+      "is_baseline": false,
+      "z0_exits": 0,
+      "sma_exits": 163,
+      "sl_exits": 5010,
+      "timeout_exits": 8372
+    }
+  ]
+}
